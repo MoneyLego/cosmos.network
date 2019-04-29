@@ -9,7 +9,7 @@
     "vuepress": "^1.0.0-alpha.47"
   },
   "scripts": {
-    "site:dev": "vuepress dev site",
-    "site:build": "vuepress build site"
+    "serve": "vuepress dev site",
+    "build": "vuepress build site"
   }
 }

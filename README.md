@@ -1,4 +1,5 @@
 # Website for the Cosmos Hub
+
 This is a static website based on VuePress.
 
 * Staging: https://hub-staging.interblock.io
