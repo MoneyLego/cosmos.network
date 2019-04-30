@@ -45,7 +45,7 @@ jobs:
           name: Create workspace folder
           command: |
             mkdir -p workspace
-            echo "build job URL = $CIRCLE_BUILD_URL<br>" >> dist/version.html
+            echo "build job URL = $CIRCLE_BUILD_URL<br>" >> site/.vuepress/dist/version.html
             cp -r site/.vuepress/dist workspace/
       - persist_to_workspace:
           root: workspace
