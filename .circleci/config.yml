@@ -3,7 +3,7 @@ version: 2
 set_build_image: &set_build_image
   working_directory: ~/repo
   docker:
-    - image: circleci/node:10.15.0-stretch
+    - image: circleci/node:10.15.3-stretch
 
 deployment_config: &deployment_config
   working_directory: ~/repo
