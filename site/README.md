@@ -1,14 +1,24 @@
+![Welcome to the Cosmos Hub](./welcome-banner.jpg)
+
 # Cosmos Hub
 
-Welcome to the Cosmos Hub! The Hub is the first of [millions of interconnected blockchains](https://cosmos.network) that will eventually become the interchain. The token of the Cosmos Hub is the ATOM.
+The Cosmos Hub is the first of [thousands of interconnected blockchains](https://cosmos.network) that will eventually comprise the **Interchain**. The primary token of the Cosmos Hub is the **ATOM**.
 
-Did you just obtain some ATOM? With ATOM, you now now have the superpower to directly contribute to the security and governance of the Cosmos Hub. You can become a [delegator](./intro/delegator-faq), and delegate your ATOM to one of the 100 validators on the blockchain to earn rewards. You can also vote your ATOM to influence the future of the Cosmos Hub through governance proposals.
+## The ATOM
+
+Do you have ATOM tokens? With ATOM, you have the superpower to contribute to the security and governance of the Cosmos Hub. Delegate your ATOM to one or more of the 100 validators on the Cosmos Hub blockchain to earn more ATOM through Proof-of-Stake. You can also vote with your ATOM to influence the future of the Cosmos Hub through on-chain governance proposals.
 
 Learn more about [being a delegator](/intro/delegator-faq), learn about [the security risks](/intro/delegator-security), and start participating with one of the following wallets.
 
-## Wallets
+## Cosmos Hub Wallets
 
-These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on governance proposals.
+These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals.
+
+::: warning
+These wallets are experimental technology. For security reasons, we do not promote or endorse the use of any wallet other than `gaiacli`.
+:::
+
+#### Live
 
 * [Lunie](https://lunie.io) - Web
 * [Cosmostation](https://www.cosmostation.io/) - Android, iOS
@@ -21,22 +31,29 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Lunagram](https://lunamint.com/) - Android, iOS
 * [Trust Wallet](https://trustwallet.com/) Android, iOS
 
-## Block Explorers
 
-These block explores allow you to search, view and analyze Cosmos Hub data&mdash;like blocks, transactions, validators, etc.
+## Cosmos Hub Explorers
+
+These block explorers allow you to search, view and analyze Cosmos Hub data&mdash;like blocks, transactions, validators, etc.
 
 * [Big Dipper](https://cosmos.bigdipper.live)
 * [Cosmos Overview](https://genesislab.net)
 * [Cosmos Visualizer](https://nylira.net/3d)
 * [Hubble](https://hubble.figment.network)
-* [Lunie](https://lunie.io)
 * [Mintscan](https://mintscan.io)
 * [Stargazer](https://stargazer.certus.one)
 
-## Command Line Interface
+## Cosmos Hub CLI
 
-If you wish, you can also use `gaiacli`, a command-line interface to interact with the Cosmos Hub. `gaiacli` is a first class wallet that supports accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/delegator-guide-cli).
+For security reasons, we recommend that you use `gaiacli`, a command-line interface to interact with the Cosmos Hub. `gaiacli` is a first class application that supports accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/delegator-guide-cli).
 
-## More About Cosmos
+## Join the Community
 
-To learn more about the Cosmos Network, visit the official site at [cosmos.network](https://cosmos.network).
+Have questions, comments, or new ideas? Participate in the Cosmos community through one of the following channels. Also check out the [latest events](https://cosmos.network/community).
+
+* [Cosmos Community Chat](https://t.me/cosmosproject)
+* [Cosmos Developer Chat](https://riot.im/app/#/room/#cosmos:matrix.org)
+* [Cosmos Forum](https://forum.cosmos.network)
+* [Cosmos on Reddit](https://reddit.com/r/cosmosnetwork)
+
+To learn more about the Cosmos Hub and how it fits within the Cosmos Network, visit [cosmos.network](https://cosmos.network).

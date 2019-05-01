@@ -2,6 +2,22 @@ module.exports = {
   title: "Cosmos Hub",
   description: "Information about the Cosmos Hub blockchain.",
   ga: "UA-51029217-7",
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Ubuntu:300,500,700"
+      }
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i"
+      }
+    ]
+  ],
   markdown: {
     lineNumbers: true
   },
@@ -28,13 +44,39 @@ module.exports = {
     }
   },
   themeConfig: {
-    sidebarDepth: 0,
-    nav: [{ text: "Cosmos Network", link: "https://cosmos.network" }],
+    nav: [
+      {
+        text: "Wallets",
+        items: [
+          { text: "Lunie", link: "https://lunie.io" },
+          { text: "Cosmostation", link: "https://www.cosmostation.io" },
+          { text: "imToken", link: "https://token.im/" },
+          { text: "Wetez", link: "https://www.wetez.io/pc/homepage)" }
+        ]
+      },
+      {
+        text: "Block Explorers",
+        items: [
+          { text: "Big Dipper", link: "https://cosmos.bigdipper.live" },
+          { text: "Cosmos Overview", link: "https://genesislab.net" },
+          { text: "Cosmos Visualizer", link: "https://nylira.net/3d" },
+          { text: "Hubble", link: "https://hubble.figment.network" },
+          { text: "Mintscan", link: "https://mintscan.io" },
+          { text: "Stargazer", link: "https://stargazer.certus.one" }
+        ]
+      },
+      { text: "Telegram", link: "https://t.me/cosmosproject" },
+      { text: "Community", link: "https://cosmos.network/community" }
+    ],
     sidebar: [
       {
         title: "Introduction",
         collapsable: false,
-        children: ["/", "/intro/delegator-faq", "/intro/delegator-security"]
+        children: [
+          ["/", "Cosmos Hub"],
+          "/intro/delegator-faq",
+          "/intro/delegator-security"
+        ]
       },
       {
         title: "Documentation",
