@@ -11,5 +11,13 @@
   "scripts": {
     "serve": "vuepress dev site",
     "build": "vuepress build site"
+  },
+  "dependencies": {
+    "disable-scroll": "^0.4.1",
+    "headroom.js": "^0.9.4",
+    "nib": "^1.1.2",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "vuex": "^3.1.0"
   }
 }
