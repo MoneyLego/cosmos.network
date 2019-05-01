@@ -8,7 +8,7 @@ The Cosmos Hub is the first of [thousands of interconnected blockchains](https:/
 
 Do you have ATOM tokens? With ATOM, you have the superpower to contribute to the security and governance of the Cosmos Hub. Delegate your ATOM to one or more of the 100 validators on the Cosmos Hub blockchain to earn more ATOM through Proof-of-Stake. You can also vote with your ATOM to influence the future of the Cosmos Hub through on-chain governance proposals.
 
-Learn more about [being a delegator](/intro/delegator-faq), learn about [the security risks](/intro/delegator-security), and start participating with one of the following wallets.
+Learn more about [being a delegator](/intro/delegator-faq.html), learn about [the security risks](/intro/delegator-security.html), and start participating with one of the following wallets.
 
 ## Cosmos Hub Wallets
 
@@ -45,7 +45,7 @@ These block explorers allow you to search, view and analyze Cosmos Hub data&mdas
 
 ## Cosmos Hub CLI
 
-For security reasons, we recommend that you use `gaiacli`, a command-line interface to interact with the Cosmos Hub. `gaiacli` is a first class application that supports accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/delegator-guide-cli).
+For security reasons, we recommend that you use `gaiacli`, a command-line interface to interact with the Cosmos Hub. `gaiacli` is a first class application that supports accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/intro/delegator-guide-cli.html).
 
 ## Join the Community
 
