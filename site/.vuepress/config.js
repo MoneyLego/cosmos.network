@@ -1,7 +1,6 @@
 module.exports = {
   title: "Cosmos Hub",
   description: "Information about the Cosmos Hub blockchain.",
-  ga: "UA-51029217-7",
   head: [
     [
       "link",
@@ -15,6 +14,14 @@ module.exports = {
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i"
+      }
+    ]
+  ],
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-51029217-7"
       }
     ]
   ],
