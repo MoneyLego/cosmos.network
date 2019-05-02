@@ -14,10 +14,6 @@ Learn more about [being a delegator](/intro/delegator-faq.html), learn about [th
 
 These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals.
 
-::: warning
-These wallets are experimental technology. For security reasons, we do not promote or endorse the use of any wallet other than `gaiacli`.
-:::
-
 #### Live
 
 * [Lunie](https://lunie.io) - Web
@@ -45,7 +41,7 @@ These block explorers allow you to search, view and analyze Cosmos Hub data&mdas
 
 ## Cosmos Hub CLI
 
-For security reasons, we recommend that you use `gaiacli`, a command-line interface to interact with the Cosmos Hub. `gaiacli` is a first class application that supports accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/intro/delegator-guide-cli.html).
+`gaiacli` is a command-line interface that lets you interact with the Cosmos Hub. `gaiacli` is the only tool that supports 100% of the Cosmos Hub features, including accounts, transfers, delegation, and governance. Learn more about `gaiacli` with the [delegator's CLI guide](/intro/delegator-guide-cli.html).
 
 ## Join the Community
 
