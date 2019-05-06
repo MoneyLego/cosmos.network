@@ -2,7 +2,7 @@
 
 This is a static website based on VuePress.
 
-* Staging: https://hub-staging.interblock.io
+* Staging: http://hub.staging-cosmos.network
 * Production: https://hub.cosmos.network
 
 ## Develop
