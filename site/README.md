@@ -19,14 +19,13 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Lunie](https://lunie.io) - Web
 * [Cosmostation](https://www.cosmostation.io/) - Android, iOS
 * [imToken](https://token.im/) - Android, iOS
+* [Trust Wallet](https://trustwallet.com/) Android, iOS
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
 #### In Development
 
 * [Cobo](https://cobo.com/) - Android, iOS
 * [Lunagram](https://lunamint.com/) - Android, iOS
-* [Trust Wallet](https://trustwallet.com/) Android, iOS
-
 
 ## Cosmos Hub Explorers
 
