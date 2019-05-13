@@ -12,10 +12,9 @@ Learn more about [being a delegator](/intro/delegator-faq.html), learn about [th
 
 ## Cosmos Hub Wallets
 
-These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals.
+These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals. Note that we do not endorse any of the wallets, they are listed for your convenience.
 
-#### Live
-
+* [Cobo](https://cobo.com/) - Android, iOS
 * [Cosmostation](https://www.cosmostation.io/) - Android, iOS
 * [imToken](https://token.im/) - Android, iOS
 * [Lunagram](https://lunamint.com/) - Android, iOS
@@ -23,9 +22,13 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Trust Wallet](https://trustwallet.com/) Android, iOS
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
-#### In Development
+::: warning
+Take precautions in regards to wallet security. Neither Tendermint Inc nor the InterchainFoundation is liable if you lose your funds using these community-maintained wallets.
+:::
 
-* [Cobo](https://cobo.com/) - Android, iOS
+::: warning
+There are two Cosmos apps in Ledger Live. The version we support is `Cosmos 1.5.0`. The older `COSMOS 1.1.1` will be removed during a firmware update.
+:::
 
 ## Cosmos Hub Explorers
 
