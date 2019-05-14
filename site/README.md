@@ -16,6 +16,7 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 
 * [Cobo](https://cobo.com/) - Android, iOS
 * [Cosmostation](https://www.cosmostation.io/) - Android, iOS
+* [Huobi Wallet](https://www.huobiwallet.com/) - Android, iOS
 * [imToken](https://token.im/) - Android, iOS
 * [Lunagram](https://lunamint.com/) - Android, iOS
 * [Lunie](https://lunie.io) - Web
