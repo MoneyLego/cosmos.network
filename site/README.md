@@ -24,7 +24,7 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
 ::: warning
-Take precautions in regards to wallet security. Neither Tendermint Inc nor the InterchainFoundation is liable if you lose your funds using these community-maintained wallets.
+Take precautions in regards to wallet security. Neither Tendermint Inc nor the Interchain Foundation is liable if you lose your funds using these community-maintained wallets.
 :::
 
 ::: warning
