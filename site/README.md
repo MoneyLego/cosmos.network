@@ -20,6 +20,7 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [imToken](https://token.im/) - Android, iOS
 * [Lunagram](https://lunamint.com/) - Android, iOS
 * [Lunie](https://lunie.io) - Web
+* [Math Wallet](https://www.mathwallet.org/en/) - Android, iOS, Web
 * [Trust Wallet](https://trustwallet.com/) Android, iOS
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
