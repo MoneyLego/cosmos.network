@@ -11,7 +11,8 @@
   },
   "scripts": {
     "serve": "vuepress dev site",
-    "build": "vuepress build site"
+    "build:site": "vuepress build site",
+    "build:docs": "vuepress build docs"
   },
   "dependencies": {
     "disable-scroll": "^0.4.1",
