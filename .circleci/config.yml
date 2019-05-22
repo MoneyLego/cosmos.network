@@ -40,8 +40,8 @@ jobs:
           name: Build docs
           command: |
             git clone git@github.com:cosmos/gaia.git
-            cd gaia && git checkout master && echo ${CIRCLE_SHA1}
-            cd $CIRCLE_WORKING_DIRECTORY && cp -rT gaia/docs docs
+            cd gaia && git checkout master && echo ${CIRCLE_SHA1} >> docs/README.md
+            cd .. && cp -rT gaia/docs docs
             yarn build:docs ; exit $?
       - save_cache:
           paths:
