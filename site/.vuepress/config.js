@@ -87,21 +87,17 @@ module.exports = {
       },
       {
         title: "Documentation",
-        collapsable: true,
+        collapsable: false,
         children: [
-          "/what-is-gaia",
-          "/installation",
-          "/join-mainnet",
-          "/validators/validator-setup",
-          "/validators/overview",
-          "/validators/security",
-          "/validators/validator-faq",
-          "/delegator-guide-cli",
-          "/genesis",
-          "/ledger",
-          "/gaiacli",
-          "/join-testnet",
-          "/deploy-testnet"
+          "/docs/what-is-gaia",
+          "/docs/installation",
+          "/docs/join-mainnet",
+          "/docs/validators/validator-setup",
+          "/docs/deploy-testnet"
+          "/docs/validators/overview",
+          "/docs/validators/security",
+          "/docs/validators/validator-faq",
+          "/docs/reproducible-builds",
         ]
       }
     ]
