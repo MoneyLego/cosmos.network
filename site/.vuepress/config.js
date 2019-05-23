@@ -83,12 +83,14 @@ module.exports = {
           ["/", "Cosmos Hub"],
           "/intro/delegator-faq",
           "/intro/delegator-security"
+          "/docs/delegator-guide-cli"
         ]
       },
       {
         title: "Documentation",
         collapsable: false,
         children: [
+          ["/docs", "Overview"],
           "/docs/what-is-gaia",
           "/docs/installation",
           "/docs/join-mainnet",
