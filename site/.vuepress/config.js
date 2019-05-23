@@ -93,11 +93,11 @@ module.exports = {
           "/docs/installation",
           "/docs/join-mainnet",
           "/docs/validators/validator-setup",
-          "/docs/deploy-testnet"
+          "/docs/deploy-testnet",
           "/docs/validators/overview",
           "/docs/validators/security",
           "/docs/validators/validator-faq",
-          "/docs/reproducible-builds",
+          "/docs/reproducible-builds"
         ]
       }
     ]
