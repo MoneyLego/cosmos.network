@@ -82,7 +82,7 @@ module.exports = {
         children: [
           ["/", "Cosmos Hub"],
           "/intro/delegator-faq",
-          "/intro/delegator-security"
+          "/intro/delegator-security",
           "/docs/delegator-guide-cli"
         ]
       },
