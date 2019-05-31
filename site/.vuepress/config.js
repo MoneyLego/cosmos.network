@@ -53,6 +53,7 @@ module.exports = {
   },
   */
   themeConfig: {
+    sidebarDepth: 0,
     nav: [
       {
         text: "Wallets",
@@ -79,13 +80,35 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "Introduction",
+        title: "Cosmos Hub",
+        collapsable: false,
+        children: [["/", "Introduction"]]
+      },
+      {
+        title: "Delegators",
         collapsable: false,
         children: [
-          ["/", "Cosmos Hub"],
-          "/intro/delegator-faq",
-          "/intro/delegator-security",
+          "/delegators/delegator-faq",
+          "/delegators/delegator-security",
           "/docs/delegator-guide-cli"
+        ]
+      },
+      {
+        title: "Validators",
+        collapsable: false,
+        children: [
+          "/docs/validators/overview",
+          "/docs/validators/validator-faq",
+          "/docs/validators/validator-setup",
+          "/docs/validators/security",
+          {
+            title: "KMS",
+            collapsable: false,
+            children: [
+              "/docs/validators/kms/kms",
+              "/docs/validators/kms/kms_ledger"
+            ]
+          }
         ]
       },
       {
@@ -96,11 +119,8 @@ module.exports = {
           "/docs/what-is-gaia",
           "/docs/installation",
           "/docs/join-mainnet",
-          "/docs/validators/validator-setup",
+          "/docs/join-testnet",
           "/docs/deploy-testnet",
-          "/docs/validators/overview",
-          "/docs/validators/security",
-          "/docs/validators/validator-faq",
           "/docs/reproducible-builds"
         ]
       }
