@@ -1,8 +1,8 @@
-![Welcome to the Cosmos Hub](./welcome-banner.jpg)
+![Welcome to the Cosmos Hub](./images/banner.jpg)
 
 # Cosmos Hub
 
-The Cosmos Hub is the first of [thousands of interconnected blockchains](https://cosmos.network) that will eventually comprise the **Interchain**. The primary token of the Cosmos Hub is the **ATOM**.
+The Cosmos Hub is the first of [thousands of interconnected blockchains](https://cosmos.network) that will eventually comprise the **Cosmos Network**. The primary token of the Cosmos Hub is the **ATOM**, but the Hub will support many tokens in the future.
 
 ## The ATOM
 
@@ -14,7 +14,7 @@ Learn more about [being a delegator](/intro/delegator-faq.html), learn about [th
 
 These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals. Note that we do not endorse any of the wallets, they are listed for your convenience.
 
-* [Atomic Wallet](https://atomicwallet.io/) - Android, iOS, Linux, macOS, Windows
+* [Atomic Wallet](https://atomicwallet.io/) - Android, Linux, macOS, Windows
 * [Cobo](https://cobo.com/) - Android, iOS
 * [Cosmostation](https://www.cosmostation.io/) - Android, iOS
 * [Huobi Wallet](https://www.huobiwallet.com/) - Android, iOS
