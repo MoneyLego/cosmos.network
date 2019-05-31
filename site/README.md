@@ -2,7 +2,7 @@
 
 # Cosmos Hub
 
-The Cosmos Hub is the first of [thousands of interconnected blockchains](https://cosmos.network) that will eventually comprise the **Interchain**. The primary token of the Cosmos Hub is the **ATOM**.
+The Cosmos Hub is the first of [thousands of interconnected blockchains](https://cosmos.network) that will eventually comprise the **Cosmos Network**. The primary token of the Cosmos Hub is the **ATOM**, but the Hub will support many tokens in the future.
 
 ## The ATOM
 

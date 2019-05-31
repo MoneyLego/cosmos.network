@@ -59,10 +59,16 @@ module.exports = {
       {
         text: "Wallets",
         items: [
-          { text: "Lunie", link: "https://lunie.io" },
-          { text: "Cosmostation", link: "https://www.cosmostation.io" },
+          { text: "Atomic Wallet", link: "https://atomicwallet.io/" },
+          { text: "Cobo", link: "https://cobo.com" },
+          { text: "Cosmostation", link: "https://www.cosmostation.io/" },
+          { text: "Huobi Wallet", link: "https://www.huobiwallet.com/" },
           { text: "imToken", link: "https://token.im/" },
-          { text: "Wetez", link: "https://www.wetez.io/pc/homepage)" }
+          { text: "Lunagram", link: "https://lunamint.com/" },
+          { text: "Lunie", link: "https://lunie.io" },
+          { text: "Math Wallet", link: "https://www.mathwallet.org/en/" },
+          { text: "Trust Wallet", link: "https://trustwallet.com/" },
+          { text: "Wetez", link: "https://www.wetez.io/pc/homepage" }
         ]
       },
       {
