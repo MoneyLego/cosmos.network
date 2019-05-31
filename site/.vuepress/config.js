@@ -28,6 +28,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  /*
   locales: {
     // The key is the path for the locale to be nested under.
     // As a special case, the default locale can use '/' as its path.
@@ -50,6 +51,7 @@ module.exports = {
       description: "Website for the Cosmos Hub (简体中文)"
     }
   },
+  */
   themeConfig: {
     nav: [
       {
@@ -82,26 +84,24 @@ module.exports = {
         children: [
           ["/", "Cosmos Hub"],
           "/intro/delegator-faq",
-          "/intro/delegator-security"
+          "/intro/delegator-security",
+          "/docs/delegator-guide-cli"
         ]
       },
       {
         title: "Documentation",
-        collapsable: true,
+        collapsable: false,
         children: [
-          "/what-is-gaia",
-          "/installation",
-          "/join-mainnet",
-          "/validators/validator-setup",
-          "/validators/overview",
-          "/validators/security",
-          "/validators/validator-faq",
-          "/delegator-guide-cli",
-          "/genesis",
-          "/ledger",
-          "/gaiacli",
-          "/join-testnet",
-          "/deploy-testnet"
+          ["/docs/", "Overview"],
+          "/docs/what-is-gaia",
+          "/docs/installation",
+          "/docs/join-mainnet",
+          "/docs/validators/validator-setup",
+          "/docs/deploy-testnet",
+          "/docs/validators/overview",
+          "/docs/validators/security",
+          "/docs/validators/validator-faq",
+          "/docs/reproducible-builds"
         ]
       }
     ]

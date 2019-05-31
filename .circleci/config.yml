@@ -35,7 +35,10 @@ jobs:
           name: Build website
           command: |
             yarn install
-            yarn build
+            git clone git@github.com:cosmos/gaia.git
+            cd gaia && git checkout master && echo ${CIRCLE_SHA1} >> docs/README.md
+            cd .. && cp -rT gaia/docs site/docs
+            yarn build ; exit $?
       - save_cache:
           paths:
             - yarn.lock
