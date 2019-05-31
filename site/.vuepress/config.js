@@ -92,7 +92,7 @@ module.exports = {
         title: "Documentation",
         collapsable: false,
         children: [
-          ["/docs", "Overview"],
+          ["/docs/", "Overview"],
           "/docs/what-is-gaia",
           "/docs/installation",
           "/docs/join-mainnet",
