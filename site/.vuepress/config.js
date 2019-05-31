@@ -53,6 +53,7 @@ module.exports = {
   },
   */
   themeConfig: {
+    logo: "/hub.svg",
     sidebarDepth: 0,
     nav: [
       {
