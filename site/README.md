@@ -26,11 +26,7 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
 ::: warning
-Take precautions in regards to wallet security. Neither Tendermint Inc nor the Interchain Foundation is liable if you lose your funds using these community-maintained wallets.
-:::
-
-::: warning
-There are two Cosmos apps in Ledger Live. The version we support is `Cosmos 1.5.0`. The older `COSMOS 1.1.1` will be removed during a firmware update.
+Do your own research and take precautions in regards to wallet security. Neither Tendermint Inc nor the Interchain Foundation is liable if you lose your funds using these third party wallets.
 :::
 
 ## Cosmos Hub Explorers
