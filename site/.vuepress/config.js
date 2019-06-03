@@ -76,6 +76,7 @@ module.exports = {
         text: "Block Explorers",
         items: [
           { text: "Big Dipper", link: "https://cosmos.bigdipper.live" },
+          { text: "Coris", link: "https://coris.network" },
           { text: "Cosmos Overview", link: "https://genesislab.net" },
           { text: "Cosmos Visualizer", link: "https://nylira.net/3d" },
           { text: "Hubble", link: "https://hubble.figment.network" },
