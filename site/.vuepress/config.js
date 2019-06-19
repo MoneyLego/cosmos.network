@@ -115,6 +115,7 @@ module.exports = {
           "/docs/join-mainnet",
           "/docs/join-testnet",
           "/docs/deploy-testnet",
+          "/docs/ledger",
           "/docs/reproducible-builds"
         ]
       }
