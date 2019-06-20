@@ -12,7 +12,11 @@ Learn more about [being a delegator](/intro/delegator-faq.html), learn about [th
 
 ## Cosmos Hub Wallets
 
-These user-friendly web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals. Note that we do not endorse any of the wallets, they are listed for your convenience.
+::: warning
+Do your own research and take precautions in regards to wallet security. Neither Tendermint Inc nor the Interchain Foundation is liable if you lose your funds using these third party wallets.
+:::
+
+These community-maintained web and mobile wallets allow you to store & transfer ATOM, delegate ATOM to validators, and vote on on-chain governance proposals. Note that we do not endorse any of the wallets, they are listed for your convenience.
 
 * [Atomic Wallet](https://atomicwallet.io/) - Android, Linux, macOS, Windows
 * [Cobo](https://cobo.com/) - Android, iOS
@@ -25,9 +29,6 @@ These user-friendly web and mobile wallets allow you to store & transfer ATOM, d
 * [Trust Wallet](https://trustwallet.com/) Android, iOS
 * [Wetez](https://www.wetez.io/pc/homepage) - Android, iOS
 
-::: warning
-Do your own research and take precautions in regards to wallet security. Neither Tendermint Inc nor the Interchain Foundation is liable if you lose your funds using these third party wallets.
-:::
 
 ## Cosmos Hub Explorers
 
