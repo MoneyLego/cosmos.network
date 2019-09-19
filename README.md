@@ -7,12 +7,12 @@ This is a static website based on VuePress.
 
 ## Develop
 ```
-yarn serve
+npm run serve
 ```
 
 ## Build
 ```
-yarn build
+npm run build
 ```
 
 Serve `./site/.vuepress/dist` via the web server of your choice.

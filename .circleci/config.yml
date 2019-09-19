@@ -8,7 +8,7 @@ set_build_image: &set_build_image
 deployment_config: &deployment_config
   working_directory: ~/repo
   docker:
-    - image: tendermintdev/docker-website-deployment-yarn
+    - image: tendermintdev/docker-website-deployment
   environment:
     BASH_ENV: /root/.bashrc
     AWS_REGION: us-east-1
@@ -30,20 +30,20 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-yarn-packages-{{ .Environment.CIRCLE_PROJECT_REPONAME }}-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
+            - v1-npm-packages-{{ .Environment.CIRCLE_PROJECT_REPONAME }}-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
       - run:
           name: Build website
           command: |
-            yarn install
+            npm install
             git clone git@github.com:cosmos/gaia.git
             cd gaia && git checkout master && echo ${CIRCLE_SHA1} >> docs/README.md
             cd .. && cp -rT gaia/docs site/docs
-            yarn build ; exit $?
+            npm run build ; exit $?
       - save_cache:
           paths:
-            - yarn.lock
+            - package-lock.json
             - node_modules
-          key: v1-yarn-packages-{{ .Environment.CIRCLE_PROJECT_REPONAME }}-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
+          key: v1-npm-packages-{{ .Environment.CIRCLE_PROJECT_REPONAME }}-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
       - run:
           name: Create workspace folder
           command: |
