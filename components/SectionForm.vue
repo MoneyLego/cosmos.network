@@ -28,7 +28,7 @@
               class="bottom__get-notified tm-rf1 tm-bold tm-lh-copy"
               for="field-email"
             >
-              Get Stargates updates
+              Get Cosmos Hub updates
             </label>
             <form
               :action="url"

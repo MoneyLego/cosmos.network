@@ -11,18 +11,18 @@
       <span class="sr-only">Cosmos – Stargate</span>
       <ul>
         <li>
-          <NuxtLink to="/" class="text tm-rf0 tm-medium tm-lh-title"
-            >Overview</NuxtLink
+          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+            >Learn</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="/testnets" class="text tm-rf0 tm-medium tm-lh-title"
-            >Testnets</NuxtLink
+          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+            >Build</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="/resources" class="text tm-rf0 tm-medium tm-lh-title"
-            >Resources</NuxtLink
+          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+            >Explore</NuxtLink
           >
         </li>
       </ul>

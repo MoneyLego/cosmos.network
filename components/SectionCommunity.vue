@@ -1,28 +1,6 @@
 <template>
   <div class="section tm-section-container section-container">
     <div class="container">
-      <NuxtLink to="/testnets" class="wide-card top">
-        <div class="wide-card__left">
-          <graphics-dyson-sphere class="section-graphics" />
-        </div>
-        <div class="wide-card__right wide-card__content">
-          <graphics-sun class="top__sun" />
-          <div
-            class="cards__item__caption tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
-          >
-            Upgrade
-          </div>
-          <div class="cards__item__title tm-rf2 tm-bold tm-lh-title">
-            Join the testnets -->
-          </div>
-          <div
-            class="cards__item__description tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
-          >
-            Prepare for the new era of Cosmos by testing your integrations
-            against the Stargate testnets.
-          </div>
-        </div>
-      </NuxtLink>
       <div class="cards">
         <a
           href="https://cosmos.network/community"
@@ -32,71 +10,40 @@
           <div
             class="cards__item__caption tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
           >
-            Connect
+            Discord
           </div>
           <div class="cards__item__title tm-rf2 tm-bold tm-lh-title">
-            Join the community -->
+            Developer community -->
           </div>
-          <div
+          <!-- <div
             class="cards__item__description tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
           >
             Learn about Cosmos, get to know the community, connect with other
             Cosmonauts and more.
-          </div>
+          </div> -->
         </a>
         <a
-          href="https://discord.com/channels/669268347736686612/723170066937413693"
-          target="_blank"
+          href="https://cosmos.network/community"
           rel="noreferrer noopener"
           class="cards__item"
         >
-          <span class="cards__item__disclosure tm-rf2 tm-lh-solid"
-            >&#8599;</span
-          >
           <div
             class="cards__item__caption tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
           >
-            Chat
+            Telegram
           </div>
           <div class="cards__item__title tm-rf2 tm-bold tm-lh-title">
-            Discuss Stargate
+            Community chat -->
           </div>
-          <div
+          <!-- <div
             class="cards__item__description tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
           >
-            Join the <code>#stargate</code> channel in the Cosmos community
-            Discord and chat with developers.
-          </div>
+            Learn about Cosmos, get to know the community, connect with other
+            Cosmonauts and more.
+          </div> -->
         </a>
       </div>
     </div>
-    <a
-      href="https://github.com/iqlusioninc/governance/tree/zaki-stargate-upgrade-proposal/proposals/2020-11-stargate-upgrade"
-      target="_blank"
-      rel="noreferrer noopener"
-      class="wide-card bottom"
-    >
-      <div class="wide-card__left wide-card__content">
-        <div
-          class="cards__item__caption tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
-        >
-          Proposal &middot; Draft
-        </div>
-        <div class="cards__item__title tm-rf2 tm-bold tm-lh-title">
-          Stargate --> Cosmos Hub
-        </div>
-        <div
-          class="cards__item__description tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
-        >
-          Vote on the upcoming proposal to bring the Stargate upgrades to Cosmos
-          Hub.
-        </div>
-      </div>
-      <div class="wide-card__right">
-        <graphics-hub-planet class="section-graphics" />
-        <span class="cards__item__disclosure tm-rf2 tm-lh-solid">&#8599;</span>
-      </div>
-    </a>
   </div>
 </template>
 
@@ -191,23 +138,17 @@ export default {}
     display flex
     flex-direction column
     flex-wrap nowrap
-    justify-content flex-start
+    justify-content flex-end
+    padding-bottom var(--spacing-11)
     color var(--white)
-    background url("/top-half-graphics.svg"), linear-gradient(256.92deg, #120018 0%, #121435 100%)
+    background linear-gradient(256.92deg, #120018 0%, #121435 100%)
     background-position bottom center
     background-size contain
     background-repeat no-repeat
     border-radius $border-radius-5
     hover-raise(-3px)
-    &:first-child
-      background url("/bottom-half-graphics.svg"), linear-gradient(256.92deg, #121435 0%, #030419 100%)
-      justify-content flex-end
-      background-position top center
-      background-size contain
-      background-repeat no-repeat
-      padding-top var(--spacing-11)
-    &:last-child
-      padding-bottom var(--spacing-11)
+    // &:last-child
+    //   padding-bottom var(--spacing-11)
     &:hover
       .cards__item__disclosure
         color var(--white)
