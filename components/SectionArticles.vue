@@ -3,12 +3,10 @@
     <div class="section-container">
       <div class="container">
         <div class="section-title tm-rf7 tm-bold tm-lh-title tm-measure-narrow">
-          Learn more about
-          <span class="section-title__highlight">Stargate</span>
+          Frequently asked questions
         </div>
         <div class="section-subtitle tm-rf2 tm-lh-copy tm-measure">
-          Dive into the various resources to get up to speed with the Stargate
-          upgrades.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
         <div class="section-header tm-rf3 tm-bold tm-lh-title">Articles</div>
         <a
@@ -113,14 +111,6 @@ export default {
   .section-title
     color var(--white)
     grid-column 1 / span 9
-    &__highlight
-      background-color var(--white)
-      background-image linear-gradient(90deg, #99DAFF 0%, #CCD1FF 51.56%, #E644F8 100%)
-      background-size 100%
-      background-clip text
-      -webkit-text-fill-color transparent
-      -moz-text-fill-color transparent
-      padding-right 0.05em // Fix offset clipping
   .section-subtitle
     display flex
     justify-content flex-end
