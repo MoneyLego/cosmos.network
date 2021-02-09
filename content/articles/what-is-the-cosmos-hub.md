@@ -13,3 +13,33 @@ tags:
 ## What is the Cosmos Hub?
 
 The Cosmos Hub is the first blockchain in the Cosmos Network. The goal of the Cosmos Hub is to facilitate the connection between the multitude of blockchains that will eventually comprise the Cosmos Network. As it will connect to many blockchains, and strive to have high security, the Cosmos Hub will also be in prime position to become one of the biggest decentralized custodian for digitial assets.
+
+## This is a heading
+This is some more info
+<div class="bg-blue-500 text-white p-4 mb-4">
+  This is HTML inside markdown that has a class some classes
+</div>
+
+<info-box>
+  <template #info-box>
+    This is a vue component inside markdown using slots
+  </template>
+</info-box>
+
+```js[nuxt.config.js]
+export default {
+  nuxt: "is the best"
+}
+```
+```html[my-first-blog-post.md]
+<p>code styling is easy</p>
+```
+
+### This is a sub heading
+This is some more info
+
+### This is another sub heading
+This is some more info
+
+## This is another heading
+This is some more info

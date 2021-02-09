@@ -4,9 +4,7 @@
       <h1>{{ article.title }}</h1>
       <span v-for="(tag, id) in article.tags" :key="id">
         <NuxtLink :to="`/learn/tag/${tags[tag].slug}`">
-          <span
-            class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
-          >
+          <span>
             {{ tags[tag].name }}
           </span>
         </NuxtLink>
