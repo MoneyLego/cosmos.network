@@ -9,10 +9,10 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
         <div class="section-header tm-rf3 tm-bold tm-lh-title">Articles</div>
-        <a
+        <NuxtLink
           v-for="item in articles"
-          :key="item.name"
-          :href="item.url"
+          :key="item.title"
+          :to="{ name: 'blog-slug', params: { slug: item.slug } }"
           target="_blank"
           rel="noreferrer noopener"
           class="articles-item"
@@ -24,12 +24,12 @@
             {{ item.title }}
           </div>
           <div class="articles-item__description tm-rf0 tm-lh-copy tm-measure">
-            {{ item.description }}
+            {{ item.title }}
           </div>
           <div class="articles-item__date tm-rf-1 tm-lh-title">
-            {{ item.date }}
+            {{ item.title }}
           </div>
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -37,63 +37,18 @@
 
 <script>
 export default {
-  data() {
+  async asyncData({ $content, params }) {
+    const articles = await $content('articles', params.slug)
+      .only(['title', 'description', 'img', 'slug', 'author'])
+      .sortBy('createdAt', 'desc')
+      .fetch()
+    const tags = await $content('tags', params.slug)
+      .only(['name', 'description', 'img', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
     return {
-      articles: [
-        {
-          url:
-            'https://figment.network/resources/cosmos-stargate-upgrade-overview',
-          date: 'June 22',
-          title: 'Cosmos Stargate Upgrade Overview',
-          description:
-            'Introducing Stargate, the largest Cosmos upgrade yet. Stargate will enable higher transaction throughput, cross-chain transactions, accelerate UI development, and so much more.',
-        },
-        {
-          url:
-            'https://medium.com/tendermint/tendermint-0-34-protocol-buffers-and-you-8c40558939ae',
-          date: 'June 23',
-          title: 'Tendermint 0.34, Protocol Buffers, and You',
-          description:
-            'The upcoming Tendermint 0.34 release contains a major change to the way we serialize and encode data. Here’s what you need to know.',
-        },
-        {
-          url:
-            'https://medium.com/tendermint/everything-you-need-to-know-about-the-tendermint-light-client-f80d03856f98',
-          date: 'June 25',
-          title:
-            'Everything you need to know about the Tendermint Light Client',
-          description: 'What is it, why it’s needed and how it works.',
-        },
-        {
-          url: 'https://blog.cosmos.network/preparing-for-ibc-1-0-e6fe75f7b5ef',
-          date: 'July 16',
-          title: 'Preparing for IBC 1.0',
-          description:
-            'Details on the upcoming 1.0 release of the inter-blockchain communication protocol.',
-        },
-        {
-          url:
-            'https://blog.cosmos.network/how-seven-teams-collaborated-to-deliver-the-biggest-software-upgrade-in-the-cosmos-universe-2288f4f9afe8',
-          date: 'Oct 14',
-          title:
-            'How Seven Teams Collaborated To Deliver The Biggest Software Upgrade In The Cosmos Universe',
-        },
-        {
-          url:
-            'https://blog.cosmos.network/announcing-the-big-bang-stargate-testnet-a27a7b74a903',
-          date: 'Oct 16',
-          title: 'Announcing the ‘Big Bang’ Stargate Testnet',
-          description:
-            'The goal of Big Bang is to create a multichain test environment that tests, simulates, and benchmarks the post-Stargate Cosmos.',
-        },
-        {
-          url:
-            'https://blog.cosmos.network/five-reasons-why-cosmos-validators-want-to-participate-in-the-stargate-simulated-upgrade-f817ddef1678',
-          date: 'Nov 9',
-          title:
-            'Five Reasons Why Cosmos Validators Want to Participate in the Stargate Simulated Upgrade',
-        },
-      ],
+      articles,
+      tags,
     }
   },
 }
