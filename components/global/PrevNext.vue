@@ -1,16 +1,10 @@
 <template>
   <div class="section prev-next-container">
-    <NuxtLink
-      v-if="prev"
-      :to="{ name: 'learn-slug', params: { slug: prev.slug } }"
-    >
+    <NuxtLink v-if="prev" :to="`/learn/faq/${prev.slug}`">
       {{ prev.title }}
     </NuxtLink>
     <span v-else>&nbsp;</span>
-    <NuxtLink
-      v-if="next"
-      :to="{ name: 'learn-slug', params: { slug: next.slug } }"
-    >
+    <NuxtLink v-if="next" :to="`/learn/faq/${next.slug}`">
       {{ next.title }}
     </NuxtLink>
     <span v-else>&nbsp;</span>

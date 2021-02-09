@@ -5,7 +5,7 @@
       <!-- content from markdown -->
       <nuxt-content :document="article" />
       <!-- prevNext component -->
-      <PrevNext :prev="prev" :next="next" class="mt-8" />
+      <prev-next :prev="prev" :next="next" />
     </div>
     <section-form />
   </article>

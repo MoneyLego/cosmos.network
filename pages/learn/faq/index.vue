@@ -12,9 +12,7 @@
         <NuxtLink
           v-for="item in articles"
           :key="item.title"
-          :to="{ name: 'learn-slug', params: { slug: item.slug } }"
-          target="_blank"
-          rel="noreferrer noopener"
+          :to="`/learn/faq/${item.slug}`"
           class="articles-item"
         >
           <span class="articles-item__icon tm-rf2 tm-lh-solid">&#8599;</span>
