@@ -17,4 +17,8 @@ $ npm run start
 $ npm run generate
 ```
 
+## Querying content
+
+`http://localhost:3000/_content/articles`
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
