@@ -11,20 +11,20 @@
       <span class="sr-only">Cosmos – Stargate</span>
       <ul>
         <li>
-          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+          <NuxtLink to="/learn/faq" class="text tm-rf0 tm-medium tm-lh-title"
             >Learn</NuxtLink
           >
         </li>
-        <li>
-          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+        <!-- <li>
+          <NuxtLink to="/build" class="text tm-rf0 tm-medium tm-lh-title"
             >Build</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="/learn" class="text tm-rf0 tm-medium tm-lh-title"
+          <NuxtLink to="/explore" class="text tm-rf0 tm-medium tm-lh-title"
             >Explore</NuxtLink
           >
-        </li>
+        </li> -->
       </ul>
     </nav>
     <nav
