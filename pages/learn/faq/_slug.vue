@@ -2,6 +2,15 @@
   <article>
     <div class="section tm-section-container section-container">
       <h1>{{ article.title }}</h1>
+      <span v-for="(tag, id) in article.tags" :key="id">
+        <NuxtLink :to="`/learn/tag/${tags[tag].slug}`">
+          <span
+            class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+          >
+            {{ tags[tag].name }}
+          </span>
+        </NuxtLink>
+      </span>
       <!-- content from markdown -->
       <nuxt-content :document="article" />
       <!-- prevNext component -->
