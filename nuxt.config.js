@@ -12,7 +12,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Stargate | Cosmos Network',
+    title: 'Cosmos Hub',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,31 +20,31 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       // Open Graph
       { hid: 'og:site_name', property: 'og:site_name', content: 'Stargate' },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Stargate | Cosmos Network',
+        content: 'Cosmos Hub',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stargate.cosmos.network',
+        content: 'https://beta.cosmos.network',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stargate.cosmos.network/og-image.jpg',
+        content: 'https://beta.cosmos.network/og-image.jpg',
       },
       // Twitter Card
       {
@@ -56,23 +56,23 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Stargate | Cosmos Network',
+        content: 'Cosmos Hub',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://stargate.cosmos.network/og-image.jpg',
+        content: 'https://beta.cosmos.network/og-image.jpg',
       },
       {
         hid: 'twitter:image:alt',
         name: 'twitter:image:alt',
-        content: 'Stargate',
+        content: 'Cosmos Hub',
       },
     ],
     link: [
