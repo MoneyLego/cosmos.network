@@ -149,6 +149,8 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode'
   ],
   optimizedImages: {
     optimizeImages: true,
