@@ -1,15 +1,6 @@
 <template>
   <main>
     <section-hero />
-
-    <section-intro />
-    <section-features />
-
-    <section-community />
-    <section-roadmap />
-    <section-contributors />
-    <bug-bounty-banner />
-    <section-form />
   </main>
 </template>
 
@@ -26,7 +17,7 @@ export default {
 main
   overflow -webkit-paged-x
 
-@media screen and (max-width: 414px)
+@media $breakpoint-small-max
   main
     overflow-x hidden
 </style>
