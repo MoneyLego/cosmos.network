@@ -40,7 +40,7 @@
         hendrerit. Integer scelerisque urna malesuada pretium convallis.
       </p>
       <p class="tm-measure">
-        <code>.tm-measure-medium</code><br />
+        <code>.tm-measure</code><br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat
         tortor et pellentesque lobortis. Sed aliquam eros ex, vitae gravida
         dolor euismod non. Interdum et malesuada fames ac ante ipsum primis in

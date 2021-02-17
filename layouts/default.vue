@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="nav-container tm-wrapper">
+    <div class="nav-container">
       <section-primary-nav />
     </div>
     <main id="content">

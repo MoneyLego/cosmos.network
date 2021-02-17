@@ -1,211 +1,221 @@
 <template>
-  <div class="nav-inner">
-    <nav class="nav nav-primary tm-container" role="navigation">
-      <div class="nav-first">
-        <a
-          href="https://cosmos.network"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="logo"
-        >
-          <logo-cosmos-wordmark class="logo__cosmos" />
-        </a>
-        <span class="sr-only">Cosmos</span>
-        <NuxtLink
-          to="/"
-          class="logo logo-secondary tm-rf-1 tm-medium tm-lh-solid"
-        >
-          <logo-hub-brandmark class="logo__hub" />Hub
-        </NuxtLink>
-        <button
-          class="nav-mobile-toggle"
-          type="button"
-          aria-label="Menu"
-          aria-controls="navigation"
+  <div class="navs">
+    <nav class="nav nav-primary tm-wrapper" role="navigation">
+      <div class="nav-inner tm-container">
+        <div class="nav-first">
+          <a
+            href="https://cosmos.network"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="logo"
+          >
+            <logo-cosmos-wordmark class="logo__cosmos" />
+          </a>
+          <span class="sr-only">Cosmos</span>
+          <NuxtLink
+            to="/"
+            class="logo logo-secondary tm-rf-1 tm-medium tm-lh-solid"
+          >
+            <logo-hub-brandmark class="logo__hub" />Hub
+          </NuxtLink>
+          <button
+            class="nav-mobile-toggle"
+            type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+            :class="{ 'is-active': isActive }"
+            @click="isActive = !isActive"
+          >
+            <span class="nav-mobile-toggle__icon"></span>
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <div
+          v-if="isActive"
           :class="{ 'is-active': isActive }"
-          @click="isActive = !isActive"
+          class="nav-mobile-container"
         >
-          <span class="nav-mobile-toggle__icon"></span>
-          <span class="sr-only">Menu</span>
-        </button>
-      </div>
-      <div
-        v-if="isActive"
-        :class="{ 'is-active': isActive }"
-        class="nav-mobile-container"
-      >
-        <div class="nav-mobile-content tm-wrapper">
+          <div class="nav-mobile-content tm-wrapper">
+            <ul>
+              <li>
+                <a
+                  href="https://cosmos.network/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >What is Cosmos?</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cosmos.network/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >Build on Cosmos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cosmos.network/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cosmos.network/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >Ecosystem</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cosmos.network/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >Tools</a
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/"
+                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                  >Cosmos Hub</NuxtLink
+                >
+                <ul>
+                  <li>
+                    <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
+                      >Features</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/staking" class="tm-rf0 tm-lh-title tm-link"
+                      >Staking</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink
+                      to="/get-started"
+                      class="tm-rf0 tm-lh-title tm-link"
+                      >Get started</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
+                      >FAQ</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://hub.cosmos.network"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="tm-rf0 tm-lh-title tm-link"
+                      >Documentation<span class="tm-link-disclosure"
+                        >&#8599;</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-mobile-bottom tm-wrapper">
+            <tm-button glow background-color="var(--white)" color="var(--black)"
+              >Get started</tm-button
+            >
+          </div>
+        </div>
+        <div class="nav-second">
           <ul>
             <li>
               <a
                 href="https://cosmos.network/"
-                class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >What is Cosmos?</a
               >
             </li>
             <li>
               <a
                 href="https://cosmos.network/"
-                class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Build on Cosmos</a
               >
             </li>
             <li>
               <a
                 href="https://cosmos.network/"
-                class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Community</a
               >
             </li>
             <li>
               <a
                 href="https://cosmos.network/"
-                class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Ecosystem</a
               >
             </li>
             <li>
               <a
                 href="https://cosmos.network/"
-                class="text tm-rf1 tm-medium tm-lh-title tm-link"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Tools</a
               >
             </li>
             <li>
-              <NuxtLink to="/" class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              <NuxtLink
+                to="/"
+                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Cosmos Hub</NuxtLink
               >
-              <ul>
-                <li>
-                  <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
-                    >Features</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/staking" class="tm-rf0 tm-lh-title tm-link"
-                    >Staking</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/get-started" class="tm-rf0 tm-lh-title tm-link"
-                    >Get started</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
-                    >FAQ</NuxtLink
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://hub.cosmos.network"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="tm-rf0 tm-lh-title tm-link"
-                    >Documentation<span class="tm-link-disclosure"
-                      >&#8599;</span
-                    ></a
-                  >
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
-        <div class="nav-mobile-bottom tm-wrapper">
-          <tm-button glow background-color="var(--white)" color="var(--black)"
-            >Get started</tm-button
-          >
-        </div>
-      </div>
-      <div class="nav-second">
-        <ul>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >What is Cosmos?</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Build on Cosmos</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Community</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Ecosystem</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Tools</a
-            >
-          </li>
-          <li>
-            <NuxtLink to="/" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Cosmos Hub</NuxtLink
-            >
-          </li>
-        </ul>
       </div>
     </nav>
-    <nav class="nav nav-secondary tm-wrapper tm-container" role="navigation">
-      <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
-        <logo-hub-brandmark class="logo__hub" />Hub
-      </NuxtLink>
-      <div class="nav-right">
-        <ul>
-          <li>
-            <NuxtLink
-              to="/features"
-              class="tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Features</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/staking"
-              class="tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Staking</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/get-started"
-              class="tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Get started</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/learn/faq"
-              class="tm-rf-1 tm-medium tm-lh-title tm-link"
-              >FAQ</NuxtLink
-            >
-          </li>
-          <li>
-            <a
-              href="https://hub.cosmos.network"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="tm-rf-1 tm-medium tm-lh-title tm-link"
-              >Documentation<span class="tm-link-disclosure">&#8599;</span></a
-            >
-          </li>
-        </ul>
+    <nav class="nav nav-secondary tm-wrapper" role="navigation">
+      <div class="nav-inner tm-container">
+        <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
+          <logo-hub-brandmark class="logo__hub" />Hub
+        </NuxtLink>
+        <div class="nav-right">
+          <ul>
+            <li>
+              <NuxtLink
+                to="/features"
+                class="tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Features</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/staking"
+                class="tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Staking</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/get-started"
+                class="tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Get started</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/learn/faq"
+                class="tm-rf-1 tm-medium tm-lh-title tm-link"
+                >FAQ</NuxtLink
+              >
+            </li>
+            <li>
+              <a
+                href="https://hub.cosmos.network"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Documentation<span class="tm-link-disclosure">&#8599;</span></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </div>
@@ -230,12 +240,14 @@ export default {
 $navbar-height = 5rem
 $navbar-mobile-menu = 200
 
-.nav-inner
+.navs
   position relative
   z-index 2
 
 .nav
-  &,
+  &-inner
+    width 100%
+  &-inner,
   &-first
     display flex
     flex-direction row
@@ -396,7 +408,7 @@ $navbar-mobile-menu = 200
         border-top 1px solid var(--black)
     .dark-mode &-secondary
       .nav-right
-        border-top-color (--white)
+        border-top-color var(--white)
     &-mobile-toggle
       display none
 </style>
