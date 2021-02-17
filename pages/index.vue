@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <div>
     <section-hero />
     <section-intro />
     <section-banner />
-  </main>
+  </div>
 </template>
 
 <script>
@@ -15,11 +15,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-main
-  overflow -webkit-paged-x
-
-@media $breakpoint-small-max
-  main
-    overflow-x hidden
-</style>
+<style lang="stylus" scoped></style>

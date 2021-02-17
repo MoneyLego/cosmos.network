@@ -45,7 +45,7 @@
             xmlns="http://www.w3.org/2000/svg"
             fill-rule="evenodd"
             clip-rule="evenodd"
-            fill="#616489"
+            fill="currentColor"
           >
             <path :d="icon(link)" style="pointer-events: none"></path>
           </svg>
@@ -166,11 +166,10 @@ export default {
     text-align center
     &__item
       margin var(--spacing-4)
-      svg
-        transition fill .15s ease-out
-      &:hover svg,
-      &:focus svg
-        fill var(--white)
+      opacity 0.5
+      &:hover,
+      &:focus
+        opacity 1
   .smallprint
     margin var(--spacing-5) auto
 </style>

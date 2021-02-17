@@ -60,9 +60,9 @@ export default {
   cursor pointer
 
 .dark-mode .color
-  color rgba(255, 255, 255, 0.4)
+  color var(--white-500)
 .light-mode .color
-  color rgba(0, 0, 0, 0.4)
+  color var(--trans-gray-400)
 
 .flex
   display flex

@@ -193,13 +193,6 @@
             </li>
             <li>
               <NuxtLink
-                to="/get-started"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Get started</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
                 to="/learn/faq"
                 class="tm-rf-1 tm-medium tm-lh-title tm-link"
                 >FAQ</NuxtLink

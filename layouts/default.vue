@@ -3,12 +3,14 @@
     <div class="nav-container">
       <section-primary-nav />
     </div>
-    <main id="content">
+    <div id="content">
       <!-- all page content here - hidden when mobile nav open -->
-      <nuxt />
+      <main>
+        <nuxt />
+      </main>
       <section-form />
-    </main>
-    <tm-footer id="footer" />
+      <tm-footer />
+    </div>
   </div>
 </template>
 
@@ -37,9 +39,21 @@ export default {
 .page-leave-to
   opacity 0
 
+main
+  overflow -webkit-paged-x
+
+.nav-container
+  position absolute
+  top 0
+  left 0
+  right 0
+
+@media $breakpoint-small-max
+  main
+    overflow hidden
+
 @media $breakpoint-large-max
   .mobile-menu-open
     #content
-    #footer
       display none
 </style>
