@@ -105,13 +105,38 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Where do rewards come from?
-      </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        Staking rewards are generated and distributed to staked ATOM holders in
-        two ways:
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <!-- GRAPHICS -->
+        <div class="staking-3-text">
+          <div class="title tm-rf5 tm-bold tm-lh-title">
+            Where do rewards come from?
+          </div>
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            Staking rewards are generated and distributed to staked ATOM holders
+            in two ways:
+          </div>
+        </div>
+        <div class="subheading-item">
+          <div class="title tm-rf2 tm-bold tm-lh-title">Transaction fees</div>
+          <div class="subtitle tm-rf0 tm-lh-copy">
+            Transaction fees collected on the Cosmos Hub are distributed to
+            staked ATOM holders.
+          </div>
+        </div>
+        <div class="subheading-item">
+          <div class="title tm-rf2 tm-bold tm-lh-title">
+            Newly created ATOMs
+          </div>
+          <p class="subtitle tm-rf0 tm-lh-copy">
+            The total supply of ATOMs is inflated to reward stakers. ATOM
+            holders that do not stake do not receive rewards, meaning their
+            ATOMs get diluted over time.
+          </p>
+          <p class="subtitle tm-rf0 tm-lh-copy">
+            The yearly inflation rate of ATOMs is available on most explorers.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -193,6 +218,17 @@ export default {}
   grid-column 1/span 4
   margin-top var(--spacing-6)
 
+// STAKING 3
+.staking-3-text
+  grid-column span 12
+
+.staking-3-text .subtitle
+  margin-top var(--spacing-7)
+
+.subheading-item
+  grid-column span 12
+  margin-top var(--spacing-9)
+
 @media $breakpoint-medium
   // STAKING 1
   .cards-wrapper
@@ -223,7 +259,18 @@ export default {}
   .pie-item + .pie-item
     margin-top 0
 
+  // STAKING 3
+  .staking-3-text
+    grid-column 7/span 12
+
+  .subheading-item
+    grid-column 8/span 11
+
 @media $breakpoint-large
+  // STAKING 1
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
+
+  // STAKING 2
+  // STAKING 3
 </style>
