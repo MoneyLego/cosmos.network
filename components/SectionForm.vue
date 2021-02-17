@@ -28,7 +28,7 @@
               class="bottom__get-notified tm-rf1 tm-bold tm-lh-copy"
               for="field-email"
             >
-              Get Cosmos Hub updates
+              Get Cosmos updates
             </label>
             <form
               :action="url"
@@ -56,6 +56,10 @@
                 </button>
               </div>
             </form>
+            <p class="bottom__footnote tm-measure tm-rf-1 tm-lh-copy">
+              Unsubscribe at any time.
+              <a href="https://cosmos.network/privacy">Privacy policy</a>
+            </p>
           </div>
         </transition>
       </div>
@@ -129,14 +133,21 @@ export default {
   opacity 0
   transform scale(.96)
 
+.dark-mode
+  p
+    color var(--white-500)
+
+.light-mode
+  p
+    color var(--gray-400)
+
 .bottom
   .container
     display flex
     justify-content center
   &__get-notified
     display block
-    margin-bottom var(--spacing-7)
-    color var(--gray-800)
+    margin-bottom var(--spacing-5)
     text-align center
   &__state
     margin var(--spacing-7) auto
@@ -174,24 +185,32 @@ export default {
         height 2rem
         fill var(--gray-600)
         transition fill .15s ease-out, transform .15s ease-out
+      .dark-mode &__input
+        background var(--white-100)
+        color var(--white)
+      .light-mode &__input
+        background var(--gray-0)
+        color var(--black)
       &__input
         outline none
         width 100%
-        background #121435
         border none
         border-radius $border-radius-3
         padding var(--spacing-5) 4rem var(--spacing-5) var(--spacing-6)
-        color var(--white)
         transition color 0.15s ease-out, background 0.15s ease-out
         &::placeholder
           color var(--gray-600)
           transition color 0.15s ease-out
         &:hover
-          background #282B53
+          background var(--gray-0)
           &:not(:focus)::placeholder
             color var(--gray-800)
         &:focus
-          background #282B53
+          background var(--gray-0)
+  &__footnote
+    text-align center
+    margin-top var(--spacing-5)
+    center()
 
 @media screen and (max-width: 576px)
   .bottom

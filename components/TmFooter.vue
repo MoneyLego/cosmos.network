@@ -51,10 +51,10 @@
           </svg>
         </a>
       </nav>
-      <div class="smallprint tm-rf-1 tm-lh-copy">
+      <p class="smallprint tm-rf-1 tm-lh-copy">
         This website is maintained by Tendermint Inc. The contents and opinions
         of this website are those of Tendermint Inc.
-      </div>
+      </p>
       <nav
         ref="links"
         class="nav nav-bottom tm-rf-1 tm-lh-copy"
@@ -134,6 +134,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.dark-mode
+  p
+    color var(--white-500)
+
+.light-mode
+  p
+    color var(--gray-400)
+
 .footer
   text-align center
   padding 0 0 var(--spacing-8)

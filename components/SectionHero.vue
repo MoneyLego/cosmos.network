@@ -1,6 +1,6 @@
 <template>
-  <div class="section-hero">
-    <h1>Hero</h1>
+  <div class="section-hero tm-section-container">
+    <div class="tm-rf7 tm-bold tm-lh-title">The heart of the Interchain.</div>
   </div>
 </template>
 

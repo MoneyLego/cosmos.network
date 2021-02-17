@@ -204,7 +204,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
 $navbar-height = 5rem
 $navbar-mobile-menu = 200
 
@@ -240,7 +239,6 @@ $navbar-mobile-menu = 200
     position relative
     display block
     padding var(--spacing-7) var(--spacing-5)
-    color var(--white)
     border-radius $border-radius-2
     // /* exact link will show the primary color for only the exact matching link */
     &.nuxt-link-exact-active
@@ -318,8 +316,10 @@ $navbar-mobile-menu = 200
     .tm-button
       width 100%
       max-width 20rem
-  &-primary
-    border-bottom 1px solid var(--white-100)
+  .dark-mode &-primary
+    border-bottom 1px solid var(--white-200)
+  .light-mode &-primary
+    border-bottom 1px solid var(--trans-gray-900)
   &-first
     z-index $navbar-mobile-menu + 1
     gap var(--spacing-7)
@@ -357,7 +357,12 @@ $navbar-mobile-menu = 200
       display block
     &-secondary
       display flex
+    .dark-mode &-secondary
       .nav-right
-        border-top 1px solid var(--white)
         margin-top -1px
+        border-top 1px solid var(--white)
+    .light-mode &-secondary
+      .nav-right
+        margin-top -1px
+        border-top 1px solid var(--black)
 </style>

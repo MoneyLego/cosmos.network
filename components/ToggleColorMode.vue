@@ -58,6 +58,11 @@ export default {
   text-transform capitalize
   margin-right var(--spacing-1)
 
+.dark-mode .color
+  color rgba(255, 255, 255, 0.4)
+.light-mode .color
+  color rgba(0, 0, 0, 0.4)
+
 .flex
   display flex
   flex-direction row

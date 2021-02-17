@@ -6,6 +6,7 @@
     <main id="content">
       <!-- all page content here - hidden when mobile nav open -->
       <nuxt />
+      <section-form />
     </main>
     <tm-footer id="footer" />
   </div>
