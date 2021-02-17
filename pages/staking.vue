@@ -55,12 +55,53 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">Staking rewards</div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        When the staking transaction is complete, rewards will start to be
-        generated immediately. At any time, stakers can send a transaction to
-        claim their accumulated rewards, using a wallet.
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="top-left">
+          <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
+            typical apy
+          </div>
+          <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
+          <div class="footnote tm-rf1 tm-lh-title">
+            of staked ATOMs (annually)*
+          </div>
+        </div>
+        <div class="top-right">
+          <div class="title tm-rf5 tm-bold tm-lh-title">Staking rewards</div>
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            When the staking transaction is complete, rewards will start to be
+            generated immediately. At any time, stakers can send a transaction
+            to claim their accumulated rewards, using a wallet.
+          </div>
+        </div>
+        <div class="pie-container">
+          <div class="pie-wrapper">
+            <div class="pie-item">
+              <div class="heading">if you stake</div>
+              <div class="amount">1,000</div>
+              <div class="unit">atoms</div>
+            </div>
+            <div class="pie-item">
+              <!-- GRAPHICS -->
+              graphics
+            </div>
+            <div class="pie-item">
+              <div class="top">
+                <div>873</div>
+                <div>your rewards</div>
+              </div>
+              <div class="btm">
+                <div>97</div>
+                <div>commission</div>
+                <div>(Varies between validators)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footnote">
+          * baseline inflation rate fluctuates based on the total amount of
+          staked ATOMs in the network
+        </div>
       </div>
     </div>
 
@@ -122,9 +163,65 @@ export default {}
   grid-column span 12
   margin-top var(--spacing-11)
 
+// STAKING 2
+.top-left
+  grid-column span 12
+
+.top-right
+  grid-column span 12
+  margin-top var(--spacing-9)
+
+.pie-container
+  margin-top var(--spacing-9)
+  grid-column span 12
+
+.pie-wrapper
+  padding var(--spacing-10)
+  display flex
+  flex-direction column
+  border-radius $border-radius-5
+  box-shadow var(--elevation-4)
+  color var(--black)
+  background var(--white)
+  align-items center
+  text-align center
+
+.pie-item + .pie-item
+  margin-top var(--spacing-9)
+
+.footnote
+  grid-column 1/span 4
+  margin-top var(--spacing-6)
+
 @media $breakpoint-medium
+  // STAKING 1
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
+
+  // STAKING 2
+  .top-left
+    grid-column 2/span 4
+    grid-row 1
+    margin-top var(--spacing-11)
+
+  .top-right
+    grid-column 6/span 11
+    grid-row 1
+    margin-top var(--spacing-7)
+
+  .top-right .subtitle
+    margin-top var(--spacing-7)
+    margin-left var(--spacing-10)
+
+  .pie-container
+    grid-column span 16
+
+  .pie-wrapper
+    flex-direction row
+    justify-content space-between
+
+  .pie-item + .pie-item
+    margin-top 0
 
 @media $breakpoint-large
   .cards-wrapper
