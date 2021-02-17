@@ -2,7 +2,7 @@
   <div class="section-hero tm-section">
     <div class="tm-wrapper">
       <div class="tm-container tm-section">
-        <div class="title tm-rf5 tm-rf7-m-up tm-bold tm-lh-title">
+        <div class="title tm-rf7 tm-bold tm-lh-title">
           The heart of the Interchain.
         </div>
         <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
@@ -24,6 +24,7 @@ export default {}
 
 .section-hero
   padding-top 5rem // approx navbar max height
+  background linear-gradient(159deg, #111111 44%, #000000 67%)
 
   .tm-section
     padding-bottom 0
@@ -31,26 +32,22 @@ export default {}
 .tm-container
   width 100%
   text-align center
+  z-index 1
 
 .graphics
-  z-index -1
+  z-index 0
 
 .title
   center()
+  max-width 5em
 
 .subtitle
   center()
   margin-top var(--spacing-6)
 
 @media $breakpoint-small
-  .section-hero
-    &__top
-      &:after
-        content ""
   .title
     max-width 6.5em
-  .subtitle
-    margin-top 0
 
 @media $breakpoint-large
   .section-hero

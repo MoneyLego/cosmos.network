@@ -172,10 +172,12 @@
     </nav>
     <nav class="nav nav-secondary tm-wrapper" role="navigation">
       <div class="nav-inner tm-container">
-        <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
-          <logo-hub-brandmark class="logo__hub" />Hub
-        </NuxtLink>
-        <div class="nav-right">
+        <div class="nav-first">
+          <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
+            <logo-hub-brandmark class="logo__hub" />Hub
+          </NuxtLink>
+        </div>
+        <div class="nav-second">
           <ul>
             <li>
               <NuxtLink
@@ -356,7 +358,7 @@ $navbar-mobile-menu = 200
       width 100%
       max-width 20rem
   .dark-mode &-primary
-    border-bottom 1px solid var(--white-200)
+    border-bottom 1px solid var(--white-100)
   .light-mode &-primary
     border-bottom 1px solid var(--trans-gray-900)
   &-first
@@ -387,6 +389,7 @@ $navbar-mobile-menu = 200
   .nav
     ul
       margin-right calc(-1 * var(--spacing-5))
+      margin-left calc(-1 * var(--spacing-5))
     li
       display inline-block
     &-primary
@@ -396,11 +399,11 @@ $navbar-mobile-menu = 200
       display block
     &-secondary
       display flex
-      .nav-right
+      .nav-second
         margin-top -1px
         border-top 1px solid var(--black)
     .dark-mode &-secondary
-      .nav-right
+      .nav-second
         border-top-color var(--white)
     &-mobile-toggle
       display none
