@@ -20,7 +20,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Welcome to the Cosmos Hub, the economic centerof Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       // Open Graph
       { hid: 'og:site_name', property: 'og:site_name', content: 'Stargate' },
@@ -33,7 +33,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Welcome to the Cosmos Hub, the economic centerof Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -62,7 +62,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Welcome to the Cosmos Hub, the economic centerof Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       {
         hid: 'twitter:image',
@@ -183,14 +183,14 @@ export default {
     // https://stackoverflow.com/questions/54173375/potentially-fixable-with-the-fix-option
     extend(config, ctx) {
       config.module.rules.push({
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.(js|vue)$/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /(node_modules)/,
         options: {
-          fix: true
-        }
+          fix: true,
+        },
       })
-    }
+    },
   },
 }
