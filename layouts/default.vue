@@ -3,8 +3,11 @@
     <div class="nav-container">
       <section-primary-nav />
     </div>
-    <nuxt />
-    <tm-footer />
+    <main id="content">
+      <!-- all page content here - hidden when mobile nav open -->
+      <nuxt />
+    </main>
+    <tm-footer id="footer" />
   </div>
 </template>
 
@@ -51,7 +54,9 @@ export default {
   padding-top var(--spacing-10)
   padding-bottom var(--spacing-10)
 
-@media $breakpoint-medium-max
-  .section-container
-    padding-top var(--spacing-6)
+@media $breakpoint-large-max
+  .mobile-menu-open
+    #content
+    #footer
+      display none
 </style>

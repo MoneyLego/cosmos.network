@@ -24,6 +24,10 @@ body
   overflow-x hidden
   margin 0
 
+@media $breakpoint-large-max
+  body.mobile-nav-open
+    overflow hidden
+
 *,
 *::before,
 *::after
@@ -37,3 +41,6 @@ body
 a
   color var(--link)
   text-decoration none
+
+button
+  appearance none
