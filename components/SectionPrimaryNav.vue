@@ -88,6 +88,11 @@
                   >
                 </li>
                 <li>
+                  <NuxtLink to="/get-started" class="tm-rf0 tm-lh-title tm-link"
+                    >Get started</NuxtLink
+                  >
+                </li>
+                <li>
                   <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
                     >FAQ</NuxtLink
                   >
@@ -176,6 +181,13 @@
               to="/staking"
               class="tm-rf-1 tm-medium tm-lh-title tm-link"
               >Staking</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/get-started"
+              class="tm-rf-1 tm-medium tm-lh-title tm-link"
+              >Get started</NuxtLink
             >
           </li>
           <li>
