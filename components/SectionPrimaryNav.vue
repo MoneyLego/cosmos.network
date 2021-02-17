@@ -1,6 +1,6 @@
 <template>
   <div class="nav-inner">
-    <nav class="nav nav-primary tm-wrapper tm-container" role="navigation">
+    <nav class="nav nav-primary tm-container" role="navigation">
       <div class="nav-first">
         <a
           href="https://cosmos.network"
@@ -18,16 +18,15 @@
           <logo-hub-brandmark class="logo__hub" />Hub
         </NuxtLink>
         <button
-          class="hamburger hamburger--slider"
+          class="nav-mobile-toggle"
           type="button"
           aria-label="Menu"
           aria-controls="navigation"
           :class="{ 'is-active': isActive }"
           @click="isActive = !isActive"
         >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
+          <span class="nav-mobile-toggle__icon"></span>
+          <span class="sr-only">Menu</span>
         </button>
       </div>
       <div
@@ -277,9 +276,17 @@ $navbar-mobile-menu = 200
         left 50%
   &-mobile-toggle
     margin-right calc(-1 * var(--spacing-5))
-    &.tm-button
-      padding-left var(--spacing-5)
-      padding-right var(--spacing-5)
+    // copying .tm-button styles because we're not using the component for some reason
+    padding var(--spacing-5)
+    text-rendering inherit
+    font-family inherit
+    background none
+    border none
+    outline 0
+    cursor pointer
+    user-select none
+    text-decoration none
+    color inherit
     &__icon
       display flex
       flex-direction column
@@ -354,86 +361,6 @@ $navbar-mobile-menu = 200
   &-secondary
     display none
 
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger
-  padding 15px 15px
-  display inline-block
-  cursor pointer
-  transition-property opacity, filter
-  transition-duration 0.15s
-  transition-timing-function linear
-  font inherit
-  color inherit
-  text-transform none
-  background-color transparent
-  border 0
-  margin 0
-  overflow visible
-  &:hover
-    opacity 0.7
-  &.is-active
-    &:hover
-        opacity 0.7
-
-.hamburger.is-active .hamburger-inner,
-  .hamburger.is-active .hamburger-inner::before,
-  .hamburger.is-active .hamburger-inner::after
-    background-color currentColor
-
-.hamburger-box
-  width 40px
-  height 24px
-  display inline-block
-  position relative
-
-.hamburger-inner
-  display block
-  top 50%
-  margin-top -2px
-  &::before
-    top -10px
-  &::after
-    bottom -10px
-
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
-  width 40px
-  height 4px
-  background-color currentColor
-  border-radius 4px
-  position absolute
-  transition-property transform
-  transition-duration 0.15s
-  transition-timing-function ease
-
-.hamburger-inner::before, .hamburger-inner::after
-  content ""
-  display block
-
-.hamburger--slider
-  .hamburger-inner
-    top 2px
-    &::before
-      top 10px
-      transition-property transform, opacity
-      transition-timing-function ease
-      transition-duration 0.15s
-    &::after
-      top 20px
-  &.is-active
-    .hamburger-inner
-      transform translate3d(0, 10px, 0) rotate(45deg)
-      &::before
-        transform rotate(-45deg) translate3d(-5.71429px, -6px, 0)
-        opacity 0
-      &::after
-        transform translate3d(0, -20px, 0) rotate(-90deg)
-
 @media $breakpoint-large-max
   .nav
     &-mobile-container.is-active
@@ -452,8 +379,6 @@ $navbar-mobile-menu = 200
         transform-origin bottom
 
 @media $breakpoint-large
-  .hamburger
-    display none
   .nav
     ul
       margin-right calc(-1 * var(--spacing-5))
@@ -466,12 +391,12 @@ $navbar-mobile-menu = 200
       display block
     &-secondary
       display flex
-    .dark-mode &-secondary
-      .nav-right
-        margin-top -1px
-        border-top 1px solid var(--white)
-    .light-mode &-secondary
       .nav-right
         margin-top -1px
         border-top 1px solid var(--black)
+    .dark-mode &-secondary
+      .nav-right
+        border-top-color (--white)
+    &-mobile-toggle
+      display none
 </style>
