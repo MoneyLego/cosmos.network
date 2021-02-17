@@ -139,6 +139,13 @@ export default {
       default: '#000',
     },
     /**
+     * CSS color of background
+     */
+    backgroundColor: {
+      type: String,
+      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+    },
+    /**
      * CSS color of border
      */
     borderColor: {
