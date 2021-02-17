@@ -186,8 +186,7 @@ export default {}
 
 // STAKING 1
 .staking-1-text
-  grid-row 1
-  grid-column 2/span 7
+  grid-column span 12
 
 .cards-wrapper
   grid-row 2
@@ -254,6 +253,10 @@ export default {}
     grid-column 7/span 12
 
   // STAKING 1
+  .staking-1-text
+    grid-row 1
+    grid-column 2/span 7
+
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
 
