@@ -57,6 +57,7 @@ export default {
 .color
   text-transform capitalize
   margin-right var(--spacing-1)
+  cursor pointer
 
 .dark-mode .color
   color rgba(255, 255, 255, 0.4)

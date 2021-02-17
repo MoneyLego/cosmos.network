@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <bug-bounty-banner />
+    <!-- <bug-bounty-banner /> -->
     <section-community />
     <section-form />
   </main>

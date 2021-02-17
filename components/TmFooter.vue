@@ -26,7 +26,7 @@
           </li>
           <li>&mdash;&mdash;&mdash;</li>
           <li>
-            <toggle-color-mode />
+            <toggle-dark-mode />
           </li>
         </ul>
       </nav>

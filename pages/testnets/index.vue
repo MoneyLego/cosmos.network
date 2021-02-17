@@ -56,8 +56,8 @@
     </div>
 
     <section-testnets />
-    <bug-bounty-banner />
-    <section-form />
+    <!-- <bug-bounty-banner /> -->
+    <!-- <section-form /> -->
   </main>
 </template>
 

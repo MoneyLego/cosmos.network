@@ -1,6 +1,8 @@
 <template>
   <main>
     <section-hero />
+    <section-intro />
+    <section-banner />
   </main>
 </template>
 
