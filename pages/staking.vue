@@ -140,24 +140,30 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Services generate fees. Fees generate rewards.
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="staking-4-text">
+          <div class="title tm-rf5 tm-bold tm-lh-title">Staking risks</div>
+          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
+            Staking ATOMs is not risk-free. When ATOM holders stake, they need
+            to choose one or more validators to delegate to. However, if a
+            validator performs badly (according to the protocol), up to 5% of
+            ATOMs delegated to them can be forfeited.
+          </div>
+          <tm-button
+            to-link="internal"
+            to="/staking"
+            size="l"
+            color="var(--black)"
+            background-color="transparent"
+            variant="text"
+            class="btn"
+            >More about staking risks
+            <span class="icon__right">--></span></tm-button
+          >
+        </div>
+        <!-- GRAPHICS -->
       </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        The more activity on the Hub, the more fees paid by services, which in
-        turn, generates rewards for staked ATOM holders.
-      </div>
-      <tm-button
-        to-link="internal"
-        to="/staking"
-        size="l"
-        color="var(--black)"
-        background-color="transparent"
-        variant="text"
-        class="btn"
-        >What is staking <span class="icon__right">--></span></tm-button
-      >
     </div>
 
     <section-banner />
@@ -229,6 +235,16 @@ export default {}
   grid-column span 12
   margin-top var(--spacing-9)
 
+// STAKING 4
+.staking-4-text
+  grid-column span 12
+
+.staking-4-text .subtitle
+  margin-top var(--spacing-7)
+
+.staking-4-text .btn
+  margin-top var(--spacing-7)
+
 @media $breakpoint-medium
   // STAKING 1
   .cards-wrapper
@@ -266,6 +282,13 @@ export default {}
   .subheading-item
     grid-column 8/span 11
 
+  .subheading-item .subtitle
+    margin-top var(--spacing-3)
+
+  // STAKING 4
+  .staking-4-text
+    grid-column 2/span 8
+
 @media $breakpoint-large
   // STAKING 1
   .cards-wrapper
@@ -273,4 +296,5 @@ export default {}
 
   // STAKING 2
   // STAKING 3
+  // STAKING 4
 </style>
