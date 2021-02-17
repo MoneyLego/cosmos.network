@@ -8,43 +8,19 @@
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
-      <Carousel :arrows="true" :dots="true">
-        <div class="text">
-          <div class="text__title">Security provider</div>
-          <div class="text__subtitle">
-            With the upcoming Cross-chain Staking feature, the ATOM token will
-            soon be securing many chains, in exchange for additional staking
-            rewards.
+      <Carousel :arrows="true" :dots="true" class="slider">
+        <div v-for="item in benefits" :key="item.title" class="text">
+          <div class="text__title tm-rf1 tm-bold tm-lh-title">
+            {{ item.title }}
           </div>
-        </div>
-        <div class="text">
-          <div class="text__title">Router</div>
-          <div class="text__subtitle">
-            A core mission of the Hub – to connect chains by establishing IBC
-            connections with compatible chains and operating decentralized
-            bridges with chains like Ethereum and Bitcoin.
-          </div>
-        </div>
-        <div class="text">
-          <div class="text__title">Custodian</div>
-          <div class="text__subtitle">
-            Located at the crossroads of the Interchain, the Hub is extremely
-            secure, the best place to hold digital assets and manage accounts
-            across many chains.
-          </div>
-        </div>
-        <div class="text">
-          <div class="text__title">Marketplace</div>
-          <div class="text__subtitle">
-            Set to operate a next-gen decentralized exchange, swapping digital
-            assets from across the Interchain, with very low fees and instant
-            transaction confirmation.
+          <div class="text__subtitle tm-rf0 tm-lh-copy">
+            {{ item.subtitle }}
           </div>
         </div>
       </Carousel>
     </div>
 
-    <div class="tm-section tm-container">
+    <div class="tm-section tm-container center">
       <div class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOMs.</div>
       <div class="subtitle tm-rf1 tm-lh-copy">
         In return for securing the Hub services, transaction feed and staking
@@ -139,15 +115,54 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   components: { Carousel },
+  data() {
+    return {
+      benefits: [
+        {
+          title: 'Marketplace',
+          subtitle:
+            'Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.',
+        },
+        {
+          title: 'Security provider',
+          subtitle:
+            'With the upcoming Cross-chain Staking feature, the ATOM token will soon be securing many chains, in exchange for additional staking rewards.',
+        },
+        {
+          title: 'Router',
+          subtitle:
+            'A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.',
+        },
+        {
+          title: 'Custodian',
+          subtitle:
+            'Located at the crossroads of the Interchain, the Hub is extremely secure, the best place to hold digital assets and manage accounts across many chains.',
+        },
+      ],
+    }
+  },
 }
 </script>
 
 <style lang="stylus" scoped>
+.subtitle,
+.btn
+  margin-top var(--spacing-6)
+
 .row
   display flex
   flex-direction column
+  margin-top var(--spacing-8)
+
+.slider
+  margin-top var(--spacing-10)
 
 @media $breakpoint-small
   .row
     display block
+
+@media $breakpoint-medium
+  .center
+    text-align center
+    max-width 29.0625rem
 </style>
