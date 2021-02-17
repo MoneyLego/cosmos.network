@@ -1,14 +1,17 @@
 <template>
   <main>
-    <div class="section-staking tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
-        <div class="staking-0-text tm-measure-wide">
-          <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
-          <div class="subtitle tm-rf1 tm-lh-copy">
-            Help secure the Cosmos Hub and earn rewards
+    <div class="section-staking tm-section">
+      <div class="tm-wrapper">
+        <div class="tm-section tm-container tm-grid-base">
+          <div class="staking-0-text tm-measure-wide">
+            <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
+            <div class="subtitle tm-rf1 tm-lh-copy">
+              Help secure the Cosmos Hub and earn rewards
+            </div>
           </div>
         </div>
       </div>
+      <!-- GRAPHICS -->
     </div>
 
     <!-- OTHER SECTION CONTENT GOES HERE -->
@@ -180,6 +183,7 @@ export default {}
 // STAKING 0
 .section-staking
   text-align left
+  padding-top 5rem // approx navbar max height
 
 .staking-0-text
   grid-column span 12
@@ -300,6 +304,10 @@ export default {}
     grid-column 2/span 8
 
 @media $breakpoint-large
+  // STAKING 0
+  .section-staking
+    padding-top 10rem // navbar max height
+
   // STAKING 1
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)

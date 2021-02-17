@@ -1,17 +1,19 @@
 <template>
   <main>
-    <div class="section-start tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
-        <div class="start-0-text tm-measure-wide">
-          <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
-            get started
-          </div>
-          <div class="title tm-rf6 tm-bold tm-lh-title">
-            Stake ATOMs in four steps
+    <div class="section-start tm-section">
+      <div class="tm-wrapper">
+        <div class="tm-container tm-section tm-grid-base">
+          <div class="start-0-text tm-measure-wide">
+            <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
+              get started
+            </div>
+            <div class="title tm-rf6 tm-bold tm-lh-title">
+              Stake ATOMs in four steps
+            </div>
           </div>
         </div>
-        <!-- GRAPHICS -->
       </div>
+      <!-- GRAPHICS -->
     </div>
 
     <!-- OTHER SECTION CONTENT GOES HERE -->
@@ -169,6 +171,7 @@ export default {}
 <style lang="stylus" scoped>
 // GET STARTED 0
 .section-start
+  padding-top 5rem // approx navbar max height
   text-align left
 
 .start-0-text
@@ -220,6 +223,9 @@ export default {}
 
 @media $breakpoint-large
   // GET STARTED 0
+  .section-start
+    padding-top 10rem // navbar max height
+
   // GET STARTED 1
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
