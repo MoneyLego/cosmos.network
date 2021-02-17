@@ -24,6 +24,10 @@
               >Documentation<span class="tm-link-disclosure">&#8599;</span></a
             >
           </li>
+          <li>&mdash;&mdash;&mdash;</li>
+          <li>
+            <toggle-color-mode />
+          </li>
         </ul>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
@@ -139,8 +143,8 @@ export default {
     li
       list-style-type none
       display inline-block
-    a
       padding var(--spacing-4) var(--spacing-5)
+    a
       border-radius $border-radius-2
       display inline-block
   .social-icons

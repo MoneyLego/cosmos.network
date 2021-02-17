@@ -15,6 +15,15 @@ html
   background-color var(--black)
   color var(--white)
 
+// TODO: color mode tweaking
+.light-mode body
+  background-color var(--white)
+  color var(--black)
+
+.dark-mode body
+  background-color var(--black)
+  color var(--white)
+
 @supports (font-variation-settings: normal)
   html
     font-family $font-family-sans-serif-var
