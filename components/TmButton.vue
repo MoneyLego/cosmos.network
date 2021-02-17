@@ -399,7 +399,7 @@ export default {
       transform translateX(-0.25rem)
 
 .tm-button + .tm-button
-  margin-left 0
+  margin-top var(--spacing-6)
 
 @media $breakpoint-small
   .tm-button + .tm-button
