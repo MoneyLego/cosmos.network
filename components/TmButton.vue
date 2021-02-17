@@ -15,6 +15,8 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
+      '--dark-background-color': darkBackgroundColor,
+      '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
     }"
@@ -41,6 +43,8 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
+      '--dark-background-color': darkBackgroundColor,
+      '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
     }"
@@ -64,6 +68,8 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
+      '--dark-background-color': darkBackgroundColor,
+      '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
     }"
@@ -89,6 +95,8 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
+      '--dark-background-color': darkBackgroundColor,
+      '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
     }"
@@ -117,11 +125,18 @@ export default {
       default: 'contained',
     },
     /**
-     * CSS color of background
+     * CSS color of dark mode background
      */
-    backgroundColor: {
+    darkBackgroundColor: {
       type: String,
-      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+      default: '#FFFFF',
+    },
+    /**
+     * CSS color of light mode background
+     */
+    lightBackgroundColor: {
+      type: String,
+      default: '#000',
     },
     /**
      * CSS color of border
@@ -273,6 +288,10 @@ export default {
         opacity 0.5
 
   /* text variant */
+  .dark-mode &__variant__text
+    color var(--white)
+  .light-mode &__variant__text
+    color var(--black)
   &__variant__text
     &:hover,
     &:focus
@@ -300,6 +319,13 @@ export default {
       &::after
         opacity 1
 
+  /* dark/light mode */
+  .dark-mode &__variant__contained
+    background var(--dark-background-color)
+    color var(--white)
+  .light-mode &__variant__contained
+    background var(--light-background-color)
+    color var(--white)
   /* contained variant */
   &__variant__contained
     background var(--background-color)

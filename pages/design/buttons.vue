@@ -1,5 +1,6 @@
 <template>
   <main>
+    <!-- NOTE: most of these btn examples were created before the dark mode -->
     <div class="dark">
       <div class="tm-wrapper">
         <h2 class="tm-rf3 lh-title tm-bold">
@@ -196,14 +197,40 @@
         </div>
       </div>
     </div>
+    <div class="dark">
+      <div class="tm-wrapper">
+        <h2 class="tm-rf3 tm-lh-title tm-bold">
+          {{ capitalize($colorMode.preference) }}
+          mode
+        </h2>
+        <div class="row">
+          <tm-button
+            to-link="external"
+            href="https://github.com/cosmos/stargate"
+            size="l"
+            color="var(--white)"
+            dark-background-color="var(--white-200)"
+            light-background-color="var(--black)"
+            >Text color</tm-button
+          >
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
 <script>
 import TmButton from '~/components/TmButton.vue'
+
 export default {
   components: {
     TmButton,
+  },
+  methods: {
+    capitalize(s) {
+      if (typeof s !== 'string') return ''
+      return s.charAt(0).toUpperCase() + s.slice(1)
+    },
   },
   head() {
     return {

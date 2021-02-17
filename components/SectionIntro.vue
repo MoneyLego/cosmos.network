@@ -50,25 +50,28 @@
         In return for securing the Hub services, transaction feed and staking
         rewards are distributed for ATOM stakers.
       </div>
-      <tm-button
-        to-link="internal"
-        to="/staking"
-        size="l"
-        color="var(--white)"
-        background-color="var(--black)"
-        class="btn"
-        >Start staking</tm-button
-      >
-      <tm-button
-        to-link="internal"
-        to="/staking"
-        size="l"
-        color="var(--black)"
-        background-color="transparent"
-        variant="text"
-        class="btn"
-        >What is staking <span class="icon__right">--></span></tm-button
-      >
+      <div class="row">
+        <tm-button
+          to-link="internal"
+          to="/staking"
+          size="l"
+          color="var(--white)"
+          dark-background-color="var(--white-200)"
+          light-background-color="var(--black)"
+          class="btn"
+          >Start staking</tm-button
+        >
+        <tm-button
+          to-link="internal"
+          to="/staking"
+          size="l"
+          color="var(--black)"
+          background-color="transparent"
+          variant="text"
+          class="btn"
+          >What is staking <span class="icon__right">--></span></tm-button
+        >
+      </div>
     </div>
 
     <div class="tm-section tm-container">
