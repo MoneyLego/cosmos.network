@@ -1,20 +1,50 @@
 <template>
   <main>
-    <div class="section-get-started tm-wrapper">
-      <div class="tm-section tm-container">
-        <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
-          get started
+    <div class="section-start tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="start-0-text tm-measure-wide">
+          <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
+            get started
+          </div>
+          <div class="title tm-rf6 tm-bold tm-lh-title">
+            Stake ATOMs in four steps
+          </div>
         </div>
-        <div class="title tm-rf6 tm-bold tm-lh-title tm-measure-narrow">
-          Stake ATOMs in four steps
-        </div>
+        <!-- GRAPHICS -->
       </div>
     </div>
 
     <!-- OTHER SECTION CONTENT GOES HERE -->
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
-      <!-- TODO: grid 3 -->
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="start-1-text">
+          <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
+        </div>
+        <div class="cards-wrapper">
+          <div class="cards-item">
+            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
+              learn
+            </div>
+            <div class="title tm-rf1 tm-bold tm-lh-title">
+              What is the ATOM token?
+            </div>
+          </div>
+          <div class="cards-item">
+            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
+              learn
+            </div>
+            <div class="title tm-rf1 tm-bold tm-lh-title">What is staking?</div>
+          </div>
+          <div class="cards-item">
+            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
+              learn
+            </div>
+            <div class="title tm-rf1 tm-bold tm-lh-title">
+              What is a wallet?
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="tm-section tm-wrapper tm-container">
@@ -137,12 +167,33 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.section-get-started
-  position relative
-  display flex
-  justify-content center
-  align-items center
-  text-align center
+// GET STARTED 0
+.section-start
+  text-align left
+
+.start-0-text
+  grid-column span 12
+
+.start-0-text .title
+  margin-top var(--spacing-6)
+
+// GET STARTED 1
+.start-1-text
+  grid-column span 12
+
+.cards-wrapper
+  grid-row 2
+  display grid
+  grid-template-columns repeat(1, 1fr)
+  gap var(--spacing-7)
+  grid-column span 12
+  margin-top var(--spacing-8)
+
+.cards-item
+  padding var(--spacing-7)
+  border-radius $border-radius-5
+  hover-raise(-3px)
+  box-shadow var(--elevation-4)
 
 .row
   display flex
@@ -151,4 +202,26 @@ export default {}
 @media $breakpoint-small
   .row
     display block
+
+  // GET STARTED 0
+  // GET STARTED 1
+
+@media $breakpoint-medium
+  // GET STARTED 0
+  .start-0-text
+    grid-column 4/span 10
+
+  // GET STARTED 1
+  .cards-wrapper
+    grid-template-columns repeat(2, 1fr)
+
+  .start-1-text
+    grid-column 4/span 12
+
+@media $breakpoint-large
+  // GET STARTED 0
+  // GET STARTED 1
+  .cards-wrapper
+    grid-template-columns repeat(3, 1fr)
+    grid-column span 15
 </style>
