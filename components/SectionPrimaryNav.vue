@@ -2,9 +2,14 @@
   <div class="nav-inner">
     <nav class="nav nav-primary tm-wrapper tm-container" role="navigation">
       <div class="nav-first">
-        <NuxtLink to="https://cosmos.network/" class="logo">
+        <a
+          href="https://cosmos.network"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="logo"
+        >
           <logo-cosmos-wordmark class="logo__cosmos" />
-        </NuxtLink>
+        </a>
         <span class="sr-only">Cosmos</span>
         <NuxtLink
           to="/"
@@ -12,16 +17,24 @@
         >
           <logo-hub-brandmark class="logo__hub" />Hub
         </NuxtLink>
-        <tm-button
-          variant="text"
-          glow
-          class="nav-mobile-toggle"
-          :class="{ 'is-open': isOpen }"
-          @click="isOpen = !isOpen"
-          ><div class="nav-mobile-toggle__icon"></div
-        ></tm-button>
+        <button
+          class="hamburger hamburger--slider"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+          :class="{ 'is-active': isActive }"
+          @click="isActive = !isActive"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
-      <div class="nav-mobile-container">
+      <div
+        v-if="isActive"
+        :class="{ 'is-active': isActive }"
+        class="nav-mobile-container"
+      >
         <div class="nav-mobile-content tm-wrapper">
           <ul>
             <li>
@@ -189,9 +202,14 @@
 
 <script>
 export default {
-  props: {
-    data: {
-      isOpen: false,
+  data() {
+    return {
+      isActive: false,
+    }
+  },
+  watch: {
+    $route() {
+      this.isActive = false
     },
   },
 }
@@ -270,7 +288,7 @@ $navbar-mobile-menu = 200
         transform translateY(-4px) rotate(0deg)
       &:after
         transform translateY(4px) rotate(0deg)
-    &.is-open &__icon
+    &.is-active &__icon
       &:before
         transform translateY(1px) rotate(45deg)
       &:after
@@ -282,11 +300,14 @@ $navbar-mobile-menu = 200
     right 0
     bottom 0
     z-index $navbar-mobile-menu
-    background var(--black)
     display none
     flex-direction column
     -webkit-box-orient vertical
     -webkit-box-direction normal
+  .dark-mode &-mobile-container
+    background var(--black)
+  .light-mode &-mobile-container
+    background var(--white)
   &-mobile-content
     padding-top $navbar-height
     padding-bottom var(--spacing-7)
@@ -321,11 +342,94 @@ $navbar-mobile-menu = 200
   &-secondary
     display none
 
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger
+  padding 15px 15px
+  display inline-block
+  cursor pointer
+  transition-property opacity, filter
+  transition-duration 0.15s
+  transition-timing-function linear
+  font inherit
+  color inherit
+  text-transform none
+  background-color transparent
+  border 0
+  margin 0
+  overflow visible
+  &:hover
+    opacity 0.7
+  &.is-active
+    &:hover
+        opacity 0.7
+
+.hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after
+    background-color #000
+
+.hamburger-box
+  width 40px
+  height 24px
+  display inline-block
+  position relative
+
+.hamburger-inner
+  display block
+  top 50%
+  margin-top -2px
+  &::before
+    top -10px
+  &::after
+    bottom -10px
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+  width 40px
+  height 4px
+  background-color #000
+  border-radius 4px
+  position absolute
+  transition-property transform
+  transition-duration 0.15s
+  transition-timing-function ease
+
+.hamburger-inner::before, .hamburger-inner::after
+  content ""
+  display block
+
+.hamburger--slider
+  .hamburger-inner
+    top 2px
+    &::before
+      top 10px
+      transition-property transform, opacity
+      transition-timing-function ease
+      transition-duration 0.15s
+    &::after
+      top 20px
+  &.is-active
+    .hamburger-inner
+      transform translate3d(0, 10px, 0) rotate(45deg)
+      &::before
+        transform rotate(-45deg) translate3d(-5.71429px, -6px, 0)
+        opacity 0
+      &::after
+        transform translate3d(0, -20px, 0) rotate(-90deg)
+
 @media $breakpoint-large-max
   .nav
-    &-mobile-container.is-open
+    &-mobile-container.is-active
       display flex
-    &-first
+    .light-mode &-first
+      flex 1 1
+      background var(--white)
+    .dark-mode &-first
       flex 1 1
       background var(--black)
     .tm-link
@@ -336,14 +440,13 @@ $navbar-mobile-menu = 200
         transform-origin bottom
 
 @media $breakpoint-large
+  .hamburger
+    display none
   .nav
     ul
       margin-right calc(-1 * var(--spacing-5))
     li
       display inline-block
-    &-mobile-toggle.tm-button,
-    &-mobile-container
-      display none
     &-primary
       .logo-secondary
         display none

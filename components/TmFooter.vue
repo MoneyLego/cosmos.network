@@ -61,7 +61,7 @@
         role="navigation"
       >
         <a
-          href="http://cosmos.network/privacy"
+          href="https://cosmos.network/privacy"
           target="_blank"
           rel="noreferrer noopener"
           class="tm-link"
