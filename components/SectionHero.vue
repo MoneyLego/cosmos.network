@@ -1,5 +1,5 @@
 <template>
-  <div class="section-hero tm-section-container">
+  <div class="section-hero tm-wrapper">
     <div class="tm-rf7 tm-bold tm-lh-title">The heart of the Interchain.</div>
   </div>
 </template>

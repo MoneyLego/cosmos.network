@@ -1,9 +1,6 @@
 <template>
   <div class="nav-inner">
-    <nav
-      class="nav nav-primary tm-wrapper tm-container"
-      role="navigation"
-    >
+    <nav class="nav nav-primary tm-wrapper tm-container" role="navigation">
       <div class="nav-first">
         <NuxtLink to="https://cosmos.network/" class="logo">
           <logo-cosmos-wordmark class="logo__cosmos" />
@@ -148,10 +145,7 @@
         </ul>
       </div>
     </nav>
-    <nav
-      class="nav nav-secondary tm-wrapper tm-container"
-      role="navigation"
-    >
+    <nav class="nav nav-secondary tm-wrapper tm-container" role="navigation">
       <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
         <logo-hub-brandmark class="logo__hub" />Hub
       </NuxtLink>
