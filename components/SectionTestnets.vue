@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-testnets">
-    <div class="tm-section-container section-container">
+  <div class="tm-section section-testnets">
+    <div class="tm-wrapper tm-container">
       <div class="container">
         <div class="section-status">
           <div class="section-status__title tm-rf3 tm-lh-copy">

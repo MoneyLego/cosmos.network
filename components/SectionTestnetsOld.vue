@@ -1,6 +1,6 @@
 <template>
-  <div id="testnets" class="section section-testnets">
-    <div class="tm-section-container section-container">
+  <div id="testnets" class="tm-section section-testnets">
+    <div class="tm-wrapper tm-container">
       <div class="container">
         <div class="section-header tm-rf0 tm-medium tm-lh-title tm-overline">
           Testnets
@@ -867,7 +867,7 @@ export default {}
   flex-direction column
 
 @media screen and (max-width: 1024px)
-  .section .section-header
+  .tm-section.section-header
     grid-column 1 / span 12
 
   .section-testnets

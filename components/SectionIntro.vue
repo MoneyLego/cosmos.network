@@ -1,7 +1,7 @@
 <template>
   <div class="section-outer">
-    <div class="section section-intro">
-      <div class="tm-section-container section-container">
+    <div class="tm-section section-intro">
+      <div class="tm-wrapper tm-container">
         <div class="container">
           <div class="section-title tm-rf6 tm-rf7-xl-up tm-bold tm-lh-title">
             A <span class="section-title__highlight">new era</span> for Cosmos

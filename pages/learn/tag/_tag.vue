@@ -1,5 +1,5 @@
 <template>
-  <div class="section tm-section-container section-container">
+  <div class="tm-section tm-wrapper tm-container">
     <div>
       <NuxtLink to="/"><Logo /></NuxtLink>
       <div>

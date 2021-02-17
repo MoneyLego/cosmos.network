@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="tm-section-container section-container">
+    <div class="tm-wrapper tm-container">
       <div class="container list">
         <div class="section-graphics">
           <graphics-chain-1
@@ -58,10 +58,10 @@ export default {
 
 <style lang="stylus" scoped>
 /deep/
-  .section
+  .tm-section
     overflow initial
 
-.section
+.tm-section
   overflow visible
 
 .list

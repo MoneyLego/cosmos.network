@@ -1,7 +1,7 @@
 <template>
   <div class="nav-inner">
     <nav
-      class="nav nav-primary tm-section-container section-container"
+      class="nav nav-primary tm-wrapper tm-container"
       role="navigation"
     >
       <div class="nav-first">
@@ -25,7 +25,7 @@
         ></tm-button>
       </div>
       <div class="nav-mobile-container">
-        <div class="nav-mobile-content tm-section-container">
+        <div class="nav-mobile-content tm-wrapper">
           <ul>
             <li>
               <a
@@ -97,7 +97,7 @@
             </li>
           </ul>
         </div>
-        <div class="nav-mobile-bottom tm-section-container">
+        <div class="nav-mobile-bottom tm-wrapper">
           <tm-button glow background-color="var(--white)" color="var(--black)"
             >Get started</tm-button
           >
@@ -149,7 +149,7 @@
       </div>
     </nav>
     <nav
-      class="nav nav-secondary tm-section-container section-container"
+      class="nav nav-secondary tm-wrapper tm-container"
       role="navigation"
     >
       <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">

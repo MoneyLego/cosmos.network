@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-articles">
-    <div class="section-container">
+  <div class="tm-section section-articles">
+    <div class="tm-container">
       <div class="container">
         <div class="section-title tm-rf7 tm-bold tm-lh-title tm-measure-narrow">
           Frequently asked questions

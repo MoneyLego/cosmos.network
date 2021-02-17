@@ -1,5 +1,5 @@
 <template>
-  <div class="tm-section-container section-container section-explorer">
+  <div class="tm-wrapper tm-container section-explorer">
     <div class="section-graphics">
       <graphics-explore-1
         v-if="this.$route.path === '/testnets/wallets-explorers-exchanges'"

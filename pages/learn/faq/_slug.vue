@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="section tm-section-container section-container">
+    <div class="tm-section tm-wrapper tm-container">
       <h1>{{ article.title }}</h1>
       <span v-for="(tag, id) in article.tags" :key="id">
         <NuxtLink :to="`/learn/tag/${tags[tag].slug}`">

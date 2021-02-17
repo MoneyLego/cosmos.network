@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-form">
-    <div class="tm-section-container section-container bottom">
+  <div class="tm-section section-form">
+    <div class="tm-wrapper tm-container bottom">
       <div class="container">
         <transition name="fade" mode="out-in">
           <div

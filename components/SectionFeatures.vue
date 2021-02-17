@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-features">
-    <div class="tm-section-container section-container">
+  <div class="tm-section section-features">
+    <div class="tm-wrapper tm-container">
       <div class="container">
         <div class="section-header tm-rf0 tm-medium tm-lh-title tm-overline">
           Features
@@ -217,7 +217,7 @@ export default {}
       grid-column 1 /span 12
 
 @media screen and (max-width: 1024px)
-  .section .section-header
+  .tm-section.section-header
     grid-column 1 / span 12
 
   .section-features

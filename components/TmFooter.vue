@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="tm-section-container section-container">
+    <div class="tm-wrapper tm-container">
       <nav class="nav tm-rf0 tm-medium tm-lh-title" role="navigation">
         <ul>
           <li>

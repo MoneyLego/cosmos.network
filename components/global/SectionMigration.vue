@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="tm-section-container section-container">
+    <div class="tm-wrapper tm-container">
       <div class="cards-container">
         <div class="cards__item cards__item__text">
           <div

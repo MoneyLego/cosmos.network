@@ -1,5 +1,5 @@
 <template>
-  <div class="tm-section-container section-container">
+  <div class="tm-wrapper tm-container">
     <div class="container">
       <div class="list section-join">
         <div class="list__title tm-rf4 tm-bold tm-lh-title tm-measure">

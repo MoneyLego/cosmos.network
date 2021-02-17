@@ -1,5 +1,5 @@
 <template>
-  <div class="section section-container tm-section-container">
+  <div class="tm-section tm-container tm-wrapper">
     <div class="container">
       <div class="graphics">
         <div class="graphics__back"></div>
@@ -43,7 +43,7 @@
 </template>
 
 <style lang="stylus" scoped>
-.section
+.tm-section
   overflow visible
 
 .graphics
@@ -104,7 +104,7 @@
     gap var(--spacing-7)
 
 @media $breakpoint-medium-up
-  .section
+  .tm-section
     overflow visible
 
 @media $breakpoint-medium-max

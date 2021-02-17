@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-videos">
-    <div class="section-container">
+  <div class="tm-section section-videos">
+    <div class="tm-container">
       <div class="container">
         <div class="section-header tm-rf3 tm-bold tm-lh-title">Videos</div>
         <div class="frame">

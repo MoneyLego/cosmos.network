@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="dark">
-      <div class="tm-section-container">
+      <div class="tm-wrapper">
         <h2 class="tm-rf3 lh-title tm-bold">
           Dark background + glowing buttons
         </h2>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="light">
-      <div class="tm-section-container">
+      <div class="tm-wrapper">
         <h2 class="tm-rf3 tm-lh-title tm-bold">
           Light background + glowing buttons
         </h2>
@@ -154,7 +154,7 @@
       </div>
     </div>
     <div class="dark">
-      <div class="tm-section-container">
+      <div class="tm-wrapper">
         <h2 class="tm-rf3 tm-lh-title tm-bold">
           Dark background + internal + external
         </h2>
@@ -178,7 +178,7 @@
           >
         </div>
       </div>
-      <div class="tm-section-container">
+      <div class="tm-wrapper">
         <h2 class="tm-rf3 tm-lh-title tm-bold">Disabled state</h2>
         <div class="row">
           <tm-button size="l" color="var(--white)" glow disabled

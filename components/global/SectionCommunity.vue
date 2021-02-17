@@ -1,5 +1,5 @@
 <template>
-  <div class="section tm-section-container section-container">
+  <div class="tm-section tm-wrapper tm-container">
     <div class="container">
       <div class="cards">
         <a
@@ -53,7 +53,7 @@ export default {}
 
 <style lang="stylus" scoped>
 
-.section
+.tm-section
   overflow visible // graphics overflow
   z-index 1 // above next section
 

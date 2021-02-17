@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="tm-section-container section-container">
+    <div class="tm-wrapper tm-container">
       <section-videos />
       <div class="container">
         <div class="section-status">
