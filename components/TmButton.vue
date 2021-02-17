@@ -19,6 +19,8 @@
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
+      '--dark-color': darkColor,
+      '--light-color': lightColor,
     }"
   >
     <span class="tm-button__content">
@@ -47,6 +49,8 @@
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
+      '--dark-color': darkColor,
+      '--light-color': lightColor,
     }"
   >
     <span class="tm-button__content">
@@ -72,6 +76,8 @@
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
+      '--dark-color': darkColor,
+      '--light-color': lightColor,
     }"
     aria-disabled="true"
   >
@@ -99,6 +105,8 @@
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
       '--color': color,
+      '--dark-color': darkColor,
+      '--light-color': lightColor,
     }"
   >
     <span class="tm-button__content">
@@ -129,33 +137,47 @@ export default {
      */
     darkBackgroundColor: {
       type: String,
-      default: '#FFFFF',
+      default: 'var(--white-200)',
     },
     /**
      * CSS color of light mode background
      */
     lightBackgroundColor: {
       type: String,
-      default: '#000',
+      default: 'var(--black)',
     },
     /**
      * CSS color of background
      */
     backgroundColor: {
       type: String,
-      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+      default: 'var(--white-200)',
     },
     /**
      * CSS color of border
      */
     borderColor: {
       type: String,
-      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+      default: 'var(--white)',
     },
     /**
-     * CSS color of border
+     * CSS color of color
      */
     color: {
+      type: String,
+      default: 'var(--black)',
+    },
+    /**
+     * CSS color of dark mode color
+     */
+    darkColor: {
+      type: String,
+      default: 'var(--white)',
+    },
+    /**
+     * CSS color of light mode color
+     */
+    lightColor: {
       type: String,
       default: 'var(--white)',
     },
@@ -296,9 +318,9 @@ export default {
 
   /* text variant */
   .dark-mode &__variant__text
-    color var(--white)
+    color var(--dark-color)
   .light-mode &__variant__text
-    color var(--black)
+    color var(--light-color)
   &__variant__text
     &:hover,
     &:focus
@@ -329,10 +351,10 @@ export default {
   /* dark/light mode */
   .dark-mode &__variant__contained
     background var(--dark-background-color)
-    color var(--white)
+    color var(--dark-color)
   .light-mode &__variant__contained
     background var(--light-background-color)
-    color var(--white)
+    color var(--light-color)
   /* contained variant */
   &__variant__contained
     background var(--background-color)

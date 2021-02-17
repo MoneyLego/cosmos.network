@@ -117,7 +117,7 @@
             </ul>
           </div>
           <div class="nav-mobile-bottom tm-wrapper">
-            <tm-button glow background-color="var(--white)" color="var(--black)"
+            <tm-button background-color="var(--white)" color="var(--black)"
               >Get started</tm-button
             >
           </div>
