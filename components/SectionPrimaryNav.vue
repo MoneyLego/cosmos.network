@@ -372,7 +372,7 @@ $navbar-mobile-menu = 200
 .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after
-    background-color #000
+    background-color currentColor
 
 .hamburger-box
   width 40px
@@ -392,7 +392,7 @@ $navbar-mobile-menu = 200
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
   width 40px
   height 4px
-  background-color #000
+  background-color currentColor
   border-radius 4px
   position absolute
   transition-property transform
