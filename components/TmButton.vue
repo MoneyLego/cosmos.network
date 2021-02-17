@@ -397,4 +397,11 @@ export default {
       transform translateX(0.25rem)
     >>> .icon__left
       transform translateX(-0.25rem)
+
+.tm-button + .tm-button
+  margin-left 0
+
+@media $breakpoint-small
+  .tm-button + .tm-button
+    margin-left var(--spacing-6)
 </style>

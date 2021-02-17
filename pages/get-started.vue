@@ -2,13 +2,21 @@
   <main>
     <div class="section-get-started tm-wrapper">
       <div class="tm-section tm-container">
-        <div class="title tm-rf6 tm-bold tm-lh-title">
+        <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
+          get started
+        </div>
+        <div class="title tm-rf6 tm-bold tm-lh-title tm-measure-narrow">
           Stake ATOMs in four steps
         </div>
       </div>
     </div>
 
     <!-- OTHER SECTION CONTENT GOES HERE -->
+    <div class="tm-section tm-wrapper tm-container">
+      <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
+      <!-- TODO: grid 3 -->
+    </div>
+
     <div class="tm-section tm-wrapper tm-container">
       <div class="title tm-rf5 tm-bold tm-lh-title">
         Get ATOMs via one of the many cryptocurrency exchanges
@@ -134,7 +142,13 @@ export default {}
   display flex
   justify-content center
   align-items center
+  text-align center
 
-.btn + .btn
-  margin-left var(--spacing-6)
+.row
+  display flex
+  flex-direction column
+
+@media $breakpoint-small
+  .row
+    display block
 </style>

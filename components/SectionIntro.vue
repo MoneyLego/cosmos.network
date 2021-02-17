@@ -143,6 +143,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.btn + .btn
-  margin-left var(--spacing-6)
+.row
+  display flex
+  flex-direction column
+
+@media $breakpoint-small
+  .row
+    display block
 </style>
