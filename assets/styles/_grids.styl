@@ -1,0 +1,19 @@
+/*
+
+   GRIDS
+
+*/
+
+.tm-grid-base
+  display grid
+  grid-template-columns repeat(4, 1fr)
+  gap 0 var(--spacing-5)
+
+@media $breakpoint-medium
+  .tm-grid-base
+    grid-template-columns repeat(8, 1fr)
+    gap 0 var(--spacing-7)
+
+@media $breakpoint-large
+  .tm-grid-base
+    grid-template-columns repeat(12, 1fr)

@@ -1,23 +1,36 @@
-.tm-section-container
+.tm-wrapper
   padding-left var(--spacing-7)
   padding-right var(--spacing-7)
 
 @media $breakpoint-medium
-  .tm-section-container
+  .tm-wrapper
     padding-left var(--spacing-8)
     padding-right var(--spacing-8)
 
 @media $breakpoint-large
-  .tm-section-container
+  .tm-wrapper
     padding-left var(--spacing-9)
     padding-right var(--spacing-9)
 
 @media $breakpoint-xl
-  .tm-section-container
+  .tm-wrapper
     padding-left var(--spacing-10)
     padding-right var(--spacing-10)
 
 @media $breakpoint-xxl
-  .tm-section-container
+  .tm-wrapper
     padding-left var(--spacing-11)
     padding-right var(--spacing-11)
+
+
+.tm-container
+  position relative
+  max-width: $max-width['10']
+  margin 0 auto
+  &-wide
+    max-width: $max-width['11']
+
+.tm-section
+  position relative
+  padding-top var(--spacing-10)
+  padding-bottom var(--spacing-10)

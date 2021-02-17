@@ -36,24 +36,6 @@ export default {
 .page-leave-to
   opacity 0
 
-// Todo: consolidate into _container.styl and rename classes to better suit purposes
-.section-container
-  position relative
-  max-width: $max-width['11']
-  margin 0 auto
-
-// Todo: consolidate into _container.styl and rename classes to better suit purposes
-.container
-  display grid
-  grid-template-columns repeat(12, 1fr)
-  gap 0 var(--spacing-7)
-
-// Todo: consolidate into _container.styl and rename classes to better suit purposes
-.section
-  position relative
-  padding-top var(--spacing-10)
-  padding-bottom var(--spacing-10)
-
 @media $breakpoint-large-max
   .mobile-menu-open
     #content
