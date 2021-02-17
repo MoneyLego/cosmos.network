@@ -1,6 +1,6 @@
-# hub.cosmos.network
+# beta.cosmos.network
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/60426089-1198-4f71-a8a0-efb726d55611/deploy-status)](https://app.netlify.com/sites/stargate-site/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/60426089-1198-4f71-a8a0-efb726d55611/deploy-status)](https://app.netlify.com/sites/cosmos-hub-site/deploys)
 
 ## Build Setup
 
