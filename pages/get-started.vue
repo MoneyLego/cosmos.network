@@ -2,7 +2,7 @@
   <main>
     <div class="section-start tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
-        <div class="start-1-text tm-measure-wide">
+        <div class="start-0-text tm-measure-wide">
           <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
             get started
           </div>
@@ -17,7 +17,7 @@
     <!-- OTHER SECTION CONTENT GOES HERE -->
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
-        <div class="start-2-text">
+        <div class="start-1-text">
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
@@ -167,18 +167,18 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-// GET STARTED 1
+// GET STARTED 0
 .section-start
   text-align left
 
-.start-1-text
+.start-0-text
   grid-column span 12
 
-.start-1-text .title
+.start-0-text .title
   margin-top var(--spacing-6)
 
-// GET STARTED 2
-.start-2-text
+// GET STARTED 1
+.start-1-text
   grid-column span 12
 
 .cards-wrapper
@@ -203,24 +203,24 @@ export default {}
   .row
     display block
 
+  // GET STARTED 0
   // GET STARTED 1
-  // GET STARTED 2
 
 @media $breakpoint-medium
-  // GET STARTED 1
-  .start-1-text
+  // GET STARTED 0
+  .start-0-text
     grid-column 4/span 10
 
-  // GET STARTED 2
+  // GET STARTED 1
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
 
-  .start-2-text
+  .start-1-text
     grid-column 4/span 12
 
 @media $breakpoint-large
+  // GET STARTED 0
   // GET STARTED 1
-  // GET STARTED 2
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
     grid-column span 15

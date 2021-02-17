@@ -1,10 +1,12 @@
 <template>
   <main>
     <div class="section-staking tm-wrapper">
-      <div class="tm-section tm-container">
-        <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
-        <div class="subtitle tm-rf1 tm-lh-copy">
-          Help secure the Cosmos Hub and earn rewards
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="staking-0-text tm-measure-wide">
+          <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            Help secure the Cosmos Hub and earn rewards
+          </div>
         </div>
       </div>
     </div>
@@ -175,11 +177,12 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
+// STAKING 0
 .section-staking
-  position relative
-  display flex
-  justify-content center
-  align-items center
+  text-align left
+
+.staking-0-text
+  grid-column span 12
 
 // STAKING 1
 .staking-1-text
@@ -246,6 +249,10 @@ export default {}
   margin-top var(--spacing-7)
 
 @media $breakpoint-medium
+  // STAKING 0
+  .staking-0-text
+    grid-column 7/span 12
+
   // STAKING 1
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
