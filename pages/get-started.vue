@@ -153,31 +153,107 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Welcome to the community, fellow Cosmonaut
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="start-6-text">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+            Welcome to the community, fellow Cosmonaut
+          </div>
+          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
+            Now that you’ve staked your ATOMs like a pro, join a fast-growing
+            community of developers and innovators connected all over the world,
+            building the new era of the internet.
+          </div>
+        </div>
+        <div class="grid-wrapper">
+          <a
+            v-for="item in links"
+            :key="item.logo"
+            :href="item.url"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div class="grid-item">
+              <div class="icon">
+                <component :is="`icon-${item.logo}`" />
+              </div>
+              <div class="details">
+                <div class="title tm-rf1 tm-bold tm-lh-title">
+                  {{ item.title }}
+                </div>
+                <div class="desc tm-rf0 tm-lh-copy">
+                  {{ item.desc }}
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="footer">
+          <tm-button
+            to-link="external"
+            href="https://cosmos.network/community"
+            size="l"
+            color="var(--black)"
+            background-color="transparent"
+            variant="text"
+            class="btn"
+            >Cosmos Community <span class="icon__right">-></span></tm-button
+          >
+        </div>
+        <!-- GRAPHICS -->
       </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        Now that you’ve staked your ATOMs like a pro, join a fast-growing
-        community of developers and innovators connected all over the world,
-        building the new era of the internet.
-      </div>
-      <tm-button
-        to-link="external"
-        href="https://cosmos.network/community"
-        size="l"
-        color="var(--black)"
-        background-color="transparent"
-        variant="text"
-        class="btn"
-        >Cosmos Community <span class="icon__right">-></span></tm-button
-      >
     </div>
   </main>
 </template>
 
 <script>
-export default {}
+import IconTwitter from '~/components/icons/IconTwitter.vue'
+import IconDiscord from '~/components/icons/IconDiscord.vue'
+import IconTelegram from '~/components/icons/IconTelegram.vue'
+import IconCosmos from '~/components/icons/IconCosmos.vue'
+
+export default {
+  components: {
+    IconTwitter,
+    IconDiscord,
+    IconTelegram,
+    IconCosmos,
+  },
+  data() {
+    return {
+      links: [
+        {
+          url: 'https://t.me/cosmosproject',
+          logo: 'telegram',
+          title: 'Community Chat',
+          desc:
+            'Ask general questions and chat with the worldwide community on Telegram.',
+        },
+        {
+          url: 'https://twitter.com/cosmos',
+          logo: 'twitter',
+          title: 'Twitter',
+          desc:
+            'Follow @cosmos to get the latest news and updates from across the ecosystem.',
+        },
+        {
+          url: 'https://discord.gg/vcExX9T',
+          logo: 'discord',
+          title: 'Developer Chat',
+          desc:
+            'Have technical questions about Cosmos tools? Ask a developer on the Community Discord.',
+        },
+        {
+          url: 'https://forum.cosmos.network',
+          logo: 'cosmos',
+          title: 'Cosmos Forum',
+          desc:
+            'Thinking about becoming a validator or interested in network matters? Join the discussion.',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="stylus" scoped>
@@ -236,6 +312,39 @@ export default {}
   display flex
   flex-direction column
 
+// GET STARTED 6
+.start-6-text
+  grid-column span 12
+
+.start-6-text .subtitle
+  margin-top var(--spacing-6)
+
+.start-6-text .btn
+  margin-top var(--spacing-9)
+
+.grid-wrapper
+  display grid
+  grid-template-columns repeat(1, 1fr)
+  gap var(--spacing-7)
+  grid-column span 12
+  margin-top var(--spacing-9)
+
+.grid-item
+  // padding var(--spacing-7)
+  display grid
+  grid-auto-flow column
+  grid-template-columns min-content 1fr
+  gap var(--spacing-7)
+  border-radius $border-radius-5
+  hover-raise(-3px)
+
+.details .desc
+  margin-top var(--spacing-3)
+
+.footer
+  grid-column span 12
+  margin-top var(--spacing-9)
+
 @media $breakpoint-small
   // GET STARTED 0
   // GET STARTED 1
@@ -276,6 +385,14 @@ export default {}
     width 40px
     height 1px
     background var(--black)
+
+  // GET STARTED 6
+  .start-6-text
+    grid-column 1/span 10
+
+  .grid-wrapper
+    grid-template-columns repeat(2, 1fr)
+    grid-column 1/span 8
 
 @media $breakpoint-large
   // GET STARTED 0
