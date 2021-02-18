@@ -382,6 +382,11 @@ export default {
     left -3%
     margin-bottom 0
 
+  .dark-mode .step:after
+    background var(--white)
+  .light-mode .step:after
+    background var(--black)
+
   .step:after
     content ""
     position absolute
@@ -389,7 +394,6 @@ export default {
     bottom 15px
     width 40px
     height 1px
-    background var(--black)
 
   // GET STARTED 6
   .start-6-text
