@@ -99,8 +99,8 @@
         transfer your ATOMs from the exchange.
       </div>
       <tm-button
-        to-link="internal"
-        to="/staking"
+        to-link="external"
+        href="https://cosmos.network/ecosystem/wallets"
         size="l"
         dark-color="var(--white)"
         light-color="var(--black)"
@@ -142,18 +142,37 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Lock up and stake your ATOMs
-      </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        Using your wallet, send a simple transaction (often called “Stake” or
-        “Delegate”) to start staking. This locks up your ATOMs (i.e. you can't
-        transfer them) and enables the chosen validators to operate the network.
-      </div>
-      <div class="warning">
-        Staked ATOMs can be unlocked via your wallet by sending a transaction
-        (often called “Unstake” or “Undelegate”) and waiting 21 days.
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="start-5-wrapper">
+          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
+            step 04
+          </div>
+          <div class="graphics">
+            <!-- GRAPHICS -->
+          </div>
+          <div class="text">
+            <div class="title tm-rf5 tm-bold tm-lh-title">
+              Lock up and stake your ATOMs
+            </div>
+            <div class="subtitle tm-rf1 tm-lh-copy">
+              Using your wallet, send a simple transaction (often called “Stake”
+              or “Delegate”) to start staking. This locks up your ATOMs (i.e.
+              you can't transfer them) and enables the chosen validators to
+              operate the network.
+            </div>
+            <div class="warning-wrapper">
+              <div class="icon">
+                <icon-warning />
+              </div>
+              <div class="text">
+                Staked ATOMs can be unlocked via your wallet by sending a
+                transaction (often called “Unstake” or “Undelegate”) and waiting
+                21 days.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -317,6 +336,34 @@ export default {
   display flex
   flex-direction column
 
+// GET STARTED 5
+.start-5-wrapper
+  grid-column span 12
+
+.start-5-wrapper .text .warning-wrapper
+  margin-top var(--spacing-8)
+  display grid
+  grid-auto-flow column
+  grid-template-columns min-content 1fr
+  gap var(--spacing-5)
+  align-items center
+  border-radius $border-radius-5
+  box-shadow var(--elevation-4)
+  background var(--white)
+  padding var(--spacing-6)
+
+.warning-wrapper .icon
+  grid-column-start 1
+  width var(--spacing-9)
+  height var(--spacing-9)
+  display flex
+  align-items center
+  justify-content center
+
+.warning-wrapper .text
+  grid-column-start 2
+  color rgba(0, 0, 0, 0.5)
+
 // GET STARTED 6
 .start-6-text
   grid-column span 12
@@ -394,6 +441,41 @@ export default {
     bottom 15px
     width 40px
     height 1px
+
+  // GET STARTED 5
+  .start-5-wrapper
+    position relative
+    display grid
+    grid-template-columns 50% 50%
+    grid-template-rows 1fr
+    align-items center
+
+  .start-5-wrapper .text .subtitle
+    margin-top var(--spacing-7)
+
+  // .start-5-wrapper .text .warning-wrapper
+  //   margin-top var(--spacing-8)
+  //   display grid
+  //   grid-auto-flow column
+  //   grid-template-columns min-content 1fr
+  //   gap var(--spacing-5)
+  //   align-items center
+  //   border-radius $border-radius-5
+  //   box-shadow var(--elevation-4)
+  //   background var(--white)
+  //   padding var(--spacing-6)
+
+  // .warning-wrapper .icon
+  //   grid-column-start 1
+  //   width var(--spacing-9)
+  //   height var(--spacing-9)
+  //   display flex
+  //   align-items center
+  //   justify-content center
+
+  // .warning-wrapper .text
+  //   grid-column-start 2
+  //   color rgba(0, 0, 0, 0.5)
 
   // GET STARTED 6
   .start-6-text
