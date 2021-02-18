@@ -49,31 +49,43 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Get ATOMs via one of the many cryptocurrency exchanges
-      </div>
-      <p class="subtitle tm-rf1 tm-lh-copy">
-        Some exchanges offer staking services directly, but this requires you to
-        delegate ownership of your tokens to them.
-      </p>
-      <p class="subtitle tm-rf1 tm-lh-copy">
-        This guide involves using your own wallet, enabling you to maintain full
-        ownership of your tokens.
-      </p>
-      <tm-button
-        to-link="internal"
-        to="/staking"
-        size="l"
-        color="var(--black)"
-        background-color="transparent"
-        variant="text"
-        class="btn"
-        >Browse exchanges <span class="icon__right">↗️</span></tm-button
-      >
-      <div class="footnote tm-rf-1 tm-lh-copy">
-        messari.io is an unvalidated third-party listing exchanges. We are not
-        liable for X,Y,Z.
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container">
+        <div class="start-2-text tm-grid-base">
+          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
+            step 01
+          </div>
+          <div class="top">
+            <div class="title tm-rf5 tm-bold tm-lh-title">
+              Get ATOMs via one of the many cryptocurrency exchanges
+            </div>
+          </div>
+          <!-- GRAPHICS -->
+          <div class="bottom">
+            <p class="subtitle tm-rf1 tm-lh-copy">
+              Some exchanges offer staking services directly, but this requires
+              you to delegate ownership of your tokens to them.
+            </p>
+            <p class="subtitle tm-rf1 tm-lh-copy">
+              This guide involves using your own wallet, enabling you to
+              maintain full ownership of your tokens.
+            </p>
+            <tm-button
+              to-link="internal"
+              to="/staking"
+              size="l"
+              color="var(--black)"
+              background-color="transparent"
+              variant="text"
+              class="btn"
+              >Browse exchanges <span class="icon__right">↗️</span></tm-button
+            >
+            <div class="footnote tm-rf-1 tm-lh-copy">
+              messari.io is an unvalidated third-party listing exchanges. We are
+              not liable for X,Y,Z.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -198,16 +210,38 @@ export default {}
   hover-raise(-3px)
   box-shadow var(--elevation-4)
 
+.cards-item .title
+  margin-top var(--spacing-3)
+
+// GET STARTED 2
+.start-2-text
+  position relative
+
+.step
+  grid-column span 12
+  margin-bottom var(--spacing-5)
+
+.start-2-text .top,
+.start-2-text .bottom
+  grid-column span 12
+
+.start-2-text .bottom
+  margin-top var(--spacing-7)
+
+.start-2-text .footnote
+  color var(--gray-600)
+
+// GET STARTED 4
 .row
   display flex
   flex-direction column
 
 @media $breakpoint-small
-  .row
-    display block
-
   // GET STARTED 0
   // GET STARTED 1
+  // GET STARTED 4
+  .row
+    display block
 
 @media $breakpoint-medium
   // GET STARTED 0
@@ -220,6 +254,28 @@ export default {}
 
   .start-1-text
     grid-column 4/span 12
+
+  // GET STARTED 2
+  .start-2-text .top
+    grid-column 5/span 12
+  .start-2-text .bottom
+    grid-column 7/span 12
+
+  .step
+    transform rotate(-90deg)
+    position absolute
+    top 10%
+    left -3%
+    margin-bottom 0
+
+  .step:after
+    content ""
+    position absolute
+    left -56px
+    bottom 15px
+    width 40px
+    height 1px
+    background var(--black)
 
 @media $breakpoint-large
   // GET STARTED 0
