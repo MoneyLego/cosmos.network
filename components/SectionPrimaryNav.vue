@@ -1,6 +1,10 @@
 <template>
   <div class="navs">
-    <nav class="nav nav-primary tm-wrapper" role="navigation">
+    <nav
+      class="nav nav-primary tm-wrapper"
+      role="navigation"
+      :class="{ 'is-active': isActive }"
+    >
       <div class="nav-inner tm-container">
         <div class="nav-first">
           <a
@@ -29,98 +33,6 @@
             <span class="nav-mobile-toggle__icon"></span>
             <span class="sr-only">Menu</span>
           </button>
-        </div>
-        <div
-          v-if="isActive"
-          :class="{ 'is-active': isActive }"
-          class="nav-mobile-container"
-        >
-          <div class="nav-mobile-content tm-wrapper">
-            <ul>
-              <li>
-                <a
-                  href="https://cosmos.network/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >What is Cosmos?</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://cosmos.network/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >Build on Cosmos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://cosmos.network/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >Community</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://cosmos.network/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >Ecosystem</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://cosmos.network/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >Tools</a
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/"
-                  class="text tm-rf1 tm-medium tm-lh-title tm-link"
-                  >Cosmos Hub</NuxtLink
-                >
-                <ul>
-                  <li>
-                    <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
-                      >Features</NuxtLink
-                    >
-                  </li>
-                  <li>
-                    <NuxtLink to="/staking" class="tm-rf0 tm-lh-title tm-link"
-                      >Staking</NuxtLink
-                    >
-                  </li>
-                  <li>
-                    <NuxtLink
-                      to="/get-started"
-                      class="tm-rf0 tm-lh-title tm-link"
-                      >Get started</NuxtLink
-                    >
-                  </li>
-                  <li>
-                    <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
-                      >FAQ</NuxtLink
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hub.cosmos.network"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="tm-rf0 tm-lh-title tm-link"
-                      >Documentation<span class="tm-link-disclosure"
-                        >&#8599;</span
-                      ></a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-mobile-bottom tm-wrapper">
-            <tm-button background-color="var(--white)" color="var(--black)"
-              >Get started</tm-button
-            >
-          </div>
         </div>
         <div class="nav-second">
           <ul>
@@ -173,7 +85,10 @@
     <nav class="nav nav-secondary tm-wrapper" role="navigation">
       <div class="nav-inner tm-container">
         <div class="nav-first">
-          <NuxtLink to="/" class="logo tm-rf-1 tm-medium tm-lh-solid">
+          <NuxtLink
+            to="/"
+            class="logo tm-rf-1 tm-rf0-m-up tm-medium tm-lh-solid"
+          >
             <logo-hub-brandmark class="logo__hub" />Hub
           </NuxtLink>
         </div>
@@ -211,6 +126,94 @@
             </li>
           </ul>
         </div>
+      </div>
+    </nav>
+    <nav
+      v-if="isActive"
+      :class="{ 'is-active': isActive }"
+      class="nav nav-mobile-container"
+    >
+      <div class="nav-mobile-content tm-wrapper">
+        <ul>
+          <li>
+            <a
+              href="https://cosmos.network/"
+              class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >What is Cosmos?</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://cosmos.network/"
+              class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >Build on Cosmos</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://cosmos.network/"
+              class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >Community</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://cosmos.network/"
+              class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >Ecosystem</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://cosmos.network/"
+              class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >Tools</a
+            >
+          </li>
+          <li>
+            <NuxtLink to="/" class="text tm-rf1 tm-medium tm-lh-title tm-link"
+              >Cosmos Hub</NuxtLink
+            >
+            <ul>
+              <li>
+                <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
+                  >Features</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink to="/staking" class="tm-rf0 tm-lh-title tm-link"
+                  >Staking</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink to="/get-started" class="tm-rf0 tm-lh-title tm-link"
+                  >Get started</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
+                  >FAQ</NuxtLink
+                >
+              </li>
+              <li>
+                <a
+                  href="https://hub.cosmos.network"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="tm-rf0 tm-lh-title tm-link"
+                  >Documentation<span class="tm-link-disclosure"
+                    >&#8599;</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-mobile-bottom tm-wrapper">
+        <tm-button background-color="var(--white)" color="var(--black)"
+          >Get started</tm-button
+        >
       </div>
     </nav>
   </div>
@@ -255,7 +258,7 @@ $navbar-mobile-menu = 200
   .logo
     display flex
     align-items center
-    gap var(--spacing-3)
+    gap var(--spacing-4)
     padding var(--spacing-6) 0
     color inherit
     transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
@@ -265,22 +268,27 @@ $navbar-mobile-menu = 200
       height 1.125rem
     &-secondary
       margin-right auto
+  &-secondary .logo
+    svg
+      width 2rem
+      height auto
   .tm-link
     position relative
     display block
     padding var(--spacing-7) var(--spacing-5)
     border-radius $border-radius-2
     // /* exact link will show the primary color for only the exact matching link */
-    &.nuxt-link-exact-active
-      cursor default
-      &:after
-        content ""
-        position absolute
-        display block
-        border-right 1px solid
-        height var(--spacing-3)
-        bottom 0
-        left 50%
+  .tm-link.nuxt-link-exact-active
+    cursor default
+    &:after
+      content ""
+      position absolute
+      display block
+      border-right 1px solid
+      height var(--spacing-3)
+      bottom 0
+      left 50%
+
   &-mobile-toggle
     margin-right calc(-1 * var(--spacing-5))
     // copying .tm-button styles because we're not using the component for some reason
@@ -361,8 +369,10 @@ $navbar-mobile-menu = 200
     border-bottom 1px solid var(--white-100)
   .light-mode &-primary
     border-bottom 1px solid var(--trans-gray-900)
-  &-first
+  &-primary
+    position relative
     z-index $navbar-mobile-menu + 1
+  &-first
     gap var(--spacing-7)
   &-second,
   &-secondary
@@ -370,20 +380,21 @@ $navbar-mobile-menu = 200
 
 @media $breakpoint-large-max
   .nav
-    &-mobile-container.is-active
-      display flex
-    .light-mode &-first
+    &-primary.is-active
+      .light-mode &
+        background var(--white)
+      .dark-mode &
+        background var(--black)
+    &-first
       flex 1 1
-      background var(--white)
-    .dark-mode &-first
-      flex 1 1
-      background var(--black)
     .tm-link
       &.nuxt-link-exact-active:after
         transform rotate(90deg)
         left 0
         bottom 50%
         transform-origin bottom
+    &-mobile-container.is-active
+      display flex
 
 @media $breakpoint-large
   .nav
@@ -399,12 +410,15 @@ $navbar-mobile-menu = 200
       display block
     &-secondary
       display flex
-      .nav-second
-        margin-top -1px
-        border-top 1px solid var(--black)
-    .dark-mode &-secondary
-      .nav-second
-        border-top-color var(--white)
     &-mobile-toggle
       display none
+    &-primary .nuxt-link-exact-active:before
+      content ""
+      position absolute
+      display block
+      border-bottom 1px solid
+      width calc(1rem + 1px)
+      bottom 0
+      left 50%
+      margin-left -0.5rem
 </style>
