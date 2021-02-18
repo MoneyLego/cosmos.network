@@ -7,8 +7,8 @@
         </div>
         <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
           Welcome to the Cosmos Hub, the economic center of
-          <span class="tm-bold">Cosmos</span> – an ever-expanding ecosystem of
-          interconnected blockchains.
+          <a href="https://cosmos.network" class="tm-medium tm-link">Cosmos</a>
+          – an ever-expanding ecosystem of interconnected blockchains.
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@ export default {}
 
 .section-hero
   padding-top 5rem // approx navbar max height
-  background linear-gradient(159deg, #111111 44%, #000000 67%)
+  background linear-gradient(to bottom, #111111 44%, #000000 67%)
 
   .tm-section
     padding-bottom 0
@@ -43,7 +43,8 @@ export default {}
 
 .subtitle
   center()
-  margin-top var(--spacing-6)
+  margin-top var(--spacing-7)
+  color var(--white-800)
 
 @media $breakpoint-small
   .title

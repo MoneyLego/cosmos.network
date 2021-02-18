@@ -165,7 +165,7 @@ export default {}
       color var(--white)
     &__description
       margin-top var(--spacing-4)
-      color var(--white-700)
+      color var(--white-800)
 
 @media $breakpoint-large
   .cards

@@ -126,14 +126,14 @@ main
       text-align left
 
     &__code
-      color var(--white-700)
+      color var(--white-800)
 
     &__bottom
       margin-top var(--spacing-13)
 
     &__desc
       margin-top var(--spacing-6)
-      color var(--white-700)
+      color var(--white-800)
 
     &__cta
       text-align right

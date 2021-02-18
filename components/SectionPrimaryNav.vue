@@ -418,7 +418,7 @@ $navbar-mobile-menu = 200
       display block
       border-bottom 1px solid
       width calc(1rem + 1px)
-      bottom 0
+      bottom -1px
       left 50%
       margin-left -0.5rem
 </style>
