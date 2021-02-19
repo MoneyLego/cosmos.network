@@ -414,7 +414,6 @@ export default {
   margin-top var(--spacing-9)
 
 .grid-item
-  // padding var(--spacing-7)
   display grid
   grid-auto-flow column
   grid-template-columns min-content 1fr
