@@ -26,6 +26,4 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 
 <section-migration :channel="discord-channel-name" :code="code"></section-migration>
 
-<readiness-banner></readiness-banner>
-
 <section-explorer :data="explorers"></section-explorer>
