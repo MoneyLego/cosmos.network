@@ -242,6 +242,9 @@ export default {
   border-radius $border-radius-5
   hover-raise(-3px)
 
+a.list-item + a.list-item
+  margin-top var(--spacing-7)
+
 .details .desc
   margin-top var(--spacing-3)
 
@@ -260,7 +263,4 @@ export default {
   .list
     grid-column 8/span 11
     margin-top 0
-
-  a.list-item + a.list-item
-    margin-top var(--spacing-7)
 </style>
