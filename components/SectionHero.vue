@@ -23,7 +23,6 @@ export default {}
 <style lang="stylus" scoped>
 
 .section-hero
-  padding-top 5rem // approx navbar max height
   background linear-gradient(to bottom, #111111 44%, #000000 67%)
 
   .tm-section
@@ -49,8 +48,4 @@ export default {}
 @media $breakpoint-small
   .title
     max-width 6.5em
-
-@media $breakpoint-large
-  .section-hero
-    padding-top 10rem // navbar max height
 </style>

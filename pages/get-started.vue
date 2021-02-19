@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-start tm-section">
+    <div class="section-hero tm-section">
       <div class="tm-wrapper">
         <div class="tm-container tm-section tm-grid-base">
           <div class="start-0-text tm-measure-wide">
@@ -300,8 +300,7 @@ export default {
 
 <style lang="stylus" scoped>
 // GET STARTED 0
-.section-start
-  padding-top 5rem // approx navbar max height
+.section-hero
   text-align left
 
 .start-0-text
@@ -515,9 +514,6 @@ export default {
 
 @media $breakpoint-large
   // GET STARTED 0
-  .section-start
-    padding-top 10rem // navbar max height
-
   // GET STARTED 1
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-features tm-section">
+    <div class="section-hero tm-section">
       <div class="tm-wrapper">
         <div class="tm-section tm-container">
           <div class="features-0-text tm-grid-base">
@@ -77,9 +77,6 @@ export default {}
 
 <style lang="stylus" scoped>
 // FEATURES 0
-.section-features
-  padding-top 5rem // approx navbar max height
-
 .features-0-text .top,
 .features-0-text .bottom
   grid-column span 12
@@ -94,9 +91,4 @@ export default {}
 
   .features-0-text .bottom
     grid-column 7/span 11
-
-@media $breakpoint-large
-  // FEATURES 0
-  .section-features
-    padding-top 10rem // navbar max height
 </style>

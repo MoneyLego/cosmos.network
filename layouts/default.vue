@@ -48,9 +48,16 @@ main
   left 0
   right 0
 
+.section-hero
+  padding-top 5rem // approx navbar max height
+
 @media $breakpoint-small-max
   main
     overflow hidden
+
+@media $breakpoint-large
+  .section-hero
+    padding-top 10rem // navbar max height
 
 @media $breakpoint-large-max
   .mobile-menu-open
