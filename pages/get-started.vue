@@ -16,7 +16,6 @@
       <!-- GRAPHICS -->
     </div>
 
-    <!-- OTHER SECTION CONTENT GOES HERE -->
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
         <div class="start-1-text">
@@ -71,8 +70,8 @@
               maintain full ownership of your tokens.
             </p>
             <tm-button
-              to-link="internal"
-              to="/staking"
+              to-link="external"
+              href="https://messari.io/asset/cosmos/exchanges"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
@@ -90,55 +89,74 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Transfer your ATOMs to a wallet
-      </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        Choose a wallet that supports the ATOM token, create an account, and
-        transfer your ATOMs from the exchange.
-      </div>
-      <tm-button
-        to-link="external"
-        href="https://cosmos.network/ecosystem/wallets"
-        size="l"
-        dark-color="var(--white)"
-        light-color="var(--black)"
-        background-color="transparent"
-        variant="text"
-        class="btn"
-        >Choose a wallet <span class="icon__right">-></span></tm-button
-      >
-    </div>
-
-    <div class="tm-section tm-wrapper tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">Select your validators</div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
-        In your wallet, choose the validators to delegate your ATOMs to.
-      </div>
-      <div class="row">
-        <tm-button
-          to-link="internal"
-          to="/staking"
-          size="l"
-          dark-color="var(--white)"
-          light-color="var(--black)"
-          background-color="transparent"
-          variant="text"
-          class="btn"
-          >What is a validator <span class="icon__right">-></span></tm-button
-        >
-        <tm-button
-          to-link="internal"
-          to="/staking"
-          size="l"
-          dark-color="var(--white)"
-          light-color="var(--black)"
-          background-color="transparent"
-          variant="text"
-          class="btn"
-          >Choosing a validator <span class="icon__right">-></span></tm-button
-        >
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base">
+        <div class="left">
+          <!-- <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
+            step 02
+          </div> -->
+          <div class="step-3-text">
+            <!-- GRAPHICS -->
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+              Transfer your ATOMs to a wallet
+            </div>
+            <div class="subtitle tm-rf1 tm-lh-copy">
+              Choose a wallet that supports the ATOM token, create an account,
+              and transfer your ATOMs from the exchange.
+            </div>
+            <tm-button
+              to-link="external"
+              href="https://cosmos.network/ecosystem/wallets"
+              size="l"
+              dark-color="var(--white)"
+              light-color="var(--black)"
+              background-color="transparent"
+              variant="text"
+              class="btn"
+              >Choose a wallet <span class="icon__right">-></span></tm-button
+            >
+          </div>
+        </div>
+        <div class="right">
+          <!-- <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
+            step 03
+          </div> -->
+          <div class="step-3-text">
+            <!-- GRAPHICS -->
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+              Select your validators
+            </div>
+            <div class="subtitle tm-rf1 tm-lh-copy">
+              In your wallet, choose the validators to delegate your ATOMs to.
+            </div>
+            <div class="row">
+              <tm-button
+                to-link="internal"
+                to="/staking"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn"
+                >What is a validator
+                <span class="icon__right">-></span></tm-button
+              >
+              <tm-button
+                to-link="internal"
+                to="/staking"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn"
+                >Choosing a validator
+                <span class="icon__right">-></span></tm-button
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -331,10 +349,25 @@ export default {
 .start-2-text .footnote
   color var(--gray-600)
 
+// GET STARTED 3
+.step-3-text .subtitle
+  margin-top var(--spacing-7)
+
+.step-3-text .btn
+  margin-top var(--spacing-6)
+
 // GET STARTED 4
 .row
   display flex
   flex-direction column
+
+.left,
+.right
+  grid-column span 12
+  position relative
+
+.right
+  margin-top var(--spacing-12)
 
 // GET STARTED 5
 .start-5-wrapper
@@ -429,6 +462,13 @@ export default {
     left -3%
     margin-bottom 0
 
+  .step-2
+    grid-column 1/span 2
+    left -31%
+  .step-3
+    grid-column 7/span 8
+    left -21%
+
   .dark-mode .step:after
     background var(--white)
   .light-mode .step:after
@@ -442,6 +482,18 @@ export default {
     width 40px
     height 1px
 
+  // GET STARTED 4
+  .left
+    grid-row 1
+    grid-column 2/span 5
+    position relative
+
+  .right
+    grid-row 2
+    grid-column 9/span 12
+    position relative
+    margin-top -15rem
+
   // GET STARTED 5
   .start-5-wrapper
     position relative
@@ -452,30 +504,6 @@ export default {
 
   .start-5-wrapper .text .subtitle
     margin-top var(--spacing-7)
-
-  // .start-5-wrapper .text .warning-wrapper
-  //   margin-top var(--spacing-8)
-  //   display grid
-  //   grid-auto-flow column
-  //   grid-template-columns min-content 1fr
-  //   gap var(--spacing-5)
-  //   align-items center
-  //   border-radius $border-radius-5
-  //   box-shadow var(--elevation-4)
-  //   background var(--white)
-  //   padding var(--spacing-6)
-
-  // .warning-wrapper .icon
-  //   grid-column-start 1
-  //   width var(--spacing-9)
-  //   height var(--spacing-9)
-  //   display flex
-  //   align-items center
-  //   justify-content center
-
-  // .warning-wrapper .text
-  //   grid-column-start 2
-  //   color rgba(0, 0, 0, 0.5)
 
   // GET STARTED 6
   .start-6-text
