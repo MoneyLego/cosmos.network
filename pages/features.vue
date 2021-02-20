@@ -81,7 +81,7 @@
       </div>
     </div>
 
-    <section-community />
+    <section-social-cards />
   </main>
 </template>
 

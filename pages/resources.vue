@@ -51,7 +51,7 @@
     </div>
 
     <!-- <bug-bounty-banner /> -->
-    <section-community />
+    <section-social-cards />
     <section-form />
   </main>
 </template>
