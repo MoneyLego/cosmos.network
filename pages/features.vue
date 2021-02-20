@@ -55,6 +55,38 @@
       </div>
     </div>
 
+    <!-- FEATURES 5 -->
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base features-5">
+        <div class="left">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Capital Formation · 2021
+            </div>
+          </div>
+          <div class="mid">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Gravity bridge ↗️
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy">
+              Backed by billions of dollars of Atoms staked on the Cosmos Hub,
+              the Gravity Bridge will be the most secure, efficient, and
+              decentralized cross chain bridge to Ethereum. It will enable
+              Cosmos assets to flow into the Ethereum ecosystem as ERC-20 tokens
+              and, conversely, native ERC-20 tokens to flow in the Cosmos
+              ecosystem.
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="footnote">Althea, Interchain Foundation</div>
+          </div>
+        </div>
+        <div class="right">
+          <!-- GRAPHICS -->
+        </div>
+      </div>
+    </div>
+
     <!-- features-6 -->
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base features-6">
@@ -160,6 +192,18 @@ export default {}
 .features-2-text
   grid-column span 12
 
+// FEATURES 5
+.features-5 .left
+  grid-column span 12
+  padding var(--spacing-7)
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 32.25rem
+
+.features-5 .left .desc
+  margin-top var(--spacing-5)
+
 // FEATURES 6
 .features-6
   display grid
@@ -229,6 +273,11 @@ export default {}
   // FEATURES 2
   .features-2-text
     grid-column 3/span 12
+
+  // FEATURES 5
+  .features-5 .left
+    grid-column 1/span 7
+    position relative
 
   // FEATURES 6
   .features-6
