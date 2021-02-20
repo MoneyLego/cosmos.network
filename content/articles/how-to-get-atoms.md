@@ -1,7 +1,6 @@
 ---
 title: How to get ATOMs?
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+description: ATOMs can be obtained on a number of cryptocurrency exchanges.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
