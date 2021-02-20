@@ -46,10 +46,67 @@
 
     <!-- features-2 -->
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
-        <div class="features-2-text">
+      <div class="tm-section tm-container tm-grid-base features-2">
+        <div class="text">
           <div class="title tm-rf5 tm-bold tm-lh-title">
             Cutting-edge Features.
+          </div>
+        </div>
+        <div class="span-8">
+          <div class="col-1">
+            <div class="top">
+              <div class="caption tm-rf0 tm-lh-title">
+                Capital Formation · Live
+              </div>
+            </div>
+            <div class="mid">
+              <div class="title tm-rf3 tm-bold tm-lh-title">Staking -></div>
+              <div class="desc tm-rf0 tm-lh-copy">
+                Built on top of the Tendermint BFT consensus engine, the Hub’s
+                staking module is one of the most efficient proof-of-stake
+                implementations in the world. It enables ATOM token holders to
+                secure the chain by locking their ATOMs, in exchange for
+                transaction fees.
+              </div>
+            </div>
+            <div class="bottom">
+              <!-- GRAPHICS -->
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="top">
+              <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
+            </div>
+            <div class="mid">
+              <!-- GRAPHICS -->
+            </div>
+            <div class="bottom">
+              <div class="title tm-rf3 tm-bold tm-lh-title">Voting -></div>
+              <div class="desc tm-rf0 tm-lh-copy">
+                Staking ATOMs gives rights to participate in the open governance
+                process, which governs the evolution of the network.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span-4">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
+          </div>
+          <div class="mid">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Interchain Accounts ↗️
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy">
+              Interchain Accounts are the accounts of the IBC-enabled world.
+              Essentially, they allow blockchains to securely control accounts
+              on other chains over IBC. With this feature, users will be able to
+              access the entire Interchain through their single Cosmos Hub
+              account. One account, for all the chains.
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="footnote">Chainapsis, Interchain GmbH</div>
           </div>
         </div>
       </div>
@@ -241,6 +298,10 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
+// GLOBAL
+.caption
+  color rgba(0, 0, 0, 0.621) // TODO: change to var
+
 // FEATURES 0
 .features-0-text .title,
 .features-0-text .split
@@ -255,8 +316,31 @@ export default {}
 
 // FEATURES 1
 // FEATURES 2
-.features-2-text
+.features-2 .text,
+.features-2 .span-8,
+.features-2 .span-4
   grid-column span 12
+
+.features-2 .span-8 .col-1,
+.features-2 .span-8 .col-2,
+.features-2 .span-4
+  padding var(--spacing-7)
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 39rem
+
+.features-2 .span-8,
+.features-2 .span-4
+  margin-top var(--spacing-10)
+
+.features-2 .span-8
+  background linear-gradient(0deg, #FFFFFF, #FFFFFF)
+  border-radius $border-radius-5
+  hover-raise(-3px)
+
+.features-2 .desc
+  margin-top var(--spacing-5)
 
 // FEATURES 3
 .features-3 .text
@@ -361,7 +445,7 @@ export default {}
 
   // FEATURES 1
   // FEATURES 2
-  .features-2-text
+  .features-2 .text
     grid-column 3/span 12
 
   // FEATURES 3
@@ -389,4 +473,15 @@ export default {}
 
   .features-7 .description
     grid-column 6/span 10
+
+@media $breakpoint-large
+  // FEATURES 2
+  .features-2 .span-8
+    display grid
+    grid-template-columns auto auto
+    gap var(--spacing-7)
+    grid-column 1/span 8
+
+  .features-2 .span-4
+    grid-column 9/span 12
 </style>
