@@ -365,10 +365,6 @@ $navbar-mobile-menu = 200
     .tm-button
       width 100%
       max-width 20rem
-  .dark-mode &-primary
-    border-bottom 1px solid var(--white-100)
-  .light-mode &-primary
-    border-bottom 1px solid var(--trans-gray-900)
   &-primary
     position relative
     z-index $navbar-mobile-menu + 1
@@ -403,16 +399,18 @@ $navbar-mobile-menu = 200
       margin-left calc(-1 * var(--spacing-5))
     li
       display inline-block
-    &-primary
-      .logo-secondary
-        display none
     &-second
       display block
-    &-secondary
-      display flex
     &-mobile-toggle
       display none
-    &-primary .nuxt-link-exact-active:before
+
+  .nav-primary
+    border-bottom 1px solid var(--white-100)
+    .light-mode &
+      border-bottom-color var(--trans-gray-900)
+    .logo-secondary
+      display none
+    .nuxt-link-exact-active:before
       content ""
       position absolute
       display block
@@ -421,4 +419,8 @@ $navbar-mobile-menu = 200
       bottom -1px
       left 50%
       margin-left -0.5rem
+
+  .nav-secondary
+    display flex
+    margin-top -1px
 </style>

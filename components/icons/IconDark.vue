@@ -1,75 +1,20 @@
 <template>
   <svg
-    width="24"
+    width="25"
     height="24"
-    viewBox="0 0 24 24"
+    viewBox="0 0 25 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g opacity="0.4">
-      <path
-        d="M1 12H2"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M4.2002 4.19922L4.9002 4.89922"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M12 1V2"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M19.7996 4.19922L19.0996 4.89922"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M23 12H22"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M19.7996 19.8016L19.0996 19.1016"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M12 23V22"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M4.2002 19.8016L4.9002 19.1016"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-      <path
-        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="square"
-      />
-    </g>
+    <path
+      d="M19.5 1.00098L20.3485 4.15245L23.5 5.00098L20.3485 5.8495L19.5 9.00098L18.6515 5.8495L15.5 5.00098L18.6515 4.15245L19.5 1.00098Z"
+      fill="currentColor"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M17.6241 15.1241C16.7141 15.6802 15.6445 16.0006 14.5 16.0006C11.1863 16.0006 8.5 13.3143 8.5 10.0006C8.5 8.85651 8.82022 7.78721 9.37592 6.87744C7.65116 7.93137 6.5 9.83173 6.5 12.001C6.5 15.3147 9.18629 18.001 12.5 18.001C14.6696 18.001 16.5703 16.8494 17.6241 15.1241Z"
+      fill="currentColor"
+    />
   </svg>
 </template>

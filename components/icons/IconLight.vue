@@ -1,45 +1,75 @@
 <template>
   <svg
-    width="25"
+    width="24"
     height="24"
-    viewBox="0 0 25 24"
+    viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g opacity="0.4">
+    <g>
       <path
-        d="M12.5 18.25C15.8137 18.25 18.5 15.5637 18.5 12.25C18.5 8.93629 15.8137 6.25 12.5 6.25C9.18629 6.25 6.5 8.93629 6.5 12.25C6.5 15.5637 9.18629 18.25 12.5 18.25Z"
-        stroke="white"
+        d="M1 12H2"
+        stroke="currentColor"
         stroke-width="1.5"
         stroke-miterlimit="10"
         stroke-linecap="square"
       />
-      <mask
-        id="mask0"
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="6"
-        y="5"
-        width="13"
-        height="13"
-      >
-        <path
-          d="M12.5 17.75C15.8137 17.75 18.5 15.0637 18.5 11.75C18.5 8.43629 15.8137 5.75 12.5 5.75C9.18629 5.75 6.5 8.43629 6.5 11.75C6.5 15.0637 9.18629 17.75 12.5 17.75Z"
-          fill="#C4C4C4"
-        />
-      </mask>
-      <g mask="url(#mask0)">
-        <path
-          d="M17.5 15C20.8137 15 23.5 12.3137 23.5 9C23.5 5.68629 20.8137 3 17.5 3C14.1863 3 11.5 5.68629 11.5 9C11.5 12.3137 14.1863 15 17.5 15Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17.5 3.75C14.6005 3.75 12.25 6.10051 12.25 9C12.25 11.8995 14.6005 14.25 17.5 14.25C20.3995 14.25 22.75 11.8995 22.75 9C22.75 6.10051 20.3995 3.75 17.5 3.75ZM10.75 9C10.75 5.27208 13.7721 2.25 17.5 2.25C21.2279 2.25 24.25 5.27208 24.25 9C24.25 12.7279 21.2279 15.75 17.5 15.75C13.7721 15.75 10.75 12.7279 10.75 9Z"
-          fill="white"
-        />
-      </g>
+      <path
+        d="M4.2002 4.19922L4.9002 4.89922"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M12 1V2"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M19.7996 4.19922L19.0996 4.89922"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M23 12H22"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M19.7996 19.8016L19.0996 19.1016"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M12 23V22"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M4.2002 19.8016L4.9002 19.1016"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
+      <path
+        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="square"
+      />
     </g>
   </svg>
 </template>

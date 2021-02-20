@@ -4,11 +4,12 @@
       {{ $colorMode.preference }}
     </div>
     <component
-      :is="`icon-light`"
-      v-if="$colorMode.preference === 'dark'"
+      :is="`icon-dark`"
+      v-if="$colorMode.preference === 'dark' || $colorMode.unknown"
+      class="icon"
       :class="getClasses(color)"
     />
-    <component :is="`icon-dark`" v-else :class="getClasses(color)" />
+    <component :is="`icon-light`" v-else :class="getClasses(color)" />
   </div>
 </template>
 
@@ -56,16 +57,16 @@ export default {
 
 .color
   text-transform capitalize
-  margin-right var(--spacing-1)
+  margin-right var(--spacing-3)
   cursor pointer
 
-.dark-mode .color
-  color var(--white-500)
-.light-mode .color
-  color var(--trans-gray-400)
 
 .flex
   display flex
   flex-direction row
   align-items center
+  color var(--white-500)
+
+  .light-mode &
+    color var(--trans-gray-400)
 </style>
