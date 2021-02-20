@@ -1,50 +1,43 @@
 <template>
-  <div class="tm-section section-articles">
-    <div class="tm-container">
-      <div class="container">
-        <div class="section-title tm-rf7 tm-bold tm-lh-title tm-measure-narrow">
-          Frequently asked questions
+  <main>
+    <!-- FAQ 0 -->
+    <div class="section-hero tm-section">
+      <div class="tm-wrapper">
+        <div class="tm-section tm-container tm-grid-base faq-0">
+          <div class="text">
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+              Frequently asked questions
+            </div>
+          </div>
         </div>
-        <div class="section-subtitle tm-rf2 tm-lh-copy tm-measure">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-        <div class="section-header tm-rf3 tm-bold tm-lh-title">Articles</div>
-        <NuxtLink
-          v-for="item in articles"
-          :key="item.title"
-          :to="`/learn/faq/${item.slug}`"
-          class="articles-item"
-        >
-          <span class="articles-item__icon tm-rf2 tm-lh-solid">&#8599;</span>
-          <div
-            class="articles-item__title tm-rf1 tm-bold tm-lh-title tm-measure-narrow"
-          >
-            {{ item.title }}
-          </div>
-          <div class="articles-item__description tm-rf0 tm-lh-copy tm-measure">
-            {{ item.description }}
-          </div>
-          <div class="articles-item__date tm-rf-1 tm-lh-title">
-            Author: {{ item.author.name }}
-          </div>
-        </NuxtLink>
-        <div class="section-header tm-rf3 tm-bold tm-lh-title">Topics</div>
-        <ul class="flex flex-wrap mb-4 text-center">
-          <li
-            v-for="tag of tags"
-            :key="tag.slug"
-            class="xs:w-full md:w-1/3 lg:flex-1 px-2 text-center"
-          >
-            <NuxtLink :to="`/learn/tag/${tag.slug}`">
-              <p>
-                {{ tag.name }}
-              </p>
-            </NuxtLink>
-          </li>
-        </ul>
       </div>
     </div>
-  </div>
+
+    <!-- FAQ 1 -->
+    <div class="tm-wrapper">
+      <div class="tm-container tm-grid-base">
+        <div class="faq-1">
+          <div v-for="item in articles" :key="item.title" class="item">
+            <div class="title tm-rf2 tm-bold tm-lh-copy">{{ item.title }}</div>
+            <div class="desc tm-rf0 tm-lh-copy">{{ item.description }}</div>
+            <tm-button
+              to-link="internal"
+              :to="`/learn/faq/${item.slug}`"
+              size="l"
+              dark-color="var(--white)"
+              light-color="var(--black)"
+              background-color="transparent"
+              variant="text"
+              class="btn"
+              >Learn more <span class="icon__right">--></span></tm-button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section-social-cards />
+  </main>
 </template>
 
 <script>
@@ -72,68 +65,29 @@ export default {
   border none
   color inherit
 
-.section-articles
-  .container
-    gap var(--spacing-7)
-  .section-title
-    color var(--white)
-    grid-column 1 / span 9
-  .section-subtitle
-    display flex
-    justify-content flex-end
-    flex-direction column
-    grid-row 2
-    grid-column 1 / span 11
-    color var(--gray-800)
-  .section-header
-    grid-column 1 / span 11
-    margin-top var(--spacing-8)
-    color var(--white)
-  .articles-item
-    grid-column 1 / span 12
-    display block
-    text-align left
-    padding var(--spacing-7) 0
-    position relative
-    &:last-child
-      border-bottom 0
-    &__icon
-      position absolute
-      right 0
-      color var(--gray-600)
-      transition color .1s ease-out, transform .25s ease-out
-    &__title
-      color var(--primary-900)
-      transition color .1s ease-out
-      padding-right 2rem
-    &__description
-      margin-top var(--spacing-4)
-      color var(--gray-600)
-    &__date
-      margin-top var(--spacing-4)
-      color var(--gray-600)
-    &:hover
-      .articles-item__title,
-      .articles-item__icon
-        color var(--white)
-      .articles-item__icon
-        transform translate(3px, -3px)
+// FAQ 0
+.section-hero
+  text-align left
 
-@media $breakpoint-small
-  .section-articles
-    .articles-item
-      grid-column span 6
+.faq-0 .text
+  grid-column span 12
 
-@media $breakpoint-large
-  .section-articles
-    .container
-      gap var(--spacing-8) var(--spacing-7)
-    .section-title
-      grid-column 2/span 9
-    .section-subtitle
-      grid-column 2/span 11
-    .section-header
-      grid-column 2 / span 11
-    .articles-item
-      grid-column span 4
+// FAQ 1
+.faq-1
+  grid-column span 12
+
+.desc
+  margin-top var(--spacing-4)
+
+.item + .item
+  margin-top var(--spacing-8)
+
+@media $breakpoint-medium
+  // FAQ 0
+  .faq-0 .text
+    grid-column 6/span 12
+
+  // FAQ 1
+  .faq-1
+    grid-column 6/span 12
 </style>
