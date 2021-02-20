@@ -4,12 +4,12 @@
       {{ $colorMode.preference }}
     </div>
     <component
-      :is="`icon-dark`"
-      v-if="$colorMode.preference === 'dark' || $colorMode.unknown"
+      :is="`icon-light`"
+      v-if="$colorMode.preference === 'light'"
       class="icon"
       :class="getClasses(color)"
     />
-    <component :is="`icon-light`" v-else :class="getClasses(color)" />
+    <component :is="`icon-dark`" v-else :class="getClasses(color)" />
   </div>
 </template>
 
