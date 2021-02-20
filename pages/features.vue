@@ -55,10 +55,42 @@
       </div>
     </div>
 
+    <!-- FEATURES 4 -->
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base features-4">
+        <div class="graphics">
+          <!-- GRAPHICS -->
+        </div>
+        <div class="text">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Capital Formation · Q2 2021
+            </div>
+          </div>
+          <div class="mid">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Next-gen. Automated Market Maker ↗️
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy">
+              The Hub’s Automated Market Maker (AMM) module will enable users to
+              seamlessly swap digital assets coming from all over the
+              interchain. The module improves on existing designs by combining
+              traditional AMM features (like that of Uniswap) with an
+              orderbook-based model, providing a richer and more efficient
+              trading experience.
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="footnote">B-Harvest, Tendermint</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FEATURES 5 -->
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base features-5">
-        <div class="left">
+        <div class="text">
           <div class="top">
             <div class="caption tm-rf0 tm-lh-title">
               Capital Formation · 2021
@@ -81,7 +113,7 @@
             <div class="footnote">Althea, Interchain Foundation</div>
           </div>
         </div>
-        <div class="right">
+        <div class="graphics">
           <!-- GRAPHICS -->
         </div>
       </div>
@@ -192,8 +224,8 @@ export default {}
 .features-2-text
   grid-column span 12
 
-// FEATURES 5
-.features-5 .left
+// FEATURES 4
+.features-4 .text
   grid-column span 12
   padding var(--spacing-7)
   display flex
@@ -201,7 +233,19 @@ export default {}
   justify-content space-between
   height 32.25rem
 
-.features-5 .left .desc
+.features-4 .text .desc
+  margin-top var(--spacing-5)
+
+// FEATURES 5
+.features-5 .text
+  grid-column span 12
+  padding var(--spacing-7)
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 32.25rem
+
+.features-5 .text .desc
   margin-top var(--spacing-5)
 
 // FEATURES 6
@@ -274,8 +318,12 @@ export default {}
   .features-2-text
     grid-column 3/span 12
 
+  // FEATURES 4
+  .features-4 .text
+    grid-column 7/span 12
+
   // FEATURES 5
-  .features-5 .left
+  .features-5 .text
     grid-column 1/span 7
     position relative
 
