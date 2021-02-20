@@ -4,34 +4,36 @@
       <div class="tm-wrapper">
         <div class="tm-section tm-container">
           <div class="features-0-text tm-grid-base">
-            <div class="top">
-              <div class="title tm-rf6 tm-bold tm-lh-title">
-                The next wave of interchain infrastructure, commerce, and
-                culture.
-              </div>
+            <div class="title tm-rf6 tm-bold tm-lh-title">
+              The next wave of interchain infrastructure, commerce, and culture.
             </div>
-            <div class="bottom">
-              <p class="subtitle tm-rf1 tm-lh-copy">
-                The Cosmos Hub pioneered a new era in the blockchain space by
-                being the first public proof-of-stake blockchain built on top of
-                a Byzantine Fault Tolerant consensus engine.
-              </p>
-              <p class="subtitle tm-rf1 tm-lh-copy">
-                Yet, this was only the beginning – two years after its launch,
-                the Cosmos Hub is set to play a leading role in the Interchain
-                by offering a wide array of vital services.
-              </p>
-              <tm-button
-                to-link="internal"
-                to="/staking"
-                size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
-                variant="text"
-                class="btn"
-                >The Hub’s vision <span class="icon__right">↗️</span></tm-button
-              >
+            <div class="split">
+              <div class="left">
+                <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
+                  The Cosmos Hub pioneered a new era in the blockchain space by
+                  being the first public proof-of-stake blockchain built on top
+                  of a Byzantine Fault Tolerant consensus engine.
+                </div>
+              </div>
+              <div class="right">
+                <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
+                  Yet, this was only the beginning – two years after its launch,
+                  the Cosmos Hub is set to play a leading role in the Interchain
+                  by offering a wide array of vital services.
+                </div>
+                <tm-button
+                  to-link="internal"
+                  to="/staking"
+                  size="l"
+                  dark-color="var(--white)"
+                  light-color="var(--black)"
+                  background-color="transparent"
+                  variant="text"
+                  class="btn"
+                  >The Hub’s vision
+                  <span class="icon__right">↗️</span></tm-button
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -77,18 +79,31 @@ export default {}
 
 <style lang="stylus" scoped>
 // FEATURES 0
-.features-0-text .top,
-.features-0-text .bottom
+.features-0-text .title,
+.features-0-text .split
   grid-column span 12
 
-.bottom
+.features-0-text .split,
+.features-0-text .split .right
   margin-top var(--spacing-9)
+
+.features-0-text .split .right .subtitle
+  margin-bottom var(--spacing-6)
 
 @media $breakpoint-medium
   // FEATURES 0
-  .features-0-text .top
+  .features-0-text .title,
+  .features-0-text .split
     grid-column 2/span 12
 
-  .features-0-text .bottom
-    grid-column 7/span 11
+  .features-0-text .split
+    display grid
+    grid-template-columns auto auto
+    gap var(--spacing-7)
+
+  .features-0-text .split .left,
+  .features-0-text .split .right
+    grid-column unset
+    height 8.5rem
+    margin-top 0
 </style>
