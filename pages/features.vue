@@ -55,6 +55,40 @@
       </div>
     </div>
 
+    <!-- FEATURES 3 -->
+    <div class="tm-wrapper">
+      <div class="tm-section tm-container tm-grid-base features-3">
+        <div class="text">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Shared Security · Late 2021
+            </div>
+          </div>
+          <div class="mid">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Interchain Staking ↗️
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy">
+              Staked ATOMs will be able to secure more than just the Cosmos Hub.
+              In practice, validators will be able to validate chains that
+              request it (called child-chains) on an opt-in basis, with their
+              ATOM delegation as collateral. In exchange for securing
+              child-chains, ATOM stakers will be rewarded with additional
+              rewards. The more child-chains, the more rewards!
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="footnote">
+              Informal Systems, Interchain Foundation, Tendermint
+            </div>
+          </div>
+        </div>
+        <div class="graphics">
+          <!-- GRAPHICS -->
+        </div>
+      </div>
+    </div>
+
     <!-- FEATURES 4 -->
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base features-4">
@@ -224,6 +258,18 @@ export default {}
 .features-2-text
   grid-column span 12
 
+// FEATURES 3
+.features-3 .text
+  grid-column span 12
+  padding var(--spacing-7)
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 32.25rem
+
+.features-3 .text .desc
+  margin-top var(--spacing-5)
+
 // FEATURES 4
 .features-4 .text
   grid-column span 12
@@ -317,6 +363,11 @@ export default {}
   // FEATURES 2
   .features-2-text
     grid-column 3/span 12
+
+  // FEATURES 3
+  .features-3 .text
+    grid-column 1/span 7
+    position relative
 
   // FEATURES 4
   .features-4 .text
