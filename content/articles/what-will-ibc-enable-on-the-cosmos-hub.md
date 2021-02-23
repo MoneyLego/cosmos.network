@@ -1,6 +1,7 @@
 ---
+index: 16
 title: What will IBC enable on the Cosmos Hub?
-description: This is the description for the article about all the things we know
+description: "IBC will enable many new features such as: Inter-blockchain token transfers and Interchain Staking"
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What will IBC enable on the Cosmos Hub?
 
 Cosmos Hub will be one of the first blockchain to implement IBC. While any feature must be approved by the Hub's governance in order to be adopted, it is likely that IBC will enable many new features such as:
 

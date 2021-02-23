@@ -1,4 +1,5 @@
 ---
+index: 1
 title: What is Cosmos?
 description: Cosmos is an ever-expanding network of decentralized and interconnected blockchains.
 alt: Article 10
@@ -9,7 +10,6 @@ author:
 tags: 
   - blockchain
 ---
-## What is Cosmos?
 
 Cosmos is a network of interconnected blockchains. Cosmosa also designates the set of tools and protocols that facilitate the development, deployment and interconnection of blockchains.
 

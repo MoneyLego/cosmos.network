@@ -1,6 +1,7 @@
 ---
+index: 10
 title: How should ATOM holders choose the Validator(s) to stake with? 
-description: This is the description for the article about all the things we know
+description: Delegators are encouraged to visit validators' respective websites in order to learn more about their operation and security practices.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## How should ATOM holders choose the Validator(s) to stake with? 
 
 In order to choose validator(s), ATOM holders have access to a range of information directly in [Lunie](https://lunie.io) or other [Cosmos block explorers]():
 

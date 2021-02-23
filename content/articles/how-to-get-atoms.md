@@ -1,4 +1,5 @@
 ---
+index: 4
 title: How to get ATOMs?
 description: ATOMs can be obtained on a number of cryptocurrency exchanges.
 alt: Article 10
@@ -10,6 +11,5 @@ tags:
   - blockchain
   - atom
 ---
-## How to get ATOMs?
 
 ATOMs can be obtained on a number of cryptocurrency exchanges. A  list of such exchanges can be found on this [third party website](https://messari.io/asset/cosmos/exchanges). 

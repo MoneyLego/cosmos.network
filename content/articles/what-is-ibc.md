@@ -1,6 +1,7 @@
 ---
+index: 15
 title: What is IBC?
-description: This is the description for the article about all the things we know
+description: IBC is an acronym for Inter-Blockchain Communication Protocol, which is a protocol for secure message passing between heterogeneous blockchains.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,6 +11,5 @@ tags:
   - blockchain
   - atom
 ---
-## What is IBC?
 
 IBC is an acronym for Inter-Blockchain Communication Protocol, which is a protocol for secure message passing between heterogeneous blockchains. It is a central piece of the Cosmos vision, as it will enable blockchains to interract in ways that were not possible before. For a deeper look at IBC, please refer to the [IBC documentation](https://github.com/cosmos/ics/tree/master/ibc).

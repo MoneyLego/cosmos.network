@@ -1,6 +1,7 @@
 ---
+index: 6
 title: What is the ATOM Staking Process?
-description: This is the description for the article about all the things we know
+description: Obtain ATOMs and delegate their ATOMs to one or more [validators] of their choice using a [Wallet].
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is the ATOM Staking Process?
 
 Staking ATOM is relatively straightforward. Users need to:
 
@@ -18,33 +18,3 @@ Staking ATOM is relatively straightforward. Users need to:
 3. [Delegate](#what-is-delegating?) their ATOMs to one or more [validators] of their choice using a [Wallet]. 
 
 And that's it!
-
-## This is a heading
-This is some more info
-<div class="bg-blue-500 text-white p-4 mb-4">
-  This is HTML inside markdown that has a class some classes
-</div>
-
-<info-box>
-  <template #info-box>
-    This is a vue component inside markdown using slots
-  </template>
-</info-box>
-
-```js[nuxt.config.js]
-export default {
-  nuxt: "is the best"
-}
-```
-```html[my-first-blog-post.md]
-<p>code styling is easy</p>
-```
-
-### This is a sub heading
-This is some more info
-
-### This is another sub heading
-This is some more info
-
-## This is another heading
-This is some more info

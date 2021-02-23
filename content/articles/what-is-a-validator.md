@@ -1,6 +1,7 @@
 ---
+index: 7
 title: What is a Validator?
-description: This is the description for the article about all the things we know
+description: Validators are special actors in the network responsible for adding new blocks of transactions to the blockchain.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is a Validator?
 
 Validators are special actors in the network responsible for adding new blocks of transactions to the blockchain. Anyone can declare themselves as validator candidate, but only 125 candidates can enter the set of active validators. Validator candidates are chosen based on the amount of voting power associated with their operator account. Voting power is obtained when ATOM holders start staking, in proportion of the amount of ATOMs staked. This voting power must then be [delegated](#what-is-delegating?) to one or multiple validator candidates. As a result, ATOM holders will have to choose validator(s) when they stake. 
 

@@ -1,6 +1,7 @@
 ---
-title: What is a Validator's commission
-description: This is the description for the article about all the things we know
+index: 11
+title: What is a Validator's commission?
+description: In the process of staking, rewards are generated proportional to the amount of ATOMs staked. Of these rewards, a certain percentage goes to the validator to which the ATOMs are delegated. This percentage is called the Commission.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is a Validator's commission
 
 In the process of staking, rewards are generated proportional to the amount of ATOMs staked. Of these rewards, a certain percentage goes to the validator to which the ATOMs are delegated. This percentage is called the Commission, and is set by validator operator themselves. 
 

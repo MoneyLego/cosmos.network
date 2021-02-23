@@ -1,6 +1,7 @@
 ---
+index: 13
 title: What are the risks associated with Staking?
-description: This is the description for the article about all the things we know
+description: Staking ATOMs is not risk-free.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What are the risks associated with Staking?
 
 Staking ATOMs is not risk-free. ATOMs delegated to a validator can be partially slashed (i.e. forfeited without possibility of recovery) should the validator misbehave. On the Cosmos Hub, there are currently two attributable faults that can lead to a slashing event:
 

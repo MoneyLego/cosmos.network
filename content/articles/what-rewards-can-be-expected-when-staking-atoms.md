@@ -1,6 +1,7 @@
 ---
+index: 12
 title: What rewards can be expected when staking ATOMs?
-description: This is the description for the article about all the things we know
+description: "Staking rewards come from two different sources: ATOM inflation and Transaction fees"
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,7 +11,6 @@ tags:
   - blockchain
   - atom
 ---
-## What rewards can be expected when staking ATOMs?
 
 Staking rewards come from two different sources:
 
