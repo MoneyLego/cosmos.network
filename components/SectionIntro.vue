@@ -443,7 +443,7 @@ export default {
   // Developer
   .section-developer
     .left
-      grid-column 1/span 7
+      grid-column 2/span 7
       display grid
       grid-template-columns repeat(6, 1fr)
       gap 0 var(--spacing-7)
