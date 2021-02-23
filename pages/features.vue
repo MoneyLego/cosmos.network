@@ -53,34 +53,36 @@
           </div>
         </div>
         <div class="span-8">
-          <div class="col-1">
-            <div class="top">
+          <div class="row-1">
+            <div class="img">
+              <!-- GRAPHICS -->
+            </div>
+            <div class="text">
               <div class="caption tm-rf0 tm-lh-title">
                 Capital Formation · Live
               </div>
-            </div>
-            <div class="mid">
               <div class="title tm-rf3 tm-bold tm-lh-title">Staking -></div>
               <div class="desc tm-rf0 tm-lh-copy">
-                Built on top of the Tendermint BFT consensus engine, the Hub’s
-                staking module is one of the most efficient proof-of-stake
-                implementations in the world. It enables ATOM token holders to
-                secure the chain by locking their ATOMs, in exchange for
-                transaction fees.
+                Built on top of the
+                <a
+                  href="https://tendermint.com/core/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="tm-link"
+                  >Tendermint BFT consensus engine</a
+                >, the Hub’s staking module is one of the most efficient
+                proof-of-stake implementations in the world. It enables ATOM
+                token holders to secure the chain by locking their ATOMs, in
+                exchange for transaction fees.
               </div>
             </div>
-            <div class="bottom">
-              <!-- GRAPHICS -->
-            </div>
           </div>
-          <div class="col-2">
-            <div class="top">
-              <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
-            </div>
-            <div class="mid">
+          <div class="row-2">
+            <div class="img">
               <!-- GRAPHICS -->
             </div>
-            <div class="bottom">
+            <div class="text">
+              <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
               <div class="title tm-rf3 tm-bold tm-lh-title">Voting -></div>
               <div class="desc tm-rf0 tm-lh-copy">
                 Staking ATOMs gives rights to participate in the open governance
@@ -302,6 +304,9 @@ export default {}
 .caption
   color rgba(0, 0, 0, 0.621) // TODO: change to var
 
+.desc
+  color var(--trans-gray-200)
+
 // FEATURES 0
 .features-0-text .title,
 .features-0-text .split
@@ -321,23 +326,33 @@ export default {}
 .features-2 .span-4
   grid-column span 12
 
-.features-2 .span-8 .col-1,
-.features-2 .span-8 .col-2,
 .features-2 .span-4
   padding var(--spacing-7)
   display flex
   flex-direction column
   justify-content space-between
-  height 39rem
+  height 38.3125rem
 
 .features-2 .span-8,
 .features-2 .span-4
   margin-top var(--spacing-10)
 
 .features-2 .span-8
-  background linear-gradient(0deg, #FFFFFF, #FFFFFF)
-  border-radius $border-radius-5
-  hover-raise(-3px)
+  .row-1,
+  .row-2
+    background linear-gradient(0deg, #FFFFFF, #FFFFFF)
+    border-radius $border-radius-5
+    hover-raise(-3px)
+    padding var(--spacing-8) var(--spacing-7)
+
+    .caption
+      margin-top var(--spacing-7)
+
+.features-2 .span-8 .title
+  margin-top var(--spacing-6)
+
+.features-2 .span-8 .row-2
+  margin-top var(--spacing-7)
 
 .features-2 .desc
   margin-top var(--spacing-5)
@@ -448,6 +463,17 @@ export default {}
   .features-2 .text
     grid-column 3/span 12
 
+  .features-2 .span-8
+    .row-1,
+    .row-2
+      display grid
+      grid-auto-flow column
+      grid-template-columns min-content 1fr
+      gap var(--spacing-7)
+
+      .caption
+        margin-top 0
+
   // FEATURES 3
   .features-3 .text
     grid-column 1/span 7
@@ -477,11 +503,10 @@ export default {}
 @media $breakpoint-large
   // FEATURES 2
   .features-2 .span-8
-    display grid
-    grid-template-columns auto auto
-    gap var(--spacing-7)
     grid-column 1/span 8
+    height auto
 
   .features-2 .span-4
     grid-column 9/span 12
+    height auto
 </style>
