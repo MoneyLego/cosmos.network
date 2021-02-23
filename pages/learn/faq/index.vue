@@ -43,17 +43,26 @@
           <div class="cta">
             <div
               v-if="currentIndex != articles.length"
-              class="tm-rf1 tm-lh-copy tm-medium"
               @click="currentIndex = articles.length"
             >
-              View all
+              <tm-button
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf1 tm-lh-copy tm-medium"
+                >Show all &#8595;</tm-button
+              >
             </div>
-            <div
-              v-else
-              class="tm-rf1 tm-lh-copy tm-medium"
-              @click="currentIndex = 6"
-            >
-              View less
+            <div v-else @click="currentIndex = 6">
+              <tm-button
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf1 tm-lh-copy tm-medium"
+                >Show less &#8593;</tm-button
+              >
             </div>
           </div>
         </div>
@@ -113,7 +122,8 @@ export default {
 
 .cta
   margin-top var(--spacing-10)
-  text-align center
+  text-align left
+  cursor pointer
 
 @media $breakpoint-medium
   // FAQ 0
