@@ -68,22 +68,94 @@
       </div>
     </div>
 
-    <div class="section-devs tm-section tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">Build upon value.</div>
-      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy">
-        Developers in Cosmos are the pioneers of the new era of blockchain
-        technology. Join a fast-growing token economy and build upon a secure
-        and stable foundation.
+    <div class="section-developer tm-section tm-container tm-grid-base">
+      <div class="left">
+        <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
+          Developers
+        </div>
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          Build upon value.
+        </div>
+        <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
+          Developers in Cosmos are the pioneers of the new era of blockchain
+          technology. Join a fast-growing token economy and build upon a secure
+          and stable foundation.
+        </div>
+        <div class="row">
+          <tm-button
+            to-link="external"
+            href="http://hub.cosmos.network"
+            size="l"
+            color="var(--white)"
+            background-color="var(--black)"
+            class="btn"
+            >View the docs <span class="icon__right">&#8599;</span></tm-button
+          >
+        </div>
       </div>
-      <tm-button
-        to-link="external"
-        href="http://hub.cosmos.network"
-        size="l"
-        color="var(--white)"
-        background-color="var(--black)"
-        class="btn"
-        >View the docs <span class="icon__right">&#8599;</span></tm-button
-      >
+      <div class="right">
+        <!-- GRAPHICS -->
+        <div class="nav">Build a chain</div>
+        <div class="slider">
+          <div class="title">
+            Build your own decentralized community, powered by your own
+            blockchain.
+          </div>
+          <tm-button
+            to-link="external"
+            href="http://hub.cosmos.network"
+            size="l"
+            dark-color="var(--white)"
+            light-color="var(--black)"
+            background-color="transparent"
+            variant="text"
+            class="btn"
+            >Get started in minutes
+            <span class="icon__right">&#8594;</span></tm-button
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dev-features tm-section tm-container tm-grid-base">
+      <div class="cards-wrapper">
+        <div class="card-item">
+          <div class="top tm-rf0 tm-lh-title">Cross-chain Staking</div>
+          <div class="mid">
+            <!-- GRAPHICS -->
+          </div>
+          <div class="bottom">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Share security with the Hub.
+            </div>
+            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="top tm-rf0 tm-lh-title">Fundraising</div>
+          <div class="mid">
+            <!-- GRAPHICS -->
+          </div>
+          <div class="bottom">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Build with funds from the Hub.
+            </div>
+            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="top tm-rf0 tm-lh-title">Chain Name System</div>
+          <div class="mid">
+            <!-- GRAPHICS -->
+          </div>
+          <div class="bottom">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Claim your chain name.
+            </div>
+            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section-community tm-section tm-container tm-grid-base">
@@ -257,7 +329,43 @@ export default {
 
 .section-features
 
-.section-
+// Developer
+.section-developer
+  .left
+    grid-column span 12
+    .caption
+      writing-mode tb
+      transform rotate(180deg)
+    .title
+      margin-top var(--spacing-7)
+    .subtitle
+      margin-left 2.4375rem
+  .right
+    grid-column span 12
+    margin-top 16.375rem
+
+// Dev features
+.section-dev-features
+  grid-column span 12
+
+.cards-wrapper
+  grid-row 2
+  display grid
+  grid-template-columns repeat(1, 1fr)
+  gap var(--spacing-7)
+  grid-column span 12
+  margin-top var(--spacing-11)
+
+.card-item
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 34.6875rem
+  padding var(--spacing-7)
+
+  .desc
+    margin-top var(--spacing-7)
+    color var(--trans-gray-400)
 
 // Community
 .section-community
@@ -286,7 +394,19 @@ export default {
   .btn-group
     display block
 
+  // Developer
+  .section-developer
+    .left
+      grid-column span 12
+      .subtitle
+        margin-left 0
+
+  // Dev features
+  .cards-wrapper
+    margin-top 0
+
 @media $breakpoint-medium
+  // Services
   .section-services
     .title
       grid-column 3 / span 7
@@ -294,6 +414,12 @@ export default {
     .subtitle
       grid-column 4 / span 6
 
+  // Dev features
+  .section-dev-features
+    .cards-wrapper
+      grid-template-columns repeat(2, 1fr)
+
+  // Community
   .section-community
     .text
       grid-column 1/span 6
@@ -303,6 +429,7 @@ export default {
       margin-top 0
 
 @media $breakpoint-large
+  // Services
   .section-services
     .title
       grid-column 6 / span 7
@@ -313,6 +440,34 @@ export default {
     .slider
       grid-column 1 / span 12
 
+  // Developer
+  .section-developer
+    .left
+      grid-column 1/span 7
+      display grid
+      grid-template-columns repeat(6, 1fr)
+      gap 0 var(--spacing-7)
+      .caption
+        grid-row 1
+      .title
+        grid-row 2
+        grid-column 1/span 5
+      .subtitle
+        grid-row 3
+        grid-column 2/span 6
+      .row
+        grid-row 4
+        grid-column 1/span 4
+        margin-top var(--spacing-7)
+    .right
+      grid-column 9/span 12
+
+  // Dev features
+  .section-dev-features
+    .cards-wrapper
+      grid-template-columns repeat(3, 1fr)
+
+  // Community
   .section-community
     .text
       grid-column 1/span 5
