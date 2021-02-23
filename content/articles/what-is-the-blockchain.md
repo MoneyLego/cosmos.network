@@ -1,4 +1,5 @@
 ---
+index: 0
 title: What is the Blockchain?
 description: The blockchain is a technology that enables the development of permissionless decentralized applications.
 alt: Article 10

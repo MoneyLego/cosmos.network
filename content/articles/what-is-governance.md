@@ -1,4 +1,5 @@
 ---
+index: 14
 title: What is Governance?
 description: Governance refers to the ability for stakers to vote on proposals that affect the evolution of the network.
 alt: Article 10

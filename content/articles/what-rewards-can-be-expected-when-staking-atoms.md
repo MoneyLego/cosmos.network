@@ -1,4 +1,5 @@
 ---
+index: 12
 title: What rewards can be expected when staking ATOMs?
 description: "Staking rewards come from two different sources: ATOM inflation and Transaction fees"
 alt: Article 10

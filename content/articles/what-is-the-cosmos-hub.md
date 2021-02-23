@@ -1,4 +1,5 @@
 ---
+index: 2
 title: What is the Cosmos Hub?
 description: The Cosmos Hub is the most secure and decentralized blockchain in the Cosmos Network. 
 alt: Article 10

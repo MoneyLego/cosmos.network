@@ -1,4 +1,5 @@
 ---
+index: 8
 title: What is delegating?
 description: Blockchains that use staking, such as the Cosmos Hub, are primarely operated by a set of actors called validators.
 alt: Article 10

@@ -1,4 +1,5 @@
 ---
+index: 1
 title: What is Cosmos?
 description: Cosmos is an ever-expanding network of decentralized and interconnected blockchains.
 alt: Article 10

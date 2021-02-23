@@ -1,4 +1,5 @@
 ---
+index: 3
 title: What is the ATOM token?
 description: The ATOM token is the main cryptoasset of the Cosmos Hub blockchain.
 alt: Article 10
