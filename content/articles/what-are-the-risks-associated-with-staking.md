@@ -1,6 +1,6 @@
 ---
 title: What are the risks associated with Staking?
-description: This is the description for the article about all the things we know
+description: Staking ATOMs is not risk-free.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

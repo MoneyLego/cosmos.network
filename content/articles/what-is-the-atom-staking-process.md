@@ -1,6 +1,6 @@
 ---
 title: What is the ATOM Staking Process?
-description: This is the description for the article about all the things we know
+description: Obtain ATOMs and delegate their ATOMs to one or more [validators] of their choice using a [Wallet].
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

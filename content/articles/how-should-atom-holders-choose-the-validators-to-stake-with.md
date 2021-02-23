@@ -1,6 +1,6 @@
 ---
 title: How should ATOM holders choose the Validator(s) to stake with? 
-description: This is the description for the article about all the things we know
+description: Delegators are encouraged to visit validators' respective websites in order to learn more about their operation and security practices.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

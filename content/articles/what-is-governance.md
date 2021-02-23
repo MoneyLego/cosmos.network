@@ -1,6 +1,6 @@
 ---
 title: What is Governance?
-description: This is the description for the article about all the things we know
+description: Governance refers to the ability for stakers to vote on proposals that affect the evolution of the network.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

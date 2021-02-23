@@ -1,6 +1,6 @@
 ---
 title: What is Staking?
-description: This is the description for the article about all the things we know
+description: Staking is the process of locking up a digital asset (ATOM in the case of the Cosmso Hub) in order to provide economic security for a public blockchain.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

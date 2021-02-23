@@ -1,6 +1,6 @@
 ---
 title: What will IBC enable on the Cosmos Hub?
-description: This is the description for the article about all the things we know
+description: "IBC will enable many new features such as: Inter-blockchain token transfers and Interchain Staking"
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM

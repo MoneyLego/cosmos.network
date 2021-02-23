@@ -1,6 +1,6 @@
 ---
 title: What is a Validator?
-description: This is the description for the article about all the things we know
+description: Validators are special actors in the network responsible for adding new blocks of transactions to the blockchain.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
