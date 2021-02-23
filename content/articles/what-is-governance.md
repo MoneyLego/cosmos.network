@@ -10,7 +10,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is Governance?
 
 Governance refers to the ability for stakers to vote on proposals that affect the evolution of the network. Proposals can be submitted by any ATOM holder, but only proposals that come with a sufficient deposit (current minimum deposit is 512 ATOMs) are eligible to be voted on. Deposits can be crowdfunded and need not be entirely provided by the user submitting the proposal. 
 

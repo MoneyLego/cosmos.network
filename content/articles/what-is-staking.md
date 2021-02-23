@@ -10,7 +10,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is Staking?
 
 Staking is the process of locking up a digital asset (ATOM in the case of the Cosmso Hub) in order to provide economic security for a public blockchain. Public blockchains are permissionless networks, meaning anyone is free to participate in maintaining them. As a result, it is possible for some of the maintainers of the network (called [validators](#what-is-a-validator-?)) to act maliciously. In order to incentivise maintainers to behave in the best interest of the network, the locked up assets are at risk of being partially slashed (i.e. destroyed) if evidence is brought that a fault was committed. For more, see [Risks].
 

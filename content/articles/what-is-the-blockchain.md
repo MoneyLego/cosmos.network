@@ -9,6 +9,5 @@ author:
 tags: 
   - blockchain
 ---
-## What is the Blockchain?
 
 The blockchain is a technology that enables the development of permissionless decentralized applications. It does so by providing a method to securely replicate a ledger among parties that do not necessarily trust each other. In other words, blockchains allow the creation of a new kind of digital application that do not require a central coordinator to operate. Think electronic money without central banks, digital asset trading without centrally-operated stock exchanges, or social network platforms without central administrators.

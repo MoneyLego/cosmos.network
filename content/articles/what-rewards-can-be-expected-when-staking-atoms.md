@@ -10,7 +10,6 @@ tags:
   - blockchain
   - atom
 ---
-## What rewards can be expected when staking ATOMs?
 
 Staking rewards come from two different sources:
 

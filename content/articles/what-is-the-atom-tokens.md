@@ -10,6 +10,5 @@ tags:
   - blockchain
   - atom
 ---
-## What is the ATOM token?
 
 The ATOM token is the main cryptoasset of the Cosmos Hub blockchain. If you hold ATOMs, you can temporarily lock them up in order to contribute to the security of the Cosmos Hub via a mechanism called [Staking](#what-is-staking). In exchange for locking them up, you will receive [rewards](#what-rewards-can-i-expect-when-i-stake-my-ATOMs?) newly minted ATOMs as well a share of the transaction fees collected by the blockchain. However, do note that staking [is not risk free](#what-are-the-risks-associated-with-staking?). 

@@ -10,7 +10,6 @@ tags:
   - blockchain
   - atom
 ---
-## What is delegating?
 
 Blockchains that use staking, such as the Cosmos Hub, are primarely operated by a set of actors called [validators](what-is-a-validator?). The status of a validator (active or candidate), as well as its weight is established based on its amount of voting power. Voting power is obtained when ATOMs are locked up in the process of staking, and must be granted to a validator or validator candidate. This is called delegating. 
 

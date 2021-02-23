@@ -10,7 +10,6 @@ tags:
   - blockchain
   - atom
 ---
-## How should ATOM holders choose the Validator(s) to stake with? 
 
 In order to choose validator(s), ATOM holders have access to a range of information directly in [Lunie](https://lunie.io) or other [Cosmos block explorers]():
 
