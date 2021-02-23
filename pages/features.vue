@@ -143,7 +143,21 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">Chainapsis, Interchain GmbH</div>
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/informal.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              Chainapsis, Interchain GmbH
+            </div>
           </div>
         </div>
       </div>
@@ -183,7 +197,24 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/informal.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
               Informal Systems, Interchain Foundation, Tendermint
             </div>
           </div>
@@ -231,7 +262,21 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">B-Harvest, Tendermint</div>
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              B-Harvest, Tendermint
+            </div>
           </div>
         </div>
       </div>
@@ -270,7 +315,21 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">Althea, Interchain Foundation</div>
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/informal.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              Althea, Interchain Foundation
+            </div>
           </div>
         </div>
         <div class="graphics">
@@ -312,7 +371,21 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">Tendermint, Interchain Foundation</div>
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              Tendermint, Interchain Foundation
+            </div>
           </div>
         </div>
         <div class="right">
@@ -347,7 +420,21 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="footnote">Chorus One, Interchain Foundation</div>
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/informal.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              Chorus One, Interchain Foundation
+            </div>
           </div>
         </div>
       </div>
@@ -396,6 +483,28 @@ export default {}
 .desc
   color var(--trans-gray-200)
 
+.bottom
+  display block
+  align-items center
+
+  .footnote
+    margin-top var(--spacing-5)
+
+.avatar-list
+  display flex
+
+.overlap
+  margin-right -8px
+
+.avatar-item
+  background-color transparent
+  box-shadow transparent 0px 0px 0px 4px
+  display flex
+  justify-content center
+  align-items center
+  height 2rem
+  width 2rem
+
 // FEATURES 0
 .features-0-text .title,
 .features-0-text .split
@@ -421,6 +530,7 @@ export default {}
   flex-direction column
   justify-content space-between
   height 38.3125rem
+  position relative
 
 .features-2 .span-8,
 .features-2 .span-4
@@ -442,6 +552,15 @@ export default {}
 .features-2 .span-8 .row-2
   margin-top var(--spacing-7)
 
+.features-2 .span-4
+  &:before
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    top 0
+    right 0
+    transform-origin center
+    transform rotate(180deg)
+
 // FEATURES 3
 .features-3 .text
   grid-column span 12
@@ -450,6 +569,13 @@ export default {}
   flex-direction column
   justify-content space-between
   height 32.25rem
+  &:after
+    content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    bottom 0
+    left 0
+    transform-origin center
+    transform rotate(0deg) translate(10px, 10px)
 
 // FEATURES 4
 .features-4 .text
@@ -459,6 +585,20 @@ export default {}
   flex-direction column
   justify-content space-between
   height 32.25rem
+  &:before
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    top 0
+    right 0
+    transform-origin center
+    transform rotate(180deg)
+  &:after
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    bottom 3px
+    right -5px
+    transform-origin center
+    transform rotate(270deg)
 
 // FEATURES 5
 .features-5 .text
@@ -468,6 +608,13 @@ export default {}
   flex-direction column
   justify-content space-between
   height 32.25rem
+  &:after
+    content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    bottom 0
+    left 0
+    transform-origin center
+    transform rotate(0deg) translate(10px, 10px)
 
 // FEATURES 6
 .features-6
@@ -478,19 +625,19 @@ export default {}
 .features-6 .left,
 .features-6 .right
   &:before
-    content url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='9' height='9' viewBox='0 0 9 9' fill='darkgray'><rect width='9' height='2'/><rect width='2' height='9'/></svg>")
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    bottom 3px
+    right -5px
+    transform-origin center
+    transform rotate(270deg)
+  &:after
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
     position absolute
     bottom 0
-    right -1px
-    transform-origin center center
-    transform rotate(180deg) translate(0px, -9.5px)
-  &:after
-    content url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='9' height='9' viewBox='0 0 9 9' fill='darkgray'><rect width='9' height='2'/><rect width='2' height='9'/></svg>");
-    position absolute
-    bottom 0.4px
     left 0
-    transform-origin center center
-    transform rotate(270deg) translate(-8.5px, -2px)
+    transform-origin center
+    transform rotate(0deg)
 
 .features-6 .left,
 .features-6 .right
@@ -514,6 +661,14 @@ export default {}
   margin-top var(--spacing-6)
 
 @media $breakpoint-medium
+  .bottom
+    display grid
+    grid-template-columns auto 1fr
+    gap 1rem
+
+    .footnote
+      margin-top 0
+
   // FEATURES 0
   .features-0-text .title,
   .features-0-text .split
