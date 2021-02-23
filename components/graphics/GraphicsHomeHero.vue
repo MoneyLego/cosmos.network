@@ -99,61 +99,61 @@
         >
           <path
             d="M1045.08 497.212C1024.72 490.532 1013.64 468.618 1020.32 448.266C1027 427.914 1048.92 416.831 1069.27 423.511C1089.62 430.192 1100.7 452.106 1094.02 472.458C1087.34 492.81 1065.43 503.893 1045.08 497.212Z"
-            fill="url(#paint0_radial-751607)"
+            fill="url(#paint0_radial-434403)"
           />
           <path
             d="M1244.36 276.13C1224.8 267.398 1216.02 244.462 1224.75 224.903C1233.49 205.343 1256.42 196.566 1275.98 205.299C1295.54 214.032 1304.32 236.967 1295.59 256.526C1286.85 276.086 1263.92 284.863 1244.36 276.13Z"
-            fill="url(#paint1_radial-689446)"
+            fill="url(#paint1_radial-893895)"
           />
           <path
             d="M1223.68 756.899C1211.98 738.956 1217.04 714.926 1234.99 703.226C1252.93 691.527 1276.96 696.588 1288.66 714.531C1300.36 732.474 1295.3 756.504 1277.35 768.204C1259.41 779.903 1235.38 774.842 1223.68 756.899Z"
-            fill="url(#paint2_radial-745302)"
+            fill="url(#paint2_radial-565160)"
           />
           <path
             d="M1178.69 393.459C1220.04 404.537 1244.57 447.033 1233.49 488.377C1222.41 529.72 1179.92 554.255 1138.58 543.177C1097.23 532.099 1072.7 489.603 1083.77 448.26C1094.85 406.916 1137.35 382.381 1178.69 393.459Z"
-            fill="url(#paint3_radial-580102)"
+            fill="url(#paint3_radial-363603)"
           />
           <path
             d="M1107.9 688.173C1129.16 725.002 1116.54 772.094 1079.71 793.357C1042.89 814.62 995.793 802.002 974.53 765.173C953.267 728.344 965.885 681.252 1002.71 659.989C1039.54 638.726 1086.64 651.344 1107.9 688.173Z"
-            fill="url(#paint4_radial-989626)"
+            fill="url(#paint4_radial-559464)"
           />
           <path
             d="M350.722 1114.31C282.687 1116.55 225.718 1063.21 223.479 995.176C221.24 927.141 274.578 870.173 342.612 867.933C410.647 865.694 467.616 919.032 469.855 987.067C472.094 1055.1 418.756 1112.07 350.722 1114.31Z"
-            fill="url(#paint5_radial-107179)"
+            fill="url(#paint5_radial-776863)"
           />
           <path
             d="M62.8095 785.816C81.9884 797.854 87.7774 823.16 75.7396 842.339C63.7018 861.518 38.3958 867.307 19.2169 855.269C0.0380745 843.231 -5.75092 817.925 6.28685 798.746C18.3246 779.567 43.6307 773.778 62.8095 785.816Z"
-            fill="url(#paint6_radial-488694)"
+            fill="url(#paint6_radial-387133)"
           />
-          <g filter="url(#filter0_i-750447)">
+          <g filter="url(#filter0_i-685524)">
             <path
               d="M427.471 603.023C448.234 624.431 447.712 658.618 426.304 679.382C404.896 700.146 370.709 699.623 349.945 678.215C329.182 656.807 329.704 622.62 351.112 601.856C372.52 581.093 406.707 581.615 427.471 603.023Z"
-              fill="url(#paint7_radial-144054)"
+              fill="url(#paint7_radial-614144)"
             />
           </g>
           <path
             d="M274.724 346.172C286.454 408.32 245.582 468.21 183.434 479.94C121.286 491.67 61.3967 450.798 49.6667 388.65C37.9368 326.502 78.8085 266.612 140.956 254.883C203.104 243.153 262.994 284.024 274.724 346.172Z"
-            fill="url(#paint8_radial-413675)"
+            fill="url(#paint8_radial-919650)"
           />
           <path
             d="M188.308 71.9768C188.196 107.92 158.967 136.967 123.023 136.854C87.0798 136.742 58.0332 107.512 58.1458 71.5691C58.2584 35.6257 87.4876 6.57913 123.431 6.69173C159.374 6.80433 188.421 36.0335 188.308 71.9768Z"
-            fill="url(#paint9_radial-958023)"
+            fill="url(#paint9_radial-193873)"
           />
           <path
             d="M77.0663 173.08C74.3137 185.515 62.0019 193.364 49.5672 190.611C37.1325 187.859 29.2837 175.547 32.0363 163.112C34.789 150.677 47.1008 142.829 59.5355 145.581C71.9702 148.334 79.819 160.646 77.0663 173.08Z"
-            fill="url(#paint10_radial-569223)"
+            fill="url(#paint10_radial-944103)"
           />
           <path
             d="M1117.66 1055.6C1102.9 1034.92 1107.71 1006.18 1128.4 991.429C1149.08 976.673 1177.81 981.482 1192.57 1002.17C1207.33 1022.86 1202.52 1051.59 1181.83 1066.34C1161.14 1081.1 1132.41 1076.29 1117.66 1055.6Z"
-            fill="url(#paint11_radial-733911)"
+            fill="url(#paint11_radial-315731)"
           />
           <path
             d="M1080.11 120.827C1046.88 119.164 1021.29 90.8797 1022.96 57.6524C1024.62 24.425 1052.9 -1.16272 1086.13 0.500532C1119.36 2.16379 1144.95 30.4482 1143.28 63.6755C1141.62 96.9029 1113.34 122.491 1080.11 120.827Z"
-            fill="url(#paint12_radial-543924)"
+            fill="url(#paint12_radial-052364)"
           />
           <defs>
             <filter
-              id="filter0_i-750447"
+              id="filter0_i-685524"
               x="327.708"
               y="586.619"
               width="115"
@@ -189,7 +189,7 @@
               <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
             </filter>
             <radialGradient
-              id="paint0_radial-751607"
+              id="paint0_radial-434403"
               cx="0"
               cy="0"
               r="1"
@@ -200,18 +200,18 @@
               <stop offset="1" stop-color="#573473" />
             </radialGradient>
             <radialGradient
-              id="paint1_radial-689446"
+              id="paint1_radial-893895"
               cx="0"
               cy="0"
               r="1"
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(1298.94 201.488) rotate(137.106) scale(96.2315)"
             >
-              <stop offset="0.473925" stop-color="#111111" />
+              <stop offset="0.473925" stop-color="#0C0C0C" />
               <stop offset="0.866261" stop-color="#211822" />
             </radialGradient>
             <radialGradient
-              id="paint2_radial-745302"
+              id="paint2_radial-565160"
               cx="0"
               cy="0"
               r="1"
@@ -222,7 +222,7 @@
               <stop offset="0.866261" stop-color="#211822" />
             </radialGradient>
             <radialGradient
-              id="paint3_radial-580102"
+              id="paint3_radial-363603"
               cx="0"
               cy="0"
               r="1"
@@ -233,7 +233,7 @@
               <stop offset="1" stop-color="#693C71" />
             </radialGradient>
             <radialGradient
-              id="paint4_radial-989626"
+              id="paint4_radial-559464"
               cx="0"
               cy="0"
               r="1"
@@ -244,7 +244,7 @@
               <stop offset="1" stop-color="#662676" />
             </radialGradient>
             <radialGradient
-              id="paint5_radial-107179"
+              id="paint5_radial-776863"
               cx="0"
               cy="0"
               r="1"
@@ -255,18 +255,18 @@
               <stop offset="0.590351" stop-color="#111111" />
             </radialGradient>
             <radialGradient
-              id="paint6_radial-488694"
+              id="paint6_radial-387133"
               cx="0"
               cy="0"
               r="1"
               gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(23.631 801.661) rotate(36.5967) scale(98.6998)"
+              gradientTransform="translate(20 827) rotate(-4.28915) scale(80.2247)"
             >
-              <stop offset="0.473925" stop-color="#111111" />
+              <stop offset="0.473925" stop-color="#070508" />
               <stop offset="0.866261" stop-color="#313131" />
             </radialGradient>
             <radialGradient
-              id="paint7_radial-144054"
+              id="paint7_radial-614144"
               cx="0"
               cy="0"
               r="1"
@@ -277,7 +277,7 @@
               <stop offset="1" stop-color="#7C2384" />
             </radialGradient>
             <radialGradient
-              id="paint8_radial-413675"
+              id="paint8_radial-919650"
               cx="0"
               cy="0"
               r="1"
@@ -288,7 +288,7 @@
               <stop offset="0.866261" stop-color="#241A30" />
             </radialGradient>
             <radialGradient
-              id="paint9_radial-958023"
+              id="paint9_radial-193873"
               cx="0"
               cy="0"
               r="1"
@@ -299,7 +299,7 @@
               <stop offset="0.866261" stop-color="#211822" />
             </radialGradient>
             <radialGradient
-              id="paint10_radial-569223"
+              id="paint10_radial-944103"
               cx="0"
               cy="0"
               r="1"
@@ -310,7 +310,7 @@
               <stop offset="0.866261" stop-color="#211822" />
             </radialGradient>
             <radialGradient
-              id="paint11_radial-733911"
+              id="paint11_radial-315731"
               cx="0"
               cy="0"
               r="1"
@@ -321,7 +321,7 @@
               <stop offset="0.866261" stop-color="#211822" />
             </radialGradient>
             <radialGradient
-              id="paint12_radial-543924"
+              id="paint12_radial-052364"
               cx="0"
               cy="0"
               r="1"
@@ -352,7 +352,9 @@
   padding-bottom 40% // todo: use css-lock()
   height 0
   width 100%
-  min-width: $max-width['7']
+  min-width: 36rem
+  max-width 102rem
+  flex 0 0 170%
 
 .layer
   display flex
@@ -364,8 +366,10 @@
   svg
     height auto
 
-  &-background
-    padding-top 22%
+.layer-background
+  padding-top 11%
+.layer-foreground
+  margin-top -11%
 
 @media $breakpoint-medium
   .container

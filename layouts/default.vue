@@ -40,7 +40,7 @@ export default {
   opacity 0
 
 main
-  overflow -webkit-paged-x
+  overflow hidden
 
 .nav-container
   position absolute
@@ -50,10 +50,6 @@ main
 
 .section-hero
   padding-top 5rem // approx navbar max height
-
-@media $breakpoint-small-max
-  main
-    overflow hidden
 
 @media $breakpoint-large
   .section-hero

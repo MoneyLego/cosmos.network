@@ -1,7 +1,7 @@
 <template>
-  <div class="section-hero tm-section">
+  <div class="section-hero">
     <div class="tm-wrapper">
-      <div class="tm-container tm-section">
+      <div class="tm-section">
         <div class="title tm-rf7 tm-bold tm-lh-title">
           The heart of the Interchain.
         </div>
@@ -24,26 +24,24 @@ export default {}
 
 .section-hero
   background linear-gradient(to bottom, #111111 44%, #000000 67%)
-
-  .tm-section
-    padding-bottom 0
-
-.tm-container
-  width 100%
   text-align center
+
+.tm-section
+  width 100%
   z-index 1
+  padding-bottom 0
 
 .graphics
   z-index 0
 
 .title
-  center()
   max-width 5em
+  center()
 
 .subtitle
-  center()
   margin-top var(--spacing-7)
   color var(--white-800)
+  center()
 
 @media $breakpoint-small
   .title

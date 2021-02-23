@@ -1,10 +1,10 @@
 <template>
   <div class="tm-wrapper">
-    <div class="tm-section tm-container">
+    <div class="section-services tm-section tm-container tm-grid-base">
       <div class="title tm-rf5 tm-bold tm-lh-title">
         A new world of connected services.
       </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
+      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
@@ -20,13 +20,13 @@
       </Carousel>
     </div>
 
-    <div class="tm-section tm-container center">
+    <div class="section-atom tm-section tm-container">
       <div class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOMs.</div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
+      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrower">
         In return for securing the Hub services, transaction feed and staking
         rewards are distributed for ATOM stakers.
       </div>
-      <div class="row">
+      <div class="btn-group">
         <tm-button
           to-link="internal"
           to="/staking"
@@ -50,26 +50,27 @@
       </div>
     </div>
 
-    <div class="tm-section tm-container">
+    <div class="section-features tm-section tm-container">
       <div class="title tm-rf5 tm-bold tm-lh-title">
         Be part of the open economy of the future.
       </div>
     </div>
 
-    <div class="tm-section tm-container">
+    <div class="section-tech tm-section tm-container">
       <div class="title tm-rf5 tm-bold tm-lh-title">
         Powered by the best blockchain tech has to offer.
       </div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
+      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy">
         The Cosmos Hub is powered by the
-        <span class="tm-bold">Cosmos SDK</span>, a leading blockchain framework
-        securing over $18B USD in value across 200+ interconnected blockchains.
+        <a href="cosmos.network/sdk" class="tm-medium">Cosmos SDK</a>, a leading
+        blockchain framework securing over $18B USD in value across 200+
+        interconnected blockchains.
       </div>
     </div>
 
-    <div class="tm-section tm-container">
+    <div class="section-devs tm-section tm-container">
       <div class="title tm-rf5 tm-bold tm-lh-title">Build upon value.</div>
-      <div class="subtitle tm-rf1 tm-lh-copy">
+      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy">
         Developers in Cosmos are the pioneers of the new era of blockchain
         technology. Join a fast-growing token economy and build upon a secure
         and stable foundation.
@@ -85,12 +86,12 @@
       >
     </div>
 
-    <div class="tm-section tm-container tm-grid-base">
-      <div class="text-community">
+    <div class="section-community tm-section tm-container tm-grid-base">
+      <div class="text">
         <div class="title tm-rf5 tm-bold tm-lh-title">
           Join the worldwide community.
         </div>
-        <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
+        <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
           Join a fast-growing community of developers and innovators connected
           all over the world, building the new era of the internet.
         </div>
@@ -218,49 +219,101 @@ export default {
 .btn
   margin-top var(--spacing-6)
 
-.row
+.btn-group
   display flex
   flex-direction column
   margin-top var(--spacing-8)
 
-.slider
-  margin-top var(--spacing-10)
+// Services
+.section-services
+
+  &:before
+    content ""
+    display block
+    height var(--spacing-13)
+    width 2px
+    background linear-gradient(180deg, var(--transparent) 16%, var(--white) 40%)
+    center()
+
+  &:before,
+  > *
+    grid-column 1/-1
+
+  .title
+    margin-top var(--spacing-8)
+    max-width 10em
+
+  .slider
+    margin-top var(--spacing-10)
+
+// ATOM
+.section-atom
+  text-align center
+
+  .title
+    max-width 6em
+    center()
+
+
+.section-features
+
+.section-
 
 // Community
-.text-community,
-.list
-  grid-column span 12
+.section-community
+  .text,
+  .list
+    grid-column 1/-1
 
-.list
-  margin-top var(--spacing-7)
+  .list
+    margin-top var(--spacing-7)
 
-.list-item
-  display grid
-  grid-auto-flow column
-  grid-template-columns min-content 1fr
-  gap var(--spacing-7)
-  border-radius $border-radius-5
-  hover-raise(-3px)
+  .list-item
+    display grid
+    grid-auto-flow column
+    grid-template-columns min-content 1fr
+    gap var(--spacing-7)
+    border-radius $border-radius-5
+    hover-raise(-3px)
 
-a.list-item + a.list-item
-  margin-top var(--spacing-7)
+  a.list-item + a.list-item
+    margin-top var(--spacing-7)
 
-.details .desc
-  margin-top var(--spacing-3)
+  .details .desc
+    margin-top var(--spacing-3)
 
 @media $breakpoint-small
-  .row
+  .btn-group
     display block
 
 @media $breakpoint-medium
-  .center
-    text-align center
-    max-width 29.0625rem
+  .section-services
+    .title
+      grid-column 3 / span 7
 
-  .text-community
-    grid-column 2/span 5
+    .subtitle
+      grid-column 4 / span 6
 
-  .list
-    grid-column 8/span 11
-    margin-top 0
+  .section-community
+    .text
+      grid-column 1/span 6
+
+    .list
+      grid-column 7/span 6
+      margin-top 0
+
+@media $breakpoint-large
+  .section-services
+    .title
+      grid-column 6 / span 7
+
+    .subtitle
+      grid-column 7 / span 6
+
+    .slider
+      grid-column 1 / span 12
+
+  .section-community
+    .text
+      grid-column 1/span 5
 </style>

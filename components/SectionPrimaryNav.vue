@@ -7,15 +7,10 @@
     >
       <div class="nav-inner tm-container">
         <div class="nav-first">
-          <a
-            href="https://cosmos.network"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="logo"
-          >
+          <a href="https://cosmos.network" class="logo">
             <logo-cosmos-wordmark class="logo__cosmos" />
+            <span class="sr-only">Cosmos</span>
           </a>
-          <span class="sr-only">Cosmos</span>
           <NuxtLink
             to="/"
             class="logo logo-secondary tm-rf-1 tm-medium tm-lh-solid"
