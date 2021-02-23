@@ -17,12 +17,20 @@
     <div class="tm-wrapper">
       <div class="tm-container tm-grid-base">
         <div class="faq-1">
-          <div v-for="item in articles" :key="item.title" class="item">
-            <div class="title tm-rf2 tm-bold tm-lh-copy">{{ item.title }}</div>
-            <div class="desc tm-rf0 tm-lh-copy">{{ item.description }}</div>
+          <div
+            v-for="item in currentIndex"
+            :key="articles[item - 1].title"
+            class="item"
+          >
+            <div class="title tm-rf2 tm-bold tm-lh-copy">
+              {{ articles[item - 1].title }}
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy">
+              {{ articles[item - 1].description }}
+            </div>
             <tm-button
               to-link="internal"
-              :to="`/learn/faq/${item.slug}`"
+              :to="`/learn/faq/${articles[item - 1].slug}`"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
@@ -31,6 +39,22 @@
               class="btn"
               >Learn more <span class="icon__right">--></span></tm-button
             >
+          </div>
+          <div class="cta">
+            <div
+              v-if="currentIndex != articles.length"
+              class="tm-rf1 tm-lh-copy tm-medium"
+              @click="currentIndex = articles.length"
+            >
+              View all
+            </div>
+            <div
+              v-else
+              class="tm-rf1 tm-lh-copy tm-medium"
+              @click="currentIndex = 6"
+            >
+              View less
+            </div>
           </div>
         </div>
       </div>
@@ -54,6 +78,11 @@ export default {
     return {
       articles,
       tags,
+    }
+  },
+  data() {
+    return {
+      currentIndex: 6,
     }
   },
 }
@@ -81,6 +110,10 @@ export default {
 
 .item + .item
   margin-top var(--spacing-8)
+
+.cta
+  margin-top var(--spacing-10)
+  text-align center
 
 @media $breakpoint-medium
   // FAQ 0
