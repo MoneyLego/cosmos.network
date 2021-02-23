@@ -61,7 +61,19 @@
               <div class="caption tm-rf0 tm-lh-title">
                 Capital Formation · Live
               </div>
-              <div class="title tm-rf3 tm-bold tm-lh-title">Staking -></div>
+              <div class="title">
+                <tm-button
+                  to-link="internal"
+                  to="/staking"
+                  size="l"
+                  dark-color="var(--white)"
+                  light-color="var(--black)"
+                  background-color="transparent"
+                  variant="text"
+                  class="btn tm-rf3 tm-bold tm-lh-title"
+                  >Staking <span class="icon__right">-></span></tm-button
+                >
+              </div>
               <div class="desc tm-rf0 tm-lh-copy">
                 Built on top of the
                 <a
@@ -83,7 +95,19 @@
             </div>
             <div class="text">
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
-              <div class="title tm-rf3 tm-bold tm-lh-title">Voting -></div>
+              <div class="title">
+                <tm-button
+                  to-link="internal"
+                  to="/"
+                  size="l"
+                  dark-color="var(--white)"
+                  light-color="var(--black)"
+                  background-color="transparent"
+                  variant="text"
+                  class="btn tm-rf3 tm-bold tm-lh-title"
+                  >Voting <span class="icon__right">-></span></tm-button
+                >
+              </div>
               <div class="desc tm-rf0 tm-lh-copy">
                 Staking ATOMs gives rights to participate in the open governance
                 process, which governs the evolution of the network.
@@ -96,8 +120,19 @@
             <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
           </div>
           <div class="mid">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Interchain Accounts ↗️
+            <div class="title">
+              <tm-button
+                to-link="external"
+                href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Interchain Accounts
+                <span class="icon__right">↗</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               Interchain Accounts are the accounts of the IBC-enabled world.
@@ -125,7 +160,18 @@
           </div>
           <div class="mid">
             <div class="title tm-rf3 tm-bold tm-lh-title">
-              Interchain Staking ↗️
+              <tm-button
+                to-link="internal"
+                to="/"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Interchain Staking
+                <span class="icon__right">↗</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               Staked ATOMs will be able to secure more than just the Cosmos Hub.
@@ -161,8 +207,19 @@
             </div>
           </div>
           <div class="mid">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Next-gen. Automated Market Maker ↗️
+            <div class="title">
+              <tm-button
+                to-link="internal"
+                to="/"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Next-gen. Automated Market Maker
+                <span class="icon__right">↗</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               The Hub’s Automated Market Maker (AMM) module will enable users to
@@ -190,8 +247,18 @@
             </div>
           </div>
           <div class="mid">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Gravity bridge ↗️
+            <div class="title">
+              <tm-button
+                to-link="external"
+                href="https://blog.althea.net/gravity-bridge"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Gravity bridge<span class="icon__right">↗️</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               Backed by billions of dollars of Atoms staked on the Cosmos Hub,
@@ -222,8 +289,19 @@
             </div>
           </div>
           <div class="mid">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Chain Name Service ↗️
+            <div class="title">
+              <tm-button
+                to-link="internal"
+                to="/"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Chain Name Service
+                <span class="icon__right">↗</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               Just like websites have domain names, blockchains will have chain
@@ -245,7 +323,18 @@
           </div>
           <div class="mid">
             <div class="title tm-rf3 tm-bold tm-lh-title">
-              Staking Derivatives ↗️
+              <tm-button
+                to-link="internal"
+                to="/"
+                size="l"
+                dark-color="var(--white)"
+                light-color="var(--black)"
+                background-color="transparent"
+                variant="text"
+                class="btn tm-rf3 tm-bold tm-lh-title"
+                >Staking Derivatives
+                <span class="icon__right">↗</span></tm-button
+              >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
               Staking Derivatives will be an important primitive in the
@@ -342,7 +431,6 @@ export default {}
   .row-2
     background linear-gradient(0deg, #FFFFFF, #FFFFFF)
     border-radius $border-radius-5
-    hover-raise(-3px)
     padding var(--spacing-8) var(--spacing-7)
 
     .caption
@@ -354,9 +442,6 @@ export default {}
 .features-2 .span-8 .row-2
   margin-top var(--spacing-7)
 
-.features-2 .desc
-  margin-top var(--spacing-5)
-
 // FEATURES 3
 .features-3 .text
   grid-column span 12
@@ -365,9 +450,6 @@ export default {}
   flex-direction column
   justify-content space-between
   height 32.25rem
-
-.features-3 .text .desc
-  margin-top var(--spacing-5)
 
 // FEATURES 4
 .features-4 .text
@@ -378,9 +460,6 @@ export default {}
   justify-content space-between
   height 32.25rem
 
-.features-4 .text .desc
-  margin-top var(--spacing-5)
-
 // FEATURES 5
 .features-5 .text
   grid-column span 12
@@ -389,9 +468,6 @@ export default {}
   flex-direction column
   justify-content space-between
   height 32.25rem
-
-.features-5 .text .desc
-  margin-top var(--spacing-5)
 
 // FEATURES 6
 .features-6
@@ -424,10 +500,6 @@ export default {}
   justify-content space-between
   height 32.25rem
   position relative
-
-.features-6 .left .desc,
-.features-6 .right .desc
-  margin-top var(--spacing-5)
 
 // FEATURES 7
 .features-7
