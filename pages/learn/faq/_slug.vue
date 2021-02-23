@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import '~/assets/styles/markdown.styl'
+
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
