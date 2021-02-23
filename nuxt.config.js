@@ -180,17 +180,5 @@ export default {
         autoprefixer: {},
       },
     },
-    // https://stackoverflow.com/questions/54173375/potentially-fixable-with-the-fix-option
-    extend(config, ctx) {
-      config.module.rules.push({
-        enforce: 'pre',
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        exclude: /(node_modules)/,
-        options: {
-          fix: true,
-        },
-      })
-    },
   },
 }
