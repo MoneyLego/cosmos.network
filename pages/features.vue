@@ -32,7 +32,7 @@
                   variant="text"
                   class="btn"
                   >The Hub’s vision
-                  <span class="icon__right">↗️</span></tm-button
+                  <span class="icon__right">↗</span></tm-button
                 >
               </div>
             </div>
@@ -52,111 +52,119 @@
             Cutting-edge Features.
           </div>
         </div>
-        <div class="span-8">
-          <div class="row-1">
-            <div class="img">
-              <!-- GRAPHICS -->
+        <div class="tiles tm-grid-base">
+          <div class="span-0 tm-rf0 tm-medium tm-lh-title tm-overline">
+            Security and Scalability
+          </div>
+          <div class="span-8">
+            <div class="row-1">
+              <div class="img">
+                <!-- GRAPHICS -->
+              </div>
+              <div class="text">
+                <div class="caption tm-rf0 tm-lh-title">
+                  Capital Formation · Live
+                </div>
+                <div class="title">
+                  <tm-button
+                    to-link="internal"
+                    to="/staking"
+                    size="l"
+                    dark-color="var(--white)"
+                    light-color="var(--black)"
+                    background-color="transparent"
+                    variant="text"
+                    class="btn tm-rf3 tm-bold tm-lh-title"
+                    >Staking <span class="icon__right">-></span></tm-button
+                  >
+                </div>
+                <div class="desc tm-rf0 tm-lh-copy">
+                  Built on top of the
+                  <a
+                    href="https://tendermint.com/core/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="tm-link"
+                    >Tendermint BFT consensus engine</a
+                  >, the Hub’s staking module is one of the most efficient
+                  proof-of-stake implementations in the world. It enables ATOM
+                  token holders to secure the chain by locking their ATOMs, in
+                  exchange for transaction fees.
+                </div>
+              </div>
             </div>
-            <div class="text">
+            <div class="row-2">
+              <div class="img">
+                <!-- GRAPHICS -->
+              </div>
+              <div class="text">
+                <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
+                <div class="title">
+                  <tm-button
+                    to-link="internal"
+                    to="/"
+                    size="l"
+                    dark-color="var(--white)"
+                    light-color="var(--black)"
+                    background-color="transparent"
+                    variant="text"
+                    class="btn tm-rf3 tm-bold tm-lh-title"
+                    >Voting <span class="icon__right">-></span></tm-button
+                  >
+                </div>
+                <div class="desc tm-rf0 tm-lh-copy">
+                  Staking ATOMs gives rights to participate in the open
+                  governance process, which governs the evolution of the
+                  network.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span-4">
+            <div class="top">
               <div class="caption tm-rf0 tm-lh-title">
-                Capital Formation · Live
+                Account System · 2021
               </div>
+            </div>
+            <div class="mid">
               <div class="title">
                 <tm-button
-                  to-link="internal"
-                  to="/staking"
+                  to-link="external"
+                  href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
                   size="l"
                   dark-color="var(--white)"
                   light-color="var(--black)"
                   background-color="transparent"
                   variant="text"
                   class="btn tm-rf3 tm-bold tm-lh-title"
-                  >Staking <span class="icon__right">-></span></tm-button
+                  >Interchain Accounts
+                  <span class="icon__right">↗</span></tm-button
                 >
               </div>
               <div class="desc tm-rf0 tm-lh-copy">
-                Built on top of the
-                <a
-                  href="https://tendermint.com/core/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="tm-link"
-                  >Tendermint BFT consensus engine</a
-                >, the Hub’s staking module is one of the most efficient
-                proof-of-stake implementations in the world. It enables ATOM
-                token holders to secure the chain by locking their ATOMs, in
-                exchange for transaction fees.
+                Interchain Accounts are the accounts of the IBC-enabled world.
+                Essentially, they allow blockchains to securely control accounts
+                on other chains over IBC. With this feature, users will be able
+                to access the entire Interchain through their single Cosmos Hub
+                account. One account, for all the chains.
               </div>
             </div>
-          </div>
-          <div class="row-2">
-            <div class="img">
-              <!-- GRAPHICS -->
-            </div>
-            <div class="text">
-              <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
-              <div class="title">
-                <tm-button
-                  to-link="internal"
-                  to="/"
-                  size="l"
-                  dark-color="var(--white)"
-                  light-color="var(--black)"
-                  background-color="transparent"
-                  variant="text"
-                  class="btn tm-rf3 tm-bold tm-lh-title"
-                  >Voting <span class="icon__right">-></span></tm-button
-                >
-              </div>
-              <div class="desc tm-rf0 tm-lh-copy">
-                Staking ATOMs gives rights to participate in the open governance
-                process, which governs the evolution of the network.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span-4">
-          <div class="top">
-            <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
-          </div>
-          <div class="mid">
-            <div class="title">
-              <tm-button
-                to-link="external"
-                href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
-                size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
-                variant="text"
-                class="btn tm-rf3 tm-bold tm-lh-title"
-                >Interchain Accounts
-                <span class="icon__right">↗</span></tm-button
-              >
-            </div>
-            <div class="desc tm-rf0 tm-lh-copy">
-              Interchain Accounts are the accounts of the IBC-enabled world.
-              Essentially, they allow blockchains to securely control accounts
-              on other chains over IBC. With this feature, users will be able to
-              access the entire Interchain through their single Cosmos Hub
-              account. One account, for all the chains.
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="avatar-list">
-              <div class="overlap">
-                <div class="avatar-item">
-                  <img src="~static/avatars/informal.svg" alt="icon" />
+            <div class="bottom">
+              <div class="avatar-list">
+                <div class="overlap">
+                  <div class="avatar-item">
+                    <img src="~static/avatars/informal.svg" alt="icon" />
+                  </div>
+                </div>
+                <div class="overlap">
+                  <div class="avatar-item">
+                    <img src="~static/avatars/icf.svg" alt="icon" />
+                  </div>
                 </div>
               </div>
-              <div class="overlap">
-                <div class="avatar-item">
-                  <img src="~static/avatars/icf.svg" alt="icon" />
-                </div>
+              <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+                Chainapsis, Interchain GmbH
               </div>
-            </div>
-            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              Chainapsis, Interchain GmbH
             </div>
           </div>
         </div>
@@ -302,7 +310,7 @@
                 background-color="transparent"
                 variant="text"
                 class="btn tm-rf3 tm-bold tm-lh-title"
-                >Gravity bridge<span class="icon__right">↗️</span></tm-button
+                >Gravity bridge<span class="icon__right">↗</span></tm-button
               >
             </div>
             <div class="desc tm-rf0 tm-lh-copy">
@@ -523,6 +531,17 @@ export default {}
 .features-2 .span-8,
 .features-2 .span-4
   grid-column span 12
+
+.features-2 .tiles
+  grid-column span 12
+  position relative
+  margin-top var(--spacing-7)
+
+.features-2 .tiles .span-0
+  position absolute
+  writing-mode vertical-lr
+  transform rotate(180deg) translate(90px, -180px)
+  top -5rem
 
 .features-2 .span-4
   padding var(--spacing-7)
