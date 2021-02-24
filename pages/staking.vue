@@ -62,7 +62,7 @@
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+      <div class="staking-2 tm-section tm-container tm-grid-base">
         <div class="top-left">
           <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
             typical apy
@@ -73,8 +73,10 @@
           </div>
         </div>
         <div class="top-right">
-          <div class="title tm-rf5 tm-bold tm-lh-title">Staking rewards</div>
-          <div class="subtitle tm-rf1 tm-lh-copy">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+            Staking rewards
+          </div>
+          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
             When the staking transaction is complete, rewards will start to be
             generated immediately. At any time, stakers can send a transaction
             to claim their accumulated rewards, using a wallet.
@@ -83,28 +85,26 @@
         <div class="pie-container">
           <div class="pie-wrapper">
             <div class="pie-item">
-              <div class="heading">if you stake</div>
-              <div class="amount">1,000</div>
-              <div class="unit">atoms</div>
+              <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
+                if you stake
+              </div>
+              <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
+              <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
             </div>
             <div class="pie-item">
               <!-- GRAPHICS -->
               graphics
             </div>
             <div class="pie-item">
-              <div class="top">
-                <div>873</div>
-                <div>your rewards</div>
+              <div class="tm-rf2 tm-bold tm-lh-title">10.63%</div>
+              <div class="tm-rf0 tm-medium tm-lh-title tm-overline">
+                commission
               </div>
-              <div class="btm">
-                <div>97</div>
-                <div>commission</div>
-                <div>(Varies between validators)</div>
-              </div>
+              <div class="tm-rf-1 tm-lh-copy">(Varies between validators)</div>
             </div>
           </div>
         </div>
-        <div class="footnote">
+        <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
           * baseline inflation rate fluctuates based on the total amount of
           staked ATOMs in the network
         </div>
@@ -112,13 +112,13 @@
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+      <div class="staking-3 tm-section tm-container tm-grid-base">
         <!-- GRAPHICS -->
-        <div class="staking-3-text">
-          <div class="title tm-rf5 tm-bold tm-lh-title">
+        <div class="text">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Where do rewards come from?
           </div>
-          <div class="subtitle tm-rf1 tm-lh-copy">
+          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
             Staking rewards are generated and distributed to staked ATOM holders
             in two ways:
           </div>
@@ -229,9 +229,18 @@ export default {}
 .top-left
   grid-column span 12
 
+  .percentage
+    margin-top var(--spacing-5)
+
 .top-right
   grid-column span 12
   margin-top var(--spacing-9)
+
+  .title
+    margin-top var(--spacing-7)
+
+  .subtitle
+    margin-top var(--spacing-7)
 
 .pie-container
   margin-top var(--spacing-9)
@@ -248,23 +257,38 @@ export default {}
   align-items center
   text-align center
 
+.pie-item
+  text-align left
+
 .pie-item + .pie-item
   margin-top var(--spacing-9)
 
 .footnote
   grid-column 1/span 4
   margin-top var(--spacing-6)
+  color var(--trans-gray-400)
 
 // STAKING 3
-.staking-3-text
-  grid-column span 12
+.staking-3
+  .text
+    grid-column span 12
 
-.staking-3-text .subtitle
-  margin-top var(--spacing-7)
+    .subtitle
+      margin-top var(--spacing-7)
 
 .subheading-item
-  grid-column span 12
+  grid-column 2/span 12
   margin-top var(--spacing-9)
+  position relative
+
+.subheading-item .title
+  &:before
+    content url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.75 0.75C12.75 0.335786 12.4142 0 12 0C11.5858 0 11.25 0.335786 11.25 0.75V11.25H0.75C0.335786 11.25 0 11.5858 0 12C0 12.4142 0.335786 12.75 0.75 12.75H11.25V23.25C11.25 23.6642 11.5858 24 12 24C12.4142 24 12.75 23.6642 12.75 23.25V12.75H23.25C23.6642 12.75 24 12.4142 24 12C24 11.5858 23.6642 11.25 23.25 11.25H12.75V0.75Z' fill='black'/%3E%3C/svg%3E")
+    position absolute
+    top 0
+    left 0
+    transform-origin center
+    transform translate(-60px, 0px)
 
 // STAKING 4
 .staking-4-text
@@ -301,7 +325,6 @@ export default {}
     margin-top var(--spacing-7)
 
   .top-right .subtitle
-    margin-top var(--spacing-7)
     margin-left var(--spacing-10)
 
   .pie-container
@@ -315,8 +338,20 @@ export default {}
     margin-top 0
 
   // STAKING 3
-  .staking-3-text
+  .staking-3 .graphics
+    grid-column 1/span 6
+
+  .staking-3 .text
     grid-column 7/span 12
+    position relative
+    padding var(--spacing-7)
+
+    &:before
+      content url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0V32M1.00043 1L33 0.999997' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+      position absolute
+      top 0
+      left 0
+      transform-origin center
 
   .subheading-item
     grid-column 8/span 11
