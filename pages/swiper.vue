@@ -30,10 +30,6 @@
 </template>
 
 <script>
-// https://github.surmon.me/vue-awesome-swiper/
-// https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-awesome-swiper/nuxt
-import 'swiper/swiper.min.css'
-
 export default {
   name: 'SwiperNuxt',
   data() {
