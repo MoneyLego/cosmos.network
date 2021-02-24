@@ -215,7 +215,14 @@
 </template>
 
 <script>
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+import LogoHubBrandmark from '~/components/logos/LogoHubBrandmark.vue'
+
 export default {
+  components: {
+    LogoCosmosWordmark,
+    LogoHubBrandmark,
+  },
   data() {
     return {
       isActive: false,

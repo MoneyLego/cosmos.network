@@ -69,8 +69,12 @@
 
 <script>
 import querystring from 'querystring'
+import IconArrowRight from '~/components/icons/IconArrowRight.vue'
 
 export default {
+  components: {
+    IconArrowRight,
+  },
   data() {
     return {
       email: null,
