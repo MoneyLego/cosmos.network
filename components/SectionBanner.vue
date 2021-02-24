@@ -2,9 +2,11 @@
   <div class="tm-wrapper tm-section">
     <div class="tm-container tm-grid-base banner-item">
       <div class="text">
-        <div class="title tm-rf5 tm-bold tm-lh-title">Become a Cosmonaut.</div>
+        <div class="title tm-rf5 tm-bold tm-lh-title">
+          Ready to start staking?
+        </div>
         <div class="subtitle tm-rf1 tm-lh-copy">
-          Learn about staking ATOMs on the Cosmos Hub.
+          Start staking ATOMs on the Cosmos Hub.
         </div>
         <tm-button
           to-link="internal"
@@ -16,7 +18,10 @@
           >Stake ATOMs</tm-button
         >
       </div>
-      <!-- GRAPHICs -->
+      <div class="graphics">
+        <!-- <graphics-banner-background class="graphics__back" /> -->
+        <graphics-banner-foreground class="graphics__front" />
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +49,13 @@ export default {}
 .banner-item .text
   grid-column span 12
 
+.banner-item .graphics
+  grid-column span 12
+  margin-top var(--spacing-10)
+
+  &__front
+    width 100%
+
 .banner-item .title
   width fit-content
 
@@ -57,4 +69,27 @@ export default {}
 @media $breakpoint-medium
   .banner-item .text
     grid-column 2/span 9
+
+  .banner-item .graphics
+    position relative
+    z-index -1
+    grid-column 1/span 6
+    display flex
+    align-items stretch
+    justify-content flex-end
+    margin-top 0
+
+    // &__back
+    //   position absolute
+    //   max-width 172%
+    //   top 43%
+    //   left 57%
+    //   transform translate(-50%,-50%)
+
+    &__front
+      position absolute
+      max-width 172%
+      top 43%
+      right -88%
+      transform translate(-50%,-50%)
 </style>
