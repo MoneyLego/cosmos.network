@@ -8,16 +8,16 @@
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
-      <Carousel :arrows="true" :dots="true" class="slider">
-        <div v-for="item in benefits" :key="item.title" class="text">
-          <div class="text__title tm-rf1 tm-bold tm-lh-title">
+      <swiper :slide-per-view="1" class="slider">
+        <swiper-slide v-for="item in benefits" :key="item.title" class="slide">
+          <div class="slide__title tm-rf1 tm-bold tm-lh-title">
             {{ item.title }}
           </div>
-          <div class="text__subtitle tm-rf0 tm-lh-copy">
+          <div class="slide__subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
             {{ item.subtitle }}
           </div>
-        </div>
-      </Carousel>
+        </swiper-slide>
+      </swiper>
     </div>
 
     <div class="section-atom tm-section tm-container">
@@ -208,7 +208,8 @@
 </template>
 
 <script>
-import Carousel from 'vue-slick-carousel'
+// import Carousel from 'vue-slick-carousel'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
@@ -216,12 +217,14 @@ import IconTelegram from '~/components/icons/IconTelegram.vue'
 import IconCosmos from '~/components/icons/IconCosmos.vue'
 
 // TODO: tweak custom css and remove these .css imports
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+// import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+// import 'swiper/swiper.scss'
 
 export default {
   components: {
-    Carousel,
+    Swiper,
+    SwiperSlide,
     IconTwitter,
     IconDiscord,
     IconTelegram,
@@ -317,6 +320,9 @@ export default {
 
   .slider
     margin-top var(--spacing-10)
+
+  .slide__subtitle
+    margin-top var(--spacing-5)
 
 // ATOM
 .section-atom
