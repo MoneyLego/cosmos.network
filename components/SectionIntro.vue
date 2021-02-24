@@ -8,7 +8,7 @@
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
-      <swiper :slide-per-view="1" class="slider">
+      <!-- <swiper :slide-per-view="1" class="slider">
         <swiper-slide v-for="item in benefits" :key="item.title" class="slide">
           <div class="slide__title tm-rf1 tm-bold tm-lh-title">
             {{ item.title }}
@@ -17,7 +17,7 @@
             {{ item.subtitle }}
           </div>
         </swiper-slide>
-      </swiper>
+      </swiper> -->
     </div>
 
     <div class="section-atom tm-section tm-container">
@@ -209,7 +209,8 @@
 
 <script>
 // import Carousel from 'vue-slick-carousel'
-import { Swiper, SwiperSlide } from 'swiper/vue'
+// import { Swiper, SwiperSlide } from 'swiper/vue'
+// import { directive } from 'vue-awesome-swiper'
 
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
@@ -222,9 +223,10 @@ import IconCosmos from '~/components/icons/IconCosmos.vue'
 // import 'swiper/swiper.scss'
 
 export default {
+  // directives: {
+  //   swiper: directive,
+  // },
   components: {
-    Swiper,
-    SwiperSlide,
     IconTwitter,
     IconDiscord,
     IconTelegram,
