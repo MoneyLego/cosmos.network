@@ -1,9 +1,8 @@
 <template>
   <main>
-    <!-- FAQ 0 -->
-    <div class="section-hero tm-section">
+    <div class="section-hero">
       <div class="tm-wrapper">
-        <div class="tm-section tm-container tm-grid-base faq-0">
+        <div class="tm-section tm-grid-base">
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
               Frequently asked questions
@@ -11,12 +10,16 @@
           </div>
         </div>
       </div>
+      <graphics-faq-hero-dark
+        v-if="$nuxt.$colorMode.preference === 'dark'"
+        class="graphics"
+      />
+      <graphics-faq-hero-light v-else class="graphics" />
     </div>
 
-    <!-- FAQ 1 -->
     <div class="tm-wrapper">
       <div class="tm-container tm-grid-base">
-        <div class="faq-1">
+        <div class="content">
           <div
             v-for="item in currentIndex"
             :key="articles[item - 1].title"
@@ -98,20 +101,27 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-/deep/
-.section-header
-  border none
-  color inherit
+// Hero
+.tm-section
+  z-index 1
 
-// FAQ 0
 .section-hero
   text-align left
+  position relative
 
-.faq-0 .text
+.section-hero .text
   grid-column span 12
 
-// FAQ 1
-.faq-1
+.section-hero .graphics
+  position unset
+  height 100%
+  width 210%
+  margin-top -20%
+  margin-left 0%
+  overflow visible
+
+// Content
+.content
   grid-column span 12
 
 .desc
@@ -126,11 +136,19 @@ export default {
   cursor pointer
 
 @media $breakpoint-medium
-  // FAQ 0
-  .faq-0 .text
+  // Hero
+  .section-hero .text
     grid-column 6/span 12
 
-  // FAQ 1
-  .faq-1
+  .section-hero .graphics
+    position absolute
+    top 0
+    z-index 0
+    height auto
+    width auto
+    margin 0
+
+  // Content
+  .content
     grid-column 6/span 12
 </style>
