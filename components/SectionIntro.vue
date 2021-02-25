@@ -122,7 +122,9 @@
         <div class="card-item">
           <div class="top tm-rf0 tm-lh-title">Cross-chain Staking</div>
           <div class="mid">
-            <!-- GRAPHICS -->
+            <div class="graphics">
+              <graphics-home-crosschainstaking class="graphics__item" />
+            </div>
           </div>
           <div class="bottom">
             <div class="title tm-rf3 tm-bold tm-lh-title">
@@ -134,7 +136,9 @@
         <div class="card-item">
           <div class="top tm-rf0 tm-lh-title">Fundraising</div>
           <div class="mid">
-            <!-- GRAPHICS -->
+            <div class="graphics">
+              <graphics-home-fundraising class="graphics__item" />
+            </div>
           </div>
           <div class="bottom">
             <div class="title tm-rf3 tm-bold tm-lh-title">
@@ -146,7 +150,9 @@
         <div class="card-item">
           <div class="top tm-rf0 tm-lh-title">Chain Name System</div>
           <div class="mid">
-            <!-- GRAPHICS -->
+            <div class="graphics">
+              <graphics-home-chainnameservice class="graphics__item" />
+            </div>
           </div>
           <div class="bottom">
             <div class="title tm-rf3 tm-bold tm-lh-title">
@@ -356,6 +362,16 @@ export default {
 .section-dev-features
   grid-column span 12
 
+.section-dev-features .graphics
+  position relative
+  display grid
+  place-items center
+
+  &__item
+    position absolute
+    width 100%
+    height auto
+
 .cards-wrapper
   grid-row 2
   display grid
@@ -370,10 +386,25 @@ export default {
   justify-content space-between
   height 34.6875rem
   padding var(--spacing-7)
+  position relative
 
-  .desc
+  &:before
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    top 0
+    right 0
+    transform-origin center
+    transform rotate(180deg) translate(0px, 6px)
+
+  .mid
     margin-top var(--spacing-7)
-    color var(--trans-gray-400)
+
+  .bottom
+    margin-top var(--spacing-7)
+
+    .desc
+      margin-top var(--spacing-7)
+      color var(--trans-gray-400)
 
 // Community
 .section-community
@@ -426,6 +457,11 @@ export default {
   .section-dev-features
     .cards-wrapper
       grid-template-columns repeat(2, 1fr)
+
+  .section-dev-features .graphics
+
+    &__item
+      width 140%
 
   // Community
   .section-community
