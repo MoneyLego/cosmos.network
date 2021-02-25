@@ -153,12 +153,12 @@
               <div class="avatar-list">
                 <div class="overlap">
                   <div class="avatar-item">
-                    <img src="~static/avatars/informal.svg" alt="icon" />
+                    <img src="~static/avatars/chainapsis.svg" alt="icon" />
                   </div>
                 </div>
                 <div class="overlap">
                   <div class="avatar-item">
-                    <img src="~static/avatars/icf.svg" alt="icon" />
+                    <img src="~static/avatars/interchain-gmbh.svg" alt="icon" />
                   </div>
                 </div>
               </div>
@@ -171,9 +171,9 @@
       </div>
     </div>
 
-    <!-- FEATURES 3 -->
+    <!-- Interchain staking -->
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base features-3">
+      <div class="tm-container tm-grid-base section-interchain-staking">
         <div class="text">
           <div class="top">
             <div class="caption tm-rf0 tm-lh-title">
@@ -228,16 +228,16 @@
           </div>
         </div>
         <div class="graphics">
-          <!-- GRAPHICS -->
+          <graphics-features-interchain-staking class="graphics__item" />
         </div>
       </div>
     </div>
 
-    <!-- FEATURES 4 -->
+    <!-- AMM -->
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base features-4">
+      <div class="tm-container tm-grid-base section-amm">
         <div class="graphics">
-          <!-- GRAPHICS -->
+          <graphics-features-amm class="graphics__item" />
         </div>
         <div class="text">
           <div class="top">
@@ -273,7 +273,7 @@
             <div class="avatar-list">
               <div class="overlap">
                 <div class="avatar-item">
-                  <img src="~static/avatars/icf.svg" alt="icon" />
+                  <img src="~static/avatars/b-harvest.svg" alt="icon" />
                 </div>
               </div>
               <div class="overlap">
@@ -290,9 +290,9 @@
       </div>
     </div>
 
-    <!-- FEATURES 5 -->
+    <!-- Gravity bridge -->
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base features-5">
+      <div class="tm-container tm-grid-base section-gravity-bridge">
         <div class="text">
           <div class="top">
             <div class="caption tm-rf0 tm-lh-title">
@@ -342,6 +342,7 @@
         </div>
         <div class="graphics">
           <!-- GRAPHICS -->
+          <graphics-features-gravity-bridge class="graphics__item" />
         </div>
       </div>
     </div>
@@ -580,10 +581,13 @@ export default {}
     transform-origin center
     transform rotate(180deg)
 
-// FEATURES 3
-.features-3 .text
+// Interchain staking
+.section-interchain-staking
+  position relative
+
+.section-interchain-staking .text
   grid-column span 12
-  padding var(--spacing-7)
+  padding var(--spacing-8) var(--spacing-7)
   display flex
   flex-direction column
   justify-content space-between
@@ -596,14 +600,10 @@ export default {}
     transform-origin center
     transform rotate(0deg) translate(10px, 10px)
 
-// FEATURES 4
-.features-4 .text
+.section-interchain-staking .graphics
   grid-column span 12
-  padding var(--spacing-7)
-  display flex
-  flex-direction column
-  justify-content space-between
-  height 32.25rem
+  position relative
+
   &:before
     content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
     position absolute
@@ -611,6 +611,44 @@ export default {}
     right 0
     transform-origin center
     transform rotate(180deg)
+
+  &:after
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    bottom 0
+    right 0
+    transform-origin center
+    transform rotate(270deg)
+
+  &__item
+    width 100%
+    height 100%
+
+// AMM
+.section-amm .graphics
+  grid-column span 12
+
+  &__item
+    width 100%
+    height 100%
+
+.section-amm .text
+  grid-column span 12
+  padding var(--spacing-7)
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 32.25rem
+  position relative
+
+  &:before
+    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    position absolute
+    top 0
+    right 0
+    transform-origin center
+    transform rotate(180deg)
+
   &:after
     content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
     position absolute
@@ -619,8 +657,8 @@ export default {}
     transform-origin center
     transform rotate(270deg)
 
-// FEATURES 5
-.features-5 .text
+// Gravity bridge
+.section-gravity-bridge .text
   grid-column span 12
   padding var(--spacing-7)
   display flex
@@ -634,6 +672,13 @@ export default {}
     left 0
     transform-origin center
     transform rotate(0deg) translate(10px, 10px)
+
+.section-gravity-bridge .graphics
+  grid-column span 12
+
+  &__item
+    width 100%
+    height 100%
 
 // FEATURES 6
 .features-6
@@ -720,18 +765,36 @@ export default {}
       .caption
         margin-top 0
 
-  // FEATURES 3
-  .features-3 .text
+  // Interchain staking
+  .section-interchain-staking .text
     grid-column 1/span 7
     position relative
 
-  // FEATURES 4
-  .features-4 .text
+  .section-interchain-staking .graphics
+    grid-column 8/span 12
+
+  // AMM
+  .section-amm .graphics
+    grid-column 1/span 5
+    position relative
+    &:after
+      content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+      position absolute
+      bottom 0
+      left 0
+      transform-origin center
+      transform rotate(0deg) translate(10px, 10px)
+
+  .section-amm .text
     grid-column 7/span 12
 
-  // FEATURES 5
-  .features-5 .text
+  // Gravity bridge
+  .section-gravity-bridge .text
     grid-column 1/span 7
+    position relative
+
+  .section-gravity-bridge .graphics
+    grid-column 8/span 12
     position relative
 
   // FEATURES 6
