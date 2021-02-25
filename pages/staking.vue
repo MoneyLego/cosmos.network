@@ -63,16 +63,14 @@
 
     <div class="tm-wrapper">
       <div class="staking-2 tm-section tm-container tm-grid-base">
-        <div class="top-left">
+        <div class="span-4">
           <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
             typical apy
           </div>
           <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
-          <div class="footnote tm-rf1 tm-lh-title">
-            of staked ATOMs (annually)*
-          </div>
+          <div class="tm-rf1 tm-lh-title">of staked ATOMs (annually)*</div>
         </div>
-        <div class="top-right">
+        <div class="span-7">
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Staking rewards
           </div>
@@ -82,7 +80,8 @@
             to claim their accumulated rewards, using a wallet.
           </div>
         </div>
-        <div class="pie-container">
+        <!-- TODO -->
+        <!-- <div class="pie-container">
           <div class="pie-wrapper">
             <div class="pie-item">
               <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
@@ -91,10 +90,7 @@
               <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
               <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
             </div>
-            <div class="pie-item">
-              <!-- GRAPHICS -->
-              graphics
-            </div>
+            <div class="pie-item">graphics</div>
             <div class="pie-item">
               <div class="tm-rf2 tm-bold tm-lh-title">10.63%</div>
               <div class="tm-rf0 tm-medium tm-lh-title tm-overline">
@@ -107,7 +103,7 @@
         <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
           * baseline inflation rate fluctuates based on the total amount of
           staked ATOMs in the network
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -248,13 +244,14 @@ export default {}
   margin-bottom var(--spacing-7)
 
 // STAKING 2
-.staking-2 .top-left
+.staking-2 .span-4
   grid-column span 12
 
   .percentage
     margin-top var(--spacing-5)
+    margin-bottom var(--spacing-5)
 
-.staking-2 .top-right
+.staking-2 .span-7
   grid-column span 12
   margin-top var(--spacing-9)
   position relative
@@ -294,10 +291,11 @@ export default {}
 .pie-item + .pie-item
   margin-top var(--spacing-9)
 
-.footnote
+.staking-2 .footnote
   grid-column 1/span 4
   margin-top var(--spacing-6)
   color var(--trans-gray-400)
+  width 24.375rem
 
 // STAKING 3
 .staking-3
@@ -373,17 +371,17 @@ export default {}
     width 10.625rem
 
   // STAKING 2
-  .top-left
+  .span-4
     grid-column 2/span 4
     grid-row 1
     margin-top var(--spacing-11)
 
-  .top-right
+  .span-7
     grid-column 6/span 11
     grid-row 1
     margin-top var(--spacing-7)
 
-  .top-right .subtitle
+  .span-7 .subtitle
     margin-left var(--spacing-10)
 
   .pie-container
