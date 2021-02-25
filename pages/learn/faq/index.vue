@@ -10,7 +10,11 @@
           </div>
         </div>
       </div>
-      <graphics-faq-hero class="graphics" />
+      <graphics-faq-hero-dark
+        v-if="$nuxt.$colorMode.preference === 'dark'"
+        class="graphics"
+      />
+      <graphics-faq-hero-light v-else class="graphics" />
     </div>
 
     <div class="tm-wrapper">
