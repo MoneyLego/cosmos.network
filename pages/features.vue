@@ -58,8 +58,8 @@
           </div>
           <div class="span-8">
             <div class="row-1">
-              <div class="img">
-                <!-- GRAPHICS -->
+              <div class="graphics">
+                <!-- <graphics-features-staking class="graphics__item" /> -->
               </div>
               <div class="text">
                 <div class="caption tm-rf0 tm-lh-title">
@@ -326,7 +326,7 @@
             <div class="avatar-list">
               <div class="overlap">
                 <div class="avatar-item">
-                  <img src="~static/avatars/informal.svg" alt="icon" />
+                  <img src="~static/avatars/althea.svg" alt="icon" />
                 </div>
               </div>
               <div class="overlap">
@@ -432,7 +432,7 @@
             <div class="avatar-list">
               <div class="overlap">
                 <div class="avatar-item">
-                  <img src="~static/avatars/informal.svg" alt="icon" />
+                  <img src="~static/avatars/chorus-one.svg" alt="icon" />
                 </div>
               </div>
               <div class="overlap">
@@ -543,6 +543,7 @@ export default {}
   writing-mode vertical-lr
   transform rotate(180deg) translate(90px, -180px)
   top -5rem
+  left -5rem
 
 .features-2 .span-4
   padding var(--spacing-7)
@@ -556,10 +557,19 @@ export default {}
 .features-2 .span-4
   margin-top var(--spacing-10)
 
-.features-2 .span-8
+.dark-mode .features-2
+  .row-1,
+  .row-2
+    background #171717
+
+.light-mode .features-2
   .row-1,
   .row-2
     background linear-gradient(0deg, #FFFFFF, #FFFFFF)
+
+.features-2 .span-8
+  .row-1,
+  .row-2
     border-radius $border-radius-5
     padding var(--spacing-8) var(--spacing-7)
 
