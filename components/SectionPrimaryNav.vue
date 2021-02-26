@@ -1,11 +1,11 @@
 <template>
   <div class="navs">
     <nav
-      class="nav nav-primary tm-wrapper"
+      class="nav nav-primary"
       role="navigation"
       :class="{ 'is-active': isActive }"
     >
-      <div class="nav-inner tm-container">
+      <div class="nav-inner tm-container tm-wrapper">
         <div class="nav-first">
           <a href="https://cosmos.network" class="logo">
             <logo-cosmos-wordmark class="logo__cosmos" />
@@ -77,8 +77,8 @@
         </div>
       </div>
     </nav>
-    <nav class="nav nav-secondary tm-wrapper" role="navigation">
-      <div class="nav-inner tm-container">
+    <nav class="nav nav-secondary" role="navigation">
+      <div class="nav-inner tm-container tm-wrapper">
         <div class="nav-first">
           <NuxtLink
             to="/"

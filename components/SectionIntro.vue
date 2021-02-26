@@ -10,16 +10,20 @@
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
-      <!-- <swiper :slide-per-view="1" class="slider">
-        <swiper-slide v-for="item in benefits" :key="item.title" class="slide">
-          <div class="slide__title tm-rf1 tm-bold tm-lh-title">
-            {{ item.title }}
+      <div v-swiper:myDirectiveSwiper="swiperOptions" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div v-for="item in benefits" :key="item.title" class="swiper-slide">
+            <div class="slide__title tm-rf1 tm-bold tm-lh-title">
+              {{ item.title }}
+            </div>
+            <div
+              class="slide__subtitle tm-rf-1 tm-rf0-m-up tm-lh-copy tm-measure-narrower"
+            >
+              {{ item.subtitle }}
+            </div>
           </div>
-          <div class="slide__subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            {{ item.subtitle }}
-          </div>
-        </swiper-slide>
-      </swiper> -->
+        </div>
+      </div>
     </div>
 
     <div class="section-atom tm-section tm-container tm-wrapper">
@@ -223,23 +227,17 @@
 
 <script>
 // import Carousel from 'vue-slick-carousel'
-// import { Swiper, SwiperSlide } from 'swiper/vue'
-// import { directive } from 'vue-awesome-swiper'
+import { directive } from 'vue-awesome-swiper'
 
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'
 import IconCosmos from '~/components/icons/IconCosmos.vue'
 
-// TODO: tweak custom css and remove these .css imports
-// import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-// import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-// import 'swiper/swiper.scss'
-
 export default {
-  // directives: {
-  //   swiper: directive,
-  // },
+  directives: {
+    swiper: directive,
+  },
   components: {
     IconTwitter,
     IconDiscord,
@@ -300,6 +298,12 @@ export default {
             'Thinking about becoming a validator or interested in network matters? Join the discussion.',
         },
       ],
+      swiperOptions: {
+        slidesPerView: 'auto',
+        loop: true,
+        loopedSlides: 4,
+        slideToClickedSlide: true,
+      },
     }
   },
 }
@@ -334,8 +338,20 @@ export default {
     margin-top var(--spacing-8)
     max-width 10em
 
-  .slider
+  .swiper-container
     margin-top var(--spacing-10)
+    overflow visible
+    width 100%
+
+  .swiper-slide
+    width calc(75% - (var(--grid-gap-x)/4)) // 3/4 cols
+    max-width: $max-width['5']
+    margin-right var(--grid-gap-x)
+    opacity 0.3
+    transition opacity .4s $ease-out
+
+    &-active
+      opacity 1
 
   .slide__subtitle
     margin-top var(--spacing-5)
@@ -463,6 +479,12 @@ export default {
     .subtitle
       grid-column 4 / span 5
 
+    .swiper-container
+      grid-column 4 / span 4
+
+    .swiper-slide
+      max-width none
+
   // Dev features
   .section-dev-features
     .cards-wrapper
@@ -491,8 +513,8 @@ export default {
     .subtitle
       grid-column 7 / span 6
 
-    .slider
-      grid-column 1 / span 12
+    .swiper-container
+      grid-column 7 / span 4
 
   // Developer
   .section-developer
