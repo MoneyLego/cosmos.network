@@ -181,8 +181,8 @@
         <div class="mid">
           <div class="title tm-rf3 tm-bold tm-lh-title">
             <tm-button
-              to-link="internal"
-              to="/"
+              to-link="external"
+              href="https://github.com/informalsystems/cross-chain-validation/blob/2b7e5ddebd10c9eea743989ca3fbcba990db4987/spec/valset-update-protocol.md"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
@@ -243,8 +243,8 @@
         <div class="mid">
           <div class="title">
             <tm-button
-              to-link="internal"
-              to="/"
+              to-link="external"
+              href="https://github.com/tendermint/liquidity#liquidity-module"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
@@ -344,8 +344,8 @@
         <div class="mid">
           <div class="title">
             <tm-button
-              to-link="internal"
-              to="/"
+              to-link="external"
+              href="https://github.com/tendermint/cns"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
@@ -388,8 +388,8 @@
         <div class="mid">
           <div class="title tm-rf3 tm-bold tm-lh-title">
             <tm-button
-              to-link="internal"
-              to="/"
+              to-link="external"
+              href="https://github.com/ChorusOne/liquid-staking"
               size="l"
               dark-color="var(--white)"
               light-color="var(--black)"
