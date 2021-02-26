@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="section-hero">
-      <div class="staking-0 tm-wrapper tm-section tm-grid-base">
+      <div class="tm-wrapper tm-section tm-grid-base">
         <div class="text">
           <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
           <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="tm-container tm-wrapper tm-grid-base">
-      <div class="staking-1-text">
+      <div class="section-intro">
         <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
           Staking is the process of locking up a digital asset (ATOMs in the
@@ -57,7 +57,9 @@
       </div>
     </div>
 
-    <div class="staking-2 tm-section tm-container tm-wrapper tm-grid-base">
+    <div
+      class="section-rewards tm-section tm-container tm-wrapper tm-grid-base"
+    >
       <div class="span-4">
         <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
           typical apy
@@ -75,34 +77,41 @@
           claim their accumulated rewards, using a wallet.
         </div>
       </div>
-      <!-- TODO -->
-      <!-- <div class="pie-container">
-          <div class="pie-wrapper">
-            <div class="pie-item">
-              <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
-                if you stake
-              </div>
-              <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
-              <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
+    </div>
+    <div class="tm-container tm-wrapper">
+      <div class="pie-container">
+        <div class="pie-wrapper">
+          <div class="pie-item">
+            <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
+              if you stake
             </div>
-            <div class="pie-item">graphics</div>
-            <div class="pie-item">
-              <div class="tm-rf2 tm-bold tm-lh-title">10.63%</div>
-              <div class="tm-rf0 tm-medium tm-lh-title tm-overline">
-                commission
-              </div>
-              <div class="tm-rf-1 tm-lh-copy">(Varies between validators)</div>
+            <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
+            <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
+          </div>
+          <div class="pie-item">
+            <div class="pie" />
+          </div>
+          <div class="pie-item">
+            <div class="tm-rf2 tm-bold tm-lh-title">10.63%</div>
+            <div class="tm-rf0 tm-medium tm-lh-title tm-overline">
+              commission
             </div>
+            <div class="tm-rf-1 tm-lh-copy">(Varies between validators)</div>
           </div>
         </div>
-        <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
-          * baseline inflation rate fluctuates based on the total amount of
-          staked ATOMs in the network
-        </div> -->
+      </div>
+      <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
+        * baseline inflation rate fluctuates based on the total amount of staked
+        ATOMs in the network
+      </div>
     </div>
 
-    <div class="staking-3 tm-section tm-container tm-wrapper tm-grid-base">
-      <!-- GRAPHICS -->
+    <div
+      class="section-rewards-origin tm-section tm-container tm-wrapper tm-grid-base"
+    >
+      <div class="graphics">
+        <graphics-staking-rewardsorigin class="graphics__item" />
+      </div>
       <div class="text">
         <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
           Where do rewards come from?
@@ -111,28 +120,28 @@
           Staking rewards are generated and distributed to staked ATOM holders
           in two ways:
         </div>
-      </div>
-      <div class="subheading-item">
-        <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-          Transaction fees
+        <div class="subheading-item">
+          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+            Transaction fees
+          </div>
+          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            Transaction fees collected on the Cosmos Hub are distributed to
+            staked ATOM holders.
+          </div>
         </div>
-        <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-          Transaction fees collected on the Cosmos Hub are distributed to staked
-          ATOM holders.
+        <div class="subheading-item">
+          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+            Newly created ATOMs
+          </div>
+          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            The total supply of ATOMs is inflated to reward stakers. ATOM
+            holders that do not stake do not receive rewards, meaning their
+            ATOMs get diluted over time.
+          </p>
+          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            The yearly inflation rate of ATOMs is available on most explorers.
+          </p>
         </div>
-      </div>
-      <div class="subheading-item">
-        <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-          Newly created ATOMs
-        </div>
-        <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-          The total supply of ATOMs is inflated to reward stakers. ATOM holders
-          that do not stake do not receive rewards, meaning their ATOMs get
-          diluted over time.
-        </p>
-        <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-          The yearly inflation rate of ATOMs is available on most explorers.
-        </p>
       </div>
     </div>
 
@@ -161,7 +170,7 @@
         >
       </div>
       <div class="graphics">
-        <graphics-staking-safely />
+        <graphics-staking-safely class="graphics__item" />
       </div>
     </div>
 
@@ -174,8 +183,8 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-// STAKING 0
-.staking-0 .text
+// Hero
+.section-hero .text
   grid-column span 12
   center()
   text-align center
@@ -190,8 +199,8 @@ export default {}
   height 100%
   margin-top -7rem
 
-// STAKING 1
-.staking-1-text
+// Intro
+.section-intro
   grid-column span 12
 
   .subtitle
@@ -235,15 +244,15 @@ export default {}
   margin-top var(--spacing-5)
   margin-bottom var(--spacing-7)
 
-// STAKING 2
-.staking-2 .span-4
+// Rewards
+.section-rewards .span-4
   grid-column span 12
 
   .percentage
     margin-top var(--spacing-5)
     margin-bottom var(--spacing-5)
 
-.staking-2 .span-7
+.section-rewards .span-7
   grid-column span 12
   margin-top var(--spacing-9)
   position relative
@@ -263,7 +272,6 @@ export default {}
     margin-top var(--spacing-7)
 
 .pie-container
-  margin-top var(--spacing-9)
   grid-column span 12
 
 .pie-wrapper
@@ -283,14 +291,29 @@ export default {}
 .pie-item + .pie-item
   margin-top var(--spacing-9)
 
-.staking-2 .footnote
+.footnote
   grid-column 1/span 4
   margin-top var(--spacing-6)
   color var(--trans-gray-400)
   width 24.375rem
 
-// STAKING 3
-.staking-3
+// Rewards origin
+
+// TODO: tweak mobile column reverse
+// .section-rewards-origin
+//   display flex
+//   flex-direction column-reverse
+
+.section-rewards-origin .graphics
+  grid-column span 12
+  position relative
+
+  &__item
+    width 120%
+    height 100%
+    margin-top -10%
+
+.section-rewards-origin
   .text
     grid-column span 12
 
@@ -300,6 +323,7 @@ export default {}
 .subheading-item
   grid-column 2/span 12
   margin-top var(--spacing-9)
+  margin-left var(--spacing-11)
   position relative
 
 .subheading-item .title
@@ -338,22 +362,27 @@ export default {}
 .section-staking-safely .graphics
   grid-column span 12
 
+// @media $breakpoint-small
+//   .section-rewards-origin
+//     flex-direction revert
+
 @media $breakpoint-medium
-  // STAKING 0
-  .staking-0 .text
+  // Hero
+  .section-hero .text
     grid-column 7/ 12
     text-align left
 
   .section-hero .graphics
     z-index 0
     margin-top -25rem
+    margin-bottom -10rem
     width 80%
     center()
     display flex
     justify-content center
 
-  // STAKING 1
-  .staking-1-text
+  // Intro
+  .section-intro
     grid-row 1
     grid-column 2/span 7
 
@@ -363,18 +392,18 @@ export default {}
   .card-item .title
     width 10.625rem
 
-  // STAKING 2
-  .span-4
+  // Rewards
+  .section-rewards .span-4
     grid-column 2/span 4
     grid-row 1
     margin-top var(--spacing-11)
 
-  .span-7
+  .section-rewards  .span-7
     grid-column 6/span 11
     grid-row 1
     margin-top var(--spacing-7)
 
-  .span-7 .subtitle
+  .section-rewards  .span-7 .subtitle
     margin-left var(--spacing-10)
 
   .pie-container
@@ -387,14 +416,23 @@ export default {}
   .pie-item + .pie-item
     margin-top 0
 
-  // STAKING 3
-  .staking-3 .graphics
+  // Rewards origin
+  .section-rewards-origin .graphics
     grid-column 1/span 6
+    position relative
 
-  .staking-3 .text
+    &__item
+      position absolute
+      width 220%
+      height 100%
+      margin-top -1%
+      margin-left -25%
+
+  .section-rewards-origin .text
     grid-column 7/span 12
     position relative
     padding var(--spacing-7)
+    margin-top var(--spacing-11)
 
     &:before
       content url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0V32M1.00043 1L33 0.999997' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
@@ -415,9 +453,17 @@ export default {}
 
   .section-staking-safely .graphics
     grid-column 8/span 12
+    display grid
+    place-items center
+    position relative
+
+    &__item
+      position absolute
+      width 100%
+      height 100%
 
 @media $breakpoint-large
-  // STAKING 1
+  // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
 </style>
