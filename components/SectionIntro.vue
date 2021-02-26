@@ -1,6 +1,8 @@
 <template>
-  <div class="tm-wrapper">
-    <div class="section-services tm-section tm-container tm-grid-base">
+  <div>
+    <div
+      class="section-services tm-container tm-section tm-wrapper tm-grid-base"
+    >
       <div class="title tm-rf5 tm-bold tm-lh-title">
         A new world of connected services.
       </div>
@@ -20,7 +22,7 @@
       </swiper> -->
     </div>
 
-    <div class="section-atom tm-section tm-container">
+    <div class="section-atom tm-section tm-container tm-wrapper">
       <div class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOMs.</div>
       <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrower">
         In return for securing the Hub services, transaction feed and staking
@@ -51,12 +53,14 @@
     </div>
 
     <div class="section-features tm-section tm-container">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Be part of the open economy of the future.
+      <div class="tm-wrapper">
+        <div class="title tm-rf5 tm-bold tm-lh-title">
+          Be part of the open economy of the future.
+        </div>
       </div>
     </div>
 
-    <div class="section-tech tm-section tm-container">
+    <div class="section-tech tm-section tm-container tm-wrapper">
       <div class="title tm-rf5 tm-bold tm-lh-title">
         Powered by the best blockchain tech has to offer.
       </div>
@@ -68,7 +72,9 @@
       </div>
     </div>
 
-    <div class="section-developer tm-section tm-container tm-grid-base">
+    <div
+      class="section-developer tm-section tm-container tm-wrapper tm-grid-base"
+    >
       <div class="left">
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Developers
@@ -165,48 +171,50 @@
     </div>
 
     <div class="section-community tm-section tm-container tm-grid-base">
-      <div class="text">
-        <div class="title tm-rf5 tm-bold tm-lh-title">
-          Join the worldwide community.
-        </div>
-        <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
-          Join a fast-growing community of developers and innovators connected
-          all over the world, building the new era of the internet.
-        </div>
-        <tm-button
-          to-link="external"
-          href="https://cosmos.network/community"
-          size="l"
-          dark-color="var(--white)"
-          light-color="var(--black)"
-          background-color="transparent"
-          variant="text"
-          class="btn"
-          >Cosmos Community <span class="icon__right">-></span></tm-button
-        >
-      </div>
-      <div class="list">
-        <div class="list-wrapper">
-          <a
-            v-for="item in links"
-            :key="item.logo"
-            :href="item.url"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="list-item"
+      <div class="tm-wrapper">
+        <div class="text">
+          <div class="title tm-rf5 tm-bold tm-lh-title">
+            Join the worldwide community.
+          </div>
+          <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+            Join a fast-growing community of developers and innovators connected
+            all over the world, building the new era of the internet.
+          </div>
+          <tm-button
+            to-link="external"
+            href="https://cosmos.network/community"
+            size="l"
+            dark-color="var(--white)"
+            light-color="var(--black)"
+            background-color="transparent"
+            variant="text"
+            class="btn"
+            >Cosmos Community <span class="icon__right">-></span></tm-button
           >
-            <div class="icon">
-              <component :is="`icon-${item.logo}`" />
-            </div>
-            <div class="details">
-              <div class="title tm-rf1 tm-bold tm-lh-title">
-                {{ item.title }}
+        </div>
+        <div class="list">
+          <div class="list-wrapper">
+            <a
+              v-for="item in links"
+              :key="item.logo"
+              :href="item.url"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="list-item"
+            >
+              <div class="icon">
+                <component :is="`icon-${item.logo}`" />
               </div>
-              <div class="desc tm-rf0 tm-lh-copy">
-                {{ item.desc }}
+              <div class="details">
+                <div class="title tm-rf1 tm-bold tm-lh-title">
+                  {{ item.title }}
+                </div>
+                <div class="desc tm-rf0 tm-lh-copy">
+                  {{ item.desc }}
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -319,7 +327,7 @@ export default {
     center()
 
   &:before,
-  > *
+  & > *
     grid-column 1/-1
 
   .title
@@ -340,6 +348,8 @@ export default {
     max-width 6em
     center()
 
+  .subtitle
+    center()
 
 .section-features
 
@@ -448,10 +458,10 @@ export default {
   // Services
   .section-services
     .title
-      grid-column 3 / span 7
+      grid-column 3 / span 6
 
     .subtitle
-      grid-column 4 / span 6
+      grid-column 4 / span 5
 
   // Dev features
   .section-dev-features
@@ -466,10 +476,10 @@ export default {
   // Community
   .section-community
     .text
-      grid-column 1/span 6
+      grid-column 1/span 4
 
     .list
-      grid-column 7/span 6
+      grid-column 7/span 4
       margin-top 0
 
 @media $breakpoint-large

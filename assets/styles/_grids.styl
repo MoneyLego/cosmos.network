@@ -4,15 +4,20 @@
 
 */
 
+:root
+  --grid-gap-x var(--spacing-5)
+
 .tm-grid-base
   display grid
   grid-template-columns repeat(4, 1fr)
-  gap 0 var(--spacing-5)
+  gap 0 var(--grid-gap-x)
 
 @media $breakpoint-medium
+  :root
+    --grid-gap-x var(--spacing-7)
+
   .tm-grid-base
     grid-template-columns repeat(8, 1fr)
-    gap 0 var(--spacing-7)
 
 @media $breakpoint-large
   .tm-grid-base

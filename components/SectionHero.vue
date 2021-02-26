@@ -1,15 +1,13 @@
 <template>
   <div class="section-hero">
-    <div class="tm-wrapper">
-      <div class="tm-section">
-        <div class="title tm-rf7 tm-bold tm-lh-title">
-          The heart of the Interchain.
-        </div>
-        <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
-          Welcome to the Cosmos Hub, the economic center of
-          <a href="https://cosmos.network" class="tm-medium tm-link">Cosmos</a>
-          – an ever-expanding ecosystem of interconnected blockchains.
-        </div>
+    <div class="tm-wrapper tm-section tm-container">
+      <div class="title tm-rf7 tm-bold tm-lh-title">
+        The heart of the Interchain.
+      </div>
+      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
+        Welcome to the Cosmos Hub, the economic center of
+        <a href="https://cosmos.network" class="tm-medium tm-link">Cosmos</a>
+        – an ever-expanding ecosystem of interconnected blockchains.
       </div>
     </div>
     <graphics-home-hero class="graphics" />
@@ -26,6 +24,9 @@ export default {}
   background linear-gradient(to bottom, #111111 44%, #000000 67%)
   text-align center
 
+  .light-mode &
+    background none
+
 .tm-section
   width 100%
   z-index 1
@@ -40,7 +41,6 @@ export default {}
 
 .subtitle
   margin-top var(--spacing-7)
-  color var(--white-800)
   center()
 
 @media $breakpoint-small
