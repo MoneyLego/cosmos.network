@@ -1,87 +1,82 @@
 <template>
   <main>
     <div class="section-hero">
-      <div class="tm-wrapper">
-        <div class="staking-0 tm-section tm-grid-base">
-          <div class="text">
-            <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
-            <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
-              Help secure the Cosmos Hub and earn rewards
-            </div>
+      <div class="staking-0 tm-wrapper tm-section tm-grid-base">
+        <div class="text">
+          <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
+          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
+            Help secure the Cosmos Hub and earn rewards
           </div>
         </div>
       </div>
       <graphics-staking-hero class="graphics" />
     </div>
 
-    <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
-        <div class="staking-1-text">
-          <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
-          <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
-            Staking is the process of locking up a digital asset (ATOMs in the
-            case of the Cosmos Hub) in order to provide economic security for a
-            public blockchain.
+    <div class="tm-section tm-container tm-wrapper tm-grid-base">
+      <div class="staking-1-text">
+        <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
+        <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
+          Staking is the process of locking up a digital asset (ATOMs in the
+          case of the Cosmos Hub) in order to provide economic security for a
+          public blockchain.
+        </div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card-item">
+          <div class="graphics">
+            <graphics-staking-1 class="graphics__item" />
+          </div>
+          <div class="title tm-rf3 tm-bold tm-lh-title">Secure the chain</div>
+          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            With ATOM, you have the superpower to contribute to the security and
+            governance of the Cosmos Hub.
           </div>
         </div>
-        <div class="cards-wrapper">
-          <div class="card-item">
-            <div class="graphics">
-              <graphics-staking-1 class="graphics__item" />
-            </div>
-            <div class="title tm-rf3 tm-bold tm-lh-title">Secure the chain</div>
-            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              With ATOM, you have the superpower to contribute to the security
-              and governance of the Cosmos Hub.
-            </div>
+        <div class="card-item">
+          <div class="graphics">
+            <graphics-staking-2 class="graphics__item" />
           </div>
-          <div class="card-item">
-            <div class="graphics">
-              <graphics-staking-2 class="graphics__item" />
-            </div>
-            <div class="title tm-rf3 tm-bold tm-lh-title">Earn rewards</div>
-            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Select one or more validators of the Cosmos Hub and start earning
-              crypto assets.
-            </div>
+          <div class="title tm-rf3 tm-bold tm-lh-title">Earn rewards</div>
+          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            Select one or more validators of the Cosmos Hub and start earning
+            crypto assets.
           </div>
-          <div class="card-item">
-            <div class="graphics">
-              <graphics-staking-3 class="graphics__item" />
-            </div>
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Vote for the future
-            </div>
-            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Staking ATOMs grants the right to vote on proposals and make
-              decisions on the future of the network.
-            </div>
+        </div>
+        <div class="card-item">
+          <div class="graphics">
+            <graphics-staking-3 class="graphics__item" />
+          </div>
+          <div class="title tm-rf3 tm-bold tm-lh-title">
+            Vote for the future
+          </div>
+          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+            Staking ATOMs grants the right to vote on proposals and make
+            decisions on the future of the network.
           </div>
         </div>
       </div>
     </div>
 
-    <div class="tm-wrapper">
-      <div class="staking-2 tm-section tm-container tm-grid-base">
-        <div class="span-4">
-          <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
-            typical apy
-          </div>
-          <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
-          <div class="tm-rf1 tm-lh-title">of staked ATOMs (annually)*</div>
+    <div class="staking-2 tm-section tm-container tm-wrapper tm-grid-base">
+      <div class="span-4">
+        <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
+          typical apy
         </div>
-        <div class="span-7">
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-            Staking rewards
-          </div>
-          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
-            When the staking transaction is complete, rewards will start to be
-            generated immediately. At any time, stakers can send a transaction
-            to claim their accumulated rewards, using a wallet.
-          </div>
+        <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
+        <div class="tm-rf1 tm-lh-title">of staked ATOMs (annually)*</div>
+      </div>
+      <div class="span-7">
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          Staking rewards
         </div>
-        <!-- TODO -->
-        <!-- <div class="pie-container">
+        <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
+          When the staking transaction is complete, rewards will start to be
+          generated immediately. At any time, stakers can send a transaction to
+          claim their accumulated rewards, using a wallet.
+        </div>
+      </div>
+      <!-- TODO -->
+      <!-- <div class="pie-container">
           <div class="pie-wrapper">
             <div class="pie-item">
               <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
@@ -104,72 +99,69 @@
           * baseline inflation rate fluctuates based on the total amount of
           staked ATOMs in the network
         </div> -->
+    </div>
+
+    <div class="staking-3 tm-section tm-container tm-wrapper tm-grid-base">
+      <!-- GRAPHICS -->
+      <div class="text">
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          Where do rewards come from?
+        </div>
+        <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
+          Staking rewards are generated and distributed to staked ATOM holders
+          in two ways:
+        </div>
+      </div>
+      <div class="subheading-item">
+        <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+          Transaction fees
+        </div>
+        <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+          Transaction fees collected on the Cosmos Hub are distributed to staked
+          ATOM holders.
+        </div>
+      </div>
+      <div class="subheading-item">
+        <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+          Newly created ATOMs
+        </div>
+        <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+          The total supply of ATOMs is inflated to reward stakers. ATOM holders
+          that do not stake do not receive rewards, meaning their ATOMs get
+          diluted over time.
+        </p>
+        <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+          The yearly inflation rate of ATOMs is available on most explorers.
+        </p>
       </div>
     </div>
 
-    <div class="tm-wrapper">
-      <div class="staking-3 tm-section tm-container tm-grid-base">
-        <!-- GRAPHICS -->
-        <div class="text">
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-            Where do rewards come from?
-          </div>
-          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
-            Staking rewards are generated and distributed to staked ATOM holders
-            in two ways:
-          </div>
+    <div
+      class="section-staking-safely tm-section tm-container tm-wrapper tm-grid-base"
+    >
+      <div class="text">
+        <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
+        <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
+          Staking ATOMs is not risk-free. When ATOM holders stake, they need to
+          choose one or more validators to delegate to. However, if a validator
+          performs badly (according to the protocol), up to 5% of ATOMs
+          delegated to them can be forfeited.
         </div>
-        <div class="subheading-item">
-          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-            Transaction fees
-          </div>
-          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            Transaction fees collected on the Cosmos Hub are distributed to
-            staked ATOM holders.
-          </div>
-        </div>
-        <div class="subheading-item">
-          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-            Newly created ATOMs
-          </div>
-          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            The total supply of ATOMs is inflated to reward stakers. ATOM
-            holders that do not stake do not receive rewards, meaning their
-            ATOMs get diluted over time.
-          </p>
-          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            The yearly inflation rate of ATOMs is available on most explorers.
-          </p>
-        </div>
+        <tm-button
+          to-link="internal"
+          to="/staking"
+          size="l"
+          dark-color="var(--white)"
+          light-color="var(--black)"
+          background-color="transparent"
+          variant="text"
+          class="btn"
+          >More about staking safely
+          <span class="icon__right">--></span></tm-button
+        >
       </div>
-    </div>
-
-    <div class="tm-wrapper">
-      <div class="section-staking-safely tm-section tm-container tm-grid-base">
-        <div class="text">
-          <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
-          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
-            Staking ATOMs is not risk-free. When ATOM holders stake, they need
-            to choose one or more validators to delegate to. However, if a
-            validator performs badly (according to the protocol), up to 5% of
-            ATOMs delegated to them can be forfeited.
-          </div>
-          <tm-button
-            to-link="internal"
-            to="/staking"
-            size="l"
-            dark-color="var(--white)"
-            light-color="var(--black)"
-            background-color="transparent"
-            variant="text"
-            class="btn"
-            >More about staking safely
-            <span class="icon__right">--></span></tm-button
-          >
-        </div>
-        <div class="graphics">
-          <graphics-staking-safely />
-        </div>
+      <div class="graphics">
+        <graphics-staking-safely />
       </div>
     </div>
 
