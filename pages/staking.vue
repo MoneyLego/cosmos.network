@@ -12,7 +12,7 @@
       <graphics-staking-hero class="graphics" />
     </div>
 
-    <div class="tm-section tm-container tm-wrapper tm-grid-base">
+    <div class="tm-container tm-wrapper tm-grid-base">
       <div class="staking-1-text">
         <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -346,7 +346,8 @@ export default {}
 
   .section-hero .graphics
     z-index 0
-    margin-top -37rem
+    margin-top -25rem
+    width 80%
     center()
     display flex
     justify-content center
