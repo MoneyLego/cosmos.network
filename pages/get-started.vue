@@ -22,28 +22,28 @@
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
-          <div class="cards-item">
+          <NuxtLink to="/learn/faq/what-is-the-atom-tokens" class="card-item">
             <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
               learn
             </div>
             <div class="title tm-rf1 tm-bold tm-lh-title">
               What is the ATOM token?
             </div>
-          </div>
-          <div class="cards-item">
+          </NuxtLink>
+          <NuxtLink to="/learn/faq/what-is-staking" class="card-item">
             <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
               learn
             </div>
             <div class="title tm-rf1 tm-bold tm-lh-title">What is staking?</div>
-          </div>
-          <div class="cards-item">
+          </NuxtLink>
+          <NuxtLink to="/learn/faq/how-to-get-atoms" class="card-item">
             <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
               learn
             </div>
             <div class="title tm-rf1 tm-bold tm-lh-title">
-              What is a wallet?
+              How to get ATOMs?
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -59,13 +59,15 @@
               Get ATOMs via one of the many cryptocurrency exchanges
             </div>
           </div>
-          <!-- GRAPHICS -->
+          <div class="graphics">
+            <graphics-get-started-step-1 class="graphics__item" />
+          </div>
           <div class="bottom">
-            <p class="subtitle tm-rf1 tm-lh-copy">
+            <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
               Some exchanges offer staking services directly, but this requires
               you to delegate ownership of your tokens to them.
             </p>
-            <p class="subtitle tm-rf1 tm-lh-copy">
+            <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
               This guide involves using your own wallet, enabling you to
               maintain full ownership of your tokens.
             </p>
@@ -90,7 +92,7 @@
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base section-step-2">
+      <div class="tm-container tm-grid-base section-step-2">
         <div class="left">
           <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 02
@@ -120,7 +122,9 @@
             step 03
           </div>
           <div class="section-step-3">
-            <!-- GRAPHICS -->
+            <div class="graphics">
+              <graphics-get-started-step-3 class="graphics__item" />
+            </div>
             <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
               Select your validators
             </div>
@@ -165,7 +169,7 @@
             step 04
           </div>
           <div class="graphics">
-            <!-- GRAPHICS -->
+            <graphics-get-started-lock-atoms class="graphics__item" />
           </div>
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title">
@@ -321,13 +325,17 @@ export default {
   grid-column span 12
   margin-top var(--spacing-8)
 
-.cards-item
+.card-item
   padding var(--spacing-7)
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
+  background-color #171717
 
-.cards-item .title
+  .light-mode &
+    background-color var(--white)
+
+.card-item .title
   margin-top var(--spacing-3)
 
 // Step 1
@@ -338,9 +346,14 @@ export default {
   grid-column span 12
   margin-bottom var(--spacing-5)
 
-.section-step-1 .top,
-.section-step-1 .bottom
-  grid-column span 12
+.section-step-1
+  .top,
+  .graphics,
+  .bottom
+    grid-column span 12
+
+.section-step-1 .graphics__item
+  width 100%
 
 .section-step-1 .bottom
   margin-top var(--spacing-7)
@@ -368,9 +381,24 @@ export default {
 .right
   margin-top var(--spacing-12)
 
+// .section-step-3
+//   right 10%
+
+.section-step-3 .graphics__item
+  width 110%
+  height 100%
+
 // Step 4
 .section-step-4
   grid-column span 12
+
+.section-step-4 .graphics
+  display grid
+  place-items center
+
+  &__item
+    width 100%
+    // height 100%
 
 .dark-mode .warning-wrapper
   background-color #171717
@@ -458,6 +486,10 @@ export default {
   // Step 1
   .section-step-1 .top
     grid-column 5/span 12
+
+  .section-step-1 .graphics
+    grid-column 1/span 6
+
   .section-step-1 .bottom
     grid-column 7/span 12
 
@@ -500,6 +532,19 @@ export default {
     position relative
     margin-top -15rem
 
+  .section-step-3 .graphics
+    position relative
+    display grid
+    place-items center
+    margin-bottom 20%
+    right 30%
+
+    &__item
+      position absolute
+      width 130%
+      height auto
+      left 0
+
   // Step 4
   .section-step-4
     position relative
@@ -507,6 +552,11 @@ export default {
     grid-template-columns 50% 50%
     grid-template-rows 1fr
     align-items center
+
+// .section-step-4 .graphics
+
+//   &__item
+//     height auto
 
   .section-step-4 .text .subtitle
     margin-top var(--spacing-7)
@@ -520,7 +570,6 @@ export default {
     grid-column 1/span 8
 
 @media $breakpoint-large
-  // Hero
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
