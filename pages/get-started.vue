@@ -169,7 +169,7 @@
           </div>
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title">
-              Lock up and stake your ATOMsss
+              Lock up and stake your ATOMs
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy">
               Using your wallet, send a simple transaction (often called “Stake”

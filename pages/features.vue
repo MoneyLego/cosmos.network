@@ -22,6 +22,7 @@
                   the Cosmos Hub is set to play a leading role in the Interchain
                   by offering a wide array of vital services.
                 </div>
+                <!-- TODO: add url -->
                 <tm-button
                   to-link="internal"
                   to="/staking"
@@ -101,6 +102,7 @@
             <div class="text">
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
               <div class="title">
+                <!-- TODO: add url -->
                 <tm-button
                   to-link="internal"
                   to="/"
@@ -442,7 +444,7 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/staking"
+          to="/learn/faq/what-is-staking"
           size="l"
           dark-color="var(--white)"
           light-color="var(--black)"
@@ -463,11 +465,17 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-// GLOBAL
-.caption
-  color rgba(0, 0, 0, 0.621) // TODO: change to var
+// Global
+.dark-mode .caption
+  color var(--white-500)
 
-.desc
+.light-mode .caption
+  color var(--trans-gray-600)
+
+.dark-mode .desc
+  color var(--white-800)
+
+.light-mode .desc
   color var(--trans-gray-200)
 
 .bottom
@@ -533,6 +541,12 @@ export default {}
 .section-features .span-8,
 .section-features .span-4
   margin-top var(--spacing-10)
+
+.dark-mode .section-features .span-8 .desc
+  color var(--white)
+
+.light-mode .section-features .span-8 .desc
+  color var(--trans-gray-200)
 
 .dark-mode .section-features
   .row-1,

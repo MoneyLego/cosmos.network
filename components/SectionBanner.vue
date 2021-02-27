@@ -10,7 +10,7 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/staking"
+          to="/learn/faq/what-is-the-atom-staking-process"
           size="l"
           color="var(--white)"
           background-color="#171717"
@@ -19,7 +19,7 @@
         >
       </div>
       <div class="graphics">
-        <graphics-banner-background class="graphics__back" />
+        <!-- <graphics-banner-background class="graphics__back" /> -->
         <graphics-banner-foreground class="graphics__front" />
       </div>
     </div>

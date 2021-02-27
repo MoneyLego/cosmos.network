@@ -274,22 +274,34 @@ export default {}
 .pie-container
   grid-column span 12
 
+.light-mode .pie-wrapper
+  background var(--white)
+
+.dark-mode .pie-wrapper
+  background #171717
+
 .pie-wrapper
   padding var(--spacing-10)
   display flex
   flex-direction column
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
-  color var(--black)
-  background var(--white)
   align-items center
   text-align center
+  height 18.625rem
 
 .pie-item
   text-align left
 
 .pie-item + .pie-item
   margin-top var(--spacing-9)
+
+.pie
+  width 447px
+  height 447px
+  border-radius: 50%
+  background conic-gradient(from 180deg at 50% 50%, #00C2FF -37.79deg, #000000 24.02deg, #FF48F8 24.04deg, #00C2FF 322.21deg, #000000 384.02deg)
+  transform matrix(0, 1, 1, 0, 0, 0)
 
 .footnote
   grid-column 1/span 4
@@ -399,7 +411,7 @@ export default {}
     margin-top var(--spacing-11)
 
   .section-rewards  .span-7
-    grid-column 6/span 11
+    grid-column 6/span 7
     grid-row 1
     margin-top var(--spacing-7)
 
@@ -435,7 +447,7 @@ export default {}
     margin-top var(--spacing-11)
 
     &:before
-      content url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0V32M1.00043 1L33 0.999997' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+      content url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0V32M1.00043 1L33 0.999997' stroke='var(--black)' stroke-width='2'/%3E%3C/svg%3E")
       position absolute
       top 0
       left 0

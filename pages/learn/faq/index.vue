@@ -40,6 +40,22 @@
             >Learn more <span class="icon__right">--></span></tm-button
           >
         </div>
+        <div class="divider">
+          <svg
+            width="16"
+            height="80"
+            viewBox="0 0 16 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 64L8 -1.50502e-06"
+              stroke="currentColor"
+              stroke-opacity="0.185"
+            />
+            <path d="M16 72H0M8 80V64" stroke="currentColor" />
+          </svg>
+        </div>
         <div class="cta">
           <div
             v-if="currentIndex != articles.length"
@@ -126,8 +142,10 @@ export default {
 .item + .item
   margin-top var(--spacing-8)
 
+.divider
+  margin-top var(--spacing-8)
+
 .cta
-  margin-top var(--spacing-10)
   text-align left
   cursor pointer
 
