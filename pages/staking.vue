@@ -179,7 +179,40 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Cosmos Hub - Staking',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      // meta: [
+      //   // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+      //   {
+      //     hid: 'description',
+      //     name: 'description',
+      //     content: this.description,
+      //   },
+      //   // Open Graph
+      //   { hid: 'og:title', property: 'og:title', content: this.title },
+      //   {
+      //     hid: 'og:description',
+      //     property: 'og:description',
+      //     content: this.description,
+      //   },
+      //   // Twitter Card
+      //   { hid: 'twitter:title', name: 'twitter:title', content: this.title },
+      //   {
+      //     hid: 'twitter:description',
+      //     name: 'twitter:description',
+      //     content: this.description,
+      //   },
+      // ],
+    }
+  },
+}
 </script>
 
 <style lang="stylus" scoped>
