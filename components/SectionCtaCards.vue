@@ -2,12 +2,18 @@
   <div class="tm-wrapper tm-container">
     <div class="cards">
       <NuxtLink to="/staking" class="card-item">
+        <div class="graphics">
+          <graphics-cta-developers class="graphics__item" />
+        </div>
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Token Holders
         </div>
         <div class="title tm-rf2 tm-bold tm-lh-title">Start staking -></div>
       </NuxtLink>
       <NuxtLink to="/get-started" class="card-item">
+        <div class="graphics">
+          <graphics-cta-developers class="graphics__item" />
+        </div>
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Developers
         </div>
@@ -50,8 +56,21 @@ export default {}
   border-radius $border-radius-5
   hover-raise(-3px)
 
+.graphics
+  position absolute
+  z-index 0
+  right -40%
+  top -70%
+
+  &__item
+    width 70%
+
 .title
   margin-top var(--spacing-3)
+  z-index 1
+
+.caption
+  z-index 1
 
 @media $breakpoint-xsmall-only
   .card-item
@@ -62,4 +81,12 @@ export default {}
 @media $breakpoint-large
   .cards
     grid-template-columns 1fr 1fr
+
+  .graphics
+    position absolute
+    top -10rem
+    right -5rem
+
+    &__item
+      width 100%
 </style>
