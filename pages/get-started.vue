@@ -3,7 +3,7 @@
     <div class="section-hero tm-section">
       <div class="tm-wrapper">
         <div class="tm-container tm-section tm-grid-base">
-          <div class="start-0-text tm-measure-wide">
+          <div class="text tm-measure-wide">
             <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
               get started
             </div>
@@ -18,7 +18,7 @@
 
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
-        <div class="start-1-text">
+        <div class="section-intro">
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
@@ -50,7 +50,7 @@
 
     <div class="tm-wrapper">
       <div class="tm-section tm-container">
-        <div class="start-2-text tm-grid-base">
+        <div class="section-step-1 tm-grid-base">
           <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
             step 01
           </div>
@@ -90,38 +90,36 @@
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+      <div class="tm-section tm-container tm-grid-base section-step-2">
         <div class="left">
-          <!-- <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 02
-          </div> -->
-          <div class="step-3-text">
-            <!-- GRAPHICS -->
-            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-              Transfer your ATOMs to a wallet
-            </div>
-            <div class="subtitle tm-rf1 tm-lh-copy">
-              Choose a wallet that supports the ATOM token, create an account,
-              and transfer your ATOMs from the exchange.
-            </div>
-            <tm-button
-              to-link="external"
-              href="https://cosmos.network/ecosystem/wallets"
-              size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
-              variant="text"
-              class="btn"
-              >Choose a wallet <span class="icon__right">-></span></tm-button
-            >
           </div>
+          <!-- GRAPHICS -->
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+            Transfer your ATOMs to a wallet
+          </div>
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            Choose a wallet that supports the ATOM token, create an account, and
+            transfer your ATOMs from the exchange.
+          </div>
+          <tm-button
+            to-link="external"
+            href="https://cosmos.network/ecosystem/wallets"
+            size="l"
+            dark-color="var(--white)"
+            light-color="var(--black)"
+            background-color="transparent"
+            variant="text"
+            class="btn"
+            >Choose a wallet <span class="icon__right">-></span></tm-button
+          >
         </div>
         <div class="right">
-          <!-- <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 03
-          </div> -->
-          <div class="step-3-text">
+          </div>
+          <div class="section-step-3">
             <!-- GRAPHICS -->
             <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
               Select your validators
@@ -162,7 +160,7 @@
 
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
-        <div class="start-5-wrapper">
+        <div class="section-step-4">
           <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
             step 04
           </div>
@@ -171,7 +169,7 @@
           </div>
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title">
-              Lock up and stake your ATOMs
+              Lock up and stake your ATOMsss
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy">
               Using your wallet, send a simple transaction (often called “Stake”
@@ -196,7 +194,7 @@
 
     <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
-        <div class="start-6-text">
+        <div class="section-community">
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Welcome to the community, fellow Cosmonaut
           </div>
@@ -253,6 +251,7 @@ import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'
 import IconCosmos from '~/components/icons/IconCosmos.vue'
+import IconWarning from '~/components/icons/IconWarning.vue'
 
 export default {
   components: {
@@ -260,6 +259,7 @@ export default {
     IconDiscord,
     IconTelegram,
     IconCosmos,
+    IconWarning,
   },
   data() {
     return {
@@ -299,18 +299,18 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// GET STARTED 0
+// Hero
 .section-hero
   text-align left
 
-.start-0-text
+.section-hero .text
   grid-column span 12
 
-.start-0-text .title
+.section-hero .title
   margin-top var(--spacing-6)
 
-// GET STARTED 1
-.start-1-text
+// Intro
+.section-intro
   grid-column span 12
 
 .cards-wrapper
@@ -330,33 +330,33 @@ export default {
 .cards-item .title
   margin-top var(--spacing-3)
 
-// GET STARTED 2
-.start-2-text
+// Step 1
+.section-step-1
   position relative
 
 .step
   grid-column span 12
   margin-bottom var(--spacing-5)
 
-.start-2-text .top,
-.start-2-text .bottom
+.section-step-1 .top,
+.section-step-1 .bottom
   grid-column span 12
 
-.start-2-text .bottom
+.section-step-1 .bottom
   margin-top var(--spacing-7)
 
-.start-2-text .footnote
+.section-step-1 .footnote
   color var(--gray-600)
 
-// GET STARTED 3
-.step-3-text .subtitle
+// Step 2
+.section-step-2 .subtitle
   margin-top var(--spacing-7)
 
-.step-3-text .btn
+.section-step-2 .btn
   margin-top var(--spacing-6)
 
-// GET STARTED 4
-.row
+// Step 3
+.section-step-3 .row
   display flex
   flex-direction column
 
@@ -368,11 +368,17 @@ export default {
 .right
   margin-top var(--spacing-12)
 
-// GET STARTED 5
-.start-5-wrapper
+// Step 4
+.section-step-4
   grid-column span 12
 
-.start-5-wrapper .text .warning-wrapper
+.dark-mode .warning-wrapper
+  background-color #171717
+
+.light-mode .warning-wrapper
+  background-color var(--white)
+
+.section-step-4 .text .warning-wrapper
   margin-top var(--spacing-8)
   display grid
   grid-auto-flow column
@@ -381,7 +387,6 @@ export default {
   align-items center
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
-  background var(--white)
   padding var(--spacing-6)
 
 .warning-wrapper .icon
@@ -392,18 +397,23 @@ export default {
   align-items center
   justify-content center
 
-.warning-wrapper .text
-  grid-column-start 2
+.dark-mode .warning-wrapper .text
+  color var(--white-800)
+
+.light-mode .warning-wrapper .text
   color rgba(0, 0, 0, 0.5)
 
-// GET STARTED 6
-.start-6-text
+.warning-wrapper .text
+  grid-column-start 2
+
+// Community
+.section-community
   grid-column span 12
 
-.start-6-text .subtitle
+.section-community .subtitle
   margin-top var(--spacing-6)
 
-.start-6-text .btn
+.section-community .btn
   margin-top var(--spacing-9)
 
 .grid-wrapper
@@ -429,28 +439,26 @@ export default {
   margin-top var(--spacing-9)
 
 @media $breakpoint-small
-  // GET STARTED 0
-  // GET STARTED 1
-  // GET STARTED 4
-  .row
+  // Step 3
+  .section-step-3 .row
     display block
 
 @media $breakpoint-medium
-  // GET STARTED 0
-  .start-0-text
+  // Hero
+  .section-hero .text
     grid-column 4/span 10
 
-  // GET STARTED 1
+  // Intro
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
 
-  .start-1-text
+  .section-intro
     grid-column 4/span 12
 
-  // GET STARTED 2
-  .start-2-text .top
+  // Step 1
+  .section-step-1 .top
     grid-column 5/span 12
-  .start-2-text .bottom
+  .section-step-1 .bottom
     grid-column 7/span 12
 
   .step
@@ -480,7 +488,7 @@ export default {
     width 40px
     height 1px
 
-  // GET STARTED 4
+  // Step 3
   .left
     grid-row 1
     grid-column 2/span 5
@@ -492,19 +500,19 @@ export default {
     position relative
     margin-top -15rem
 
-  // GET STARTED 5
-  .start-5-wrapper
+  // Step 4
+  .section-step-4
     position relative
     display grid
     grid-template-columns 50% 50%
     grid-template-rows 1fr
     align-items center
 
-  .start-5-wrapper .text .subtitle
+  .section-step-4 .text .subtitle
     margin-top var(--spacing-7)
 
-  // GET STARTED 6
-  .start-6-text
+  // Community
+  .section-community
     grid-column 1/span 10
 
   .grid-wrapper
@@ -512,8 +520,8 @@ export default {
     grid-column 1/span 8
 
 @media $breakpoint-large
-  // GET STARTED 0
-  // GET STARTED 1
+  // Hero
+  // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
     grid-column span 15

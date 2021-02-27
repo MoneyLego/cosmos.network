@@ -19,7 +19,7 @@
         >
       </div>
       <div class="graphics">
-        <!-- <graphics-banner-background class="graphics__back" /> -->
+        <graphics-banner-background class="graphics__back" />
         <graphics-banner-foreground class="graphics__front" />
       </div>
     </div>
@@ -74,17 +74,16 @@ export default {}
     position relative
     z-index -1
     grid-column 1/span 6
-    display flex
-    align-items stretch
-    justify-content flex-end
+    // display flex
+    // align-items stretch
+    // justify-content flex-end
     margin-top 0
 
-    // &__back
-    //   position absolute
-    //   max-width 172%
-    //   top 43%
-    //   left 57%
-    //   transform translate(-50%,-50%)
+    &__back
+      position absolute
+      max-width 172%
+      transform translate(5%, -85%)
+      overflow visible
 
     &__front
       position absolute

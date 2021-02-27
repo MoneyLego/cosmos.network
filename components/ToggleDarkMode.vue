@@ -4,23 +4,23 @@
       {{ $colorMode.preference }}
     </div>
     <component
-      :is="`icon-light`"
+      :is="`icon-light-mode`"
       v-if="$colorMode.preference === 'light'"
       class="icon"
       :class="getClasses(color)"
     />
-    <component :is="`icon-dark`" v-else :class="getClasses(color)" />
+    <component :is="`icon-dark-mode`" v-else :class="getClasses(color)" />
   </div>
 </template>
 
 <script>
-import IconLight from '~/components/icons/IconLight.vue'
-import IconDark from '~/components/icons/IconDark.vue'
+import IconLightMode from '~/components/icons/IconLightMode.vue'
+import IconDarkMode from '~/components/icons/IconDarkMode.vue'
 
 export default {
   components: {
-    IconLight,
-    IconDark,
+    IconLightMode,
+    IconDarkMode,
   },
   props: {
     color: {
