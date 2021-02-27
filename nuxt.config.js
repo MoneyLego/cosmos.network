@@ -23,7 +23,7 @@ export default {
           'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       // Open Graph
-      { hid: 'og:site_name', property: 'og:site_name', content: 'Stargate' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Cosmos Hub' },
       {
         hid: 'og:title',
         property: 'og:title',
