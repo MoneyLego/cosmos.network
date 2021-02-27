@@ -9,7 +9,7 @@
         </div>
       </div>
       <graphics-faq-hero-dark
-        v-if="$nuxt.$colorMode.preference === 'dark'"
+        v-if="$nuxt.$colorMode.value === 'dark'"
         class="graphics"
       />
       <graphics-faq-hero-light v-else class="graphics" />
@@ -127,9 +127,10 @@ export default {
 .section-hero .graphics
   position unset
   height 100%
-  width 210%
+  width 170%
   margin-top -20%
   margin-left 0%
+  margin-bottom -90%
   overflow visible
 
 // Content
