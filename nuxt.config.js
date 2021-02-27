@@ -159,6 +159,13 @@ export default {
   optimizedImages: {
     optimizeImages: true,
   },
+  // To fix flashes on the clientside
+  // Set preference as dark
+  // https://color-mode.nuxtjs.org/#caveats
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'dark',
+  },
   styleResources: {
     stylus: [
       '~/assets/styles/abstracts/_*.styl',
