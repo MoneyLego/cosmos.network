@@ -27,12 +27,6 @@ export default {
       colors: ['dark', 'light'],
     }
   },
-  beforeMount() {
-    // Set default as dark mode to bypass systems
-    // Check $nuxt.$colorMode.preference in console
-    this.$colorMode.preference = 'dark'
-    this.$colorMode.value = 'dark'
-  },
   methods: {
     toggleColorMode() {
       this.$colorMode.preference =
