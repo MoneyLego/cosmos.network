@@ -6,7 +6,9 @@
       <div class="title tm-rf5 tm-bold tm-lh-title">
         A new world of connected services.
       </div>
-      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
+      <div
+        class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
+      >
         The Cosmos Hub is a blockchain that provides vital services to the
         Interchain.
       </div>
@@ -470,7 +472,7 @@ export default {
     .title
       grid-column 3 / span 6
 
-    .subtitle
+    .offset
       grid-column 4 / span 5
 
     .swiper-container
@@ -499,21 +501,11 @@ export default {
       margin-top 0
 
 @media $breakpoint-large
-  // Services
-  .section-services
-    .title
-      grid-column 6 / span 7
-
-    .subtitle
-      grid-column 7 / span 6
-
-    .swiper-container
-      grid-column 7 / span 4
 
   // Developer
   .section-developer
     .left
-      grid-column 2/span 7
+      grid-column 2/span 3
       display grid
       grid-template-columns repeat(6, 1fr)
       gap 0 var(--spacing-7)
@@ -530,7 +522,7 @@ export default {
         grid-column 1/span 4
         margin-top var(--spacing-7)
     .right
-      grid-column 9/span 12
+      grid-column 5/span 4
 
   // Dev features
   .section-dev-features
@@ -541,4 +533,16 @@ export default {
   .section-community
     .text
       grid-column 1/span 5
+
+@media $breakpoint-xl
+  // Services
+  .section-services
+    .title
+      grid-column 6 / span 7
+
+    .offset
+      grid-column 7 / span 6
+
+    .swiper-container
+      grid-column 7 / span 4
 </style>
