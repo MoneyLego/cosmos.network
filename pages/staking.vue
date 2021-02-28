@@ -151,9 +151,6 @@
           to-link="internal"
           to="/staking"
           size="l"
-          dark-color="var(--white)"
-          light-color="var(--black)"
-          background-color="transparent"
           variant="text"
           class="btn"
           >More about staking safely

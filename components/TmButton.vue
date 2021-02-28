@@ -15,11 +15,10 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
-      '--dark-background-color': darkBackgroundColor,
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
+      '--light-border-color': lightBorderColor,
       '--color': color,
-      '--dark-color': darkColor,
       '--light-color': lightColor,
     }"
   >
@@ -45,11 +44,10 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
-      '--dark-background-color': darkBackgroundColor,
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
+      '--light-border-color': lightBorderColor,
       '--color': color,
-      '--dark-color': darkColor,
       '--light-color': lightColor,
     }"
   >
@@ -72,11 +70,10 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
-      '--dark-background-color': darkBackgroundColor,
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
+      '--light-border-color': lightBorderColor,
       '--color': color,
-      '--dark-color': darkColor,
       '--light-color': lightColor,
     }"
     aria-disabled="true"
@@ -101,11 +98,10 @@
     ]"
     :style="{
       '--background-color': backgroundColor,
-      '--dark-background-color': darkBackgroundColor,
       '--light-background-color': lightBackgroundColor,
       '--border-color': borderColor,
+      '--light-border-color': lightBorderColor,
       '--color': color,
-      '--dark-color': darkColor,
       '--light-color': lightColor,
     }"
   >
@@ -133,9 +129,9 @@ export default {
       default: 'contained',
     },
     /**
-     * CSS color of dark mode background
+     * CSS color of background
      */
-    darkBackgroundColor: {
+    backgroundColor: {
       type: String,
       default: 'var(--white-200)',
     },
@@ -147,13 +143,6 @@ export default {
       default: 'var(--black)',
     },
     /**
-     * CSS color of background
-     */
-    backgroundColor: {
-      type: String,
-      default: 'var(--white-200)',
-    },
-    /**
      * CSS color of border
      */
     borderColor: {
@@ -161,16 +150,16 @@ export default {
       default: 'var(--white)',
     },
     /**
-     * CSS color of color
+     * CSS color of light mode border
      */
-    color: {
+    lightBorderColor: {
       type: String,
       default: 'var(--black)',
     },
     /**
-     * CSS color of dark mode color
+     * CSS color of color
      */
-    darkColor: {
+    color: {
       type: String,
       default: 'var(--white)',
     },
@@ -179,7 +168,7 @@ export default {
      */
     lightColor: {
       type: String,
-      default: 'var(--white)',
+      default: 'var(--black)',
     },
     /**
      * Glow style
@@ -317,8 +306,6 @@ export default {
         opacity 0.5
 
   /* text variant */
-  .dark-mode &__variant__text
-    color var(--dark-color)
   .light-mode &__variant__text
     color var(--light-color)
   &__variant__text
@@ -348,10 +335,7 @@ export default {
       &::after
         opacity 1
 
-  /* dark/light mode */
-  .dark-mode &__variant__contained
-    background var(--dark-background-color)
-    color var(--dark-color)
+  /* light mode */
   .light-mode &__variant__contained
     background var(--light-background-color)
     color var(--light-color)

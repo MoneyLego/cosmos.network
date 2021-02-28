@@ -115,9 +115,6 @@
             to-link="external"
             href="http://hub.cosmos.network"
             size="l"
-            dark-color="var(--white)"
-            light-color="var(--black)"
-            background-color="transparent"
             variant="text"
             class="btn"
             >Get started in minutes
@@ -188,9 +185,6 @@
             to-link="external"
             href="https://cosmos.network/community"
             size="l"
-            dark-color="var(--white)"
-            light-color="var(--black)"
-            background-color="transparent"
             variant="text"
             class="btn"
             >Cosmos Community <span class="icon__right">-></span></tm-button

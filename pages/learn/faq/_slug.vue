@@ -20,9 +20,6 @@
               to-link="internal"
               to="/learn/faq"
               size="s"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn"
               ><span class="icon__left">&#8592;</span>FAQ

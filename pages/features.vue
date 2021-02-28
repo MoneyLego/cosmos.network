@@ -26,9 +26,6 @@
                   to-link="internal"
                   to="/staking"
                   size="l"
-                  dark-color="var(--white)"
-                  light-color="var(--black)"
-                  background-color="transparent"
                   variant="text"
                   class="btn"
                   >The Hub’s vision
@@ -71,9 +68,6 @@
                   to-link="internal"
                   to="/staking"
                   size="l"
-                  dark-color="var(--white)"
-                  light-color="var(--black)"
-                  background-color="transparent"
                   variant="text"
                   class="btn tm-rf3 tm-bold tm-lh-title"
                   >Staking <span class="icon__right">-></span></tm-button
@@ -105,9 +99,6 @@
                   to-link="internal"
                   to="/"
                   size="l"
-                  dark-color="var(--white)"
-                  light-color="var(--black)"
-                  background-color="transparent"
                   variant="text"
                   class="btn tm-rf3 tm-bold tm-lh-title"
                   >Voting <span class="icon__right">-></span></tm-button
@@ -130,9 +121,6 @@
                 to-link="external"
                 href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
                 size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
                 variant="text"
                 class="btn tm-rf3 tm-bold tm-lh-title"
                 >Interchain Accounts
@@ -184,9 +172,6 @@
               to-link="internal"
               to="/"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
               >Interchain Staking <span class="icon__right">↗</span></tm-button
@@ -246,9 +231,6 @@
               to-link="internal"
               to="/"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
               >Next-gen. Automated Market Maker
@@ -295,9 +277,6 @@
               to-link="external"
               href="https://blog.althea.net/gravity-bridge"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
               >Gravity bridge<span class="icon__right">↗</span></tm-button
@@ -347,9 +326,6 @@
               to-link="internal"
               to="/"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
               >Chain Name Service <span class="icon__right">↗</span></tm-button
@@ -391,9 +367,6 @@
               to-link="internal"
               to="/"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
               >Staking Derivatives <span class="icon__right">↗</span></tm-button
@@ -444,9 +417,6 @@
           to-link="internal"
           to="/staking"
           size="l"
-          dark-color="var(--white)"
-          light-color="var(--black)"
-          background-color="transparent"
           variant="text"
           class="btn"
           >What is staking <span class="icon__right">--></span></tm-button

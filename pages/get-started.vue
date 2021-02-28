@@ -73,9 +73,6 @@
               to-link="external"
               href="https://messari.io/asset/cosmos/exchanges"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn"
               >Browse exchanges <span class="icon__right">↗️</span></tm-button
@@ -108,9 +105,6 @@
               to-link="external"
               href="https://cosmos.network/ecosystem/wallets"
               size="l"
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
               variant="text"
               class="btn"
               >Choose a wallet <span class="icon__right">-></span></tm-button
@@ -134,9 +128,6 @@
                 to-link="internal"
                 to="/staking"
                 size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
                 variant="text"
                 class="btn"
                 >What is a validator
@@ -146,9 +137,6 @@
                 to-link="internal"
                 to="/staking"
                 size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
                 variant="text"
                 class="btn"
                 >Choosing a validator
@@ -234,9 +222,6 @@
             to-link="external"
             href="https://cosmos.network/community"
             size="l"
-            dark-color="var(--white)"
-            light-color="var(--black)"
-            background-color="transparent"
             variant="text"
             class="btn"
             >Cosmos Community <span class="icon__right">-></span></tm-button

@@ -32,9 +32,6 @@
             to-link="internal"
             :to="`/learn/faq/${articles[item - 1].slug}`"
             size="l"
-            dark-color="var(--white)"
-            light-color="var(--black)"
-            background-color="transparent"
             variant="text"
             class="btn"
             >Learn more <span class="icon__right">--></span></tm-button
@@ -45,22 +42,12 @@
             v-if="currentIndex != articles.length"
             @click="currentIndex = articles.length"
           >
-            <tm-button
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
-              variant="text"
-              class="btn tm-rf1 tm-lh-copy tm-medium"
+            <tm-button variant="text" class="btn tm-rf1 tm-lh-copy tm-medium"
               >Show all &#8595;</tm-button
             >
           </div>
           <div v-else @click="currentIndex = 6">
-            <tm-button
-              dark-color="var(--white)"
-              light-color="var(--black)"
-              background-color="transparent"
-              variant="text"
-              class="btn tm-rf1 tm-lh-copy tm-medium"
+            <tm-button variant="text" class="btn tm-rf1 tm-lh-copy tm-medium"
               >Show less &#8593;</tm-button
             >
           </div>
