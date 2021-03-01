@@ -12,7 +12,10 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Cosmos Hub',
+    titleTemplate: (titleChunk) => {
+      // If head.title is undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} - Cosmos Hub` : 'Cosmos Hub'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

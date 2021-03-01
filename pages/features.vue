@@ -461,7 +461,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Features',
+    }
+  },
+}
 </script>
 
 <style lang="stylus" scoped>

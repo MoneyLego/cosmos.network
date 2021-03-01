@@ -109,6 +109,11 @@ export default {
       currentIndex: 6,
     }
   },
+  head() {
+    return {
+      title: 'FAQ',
+    }
+  },
 }
 </script>
 
