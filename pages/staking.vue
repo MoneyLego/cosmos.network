@@ -280,12 +280,6 @@ export default {
 .pie-container
   grid-column span 12
 
-.light-mode .pie-wrapper
-  background var(--white)
-
-.dark-mode .pie-wrapper
-  background #171717
-
 .pie-wrapper
   padding var(--spacing-10)
   display flex
@@ -295,6 +289,10 @@ export default {
   align-items center
   text-align center
   height 18.625rem
+  background #171717
+
+  .light-mode &
+    background var(--white)
 
 .pie-item
   text-align left
@@ -309,11 +307,17 @@ export default {
   background conic-gradient(from 180deg at 50% 50%, #00C2FF -37.79deg, #000000 24.02deg, #FF48F8 24.04deg, #00C2FF 322.21deg, #000000 384.02deg)
   transform matrix(0, 1, 1, 0, 0, 0)
 
+  .light-mode &
+    background conic-gradient(from 180deg at 50% 50%, #74DEFF -37.79deg, #FFFFFF 24.02deg, #FFCAFD 24.04deg, #74DEFF 322.21deg, #FFFFFF 384.02deg);
+
 .footnote
   grid-column 1/span 4
   margin-top var(--spacing-6)
-  color var(--trans-gray-400)
+  color var(--white-500)
   width 24.375rem
+
+  .light-mode &
+    color var(--trans-gray-400)
 
 // Rewards origin
 

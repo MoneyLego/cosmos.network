@@ -134,14 +134,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.dark-mode
-  p
-    color var(--white-500)
-
-.light-mode
-  p
-    color var(--gray-400)
-
 .footer
   text-align center
   padding 0 0 var(--spacing-8)
@@ -172,4 +164,8 @@ export default {
         opacity 1
   .smallprint
     margin var(--spacing-5) auto
+    color var(--white-500)
+
+    .light-mode &
+      color var(--gray-400)
 </style>

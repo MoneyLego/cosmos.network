@@ -38,14 +38,6 @@ export default {}
   margin-top var(--spacing-10)
   position relative
 
-.dark-mode .card-item
-  color var(--white)
-  background-color #171717
-
-.light-mode .card-item
-  color #171717
-  background-color var(--white)
-
 .card-item
   position relative
   padding var(--spacing-8)
@@ -57,6 +49,12 @@ export default {}
   height 20.5rem
   border-radius $border-radius-5
   hover-raise(-3px)
+  color var(--white)
+  background-color #171717
+
+  .light-mode &
+    color #171717
+    background-color var(--white)
 
 .title
   margin-top var(--spacing-3)

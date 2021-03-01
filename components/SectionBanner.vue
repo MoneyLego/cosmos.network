@@ -31,20 +31,18 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.dark-mode .banner-item
-  color var(--white)
-  background #171717
-
-.light-mode .banner-item
-  color var(--black)
-  background var(--white)
-
 .banner-item
   padding var(--spacing-10)
   display block
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
+  color var(--white)
+  background #171717
+
+  .light-mode &
+    color var(--black)
+    background var(--white)
 
 .banner-item .text
   grid-column span 12

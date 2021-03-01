@@ -472,18 +472,6 @@ export default {
 
 <style lang="stylus" scoped>
 // Global
-.dark-mode .caption
-  color var(--white-500)
-
-.light-mode .caption
-  color var(--trans-gray-600)
-
-.dark-mode .desc
-  color var(--white-800)
-
-.light-mode .desc
-  color var(--trans-gray-200)
-
 .bottom
   display block
   align-items center
@@ -548,30 +536,28 @@ export default {
 .section-features .span-4
   margin-top var(--spacing-10)
 
-.dark-mode .section-features .span-8 .desc
+.section-features .span-8 .desc
   color var(--white)
 
-.light-mode .section-features .span-8 .desc
-  color var(--trans-gray-200)
-
-.dark-mode .section-features
-  .row-1,
-  .row-2
-    background #171717
-
-.light-mode .section-features
-  .row-1,
-  .row-2
-    background linear-gradient(0deg, #FFFFFF, #FFFFFF)
+  .light-mode &
+    color var(--trans-gray-200)
 
 .section-features .span-8
   .row-1,
   .row-2
     border-radius $border-radius-5
     padding var(--spacing-8) var(--spacing-7)
+    background #171717
+
+    .light-mode &
+      background linear-gradient(0deg, #FFFFFF, #FFFFFF)
 
     .caption
       margin-top var(--spacing-7)
+      color var(--white-500)
+
+      .light-mode &
+        color var(--trans-gray-600)
 
 .section-features .span-8 .title
   margin-top var(--spacing-6)

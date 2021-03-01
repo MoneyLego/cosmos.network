@@ -405,12 +405,6 @@ export default {
     width 100%
     // height 100%
 
-.dark-mode .warning-wrapper
-  background-color #171717
-
-.light-mode .warning-wrapper
-  background-color var(--white)
-
 .section-step-4 .text .warning-wrapper
   margin-top var(--spacing-8)
   display grid
@@ -421,6 +415,10 @@ export default {
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
   padding var(--spacing-6)
+  background-color #171717
+
+  .light-mode &
+    background-color var(--white)
 
 .warning-wrapper .icon
   grid-column-start 1
@@ -430,14 +428,12 @@ export default {
   align-items center
   justify-content center
 
-.dark-mode .warning-wrapper .text
-  color var(--white-800)
-
-.light-mode .warning-wrapper .text
-  color rgba(0, 0, 0, 0.5)
-
 .warning-wrapper .text
   grid-column-start 2
+  color var(--white-800)
+
+  .light-mode &
+    color rgba(0, 0, 0, 0.5)
 
 // Community
 .section-community
@@ -512,11 +508,6 @@ export default {
     grid-column 7/span 8
     left -21%
 
-  .dark-mode .step:after
-    background var(--white)
-  .light-mode .step:after
-    background var(--black)
-
   .step:after
     content ""
     position absolute
@@ -524,6 +515,10 @@ export default {
     bottom 15px
     width 40px
     height 1px
+    background var(--white)
+
+    .light-mode &
+      background var(--black)
 
   // Step 3
   .left

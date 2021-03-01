@@ -317,11 +317,10 @@ export default {
         opacity 0.5
 
   /* text variant */
-  .dark-mode &__variant__text
-    color var(--dark-color)
-  .light-mode &__variant__text
-    color var(--light-color)
   &__variant__text
+    color var(--dark-color)
+    .light-mode &
+      color var(--light-color)
     &:hover,
     &:focus
       opacity 0.8

@@ -36,3 +36,13 @@
   --primary-900 #CCD1FF
 
   --link #40b3ff
+
+// TODO: to resolve :before, :after content URL svg dynamic color changes.
+// even after adding --color-mode to stroke :after encoded svg, the color doesn't change based on the user's appearance settings.
+@media (prefers-color-scheme: dark)
+  :root
+    --color-mode #FFFFFF
+
+@media (prefers-color-scheme: light)
+  :root
+    --color-mode #000

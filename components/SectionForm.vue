@@ -137,14 +137,6 @@ export default {
   opacity 0
   transform scale(.96)
 
-.dark-mode
-  p
-    color var(--white-500)
-
-.light-mode
-  p
-    color var(--gray-400)
-
 .bottom
   .container
     display flex
@@ -189,12 +181,6 @@ export default {
         height 2rem
         fill var(--gray-600)
         transition fill .15s ease-out, transform .15s ease-out
-      .dark-mode &__input
-        background var(--white-100)
-        color var(--white)
-      .light-mode &__input
-        background var(--gray-0)
-        color var(--black)
       &__input
         outline none
         width 100%
@@ -202,6 +188,11 @@ export default {
         border-radius $border-radius-3
         padding var(--spacing-5) 4rem var(--spacing-5) var(--spacing-6)
         transition color 0.15s ease-out, background 0.15s ease-out
+        background var(--white-100)
+        color var(--white)
+        .light-mode &
+          background var(--gray-0)
+          color var(--black)
         &::placeholder
           color var(--gray-600)
           transition color 0.15s ease-out
@@ -215,6 +206,10 @@ export default {
     text-align center
     margin-top var(--spacing-5)
     center()
+    color var(--white-500)
+
+    .light-mode &
+      color var(--gray-400)
 
 @media screen and (max-width: 576px)
   .bottom
