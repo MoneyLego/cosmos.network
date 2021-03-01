@@ -299,6 +299,11 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Get Started',
+    }
+  },
 }
 </script>
 
