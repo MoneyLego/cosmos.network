@@ -36,12 +36,12 @@
             </div>
             <div class="title tm-rf1 tm-bold tm-lh-title">What is staking?</div>
           </NuxtLink>
-          <NuxtLink to="/learn/faq/how-to-get-atoms" class="card-item">
+          <NuxtLink to="/learn/faq/what-is-a-wallet" class="card-item">
             <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
               learn
             </div>
             <div class="title tm-rf1 tm-bold tm-lh-title">
-              How to get ATOMs?
+              What is a wallet?
             </div>
           </NuxtLink>
         </div>
@@ -97,7 +97,9 @@
           <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 02
           </div>
-          <!-- GRAPHICS -->
+          <div class="graphics">
+            <graphics-get-started-step-2 class="graphics__item" />
+          </div>
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Transfer your ATOMs to a wallet
           </div>
@@ -134,7 +136,7 @@
             <div class="row">
               <tm-button
                 to-link="internal"
-                to="/staking"
+                to="/learn/faq/what-is-a-validator"
                 size="l"
                 dark-color="var(--white)"
                 light-color="var(--black)"
@@ -146,7 +148,7 @@
               >
               <tm-button
                 to-link="internal"
-                to="/staking"
+                to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
                 size="l"
                 dark-color="var(--white)"
                 light-color="var(--black)"
@@ -367,11 +369,27 @@ export default {
   color var(--gray-600)
 
 // Step 2
+.section-step-2 .title
+  position relative
+  z-index 1
+
 .section-step-2 .subtitle
   margin-top var(--spacing-7)
 
 .section-step-2 .btn
   margin-top var(--spacing-6)
+
+// .section-step-2 .graphics
+//   position relative
+//   display grid
+//   place-items center
+//   z-index 0
+
+//   &__item
+//     position absolute
+.left .graphics__item
+  width 100%
+  height auto
 
 // Step 3
 .section-step-3 .row
@@ -494,6 +512,7 @@ export default {
   .section-step-1 .bottom
     grid-column 7/span 12
 
+  // Step 2
   .step
     transform rotate(-90deg)
     position absolute
@@ -504,6 +523,7 @@ export default {
   .step-2
     grid-column 1/span 2
     left -31%
+
   .step-3
     grid-column 7/span 8
     left -21%
@@ -519,6 +539,15 @@ export default {
 
     .light-mode &
       background var(--black)
+
+  .left .graphics
+    position relative
+    display grid
+    place-items center
+    z-index 0
+
+    &__item
+      position absolute
 
   // Step 3
   .left
