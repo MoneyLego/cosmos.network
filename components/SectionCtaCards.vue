@@ -1,9 +1,10 @@
 <template>
-  <div class="tm-wrapper tm-container">
+  <div class="tm-wrapper tm-container tm-section">
     <div class="cards">
       <NuxtLink to="/staking" class="card-item">
         <div class="graphics">
-          <graphics-cta-developers class="graphics__item" />
+          <graphics-cta-token-holders class="graphics__item" />
+          <graphics-cta-validator class="graphics__validator" />
         </div>
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Token Holders
@@ -39,7 +40,6 @@ export default {}
 .card-item
   position relative
   padding var(--spacing-8)
-  position relative
   display flex
   flex-direction column
   flex-wrap nowrap
@@ -55,20 +55,20 @@ export default {}
     background-color var(--white)
 
 .graphics
-  position absolute
-  z-index 0
-  right -40%
-  top -70%
-
   &__item
-    width 70%
+    width 80%
+    position absolute
+    right -7%
+    top -70%
+
+  &__validator
+    width 44%
+    position absolute
+    right -8%
+    top 0%
 
 .title
   margin-top var(--spacing-3)
-  z-index 1
-
-.caption
-  z-index 1
 
 @media $breakpoint-xsmall-only
   .card-item
@@ -81,10 +81,13 @@ export default {}
     grid-template-columns 1fr 1fr
 
   .graphics
-    position absolute
-    top -10rem
-    right -5rem
-
     &__item
-      width 100%
+      right -8%
+      top -40%
+
+    &__validator
+      width 80%
+      position absolute
+      right -18%
+      top 35%
 </style>

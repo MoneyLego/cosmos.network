@@ -55,13 +55,14 @@
         </div>
       </div>
       <div class="tiles tm-grid-base">
-        <div class="span-0 tm-rf0 tm-medium tm-lh-title tm-overline">
-          Security and Scalability
-        </div>
         <div class="span-8">
           <div class="row-1">
             <div class="graphics">
-              <!-- <graphics-features-staking class="graphics__item" /> -->
+              <graphics-features-staking-dark
+                v-if="$nuxt.$colorMode.value === 'dark'"
+                class="graphics__item"
+              />
+              <graphics-features-staking-light v-else class="graphics__item" />
             </div>
             <div class="text">
               <div class="caption tm-rf0 tm-lh-title">
@@ -96,8 +97,12 @@
             </div>
           </div>
           <div class="row-2">
-            <div class="img">
-              <!-- GRAPHICS -->
+            <div class="graphics">
+              <graphics-features-voting-dark
+                v-if="$nuxt.$colorMode.value === 'dark'"
+                class="graphics__item"
+              />
+              <graphics-features-voting-light v-else class="graphics__item" />
             </div>
             <div class="text">
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
@@ -227,14 +232,25 @@
         </div>
       </div>
       <div class="graphics">
-        <graphics-features-interchain-staking class="graphics__item" />
+        <graphics-features-interchain-staking-dark
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          class="graphics__item"
+        />
+        <graphics-features-interchain-staking-light
+          v-else
+          class="graphics__item"
+        />
       </div>
     </div>
 
     <!-- AMM -->
     <div class="tm-container tm-wrapper tm-grid-base section-amm">
       <div class="graphics">
-        <graphics-features-amm class="graphics__item" />
+        <graphics-features-amm-dark
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          class="graphics__item"
+        />
+        <graphics-features-amm-light v-else class="graphics__item" />
       </div>
       <div class="text">
         <div class="top">
@@ -253,8 +269,7 @@
               background-color="transparent"
               variant="text"
               class="btn tm-rf3 tm-bold tm-lh-title"
-              >Next-gen. Automated Market Maker
-              <span class="icon__right">↗</span></tm-button
+              >Gravity DEX <span class="icon__right">↗</span></tm-button
             >
           </div>
           <div class="desc tm-rf0 tm-lh-copy">
@@ -433,7 +448,13 @@
 
     <!-- Fees -->
     <div class="tm-section tm-container tm-wrapper tm-grid-base section-fees">
-      <!-- GRAPHICS -->
+      <div class="graphics">
+        <graphics-features-rewards-fees-dark
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          class="graphics__item"
+        />
+        <graphics-features-rewards-fees-light v-else class="graphics__item" />
+      </div>
       <div class="title tm-rf5 tm-bold tm-lh-title">
         Services generate fees. Fees generate rewards.
       </div>
@@ -479,6 +500,18 @@ export default {
   .footnote
     margin-top var(--spacing-5)
 
+.caption
+  color var(--white-500)
+
+  .light-mode &
+    color var(--trans-gray-600)
+
+.desc
+  color var(--white-800)
+
+  .light-mode &
+    color var(--trans-gray-200)
+
 .avatar-list
   display flex
 
@@ -506,23 +539,30 @@ export default {
 .section-hero .text .split .right .subtitle
   margin-bottom var(--spacing-6)
 
+.section-hero .text .split .subtitle
+  color var(--white-800)
+
+  .light-mode &
+    color var(--black)
+
 // Feature
 .section-features .text,
+.section-features .graphics,
 .section-features .span-8,
 .section-features .span-4
   grid-column span 12
+
+.section-features .graphics
+  display grid
+  place-items center
+
+  &__item
+    width auto
 
 .section-features .tiles
   grid-column span 12
   position relative
   margin-top var(--spacing-7)
-
-.section-features .tiles .span-0
-  position absolute
-  writing-mode vertical-lr
-  transform rotate(180deg) translate(90px, -180px)
-  top -5rem
-  left -5rem
 
 .section-features .span-4
   padding var(--spacing-7)
@@ -559,9 +599,6 @@ export default {
       .light-mode &
         color var(--trans-gray-600)
 
-.section-features .span-8 .title
-  margin-top var(--spacing-6)
-
 .section-features .span-8 .row-2
   margin-top var(--spacing-7)
 
@@ -585,13 +622,6 @@ export default {
   flex-direction column
   justify-content space-between
   height 32.25rem
-  &:after
-    content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 0
-    left 0
-    transform-origin center
-    transform rotate(0deg) translate(10px, 10px)
 
 .section-interchain-staking .graphics
   grid-column span 12
@@ -614,7 +644,7 @@ export default {
     transform rotate(270deg) translate(-5px, 3px)
 
   &__item
-    width 130%
+    width 100%
 
 // AMM
 .section-amm .graphics
@@ -707,8 +737,13 @@ export default {
 // Fees
 .section-fees
   .title,
-  .description
+  .description,
+  .graphics
     grid-column span 12
+
+.section-fees .graphics__item
+  width 100%
+  height 100%
 
 .section-fees .description .subtitle
   margin-top var(--spacing-8)
@@ -742,8 +777,23 @@ export default {
     margin-top 0
 
   // Feature
+  .section-features .graphics
+    grid-column 1/span 2
+    display flex
+    align-items center
+    position relative
+    z-index 0
+
+    &__item
+      position absolute
+      left -10rem
+
   .section-features .text
     grid-column 3/span 10
+
+  .section-features .tiles .text
+    max-width 27.75rem
+    z-index 1
 
   .section-features .span-8
     .row-1,
@@ -765,10 +815,20 @@ export default {
     display grid
     place-items center
 
+    &__item
+      width 130%
+
   // AMM
   .section-amm .graphics
     grid-column 1/span 5
     position relative
+    &:before
+      content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+      position absolute
+      bottom 0
+      top 0
+      transform-origin center
+      transform rotate(0deg) translate(10px, 10px)
     &:after
       content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
       position absolute
@@ -795,6 +855,17 @@ export default {
     gap 0
 
   // Fees
+  .section-fees .graphics
+    grid-column 1/span 4
+    position relative
+
+    &__item
+      position absolute
+      top -310%
+      left -18vw
+      width unset
+      height unset
+
   .section-fees .title
     grid-column 5/span 12
 
