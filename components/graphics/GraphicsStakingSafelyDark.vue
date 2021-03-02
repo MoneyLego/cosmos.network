@@ -8,105 +8,105 @@
   >
     <path
       d="M236.498 388.487L236.498 487.462L407.998 289.512L236.498 388.487Z"
-      fill="url(#paint0_linear-570762)"
+      fill="url(#paint0_linear-356571)"
     />
     <path
       d="M236.5 388.487L236.5 487.462L65 289.512L236.5 388.487Z"
-      fill="url(#paint1_linear-364309)"
+      fill="url(#paint1_linear-717398)"
     />
     <rect
       width="198.011"
       height="198.011"
       transform="matrix(0.866114 -0.499847 0.866114 0.499847 65 289.512)"
-      fill="url(#paint2_radial-526567)"
+      fill="url(#paint2_radial-751934)"
     />
     <path
       d="M307.673 330.512C268.372 353.184 204.656 353.187 165.347 330.523C165.342 330.52 165.336 330.517 165.331 330.514C165.33 330.513 165.329 330.513 165.328 330.512C165.322 330.509 165.316 330.505 165.31 330.502C165.308 330.5 165.305 330.499 165.303 330.497C126.021 307.821 126.029 271.068 165.328 248.397C204.636 225.722 268.366 225.722 307.673 248.397C346.981 271.073 346.981 307.837 307.673 330.512Z"
-      fill="url(#paint3_linear-691891)"
+      fill="url(#paint3_linear-569551)"
     />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M307.673 330.512C346.981 307.837 346.981 271.073 307.673 248.397C268.366 225.722 204.636 225.722 165.328 248.397C126.029 271.068 126.021 307.821 165.303 330.497L165.31 330.502L165.331 330.514L165.347 330.523C204.656 353.187 268.372 353.184 307.673 330.512Z"
-      fill="url(#paint4_linear-036684)"
+      fill="url(#paint4_linear-573824)"
     />
-    <g filter="url(#filter0_b-529013)">
+    <g filter="url(#filter0_b-291115)">
       <path
         d="M170.595 262.149H149.533V283.928H149.535C149.539 302.57 189.515 317.682 238.828 317.682C288.143 317.682 328.121 302.569 328.121 283.925C328.121 283.857 328.12 283.789 328.119 283.721V262.149H307.06C290.681 254.821 266.192 250.168 238.828 250.168C211.464 250.168 186.975 254.821 170.595 262.149Z"
-        fill="url(#paint5_linear-224236)"
+        fill="url(#paint5_linear-585136)"
       />
       <ellipse
         rx="89.293"
         ry="33.7571"
         transform="matrix(-1 0 0 1 238.828 262.214)"
-        fill="url(#paint6_linear-256600)"
+        fill="url(#paint6_linear-708660)"
       />
       <path
         d="M218.271 286.835C168.956 286.835 128.979 271.721 128.979 253.077C128.979 253.034 128.979 252.991 128.979 252.948V231.301H150.039C166.418 223.974 190.907 219.32 218.271 219.32C245.636 219.32 270.125 223.974 286.504 231.301H307.565V253.08H307.564C307.561 271.722 267.584 286.835 218.271 286.835Z"
-        fill="url(#paint7_linear-850802)"
+        fill="url(#paint7_linear-808598)"
       />
       <ellipse
         rx="89.293"
         ry="33.7571"
         transform="matrix(-1 0 0 1 218.27 231.296)"
-        fill="url(#paint8_linear-331370)"
+        fill="url(#paint8_linear-044387)"
       />
       <path
         d="M236.25 258.061C186.935 258.061 146.957 242.947 146.957 224.304C146.957 224.253 146.957 224.202 146.958 224.151V202.528H168.018C184.397 195.2 208.886 190.547 236.25 190.547C263.614 190.547 288.103 195.2 304.482 202.528H325.544V224.306H325.543C325.539 242.949 285.563 258.061 236.25 258.061Z"
-        fill="url(#paint9_linear-563641)"
+        fill="url(#paint9_linear-363718)"
       />
       <ellipse
         rx="89.293"
         ry="33.7571"
         transform="matrix(-1 0 0 1 236.252 202.523)"
-        fill="url(#paint10_linear-685800)"
+        fill="url(#paint10_linear-396131)"
       />
     </g>
-    <g opacity="0.6" filter="url(#filter1_f-347410)">
+    <g opacity="0.6" filter="url(#filter1_f-371237)">
       <path
         d="M143.523 311.727L143.61 311.851H143.613C148.518 318.627 155.748 324.975 165.303 330.491L165.329 330.506L165.331 330.507L165.348 330.517C204.657 353.181 268.373 353.178 307.674 330.506C317.941 324.583 325.526 317.7 330.429 310.357L461.915 121.68L11.084 121.68L142.699 310.543C142.966 310.939 143.241 311.334 143.523 311.727Z"
-        fill="url(#paint11_radial-923020)"
+        fill="url(#paint11_radial-660584)"
       />
     </g>
     <g opacity="0.3">
       <path
         d="M209.1 107.453V179.663"
-        stroke="url(#paint12_linear-927930)"
+        stroke="url(#paint12_linear-752112)"
         stroke-width="3.56594"
       />
       <path
         d="M261.697 154.255L261.697 169.41"
-        stroke="url(#paint13_linear-901532)"
+        stroke="url(#paint13_linear-416635)"
         stroke-width="3.56594"
       />
       <path
         d="M181.908 85.168V181.894"
-        stroke="url(#paint14_linear-817093)"
+        stroke="url(#paint14_linear-009947)"
         stroke-width="3.56594"
       />
       <path
         d="M247.432 95.8633L247.432 196.155"
-        stroke="url(#paint15_linear-668660)"
+        stroke="url(#paint15_linear-393659)"
         stroke-width="3.56594"
       />
       <path
         d="M171.656 98.5369L171.656 141.328"
-        stroke="url(#paint16_linear-768165)"
+        stroke="url(#paint16_linear-945729)"
         stroke-width="3.56594"
       />
       <path
         d="M171.656 144.895L171.656 156.484"
-        stroke="url(#paint17_linear-139956)"
+        stroke="url(#paint17_linear-195589)"
         stroke-width="3.56594"
       />
       <path
         d="M261.697 85.168L261.697 157.824"
-        stroke="url(#paint18_linear-497305)"
+        stroke="url(#paint18_linear-534570)"
         stroke-width="3.56594"
       />
       <path
         d="M294.236 99.875V192.589"
-        stroke="url(#paint19_linear-370547)"
+        stroke="url(#paint19_linear-433937)"
         stroke-width="3.56594"
       />
     </g>
@@ -131,7 +131,7 @@
       fill="#F394FF"
     />
     <mask
-      id="mask0-949312"
+      id="mask0-645949"
       mask-type="alpha"
       maskUnits="userSpaceOnUse"
       x="232"
@@ -144,14 +144,14 @@
         fill="black"
       />
     </mask>
-    <g mask="url(#mask0-949312)">
+    <g mask="url(#mask0-645949)">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M243.651 122.074C282.648 132.524 317.464 129.043 321.415 114.3L321.415 114.3L326.03 97.0781L309.37 92.6143C297.97 83.3503 279.593 74.4831 257.957 68.6858C236.32 62.8884 215.971 61.3788 201.467 63.7015L184.808 59.2379L180.215 76.3791C180.208 76.406 180.2 76.433 180.193 76.46C176.243 91.2029 204.654 111.625 243.651 122.074Z"
-        fill="url(#paint20_radial-608777)"
+        fill="url(#paint20_radial-543517)"
       />
-      <g filter="url(#filter2_di-555892)">
+      <g filter="url(#filter2_di-901364)">
         <ellipse
           cx="255.419"
           cy="78.1575"
@@ -166,13 +166,13 @@
           rx="73.1018"
           ry="27.636"
           transform="rotate(15 255.419 78.1575)"
-          fill="url(#paint21_linear-915383)"
+          fill="url(#paint21_linear-034052)"
         />
       </g>
       <g style="mix-blend-mode: hard-light" opacity="0.5">
         <path
           d="M313.962 93.8434C313.224 96.5965 311.016 98.9267 307.425 100.733C303.835 102.538 298.958 103.766 293.102 104.345C281.398 105.502 265.984 104.047 249.655 99.6715C233.325 95.296 219.248 88.8495 209.691 81.9952C204.91 78.5661 201.3 75.0639 199.094 71.7053C196.887 68.3459 196.14 65.2238 196.877 62.4708C197.615 59.7177 199.823 57.3874 203.414 55.5815C207.004 53.7762 211.881 52.548 217.737 51.969C229.441 50.8117 244.854 52.267 261.184 56.6426C277.514 61.0182 291.59 67.4647 301.148 74.3189C305.929 77.7481 309.539 81.2503 311.745 84.6088C313.952 87.9682 314.699 91.0903 313.962 93.8434Z"
-          stroke="url(#paint22_linear-775379)"
+          stroke="url(#paint22_linear-072552)"
           stroke-width="1.81036"
         />
       </g>
@@ -226,7 +226,7 @@
       fill="#9072E7"
     />
     <mask
-      id="mask1-145198"
+      id="mask1-939712"
       mask-type="alpha"
       maskUnits="userSpaceOnUse"
       x="150"
@@ -239,14 +239,14 @@
         fill="black"
       />
     </mask>
-    <g mask="url(#mask1-145198)">
+    <g mask="url(#mask1-939712)">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M227.338 122.784C267.711 122.784 300.44 110.411 300.44 95.1478C300.44 95.1472 300.44 95.1467 300.44 95.1461V77.3164L283.19 77.3164C269.78 71.3196 249.735 67.5117 227.338 67.5117C204.941 67.5117 184.896 71.3196 171.487 77.3164H154.236V95.1461C154.236 95.1467 154.236 95.1472 154.236 95.1478C154.236 110.411 186.965 122.784 227.338 122.784Z"
-        fill="url(#paint23_radial-857123)"
+        fill="url(#paint23_radial-147855)"
       />
-      <g filter="url(#filter3_di-631537)">
+      <g filter="url(#filter3_di-585160)">
         <ellipse
           cx="227.338"
           cy="77.3196"
@@ -259,13 +259,13 @@
           cy="77.3196"
           rx="73.1018"
           ry="27.636"
-          fill="url(#paint24_linear-426305)"
+          fill="url(#paint24_linear-879424)"
         />
       </g>
       <g style="mix-blend-mode: hard-light" opacity="0.5">
         <path
           d="M287.946 77.3192C287.946 80.1694 286.416 82.9918 283.415 85.6655C280.415 88.3386 276.021 90.7872 270.515 92.8619C259.51 97.009 244.245 99.5927 227.339 99.5927C210.433 99.5927 195.168 97.009 184.162 92.8619C178.656 90.7872 174.263 88.3386 171.262 85.6655C168.261 82.9918 166.731 80.1694 166.731 77.3192C166.731 74.469 168.261 71.6467 171.262 68.9729C174.263 66.2999 178.656 63.8513 184.162 61.7765C195.168 57.6295 210.433 55.0458 227.339 55.0458C244.245 55.0458 259.51 57.6295 270.515 61.7765C276.021 63.8513 280.415 66.2999 283.415 68.9729C286.416 71.6467 287.946 74.469 287.946 77.3192Z"
-          stroke="url(#paint25_linear-138566)"
+          stroke="url(#paint25_linear-955055)"
           stroke-width="1.81036"
         />
       </g>
@@ -315,7 +315,7 @@
       </g>
       <g style="mix-blend-mode: overlay" opacity="0.31">
         <mask
-          id="mask2-679745"
+          id="mask2-418505"
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
           x="154"
@@ -330,8 +330,8 @@
             fill="black"
           />
         </mask>
-        <g mask="url(#mask2-679745)">
-          <g filter="url(#filter4_f-110793)">
+        <g mask="url(#mask2-418505)">
+          <g filter="url(#filter4_f-460357)">
             <line
               x1="157.98"
               y1="115.684"
@@ -468,25 +468,25 @@
     </g>
     <path
       d="M206.63 44.1585L187.463 33.4609"
-      stroke="url(#paint26_linear-808474)"
+      stroke="url(#paint26_linear-658178)"
       stroke-width="1.78297"
       stroke-linecap="round"
     />
     <path
       d="M214.875 38.5857L211.309 22.3162"
-      stroke="url(#paint27_linear-824865)"
+      stroke="url(#paint27_linear-674269)"
       stroke-width="1.78297"
       stroke-linecap="round"
     />
     <path
       d="M226.242 39.2547L232.482 30.3398"
-      stroke="url(#paint28_linear-988641)"
+      stroke="url(#paint28_linear-900409)"
       stroke-width="1.78297"
       stroke-linecap="round"
     />
     <defs>
       <filter
-        id="filter0_b-529013"
+        id="filter0_b-291115"
         x="118.364"
         y="158.153"
         width="220.371"
@@ -509,7 +509,7 @@
         />
       </filter>
       <filter
-        id="filter1_f-347410"
+        id="filter1_f-371237"
         x="0.470954"
         y="111.067"
         width="472.057"
@@ -530,7 +530,7 @@
         />
       </filter>
       <filter
-        id="filter2_di-555892"
+        id="filter2_di-901364"
         x="181.158"
         y="43.7917"
         width="148.523"
@@ -577,7 +577,7 @@
         <feBlend mode="normal" in2="shape" result="effect2_innerShadow" />
       </filter>
       <filter
-        id="filter3_di-631537"
+        id="filter3_di-585160"
         x="150.953"
         y="48.0417"
         width="152.771"
@@ -624,7 +624,7 @@
         <feBlend mode="normal" in2="shape" result="effect2_innerShadow" />
       </filter>
       <filter
-        id="filter4_f-110793"
+        id="filter4_f-460357"
         x="153.23"
         y="111.684"
         width="330.506"
@@ -642,7 +642,7 @@
         <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur" />
       </filter>
       <linearGradient
-        id="paint0_linear-570762"
+        id="paint0_linear-356571"
         x1="307.505"
         y1="344.202"
         x2="340.57"
@@ -653,7 +653,7 @@
         <stop offset="1" stop-color="#DA17C6" />
       </linearGradient>
       <linearGradient
-        id="paint1_linear-364309"
+        id="paint1_linear-717398"
         x1="165.493"
         y1="344.202"
         x2="132.428"
@@ -664,7 +664,7 @@
         <stop offset="1" stop-color="#DA17C6" />
       </linearGradient>
       <radialGradient
-        id="paint2_radial-526567"
+        id="paint2_radial-751934"
         cx="0"
         cy="0"
         r="1"
@@ -675,7 +675,7 @@
         <stop offset="1" stop-color="#8DA6FF" />
       </radialGradient>
       <linearGradient
-        id="paint3_linear-691891"
+        id="paint3_linear-569551"
         x1="229.909"
         y1="348.335"
         x2="231.56"
@@ -686,7 +686,7 @@
         <stop offset="1" stop-color="white" stop-opacity="0.05" />
       </linearGradient>
       <linearGradient
-        id="paint4_linear-036684"
+        id="paint4_linear-573824"
         x1="229.909"
         y1="348.335"
         x2="231.56"
@@ -697,7 +697,7 @@
         <stop offset="1" stop-color="white" stop-opacity="0.05" />
       </linearGradient>
       <linearGradient
-        id="paint5_linear-224236"
+        id="paint5_linear-585136"
         x1="328.121"
         y1="304.07"
         x2="149.533"
@@ -708,7 +708,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <linearGradient
-        id="paint6_linear-256600"
+        id="paint6_linear-708660"
         x1="79.9445"
         y1="-230.67"
         x2="79.9444"
@@ -719,7 +719,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <linearGradient
-        id="paint7_linear-850802"
+        id="paint7_linear-808598"
         x1="307.565"
         y1="273.223"
         x2="128.978"
@@ -730,7 +730,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <linearGradient
-        id="paint8_linear-331370"
+        id="paint8_linear-044387"
         x1="74.1741"
         y1="-98.837"
         x2="79.9445"
@@ -741,7 +741,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <linearGradient
-        id="paint9_linear-563641"
+        id="paint9_linear-363718"
         x1="325.544"
         y1="244.449"
         x2="146.957"
@@ -752,7 +752,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <linearGradient
-        id="paint10_linear-685800"
+        id="paint10_linear-396131"
         x1="74.1741"
         y1="-98.837"
         x2="79.9445"
@@ -763,7 +763,7 @@
         <stop offset="1" stop-color="white" />
       </linearGradient>
       <radialGradient
-        id="paint11_radial-923020"
+        id="paint11_radial-660584"
         cx="0"
         cy="0"
         r="1"
@@ -774,7 +774,7 @@
         <stop offset="1" stop-color="#C9C0FD" stop-opacity="0" />
       </radialGradient>
       <linearGradient
-        id="paint12_linear-927930"
+        id="paint12_linear-752112"
         x1="209.6"
         y1="179.664"
         x2="209.6"
@@ -785,7 +785,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint13_linear-901532"
+        id="paint13_linear-416635"
         x1="261.197"
         y1="169.41"
         x2="261.197"
@@ -796,7 +796,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint14_linear-817093"
+        id="paint14_linear-009947"
         x1="182.408"
         y1="181.895"
         x2="182.408"
@@ -807,7 +807,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint15_linear-668660"
+        id="paint15_linear-393659"
         x1="247.932"
         y1="196.156"
         x2="247.932"
@@ -818,7 +818,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint16_linear-768165"
+        id="paint16_linear-945729"
         x1="172.156"
         y1="141.328"
         x2="172.156"
@@ -829,7 +829,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint17_linear-139956"
+        id="paint17_linear-195589"
         x1="-986830"
         y1="156.484"
         x2="-986830"
@@ -840,7 +840,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint18_linear-497305"
+        id="paint18_linear-534570"
         x1="262.197"
         y1="157.824"
         x2="262.197"
@@ -851,7 +851,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <linearGradient
-        id="paint19_linear-370547"
+        id="paint19_linear-433937"
         x1="294.736"
         y1="192.59"
         x2="294.736"
@@ -862,7 +862,7 @@
         <stop offset="1" stop-color="#E2E2E2" />
       </linearGradient>
       <radialGradient
-        id="paint20_radial-608777"
+        id="paint20_radial-543517"
         cx="0"
         cy="0"
         r="1"
@@ -874,7 +874,7 @@
         <stop offset="1" stop-color="#9492FF" />
       </radialGradient>
       <linearGradient
-        id="paint21_linear-915383"
+        id="paint21_linear-034052"
         x1="255.419"
         y1="50.5214"
         x2="255.419"
@@ -886,7 +886,7 @@
         <stop offset="0.947005" stop-color="#C9F2FF" />
       </linearGradient>
       <linearGradient
-        id="paint22_linear-775379"
+        id="paint22_linear-072552"
         x1="202.002"
         y1="39.8477"
         x2="316.934"
@@ -897,7 +897,7 @@
         <stop offset="1" stop-color="white" stop-opacity="0" />
       </linearGradient>
       <radialGradient
-        id="paint23_radial-857123"
+        id="paint23_radial-147855"
         cx="0"
         cy="0"
         r="1"
@@ -909,7 +909,7 @@
         <stop offset="1" stop-color="#9492FF" />
       </radialGradient>
       <linearGradient
-        id="paint24_linear-426305"
+        id="paint24_linear-879424"
         x1="227.338"
         y1="49.6836"
         x2="227.338"
@@ -921,7 +921,7 @@
         <stop offset="0.947005" stop-color="#C9F2FF" />
       </linearGradient>
       <linearGradient
-        id="paint25_linear-138566"
+        id="paint25_linear-955055"
         x1="165.826"
         y1="54.1406"
         x2="292.755"
@@ -932,7 +932,7 @@
         <stop offset="1" stop-color="white" stop-opacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint26_linear-808474"
+        id="paint26_linear-658178"
         x1="186.362"
         y1="33.427"
         x2="206.218"
@@ -943,7 +943,7 @@
         <stop offset="1" />
       </linearGradient>
       <linearGradient
-        id="paint27_linear-824865"
+        id="paint27_linear-674269"
         x1="208.525"
         y1="22.4703"
         x2="213.972"
@@ -954,7 +954,7 @@
         <stop offset="1" />
       </linearGradient>
       <linearGradient
-        id="paint28_linear-988641"
+        id="paint28_linear-900409"
         x1="232.345"
         y1="29.6518"
         x2="225.88"

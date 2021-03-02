@@ -9,7 +9,11 @@
           </div>
         </div>
       </div>
-      <graphics-staking-hero class="graphics" />
+      <graphics-staking-hero-dark
+        v-if="$nuxt.$colorMode.value === 'dark'"
+        class="graphics"
+      />
+      <graphics-staking-hero-light v-else class="graphics" />
     </div>
 
     <div class="tm-container tm-wrapper tm-grid-base">
@@ -24,7 +28,11 @@
       <div class="cards-wrapper">
         <div class="card-item">
           <div class="graphics">
-            <graphics-staking-1 class="graphics__item" />
+            <graphics-staking-1-dark
+              v-if="$nuxt.$colorMode.value === 'dark'"
+              class="graphics__item"
+            />
+            <graphics-staking-1-light v-else class="graphics__item" />
           </div>
           <div class="title tm-rf3 tm-bold tm-lh-title">Secure the chain</div>
           <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -34,7 +42,11 @@
         </div>
         <div class="card-item">
           <div class="graphics">
-            <graphics-staking-2 class="graphics__item" />
+            <graphics-staking-2-dark
+              v-if="$nuxt.$colorMode.value === 'dark'"
+              class="graphics__item"
+            />
+            <graphics-staking-2-light v-else class="graphics__item" />
           </div>
           <div class="title tm-rf3 tm-bold tm-lh-title">Earn rewards</div>
           <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -44,7 +56,11 @@
         </div>
         <div class="card-item">
           <div class="graphics">
-            <graphics-staking-3 class="graphics__item" />
+            <graphics-staking-3-dark
+              v-if="$nuxt.$colorMode.value === 'dark'"
+              class="graphics__item"
+            />
+            <graphics-staking-3-light v-else class="graphics__item" />
           </div>
           <div class="title tm-rf3 tm-bold tm-lh-title">
             Vote for the future
@@ -110,7 +126,11 @@
       class="section-rewards-origin tm-section tm-container tm-wrapper tm-grid-base"
     >
       <div class="graphics">
-        <graphics-staking-rewardsorigin class="graphics__item" />
+        <graphics-staking-rewards-origin-dark
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          class="graphics__item"
+        />
+        <graphics-staking-rewards-origin-light v-else class="graphics__item" />
       </div>
       <div class="text">
         <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
@@ -170,7 +190,11 @@
         >
       </div>
       <div class="graphics">
-        <graphics-staking-safely class="graphics__item" />
+        <graphics-staking-safely-dark
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          class="graphics__item"
+        />
+        <graphics-staking-safely-light v-else class="graphics__item" />
       </div>
     </div>
 
