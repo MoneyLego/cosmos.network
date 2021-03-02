@@ -3,7 +3,7 @@
     <div class="container">
       <div class="layer layer-background">
         <svg
-          v-if="$nuxt.$colorMode.preference === 'light'"
+          v-if="$nuxt.$colorMode.value === 'light'"
           width="2400"
           height="1719"
           viewBox="0 0 1640 1169"
@@ -200,7 +200,7 @@
       </div>
       <div class="layer layer-foreground">
         <svg
-          v-if="$nuxt.$colorMode.preference === 'light'"
+          v-if="$nuxt.$colorMode.value === 'light'"
           width="2400"
           height="1639"
           viewBox="0 0 1299 1115"

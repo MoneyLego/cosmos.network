@@ -12,7 +12,10 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Cosmos Hub',
+    titleTemplate: (titleChunk) => {
+      // If head.title is undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} - Cosmos Hub` : 'Cosmos Hub'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,7 +26,7 @@ export default {
           'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
       },
       // Open Graph
-      { hid: 'og:site_name', property: 'og:site_name', content: 'Stargate' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Cosmos Hub' },
       {
         hid: 'og:title',
         property: 'og:title',
@@ -158,6 +161,13 @@ export default {
   ],
   optimizedImages: {
     optimizeImages: true,
+  },
+  // To fix flashes on the clientside
+  // Set preference as dark
+  // https://color-mode.nuxtjs.org/#caveats
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'dark',
   },
   styleResources: {
     stylus: [

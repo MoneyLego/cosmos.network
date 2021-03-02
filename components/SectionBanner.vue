@@ -10,7 +10,7 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/staking"
+          to="/learn/faq/what-is-the-atom-staking-process"
           size="l"
           color="var(--white)"
           background-color="#171717"
@@ -31,20 +31,18 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.dark-mode .banner-item
-  color var(--white)
-  background #171717
-
-.light-mode .banner-item
-  color var(--black)
-  background var(--white)
-
 .banner-item
   padding var(--spacing-10)
   display block
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
+  color var(--white)
+  background #171717
+
+  .light-mode &
+    color var(--black)
+    background var(--white)
 
 .banner-item .text
   grid-column span 12
@@ -74,17 +72,16 @@ export default {}
     position relative
     z-index -1
     grid-column 1/span 6
-    display flex
-    align-items stretch
-    justify-content flex-end
+    // display flex
+    // align-items stretch
+    // justify-content flex-end
     margin-top 0
 
-    // &__back
-    //   position absolute
-    //   max-width 172%
-    //   top 43%
-    //   left 57%
-    //   transform translate(-50%,-50%)
+    &__back
+      position absolute
+      max-width 172%
+      transform translate(5%, -85%)
+      overflow visible
 
     &__front
       position absolute

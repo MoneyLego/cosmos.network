@@ -1,26 +1,20 @@
 <template>
   <div class="flex">
     <div class="color" @click="toggleColorMode">
-      {{ $colorMode.preference }}
+      {{ $colorMode.value }}
     </div>
-    <component
-      :is="`icon-light`"
-      v-if="$colorMode.preference === 'light'"
-      class="icon"
-      :class="getClasses(color)"
-    />
-    <component :is="`icon-dark`" v-else :class="getClasses(color)" />
+    <component :is="`icon-${$colorMode.value}-mode`" class="icon" />
   </div>
 </template>
 
 <script>
-import IconLight from '~/components/icons/IconLight.vue'
-import IconDark from '~/components/icons/IconDark.vue'
+import IconLightMode from '~/components/icons/IconLightMode.vue'
+import IconDarkMode from '~/components/icons/IconDarkMode.vue'
 
 export default {
   components: {
-    IconLight,
-    IconDark,
+    IconLightMode,
+    IconDarkMode,
   },
   props: {
     color: {
@@ -37,16 +31,6 @@ export default {
     toggleColorMode() {
       this.$colorMode.preference =
         this.$colorMode.value === 'light' ? 'dark' : 'light'
-    },
-    getClasses(color) {
-      // Does not set classes on ssr when preference is system (because we don't know the preference until client-side)
-      if (this.$colorMode.unknown) {
-        return {}
-      }
-      return {
-        preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value,
-      }
     },
   },
 }

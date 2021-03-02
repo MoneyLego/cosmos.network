@@ -21,6 +21,7 @@
   --gray-900 #ECEDF7
   --trans-gray-200 rgba(0, 4, 51, 0.845)
   --trans-gray-400 rgba(0, 5, 66, 0.621)
+  --trans-gray-600 rgba(0, 0, 0, 0.6)
   --trans-gray-900 rgba(0, 13, 158, 0.07)
   --trans-gray-950 #F8F8FD
   --white #FFFFFF
@@ -35,3 +36,13 @@
   --primary-900 #CCD1FF
 
   --link #40b3ff
+
+// TODO: to resolve :before, :after content URL svg dynamic color changes.
+// even after adding --color-mode to stroke :after encoded svg, the color doesn't change based on the user's appearance settings.
+@media (prefers-color-scheme: dark)
+  :root
+    --color-mode #FFFFFF
+
+@media (prefers-color-scheme: light)
+  :root
+    --color-mode #000
