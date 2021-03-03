@@ -67,7 +67,7 @@
               background-color="transparent"
               variant="text"
               class="btn tm-rf1 tm-lh-copy tm-medium"
-              >Show all &#8595;</tm-button
+              >Show all <span class="icon__right">&#8595;</span></tm-button
             >
           </div>
           <div v-else @click="currentIndex = 6">
@@ -77,7 +77,7 @@
               background-color="transparent"
               variant="text"
               class="btn tm-rf1 tm-lh-copy tm-medium"
-              >Show less &#8593;</tm-button
+              >Show less <span class="icon__right">&#8593;</span></tm-button
             >
           </div>
         </div>
