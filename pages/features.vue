@@ -571,7 +571,7 @@ export default {
     display block
     height auto
     width 1px
-    background linear-gradient(180deg, var(--transparent) 16%, var(--color-mode) 40%)
+    background linear-gradient(180deg, var(--transparent) 16%, var(--white) 40%)
     margin-right auto
     margin-left auto
 

@@ -319,7 +319,6 @@ export default {
   height fit-content
   background #171717
   display block
-  grid-template-columns repeat(auto-fit, minmax(0, 1fr))
 
   .light-mode &
     background var(--white)
@@ -504,8 +503,8 @@ export default {
     margin-top 0
 
   .pie
-    width 27.9375rem
-    height 27.9375rem
+    width 18.75rem
+    height 18.75rem
 
   // Rewards origin
   .section-rewards-origin .graphics
@@ -554,4 +553,8 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
+
+  .pie
+    width 27.9375rem
+    height 27.9375rem
 </style>
