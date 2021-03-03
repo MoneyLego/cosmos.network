@@ -105,14 +105,23 @@
             <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
           </div>
           <div class="pie-item">
-            <div class="pie" />
+            <div class="pie">
+              <div class="text">
+                <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
+                  Your rewards
+                </div>
+                <div class="num tm-rf6 tm-bold tm-lh-title">873.26</div>
+              </div>
+            </div>
           </div>
           <div class="pie-item">
-            <div class="tm-rf2 tm-bold tm-lh-title">10.63%</div>
-            <div class="tm-rf0 tm-medium tm-lh-title tm-overline">
+            <div class="percentage tm-rf2 tm-bold tm-lh-title">10.63%</div>
+            <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
               commission
             </div>
-            <div class="tm-rf-1 tm-lh-copy">(Varies between validators)</div>
+            <div class="subtitle tm-rf-1 tm-lh-copy">
+              (Varies between validators)
+            </div>
           </div>
         </div>
       </div>
@@ -267,9 +276,6 @@ export default {
     width 100%
     height 100%
 
-.card-item .title
-  width 8.125rem
-
 .card-item .subtitle
   margin-top var(--spacing-5)
   margin-bottom var(--spacing-7)
@@ -306,14 +312,14 @@ export default {
 
 .pie-wrapper
   padding var(--spacing-10)
-  display flex
-  flex-direction column
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
   align-items center
   text-align center
-  height 18.625rem
+  height fit-content
   background #171717
+  display block
+  grid-template-columns repeat(auto-fit, minmax(0, 1fr))
 
   .light-mode &
     background var(--white)
@@ -321,18 +327,45 @@ export default {
 .pie-item
   text-align left
 
+  &:nth-child(2)
+    display grid
+    place-items center
+
 .pie-item + .pie-item
   margin-top var(--spacing-9)
 
+.pie-item
+  .amount,
+  .unit
+    margin-top 1rem
+
+.pie-item
+  .title,
+  .subtitle
+    margin-top 0.25rem
+
+.pie-item .subtitle
+  color var(--white-500)
+  .light-mode &
+    color var(--trans-gray-600)
+
 .pie
-  width 447px
-  height 447px
+  width 15rem
+  height 15rem
   border-radius: 50%
   background conic-gradient(from 180deg at 50% 50%, #00C2FF -37.79deg, #000000 24.02deg, #FF48F8 24.04deg, #00C2FF 322.21deg, #000000 384.02deg)
   transform matrix(0, 1, 1, 0, 0, 0)
+  display grid
+  place-items center
+  text-align center
 
   .light-mode &
     background conic-gradient(from 180deg at 50% 50%, #74DEFF -37.79deg, #FFFFFF 24.02deg, #FFCAFD 24.04deg, #74DEFF 322.21deg, #FFFFFF 384.02deg);
+
+  .text
+    transform inherit
+    display grid
+    gap var(--spacing-6)
 
 .footnote
   grid-column 1/span 4
@@ -407,10 +440,13 @@ export default {
 
 .section-staking-safely .graphics
   grid-column span 12
+  display grid
+  place-items center
+  position relative
 
-// @media $breakpoint-small
-//   .section-rewards-origin
-//     flex-direction revert
+  &__item
+    width 100%
+    height auto
 
 @media $breakpoint-medium
   // Hero
@@ -436,6 +472,9 @@ export default {
     grid-template-columns repeat(2, 1fr)
 
   .card-item .title
+    width 8.125rem
+
+  .card-item .title
     width 10.625rem
 
   // Rewards
@@ -456,11 +495,17 @@ export default {
     grid-column span 16
 
   .pie-wrapper
+    display flex
     flex-direction row
     justify-content space-between
+    max-height 18.625rem
 
   .pie-item + .pie-item
     margin-top 0
+
+  .pie
+    width 27.9375rem
+    height 27.9375rem
 
   // Rewards origin
   .section-rewards-origin .graphics
@@ -499,9 +544,6 @@ export default {
 
   .section-staking-safely .graphics
     grid-column 8/span 12
-    display grid
-    place-items center
-    position relative
 
     &__item
       position absolute
