@@ -26,35 +26,109 @@
           </div>
         </div>
       </div>
+      <div class="btn-group offset">
+        <tm-button
+          to-link="internal"
+          to="/features"
+          size="l"
+          variant="outlined"
+          class="btn"
+          >Hub features<span class="icon__right">-></span></tm-button
+        >
+      </div>
     </div>
 
     <div class="section-atom tm-section tm-container tm-wrapper">
-      <div class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOMs.</div>
-      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrower">
-        In return for securing the Hub services, transaction feed and staking
-        rewards are distributed for ATOM stakers.
+      <svg
+        class="bg bg-back"
+        width="2023"
+        height="1012"
+        viewBox="0 0 2023 1012"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2023 1012C2023 743.601 1916.43 486.195 1726.74 296.408C1537.05 106.621 1279.77 2.02636e-05 1011.5 0C743.234 -2.02636e-05 485.955 106.621 296.262 296.408C106.569 486.195 4.05071e-05 743.601 0 1012L2023 1012Z"
+          fill="url(#paint0_radial-299071)"
+        />
+        <defs>
+          <radialGradient
+            id="paint0_radial-299071"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(1011.5 988) rotate(90) scale(1012 1011.5)"
+          >
+            <stop offset="0.0833333" stop-color="#A5FBFF" />
+            <stop offset="0.338542" stop-color="#6C8DFF" />
+            <stop offset="0.677083" stop-color="#631C69" />
+            <stop offset="1" stop-color="#72087B" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <svg
+        class="bg bg-front"
+        width="2022"
+        height="439"
+        viewBox="0 0 2022 439"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2022 206.669C1705.16 71.584 1362.12 2.65069e-05 1011 0C660.14 -2.64873e-05 316.649 71.4782 0 206.369L0 439L2022 439V206.669Z"
+          fill="url(#paint0_radial-063349)"
+        />
+        <defs>
+          <radialGradient
+            id="paint0_radial-063349"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(1041.89 760) rotate(-90) scale(760 2536.3)"
+          >
+            <stop offset="0.817689" />
+            <stop offset="0.991435" stop-color="#181A49" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <div class="graphics">
+        <div class="coins-top">
+          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-atom-coin /></span>
+        </div>
       </div>
-      <div class="btn-group">
-        <tm-button
-          to-link="internal"
-          to="/staking"
-          size="l"
-          color="var(--white)"
-          dark-background-color="var(--white-200)"
-          light-background-color="var(--black)"
-          class="btn"
-          >Start staking</tm-button
-        >
-        <tm-button
-          to-link="internal"
-          to="/staking"
-          size="l"
-          color="var(--black)"
-          background-color="transparent"
-          variant="text"
-          class="btn"
-          >What is staking <span class="icon__right">--></span></tm-button
-        >
+      <div class="content">
+        <span class="tm-crosshair"></span>
+        <div class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOM.</div>
+        <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrower">
+          In return for securing the Hub services, transaction feed and staking
+          rewards are distributed for ATOM stakers.
+        </div>
+        <div class="btn-group">
+          <tm-button to-link="internal" to="/staking" size="l" class="btn"
+            >Start staking</tm-button
+          >
+          <tm-button
+            to-link="internal"
+            to="/staking"
+            size="l"
+            variant="text"
+            class="btn"
+            >What is staking <span class="icon__right">--></span></tm-button
+          >
+        </div>
+        <span class="accent"></span>
+      </div>
+      <div class="graphics">
+        <div class="coins-bottom">
+          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-atom-coin /></span>
+        </div>
       </div>
     </div>
 
@@ -299,6 +373,9 @@ export default {
         loop: true,
         loopedSlides: 4,
         slideToClickedSlide: true,
+        autoplay: {
+          delay: 6000,
+        },
       },
     }
   },
@@ -306,14 +383,21 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.subtitle,
-.btn
+.subtitle
   margin-top var(--spacing-6)
 
 .btn-group
   display flex
   flex-direction column
   margin-top var(--spacing-8)
+  gap 0 var(--spacing-7)
+
+// Animations
+@keyframes float
+  0%
+    transform translateY(0%) rotate(0)
+  100%
+    transform translateY(-20%) rotate(-5deg)
 
 // Services
 .section-services
@@ -343,18 +427,134 @@ export default {
     width calc(75% - (var(--grid-gap-x)/4)) // 3/4 cols
     max-width: $max-width['5']
     margin-right var(--grid-gap-x)
+    cursor w-resize
     opacity 0.3
     transition opacity .4s $ease-out
 
     &-active
       opacity 1
+      cursor auto
+
+    &-active ~ .swiper-slide
+      cursor e-resize
 
   .slide__subtitle
     margin-top var(--spacing-5)
 
+
 // ATOM
 .section-atom
   text-align center
+  padding-bottom var(--spacing-13)
+
+  .content
+    max-width 40rem
+    center()
+
+  .bg
+    position absolute
+    left 0
+    height auto
+    width 100%
+    min-width 64rem
+    z-index -1
+
+  .bg-back
+    bottom -6%
+
+  .bg-front
+    bottom -16%
+    filter blur(14px)
+
+  .graphics
+    position relative
+    width 100%
+    min-width 32rem
+    max-width 64rem
+    margin-left auto
+    margin-right 35%
+    z-index -1
+
+  .coin
+    position absolute
+    height auto
+    z-index 1
+    svg
+      width 100%
+      height auto
+      // animation float 3s ease-in-out alternate infinite
+
+  .coins-top
+    $w = (367 / (64 * 16) * 100%) // graphics mw / container mw
+    position absolute
+    left -7%
+    width $w
+    padding-bottom $w * 1.05%
+    margin-top -23%
+
+    .coin
+      position absolute
+
+    .coin:nth-child(1)
+      bottom 75%
+      right 67%
+      width 38%
+      transform rotate(50deg)
+      filter blur(4px)
+    .coin:nth-child(2)
+      bottom 57%
+      right 60%
+      width 42%
+      transform rotate(-62deg)
+      filter blur(3px)
+      svg
+        animation-delay 0.5s
+    .coin:nth-child(3)
+      bottom 41%
+      right 52%
+      width 42%
+      transform rotate(46deg)
+      filter blur(1.5px)
+      svg
+        animation-delay 1s
+    .coin:nth-child(4)
+      bottom 20%
+      right 24%
+      width 74%
+      transform rotate(-17deg)
+      filter blur(0.5px)
+      svg
+        animation-delay 1.5s
+    .coin:nth-child(5)
+      bottom 1%
+      right -7%
+      width 82%
+      transform rotate(29deg)
+      svg
+        animation-delay 2s
+
+  .coins-bottom
+    $w = (330 / (64 * 16) * 100%) // graphics mw / container mw
+    position relative
+    width $w
+    padding-bottom $w
+    center()
+
+    .coin:nth-child(1)
+      width 108%
+      transform rotate(-37deg)
+      left 4%
+      top 29%
+
+    .coin:nth-child(2)
+      width 108%
+      transform rotate(27deg)
+      left -10%
+      top 0
+
+  .tm-crosshair
+    margin-left auto
+    margin-right -3rem
 
   .title
     max-width 6em
@@ -362,6 +562,11 @@ export default {
 
   .subtitle
     center()
+
+  .accent
+    angle-accent(sw)
+    margin-top var(--spacing-8)
+
 
 .section-features
 
@@ -466,6 +671,11 @@ export default {
   .cards-wrapper
     margin-top 0
 
+@media $breakpoint-small-only
+  .section-services
+    > .btn-group
+      grid-column 3 / span 2
+
 @media $breakpoint-medium
   // Services
   .section-services
@@ -480,6 +690,13 @@ export default {
 
     .swiper-slide
       max-width none
+
+  // ATOM
+  .section-atom
+    .coins-bottom
+      margin-right 0
+      right -20%
+      margin-top -30%
 
   // Dev features
   .section-dev-features

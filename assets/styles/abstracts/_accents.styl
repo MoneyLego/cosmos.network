@@ -8,17 +8,17 @@
 */
 angle-accent(position = nw)
   display block
-  width var(--spacing-7)
-  height var(--spacing-7)
+  width var(--spacing-6)
+  height var(--spacing-6)
   if position == ne
-    border-top 2px solid
-    border-right 2px solid
+    border-top $px solid
+    border-right $px solid
   else if position == se
-    border-bottom 2px solid
-    border-right 2px solid
+    border-bottom $px solid
+    border-right $px solid
   else if position == sw
-    border-bottom 2px solid
-    border-left 2px solid
+    border-bottom $px solid
+    border-left $px solid
   else
-    border-top 2px solid
-    border-left 2px solid
+    border-top $px solid
+    border-left $px solid

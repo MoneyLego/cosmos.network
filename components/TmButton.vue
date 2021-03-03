@@ -410,5 +410,6 @@ export default {
 
 @media $breakpoint-small
   .tm-button + .tm-button
-    margin-left var(--spacing-6)
+    margin-left var(--grid-gap-x)
+    margin-top 0
 </style>

@@ -1,0 +1,31 @@
+
+.tm-crosshair
+  $size = 6rem
+  position relative
+  display block
+  height $size
+  width ($size / 2)
+  border-left $px solid
+
+  &::before,
+  &::after
+    content ""
+    display block
+    position relative
+
+  &::before
+    width $size
+    border-top $px solid
+    top ($size / 2)
+    left -100%
+    margin-left -$px
+
+  &::after
+    $circle = (1rem - $px)
+    height $circle
+    width $circle
+    border-radius 50%
+    border $px solid
+    top 50%
+    left ($circle/-2 - $px)
+    margin-top ($circle/-2 - $px)
