@@ -19,7 +19,7 @@
         >
       </div>
       <div class="graphics">
-        <!-- <graphics-banner-background class="graphics__back" /> -->
+        <graphics-banner-background class="graphics__back" />
         <graphics-banner-foreground class="graphics__front" />
       </div>
     </div>
@@ -32,27 +32,44 @@ export default {}
 
 <style lang="stylus" scoped>
 .banner-item
-  padding var(--spacing-10)
   display block
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
   color var(--white)
   background #171717
+  overflow hidden
 
   .light-mode &
     color var(--black)
     background var(--white)
 
 .banner-item .text
+  padding var(--spacing-10)
   grid-column span 12
+  position relative
+  z-index 1
 
 .banner-item .graphics
+  padding var(--spacing-10)
   grid-column span 12
-  margin-top var(--spacing-10)
+  position relative
+  display grid
+  place-items self-end
+
+  &__back
+    width 210%
+    height auto
+    bottom 0
+    position absolute
+    z-index 0
 
   &__front
-    width 100%
+    width 80%
+    height auto
+    position absolute
+    right 0
+    bottom -2rem
 
 .banner-item .title
   width fit-content
@@ -65,28 +82,26 @@ export default {}
   margin-top var(--spacing-8)
 
 @media $breakpoint-medium
+  .banner-item
+    display grid
+    overflow visible
+
   .banner-item .text
-    grid-column 2/span 9
+    grid-column 1/span 8
 
   .banner-item .graphics
+    padding 0
     position relative
     z-index -1
-    grid-column 1/span 6
-    // display flex
-    // align-items stretch
-    // justify-content flex-end
     margin-top 0
 
     &__back
       position absolute
-      max-width 172%
-      transform translate(5%, -85%)
-      overflow visible
+      max-width 110%
+      bottom 0
 
     &__front
       position absolute
-      max-width 172%
-      top 43%
-      right -88%
-      transform translate(-50%,-50%)
+      max-width 40%
+      right 2%
 </style>

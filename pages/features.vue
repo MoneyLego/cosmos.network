@@ -37,10 +37,18 @@
           </div>
         </div>
       </div>
-      <!-- GRAPHICS -->
     </div>
 
-    <!-- GRAPHICS -->
+    <!-- TODO: graphics-features-hero needs some tweaking on figma -->
+    <graphics-home-hero class="graphics" />
+    <div class="tm-wrapper tm-section tm-container">
+      <div class="section-label">
+        <div class="label tm-rf1 tm-lh-copy">Securing trade</div>
+        <div class="label tm-rf1 tm-lh-copy">Service marketplace</div>
+        <div class="label tm-rf1 tm-lh-copy">Promoting exchange</div>
+        <div class="label tm-rf1 tm-lh-copy">Facilitating discovery</div>
+      </div>
+    </div>
 
     <!-- Features -->
     <div
@@ -514,6 +522,38 @@ export default {
 
   .light-mode &
     color var(--black)
+
+// Graphics
+.section-label
+  display flex
+  flex-direction row
+  justify-content center
+  gap var(--spacing-11)
+  margin-top -20rem
+
+.label
+  writing-mode vertical-rl
+  transform rotate(-180deg)
+  text-align right
+
+  &:after
+    content ""
+    display block
+    height auto
+    width 1px
+    background linear-gradient(180deg, var(--transparent) 16%, var(--white) 40%)
+    margin-right auto
+    margin-left auto
+
+.label
+  &:nth-child(1)
+    margin-top 11.25rem
+
+  &:nth-child(3)
+    margin-top 6rem
+
+  &:nth-child(4)
+    margin-top 19rem
 
 // Feature
 .section-features .text,
