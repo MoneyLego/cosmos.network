@@ -33,35 +33,35 @@
           <ul>
             <li>
               <a
-                href="https://cosmos.network/"
+                href="https://cosmos.network/intro"
                 class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >What is Cosmos?</a
               >
             </li>
             <li>
               <a
-                href="https://cosmos.network/"
+                href="https://cosmos.network/sdk"
                 class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Build on Cosmos</a
               >
             </li>
             <li>
               <a
-                href="https://cosmos.network/"
+                href="https://cosmos.network/community"
                 class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Community</a
               >
             </li>
             <li>
               <a
-                href="https://cosmos.network/"
+                href="https://cosmos.network/ecosystem"
                 class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Ecosystem</a
               >
             </li>
             <li>
               <a
-                href="https://cosmos.network/"
+                href="https://cosmos.network/tools"
                 class="text tm-rf-1 tm-medium tm-lh-title tm-link"
                 >Tools</a
               >
