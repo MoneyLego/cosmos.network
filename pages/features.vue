@@ -73,16 +73,12 @@
               <div class="caption tm-rf0 tm-lh-title">
                 Capital Formation · Live
               </div>
-              <div class="title">
-                <tm-button
-                  to-link="internal"
-                  to="/staking"
-                  size="l"
-                  variant="text"
-                  class="btn tm-rf3 tm-bold tm-lh-title"
-                  >Staking <span class="icon__right">-></span></tm-button
-                >
-              </div>
+              <nuxt-link
+                to="/staking"
+                class="title tm-link tm-rf3 tm-bold tm-lh-title"
+              >
+                Staking <span class="tm-link-disclosure">-></span>
+              </nuxt-link>
               <div class="desc tm-rf0 tm-lh-copy">
                 Built on top of the
                 <a
@@ -131,17 +127,12 @@
             <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
           </div>
           <div class="mid">
-            <div class="title">
-              <tm-button
-                to-link="external"
-                href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
-                size="l"
-                variant="text"
-                class="btn tm-rf3 tm-bold tm-lh-title"
-                >Interchain Accounts
-                <span class="icon__right">↗</span></tm-button
-              >
-            </div>
+            <a
+              href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
+              class="title tm-link tm-rf3 tm-bold tm-lh-title"
+            >
+              Interchain Accounts <span class="tm-link-disclosure">↗</span>
+            </a>
             <div class="desc tm-rf0 tm-lh-copy">
               Interchain Accounts are the accounts of the IBC-enabled world.
               Essentially, they allow blockchains to securely control accounts
@@ -585,6 +576,13 @@ export default {
 .section-features .span-8,
 .section-features .span-4
   margin-top var(--spacing-10)
+
+.section-features .title
+  display block
+  margin-top var(--spacing-6)
+
+.section-features .desc
+  margin-top var(--spacing-5)
 
 .section-features .span-8 .desc
   color var(--white)
