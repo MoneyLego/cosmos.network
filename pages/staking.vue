@@ -27,6 +27,7 @@
       </div>
       <div class="cards-wrapper">
         <div class="card-item">
+          <span class="accent"></span>
           <div class="graphics">
             <graphics-staking-1-dark
               v-if="$nuxt.$colorMode.value === 'dark'"
@@ -41,6 +42,7 @@
           </div>
         </div>
         <div class="card-item">
+          <span class="accent"></span>
           <div class="graphics">
             <graphics-staking-2-dark
               v-if="$nuxt.$colorMode.value === 'dark'"
@@ -55,6 +57,7 @@
           </div>
         </div>
         <div class="card-item">
+          <span class="accent"></span>
           <div class="graphics">
             <graphics-staking-3-dark
               v-if="$nuxt.$colorMode.value === 'dark'"
@@ -84,6 +87,7 @@
         <div class="tm-rf1 tm-lh-title">of staked ATOMs (annually)*</div>
       </div>
       <div class="span-7">
+        <span class="accent"></span>
         <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
           Staking rewards
         </div>
@@ -142,6 +146,7 @@
         <graphics-staking-rewards-origin-light v-else class="graphics__item" />
       </div>
       <div class="text">
+        <span class="accent"></span>
         <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
           Where do rewards come from?
         </div>
@@ -178,6 +183,7 @@
       class="section-staking-safely tm-section tm-container tm-wrapper tm-grid-base"
     >
       <div class="text">
+        <span class="accent"></span>
         <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
           Staking ATOMs is not risk-free. When ATOM holders stake, they need to
@@ -256,13 +262,12 @@ export default {
   justify-content space-evenly
   height 33.9375rem
   position relative
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg)
+
+.card-item .accent
+  angle-accent(ne)
+  position absolute
+  top 0
+  right 0
 
 .card-item .graphics
   height 20.1875rem
@@ -290,13 +295,11 @@ export default {
   margin-top var(--spacing-9)
   position relative
 
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+  .accent
+    angle-accent(ne)
     position absolute
     top 0
     right 0
-    transform-origin center
-    transform rotate(180deg)
 
   .title
     margin-top var(--spacing-7)
@@ -367,7 +370,7 @@ export default {
   grid-column 1/span 4
   margin-top var(--spacing-6)
   color var(--white-500)
-  width 24.375rem
+  max-width 24.375rem
 
   .light-mode &
     color var(--trans-gray-400)
@@ -388,12 +391,19 @@ export default {
     height 100%
     margin-top -10%
 
-.section-rewards-origin
-  .text
-    grid-column span 12
+.section-rewards-origin .accent
+  angle-accent(nw)
+  position absolute
+  top 0
+  left 0
 
-    .subtitle
-      margin-top var(--spacing-7)
+.section-rewards-origin .text
+  grid-column span 12
+  position relative
+  padding var(--spacing-7)
+
+.section-rewards-origin .text .subtitle
+  margin-top var(--spacing-7)
 
 .subheading-item
   grid-column 2/span 12
@@ -419,14 +429,11 @@ export default {
   padding var(--spacing-7)
   position relative
 
-.section-staking-safely .text
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg)
+.section-staking-safely .accent
+  angle-accent(ne)
+  position absolute
+  top 0
+  right 0
 
 .section-staking-safely .text .subtitle
   margin-top var(--spacing-7)
@@ -517,8 +524,6 @@ export default {
 
   .section-rewards-origin .text
     grid-column 7/span 12
-    position relative
-    padding var(--spacing-7)
     margin-top var(--spacing-11)
 
     &:before
