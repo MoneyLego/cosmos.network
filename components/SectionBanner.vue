@@ -10,10 +10,11 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/learn/faq/what-is-the-atom-staking-process"
+          to="/get-started"
           size="l"
-          color="var(--white)"
-          background-color="#171717"
+          light-color="var(--white)"
+          dark-background-color="var(--white-200)"
+          light-background-color="var(--black)"
           class="btn"
           >Stake ATOMs</tm-button
         >

@@ -208,7 +208,7 @@
             to-link="external"
             href="https://github.com/cosmos/stargate"
             size="l"
-            color="var(--white)"
+            light-color="var(--white)"
             dark-background-color="var(--white-200)"
             light-background-color="var(--black)"
             >Text color</tm-button

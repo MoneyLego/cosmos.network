@@ -110,7 +110,7 @@
           rewards are distributed for ATOM stakers.
         </p>
         <div class="btn-group">
-          <tm-button to-link="internal" to="/staking" size="l" class="btn"
+          <tm-button to-link="internal" to="/get-started" size="l" class="btn"
             >Start staking</tm-button
           >
           <tm-button
