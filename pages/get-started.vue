@@ -51,8 +51,8 @@
       </div>
     </div>
 
-    <div class="tm-wrapper">
-      <div class="tm-section tm-container">
+    <div class="tm-wrapper tm-section">
+      <div class="tm-container">
         <div class="section-step-1 tm-grid-base">
           <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
             step 01
@@ -63,7 +63,8 @@
             </div>
           </div>
           <div class="graphics">
-            <graphics-get-started-step-1 class="graphics__item" />
+            <!-- TODO: remove excess whitespace of this svg -->
+            <!-- <graphics-get-started-step-1 class="graphics__item" /> -->
           </div>
           <div class="bottom">
             <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -92,6 +93,37 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="tm-container transition">
+      <svg
+        width="164"
+        height="241"
+        viewBox="0 0 164 241"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
+          stroke="url(#paint0_linear-200014)"
+          stroke-width="1.77663"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-200014"
+            x1="67.499"
+            y1="-62.0005"
+            x2="16.9728"
+            y2="235.195"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.254598" stop-color="white" stop-opacity="0" />
+            <stop offset="0.901042" stop-color="white" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
     <div class="tm-wrapper">
@@ -136,39 +168,56 @@
             <div class="subtitle tm-rf1 tm-lh-copy">
               In your wallet, choose the validators to delegate your ATOMs to.
             </div>
-            <div class="row">
-              <tm-button
-                to-link="internal"
-                to="/learn/faq/what-is-a-validator"
-                size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
-                variant="text"
-                class="btn"
-                >What is a validator
-                <span class="icon__right">-></span></tm-button
-              >
-              <tm-button
-                to-link="internal"
-                to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
-                size="l"
-                dark-color="var(--white)"
-                light-color="var(--black)"
-                background-color="transparent"
-                variant="text"
-                class="btn"
-                >Choosing a validator
-                <span class="icon__right">-></span></tm-button
-              >
-            </div>
+            <tm-button
+              to-link="internal"
+              to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
+              size="l"
+              dark-color="var(--white)"
+              light-color="var(--black)"
+              background-color="transparent"
+              variant="text"
+              class="btn"
+              >Choosing a validator
+              <span class="icon__right">-></span></tm-button
+            >
           </div>
         </div>
       </div>
     </div>
 
+    <div class="tm-container transition">
+      <svg
+        width="368"
+        height="368"
+        viewBox="0 0 368 368"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
+          stroke="url(#paint0_linear-032779)"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-032779"
+            x1="598"
+            y1="-15"
+            x2="1.99998"
+            y2="366"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.00763763" stop-color="white" stop-opacity="0" />
+            <stop offset="0.57166" stop-color="white" stop-opacity="0.03" />
+            <stop offset="1" stop-color="white" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+      <div class="tm-container tm-grid-base">
         <div class="section-step-4">
           <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 04
@@ -201,7 +250,7 @@
       </div>
     </div>
 
-    <div class="tm-wrapper">
+    <div class="tm-wrapper tm-section">
       <div class="tm-section tm-container tm-grid-base">
         <div class="section-community">
           <div class="text">
@@ -319,12 +368,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.transition
+  display grid
+  place-items center
+
 // Hero
 .section-hero
   text-align left
 
 .section-hero .text
-  grid-column auto
+  grid-column 1/-1
   z-index 1
 
 .section-hero .title
@@ -376,6 +429,7 @@ export default {
 // Step 1
 .section-step-1
   position relative
+  align-items flex-end
 
 .step
   grid-column span 12
@@ -421,10 +475,6 @@ export default {
   height auto
 
 // Step 3
-.section-step-3 .row
-  display flex
-  flex-direction column
-
 .left,
 .right
   grid-column span 12
@@ -434,7 +484,7 @@ export default {
   margin-top var(--spacing-12)
 
 .section-step-3 .graphics__item
-  width 110%
+  width 100%
   height 100%
 
 // Step 4
@@ -510,11 +560,6 @@ export default {
 .footer
   grid-column span 12
   width fit-content
-
-@media $breakpoint-small
-  // Step 3
-  .section-step-3 .row
-    display block
 
 @media $breakpoint-medium
   // Hero
