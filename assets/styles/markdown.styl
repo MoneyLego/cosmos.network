@@ -2,11 +2,13 @@
 
   .nuxt-content-highlight
     margin-top var(--spacing-5)
-    margin-bottom var(--spacing-5)  
+    margin-bottom var(--spacing-5)
 
   p
     margin-top 1em
     margin-bottom 1em
+    font-size 1.125rem
+    line-height 1.8125rem
 
   ul, ol
     margin-top 1em
@@ -33,7 +35,10 @@
   blockquote
     padding-left var(--spacing-7)
     padding-right var(--spacing-7)
-    border-left 0.25rem solid rgba(0,0,0,0.1)
+    border-left 0.25rem solid var(--white-800)
     color var(--color-text-dim, inherit)
     margin-top var(--spacing-8)
     margin-bottom var(--spacing-8)
+
+    .light-mode &
+      border-left 0.25rem solid var(--gray-0)

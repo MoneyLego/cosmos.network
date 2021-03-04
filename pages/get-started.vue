@@ -3,6 +3,8 @@
     <div class="section-hero tm-section">
       <div class="tm-wrapper">
         <div class="tm-container tm-section tm-grid-base">
+          <logo-cosmos-brandmark class="graphics-brandmark" />
+          <graphics-get-started-hero-validator class="graphics-validator" />
           <div class="text tm-measure-wide">
             <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
               get started
@@ -11,9 +13,10 @@
               Stake ATOMs in four steps
             </div>
           </div>
+          <graphics-get-started-hero-coins class="graphics-coins" />
         </div>
       </div>
-      <!-- GRAPHICS -->
+      <graphics-get-started-hero-stars class="graphics-stars-hero" />
     </div>
 
     <div class="tm-wrapper">
@@ -48,8 +51,8 @@
       </div>
     </div>
 
-    <div class="tm-wrapper">
-      <div class="tm-section tm-container">
+    <div class="tm-wrapper tm-section">
+      <div class="tm-container">
         <div class="section-step-1 tm-grid-base">
           <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
             step 01
@@ -60,7 +63,8 @@
             </div>
           </div>
           <div class="graphics">
-            <graphics-get-started-step-1 class="graphics__item" />
+            <!-- TODO: remove excess whitespace of this svg -->
+            <!-- <graphics-get-started-step-1 class="graphics__item" /> -->
           </div>
           <div class="bottom">
             <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -79,13 +83,44 @@
               class="btn"
               >Browse exchanges <span class="icon__right">↗️</span></tm-button
             >
-            <div class="footnote tm-rf-1 tm-lh-copy">
+            <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
               messari.io is an unvalidated third-party listing exchanges. We are
               not liable for X,Y,Z.
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="tm-container transition">
+      <svg
+        width="164"
+        height="241"
+        viewBox="0 0 164 241"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
+          stroke="url(#paint0_linear-200014)"
+          stroke-width="1.77663"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-200014"
+            x1="67.499"
+            y1="-62.0005"
+            x2="16.9728"
+            y2="235.195"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.254598" stop-color="white" stop-opacity="0" />
+            <stop offset="0.901042" stop-color="white" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
     <div class="tm-wrapper">
@@ -127,35 +162,55 @@
             <div class="subtitle tm-rf1 tm-lh-copy">
               In your wallet, choose the validators to delegate your ATOMs to.
             </div>
-            <div class="row">
-              <tm-button
-                to-link="internal"
-                to="/learn/faq/what-is-a-validator"
-                size="l"
-                variant="text"
-                class="btn"
-                >What is a validator
-                <span class="icon__right">-></span></tm-button
-              >
-              <tm-button
-                to-link="internal"
-                to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
-                size="l"
-                variant="text"
-                class="btn"
-                >Choosing a validator
-                <span class="icon__right">-></span></tm-button
-              >
-            </div>
+            <tm-button
+              to-link="internal"
+              to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
+              size="l"
+              variant="text"
+              class="btn"
+              >Choosing a validator
+              <span class="icon__right">-></span></tm-button
+            >
           </div>
         </div>
       </div>
     </div>
 
+    <div class="tm-container transition">
+      <svg
+        width="368"
+        height="368"
+        viewBox="0 0 368 368"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
+          stroke="url(#paint0_linear-032779)"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-032779"
+            x1="598"
+            y1="-15"
+            x2="1.99998"
+            y2="366"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.00763763" stop-color="white" stop-opacity="0" />
+            <stop offset="0.57166" stop-color="white" stop-opacity="0.03" />
+            <stop offset="1" stop-color="white" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+      <div class="tm-container tm-grid-base">
         <div class="section-step-4">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 04
           </div>
           <div class="graphics">
@@ -186,58 +241,63 @@
       </div>
     </div>
 
-    <div class="tm-wrapper">
+    <div class="tm-wrapper tm-section">
       <div class="tm-section tm-container tm-grid-base">
         <div class="section-community">
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-            Welcome to the community, fellow Cosmonaut
-          </div>
-          <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
-            Now that you’ve staked your ATOMs like a pro, join a fast-growing
-            community of developers and innovators connected all over the world,
-            building the new era of the internet.
-          </div>
-        </div>
-        <div class="grid-wrapper">
-          <a
-            v-for="item in links"
-            :key="item.logo"
-            :href="item.url"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <div class="grid-item">
-              <div class="icon">
-                <component :is="`icon-${item.logo}`" />
-              </div>
-              <div class="details">
-                <div class="title tm-rf1 tm-bold tm-lh-title">
-                  {{ item.title }}
-                </div>
-                <div class="desc tm-rf0 tm-lh-copy">
-                  {{ item.desc }}
-                </div>
-              </div>
+          <div class="text">
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+              Welcome to the community, fellow Cosmonaut
             </div>
-          </a>
+            <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
+              Now that you’ve staked your ATOMs like a pro, join a fast-growing
+              community of developers and innovators connected all over the
+              world, building the new era of the internet.
+            </div>
+            <div class="grid-wrapper">
+              <a
+                v-for="item in links"
+                :key="item.logo"
+                :href="item.url"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="grid-item">
+                  <div class="icon">
+                    <component :is="`icon-${item.logo}`" />
+                  </div>
+                  <div class="details">
+                    <div class="title tm-rf1 tm-bold tm-lh-title">
+                      {{ item.title }}
+                    </div>
+                    <div class="desc tm-rf0 tm-lh-copy">
+                      {{ item.desc }}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="footer">
+              <tm-button
+                to-link="external"
+                href="https://cosmos.network/community"
+                size="l"
+                variant="text"
+                class="btn"
+                >Cosmos Community <span class="icon__right">-></span></tm-button
+              >
+            </div>
+          </div>
         </div>
-        <div class="footer">
-          <tm-button
-            to-link="external"
-            href="https://cosmos.network/community"
-            size="l"
-            variant="text"
-            class="btn"
-            >Cosmos Community <span class="icon__right">-></span></tm-button
-          >
-        </div>
-        <!-- GRAPHICS -->
+        <!-- TODO -->
+        <graphics-home-hero class="section-graphics" />
+        <!-- <graphics-get-started-community-background class="section-graphics" /> -->
       </div>
     </div>
   </main>
 </template>
 
 <script>
+import LogoCosmosBrandmark from '../components/logos/LogoCosmosBrandmark.vue'
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'
@@ -251,6 +311,7 @@ export default {
     IconTelegram,
     IconCosmos,
     IconWarning,
+    LogoCosmosBrandmark,
   },
   data() {
     return {
@@ -295,15 +356,38 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.transition
+  display grid
+  place-items center
+
 // Hero
 .section-hero
   text-align left
 
 .section-hero .text
-  grid-column span 12
+  grid-column 1/-1
+  z-index 1
 
 .section-hero .title
   margin-top var(--spacing-6)
+
+.graphics-brandmark
+  display none
+
+.graphics-validator
+  grid-row 2
+  width auto
+  display none
+
+.graphics-coins
+  grid-row 2
+
+.graphics-stars-hero
+  position absolute
+  right 0
+  top 0
+  z-index 0
+  width 65%
 
 // Intro
 .section-intro
@@ -333,6 +417,7 @@ export default {
 // Step 1
 .section-step-1
   position relative
+  align-items flex-end
 
 .step
   grid-column span 12
@@ -346,6 +431,7 @@ export default {
 
 .section-step-1 .graphics__item
   width 100%
+  height auto
 
 .section-step-1 .bottom
   margin-top var(--spacing-7)
@@ -377,10 +463,6 @@ export default {
   height auto
 
 // Step 3
-.section-step-3 .row
-  display flex
-  flex-direction column
-
 .left,
 .right
   grid-column span 12
@@ -389,11 +471,8 @@ export default {
 .right
   margin-top var(--spacing-12)
 
-// .section-step-3
-//   right 10%
-
 .section-step-3 .graphics__item
-  width 110%
+  width 100%
   height 100%
 
 // Step 4
@@ -406,7 +485,6 @@ export default {
 
   &__item
     width 100%
-    // height 100%
 
 .section-step-4 .text .warning-wrapper
   margin-top var(--spacing-8)
@@ -439,7 +517,8 @@ export default {
     color rgba(0, 0, 0, 0.5)
 
 // Community
-.section-community
+.section-community,
+.section-graphics
   grid-column span 12
 
 .section-community .subtitle
@@ -468,17 +547,31 @@ export default {
 
 .footer
   grid-column span 12
-  margin-top var(--spacing-9)
-
-@media $breakpoint-small
-  // Step 3
-  .section-step-3 .row
-    display block
+  width fit-content
 
 @media $breakpoint-medium
   // Hero
+  .graphics-brandmark
+    grid-row 1
+    grid-column 2/4
+    position absolute
+    right 0
+    display inherit
+
+  .graphics-validator
+    grid-row 1
+    grid-column 2/4
+    margin-top 2.4375rem
+    transform translate(30px, 60px)
+    display inherit
+
   .section-hero .text
     grid-column 4/span 10
+    grid-row 1
+
+  .graphics-coins
+    grid-column 9/11
+    grid-row 1
 
   // Intro
   .cards-wrapper
@@ -509,21 +602,33 @@ export default {
     grid-column 1/span 2
     left -31%
 
+    &:before
+      content ""
+      position absolute
+      left -56px
+      bottom 15px
+      width 40px
+      height 1px
+      background var(--white)
+
+      .light-mode &
+        background var(--black)
+
   .step-3
     grid-column 7/span 8
     left -21%
 
-  .step:after
-    content ""
-    position absolute
-    left -56px
-    bottom 15px
-    width 40px
-    height 1px
-    background var(--white)
+    &:after
+      content ""
+      position absolute
+      right -56px
+      bottom 15px
+      width 40px
+      height 1px
+      background var(--white)
 
-    .light-mode &
-      background var(--black)
+      .light-mode &
+        background var(--black)
 
   .left .graphics
     position relative
@@ -567,13 +672,27 @@ export default {
     grid-template-rows 1fr
     align-items center
 
-// .section-step-4 .graphics
+    // .text
+    //   grid-column 1/span 6
 
-//   &__item
-//     height auto
+    // .graphics
+    //   grid-column 7/span 12
 
   .section-step-4 .text .subtitle
     margin-top var(--spacing-7)
+
+  .step-4
+    &:before
+      content ""
+      position absolute
+      left -56px
+      bottom 15px
+      width 40px
+      height 1px
+      background var(--white)
+
+      .light-mode &
+        background var(--black)
 
   // Community
   .section-community
@@ -582,6 +701,17 @@ export default {
   .grid-wrapper
     grid-template-columns repeat(2, 1fr)
     grid-column 1/span 8
+
+  .section-graphics
+    grid-column 11/span 12
+    display flex
+    align-items center
+    justify-content center
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
 
 @media $breakpoint-large
   // Intro

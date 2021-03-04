@@ -655,6 +655,7 @@ export default {
 
   &__item
     width 100%
+    height auto
 
 // AMM
 .section-amm .graphics
@@ -679,7 +680,7 @@ export default {
     top 0
     right 0
     transform-origin center
-    transform rotate(180deg) translate(0px, 6px)
+    transform rotate(180deg) translate(-1px, 6px)
 
   &:after
     content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
