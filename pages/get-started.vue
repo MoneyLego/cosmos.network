@@ -420,7 +420,7 @@ export default {
   text-align left
 
 .section-hero .text
-  grid-column 1/-1
+  grid-column span 4
   z-index 1
 
 .section-hero .title
@@ -446,14 +446,14 @@ export default {
 
 // Intro
 .section-intro
-  grid-column span 12
+  grid-column span 4
 
 .cards-wrapper
   grid-row 2
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 12
+  grid-column span 4
   margin-top var(--spacing-8)
 
 .card-item
@@ -471,11 +471,8 @@ export default {
 
 // Step
 .step
-  grid-column span 12
+  grid-column span 4
   margin-bottom var(--spacing-5)
-
-.step-3
-  grid-column span 12
 
 // Step 1
 .section-step-1
@@ -491,7 +488,7 @@ export default {
   .top,
   .graphics,
   .bottom
-    grid-column span 12
+    grid-column span 4
 
 .section-step-1 .graphics
   display grid
@@ -531,8 +528,11 @@ export default {
 // Step 3
 .left,
 .right
-  grid-column span 12
+  grid-column span 4
   position relative
+
+.step-3
+  grid-column span 4
 
 .section-step-3 .graphics
   height 413px
@@ -549,7 +549,7 @@ export default {
 
 // Step 4
 .section-step-4
-  grid-column span 12
+  grid-column span 4
 
 .section-step-4 .graphics
   display grid
@@ -651,19 +651,20 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
+    grid-column span 12
 
   .section-intro
-    grid-column 4/span 12
+    grid-column 4/ 12
 
   // Step 1
   .section-step-1 .top
-    grid-column 5/span 12
+    grid-column 5/ 12
 
   .section-step-1 .graphics
-    grid-column 1/span 6
+    grid-column 1/ 6
 
   .section-step-1 .bottom
-    grid-column 7/span 12
+    grid-column 7/ 12
 
   // Step 2 & Step 3
   .step
@@ -725,6 +726,7 @@ export default {
     grid-template-columns 50% 50%
     grid-template-rows 1fr
     align-items center
+    grid-column span 12
 
   .section-step-4 .text
     display flex
@@ -774,5 +776,5 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
-    grid-column span 15
+    grid-column span 12
 </style>

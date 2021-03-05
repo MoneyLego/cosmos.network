@@ -155,26 +155,36 @@
           in two ways:
         </div>
         <div class="subheading-item">
-          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-            Transaction fees
+          <div class="left">
+            <span class="crosshair"></span>
           </div>
-          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            Transaction fees collected on the Cosmos Hub are distributed to
-            staked ATOM holders.
+          <div class="right">
+            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+              Transaction fees
+            </div>
+            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              Transaction fees collected on the Cosmos Hub are distributed to
+              staked ATOM holders.
+            </div>
           </div>
         </div>
         <div class="subheading-item">
-          <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-            Newly created ATOMs
+          <div class="left">
+            <span class="crosshair"></span>
           </div>
-          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            The total supply of ATOMs is inflated to reward stakers. ATOM
-            holders that do not stake do not receive rewards, meaning their
-            ATOMs get diluted over time.
-          </p>
-          <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            The yearly inflation rate of ATOMs is available on most explorers.
-          </p>
+          <div class="right">
+            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+              Newly created ATOMs
+            </div>
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              The total supply of ATOMs is inflated to reward stakers. ATOM
+              holders that do not stake do not receive rewards, meaning their
+              ATOMs get diluted over time.
+            </p>
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              The yearly inflation rate of ATOMs is available on most explorers.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -225,9 +235,29 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+// Global
+.crosshair
+  position relative
+  display block
+  height 24px
+  width 24px
+  border-left 0.0625rem solid
+
+  &::before,
+  &::after
+    content ""
+    display block
+    position relative
+
+  &:before
+    width 24px
+    border-top 0.0625rem solid
+    top 50%
+    left -53%
+
 // Hero
 .section-hero .text
-  grid-column span 12
+  grid-column span 4
   center()
   text-align center
 
@@ -243,7 +273,7 @@ export default {
 
 // Intro
 .section-intro
-  grid-column span 12
+  grid-column span 4
 
   .subtitle
     margin-top var(--spacing-7)
@@ -253,7 +283,7 @@ export default {
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 12
+  grid-column span 4
   margin-top var(--spacing-11)
 
 .card-item
@@ -284,14 +314,14 @@ export default {
 
 // Rewards
 .section-rewards .span-4
-  grid-column span 12
+  grid-column span 4
 
   .percentage
     margin-top var(--spacing-5)
     margin-bottom var(--spacing-5)
 
 .section-rewards .span-7
-  grid-column span 12
+  grid-column span 4
   margin-top var(--spacing-9)
   position relative
 
@@ -376,14 +406,8 @@ export default {
     color var(--trans-gray-400)
 
 // Rewards origin
-
-// TODO: tweak mobile column reverse
-// .section-rewards-origin
-//   display flex
-//   flex-direction column-reverse
-
 .section-rewards-origin .graphics
-  grid-column span 12
+  grid-column span 4
   position relative
 
   &__item
@@ -398,7 +422,7 @@ export default {
   left 0
 
 .section-rewards-origin .text
-  grid-column span 12
+  grid-column span 4
   position relative
   padding var(--spacing-7)
 
@@ -408,24 +432,19 @@ export default {
 .subheading-item
   grid-column 2/span 12
   margin-top var(--spacing-9)
-  margin-left var(--spacing-11)
   position relative
+  display flex
+  margin-left 0
 
-.subheading-item .title
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.75 0.75C12.75 0.335786 12.4142 0 12 0C11.5858 0 11.25 0.335786 11.25 0.75V11.25H0.75C0.335786 11.25 0 11.5858 0 12C0 12.4142 0.335786 12.75 0.75 12.75H11.25V23.25C11.25 23.6642 11.5858 24 12 24C12.4142 24 12.75 23.6642 12.75 23.25V12.75H23.25C23.6642 12.75 24 12.4142 24 12C24 11.5858 23.6642 11.25 23.25 11.25H12.75V0.75Z' fill='black'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    left 0
-    transform-origin center
-    transform translate(-60px, 0px)
+.subheading-item .right
+  margin-left 2rem
 
 .subheading-item .subtitle
   margin-top var(--spacing-3)
 
 // Staking safely
 .section-staking-safely .text
-  grid-column span 12
+  grid-column span 4
   padding var(--spacing-7)
   position relative
 
@@ -442,7 +461,7 @@ export default {
   margin-top var(--spacing-7)
 
 .section-staking-safely .graphics
-  grid-column span 12
+  grid-column span 4
   display grid
   place-items center
   position relative
@@ -454,7 +473,7 @@ export default {
 @media $breakpoint-medium
   // Hero
   .section-hero .text
-    grid-column 7/ 12
+    grid-column 7
     text-align left
 
   .section-hero .graphics
@@ -473,6 +492,7 @@ export default {
 
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
+    grid-column span 12
 
   .card-item .title
     width 8.125rem
@@ -523,28 +543,21 @@ export default {
       margin-left -25%
 
   .section-rewards-origin .text
-    grid-column 7/span 12
+    grid-column 7/ 12
     margin-top var(--spacing-11)
 
-    &:before
-      content url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0V32M1.00043 1L33 0.999997' stroke='var(--black)' stroke-width='2'/%3E%3C/svg%3E")
-      position absolute
-      top 0
-      left 0
-      transform-origin center
-
   .subheading-item
-    grid-column 10/span 12
+    margin-left 6.3125rem
 
   .subheading-item .subtitle
     margin-top var(--spacing-3)
 
   // Staking safely
   .section-staking-safely .text
-    grid-column 2/span 6
+    grid-column 2/ 7
 
   .section-staking-safely .graphics
-    grid-column 8/span 12
+    grid-column 8/ 12
 
     &__item
       position absolute
