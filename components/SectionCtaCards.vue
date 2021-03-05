@@ -27,7 +27,12 @@
         </div>
         <div class="title tm-rf2 tm-bold tm-lh-title">Start staking -></div>
       </NuxtLink>
-      <NuxtLink to="/get-started" class="card-item">
+      <a
+        href="https://cosmos.network/tools"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="card-item"
+      >
         <div class="graphics">
           <graphics-cta-developers class="graphics__item" />
         </div>
@@ -35,7 +40,7 @@
           Developers
         </div>
         <div class="title tm-rf2 tm-bold tm-lh-title">Start building -></div>
-      </NuxtLink>
+      </a>
     </div>
   </div>
 </template>
