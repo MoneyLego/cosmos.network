@@ -39,7 +39,6 @@
       </div>
     </div>
 
-    <!-- TODO: graphics-features-hero needs some tweaking on figma -->
     <div class="tm-wrapper tm-section tm-container">
       <graphics-features-hero class="graphics" />
       <div class="section-label">
