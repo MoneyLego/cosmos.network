@@ -12,4 +12,4 @@ tags:
   - atom
 ---
 
-IBC is an acronym for Inter-Blockchain Communication Protocol, which is a protocol for secure message passing between heterogeneous blockchains. It is a central piece of the Cosmos vision, as it will enable blockchains to interract in ways that were not possible before. For a deeper look at IBC, please refer to the [IBC documentation](https://github.com/cosmos/ics/tree/master/ibc).
+IBC is an acronym for Inter-Blockchain Communication Protocol, which is a protocol for secure message passing between heterogeneous blockchains. It is a central piece of the Cosmos vision, as it will enable blockchains to interract in ways that were not possible before. For a deeper look at IBC, please refer to the [IBC documentation](https://ibcprotocol.org/documentation).

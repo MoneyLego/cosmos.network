@@ -14,7 +14,7 @@ tags:
 
 Staking ATOM is relatively straightforward. Users need to:
 
-1. Obtain ATOMs. See [How can I get ATOMs?](anchor) for more.
-3. [Delegate](#what-is-delegating?) their ATOMs to one or more [validators] of their choice using a [Wallet]. 
+1. Obtain ATOMs. See [How can I get ATOMs?](/learn/faq/how-to-get-atoms) for more.
+3. [Delegate](/learn/faq/what-is-delegating) their ATOMs to one or more [validators] of their choice using a [Wallet]. 
 
 And that's it!
