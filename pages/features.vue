@@ -105,14 +105,12 @@
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
               <div class="title">
                 <!-- TODO: add url -->
-                <tm-button
-                  to-link="internal"
-                  to="/"
-                  size="l"
-                  variant="text"
-                  class="btn tm-rf3 tm-bold tm-lh-title"
-                  >Voting <span class="icon__right">-></span></tm-button
+                <nuxt-link
+                  to="/staking"
+                  class="title tm-link tm-rf3 tm-bold tm-lh-title"
                 >
+                  Voting <span class="tm-link-disclosure">-></span>
+                </nuxt-link>
               </div>
               <div class="desc tm-rf0 tm-lh-copy">
                 Staking ATOMs gives rights to participate in the open governance
@@ -537,7 +535,7 @@ export default {
 // Hero
 .section-hero .text .title,
 .section-hero .text .split
-  grid-column span 12
+  grid-column span 4
 
 .section-hero .text .split,
 .section-hero .text .split .right
@@ -557,8 +555,10 @@ export default {
   display flex
   flex-direction row
   justify-content center
-  gap var(--spacing-11)
   margin-top -38%
+
+.label + .label
+  margin-left var(--spacing-11)
 
 .label
   writing-mode vertical-rl
@@ -672,6 +672,7 @@ export default {
 
 .section-amm .graphics
   grid-column span 12
+  position relative
 
   &__item
     width 100%
@@ -694,6 +695,7 @@ export default {
   flex-direction column
   justify-content space-between
   height 32.25rem
+  position relative
 
 .section-gravity-bridge .graphics
   grid-column span 12
@@ -723,7 +725,7 @@ export default {
   .title,
   .description,
   .graphics
-    grid-column span 12
+    grid-column span 4
 
 .section-fees .graphics__item
   width 100%
