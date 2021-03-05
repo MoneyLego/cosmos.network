@@ -40,8 +40,8 @@
     </div>
 
     <!-- TODO: graphics-features-hero needs some tweaking on figma -->
-    <graphics-home-hero class="graphics" />
     <div class="tm-wrapper tm-section tm-container">
+      <graphics-features-hero class="graphics" />
       <div class="section-label">
         <div class="label tm-rf1 tm-lh-copy">Securing trade</div>
         <div class="label tm-rf1 tm-lh-copy">Service marketplace</div>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="tiles tm-grid-base">
-        <div class="span-8">
+        <div class="span-7">
           <div class="row-1">
             <div class="graphics">
               <graphics-features-staking-dark
@@ -124,6 +124,7 @@
         </div>
         <div class="span-4">
           <div class="top">
+            <span class="ne-accent"></span>
             <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
           </div>
           <div class="mid">
@@ -214,8 +215,10 @@
             Informal Systems, Interchain Foundation, Tendermint
           </div>
         </div>
+        <span class="horizontal-line"></span>
       </div>
       <div class="graphics">
+        <span class="ne-accent"></span>
         <graphics-features-interchain-staking-dark
           v-if="$nuxt.$colorMode.value === 'dark'"
           class="graphics__item"
@@ -224,6 +227,7 @@
           v-else
           class="graphics__item"
         />
+        <span class="se-accent"></span>
       </div>
     </div>
 
@@ -235,8 +239,10 @@
           class="graphics__item"
         />
         <graphics-features-amm-light v-else class="graphics__item" />
+        <span class="horizontal-line"></span>
       </div>
       <div class="text">
+        <span class="ne-accent"></span>
         <div class="top">
           <div class="caption tm-rf0 tm-lh-title">
             Capital Formation · Q2 2021
@@ -254,11 +260,11 @@
             >
           </div>
           <div class="desc tm-rf0 tm-lh-copy">
-            The Hub’s Automated Market Maker (AMM) module will enable users to
-            seamlessly swap digital assets coming from all over the interchain.
-            The module improves on existing designs by combining traditional AMM
-            features (like that of Uniswap) with an orderbook-based model,
-            providing a richer and more efficient trading experience.
+            The Cosmos Hub’s Gravity DEX will enable users to seamlessly swap
+            digital assets coming from all over the interchain. This service
+            improves on existing designs by combining AMM features (like that of
+            Uniswap) with an orderbook-based model, providing a richer and more
+            efficient trading experience.
           </div>
         </div>
         <div class="bottom">
@@ -278,6 +284,7 @@
             B-Harvest, Tendermint
           </div>
         </div>
+        <span class="se-accent"></span>
       </div>
     </div>
 
@@ -323,6 +330,7 @@
             Althea, Interchain Foundation
           </div>
         </div>
+        <span class="horizontal-line"></span>
       </div>
       <div class="graphics">
         <!-- GRAPHICS -->
@@ -331,8 +339,9 @@
     </div>
 
     <!-- CNS -->
-    <div class="tm-section tm-container tm-wrapper tm-grid-base section-cns">
+    <div class="tm-container tm-wrapper tm-grid-base section-cns">
       <div class="left">
+        <span class="sw-accent"></span>
         <div class="top">
           <div class="caption tm-rf0 tm-lh-title">Service Discovery · 2021</div>
         </div>
@@ -372,8 +381,10 @@
             Tendermint, Interchain Foundation
           </div>
         </div>
+        <span class="se-accent"></span>
       </div>
       <div class="right">
+        <span class="sw-accent"></span>
         <div class="top">
           <div class="caption tm-rf0 tm-lh-title">Capital Formation · 2022</div>
         </div>
@@ -415,6 +426,7 @@
             Chorus One, Interchain Foundation
           </div>
         </div>
+        <span class="se-accent"></span>
       </div>
     </div>
 
@@ -462,9 +474,36 @@ export default {
 
 <style lang="stylus" scoped>
 // Global
+.ne-accent
+  angle-accent(ne)
+  position absolute
+  top 0
+  right 0
+
+.sw-accent
+  angle-accent(sw)
+  position absolute
+  bottom 0
+  left 0
+
+.se-accent
+  angle-accent(se)
+  position absolute
+  bottom 0
+  right 0
+
+.horizontal-line
+  display block
+  width var(--spacing-6)
+  border-bottom 0.0625rem solid
+  position absolute
+  bottom 0
+  left 0
+
 .bottom
   display block
   align-items center
+  margin-top var(--spacing-9)
 
   .footnote
     margin-top var(--spacing-5)
@@ -520,7 +559,7 @@ export default {
   flex-direction row
   justify-content center
   gap var(--spacing-11)
-  margin-top -20rem
+  margin-top -38%
 
 .label
   writing-mode vertical-rl
@@ -549,7 +588,7 @@ export default {
 // Feature
 .section-features .text,
 .section-features .graphics,
-.section-features .span-8,
+.section-features .span-7,
 .section-features .span-4
   grid-column span 12
 
@@ -563,19 +602,18 @@ export default {
 .section-features .tiles
   grid-column span 12
   position relative
-  margin-top var(--spacing-7)
+  margin-top var(--spacing-10)
 
 .section-features .span-4
-  padding var(--spacing-7)
   display flex
   flex-direction column
   justify-content space-between
   height 38.3125rem
   position relative
-
-.section-features .span-8,
-.section-features .span-4
   margin-top var(--spacing-10)
+
+.section-features .span-4 .caption
+  margin-top var(--spacing-7)
 
 .section-features .title
   display block
@@ -584,13 +622,13 @@ export default {
 .section-features .desc
   margin-top var(--spacing-5)
 
-.section-features .span-8 .desc
+.section-features .span-7 .desc
   color var(--white)
 
   .light-mode &
     color var(--trans-gray-200)
 
-.section-features .span-8
+.section-features .span-7
   .row-1,
   .row-2
     border-radius $border-radius-5
@@ -607,22 +645,10 @@ export default {
       .light-mode &
         color var(--trans-gray-600)
 
-.section-features .span-8 .row-2
+.section-features .span-7 .row-2
   margin-top var(--spacing-7)
 
-.section-features .span-4
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg)
-
 // Interchain staking
-.section-interchain-staking
-  position relative
-
 .section-interchain-staking .text
   grid-column span 12
   padding var(--spacing-8) var(--spacing-7)
@@ -630,32 +656,21 @@ export default {
   flex-direction column
   justify-content space-between
   height 32.25rem
+  position relative
 
 .section-interchain-staking .graphics
   grid-column span 12
   position relative
-
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg)
-
-  &:after
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 0
-    right 0
-    transform-origin center
-    transform rotate(270deg) translate(-5px, 3px)
 
   &__item
     width 100%
     height auto
 
 // AMM
+.section-amm
+  display flex
+  flex-direction column-reverse
+
 .section-amm .graphics
   grid-column span 12
 
@@ -672,22 +687,6 @@ export default {
   height 32.25rem
   position relative
 
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg) translate(-1px, 6px)
-
-  &:after
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 3px
-    right -5px
-    transform-origin center
-    transform rotate(270deg)
-
 // Gravity bridge
 .section-gravity-bridge .text
   grid-column span 12
@@ -696,13 +695,6 @@ export default {
   flex-direction column
   justify-content space-between
   height 32.25rem
-  &:after
-    content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 0
-    left 0
-    transform-origin center
-    transform rotate(0deg) translate(10px, 10px)
 
 .section-gravity-bridge .graphics
   grid-column span 12
@@ -716,23 +708,7 @@ export default {
   display grid
   grid-template-columns auto
   gap var(--spacing-7)
-
-.section-cns .left,
-.section-cns .right
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 3px
-    right -5px
-    transform-origin center
-    transform rotate(270deg)
-  &:after
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    bottom 0
-    left 0
-    transform-origin center
-    transform rotate(0deg)
+  padding-bottom var(--spacing-10)
 
 .section-cns .left,
 .section-cns .right
@@ -778,6 +754,7 @@ export default {
     display grid
     grid-template-columns auto auto
     gap var(--spacing-7)
+    z-index 1
 
   .section-hero .text .split .left,
   .section-hero .text .split .right
@@ -804,7 +781,7 @@ export default {
     max-width 27.75rem
     z-index 1
 
-  .section-features .span-8
+  .section-features .span-7
     .row-1,
     .row-2
       display grid
@@ -815,39 +792,36 @@ export default {
       .caption
         margin-top 0
 
+  .section-features .span-4
+    margin-top 0
+
+  .section-features .span-4 .caption
+    margin-top 0
+
   // Interchain staking
   .section-interchain-staking .text
-    grid-column 1/span 7
+    grid-column 1/span 6
 
   .section-interchain-staking .graphics
-    grid-column 8/span 12
+    grid-column 8/ 13
     display grid
     place-items center
+    max-height 32.25rem
 
     &__item
-      width 130%
+      width auto
 
   // AMM
+  .section-amm
+    display grid
+    flex-direction row-reverse
+
   .section-amm .graphics
     grid-column 1/span 5
     position relative
-    &:before
-      content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-      position absolute
-      bottom 0
-      top 0
-      transform-origin center
-      transform rotate(0deg) translate(10px, 10px)
-    &:after
-      content url("data:image/svg+xml,%3Csvg width='32' height='2' viewBox='0 0 32 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L32 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-      position absolute
-      bottom 0
-      left 0
-      transform-origin center
-      transform rotate(0deg) translate(10px, 10px)
 
   .section-amm .text
-    grid-column 7/span 12
+    grid-column 7/ 13
 
   // Gravity bridge
   .section-gravity-bridge .text
@@ -855,7 +829,7 @@ export default {
     position relative
 
   .section-gravity-bridge .graphics
-    grid-column 8/span 12
+    grid-column 8/ 12
     position relative
 
   // CNS
@@ -876,18 +850,21 @@ export default {
       height unset
 
   .section-fees .title
-    grid-column 5/span 12
+    grid-column 5/ 12
 
   .section-fees .description
-    grid-column 6/span 10
+    grid-column 6/ 10
 
 @media $breakpoint-large
   // Feature
-  .section-features .span-8
-    grid-column 1/span 8
+  .section-features .span-7
+    grid-column 1/span 7
     height auto
 
   .section-features .span-4
-    grid-column 9/span 12
+    grid-column 9/ 13
     height auto
+    padding-top var(--spacing-7)
+    padding-right var(--spacing-7)
+    padding-bottom var(--spacing-7)
 </style>
