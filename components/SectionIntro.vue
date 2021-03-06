@@ -95,11 +95,11 @@
       </svg>
       <div class="graphics">
         <div class="coins-top">
-          <span class="coin"><graphics-atom-coin /></span>
-          <span class="coin"><graphics-atom-coin /></span>
-          <span class="coin"><graphics-atom-coin /></span>
-          <span class="coin"><graphics-atom-coin /></span>
-          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-coin-atom /></span>
+          <span class="coin"><graphics-coin-atom /></span>
+          <span class="coin"><graphics-coin-atom /></span>
+          <span class="coin"><graphics-coin-atom /></span>
+          <span class="coin"><graphics-coin-atom /></span>
         </div>
       </div>
       <div class="content">
@@ -110,7 +110,12 @@
           rewards are distributed for ATOM stakers.
         </p>
         <div class="btn-group">
-          <tm-button to-link="internal" to="/get-started" size="l" class="btn"
+          <tm-button
+            to-link="internal"
+            to="/get-started"
+            size="l"
+            light-color="var(--white)"
+            class="btn"
             >Start staking</tm-button
           >
           <tm-button
@@ -126,8 +131,8 @@
       </div>
       <div class="graphics">
         <div class="coins-bottom">
-          <span class="coin"><graphics-atom-coin /></span>
-          <span class="coin"><graphics-atom-coin /></span>
+          <span class="coin"><graphics-coin-atom /></span>
+          <span class="coin"><graphics-coin-atom /></span>
         </div>
       </div>
     </div>
@@ -174,264 +179,56 @@
             </defs>
           </svg>
         </figure>
-        <p class="card__tagline tm-rf3 tm-rf4-l-up tm-lh-title tm-bold">
+        <p class="card__tagline tm-rf3 tm-rf4-m-up tm-lh-title tm-bold">
           One secure account for all your digital assets.
         </p>
-        <p class="card__footnote tm-rf0 tm-lh-title">Coming soon</p>
+        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+          Coming soon
+        </p>
       </div>
       <div class="card card-dex">
         <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
           Decentralized Exchange
         </h3>
         <figure class="graphics">
-          <svg
-            width="541"
-            height="443"
-            viewBox="0 0 541 443"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.2" filter="url(#filter0_f-395629)">
-              <ellipse
-                cx="359.329"
-                cy="127.726"
-                rx="96.7605"
-                ry="36.3585"
-                fill="url(#paint0_linear-049222)"
-              />
-            </g>
-            <g filter="url(#filter1_b-259238)">
-              <g filter="url(#filter2_di-962761)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M343.835 157.975C290.72 157.975 247.661 141.697 247.661 121.616V98.1593H270.351C287.993 90.2685 314.366 85.2578 343.835 85.2578C373.304 85.2578 399.678 90.2685 417.32 98.1593H440.009V121.616C440.009 121.616 440.009 121.616 440.009 121.616C440.009 141.697 396.951 157.975 343.835 157.975Z"
-                  fill="url(#paint1_radial-178011)"
-                />
-              </g>
-            </g>
-            <path
-              d="M247.662 124.034C247.662 124.034 247.662 124.034 247.662 124.034V100.577H270.352C287.993 92.6865 314.367 87.6758 343.836 87.6758C373.305 87.6758 399.679 92.6865 417.321 100.577H440.01V124.034C440.01 124.034 440.01 124.034 440.01 124.034C440.01 144.114 396.952 160.393 343.836 160.393C290.721 160.393 247.662 144.114 247.662 124.034Z"
-              fill="#C4C4C4"
-            />
-            <ellipse
-              rx="96.1741"
-              ry="36.3585"
-              transform="matrix(-1 0 0 1 343.838 100.651)"
-              fill="#9C9C9C"
-            />
-            <path
-              d="M321.695 127.166C268.58 127.166 225.521 110.888 225.521 90.8077L225.521 67.3506H248.211C265.853 59.4599 292.226 54.4492 321.695 54.4492C351.164 54.4492 377.538 59.4599 395.179 67.3506H417.869V90.6966C417.869 90.7336 417.869 90.7707 417.869 90.8077C417.869 110.888 374.811 127.166 321.695 127.166Z"
-              fill="#C4C4C4"
-            />
-            <ellipse
-              rx="96.1741"
-              ry="36.3585"
-              transform="matrix(-1 0 0 1 321.694 67.3507)"
-              fill="#9C9C9C"
-            />
-            <path
-              d="M341.067 96.174C287.952 96.174 244.893 79.8958 244.893 59.8155C244.893 59.8017 244.893 59.7879 244.893 59.7741V36.3585H267.583C285.224 28.4678 311.598 23.457 341.067 23.457C370.536 23.457 396.91 28.4678 414.552 36.3585H437.241V59.8156C437.241 79.8958 394.183 96.174 341.067 96.174Z"
-              fill="#C4C4C4"
-            />
-            <ellipse
-              rx="96.1741"
-              ry="36.3585"
-              transform="matrix(-1 0 0 1 341.066 36.3585)"
-              fill="#9C9C9C"
-            />
-            <g opacity="0.2" filter="url(#filter3_f-993971)">
-              <path
-                d="M367.868 170.474C367.868 170.474 283.284 84.7977 170.663 144.496C75.421 194.979 131.105 333.649 217.363 304.156C276.462 283.948 303.694 298.254 339.896 315.705C397.323 343.387 471.695 273.555 367.868 170.474Z"
-                fill="white"
-              />
-              <path
-                d="M367.868 170.474C367.868 170.474 283.284 84.7977 170.663 144.496C75.421 194.979 131.105 333.649 217.363 304.156C276.462 283.948 303.694 298.254 339.896 315.705C397.323 343.387 471.695 273.555 367.868 170.474Z"
-                fill="url(#paint2_linear-040071)"
-              />
-            </g>
-            <path
-              d="M263.067 262.174C209.952 262.174 166.893 245.896 166.893 225.816C166.893 225.802 166.893 225.788 166.893 225.774V202.359H189.583C207.224 194.468 233.598 189.457 263.067 189.457C292.536 189.457 318.91 194.468 336.552 202.359H359.241V225.816C359.241 245.896 316.183 262.174 263.067 262.174Z"
-              fill="#C4C4C4"
-            />
-            <ellipse
-              rx="96.1741"
-              ry="36.3585"
-              transform="matrix(-1 0 0 1 263.066 202.358)"
-              fill="#9C9C9C"
-            />
-            <path
-              d="M380.168 237.945C391.691 235.495 402.155 231.629 410.836 226.615C419.517 221.601 426.209 215.558 430.45 208.905C434.69 202.251 436.377 195.146 435.395 188.079C434.413 181.012 430.784 174.153 424.76 167.975"
-              stroke="#A0A0A0"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <defs>
-              <filter
-                id="filter0_f-395629"
-                x="258.81"
-                y="87.6082"
-                width="201.039"
-                height="80.235"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="1.87951"
-                  result="effect1_foregroundBlur"
-                />
-              </filter>
-              <filter
-                id="filter1_b-259238"
-                x="196.055"
-                y="12.6865"
-                width="295.563"
-                height="199.387"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImage" stdDeviation="25.8032" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur"
-                  result="shape"
-                />
-              </filter>
-              <filter
-                id="filter2_di-962761"
-                x="244.729"
-                y="84.085"
-                width="195.867"
-                height="76.822"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                />
-                <feOffset dx="-1.17285" dy="1.17285" />
-                <feGaussianBlur stdDeviation="0.879641" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0"
-                />
-                <feBlend
-                  mode="soft-light"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="-1.75928" />
-                <feGaussianBlur stdDeviation="0.586427" />
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"
-                />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
-                />
-                <feBlend
-                  mode="soft-light"
-                  in2="shape"
-                  result="effect2_innerShadow"
-                />
-              </filter>
-              <filter
-                id="filter3_f-993971"
-                x="0.544991"
-                y="3.06306"
-                width="539.57"
-                height="439.022"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="60.1443"
-                  result="effect1_foregroundBlur"
-                />
-              </filter>
-              <linearGradient
-                id="paint0_linear-049222"
-                x1="262.569"
-                y1="129.443"
-                x2="456.09"
-                y2="129.443"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0.783167" stop-color="#171B2F" />
-                <stop offset="1" stop-color="#1A2F9F" stop-opacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial-178011"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(387.378 121.252) rotate(-173.178) scale(172.221 81.7321)"
-              >
-                <stop />
-                <stop offset="0.473925" />
-                <stop offset="0.866261" stop-color="#1F1F1F" />
-              </radialGradient>
-              <linearGradient
-                id="paint2_linear-040071"
-                x1="236.919"
-                y1="121.644"
-                x2="296.111"
-                y2="342.553"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FD91FF" />
-                <stop offset="0.34375" stop-color="#A0A8FF" />
-                <stop offset="0.947005" stop-color="#C9F2FF" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <graphics-coin-stack class="coin-stack" />
         </figure>
         <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
           Swap tokens &amp; collectibles.
         </p>
-        <p class="card__footnote tm-rf0 tm-lh-title">Coming soon</p>
+        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+          Coming soon
+        </p>
       </div>
+      <div class="cards-features-bottom">
+        <div class="card card-pools">
+          <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+            Liquidity Pools
+          </h3>
+          <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
+            Provide liquidity.<br />Earn rewards.
+          </p>
+          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+            Coming soon
+          </p>
+        </div>
+        <div class="card card-bridges">
+          <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+            Wrapped ETH / BTC
+          </h3>
+          <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
+            + Ethereum.<br />+ Bitcoin.
+          </p>
+          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+            Coming soon
+          </p>
+        </div>
+      </div>
+      <p class="cta">
+        <tm-button to-link="internal" to="/features" size="l" variant="text"
+          >More features<span class="icon__right">-></span></tm-button
+        >
+      </p>
     </div>
 
     <div class="section-tech tm-section tm-container tm-wrapper">
@@ -746,17 +543,17 @@ export default {
 
   .bg
     position absolute
-    left 0
+    left -10%
     height auto
-    width 100%
+    width 120%
     min-width 64rem
     z-index -1
 
   .bg-back
-    bottom -6%
+    bottom -18%
 
   .bg-front
-    bottom -16%
+    bottom -28%
     filter blur(14px)
 
   .graphics
@@ -865,11 +662,8 @@ export default {
   > *
     grid-column 1/-1
 
-  .card__title,
   .title
     max-width 11em
-
-  .title
     margin-bottom var(--spacing-10)
 
   .card
@@ -878,27 +672,56 @@ export default {
     padding var(--spacing-7)
     display flex
     flex-direction column
-    align-content space-between
+    justify-content space-between
     gap var(--spacing-9) 0
+    margin-bottom var(--grid-gap-x)
+
+  .light-mode & .card
+    background var(--white)
+
+  .card__tagline
+    position relative
+    max-width 8em
+
+  .card__footnote
+    margin-top 0
 
   .graphics
     position relative
+    width 100%
+    max-width 22rem
+
+  .cta
+    margin-top var(--spacing-7)
 
 // Features > Interchain Accounts
 .card-accounts
-
-  .graphics
-    max-width 22rem
-
   .gem
+    position relative
     margin -43% 0 -65% -80%
     width 150%
     height auto
 
   .trail
     position absolute
+    width 41%
+    height auto
     top 51%
     left 38%
+
+// Features > DEX
+.card-dex
+  .graphics
+    margin-left auto
+
+  .coin-stack
+    margin-top -7%
+
+// Features > Pools & Bridges
+.cards-features-bottom
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(16rem,1fr))
+  gap 0 var(--grid-gap-x)
 
 // Developer
 .section-developer
@@ -990,6 +813,11 @@ export default {
   .btn-group
     display block
 
+  // Features > DEX
+  .card-dex .graphics
+    height 0
+    margin-top calc(-1 * var(--spacing-9))
+
   // Developer
   .section-developer
     .left
@@ -1030,10 +858,9 @@ export default {
 
   // Features
   .section-features
-    .title
-      text-align right
-      margin-left auto
-      grid-column 1/span 7
+    .title,
+    .cta
+      grid-column 2 / -1
 
   // Dev features
   .section-dev-features
@@ -1053,6 +880,16 @@ export default {
       margin-top 0
 
 @media $breakpoint-large
+
+  // Features > Cards
+  .card-accounts,
+  .card-dex,
+  .cards-features-bottom
+    grid-column span 4
+
+  // Features > Interchain Accounts
+  .card-accounts
+    grid-row 2 / 5
 
   // Developer
   .section-developer
@@ -1098,17 +935,14 @@ export default {
     .swiper-container
       grid-column 7 / span 4
 
+  // Features > Interchain Accounts
+  .card-accounts
+    grid-column 1 / span 5
+    grid-row 2 / 4
 
-  // Features
-  .section-features
-    .title
-      grid-column 1/span 11
-
-    .card-accounts
-      grid-column 1 / span 5
-      grid-row 2 / 3
-
-    .card-dex
-      grid-column 6 / span 7
-      grid-row 2
+  // Features > DEX
+  // Features > Pools & Bridges
+  .card-dex
+  .cards-features-bottom
+    grid-column span 7
 </style>
