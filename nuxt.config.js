@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   /*
    ** Nuxt target
@@ -178,7 +180,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -193,6 +195,18 @@ export default {
         // To change the postcss-preset-env settings
         autoprefixer: {},
       },
+    },
+  },
+  sitemap: {
+    hostname: 'https://beta.cosmos.network',
+    exclude: ['/design/**', '/learn/tag/**'],
+    routes() {
+      return getRoutes()
+    },
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
     },
   },
 }

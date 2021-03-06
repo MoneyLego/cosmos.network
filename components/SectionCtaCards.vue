@@ -8,7 +8,7 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <!-- TODO: replace with color var -->
+        <!-- TODO: replace with color var (white, black) -->
         <path
           v-if="$nuxt.$colorMode.value === 'dark'"
           d="M16 8H0M8 16V0"
@@ -21,14 +21,18 @@
       <NuxtLink to="/staking" class="card-item">
         <div class="graphics">
           <graphics-cta-token-holders class="graphics__item" />
-          <graphics-cta-validator class="graphics__validator" />
         </div>
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Token Holders
         </div>
         <div class="title tm-rf2 tm-bold tm-lh-title">Start staking -></div>
       </NuxtLink>
-      <NuxtLink to="/get-started" class="card-item">
+      <a
+        href="https://cosmos.network/tools"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="card-item"
+      >
         <div class="graphics">
           <graphics-cta-developers class="graphics__item" />
         </div>
@@ -36,7 +40,7 @@
           Developers
         </div>
         <div class="title tm-rf2 tm-bold tm-lh-title">Start building -></div>
-      </NuxtLink>
+      </a>
     </div>
   </div>
 </template>
@@ -74,18 +78,22 @@ export default {}
     color #171717
     background-color var(--white)
 
-.graphics
-  &__item
-    width 80%
-    position absolute
-    right -7%
-    top -70%
+.card-item
+  .caption
+  .title
+    width fit-content
 
-  &__validator
-    width 44%
-    position absolute
-    right -8%
-    top 0%
+.graphics
+  position absolute
+  top 0
+  left 0
+  width 100%
+  display grid
+  place-items flex-end
+
+  &__item
+    width 70%
+    height auto
 
 .title
   margin-top var(--spacing-3)
@@ -101,13 +109,7 @@ export default {}
     grid-template-columns 1fr 1fr
 
   .graphics
-    &__item
-      right -8%
-      top -40%
-
-    &__validator
-      width 80%
-      position absolute
-      right -18%
-      top 35%
+    top -70px
+    left -130px
+    width 130%
 </style>

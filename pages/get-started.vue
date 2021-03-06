@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="tm-wrapper tm-section">
+    <div class="tm-wrapper top-space">
       <div class="tm-container">
         <div class="section-step-1 tm-grid-base">
           <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
@@ -59,12 +59,11 @@
           </div>
           <div class="top">
             <div class="title tm-rf5 tm-bold tm-lh-title">
-              Get ATOMs via one of the many cryptocurrency exchanges
+              Get ATOMs via one of the many cryptocurrency exchanges.
             </div>
           </div>
           <div class="graphics">
-            <!-- TODO: remove excess whitespace of this svg -->
-            <!-- <graphics-get-started-step-1 class="graphics__item" /> -->
+            <graphics-get-started-step-1 class="graphics__item" />
           </div>
           <div class="bottom">
             <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -94,6 +93,7 @@
 
     <div class="tm-container transition">
       <svg
+        v-if="$nuxt.$colorMode.value === 'dark'"
         width="164"
         height="241"
         viewBox="0 0 164 241"
@@ -121,19 +121,48 @@
           </linearGradient>
         </defs>
       </svg>
+      <svg
+        v-else
+        width="164"
+        height="241"
+        viewBox="0 0 164 241"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
+          stroke="url(#paint0_linear-166099)"
+          stroke-width="1.77663"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-166099"
+            x1="67.499"
+            y1="-62.0005"
+            x2="16.9728"
+            y2="235.195"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.254598" stop-opacity="0" />
+            <stop offset="0.901042" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-container tm-grid-base section-step-2">
-        <div class="left">
-          <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
-            step 02
-          </div>
+      <div class="tm-container tm-grid-base">
+        <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
+          step 02
+        </div>
+        <div class="left section-step-2">
           <div class="graphics">
             <graphics-get-started-step-2 class="graphics__item" />
           </div>
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-            Transfer your ATOMs to a wallet
+            Transfer your ATOMs to a wallet.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
             Choose a wallet that supports the ATOM token, create an account, and
@@ -148,36 +177,34 @@
             >Choose a wallet <span class="icon__right">-></span></tm-button
           >
         </div>
-        <div class="right">
-          <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
-            step 03
+        <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
+          step 03
+        </div>
+        <div class="right section-step-3">
+          <div class="graphics">
+            <graphics-get-started-step-3 class="graphics__item" />
           </div>
-          <div class="section-step-3">
-            <div class="graphics">
-              <graphics-get-started-step-3 class="graphics__item" />
-            </div>
-            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-              Select your validators
-            </div>
-            <div class="subtitle tm-rf1 tm-lh-copy">
-              In your wallet, choose the validators to delegate your ATOMs to.
-            </div>
-            <tm-button
-              to-link="internal"
-              to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
-              size="l"
-              variant="text"
-              class="btn"
-              >Choosing a validator
-              <span class="icon__right">-></span></tm-button
-            >
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+            Select your validators.
           </div>
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            In your wallet, choose the validators to delegate your ATOMs to.
+          </div>
+          <tm-button
+            to-link="internal"
+            to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
+            size="l"
+            variant="text"
+            class="btn"
+            >Choosing a validator <span class="icon__right">-></span></tm-button
+          >
         </div>
       </div>
     </div>
 
     <div class="tm-container transition">
       <svg
+        v-if="$nuxt.$colorMode.value === 'dark'"
         width="368"
         height="368"
         viewBox="0 0 368 368"
@@ -205,9 +232,38 @@
           </linearGradient>
         </defs>
       </svg>
+      <svg
+        v-else
+        width="368"
+        height="368"
+        viewBox="0 0 368 368"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
+          stroke="url(#paint0_linear-684431)"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear-684431"
+            x1="373"
+            y1="-35"
+            x2="1.99995"
+            y2="366"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.00763763" stop-opacity="0" />
+            <stop offset="0.57166" stop-opacity="0.03" />
+            <stop offset="1" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
-    <div class="tm-wrapper">
+    <div class="tm-wrapper bot-space">
       <div class="tm-container tm-grid-base">
         <div class="section-step-4">
           <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
@@ -218,7 +274,7 @@
           </div>
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title">
-              Lock up and stake your ATOMs
+              Lock up and stake your ATOMs.
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy">
               Using your wallet, send a simple transaction (often called “Stake”
@@ -241,12 +297,12 @@
       </div>
     </div>
 
-    <div class="tm-wrapper tm-section">
+    <div class="tm-wrapper">
       <div class="tm-section tm-container tm-grid-base">
         <div class="section-community">
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-              Welcome to the community, fellow Cosmonaut
+              Welcome to the community, fellow Cosmonaut.
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
               Now that you’ve staked your ATOMs like a pro, join a fast-growing
@@ -289,7 +345,6 @@
           </div>
         </div>
         <!-- TODO -->
-        <graphics-home-hero class="section-graphics" />
         <!-- <graphics-get-started-community-background class="section-graphics" /> -->
       </div>
     </div>
@@ -365,7 +420,7 @@ export default {
   text-align left
 
 .section-hero .text
-  grid-column 1/-1
+  grid-column span 4
   z-index 1
 
 .section-hero .title
@@ -391,14 +446,14 @@ export default {
 
 // Intro
 .section-intro
-  grid-column span 12
+  grid-column span 4
 
 .cards-wrapper
   grid-row 2
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 12
+  grid-column span 4
   margin-top var(--spacing-8)
 
 .card-item
@@ -414,25 +469,36 @@ export default {
 .card-item .title
   margin-top var(--spacing-3)
 
+// Step
+.step
+  grid-column span 4
+  margin-bottom var(--spacing-5)
+
 // Step 1
 .section-step-1
   position relative
-  align-items flex-end
 
-.step
-  grid-column span 12
-  margin-bottom var(--spacing-5)
+.top-space
+  padding-top var(--spacing-10)
+
+.bot-space
+  padding-bottom var(--spacing-10)
 
 .section-step-1
   .top,
   .graphics,
   .bottom
-    grid-column span 12
+    grid-column span 4
 
-.section-step-1 .graphics__item
-  width 100%
-  height auto
+.section-step-1 .graphics
+  display grid
+  place-items center
 
+  &__item
+    width 70%
+    height 100%
+
+.section-step-1 .graphics,
 .section-step-1 .bottom
   margin-top var(--spacing-7)
 
@@ -450,34 +516,40 @@ export default {
 .section-step-2 .btn
   margin-top var(--spacing-6)
 
-// .section-step-2 .graphics
-//   position relative
-//   display grid
-//   place-items center
-//   z-index 0
+.section-step-2 .graphics
+  height 218px
+  display grid
+  place-items flex-end
 
-//   &__item
-//     position absolute
-.left .graphics__item
-  width 100%
+.section-step-2 .left .graphics__item
+  width 70%
   height auto
 
 // Step 3
 .left,
 .right
-  grid-column span 12
+  grid-column span 4
   position relative
 
-.right
-  margin-top var(--spacing-12)
+.step-3
+  grid-column span 4
+
+.section-step-3 .graphics
+  height 413px
 
 .section-step-3 .graphics__item
   width 100%
   height 100%
 
+.section-step-3 .subtitle
+  margin-top var(--spacing-7)
+
+.section-step-3 .btn
+  margin-top var(--spacing-6)
+
 // Step 4
 .section-step-4
-  grid-column span 12
+  grid-column span 4
 
 .section-step-4 .graphics
   display grid
@@ -485,6 +557,9 @@ export default {
 
   &__item
     width 100%
+
+.section-step-4 .text .subtitle
+  margin-top var(--spacing-7)
 
 .section-step-4 .text .warning-wrapper
   margin-top var(--spacing-8)
@@ -576,93 +651,73 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
+    grid-column span 12
 
   .section-intro
-    grid-column 4/span 12
+    grid-column 4/ 12
 
   // Step 1
   .section-step-1 .top
-    grid-column 5/span 12
+    grid-column 5/ 12
 
   .section-step-1 .graphics
-    grid-column 1/span 6
+    grid-column 1/ 6
 
   .section-step-1 .bottom
-    grid-column 7/span 12
+    grid-column 7/ 12
 
-  // Step 2
+  // Step 2 & Step 3
   .step
     transform rotate(-90deg)
     position absolute
-    top 10%
-    left -3%
-    margin-bottom 0
+    top 4%
+    left -2%
 
-  .step-2
-    grid-column 1/span 2
-    left -31%
-
-    &:before
-      content ""
-      position absolute
-      left -56px
-      bottom 15px
-      width 40px
-      height 1px
-      background var(--white)
-
-      .light-mode &
-        background var(--black)
-
-  .step-3
-    grid-column 7/span 8
-    left -21%
-
-    &:after
-      content ""
-      position absolute
-      right -56px
-      bottom 15px
-      width 40px
-      height 1px
-      background var(--white)
-
-      .light-mode &
-        background var(--black)
-
-  .left .graphics
+  // Step 2
+  .left
+    grid-column 2/6
     position relative
-    display grid
-    place-items center
-    z-index 0
 
-    &__item
-      position absolute
+  // .step-2
+  //   &:before
+  //     content ""
+  //     position absolute
+  //     left -56px
+  //     bottom 15px
+  //     width 40px
+  //     height 1px
+  //     background var(--white)
+
+  //     .light-mode &
+  //       background var(--black)
 
   // Step 3
-  .left
-    grid-row 1
-    grid-column 2/span 5
-    position relative
-
   .right
-    grid-row 2
-    grid-column 9/span 12
+    grid-column 7/13
     position relative
-    margin-top -15rem
+    margin-top 8.4375rem
 
-  .section-step-3 .graphics
-    position relative
-    display grid
-    place-items center
-    margin-bottom 20%
-    right 30%
+  .step-3
+    grid-column 6
 
-    &__item
-      position absolute
-      width 130%
-      height auto
-      left 0
+    // TODO: where to position step 3?
+    // &:after
+    //   content ""
+    //   position absolute
+    //   right -56px
+    //   bottom 15px
+    //   width 40px
+    //   height 1px
+    //   background var(--white)
+
+    //   .light-mode &
+    //     background var(--black)
+
+  .section-step-3 .graphics__item
+    // width: 80%;
+    height: 70%;
+    // top: -20px;
+    position: absolute;
 
   // Step 4
   .section-step-4
@@ -671,15 +726,17 @@ export default {
     grid-template-columns 50% 50%
     grid-template-rows 1fr
     align-items center
+    grid-column span 12
 
-    // .text
-    //   grid-column 1/span 6
+  .section-step-4 .text
+    display flex
+    flex-direction column
+    justify-content space-between
+    height 100%
 
-    // .graphics
-    //   grid-column 7/span 12
-
-  .section-step-4 .text .subtitle
-    margin-top var(--spacing-7)
+  .section-step-4 .text .subtitle,
+  .section-step-4 .text .warning-wrapper
+    margin-top 0
 
   .step-4
     &:before
@@ -696,11 +753,13 @@ export default {
 
   // Community
   .section-community
-    grid-column 1/span 10
+    grid-column span 10
 
   .grid-wrapper
     grid-template-columns repeat(2, 1fr)
     grid-column 1/span 8
+    column-gap var(--spacing-7)
+    row-gap var(--spacing-9)
 
   .section-graphics
     grid-column 11/span 12
@@ -717,5 +776,5 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
-    grid-column span 15
+    grid-column span 12
 </style>

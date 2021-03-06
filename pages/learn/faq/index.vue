@@ -114,7 +114,7 @@ export default {
   position relative
 
 .section-hero .text
-  grid-column span 12
+  grid-column span 4
 
 .section-hero .graphics
   position unset
@@ -127,7 +127,7 @@ export default {
 
 // Content
 .content
-  grid-column span 12
+  grid-column span 4
 
 .desc
   margin-top var(--spacing-4)
@@ -145,7 +145,7 @@ export default {
 @media $breakpoint-medium
   // Hero
   .section-hero .text
-    grid-column 6/span 12
+    grid-column 6/ 12
 
   .section-hero .graphics
     position absolute
@@ -157,5 +157,5 @@ export default {
 
   // Content
   .content
-    grid-column 6/span 12
+    grid-column 6/ 12
 </style>

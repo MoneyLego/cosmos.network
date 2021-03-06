@@ -47,7 +47,7 @@ export default {}
 
 .banner-item .text
   padding var(--spacing-10)
-  grid-column span 12
+  grid-column span 4
   position relative
   z-index 1
 
@@ -88,7 +88,7 @@ export default {}
     overflow visible
 
   .banner-item .text
-    grid-column 1/span 8
+    grid-column 1/ 9
 
   .banner-item .graphics
     padding 0

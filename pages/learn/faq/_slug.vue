@@ -100,7 +100,7 @@ export default {
   display none
 
 .main
-  grid-column span 12
+  grid-column span 4
 
 .markdown
   margin-top var(--spacing-9)
@@ -110,5 +110,5 @@ export default {
     grid-column 1/span 4
 
   .main
-    grid-column 5/span 11
+    grid-column 5/ 11
 </style>
