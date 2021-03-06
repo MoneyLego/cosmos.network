@@ -280,11 +280,15 @@ export default {
   justify-content center
   text-align inherit
   color var(--color)
-  border-radius 0.35em // relative border-radius
+  border-radius 0.47em // relative border-radius
   transition all .25s $ease-out
   &:active
     opacity 0.88
     transition-duration .05s
+
+  /* light mode */
+  .light-mode &
+    color var(--light-color)
 
   /* glow styling (optional) */
   &__glow
@@ -307,9 +311,6 @@ export default {
 
   /* text variant */
   &__variant__text
-    color var(--dark-color)
-    .light-mode &
-      color var(--light-color)
     &:hover,
     &:focus
       opacity 0.8
@@ -321,6 +322,8 @@ export default {
     &::after,
     &.tm-button__glow::before
       border 0.0625rem solid var(--border-color)
+      .light-mode &
+        border-color var(--light-border-color)
     &::after // border
       content ''
       position absolute
@@ -328,6 +331,8 @@ export default {
       border-radius inherit
       opacity 0.2
       transition opacity .25s $ease-out
+      .light-mode &
+        opacity 1
     &.tm-button__glow::before // glow
       trbl -0.0625em
       filter blur(0.4rem)
@@ -336,10 +341,6 @@ export default {
       &::after
         opacity 1
 
-  /* light mode */
-  .light-mode &__variant__contained
-    background var(--light-background-color)
-    color var(--light-color)
   /* contained variant */
   &__variant__contained
     background var(--background-color)
@@ -351,6 +352,9 @@ export default {
       trbl 0.125em 1em 0
       background inherit
       filter blur(1.25rem) brightness(1.5)
+    .light-mode &
+      background var(--light-background-color)
+
 
   /* disabled state */
   &[disabled]
