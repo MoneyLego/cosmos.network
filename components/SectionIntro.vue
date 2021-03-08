@@ -39,60 +39,9 @@
     </div>
 
     <div class="section-atom tm-section tm-container tm-wrapper">
-      <svg
-        class="bg bg-back"
-        width="2023"
-        height="1012"
-        viewBox="0 0 2023 1012"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2023 1012C2023 743.601 1916.43 486.195 1726.74 296.408C1537.05 106.621 1279.77 2.02636e-05 1011.5 0C743.234 -2.02636e-05 485.955 106.621 296.262 296.408C106.569 486.195 4.05071e-05 743.601 0 1012L2023 1012Z"
-          fill="url(#paint0_radial-299071)"
-        />
-        <defs>
-          <radialGradient
-            id="paint0_radial-299071"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(1011.5 988) rotate(90) scale(1012 1011.5)"
-          >
-            <stop offset="0.0833333" stop-color="#A5FBFF" />
-            <stop offset="0.338542" stop-color="#6C8DFF" />
-            <stop offset="0.677083" stop-color="#631C69" />
-            <stop offset="1" stop-color="#72087B" stop-opacity="0" />
-          </radialGradient>
-        </defs>
-      </svg>
-      <svg
-        class="bg bg-front"
-        width="2022"
-        height="439"
-        viewBox="0 0 2022 439"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2022 206.669C1705.16 71.584 1362.12 2.65069e-05 1011 0C660.14 -2.64873e-05 316.649 71.4782 0 206.369L0 439L2022 439V206.669Z"
-          fill="url(#paint0_radial-063349)"
-        />
-        <defs>
-          <radialGradient
-            id="paint0_radial-063349"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(1041.89 760) rotate(-90) scale(760 2536.3)"
-          >
-            <stop offset="0.817689" />
-            <stop offset="0.991435" stop-color="#181A49" />
-          </radialGradient>
-        </defs>
-      </svg>
+      <div class="bg-sunrise-container">
+        <graphics-bg-sunrise class="bg-sunrise" />
+      </div>
       <div class="graphics">
         <div class="coins-top">
           <span class="coin"><graphics-coin-atom /></span>
@@ -231,15 +180,64 @@
       </p>
     </div>
 
-    <div class="section-tech tm-section tm-container tm-wrapper">
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Powered by the best blockchain tech has to offer.
+    <div class="section-tech tm-section tm-container tm-wrapper tm-grid-base">
+      <div class="graphics">
+        <graphics-hub-tech-stack />
+        <span class="tm-crosshair"></span>
       </div>
-      <div class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy">
+      <h2 class="title tm-rf5 tm-bold tm-lh-title">
+        Powered by the best blockchain tech has to offer.
+      </h2>
+      <p
+        class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
+      >
         The Cosmos Hub is powered by the
-        <a href="cosmos.network/sdk" class="tm-medium">Cosmos SDK</a>, a leading
-        blockchain framework securing over $18B USD in value across 200+
+        <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>, a
+        leading blockchain framework securing over $18B USD in value across 200+
         interconnected blockchains.
+      </p>
+      <div class="stat stat-tech">
+        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+          Secure tech
+        </h3>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold">
+          $50B<span class="tm-rf4 tm-lh-title tm-bold super">+</span>
+        </div>
+        <p class="stat-subtitle tm-rf0 tm-lh-title">
+          Digital assets under management.
+        </p>
+      </div>
+      <div class="stat stat-pos">
+        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+          Proof-of-Stake
+        </h3>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold">
+          <icon-plant-leaf class="icon" />99%<span
+            class="tm-rf-1 tm-rf1-m-up tm-rf2-l-up tm-lh-title tm-bold super"
+            >lower carbon footprint</span
+          >
+        </div>
+        <p class="stat-subtitle tm-rf0 tm-lh-title">
+          Blockchain tech that truly scales.
+        </p>
+      </div>
+      <div class="stat stat-fees">
+        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+          Low fees
+        </h3>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold">$0.01</div>
+        <p class="stat-subtitle tm-rf0 tm-lh-title">
+          Enjoy the lowest fees – almost zero.
+        </p>
+      </div>
+      <div class="stat stat-tx">
+        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+          Fast transactions
+        </h3>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold">7 sec</div>
+        <p class="stat-subtitle tm-rf0 tm-lh-title">
+          Transactions confirmed in seconds.
+        </p>
       </div>
     </div>
 
@@ -390,6 +388,7 @@
 // import Carousel from 'vue-slick-carousel'
 import { directive } from 'vue-awesome-swiper'
 
+import IconPlantLeaf from '~/components/icons/IconPlantLeaf.vue'
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'
@@ -400,6 +399,7 @@ export default {
     swiper: directive,
   },
   components: {
+    IconPlantLeaf,
     IconTwitter,
     IconDiscord,
     IconTelegram,
@@ -483,6 +483,17 @@ export default {
   margin-top var(--spacing-8)
   gap 0 var(--spacing-7)
 
+.bg-sunrise-container
+  position absolute
+  display flex
+  justify-content center
+  width 100%
+  min-width 64rem
+  z-index -1
+
+.bg-sunrise
+  width 120%
+
 // Animations
 @keyframes float
   0%
@@ -534,27 +545,21 @@ export default {
 
 // ATOM
 .section-atom
+  display flex
+  flex-direction column
+  align-items center
   text-align center
   padding-bottom var(--spacing-13)
+
+  .bg-sunrise-container
+    bottom 0
+
+  .bg-sunrise
+    bottom 0
 
   .content
     max-width 40rem
     center()
-
-  .bg
-    position absolute
-    left -10%
-    height auto
-    width 120%
-    min-width 64rem
-    z-index -1
-
-  .bg-back
-    bottom -18%
-
-  .bg-front
-    bottom -28%
-    filter blur(14px)
 
   .graphics
     position relative
@@ -659,6 +664,9 @@ export default {
 
 // Features
 .section-features
+  z-index 1 // Above tech stack graphics
+  padding-top 0
+
   > *
     grid-column 1/-1
 
@@ -723,20 +731,53 @@ export default {
   grid-template-columns repeat(auto-fit, minmax(16rem,1fr))
   gap 0 var(--grid-gap-x)
 
-// Developer
-.section-developer
-  .left
-    grid-column span 12
-    .caption
-      writing-mode tb
-      transform rotate(180deg)
-    .title
-      margin-top var(--spacing-7)
-    .subtitle
-      margin-left 2.4375rem
-  .right
-    grid-column span 12
-    margin-top 16.375rem
+// Tech
+.section-tech
+  > *
+    grid-column 1/-1
+
+  .graphics
+    position relative
+    min-width 23rem
+
+  .hub-tech-stack
+    right var(--spacing-11)
+
+  .tm-crosshair
+    margin-bottom var(--spacing-6)
+
+  .title
+    max-width 8em
+    position relative
+    z-index -1 // above graphics
+
+  .subtitle
+    position relative
+
+.stat
+  position relative
+  margin-top var(--spacing-10)
+
+  .super
+    margin-left var(--spacing-2)
+
+.stat-value
+  display flex
+  align-items flex-start
+  margin var(--spacing-3) 0
+
+.stat-pos
+  .icon
+    align-self start
+    margin-top var(--spacing-4)
+    margin-right var(--spacing-1)
+
+  .stat-value
+    align-items center
+
+  .super
+    max-width 4.5em
+    margin-left var(--spacing-6)
 
 // Dev features
 .section-dev-features
@@ -818,12 +859,21 @@ export default {
     height 0
     margin-top calc(-1 * var(--spacing-9))
 
-  // Developer
-  .section-developer
-    .left
-      grid-column span 12
-      .subtitle
-        margin-left 0
+  // Tech
+  .section-tech
+    > *
+      grid-column auto
+
+    .graphics
+      grid-column 1/-1
+
+    .title,
+    .subtitle
+      grid-column 2 / span 3
+
+  // Tech > Stats
+  .stat
+    grid-column span 2
 
   // Dev features
   .cards-wrapper
@@ -860,7 +910,26 @@ export default {
   .section-features
     .title,
     .cta
-      grid-column 2 / -1
+      grid-column 3 / -1
+
+  // Tech
+  .section-tech
+    .tm-crosshair
+      margin-top -6rem
+
+    .title,
+    .subtitle
+      grid-column span 4
+
+    .subtitle
+      margin-top auto
+
+  // Tech > Stats
+  .stat
+    grid-column span 4
+
+  .stat-value
+    margin var(--spacing-4) 0
 
   // Dev features
   .section-dev-features
@@ -890,28 +959,6 @@ export default {
   // Features > Interchain Accounts
   .card-accounts
     grid-row 2 / 5
-
-  // Developer
-  .section-developer
-    .left
-      grid-column 2/span 3
-      display grid
-      grid-template-columns repeat(6, 1fr)
-      gap 0 var(--spacing-7)
-      .caption
-        grid-row 1
-      .title
-        grid-row 2
-        grid-column 1/span 5
-      .subtitle
-        grid-row 3
-        grid-column 2/span 6
-      .row
-        grid-row 4
-        grid-column 1/span 4
-        margin-top var(--spacing-7)
-    .right
-      grid-column 5/span 4
 
   // Dev features
   .section-dev-features
@@ -945,4 +992,20 @@ export default {
   .card-dex
   .cards-features-bottom
     grid-column span 7
+
+  // Tech
+  .section-tech
+    .title
+      grid-column 2 / span 6
+    .subtitle
+      grid-column span 5
+
+  // Tech > Stats
+  .stat-tech,
+  .stat-fees
+    grid-column 2 / span 5
+
+  .stat-pos,
+  .stat-tx
+    grid-column 8 / span 5
 </style>
