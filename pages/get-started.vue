@@ -54,7 +54,7 @@
     <div class="tm-wrapper top-space">
       <div class="tm-container">
         <div class="section-step-1 tm-grid-base">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div class="step step-1 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 01
           </div>
           <div class="top">
@@ -496,7 +496,7 @@ export default {
 
   &__item
     width 70%
-    height 100%
+    height auto
 
 .section-step-1 .graphics,
 .section-step-1 .bottom
@@ -533,13 +533,15 @@ export default {
 
 .step-3
   grid-column span 4
+  margin-top var(--spacing-9)
 
 .section-step-3 .graphics
-  height 413px
+  height 218px
 
 .section-step-3 .graphics__item
   width 100%
-  height 100%
+  // height 100%
+  height 260px
 
 .section-step-3 .subtitle
   margin-top var(--spacing-7)
@@ -625,6 +627,22 @@ export default {
   width fit-content
 
 @media $breakpoint-medium
+  .step-1,
+  .step-2,
+  .step-3,
+  .step-4
+    &:before
+      content ""
+      position absolute
+      left -56px
+      bottom 15px
+      width 40px
+      height 1px
+      background var(--white)
+
+      .light-mode &
+        background var(--black)
+
   // Hero
   .graphics-brandmark
     grid-row 1
@@ -656,68 +674,20 @@ export default {
   .section-intro
     grid-column 4/ 12
 
-  // Step 1
-  .section-step-1 .top
-    grid-column 5/ 12
-
-  .section-step-1 .graphics
-    grid-column 1/ 6
-
-  .section-step-1 .bottom
-    grid-column 7/ 12
-
-  // Step 2 & Step 3
-  .step
-    transform rotate(-90deg)
-    position absolute
-    top 4%
-    left -2%
-
   // Step 2
   .left
-    grid-column 2/6
+    grid-column span 8
     position relative
-
-  // .step-2
-  //   &:before
-  //     content ""
-  //     position absolute
-  //     left -56px
-  //     bottom 15px
-  //     width 40px
-  //     height 1px
-  //     background var(--white)
-
-  //     .light-mode &
-  //       background var(--black)
 
   // Step 3
   .right
-    grid-column 7/13
+    grid-column span 8
     position relative
     margin-top 8.4375rem
 
   .step-3
-    grid-column 6
-
-    // TODO: where to position step 3?
-    // &:after
-    //   content ""
-    //   position absolute
-    //   right -56px
-    //   bottom 15px
-    //   width 40px
-    //   height 1px
-    //   background var(--white)
-
-    //   .light-mode &
-    //     background var(--black)
-
-  .section-step-3 .graphics__item
-    // width: 80%;
-    height: 70%;
-    // top: -20px;
-    position: absolute;
+    grid-column span 8
+    margin-top var(--spacing-10)
 
   // Step 4
   .section-step-4
@@ -726,30 +696,22 @@ export default {
     grid-template-columns 50% 50%
     grid-template-rows 1fr
     align-items center
-    grid-column span 12
+    grid-column span 8
 
   .section-step-4 .text
     display flex
     flex-direction column
     justify-content space-between
-    height 100%
 
   .section-step-4 .text .subtitle,
   .section-step-4 .text .warning-wrapper
     margin-top 0
 
-  .step-4
-    &:before
-      content ""
-      position absolute
-      left -56px
-      bottom 15px
-      width 40px
-      height 1px
-      background var(--white)
+  .section-step-4 .text .subtitle
+    margin-top var(--spacing-7)
 
-      .light-mode &
-        background var(--black)
+  .section-step-4 .text .warning-wrapper
+    margin-top var(--spacing-8)
 
   // Community
   .section-community
@@ -757,7 +719,6 @@ export default {
 
   .grid-wrapper
     grid-template-columns repeat(2, 1fr)
-    grid-column 1/span 8
     column-gap var(--spacing-7)
     row-gap var(--spacing-9)
 
@@ -776,5 +737,40 @@ export default {
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
+    grid-column span 12
+
+@media $breakpoint-xl
+  // Step 1
+  .section-step-1 .top
+    grid-column 5/ 12
+
+  .section-step-1 .graphics
+    grid-column 1/ 6
+
+  .section-step-1 .bottom
+    grid-column 7/ 12
+
+  // Step 2
+  .left
+    grid-column 2/6
+
+  // Step 2 & Step 3
+  .step
+    transform rotate(-90deg)
+    position absolute
+    top 4%
+    left -2%
+
+  // Step 3
+  .right
+    grid-column 7/13
+    margin-top 16.75rem
+
+  .step-3
+    grid-column 6
+    margin-top 16.75rem
+
+  // Step 4
+  .section-step-4
     grid-column span 12
 </style>
