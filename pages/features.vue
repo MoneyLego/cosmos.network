@@ -22,10 +22,9 @@
                   the Cosmos Hub is set to play a leading role in the Interchain
                   by offering a wide array of vital services.
                 </div>
-                <!-- TODO: add url -->
                 <tm-button
-                  to-link="internal"
-                  to="/staking"
+                  to-link="external"
+                  href="https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf"
                   size="l"
                   variant="text"
                   class="btn"
@@ -104,9 +103,8 @@
             <div class="text">
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
               <div class="title">
-                <!-- TODO: add url -->
                 <nuxt-link
-                  to="/staking"
+                  to="/learn/faq/what-is-governance"
                   class="title tm-link tm-rf3 tm-bold tm-lh-title"
                 >
                   Voting <span class="tm-link-disclosure">-></span>
@@ -589,7 +587,7 @@ export default {
 .section-features .graphics,
 .section-features .span-7,
 .section-features .span-4
-  grid-column span 12
+  grid-column span 8
 
 .section-features .graphics
   display grid
@@ -599,7 +597,7 @@ export default {
     width auto
 
 .section-features .tiles
-  grid-column span 12
+  grid-column span 8
   position relative
   margin-top var(--spacing-10)
 
@@ -717,7 +715,7 @@ export default {
   display flex
   flex-direction column
   justify-content space-between
-  height 32.25rem
+  height auto
   position relative
 
 // Fees
@@ -737,6 +735,19 @@ export default {
 .section-fees .description .btn
   margin-top var(--spacing-6)
 
+@media $breakpoint-small
+  // Fees
+  .section-fees .graphics
+    grid-column 1/span 4
+    position relative
+
+    &__item
+      position absolute
+      top -150%
+      left -18vw
+      width unset
+      height unset
+
 @media $breakpoint-medium
   .bottom
     display grid
@@ -749,7 +760,7 @@ export default {
   // Hero
   .section-hero .text .title,
   .section-hero .text .split
-    grid-column 2/span 12
+    grid-column 2/span 8
 
   .section-hero .text .split
     display grid
@@ -765,7 +776,7 @@ export default {
 
   // Feature
   .section-features .graphics
-    grid-column 1/span 2
+    grid-column span 2
     display flex
     align-items center
     position relative
@@ -773,13 +784,13 @@ export default {
 
     &__item
       position absolute
-      left -10rem
+      left -8rem
 
   .section-features .text
-    grid-column 3/span 10
+    grid-column span 8
 
   .section-features .tiles .text
-    max-width 27.75rem
+    max-width 24.75rem
     z-index 1
 
   .section-features .span-7
@@ -787,27 +798,21 @@ export default {
     .row-2
       display grid
       grid-auto-flow column
-      grid-template-columns min-content 1fr
-      gap var(--spacing-7)
+      grid-template-columns 10rem auto
 
       .caption
         margin-top 0
 
-  .section-features .span-4
-    margin-top 0
-
-  .section-features .span-4 .caption
-    margin-top 0
-
   // Interchain staking
   .section-interchain-staking .text
-    grid-column 1/span 6
+    grid-column 1/5
+    height auto
 
   .section-interchain-staking .graphics
-    grid-column 8/ 13
+    grid-column 5/9
     display grid
     place-items center
-    max-height 32.25rem
+    height auto
 
     &__item
       width auto
@@ -818,19 +823,19 @@ export default {
     flex-direction row-reverse
 
   .section-amm .graphics
-    grid-column 1/span 5
+    grid-column 1/ 5
     position relative
 
   .section-amm .text
-    grid-column 7/ 13
+    grid-column 5/9
 
   // Gravity bridge
   .section-gravity-bridge .text
-    grid-column 1/span 7
+    grid-column 1/5
     position relative
 
   .section-gravity-bridge .graphics
-    grid-column 8/ 12
+    grid-column 5/9
     position relative
 
   // CNS
@@ -839,33 +844,61 @@ export default {
     gap 0
 
   // Fees
-  .section-fees .graphics
-    grid-column 1/span 4
-    position relative
-
-    &__item
-      position absolute
-      top -310%
-      left -18vw
-      width unset
-      height unset
-
   .section-fees .title
     grid-column 5/ 12
 
   .section-fees .description
     grid-column 6/ 10
 
-@media $breakpoint-large
-  // Feature
-  .section-features .span-7
-    grid-column 1/span 7
-    height auto
+@media $breakpoint-xl
+  // Hero
+  .section-hero .text .title,
+  .section-hero .text .split
+    grid-column 2/span 12
 
-  .section-features .span-4
-    grid-column 9/ 13
-    height auto
-    padding-top var(--spacing-7)
-    padding-right var(--spacing-7)
-    padding-bottom var(--spacing-7)
+  // CNS
+  .section-cns .left,
+  .section-cns .right
+    height 32.25rem
+
+  // AMM
+  .section-amm .graphics
+    grid-column 1/span 5
+
+  .section-amm .text
+    grid-column 7/ 13
+
+  // Gravity bridge
+  .section-gravity-bridge .text
+    grid-column 1/span 7
+
+  .section-gravity-bridge .graphics
+    grid-column 8/ 13
+
+  // Feature
+  .section-features .tiles
+    grid-column span 12
+    position relative
+    margin-top var(--spacing-10)
+
+  .section-features .tiles .span-7
+    grid-column 1/7
+
+  .section-features .tiles .span-4
+    grid-column 8/13
+    margin-top 0
+
+  .section-features .text
+    grid-column 3/span 10
+
+  .section-features .graphics__item
+    left -10rem
+
+  // Interchain staking
+  .section-interchain-staking .text
+    grid-column 1/span 6
+
+  .section-interchain-staking .graphics
+    grid-column 8/ 13
+    max-height 32.25rem
 </style>

@@ -16,7 +16,7 @@
       <graphics-staking-hero-light v-else class="graphics" />
     </div>
 
-    <div class="tm-container tm-wrapper tm-grid-base">
+    <div class="tm-container tm-wrapper tm-section tm-grid-base">
       <div class="section-intro">
         <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -430,7 +430,6 @@ export default {
   margin-top var(--spacing-7)
 
 .subheading-item
-  grid-column 2/span 12
   margin-top var(--spacing-9)
   position relative
   display flex
@@ -525,6 +524,7 @@ export default {
 
   .pie-item + .pie-item
     margin-top 0
+    margin-left var(--spacing-7)
 
   .pie
     width 18.75rem
@@ -532,7 +532,7 @@ export default {
 
   // Rewards origin
   .section-rewards-origin .graphics
-    grid-column 1/span 6
+    grid-column 1/ 6
     position relative
 
     &__item
@@ -543,7 +543,7 @@ export default {
       margin-left -25%
 
   .section-rewards-origin .text
-    grid-column 7/ 12
+    grid-column span 8
     margin-top var(--spacing-11)
 
   .subheading-item
@@ -554,10 +554,10 @@ export default {
 
   // Staking safely
   .section-staking-safely .text
-    grid-column 2/ 7
+    grid-column 1/ 7
 
   .section-staking-safely .graphics
-    grid-column 8/ 12
+    grid-column 7/ 9
 
     &__item
       position absolute
@@ -572,4 +572,25 @@ export default {
   .pie
     width 27.9375rem
     height 27.9375rem
+
+  // Rewards origin
+  .subheading-item
+    margin-left 6.3125rem
+
+@media $breakpoint-xl
+  // Staking safely
+  .section-staking-safely .text
+    grid-column 2/ 7
+
+  .section-staking-safely .graphics
+    grid-column 8/ 12
+
+    &__item
+      position absolute
+      width 100%
+      height 100%
+
+  // Rewards origin
+  .section-rewards-origin .text
+    grid-column 7/ 12
 </style>

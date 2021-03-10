@@ -11,6 +11,6 @@ tags:
   - blockchain
 ---
 
-Cosmos is a network of interconnected blockchains. Cosmosa also designates the set of tools and protocols that facilitate the development, deployment and interconnection of blockchains.
+Cosmos is a network of interconnected blockchains. Cosmos also designates the set of tools and protocols that facilitate the development, deployment and interconnection of blockchains.
 
 > Read about Cosmos [https://cosmos.network/intro](https://cosmos.network/intro)
