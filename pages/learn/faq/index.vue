@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="section-hero">
-      <div class="tm-wrapper tm-section tm-grid-base">
+      <div class="tm-wrapper tm-container tm-section tm-grid-base">
         <div class="text">
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Frequently asked questions
@@ -145,7 +145,7 @@ export default {
 @media $breakpoint-medium
   // Hero
   .section-hero .text
-    grid-column 6/ 12
+    grid-column span 8
 
   .section-hero .graphics
     position absolute
@@ -154,6 +154,15 @@ export default {
     height auto
     width auto
     margin 0
+
+  // Content
+  .content
+    grid-column span 8
+
+@media $breakpoint-xl
+  // Hero
+  .section-hero .text
+    grid-column 6/ 12
 
   // Content
   .content

@@ -873,7 +873,7 @@ export default {
     grid-column 1/span 7
 
   .section-gravity-bridge .graphics
-    grid-column 8/ 12
+    grid-column 8/ 13
 
   // Feature
   .section-features .tiles

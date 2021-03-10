@@ -80,7 +80,8 @@
               size="l"
               variant="text"
               class="btn"
-              >Browse exchanges <span class="icon__right">↗️</span></tm-button
+              >Browse exchanges
+              <span class="icon__right">&#8599;</span></tm-button
             >
             <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
               messari.io is an unvalidated third-party listing exchanges. We are
@@ -471,8 +472,8 @@ export default {
 
 // Step
 .step
-  grid-column span 4
   margin-bottom var(--spacing-5)
+  position relative
 
 // Step 1
 .section-step-1
@@ -506,6 +507,9 @@ export default {
   color var(--gray-600)
 
 // Step 2
+.step-2
+  grid-column span 4
+
 .section-step-2 .title
   position relative
   z-index 1
@@ -540,7 +544,6 @@ export default {
 
 .section-step-3 .graphics__item
   width 100%
-  // height 100%
   height 260px
 
 .section-step-3 .subtitle
@@ -631,6 +634,8 @@ export default {
   .step-2,
   .step-3,
   .step-4
+    grid-column span 8
+
     &:before
       content ""
       position absolute
@@ -674,19 +679,16 @@ export default {
   .section-intro
     grid-column 4/ 12
 
-  // Step 2
-  .left
-    grid-column span 8
-    position relative
-
-  // Step 3
+  // Step 2, 3
+  .left,
   .right
     grid-column span 8
     position relative
+
+  .right
     margin-top 8.4375rem
 
   .step-3
-    grid-column span 8
     margin-top var(--spacing-10)
 
   // Step 4
@@ -715,10 +717,10 @@ export default {
 
   // Community
   .section-community
-    grid-column span 10
+    grid-column 1/10
 
   .grid-wrapper
-    grid-template-columns repeat(2, 1fr)
+    grid-template-columns repeat(auto-fit, minmax(23.25rem, 1fr))
     column-gap var(--spacing-7)
     row-gap var(--spacing-9)
 
@@ -740,6 +742,12 @@ export default {
     grid-column span 12
 
 @media $breakpoint-xl
+  .step
+    transform rotate(-90deg)
+    position absolute
+    top 4%
+    left -2%
+
   // Step 1
   .section-step-1 .top
     grid-column 5/ 12
@@ -750,18 +758,13 @@ export default {
   .section-step-1 .bottom
     grid-column 7/ 12
 
-  // Step 2
+  // Step 2, 3
   .left
     grid-column 2/6
 
-  // Step 2 & Step 3
-  .step
-    transform rotate(-90deg)
-    position absolute
-    top 4%
-    left -2%
+  .step-2
+    grid-column 1
 
-  // Step 3
   .right
     grid-column 7/13
     margin-top 16.75rem
