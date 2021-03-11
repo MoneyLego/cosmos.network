@@ -154,19 +154,9 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                class="tm-link tm-link-underline-hover"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Chainapsis</a
-              >,
-              <a
-                href="#"
-                class="tm-link tm-link-underline-hover"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Interchain GmbH</a
+              <tm-link href="https://chainapsis.com">Chainapsis</tm-link>,
+              <tm-link href="https://interchain.berlin/"
+                >Interchain GmbH</tm-link
               >
             </div>
           </div>
@@ -222,20 +212,8 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >B-Harvest</a
-              >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Tendermint</a
-              >
+              <tm-link href="https://bharvest.io">B-Harvest</tm-link>,
+              <tm-link href="https://tendermint.com">Tendermint</tm-link>
             </div>
           </div>
         </div>
@@ -290,19 +268,9 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Althea</a
-              >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Interchain Foundation</a
+              <tm-link href="https://althea.net">Althea</tm-link>,
+              <tm-link href="https://interchain.io"
+                >Interchain Foundation</tm-link
               >
             </div>
           </div>
@@ -371,27 +339,12 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Informal Systems</a
+              <tm-link href="https://informal.systems">Informal Systems</tm-link
               >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Interchain Foundation</a
+              <tm-link href="https://interchain.io"
+                >Interchain Foundation</tm-link
               >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Tendermint</a
-              >
+              <tm-link href="http://tendermint.com">Tendermint</tm-link>
             </div>
           </div>
         </div>
@@ -442,19 +395,9 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Tendermint</a
-              >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Interchain Foundation</a
+              <tm-link href="http://tendermint.com">Tendermint</tm-link>,
+              <tm-link href="https://interchain.io"
+                >Interchain Foundation</tm-link
               >
             </div>
           </div>
@@ -501,19 +444,9 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Chorus One</a
-              >,
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-link tm-link-underline-hover"
-                >Interchain Foundation</a
+              <tm-link href="https://chorus.one">Chorus One</tm-link>,
+              <tm-link href="https://interchain.io"
+                >Interchain Foundation</tm-link
               >
             </div>
           </div>
