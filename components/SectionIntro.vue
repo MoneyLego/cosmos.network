@@ -241,10 +241,35 @@
       </div>
     </div>
 
+    <div class="section-ecosystem tm-container tm-wrapper">
+      <div class="bg-sunrise-container">
+        <graphics-bg-sunrise class="bg-sunrise" flip />
+      </div>
+      <graphics-ecosystem-bg class="bg" />
+      <h2 class="title tm-rf5 tm-lh-title tm-bold">
+        <span>Trusted by 200+</span> <span>leading crypto companies</span>
+      </h2>
+      <div class="btn-group">
+        <tm-button
+          to-link="external"
+          href="cosmos.network/ecosystem"
+          size="l"
+          variant="outlined"
+          >Explore Cosmos<span class="icon__right">-></span></tm-button
+        >
+      </div>
+      <div class="ecosystem-logos">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+      <graphics-ecosystem-fg class="fg" />
+    </div>
+
     <div
       class="section-developer tm-section tm-container tm-wrapper tm-grid-base"
     >
-      <div class="left">
+      <div class="tm-grid-base">
         <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
           Developers
         </div>
@@ -255,36 +280,6 @@
           Developers in Cosmos are the pioneers of the new era of blockchain
           technology. Join a fast-growing token economy and build upon a secure
           and stable foundation.
-        </div>
-        <div class="row">
-          <tm-button
-            to-link="external"
-            href="http://hub.cosmos.network"
-            size="l"
-            color="var(--white)"
-            background-color="var(--black)"
-            class="btn"
-            >View the docs <span class="icon__right">&#8599;</span></tm-button
-          >
-        </div>
-      </div>
-      <div class="right">
-        <!-- GRAPHICS -->
-        <div class="nav">Build a chain</div>
-        <div class="slider">
-          <div class="title">
-            Build your own decentralized community, powered by your own
-            blockchain.
-          </div>
-          <tm-button
-            to-link="external"
-            href="http://hub.cosmos.network"
-            size="l"
-            variant="text"
-            class="btn"
-            >Get started in minutes
-            <span class="icon__right">&#8594;</span></tm-button
-          >
         </div>
       </div>
     </div>
@@ -681,18 +676,19 @@ export default {
     display flex
     flex-direction column
     justify-content space-between
-    gap var(--spacing-9) 0
     margin-bottom var(--grid-gap-x)
 
   .light-mode & .card
     background var(--white)
 
+  .graphics,
+  .card__tagline,
+  .card__footnote
+    margin-top var(--spacing-9)
+
   .card__tagline
     position relative
-    max-width 8em
-
-  .card__footnote
-    margin-top 0
+    max-width 11em
 
   .graphics
     position relative
@@ -779,6 +775,83 @@ export default {
     max-width 4.5em
     margin-left var(--spacing-6)
 
+// Ecosystem
+.section-ecosystem
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  padding-top var(--spacing-13)
+  padding-bottom var(--spacing-13)
+
+  .bg-sunrise-container
+    top 0
+
+  .bg
+    top 0
+    min-width 38rem
+
+  .fg
+    top 24%
+    min-width 38rem
+
+  .title
+    margin-top var(--spacing-11)
+    max-width 13em
+    center()
+    span
+      display block
+
+  .btn-group
+    position relative
+    z-index 1
+    center()
+
+.ecosystem-logos
+  margin-top var(--spacing-10)
+  transform rotate(-9deg)
+  width 200%
+  overflow hidden
+
+  &:before,
+  &:after
+    position absolute
+    content ""
+    height 100%
+    width 11%
+    top 0
+    z-index 1
+
+  &:before
+    background linear-gradient(to right, var(--black), var(--transparent))
+    left 0
+
+  &:after
+    background linear-gradient(to right, var(--transparent), var(--black))
+    right 0
+
+  .row
+    height 3.5rem
+    width 126rem * 2.5
+    background url('~/assets/images/ecosystem-logos-row.png') repeat-x
+    background-size contain
+    margin-top var(--spacing-4)
+    opacity 0.4
+    // animation logosMarquee 10s linear infinite
+
+  .row:nth-child(1)
+    opacity 0.15
+    animation-duration 12s
+  .row:nth-child(2)
+    opacity 0.27
+    animation-duration 11s
+
+@keyframes logosMarquee
+  0%
+    transform translateX(-40%)
+  100%
+    transform translateX(0%)
+
 // Dev features
 .section-dev-features
   grid-column span 12
@@ -857,7 +930,7 @@ export default {
   // Features > DEX
   .card-dex .graphics
     height 0
-    margin-top calc(-1 * var(--spacing-9))
+    margin-top 0
 
   // Tech
   .section-tech
@@ -869,7 +942,7 @@ export default {
 
     .title,
     .subtitle
-      grid-column 2 / span 3
+      grid-column 2 / -1
 
   // Tech > Stats
   .stat
@@ -910,19 +983,7 @@ export default {
   .section-features
     .title,
     .cta
-      grid-column 3 / -1
-
-  // Tech
-  .section-tech
-    .tm-crosshair
-      margin-top -6rem
-
-    .title,
-    .subtitle
-      grid-column span 4
-
-    .subtitle
-      margin-top auto
+      grid-column 2 / -1
 
   // Tech > Stats
   .stat
@@ -960,6 +1021,21 @@ export default {
   .card-accounts
     grid-row 2 / 5
 
+  .section-features .card__tagline
+    max-width 8em
+
+  // Tech
+  .section-tech
+    .tm-crosshair
+      margin-top -6rem
+
+    .title,
+    .subtitle
+      grid-column span 4
+
+    .subtitle
+      margin-top auto
+
   // Dev features
   .section-dev-features
     .cards-wrapper
@@ -987,7 +1063,7 @@ export default {
     grid-column 1 / span 5
     grid-row 2 / 4
 
-  // Features > DEX
+  // Featur es > DEX
   // Features > Pools & Bridges
   .card-dex
   .cards-features-bottom

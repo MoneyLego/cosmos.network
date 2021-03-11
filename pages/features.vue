@@ -1,61 +1,59 @@
 <template>
   <main>
     <!-- Hero -->
-    <div class="section-hero tm-section">
-      <div class="tm-wrapper">
-        <div class="tm-section tm-container">
-          <div class="text tm-grid-base">
-            <div class="title tm-rf6 tm-bold tm-lh-title">
-              The next wave of interchain infrastructure, commerce, and culture.
+    <div class="section-hero">
+      <div class="tm-wrapper tm-section tm-container tm-grid-base">
+        <h1 class="title tm-rf6 tm-bold tm-lh-title">
+          The next wave of interchain infrastructure, commerce, and culture.
+        </h1>
+        <div class="split">
+          <div class="left">
+            <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
+              The Cosmos Hub pioneered a new era in the blockchain space by
+              being the first public proof-of-stake blockchain built on top of a
+              Byzantine Fault Tolerant consensus engine.
             </div>
-            <div class="split">
-              <div class="left">
-                <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
-                  The Cosmos Hub pioneered a new era in the blockchain space by
-                  being the first public proof-of-stake blockchain built on top
-                  of a Byzantine Fault Tolerant consensus engine.
-                </div>
-              </div>
-              <div class="right">
-                <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
-                  Yet, this was only the beginning – two years after its launch,
-                  the Cosmos Hub is set to play a leading role in the Interchain
-                  by offering a wide array of vital services.
-                </div>
-                <tm-button
-                  to-link="external"
-                  href="https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf"
-                  size="l"
-                  variant="text"
-                  class="btn"
-                  >The Hub’s vision
-                  <span class="icon__right">↗</span></tm-button
-                >
-              </div>
+          </div>
+          <div class="right">
+            <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
+              Yet, this was only the beginning – two years after its launch, the
+              Cosmos Hub is set to play a leading role in the Interchain by
+              offering a wide array of vital services.
             </div>
+            <tm-button
+              to-link="external"
+              href="https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf"
+              size="l"
+              variant="text"
+              class="btn"
+              >The Hub’s vision <span class="icon__right">↗</span></tm-button
+            >
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="tm-wrapper tm-section tm-container">
-      <graphics-features-hero class="graphics" />
-      <div class="section-label">
-        <div class="label tm-rf1 tm-lh-copy">Securing trade</div>
-        <div class="label tm-rf1 tm-lh-copy">Service marketplace</div>
-        <div class="label tm-rf1 tm-lh-copy">Promoting exchange</div>
-        <div class="label tm-rf1 tm-lh-copy">Facilitating discovery</div>
+      <div class="hero-graphics">
+        <div class="section-label">
+          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
+            Securing trade
+          </div>
+          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
+            Service marketplace
+          </div>
+          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
+            Promoting exchange
+          </div>
+          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
+            Facilitating discovery
+          </div>
+        </div>
+        <graphics-features-hero class="graphics" />
       </div>
     </div>
 
     <!-- Features -->
-    <div
-      class="tm-section tm-container tm-wrapper tm-grid-base section-features"
-    >
+    <div class="tm-container tm-wrapper tm-grid-base section-features">
       <div class="text">
-        <div class="title tm-rf5 tm-bold tm-lh-title">
-          Cutting-edge Features.
-        </div>
+        <h2 class="title tm-rf5 tm-bold tm-lh-title">Cutting-edge features.</h2>
       </div>
       <div class="tiles tm-grid-base">
         <div class="span-7">
@@ -67,17 +65,19 @@
               />
               <graphics-features-staking-light v-else class="graphics__item" />
             </div>
-            <div class="text">
+            <div class="feature-text">
               <div class="caption tm-rf0 tm-lh-title">
                 Capital Formation · Live
               </div>
-              <nuxt-link
-                to="/staking"
-                class="title tm-link tm-rf3 tm-bold tm-lh-title"
-              >
-                Staking <span class="tm-link-disclosure">-></span>
-              </nuxt-link>
-              <div class="desc tm-rf0 tm-lh-copy">
+              <h3 class="title">
+                <nuxt-link
+                  to="/staking"
+                  class="tm-link tm-link-disclosure tm-rf3 tm-bold tm-lh-title"
+                >
+                  Staking
+                </nuxt-link>
+              </h3>
+              <div class="desc tm-rf0 tm-lh-copy tm-measure-narrow">
                 Built on top of the
                 <a
                   href="https://tendermint.com/core"
@@ -100,24 +100,24 @@
               />
               <graphics-features-voting-light v-else class="graphics__item" />
             </div>
-            <div class="text">
+            <div class="feature-text">
               <div class="caption tm-rf0 tm-lh-title">Governance · Live</div>
-              <div class="title">
+              <h3 class="title">
                 <nuxt-link
                   to="/learn/faq/what-is-governance"
-                  class="title tm-link tm-rf3 tm-bold tm-lh-title"
+                  class="tm-link tm-link-disclosure tm-rf3 tm-bold tm-lh-title"
                 >
-                  Voting <span class="tm-link-disclosure">-></span>
+                  Voting
                 </nuxt-link>
-              </div>
-              <div class="desc tm-rf0 tm-lh-copy">
+              </h3>
+              <div class="desc tm-rf0 tm-lh-copy tm-measure-narrow">
                 Staking ATOMs gives rights to participate in the open governance
                 process, which governs the evolution of the network.
               </div>
             </div>
           </div>
         </div>
-        <div class="span-4">
+        <div class="span-4 feature-text">
           <div class="top">
             <span class="ne-accent"></span>
             <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
@@ -125,11 +125,14 @@
           <div class="mid">
             <a
               href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
-              class="title tm-link tm-rf3 tm-bold tm-lh-title"
+              class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+              rel="noreferrer noopener"
+              target="_blank"
+              >Interchain Accounts</a
             >
-              Interchain Accounts <span class="tm-link-disclosure">↗</span>
-            </a>
-            <div class="desc tm-rf0 tm-lh-copy">
+            <div
+              class="desc tm-rf0 tm-lh-copy tm-measure tm-measure-narrow-l-up"
+            >
               Interchain Accounts are the accounts of the IBC-enabled world.
               Essentially, they allow blockchains to securely control accounts
               on other chains over IBC. With this feature, users will be able to
@@ -151,277 +154,371 @@
               </div>
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-              Chainapsis, Interchain GmbH
+              <a
+                href="#"
+                class="tm-link tm-link-underline-hover"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Chainapsis</a
+              >,
+              <a
+                href="#"
+                class="tm-link tm-link-underline-hover"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Interchain GmbH</a
+              >
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEX -->
+    <div class="tm-container tm-wrapper section-dex section-feature">
+      <div class="tm-grid-base">
+        <span class="ne-accent ne-accent-stacked"></span>
+        <span class="horizontal-line"></span>
+        <figure class="graphics">
+          <div class="graphics__item">
+            <graphics-coin-stack />
+          </div>
+        </figure>
+        <div class="feature-text">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Capital Formation · Q2 2021
+            </div>
+          </div>
+          <div class="mid">
+            <div class="title">
+              <a
+                href="https://github.com/tendermint/liquidity#liquidity-module"
+                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+                rel="noreferrer noopener"
+                target="_blank"
+                >Gravity DEX</a
+              >
+            </div>
+            <div class="desc tm-rf0 tm-lh-copy tm-measure">
+              The Cosmos Hub’s Gravity DEX will enable users to seamlessly swap
+              digital assets coming from all over the interchain. This service
+              improves on existing designs by combining AMM features (like that
+              of Uniswap) with an orderbook-based model, providing a richer and
+              more efficient trading experience.
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/b-harvest.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >B-Harvest</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Tendermint</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gravity bridge -->
+    <div class="tm-container tm-wrapper section-gravity-bridge section-feature">
+      <div class="tm-grid-base">
+        <span class="ne-accent ne-accent-stacked"></span>
+        <div class="graphics">
+          <!-- GRAPHICS -->
+          <graphics-features-gravity-bridge class="graphics__item" />
+        </div>
+        <div class="feature-text">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Capital Formation · 2021
+            </div>
+          </div>
+          <div class="mid">
+            <h3 class="title">
+              <a
+                href="https://blog.althea.net/gravity-bridge"
+                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Gravity Bridge
+              </a>
+            </h3>
+            <div class="desc tm-rf0 tm-lh-copy tm-measure">
+              Backed by billions of dollars of Atoms staked on the Cosmos Hub,
+              the Gravity Bridge will be the most secure, efficient, and
+              decentralized cross chain bridge to Ethereum. It will enable
+              Cosmos assets to flow into the Ethereum ecosystem as ERC-20 tokens
+              and, conversely, native ERC-20 tokens to flow in the Cosmos
+              ecosystem.
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/althea.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Althea</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Interchain Foundation</a
+              >
+            </div>
+          </div>
+          <span class="horizontal-line"></span>
         </div>
       </div>
     </div>
 
     <!-- Interchain staking -->
     <div
-      class="tm-container tm-wrapper tm-grid-base section-interchain-staking"
+      class="tm-container tm-wrapper section-interchain-staking section-feature"
     >
-      <div class="text">
-        <div class="top">
-          <div class="caption tm-rf0 tm-lh-title">
-            Shared Security · Late 2021
-          </div>
+      <div class="tm-grid-base">
+        <span class="ne-accent ne-accent-stacked"></span>
+        <div class="graphics">
+          <graphics-features-interchain-staking-dark
+            v-if="$nuxt.$colorMode.value === 'dark'"
+            class="graphics__item"
+          />
+          <graphics-features-interchain-staking-light
+            v-else
+            class="graphics__item"
+          />
         </div>
-        <div class="mid">
-          <div class="title tm-rf3 tm-bold tm-lh-title">
-            <tm-button
-              to-link="external"
-              href="https://github.com/informalsystems/cross-chain-validation/blob/2b7e5ddebd10c9eea743989ca3fbcba990db4987/spec/valset-update-protocol.md"
-              size="l"
-              variant="text"
-              class="btn tm-rf3 tm-bold tm-lh-title"
-              >Interchain Staking <span class="icon__right">↗</span></tm-button
-            >
-          </div>
-          <div class="desc tm-rf0 tm-lh-copy">
-            Staked ATOMs will be able to secure more than just the Cosmos Hub.
-            In practice, validators will be able to validate chains that request
-            it (called child-chains) on an opt-in basis, with their ATOM
-            delegation as collateral. In exchange for securing child-chains,
-            ATOM stakers will be rewarded with additional rewards. The more
-            child-chains, the more rewards!
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="avatar-list">
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/informal.svg" alt="icon" />
-              </div>
-            </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/icf.svg" alt="icon" />
-              </div>
-            </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/tendermint.svg" alt="icon" />
-              </div>
+        <div class="feature-text">
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Shared Security · Late 2021
             </div>
           </div>
-          <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-            Informal Systems, Interchain Foundation, Tendermint
+          <div class="mid">
+            <h3 class="title">
+              <a
+                href="https://github.com/informalsystems/cross-chain-validation/blob/2b7e5ddebd10c9eea743989ca3fbcba990db4987/spec/valset-update-protocol.md"
+                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+                rel="noreferrer noopener"
+                target="_blank"
+                >Interchain Staking</a
+              >
+            </h3>
+            <div class="desc tm-rf0 tm-lh-copy tm-measure">
+              Staked ATOMs will be able to secure more than just the Cosmos Hub.
+              In practice, validators will be able to validate chains that
+              request it (called child-chains) on an opt-in basis, with their
+              ATOM delegation as collateral. In exchange for securing
+              child-chains, ATOM stakers will be rewarded with additional
+              rewards. The more child-chains, the more rewards!
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/informal.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Informal Systems</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Interchain Foundation</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Tendermint</a
+              >
+            </div>
           </div>
         </div>
         <span class="horizontal-line"></span>
       </div>
-      <div class="graphics">
-        <span class="ne-accent"></span>
-        <graphics-features-interchain-staking-dark
-          v-if="$nuxt.$colorMode.value === 'dark'"
-          class="graphics__item"
-        />
-        <graphics-features-interchain-staking-light
-          v-else
-          class="graphics__item"
-        />
-        <span class="se-accent"></span>
-      </div>
     </div>
 
-    <!-- AMM -->
-    <div class="tm-container tm-wrapper tm-grid-base section-amm">
-      <div class="graphics">
-        <graphics-features-amm-dark
-          v-if="$nuxt.$colorMode.value === 'dark'"
-          class="graphics__item"
-        />
-        <graphics-features-amm-light v-else class="graphics__item" />
-        <span class="horizontal-line"></span>
-      </div>
-      <div class="text">
-        <span class="ne-accent"></span>
-        <div class="top">
-          <div class="caption tm-rf0 tm-lh-title">
-            Capital Formation · Q2 2021
-          </div>
-        </div>
-        <div class="mid">
-          <div class="title">
-            <tm-button
-              to-link="external"
-              href="https://github.com/tendermint/liquidity#liquidity-module"
-              size="l"
-              variant="text"
-              class="btn tm-rf3 tm-bold tm-lh-title"
-              >Gravity DEX <span class="icon__right">↗</span></tm-button
-            >
-          </div>
-          <div class="desc tm-rf0 tm-lh-copy">
-            The Cosmos Hub’s Gravity DEX will enable users to seamlessly swap
-            digital assets coming from all over the interchain. This service
-            improves on existing designs by combining AMM features (like that of
-            Uniswap) with an orderbook-based model, providing a richer and more
-            efficient trading experience.
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="avatar-list">
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/b-harvest.svg" alt="icon" />
-              </div>
-            </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/tendermint.svg" alt="icon" />
-              </div>
+    <!-- CNS + Staking Derivatives -->
+    <div class="tm-container tm-wrapper tm-section section-features-last">
+      <div class="tm-grid-base">
+        <span class="ne-accent ne-accent-stacked"></span>
+        <div class="left feature-text section-feature">
+          <span class="horizontal-line"></span>
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Service Discovery · 2021
             </div>
           </div>
-          <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-            B-Harvest, Tendermint
-          </div>
-        </div>
-        <span class="se-accent"></span>
-      </div>
-    </div>
-
-    <!-- Gravity bridge -->
-    <div class="tm-container tm-wrapper tm-grid-base section-gravity-bridge">
-      <div class="text">
-        <div class="top">
-          <div class="caption tm-rf0 tm-lh-title">Capital Formation · 2021</div>
-        </div>
-        <div class="mid">
-          <div class="title">
-            <tm-button
-              to-link="external"
-              href="https://blog.althea.net/gravity-bridge"
-              size="l"
-              variant="text"
-              class="btn tm-rf3 tm-bold tm-lh-title"
-              >Gravity bridge<span class="icon__right">↗</span></tm-button
-            >
-          </div>
-          <div class="desc tm-rf0 tm-lh-copy">
-            Backed by billions of dollars of Atoms staked on the Cosmos Hub, the
-            Gravity Bridge will be the most secure, efficient, and decentralized
-            cross chain bridge to Ethereum. It will enable Cosmos assets to flow
-            into the Ethereum ecosystem as ERC-20 tokens and, conversely, native
-            ERC-20 tokens to flow in the Cosmos ecosystem.
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="avatar-list">
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/althea.svg" alt="icon" />
-              </div>
-            </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/icf.svg" alt="icon" />
-              </div>
+          <div class="mid">
+            <h3 class="title">
+              <a
+                href="https://github.com/tendermint/cns"
+                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+                rel="noreferrer noopener"
+                target="_blank"
+                >Chain Name Service</a
+              >
+            </h3>
+            <div class="desc tm-rf0 tm-lh-copy tm-measure">
+              Just like websites have domain names, blockchains will have chain
+              names. These chain names will be managed on the Cosmos Hub, which
+              will operate a Chain Name Service. They will make it much easier
+              for users of the Interchain to identify the chain(s) they want to
+              interact with.
             </div>
           </div>
-          <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-            Althea, Interchain Foundation
-          </div>
-        </div>
-        <span class="horizontal-line"></span>
-      </div>
-      <div class="graphics">
-        <!-- GRAPHICS -->
-        <graphics-features-gravity-bridge class="graphics__item" />
-      </div>
-    </div>
-
-    <!-- CNS -->
-    <div class="tm-container tm-wrapper tm-grid-base section-cns">
-      <div class="left">
-        <span class="sw-accent"></span>
-        <div class="top">
-          <div class="caption tm-rf0 tm-lh-title">Service Discovery · 2021</div>
-        </div>
-        <div class="mid">
-          <div class="title">
-            <tm-button
-              to-link="external"
-              href="https://github.com/tendermint/cns"
-              size="l"
-              variant="text"
-              class="btn tm-rf3 tm-bold tm-lh-title"
-              >Chain Name Service <span class="icon__right">↗</span></tm-button
-            >
-          </div>
-          <div class="desc tm-rf0 tm-lh-copy">
-            Just like websites have domain names, blockchains will have chain
-            names. These chain names will be managed on the Cosmos Hub, which
-            will operate a Chain Name Service. They will make it much easier for
-            users of the Interchain to identify the chain(s) they want to
-            interact with.
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="avatar-list">
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/tendermint.svg" alt="icon" />
+          <div class="bottom">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/tendermint.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
               </div>
             </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/icf.svg" alt="icon" />
-              </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Tendermint</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Interchain Foundation</a
+              >
             </div>
           </div>
-          <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-            Tendermint, Interchain Foundation
-          </div>
+          <span class="se-accent se-accent-stacked"></span>
         </div>
-        <span class="se-accent"></span>
-      </div>
-      <div class="right">
-        <span class="sw-accent"></span>
-        <div class="top">
-          <div class="caption tm-rf0 tm-lh-title">Capital Formation · 2022</div>
-        </div>
-        <div class="mid">
-          <div class="title tm-rf3 tm-bold tm-lh-title">
-            <tm-button
-              to-link="external"
-              href="https://github.com/ChorusOne/liquid-staking"
-              size="l"
-              variant="text"
-              class="btn tm-rf3 tm-bold tm-lh-title"
-              >Staking Derivatives <span class="icon__right">↗</span></tm-button
-            >
-          </div>
-          <div class="desc tm-rf0 tm-lh-copy">
-            Staking Derivatives will be an important primitive in the
-            cross-chain Defi space. At their core, staking derivatives are
-            claims against staked ATOMs. Just like staked ATOMs, staking
-            derivatives accrue staking rewards - but unlike staked ATOMs,
-            staking derivatives are liquid, meaning they can be transferred.
-            Since they represent staked ATOMs, staking derivatives are at risk
-            of being partially burnt if the underlying ATOMs get slashed.
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="avatar-list">
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/chorus-one.svg" alt="icon" />
-              </div>
-            </div>
-            <div class="overlap">
-              <div class="avatar-item">
-                <img src="~static/avatars/icf.svg" alt="icon" />
-              </div>
+        <div class="right feature-text section-feature">
+          <span class="sw-accent sw-accent-stacked"></span>
+          <div class="top">
+            <div class="caption tm-rf0 tm-lh-title">
+              Capital Formation · 2022
             </div>
           </div>
-          <div class="footnote tm-rf0 tm-lh-copy tm-medium">
-            Chorus One, Interchain Foundation
+          <div class="mid">
+            <h3 class="title">
+              <a
+                href="https://github.com/ChorusOne/liquid-staking"
+                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+                rel="noreferrer noopener"
+                target="_blank"
+                >Staking Derivatives</a
+              >
+            </h3>
+            <div class="desc tm-rf0 tm-lh-copy tm-measure">
+              Staking Derivatives will be an important primitive in the
+              cross-chain Defi space. At their core, staking derivatives are
+              claims against staked ATOMs. Just like staked ATOMs, staking
+              derivatives accrue staking rewards - but unlike staked ATOMs,
+              staking derivatives are liquid, meaning they can be transferred.
+              Since they represent staked ATOMs, staking derivatives are at risk
+              of being partially burnt if the underlying ATOMs get slashed.
+            </div>
           </div>
+          <div class="bottom">
+            <div class="avatar-list">
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/chorus-one.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="overlap">
+                <div class="avatar-item">
+                  <img src="~static/avatars/icf.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+            <div class="footnote tm-rf0 tm-lh-copy tm-medium">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Chorus One</a
+              >,
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="tm-link tm-link-underline-hover"
+                >Interchain Foundation</a
+              >
+            </div>
+          </div>
+          <span class="se-accent"></span>
         </div>
-        <span class="se-accent"></span>
       </div>
     </div>
 
@@ -475,17 +572,38 @@ export default {
   top 0
   right 0
 
+  &-stacked:before
+    content ""
+    angle-accent(se)
+    position absolute
+    bottom 100%
+    right -$px
+
 .sw-accent
   angle-accent(sw)
   position absolute
   bottom 0
-  left 0
+  left calc(-1 * var(--grid-gap-x))
+
+  &-stacked:before
+    content ""
+    angle-accent(se)
+    position absolute
+    right 100%
+    bottom -$px
 
 .se-accent
   angle-accent(se)
   position absolute
   bottom 0
   right 0
+
+  &-stacked:before
+    content ""
+    angle-accent(ne)
+    position absolute
+    top 100%
+    right -$px
 
 .horizontal-line
   display block
@@ -494,6 +612,15 @@ export default {
   position absolute
   bottom 0
   left 0
+
+.section-feature
+  margin-top var(--spacing-9)
+
+  .tm-grid-base
+    position relative
+
+  svg.graphics__item
+    height auto
 
 .bottom
   display block
@@ -515,6 +642,17 @@ export default {
   .light-mode &
     color var(--trans-gray-200)
 
+.feature-text
+  padding-top var(--spacing-8)
+  padding-bottom var(--spacing-8)
+
+.feature-text .mid,
+.feature-text .bottom
+  margin-top var(--spacing-9)
+
+.feature-text .desc
+  margin-top var(--spacing-5)
+
 .avatar-list
   display flex
 
@@ -531,63 +669,79 @@ export default {
   width 2rem
 
 // Hero
-.section-hero .text .title,
-.section-hero .text .split
+.section-hero .tm-section
+  padding-bottom 0
+
+.section-hero .title
+  max-width 12em
+
+.section-hero .title,
+.section-hero .split
   grid-column span 4
 
-.section-hero .text .split,
-.section-hero .text .split .right
+.section-hero .split,
+.section-hero .split .right
   margin-top var(--spacing-9)
 
-.section-hero .text .split .right .subtitle
+.section-hero .split .right .subtitle
   margin-bottom var(--spacing-6)
 
-.section-hero .text .split .subtitle
+.section-hero .split .subtitle
   color var(--white-800)
 
   .light-mode &
     color var(--black)
 
 // Graphics
+.hero-graphics
+  position relative
+  padding-top var(--spacing-8)
+
 .section-label
   display flex
   flex-direction row
   justify-content center
-  margin-top -38%
+  align-items stretch
+  center()
+  max-width 60rem
 
 .label + .label
-  margin-left var(--spacing-11)
+  margin-left 18%
 
 .label
   writing-mode vertical-rl
   transform rotate(-180deg)
   text-align right
+  padding-top var(--spacing-12)
+  padding-left var(--spacing-3)
+  position relative
 
   &:after
     content ""
     display block
-    height auto
     width 1px
-    background linear-gradient(180deg, var(--transparent) 16%, var(--white) 40%)
-    margin-right auto
-    margin-left auto
+    height 100%
+    position absolute
+    top 0
+    left 0
+    background linear-gradient(180deg, var(--transparent) 0%, var(--white) 100%)
 
 .label
   &:nth-child(1)
-    margin-top 11.25rem
+    top var(--spacing-12)
 
   &:nth-child(3)
-    margin-top 6rem
+    top var(--spacing-10)
 
   &:nth-child(4)
-    margin-top 19rem
+    top var(--spacing-13)
 
 // Feature
 .section-features .text,
 .section-features .graphics,
 .section-features .span-7,
 .section-features .span-4
-  grid-column span 8
+  grid-column 1/-1
 
 .section-features .graphics
   display grid
@@ -597,7 +751,7 @@ export default {
     width auto
 
 .section-features .tiles
-  grid-column span 8
+  grid-column 1/-1
   position relative
   margin-top var(--spacing-10)
 
@@ -605,19 +759,8 @@ export default {
   display flex
   flex-direction column
   justify-content space-between
-  height 38.3125rem
   position relative
   margin-top var(--spacing-10)
-
-.section-features .span-4 .caption
-  margin-top var(--spacing-7)
-
-.section-features .title
-  display block
-  margin-top var(--spacing-6)
-
-.section-features .desc
-  margin-top var(--spacing-5)
 
 .section-features .span-7 .desc
   color var(--white)
@@ -629,93 +772,108 @@ export default {
   .row-1,
   .row-2
     border-radius $border-radius-5
-    padding var(--spacing-8) var(--spacing-7)
+    padding-left var(--spacing-7)
+    padding-right var(--spacing-7)
     background #171717
 
     .light-mode &
       background linear-gradient(0deg, #FFFFFF, #FFFFFF)
 
-    .caption
-      margin-top var(--spacing-7)
-      color var(--white-500)
+  .title
+    margin-top var(--spacing-6)
 
-      .light-mode &
+  .caption
+    margin-top var(--spacing-7)
+    color var(--white-500)
+
+    .light-mode &
         color var(--trans-gray-600)
 
 .section-features .span-7 .row-2
   margin-top var(--spacing-7)
 
-// Interchain staking
-.section-interchain-staking .text
-  grid-column span 12
-  padding var(--spacing-8) var(--spacing-7)
+// DEX
+.section-dex .graphics
+  grid-column 1/-1
+  padding-top var(--spacing-7)
+  display flex
+  align-items center
+  justify-content center
+
+  &__item
+    margin-left 30%
+    flex 0 0 100%
+    max-width 28rem
+
+  .coins
+    transform rotateY(180deg)
+
+.section-dex .feature-text
+  grid-column 1/-1
   display flex
   flex-direction column
   justify-content space-between
-  height 32.25rem
   position relative
 
-.section-interchain-staking .graphics
-  grid-column span 12
-  position relative
-
-  &__item
-    width 100%
-    height auto
-
-// AMM
-.section-amm
-  display flex
-  flex-direction column-reverse
-
-.section-amm .graphics
-  grid-column span 12
-  position relative
-
-  &__item
-    width 100%
-    height 100%
-
-.section-amm .text
-  grid-column span 12
-  padding var(--spacing-7)
-  display flex
-  flex-direction column
-  justify-content space-between
-  height 32.25rem
-  position relative
+  .bottom
+    margin-top var(--spacing-9)
 
 // Gravity bridge
-.section-gravity-bridge .text
-  grid-column span 12
-  padding var(--spacing-7)
+.section-gravity-bridge .feature-text
+  grid-column 1/-1
   display flex
   flex-direction column
   justify-content space-between
-  height 32.25rem
   position relative
 
 .section-gravity-bridge .graphics
-  grid-column span 12
+  grid-column 1/-1
+  padding-top var(--spacing-7)
+  display flex
+  align-items flex-end
+  justify-content center
 
   &__item
-    width 100%
-    height 100%
+    flex 0 0 108%
+    margin-bottom -15%
+    min-width 30rem
 
-// CNS
-.section-cns
-  display grid
-  grid-template-columns auto
-  gap var(--spacing-7)
-  padding-bottom var(--spacing-10)
-
-.section-cns .left,
-.section-cns .right
-  padding var(--spacing-7)
+// Interchain staking
+.section-interchain-staking .feature-text
+  grid-column 1/-1
   display flex
   flex-direction column
   justify-content space-between
-  height auto
+  position relative
+
+.section-interchain-staking .graphics
+  grid-column 1/-1
+  display flex
+  align-items center
+  justify-content center
+  max-height 28rem
+
+  &__item
+    flex 0 0 240%
+    max-width 61rem
+    margin-top -13%
+    margin-bottom -49%
+
+// CNS + Staking Derivatives
+.section-features-last
+  padding-top 0
+
+  .tm-grid-base
+    display grid
+    grid-template-columns auto
+    gap 0 var(--spacing-7)
+    position relative
+
+.section-features-last .left,
+.section-features-last .right
+  display flex
+  flex-direction column
+  justify-content space-between
   position relative
 
 // Fees
@@ -748,6 +906,20 @@ export default {
       width unset
       height unset
 
+@media $breakpoint-medium-max
+  .section-features .span-7
+    .row-1 .graphics__item
+      margin-top -5.5rem
+      margin-bottom -5rem
+    .row-2 .graphics__item
+      margin-top -9.5rem
+      margin-bottom -11rem
+
+  // CNS + Staking Derivatives
+  .section-features-last
+    .sw-accent
+      display none
+
 @media $breakpoint-medium
   .bottom
     display grid
@@ -758,20 +930,19 @@ export default {
       margin-top 0
 
   // Hero
-  .section-hero .text .title,
-  .section-hero .text .split
-    grid-column 2/span 8
+  .section-hero .title,
+  .section-hero .split
+    grid-column 1/span 8
 
-  .section-hero .text .split
+  .section-hero .split
     display grid
     grid-template-columns auto auto
     gap var(--spacing-7)
     z-index 1
 
-  .section-hero .text .split .left,
-  .section-hero .text .split .right
+  .section-hero .split .left,
+  .section-hero .split .right
     grid-column unset
-    height 8.5rem
     margin-top 0
 
   // Feature
@@ -786,12 +957,8 @@ export default {
       position absolute
       left -8rem
 
-  .section-features .text
+  .section-features .feature-text
     grid-column span 8
-
-  .section-features .tiles .text
-    max-width 24.75rem
-    z-index 1
 
   .section-features .span-7
     .row-1,
@@ -803,45 +970,43 @@ export default {
       .caption
         margin-top 0
 
-  // Interchain staking
-  .section-interchain-staking .text
-    grid-column 1/5
-    height auto
-
-  .section-interchain-staking .graphics
-    grid-column 5/9
-    display grid
-    place-items center
-    height auto
-
-    &__item
-      width auto
-
-  // AMM
-  .section-amm
-    display grid
-    flex-direction row-reverse
-
-  .section-amm .graphics
+  // DEX
+  .section-dex .graphics
     grid-column 1/ 5
-    position relative
 
-  .section-amm .text
+  .section-dex .feature-text
     grid-column 5/9
+    padding-left 0
 
   // Gravity bridge
-  .section-gravity-bridge .text
+  .section-gravity-bridge .feature-text
     grid-column 1/5
+    grid-row 1
     position relative
 
   .section-gravity-bridge .graphics
     grid-column 5/9
-    position relative
 
-  // CNS
-  .section-cns
-    grid-template-columns auto auto
-    gap 0
+  // Interchain staking
+  .section-interchain-staking .feature-text
+    grid-column 5/9
+
+  .section-interchain-staking .graphics
+    grid-column 1/5
+    &__item
+      margin-left -13%
+
+  // CNS + Staking Derivatives
+  .section-features-last
+    .tm-grid-base
+      grid-template-columns auto auto
+
+    .left .mid,
+    .right .mid
+      margin-bottom auto
+
+    .left .se-accent
+      display none
 
   // Fees
   .section-fees .title
@@ -852,28 +1017,23 @@ export default {
 
 @media $breakpoint-xl
   // Hero
-  .section-hero .text .title,
-  .section-hero .text .split
-    grid-column 2/span 12
+  .section-hero .title,
+  .section-hero .split
+    grid-column 2/span 10
 
-  // CNS
-  .section-cns .left,
-  .section-cns .right
-    height 32.25rem
+  // DEX
+  .section-dex .graphics
+    grid-column 1/span 6
 
-  // AMM
-  .section-amm .graphics
-    grid-column 1/span 5
-
-  .section-amm .text
+  .section-dex .feature-text
     grid-column 7/ 13
 
   // Gravity bridge
-  .section-gravity-bridge .text
-    grid-column 1/span 7
+  .section-gravity-bridge .feature-text
+    grid-column 1 / span 6
 
   .section-gravity-bridge .graphics
-    grid-column 8/ 13
+    grid-column 7 / 13
 
   // Feature
   .section-features .tiles
@@ -882,23 +1042,23 @@ export default {
     margin-top var(--spacing-10)
 
   .section-features .tiles .span-7
-    grid-column 1/7
+    grid-column 1/8
 
   .section-features .tiles .span-4
-    grid-column 8/13
+    grid-column 9/13
     margin-top 0
+    padding-right var(--spacing-7)
 
-  .section-features .text
+  .section-features .feature-text
     grid-column 3/span 10
 
   .section-features .graphics__item
     left -10rem
 
   // Interchain staking
-  .section-interchain-staking .text
-    grid-column 1/span 6
+  .section-interchain-staking .feature-text
+    grid-column 7 /span 6
 
   .section-interchain-staking .graphics
-    grid-column 8/ 13
-    max-height 32.25rem
+    grid-column 1 / span 6
 </style>

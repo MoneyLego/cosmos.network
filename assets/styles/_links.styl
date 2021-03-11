@@ -6,16 +6,19 @@
 */
 
 .tm-link
+  color var(--link)
   cursor pointer
   text-decoration none
   transition all .2s $ease-out
   outline-color rgba(64, 179, 255, 0.92) // temp
+  word-break break-word
 
 .tm-link:link,
 .tm-link:visited
   transition all .2s $ease-out
 
 .tm-link:hover
+  color var(--link-hover)
   transition all .2s $ease-out, opacity .4s ease-out
   &.tm-link-underline-hover
     text-decoration underline
@@ -30,12 +33,35 @@
 
 
 /* Disclosure icons */
+.tm-link-disclosure,
+.tm-link-external
+  position relative
+
 .tm-link-disclosure
+  margin-right 1em
+
+.tm-link-external
+  margin-right 0.9em
+
+.tm-link-disclosure:after,
+.tm-link-external:after
+  position absolute
+  bottom .166em
+  padding-left .1875em
+  line-height 1
   transition transform .2s $ease-out
-  &:last-child
-    margin-left var(--spacing-1)
+
+.tm-link-external:after
+  content "\2197"
+  font-size: .75em;
+
+.tm-link-disclosure:after
+  content "\2192"
 
 .tm-link:hover,
 .tm-link:focus
-  .tm-link-disclosure
-    transform translate(50%, 50%)
+  &.tm-link-external:after
+    transform translate(10%, -10%)
+
+  &.tm-link-disclosure:after
+    transform translateX(10%)

@@ -115,8 +115,8 @@
                 href="https://hub.cosmos.network"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Documentation<span class="tm-link-disclosure">&#8599;</span></a
+                class="tm-rf-1 tm-medium tm-lh-title tm-link tm-link-external"
+                >Documentation</a
               >
             </li>
           </ul>
@@ -195,10 +195,8 @@
                   href="https://hub.cosmos.network"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="tm-rf0 tm-lh-title tm-link"
-                  >Documentation<span class="tm-link-disclosure"
-                    >&#8599;</span
-                  ></a
+                  class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                  >Documentation</a
                 >
               </li>
             </ul>
