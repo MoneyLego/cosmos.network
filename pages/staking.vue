@@ -203,7 +203,7 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/staking"
+          to="/learn/faq/what-are-the-risks-associated-with-staking"
           size="l"
           variant="text"
           class="btn"
@@ -239,8 +239,8 @@ export default {
 .crosshair
   position relative
   display block
-  height 24px
-  width 24px
+  height 1.5rem
+  width 1.5rem
   border-left 0.0625rem solid
 
   &::before,
