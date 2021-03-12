@@ -110,5 +110,9 @@ export default {
     grid-column 1/span 4
 
   .main
-    grid-column 5/ 11
+    grid-column 1/-1
+
+@media $breakpoint-xl
+  .main
+    grid-column 5/ span 8
 </style>
