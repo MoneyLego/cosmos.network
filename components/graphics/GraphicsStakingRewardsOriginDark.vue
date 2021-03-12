@@ -969,7 +969,7 @@
         gradientTransform="translate(594.5 225) rotate(-60.1799) scale(141.772)"
       >
         <stop offset="0.447917" stop-color="#CF36D2" stop-opacity="0.66" />
-        <stop offset="0.833333" stop-color="#171717" />
+        <stop offset="0.833333" stop-color="var(--gray-100)" />
       </radialGradient>
       <radialGradient
         id="paint5_radial-506464"

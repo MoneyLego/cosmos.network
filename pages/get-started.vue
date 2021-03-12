@@ -462,7 +462,7 @@ export default {
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
-  background-color #171717
+  background-color var(--gray-100)
 
   .light-mode &
     background-color var(--white)
@@ -576,7 +576,7 @@ export default {
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
   padding var(--spacing-6)
-  background-color #171717
+  background-color var(--gray-100)
 
   .light-mode &
     background-color var(--white)

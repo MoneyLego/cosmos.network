@@ -155,7 +155,7 @@
             </div>
             <div class="footnote tm-rf0 tm-lh-copy tm-medium">
               <tm-link href="https://chainapsis.com">Chainapsis</tm-link>,
-              <tm-link href="https://interchain.berlin/"
+              <tm-link href="https://interchain.berlin"
                 >Interchain GmbH</tm-link
               >
             </div>
@@ -707,7 +707,7 @@ export default {
     border-radius $border-radius-5
     padding-left var(--spacing-7)
     padding-right var(--spacing-7)
-    background #171717
+    background var(--gray-100)
 
     .light-mode &
       background linear-gradient(0deg, #FFFFFF, #FFFFFF)

@@ -38,7 +38,7 @@ export default {}
   hover-raise(-3px)
   box-shadow var(--elevation-4)
   color var(--white)
-  background #171717
+  background var(--gray-100)
   overflow hidden
 
   .light-mode &

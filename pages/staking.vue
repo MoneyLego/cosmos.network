@@ -1,19 +1,15 @@
 <template>
   <main>
     <div class="section-hero">
-      <div class="tm-wrapper tm-section tm-grid-base">
+      <div class="tm-container tm-wrapper tm-grid-base">
         <div class="text">
-          <div class="title tm-rf6 tm-bold tm-lh-title">Staking</div>
+          <div class="title tm-rf7 tm-bold tm-lh-title">Staking</div>
           <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
             Help secure the Cosmos Hub and earn rewards
           </div>
         </div>
       </div>
-      <graphics-staking-hero-dark
-        v-if="$nuxt.$colorMode.value === 'dark'"
-        class="graphics"
-      />
-      <graphics-staking-hero-light v-else class="graphics" />
+      <graphics-staking-hero class="graphics" />
     </div>
 
     <div class="tm-container tm-wrapper tm-section tm-grid-base">
@@ -25,52 +21,50 @@
           public blockchain.
         </div>
       </div>
-      <div class="cards-wrapper">
+      <div class="cards-wrapper tm-grid-base section">
         <div class="card-item">
           <span class="accent"></span>
           <div class="graphics">
-            <graphics-staking-1-dark
-              v-if="$nuxt.$colorMode.value === 'dark'"
-              class="graphics__item"
-            />
-            <graphics-staking-1-light v-else class="graphics__item" />
+            <graphics-staking-1 class="graphics__item" />
           </div>
-          <div class="title tm-rf3 tm-bold tm-lh-title">Secure the chain</div>
-          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            With ATOM, you have the superpower to contribute to the security and
-            governance of the Cosmos Hub.
+          <div class="text">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Secure<br />the chain
+            </div>
+            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              With ATOM, you have the superpower to contribute to the security
+              and governance of the Cosmos Hub.
+            </div>
           </div>
         </div>
         <div class="card-item">
           <span class="accent"></span>
           <div class="graphics">
-            <graphics-staking-2-dark
-              v-if="$nuxt.$colorMode.value === 'dark'"
-              class="graphics__item"
-            />
-            <graphics-staking-2-light v-else class="graphics__item" />
+            <graphics-staking-2 class="graphics__item" />
           </div>
-          <div class="title tm-rf3 tm-bold tm-lh-title">Earn rewards</div>
-          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            Select one or more validators of the Cosmos Hub and start earning
-            crypto assets.
+          <div class="text">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Earn<br />rewards
+            </div>
+            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              Select one or more validators of the Cosmos Hub and start earning
+              crypto assets.
+            </div>
           </div>
         </div>
         <div class="card-item">
           <span class="accent"></span>
           <div class="graphics">
-            <graphics-staking-3-dark
-              v-if="$nuxt.$colorMode.value === 'dark'"
-              class="graphics__item"
-            />
-            <graphics-staking-3-light v-else class="graphics__item" />
+            <graphics-staking-3 class="graphics__item" />
           </div>
-          <div class="title tm-rf3 tm-bold tm-lh-title">
-            Vote for the future
-          </div>
-          <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-            Staking ATOMs grants the right to vote on proposals and make
-            decisions on the future of the network.
+          <div class="text">
+            <div class="title tm-rf3 tm-bold tm-lh-title">
+              Vote for<br />the future
+            </div>
+            <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
+              Staking ATOMs grants the right to vote on proposals and make
+              decisions on the future of the network.
+            </div>
           </div>
         </div>
       </div>
@@ -98,45 +92,43 @@
         </div>
       </div>
     </div>
-    <div class="tm-container tm-wrapper">
-      <div class="pie-container">
-        <div class="pie-wrapper">
-          <div class="pie-item">
-            <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
-              if you stake
-            </div>
-            <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
-            <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
+    <div class="tm-container tm-wrapper section-pie">
+      <div class="pie-wrapper tm-wrapper tm-grid-base">
+        <div class="pie-item">
+          <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
+            if you stake
           </div>
-          <div class="pie-item">
-            <div class="pie">
-              <div class="text">
-                <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
-                  Your rewards
-                </div>
-                <div class="num tm-rf6 tm-bold tm-lh-title">873.26</div>
+          <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
+          <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
+        </div>
+        <div class="pie-item">
+          <div class="pie">
+            <div class="text">
+              <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
+                Your rewards
               </div>
-            </div>
-          </div>
-          <div class="pie-item">
-            <div class="percentage tm-rf2 tm-bold tm-lh-title">10.63%</div>
-            <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
-              commission
-            </div>
-            <div class="subtitle tm-rf-1 tm-lh-copy">
-              (Varies between validators)
+              <div class="num tm-rf5 tm-bold tm-lh-title">873.26</div>
             </div>
           </div>
         </div>
+        <div class="pie-item">
+          <div class="percentage tm-rf2 tm-bold tm-lh-title">10.63%</div>
+          <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
+            commission
+          </div>
+          <div class="subtitle tm-rf-1 tm-lh-copy">
+            (Varies between validators)
+          </div>
+        </div>
       </div>
-      <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
+      <div class="footnote tm-rf-1 tm-lh-copy tm-measure-narrow">
         * baseline inflation rate fluctuates based on the total amount of staked
         ATOMs in the network
       </div>
     </div>
 
     <div
-      class="section-rewards-origin tm-section tm-container tm-wrapper tm-grid-base"
+      class="section-rewards-origin tm-section tm-container tm-wrapper tm-grid-base section"
     >
       <div class="graphics">
         <graphics-staking-rewards-origin-dark
@@ -190,11 +182,13 @@
     </div>
 
     <div
-      class="section-staking-safely tm-section tm-container tm-wrapper tm-grid-base"
+      class="section-staking-safely tm-section tm-container tm-wrapper tm-grid-base section"
     >
       <div class="text">
-        <span class="accent"></span>
-        <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
+        <div class="top">
+          <span class="accent"></span>
+          <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
+        </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
           Staking ATOMs is not risk-free. When ATOM holders stake, they need to
           choose one or more validators to delegate to. However, if a validator
@@ -255,25 +249,29 @@ export default {
     top 50%
     left -53%
 
+.section
+  svg.graphics__item
+    height auto
+
 // Hero
 .section-hero .text
-  grid-column span 4
-  center()
+  grid-column 1/-1
   text-align center
+  center()
 
   .subtitle
     margin-top var(--spacing-6)
 
 .section-hero .graphics
-  grid-column span 12
+  grid-column 1/-1
   z-index 0
   width 100%
-  height 100%
   margin-top -7rem
+  height auto
 
 // Intro
 .section-intro
-  grid-column span 4
+  grid-column 1/-1
 
   .subtitle
     margin-top var(--spacing-7)
@@ -283,14 +281,13 @@ export default {
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 4
+  grid-column 1/-1
   margin-top var(--spacing-11)
 
 .card-item
   display flex
   flex-direction column
   justify-content space-evenly
-  height 33.9375rem
   position relative
 
 .card-item .accent
@@ -300,28 +297,33 @@ export default {
   right 0
 
 .card-item .graphics
-  height 20.1875rem
   display flex
   justify-content center
 
   &__item
     width 100%
-    height 100%
+    margin-left 8%
+    flex 0 0 121%
+    max-width 28rem
+    max-height 20rem
+
+.card-item .title
+  margin-bottom var(--spacing-5)
 
 .card-item .subtitle
-  margin-top var(--spacing-5)
   margin-bottom var(--spacing-7)
 
 // Rewards
 .section-rewards .span-4
-  grid-column span 4
+  grid-column 1/-1
+  align-self self-end
 
   .percentage
     margin-top var(--spacing-5)
     margin-bottom var(--spacing-5)
 
 .section-rewards .span-7
-  grid-column span 4
+  grid-column 1/-1
   margin-top var(--spacing-9)
   position relative
 
@@ -337,28 +339,21 @@ export default {
   .subtitle
     margin-top var(--spacing-7)
 
-.pie-container
-  grid-column span 12
-
 .pie-wrapper
-  padding var(--spacing-10)
   border-radius $border-radius-5
   box-shadow var(--elevation-4)
   align-items center
   text-align center
-  height fit-content
-  background #171717
-  display block
+  background var(--gray-100)
+  padding-top var(--spacing-7)
+  padding-bottom var(--spacing-7)
 
   .light-mode &
     background var(--white)
 
 .pie-item
   text-align left
-
-  &:nth-child(2)
-    display grid
-    place-items center
+  grid-column 1/-1
 
 .pie-item + .pie-item
   margin-top var(--spacing-9)
@@ -367,6 +362,10 @@ export default {
   .amount,
   .unit
     margin-top 1rem
+
+.pie-item .pie .text
+  .num
+    margin-top var(--spacing-6)
 
 .pie-item
   .title,
@@ -393,26 +392,21 @@ export default {
 
   .text
     transform inherit
-    display grid
-    gap var(--spacing-6)
 
 .footnote
-  grid-column 1/span 4
   margin-top var(--spacing-6)
   color var(--white-500)
-  max-width 24.375rem
 
   .light-mode &
     color var(--trans-gray-400)
 
 // Rewards origin
 .section-rewards-origin .graphics
-  grid-column span 4
+  grid-column 1/-1
   position relative
 
   &__item
     width 120%
-    height 100%
     margin-top -10%
 
 .section-rewards-origin .accent
@@ -422,7 +416,7 @@ export default {
   left 0
 
 .section-rewards-origin .text
-  grid-column span 4
+  grid-column 1/-1
   position relative
   padding var(--spacing-7)
 
@@ -443,9 +437,16 @@ export default {
 
 // Staking safely
 .section-staking-safely .text
-  grid-column span 4
-  padding var(--spacing-7)
+  grid-column 1/-1
   position relative
+
+.section-staking-safely .text .top
+  position relative
+  width fit-content
+
+.section-staking-safely .text .top .title
+  padding-top 2rem
+  padding-right 2rem
 
 .section-staking-safely .accent
   angle-accent(ne)
@@ -460,90 +461,58 @@ export default {
   margin-top var(--spacing-7)
 
 .section-staking-safely .graphics
-  grid-column span 4
+  grid-column 1/-1
   display grid
   place-items center
   position relative
 
   &__item
     width 100%
-    height auto
+
+@media $breakpoint-small
+  .pie-item
+    center()
 
 @media $breakpoint-medium
   // Hero
   .section-hero .text
-    grid-column 7
-    text-align left
-
-  .section-hero .graphics
-    z-index 0
-    margin-top -25rem
-    margin-bottom -10rem
-    width 80%
-    center()
-    display flex
-    justify-content center
+    margin-top var(--spacing-10)
 
   // Intro
-  .section-intro
-    grid-row 1
-    grid-column 2/span 7
-
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
-    grid-column span 12
-
-  .card-item .title
-    width 8.125rem
-
-  .card-item .title
-    width 10.625rem
 
   // Rewards
-  .section-rewards .span-4
-    grid-column 2/span 4
-    grid-row 1
-    margin-top var(--spacing-11)
-
-  .section-rewards  .span-7
-    grid-column 6/span 7
-    grid-row 1
-    margin-top var(--spacing-7)
+  .section-rewards .span-7
+    margin-top 0
 
   .section-rewards  .span-7 .subtitle
     margin-left var(--spacing-10)
 
-  .pie-container
-    grid-column span 16
-
   .pie-wrapper
-    display flex
-    flex-direction row
-    justify-content space-between
-    max-height 18.625rem
+    max-height unset
 
   .pie-item + .pie-item
     margin-top 0
-    margin-left var(--spacing-7)
+
+  .pie-item
+
+    &:nth-child(1)
+      grid-column 1/3
+
+    &:nth-child(2)
+      grid-column span 3
+
+    &:nth-child(3)
+      grid-column 7/9
 
   .pie
-    width 18.75rem
-    height 18.75rem
+    width 18rem
+    height 18rem
 
   // Rewards origin
-  .section-rewards-origin .graphics
-    grid-column 1/ 6
-    position relative
-
-    &__item
-      position absolute
-      width 220%
-      height 100%
-      margin-top -1%
-      margin-left -25%
-
   .section-rewards-origin .text
-    grid-column span 8
+    grid-column 1/-1
     margin-top var(--spacing-11)
 
   .subheading-item
@@ -554,43 +523,107 @@ export default {
 
   // Staking safely
   .section-staking-safely .text
-    grid-column 1/ 7
+    grid-column 1/span 4
 
   .section-staking-safely .graphics
-    grid-column 7/ 9
+    grid-column 5/span 4
 
     &__item
       position absolute
       width 100%
-      height 100%
 
 @media $breakpoint-large
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
 
-  .pie
-    width 27.9375rem
-    height 27.9375rem
-
   // Rewards origin
   .subheading-item
     margin-left 6.3125rem
 
 @media $breakpoint-xl
+  // Hero
+  .section-hero .text
+    grid-column 7/span 6
+    text-align left
+    margin-top var(--spacing-10)
+    margin-left unset
+    margin-right unset
+
+  .section-hero .graphics
+    z-index 0
+    margin-top -20rem
+    width 80%
+    center()
+    display flex
+    justify-content center
+
+  // Intro
+  .section-intro
+    grid-row 1
+    grid-column 2/span 11
+
+  // Rewards
+  .section-rewards .span-4
+    grid-column 2/span 4
+    grid-row 1
+
+  .section-rewards  .span-7
+    grid-column 6/span 7
+    grid-row 1
+    margin-top 0
+
+  .section-rewards  .span-7 .subtitle
+    margin-bottom var(--spacing-9)
+
+  .pie-wrapper
+    display flex
+    max-height 18.625rem
+
+  .section-pie
+    padding-bottom var(--spacing-10)
+
+  .pie
+    width 23.375rem
+    height 23.375rem
+
+  .pie-item
+    text-align left
+
+    &:nth-child(1)
+      grid-column 2/span 3
+
+    &:nth-child(2)
+      grid-column 5/span 4
+
+    &:nth-child(3)
+      grid-column 10/span 3
+
   // Staking safely
   .section-staking-safely .text
-    grid-column 2/ 7
+    grid-column 2/ span 7
+    grid-row 1
 
   .section-staking-safely .graphics
-    grid-column 8/ 12
+    grid-column 7/ span 6
+    grid-row 1
 
     &__item
       position absolute
       width 100%
-      height 100%
+      margin-bottom 5rem
 
   // Rewards origin
+  .section-rewards-origin .graphics
+    grid-column 1/ 7
+    position relative
+
+    &__item
+      position absolute
+      width 220%
+      margin-top -1%
+      margin-left -25%
+
   .section-rewards-origin .text
-    grid-column 7/ 12
+    grid-column 7/ span 6
 </style>

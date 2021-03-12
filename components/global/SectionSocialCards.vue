@@ -50,10 +50,10 @@ export default {}
   border-radius $border-radius-5
   hover-raise(-3px)
   color var(--white)
-  background-color #171717
+  background-color var(--gray-100)
 
   .light-mode &
-    color #171717
+    color var(--gray-100)
     background-color var(--white)
 
 .title
