@@ -147,14 +147,6 @@ export default {
   .section-hero .text
     grid-column span 8
 
-  .section-hero .graphics
-    position absolute
-    top 0
-    z-index 0
-    height auto
-    width auto
-    margin 0
-
   // Content
   .content
     grid-column span 8
@@ -163,6 +155,14 @@ export default {
   // Hero
   .section-hero .text
     grid-column 6/ 12
+
+  .section-hero .graphics
+    position absolute
+    top 0
+    z-index 0
+    height auto
+    width auto
+    margin 0
 
   // Content
   .content
