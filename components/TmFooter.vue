@@ -20,8 +20,8 @@
               href="https://hub.cosmos.network"
               target="_blank"
               rel="noreferrer noopener"
-              class="tm-link"
-              >Documentation<span class="tm-link-disclosure">&#8599;</span></a
+              class="tm-link tm-link-external"
+              >Documentation</a
             >
           </li>
           <li>&mdash;&mdash;&mdash;</li>
