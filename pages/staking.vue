@@ -439,6 +439,7 @@ export default {
 .section-staking-safely .text
   grid-column 1/-1
   position relative
+  z-index 1
 
 .section-staking-safely .text .top
   position relative
