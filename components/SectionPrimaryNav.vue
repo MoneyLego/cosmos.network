@@ -255,6 +255,7 @@ $navbar-mobile-menu = 200
     padding 0
   li
     list-style-type none
+    padding var(--spacing-7) var(--spacing-5)
   .logo
     display flex
     align-items center
@@ -275,7 +276,6 @@ $navbar-mobile-menu = 200
   .tm-link
     position relative
     display block
-    padding var(--spacing-7) var(--spacing-5)
     border-radius $border-radius-2
     // /* exact link will show the primary color for only the exact matching link */
   .tm-link.nuxt-link-exact-active
