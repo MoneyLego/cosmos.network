@@ -6,9 +6,7 @@
           <logo-cosmos-brandmark class="graphics-brandmark" />
           <graphics-get-started-hero-validator class="graphics-validator" />
           <div class="text tm-measure-wide">
-            <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
-              get started
-            </div>
+            <div class="header tm-rf0 tm-lh-title tm-overline">get started</div>
             <div class="title tm-rf6 tm-bold tm-lh-title">
               Stake ATOMs in four steps
             </div>
@@ -51,9 +49,9 @@
       </div>
     </div>
 
-    <div class="tm-wrapper top-space">
+    <div class="tm-wrapper top-gap">
       <div class="tm-container">
-        <div class="section-step-1 tm-grid-base">
+        <div class="section-step-1 tm-grid-base section">
           <div class="step step-1 tm-rf1 tm-medium tm-lh-title tm-overline">
             step 01
           </div>
@@ -63,7 +61,7 @@
             </div>
           </div>
           <div class="graphics">
-            <graphics-get-started-step-1 class="graphics__item" />
+            <graphics-coin-stack class="graphics__item" />
           </div>
           <div class="bottom">
             <p class="subtitle tm-rf1 tm-lh-copy tm-measure">
@@ -158,9 +156,9 @@
         <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
           step 02
         </div>
-        <div class="left section-step-2">
+        <div class="left section-step-2 section">
           <div class="graphics">
-            <graphics-get-started-step-2 class="graphics__item" />
+            <graphics-navigator-gem class="graphics__item" />
           </div>
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
             Transfer your ATOMs to a wallet.
@@ -181,7 +179,7 @@
         <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
           step 03
         </div>
-        <div class="right section-step-3">
+        <div class="right section-step-3 section">
           <div class="graphics">
             <graphics-get-started-step-3 class="graphics__item" />
           </div>
@@ -264,34 +262,32 @@
       </svg>
     </div>
 
-    <div class="tm-wrapper bot-space">
-      <div class="tm-container tm-grid-base">
-        <div class="section-step-4">
-          <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
-            step 04
+    <div class="tm-wrapper bottom-gap">
+      <div class="tm-container tm-grid-base section-step-4 section">
+        <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
+          step 04
+        </div>
+        <div class="graphics">
+          <graphics-get-started-lock-atoms class="graphics__item" />
+        </div>
+        <div class="text">
+          <div class="title tm-rf5 tm-bold tm-lh-title">
+            Lock up and stake<br />your ATOMs.
           </div>
-          <div class="graphics">
-            <graphics-get-started-lock-atoms class="graphics__item" />
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            Using your wallet, send a simple transaction (often called “Stake”
+            or “Delegate”) to start staking. This locks up your ATOMs (i.e. you
+            can't transfer them) and enables the chosen validators to operate
+            the network.
           </div>
-          <div class="text">
-            <div class="title tm-rf5 tm-bold tm-lh-title">
-              Lock up and stake your ATOMs.
+          <div class="warning-wrapper">
+            <div class="icon">
+              <icon-warning />
             </div>
-            <div class="subtitle tm-rf1 tm-lh-copy">
-              Using your wallet, send a simple transaction (often called “Stake”
-              or “Delegate”) to start staking. This locks up your ATOMs (i.e.
-              you can't transfer them) and enables the chosen validators to
-              operate the network.
-            </div>
-            <div class="warning-wrapper">
-              <div class="icon">
-                <icon-warning />
-              </div>
-              <div class="text">
-                Staked ATOMs can be unlocked via your wallet by sending a
-                transaction (often called “Unstake” or “Undelegate”) and waiting
-                21 days.
-              </div>
+            <div class="text">
+              Staked ATOMs can be unlocked via your wallet by sending a
+              transaction (often called “Unstake” or “Undelegate”) and waiting
+              21 days.
             </div>
           </div>
         </div>
@@ -299,8 +295,8 @@
     </div>
 
     <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
-        <div class="section-community">
+      <div class="tm-section tm-container tm-grid-base section-graphics">
+        <div class="section-community section">
           <div class="text">
             <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
               Welcome to the community, fellow Cosmonaut.
@@ -345,8 +341,7 @@
             </div>
           </div>
         </div>
-        <!-- TODO -->
-        <!-- <graphics-get-started-community-background class="section-graphics" /> -->
+        <graphics-get-started-hero-stars class="stars-graphics" />
       </div>
     </div>
   </main>
@@ -412,17 +407,25 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+// Global
 .transition
   display grid
   place-items center
+
+.subtitle
+.desc
+  color var(--white-800)
+
+  .light-mode &
+    color rgba(0, 0, 0, 0.5)
 
 // Hero
 .section-hero
   text-align left
 
 .section-hero .text
-  grid-column span 4
-  z-index 1
+  grid-column 1/-1
+  grid-row 1
 
 .section-hero .title
   margin-top var(--spacing-6)
@@ -445,16 +448,21 @@ export default {
   z-index 0
   width 65%
 
+// TODO: add section class
+.section
+  svg.graphics__item
+    height auto
+
 // Intro
 .section-intro
-  grid-column span 4
+  grid-column 1/-1
 
 .cards-wrapper
   grid-row 2
   display grid
-  grid-template-columns repeat(1, 1fr)
+  // grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 4
+  grid-column 1/-1
   margin-top var(--spacing-8)
 
 .card-item
@@ -475,29 +483,45 @@ export default {
   margin-bottom var(--spacing-5)
   position relative
 
+.step-1
+.step-2
+.step-3
+.step-4
+  grid-column 1/-1
+
 // Step 1
 .section-step-1
   position relative
 
-.top-space
+.top-gap
   padding-top var(--spacing-10)
 
-.bot-space
+.bottom-gap
   padding-bottom var(--spacing-10)
 
 .section-step-1
   .top,
   .graphics,
   .bottom
-    grid-column span 4
+    grid-column 1/-1
 
 .section-step-1 .graphics
-  display grid
-  place-items center
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-end
 
   &__item
     width 70%
-    height auto
+
+  .coins
+    transform rotateY(180deg)
+
+.section-step-1 .bottom
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-start
 
 .section-step-1 .graphics,
 .section-step-1 .bottom
@@ -507,44 +531,33 @@ export default {
   color var(--gray-600)
 
 // Step 2
-.step-2
-  grid-column span 4
-
-.section-step-2 .title
-  position relative
-  z-index 1
-
 .section-step-2 .subtitle
   margin-top var(--spacing-7)
 
 .section-step-2 .btn
   margin-top var(--spacing-6)
 
-.section-step-2 .graphics
-  height 218px
-  display grid
-  place-items flex-end
-
-.section-step-2 .left .graphics__item
-  width 70%
-  height auto
+.section-step-2 .graphics__item
+  width 100%
+  margin-top -18%
+  margin-bottom -48%
+  z-index 1
+  position relative
 
 // Step 3
 .left,
 .right
-  grid-column span 4
+  grid-column 1/-1
   position relative
 
 .step-3
-  grid-column span 4
   margin-top var(--spacing-9)
-
-.section-step-3 .graphics
-  height 218px
 
 .section-step-3 .graphics__item
   width 100%
-  height 260px
+  z-index 1
+  position relative
+  margin-bottom -2rem
 
 .section-step-3 .subtitle
   margin-top var(--spacing-7)
@@ -553,15 +566,17 @@ export default {
   margin-top var(--spacing-6)
 
 // Step 4
-.section-step-4
-  grid-column span 4
+.section-step-4 .graphics
+.section-step-4 .text
+  grid-column 1/-1
 
 .section-step-4 .graphics
   display grid
-  place-items center
+  place-items flex-end
 
   &__item
     width 100%
+    margin-bottom 10%
 
 .section-step-4 .text .subtitle
   margin-top var(--spacing-7)
@@ -577,6 +592,7 @@ export default {
   box-shadow var(--elevation-4)
   padding var(--spacing-6)
   background-color var(--gray-100)
+  max-width 26.9375rem
 
   .light-mode &
     background-color var(--white)
@@ -597,9 +613,11 @@ export default {
     color rgba(0, 0, 0, 0.5)
 
 // Community
-.section-community,
-.section-graphics
-  grid-column span 12
+.section-community
+  grid-column 1/-1
+
+.section-community .graphics__item
+  width 100%
 
 .section-community .subtitle
   margin-top var(--spacing-6)
@@ -611,7 +629,6 @@ export default {
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column span 12
   margin-top var(--spacing-9)
 
 .grid-item
@@ -625,16 +642,24 @@ export default {
 .details .desc
   margin-top var(--spacing-3)
 
-.footer
-  grid-column span 12
-  width fit-content
+.section-graphics
+  position relative
+
+.stars-graphics
+  position absolute
+  right 0
+  top 0
+  z-index 0
+  width 38%
+  height auto
+  overflow visible
 
 @media $breakpoint-medium
   .step-1,
   .step-2,
   .step-3,
   .step-4
-    grid-column span 8
+    grid-column 1/-1
 
     &:before
       content ""
@@ -649,41 +674,15 @@ export default {
         background var(--black)
 
   // Hero
-  .graphics-brandmark
-    grid-row 1
-    grid-column 2/4
-    position absolute
-    right 0
-    display inherit
-
-  .graphics-validator
-    grid-row 1
-    grid-column 2/4
-    margin-top 2.4375rem
-    transform translate(30px, 60px)
-    display inherit
-
-  .section-hero .text
-    grid-column 4/span 10
-    grid-row 1
-
-  .graphics-coins
-    grid-column 9/11
-    grid-row 1
 
   // Intro
   .cards-wrapper
     grid-template-columns repeat(2, 1fr)
-    grid-column span 12
-
-  .section-intro
-    grid-column 4/ 12
 
   // Step 2, 3
   .left,
   .right
-    grid-column span 8
-    position relative
+    grid-column 1/-1
 
   .right
     margin-top 8.4375rem
@@ -691,89 +690,109 @@ export default {
   .step-3
     margin-top var(--spacing-10)
 
-  // Step 4
-  .section-step-4
-    position relative
-    display grid
-    grid-template-columns 50% 50%
-    grid-template-rows 1fr
-    align-items center
-    grid-column span 8
-
-  .section-step-4 .text
-    display flex
-    flex-direction column
-    justify-content space-between
-
-  .section-step-4 .text .subtitle,
-  .section-step-4 .text .warning-wrapper
-    margin-top 0
-
-  .section-step-4 .text .subtitle
-    margin-top var(--spacing-7)
-
-  .section-step-4 .text .warning-wrapper
-    margin-top var(--spacing-8)
-
-  // Community
-  .section-community
-    grid-column 1/10
-
-  .grid-wrapper
-    grid-template-columns repeat(auto-fit, minmax(23.25rem, 1fr))
-    column-gap var(--spacing-7)
-    row-gap var(--spacing-9)
-
-  .section-graphics
-    grid-column 11/span 12
-    display flex
-    align-items center
-    justify-content center
-    position absolute
-    top 0
-    left 0
-    right 0
-    bottom 0
-
 @media $breakpoint-large
   // Intro
   .cards-wrapper
     grid-template-columns repeat(3, 1fr)
-    grid-column span 12
 
 @media $breakpoint-xl
+  // Global
   .step
     transform rotate(-90deg)
     position absolute
     top 4%
     left -2%
 
+  // Hero
+  .graphics-brandmark
+    grid-row 1
+    grid-column 3/span 1
+    position absolute
+    right 0
+    display inherit
+
+  .graphics-validator
+    grid-row 1
+    grid-column 1
+    margin-top 2.4375rem
+    transform translate(30px, 60px)
+    display inherit
+
+  .section-hero .text
+    grid-column 4/span 7
+    grid-row 1
+
+  .graphics-coins
+    grid-column 9/span 2
+    grid-row 1
+
+  // Intro
+  .section-intro
+    grid-column 4/span 9
+
   // Step 1
   .section-step-1 .top
-    grid-column 5/ 12
+    grid-column 5/span 8
 
   .section-step-1 .graphics
-    grid-column 1/ 6
+    grid-column 1/span 6
+    width 80%
 
   .section-step-1 .bottom
-    grid-column 7/ 12
+    grid-column 7/span 6
 
   // Step 2, 3
   .left
-    grid-column 2/6
+    grid-column 2/span 5
 
   .step-2
     grid-column 1
 
+  .section-step-2 .graphics__item
+    margin-top -8rem
+    margin-bottom -50%
+
   .right
-    grid-column 7/13
+    grid-column 8/span 5
     margin-top 16.75rem
 
   .step-3
-    grid-column 6
+    grid-column 7
     margin-top 16.75rem
+
+  .section-step-3 .graphics__item
+    margin-top -8rem
+    margin-bottom -4rem
 
   // Step 4
   .section-step-4
-    grid-column span 12
+    grid-column 1/-1
+
+  .step-4
+    grid-column 1
+
+  .section-step-4 .graphics
+    grid-column 2/span 5
+
+    &__item
+      margin-bottom 0
+
+  .section-step-4 .text
+    grid-column 7/span 6
+    display flex
+    flex-direction column
+    justify-content space-between
+
+  .section-step-4 .text .warning-wrapper
+    gap 0
+
+  // Community
+  .section-community
+    grid-column 1/span 10
+
+  .section-community .grid-wrapper
+    grid-template-columns repeat(2, 1fr)
+    column-gap var(--spacing-7)
+    row-gap var(--spacing-9)
+    margin-right 12.6875rem
 </style>
