@@ -10,7 +10,7 @@
         </div>
         <tm-button
           to-link="internal"
-          to="/get-started"
+          to="/start-staking"
           size="l"
           light-color="var(--white)"
           dark-background-color="var(--white-200)"
