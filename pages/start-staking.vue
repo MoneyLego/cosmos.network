@@ -81,10 +81,8 @@
               >Browse exchanges
               <span class="icon__right">&#8599;</span></tm-button
             >
-            <div class="footnote tm-rf-1 tm-lh-copy tm-measure">
-              messari.io is an unvalidated third-party listing exchanges. We are
-              not liable for X,Y,Z.
-            </div>
+            <!-- TODO -->
+            <div class="footnote tm-rf-1 tm-lh-copy tm-measure">Disclaimer</div>
           </div>
         </div>
       </div>
