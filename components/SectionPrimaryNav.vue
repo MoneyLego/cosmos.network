@@ -181,7 +181,7 @@
                 >
               </li>
               <li>
-                <NuxtLink to="/get-started" class="tm-rf0 tm-lh-title tm-link"
+                <NuxtLink to="/start-staking" class="tm-rf0 tm-lh-title tm-link"
                   >Get started</NuxtLink
                 >
               </li>

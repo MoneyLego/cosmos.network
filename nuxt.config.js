@@ -139,6 +139,7 @@ export default {
     '~/plugins/ga.client.js',
     '~/plugins/vue-scrollto.client.js',
     '~/plugins/nuxt-swiper-plugin.client.js',
+    '~/plugins/vue-stripe-menu.client.js',
   ],
   env: {
     GITHUB_PERSONAL_TOKEN: process.env.GITHUB_PERSONAL_TOKEN,
