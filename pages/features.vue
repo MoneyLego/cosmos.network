@@ -87,7 +87,7 @@
                   >Tendermint BFT consensus engine</a
                 >, the Hub’s staking module is one of the most efficient
                 proof-of-stake implementations in the world. It enables ATOM
-                token holders to secure the chain by locking their ATOMs, in
+                token holders to secure the chain by locking their ATOM, in
                 exchange for transaction fees.
               </div>
             </div>
@@ -111,7 +111,7 @@
                 </nuxt-link>
               </h3>
               <div class="desc tm-rf0 tm-lh-copy tm-measure-narrow">
-                Staking ATOMs gives rights to participate in the open governance
+                Staking ATOM gives rights to participate in the open governance
                 process, which governs the evolution of the network.
               </div>
             </div>
@@ -246,7 +246,7 @@
               </a>
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
-              Backed by billions of dollars of Atoms staked on the Cosmos Hub,
+              Backed by billions of dollars of ATOM staked on the Cosmos Hub,
               the Gravity Bridge will be the most secure, efficient, and
               decentralized cross chain bridge to Ethereum. It will enable
               Cosmos assets to flow into the Ethereum ecosystem as ERC-20 tokens
@@ -312,7 +312,7 @@
               >
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
-              Staked ATOMs will be able to secure more than just the Cosmos Hub.
+              Staked ATOM will be able to secure more than just the Cosmos Hub.
               In practice, validators will be able to validate chains that
               request it (called child-chains) on an opt-in basis, with their
               ATOM delegation as collateral. In exchange for securing
@@ -423,11 +423,11 @@
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
               Staking Derivatives will be an important primitive in the
               cross-chain Defi space. At their core, staking derivatives are
-              claims against staked ATOMs. Just like staked ATOMs, staking
-              derivatives accrue staking rewards - but unlike staked ATOMs,
+              claims against staked ATOM. Just like staked ATOM, staking
+              derivatives accrue staking rewards - but unlike staked ATOM,
               staking derivatives are liquid, meaning they can be transferred.
-              Since they represent staked ATOMs, staking derivatives are at risk
-              of being partially burnt if the underlying ATOMs get slashed.
+              Since they represent staked ATOM, staking derivatives are at risk
+              of being partially burnt if the underlying ATOM get slashed.
             </div>
           </div>
           <div class="bottom">

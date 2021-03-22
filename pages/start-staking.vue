@@ -8,7 +8,7 @@
           <div class="text tm-measure-wide">
             <div class="header tm-rf0 tm-lh-title tm-overline">get started</div>
             <div class="title tm-rf6 tm-bold tm-lh-title">
-              Stake ATOMs in four steps
+              Stake ATOM in four steps
             </div>
           </div>
           <graphics-get-started-hero-coins class="graphics-coins" />
@@ -57,7 +57,7 @@
           </div>
           <div class="top">
             <div class="title tm-rf5 tm-bold tm-lh-title">
-              Get ATOMs via one of the many cryptocurrency exchanges.
+              Get ATOM via one of the many cryptocurrency exchanges.
             </div>
           </div>
           <div class="graphics">
@@ -159,11 +159,11 @@
             <graphics-navigator-gem class="graphics__item" />
           </div>
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
-            Transfer your ATOMs to a wallet.
+            Transfer your ATOM to a wallet.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
             Choose a wallet that supports the ATOM token, create an account, and
-            transfer your ATOMs from the exchange.
+            transfer your ATOM from the exchange.
           </div>
           <tm-button
             to-link="external"
@@ -185,7 +185,7 @@
             Select your validators.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
-            In your wallet, choose the validators to delegate your ATOMs to.
+            In your wallet, choose the validators to delegate your ATOM to.
           </div>
           <tm-button
             to-link="internal"
@@ -270,11 +270,11 @@
         </div>
         <div class="text">
           <div class="title tm-rf5 tm-bold tm-lh-title">
-            Lock up and stake<br />your ATOMs.
+            Lock up and stake<br />your ATOM.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
             Using your wallet, send a simple transaction (often called “Stake”
-            or “Delegate”) to start staking. This locks up your ATOMs (i.e. you
+            or “Delegate”) to start staking. This locks up your ATOM (i.e. you
             can't transfer them) and enables the chosen validators to operate
             the network.
           </div>
@@ -283,7 +283,7 @@
               <icon-warning />
             </div>
             <div class="text">
-              Staked ATOMs can be unlocked via your wallet by sending a
+              Staked ATOM can be unlocked via your wallet by sending a
               transaction (often called “Unstake” or “Undelegate”) and waiting
               21 days.
             </div>
@@ -300,7 +300,7 @@
               Welcome to the community, fellow Cosmonaut.
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
-              Now that you’ve staked your ATOMs like a pro, join a fast-growing
+              Now that you’ve staked your ATOM like a pro, join a fast-growing
               community of developers and innovators connected all over the
               world, building the new era of the internet.
             </div>

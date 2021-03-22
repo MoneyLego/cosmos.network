@@ -1,7 +1,7 @@
 ---
 index: 6
 title: What is the ATOM Staking Process?
-description: Obtain ATOMs and delegate their ATOMs to one or more [validators] of their choice using a [Wallet].
+description: Obtain ATOM and delegate their ATOM to one or more [validators] of their choice using a [Wallet].
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -14,7 +14,7 @@ tags:
 
 Staking ATOM is relatively straightforward. Users need to:
 
-1. Obtain ATOMs. See [How can I get ATOMs?](/learn/faq/how-to-get-atoms) for more.
-3. [Delegate](/learn/faq/what-is-delegating) their ATOMs to one or more [validators] of their choice using a [Wallet]. 
+1. Obtain ATOM. See [How can I get ATOM?](/learn/faq/how-to-get-atoms) for more.
+3. [Delegate](/learn/faq/what-is-delegating) their ATOM to one or more [validators] of their choice using a [Wallet]. 
 
 And that's it!

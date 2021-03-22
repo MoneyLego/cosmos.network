@@ -6,7 +6,7 @@
           Ready to start staking?
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy">
-          Start staking ATOMs on the Cosmos Hub.
+          Start staking ATOM on the Cosmos Hub.
         </div>
         <tm-button
           to-link="internal"
@@ -16,7 +16,7 @@
           dark-background-color="var(--white-200)"
           light-background-color="var(--black)"
           class="btn"
-          >Stake ATOMs</tm-button
+          >Stake ATOM</tm-button
         >
       </div>
       <div class="graphics">

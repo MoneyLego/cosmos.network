@@ -16,7 +16,7 @@
       <div class="section-intro">
         <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
-          Staking is the process of locking up a digital asset (ATOMs in the
+          Staking is the process of locking up a digital asset (ATOM in the
           case of the Cosmos Hub) in order to provide economic security for a
           public blockchain.
         </div>
@@ -62,7 +62,7 @@
               Vote for<br />the future
             </div>
             <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Staking ATOMs grants the right to vote on proposals and make
+              Staking ATOM grants the right to vote on proposals and make
               decisions on the future of the network.
             </div>
           </div>
@@ -78,7 +78,7 @@
           typical apy
         </div>
         <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
-        <div class="tm-rf1 tm-lh-title">of staked ATOMs (annually)*</div>
+        <div class="tm-rf1 tm-lh-title">of staked ATOM (annually)*</div>
       </div>
       <div class="span-7">
         <span class="accent"></span>
@@ -99,7 +99,7 @@
             if you stake
           </div>
           <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
-          <div class="unit tm-rf1 tm-lh-title tm-medium">ATOMs</div>
+          <div class="unit tm-rf1 tm-lh-title tm-medium">ATOM</div>
         </div>
         <div class="pie-item">
           <div class="pie">
@@ -123,7 +123,7 @@
       </div>
       <div class="footnote tm-rf-1 tm-lh-copy tm-measure-narrow">
         * baseline inflation rate fluctuates based on the total amount of staked
-        ATOMs in the network
+        ATOM in the network
       </div>
     </div>
 
@@ -166,15 +166,15 @@
           </div>
           <div class="right">
             <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
-              Newly created ATOMs
+              Newly created ATOM
             </div>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              The total supply of ATOMs is inflated to reward stakers. ATOM
+              The total supply of ATOM is inflated to reward stakers. ATOM
               holders that do not stake do not receive rewards, meaning their
-              ATOMs get diluted over time.
+              ATOM get diluted over time.
             </p>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              The yearly inflation rate of ATOMs is available on most explorers.
+              The yearly inflation rate of ATOM is available on most explorers.
             </p>
           </div>
         </div>
@@ -190,9 +190,9 @@
           <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
-          Staking ATOMs is not risk-free. When ATOM holders stake, they need to
+          Staking ATOM is not risk-free. When ATOM holders stake, they need to
           choose one or more validators to delegate to. However, if a validator
-          performs badly (according to the protocol), up to 5% of ATOMs
+          performs badly (according to the protocol), up to 5% of ATOM
           delegated to them can be forfeited.
         </div>
         <tm-button
