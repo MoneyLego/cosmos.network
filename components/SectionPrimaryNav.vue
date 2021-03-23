@@ -7,15 +7,9 @@
     >
       <div class="nav-inner tm-container tm-wrapper">
         <div class="nav-first">
-          <a href="https://cosmos.network" class="logo">
+          <NuxtLink to="/" class="logo">
             <logo-cosmos-wordmark class="logo__cosmos" />
             <span class="sr-only">Cosmos</span>
-          </a>
-          <NuxtLink
-            to="/"
-            class="logo logo-secondary tm-rf-1 tm-medium tm-lh-solid"
-          >
-            <logo-hub-brandmark class="logo__hub" />Hub
           </NuxtLink>
           <button
             class="nav-mobile-toggle"
@@ -32,52 +26,25 @@
         <div class="nav-second">
           <ul>
             <li>
-              <a
-                href="https://cosmos.network/intro"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >What is Cosmos?</a
+              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Learn</a
               >
             </li>
             <li>
-              <a
-                href="https://cosmos.network/sdk"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Build on Cosmos</a
+              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Build</a
               >
             </li>
             <li>
-              <a
-                href="https://cosmos.network/community"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Community</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://cosmos.network/ecosystem"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Ecosystem</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://cosmos.network/tools"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Tools</a
-              >
-            </li>
-            <li>
-              <NuxtLink
-                to="/"
-                class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Cosmos Hub</NuxtLink
+              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
+                >Explore</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav class="nav nav-secondary" role="navigation">
+    <nav v-if="secondary" class="nav nav-secondary" role="navigation">
       <div class="nav-inner tm-container tm-wrapper">
         <div class="nav-first">
           <NuxtLink
@@ -130,41 +97,6 @@
     >
       <div class="nav-mobile-content tm-wrapper">
         <ul>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >What is Cosmos?</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >Build on Cosmos</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >Community</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >Ecosystem</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://cosmos.network/"
-              class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >Tools</a
-            >
-          </li>
           <li>
             <NuxtLink to="/" class="text tm-rf1 tm-medium tm-lh-title tm-link"
               >Cosmos Hub</NuxtLink
@@ -224,6 +156,7 @@ export default {
   data() {
     return {
       isActive: false,
+      secondary: false, // temporary to hide secondary nav
     }
   },
   watch: {
@@ -255,7 +188,6 @@ $navbar-mobile-menu = 200
     padding 0
   li
     list-style-type none
-    padding var(--spacing-7) var(--spacing-5)
   .logo
     display flex
     align-items center
@@ -356,9 +288,8 @@ $navbar-mobile-menu = 200
       ul
         margin-left 0
         margin-right 0
-        .tm-link
-          padding-top var(--spacing-3)
-          padding-bottom var(--spacing-3)
+        .tm-link-external:after
+          bottom auto
   &-mobile-bottom
     padding-bottom var(--spacing-7)
     text-align center
@@ -397,30 +328,41 @@ $navbar-mobile-menu = 200
     ul
       margin-right calc(-1 * var(--spacing-5))
       margin-left calc(-1 * var(--spacing-5))
-    li
-      display inline-block
+      display flex
+      justify-content center
+    .tm-link
+      padding var(--spacing-7) var(--spacing-5)
+    &-first
+      flex 1 1 0%
     &-second
       display block
+      grid-columns 1
+    &-last
+      flex 1 1 0%
     &-mobile-toggle
       display none
 
   .nav-primary
-    border-bottom 1px solid var(--white-100)
-    .light-mode &
-      border-bottom-color var(--trans-gray-900)
     .logo-secondary
       display none
-    .nuxt-link-exact-active:before
-      content ""
-      position absolute
-      display block
-      border-bottom 1px solid
-      width calc(1rem + 1px)
-      bottom -1px
-      left 50%
-      margin-left -0.5rem
+    .nav-inner
+      display grid
+      grid-template-columns repeat(3, 1fr)
+
+  .nav-second .nuxt-link-exact-active:before
+    content ""
+    position absolute
+    display block
+    border-bottom 1px solid
+    width calc(1rem + 1px)
+    bottom -1px
+    left 50%
+    margin-left -0.5rem
 
   .nav-secondary
     display flex
+    border-top 1px solid var(--white-100)
+    .light-mode &
+      border-top-color var(--trans-gray-900)
     margin-top -1px
 </style>
