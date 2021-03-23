@@ -8,7 +8,7 @@
           <div class="text tm-measure-wide">
             <div class="header tm-rf0 tm-lh-title tm-overline">get started</div>
             <div class="title tm-rf6 tm-bold tm-lh-title">
-              Stake ATOM in four steps
+              Stake ATOM and stake
             </div>
           </div>
           <graphics-get-started-hero-coins class="graphics-coins" />
@@ -82,7 +82,7 @@
               <span class="icon__right">&#8599;</span></tm-button
             >
             <!-- TODO -->
-            <div class="footnote tm-rf-1 tm-lh-copy tm-measure">Disclaimer</div>
+            <!-- <div class="footnote tm-rf-1 tm-lh-copy tm-measure">Disclaimer</div> -->
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@
             Transfer your ATOM to a wallet.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
-            Choose a wallet that supports the ATOM token, create an account, and
+            Choose a wallet that suits your needs, create an account, and
             transfer your ATOM from the exchange.
           </div>
           <tm-button
@@ -186,6 +186,8 @@
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
             In your wallet, choose the validators to delegate your ATOM to.
+            Remember to spread your risk by delegating your ATOM to multiple
+            validators in good standing.
           </div>
           <tm-button
             to-link="internal"

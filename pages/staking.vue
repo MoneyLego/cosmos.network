@@ -190,10 +190,10 @@
           <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
-          Staking ATOM is not risk-free. When ATOM holders stake, they need to
-          choose one or more validators to delegate to. However, if a validator
-          performs badly (according to the protocol), up to 5% of ATOM delegated
-          to them can be forfeited.
+          Staking ATOM is not risk-free. If a validator has downtime or
+          underperforms, a percentage of ATOM delegated to them may be
+          forfeited. To mitigate these risks, it is recommended that ATOM
+          holders delegate to multiple validators.
         </div>
         <tm-button
           to-link="internal"
