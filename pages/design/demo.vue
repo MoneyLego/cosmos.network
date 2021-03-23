@@ -1,7 +1,6 @@
 <template>
   <main>
     <div class="section-hero">
-      <showcase-navbar />
       <vsm-menu :menu="menu">
         <template #default="data">
           <component :is="data.item.content" class="content" />
@@ -30,7 +29,7 @@
 
 <script>
 /* eslint-disable */
-import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark'
 import featuresDropdown from '../../components/content/featuresDropdown'
 import enterpriseDropdownTop from '../../components/content/enterpriseDropdownTop'
 import enterpriseDropdownBottom from '../../components/content/enterpriseDropdownBottom'
