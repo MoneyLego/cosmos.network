@@ -8,16 +8,25 @@
           to="/features"
           class="tm-rf-1 tm-medium tm-lh-title tm-link"
         >
-          <span>Features 1</span>
+          <span>Features</span>
         </component>
       </div>
       <div class="dropdown-wrap__content type1">
         <component
           :is="dynamicComponent"
-          to="/features"
+          to="/staking"
           class="tm-rf-1 tm-medium tm-lh-title tm-link"
         >
-          <span>Features 2</span>
+          <span>Staking</span>
+        </component>
+      </div>
+      <div class="dropdown-wrap__content type1">
+        <component
+          :is="dynamicComponent"
+          to="/learn/faq"
+          class="tm-rf-1 tm-medium tm-lh-title tm-link"
+        >
+          <span>FAQ</span>
         </component>
       </div>
     </div>
@@ -48,14 +57,9 @@
 <script>
 export default {
   computed: {
-    // check router-link or nuxt-link
     dynamicComponent() {
-      return this.$nuxt._isVue === true ? 'nuxt-link' : 'router-link'
+      return typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
     },
-  },
-  mounted() {
-    // eslint-disable-next-line no-console
-    console.log('this.$nuxt._isVue: ', this.$nuxt._isVue)
   },
 }
 </script>

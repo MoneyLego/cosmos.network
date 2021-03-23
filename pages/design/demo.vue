@@ -19,7 +19,6 @@
           <li class="vsm-section vsm-mob-hide">
             <a href="#" class="vsm-link signup">Sign In</a>
           </li>
-          <!--Display mobile menu-->
           <vsm-mob>
             <div class="mobile-content">Mobile Content</div>
           </vsm-mob>
@@ -41,7 +40,7 @@ export default {
     LogoCosmosWordmark,
   },
   mounted () {
-    const test = this.$nuxt._isVue === true ? 'nuxt-link' : 'router-link'
+    const test = typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
     console.log('test: ', test)
   },
   data() {
