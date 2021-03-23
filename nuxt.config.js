@@ -5,6 +5,8 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
+  // https://github.com/nuxt/nuxt.js/issues/5800
+  ssr: false,
   target: 'static',
   /*
    ** Headers of the page
