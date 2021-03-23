@@ -51,10 +51,6 @@ main
 .section-hero
   padding-top 5rem // approx navbar max height
 
-@media $breakpoint-large
-  .section-hero
-    padding-top 10rem // navbar max height
-
 @media $breakpoint-large-max
   .mobile-menu-open
     #content
