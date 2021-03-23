@@ -380,7 +380,6 @@
 </template>
 
 <script>
-// import Carousel from 'vue-slick-carousel'
 import { directive } from 'vue-awesome-swiper'
 
 import IconPlantLeaf from '~/components/icons/IconPlantLeaf.vue'
