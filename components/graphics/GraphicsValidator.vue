@@ -39,16 +39,16 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
-            stop-color="#80E2F8"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#80E2F8' : '#71A1FF'
+            "
           />
-          <stop v-else stop-color="#71A1FF" />
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
             offset="1"
-            stop-color="#DA17C6"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#DA17C6' : '#DA17C6'
+            "
           />
-          <stop v-else offset="1" stop-color="#DA17C6" />
         </linearGradient>
         <linearGradient
           :id="`${id}-paint1_linear-127634`"
@@ -59,16 +59,16 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
-            stop-color="#8CDFF7"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#8CDFF7' : '#93B7FF'
+            "
           />
-          <stop v-else stop-color="#93B7FF" />
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
             offset="1"
-            stop-color="#DD54CF"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#DD54CF' : '#DA17C6'
+            "
           />
-          <stop v-else offset="1" stop-color="#DA17C6" />
         </linearGradient>
         <radialGradient
           :id="`${id}-paint2_radial-127634`"
@@ -79,17 +79,17 @@
           gradientTransform="translate(101.265 216.245) rotate(-44.9244) scale(309.458 347.373)"
         >
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
-            offset="0.0525602"
-            stop-color="#E0FFFE"
+            :offset="$nuxt.$colorMode.value === 'light' && '0.0525602'"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#E0FFFE' : '#C1CDF6'
+            "
           />
-          <stop v-else stop-color="#C1CDF6" />
           <stop
-            v-if="$nuxt.$colorMode.value === 'light'"
             offset="1"
-            stop-color="#B1DAFF"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#B1DAFF' : '#8DA6FF'
+            "
           />
-          <stop v-else offset="1" stop-color="#8DA6FF" />
         </radialGradient>
         <linearGradient
           v-if="coins | planet"
@@ -105,11 +105,15 @@
         </linearGradient>
       </defs>
     </svg>
-    <div v-if="coins" class="v-coins">
-      <graphics-coin-blank class="coin" lighting="bottom" />
-      <graphics-coin-blank class="coin" lighting="bottom" />
-      <graphics-coin-blank class="coin" lighting="bottom" />
-    </div>
+    <span v-if="coins > 0" class="v-coins">
+      <graphics-coin-blank
+        v-for="i in Math.min(coins, 5)"
+        :key="i"
+        class="coin"
+        lighting="bottom"
+      />
+    </span>
+    <div v-if="planet" class="planet"></div>
     <svg
       v-if="coins | planet"
       class="v-beam"
@@ -119,13 +123,6 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle
-        v-if="planet"
-        cx="373.5"
-        cy="186.5"
-        r="138.5"
-        :fill="`url(#${id}-paint0_radial-259871)`"
-      />
       <g opacity="0.6" :filter="`url(#${id}-filter0_f-259871)`">
         <path
           d="M224.14 357.71L224.279 357.909H224.284C232.164 368.794 243.779 378.992 259.128 387.853L259.169 387.877L259.173 387.879L259.199 387.894C322.346 424.303 424.7 424.297 487.834 387.877C504.326 378.362 516.511 367.304 524.388 355.509L735.608 52.4153L11.3877 52.4153L222.815 355.809C223.244 356.445 223.686 357.078 224.14 357.71Z"
@@ -155,18 +152,6 @@
           />
         </filter>
         <radialGradient
-          v-if="planet"
-          :id="`${id}-paint0_radial-259871`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(379.311 21.349) rotate(91.5198) scale(198.327)"
-        >
-          <stop stop-color="#ECEDF7" />
-          <stop offset="1" stop-color="white" />
-        </radialGradient>
-        <radialGradient
           :id="`${id}-paint1_radial-259871`"
           cx="0"
           cy="0"
@@ -175,7 +160,13 @@
           gradientTransform="translate(373.497 414.936) rotate(-90) scale(363.49 736.795)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="#C9C0FD" stop-opacity="0" />
+          <stop
+            offset="1"
+            :stop-color="
+              $nuxt.$colorMode.value === 'light' ? '#C9C0FD' : '#4100AC'
+            "
+            stop-opacity="0"
+          />
         </radialGradient>
       </defs>
     </svg>
@@ -186,10 +177,10 @@ export default {
   props: {
     coins: {
       /**
-       * `false` | `true
+       * `null` | `number` - 5 coins max
        */
-      type: Boolean,
-      default: false,
+      type: Number,
+      default: 0,
     },
     planet: {
       /**
@@ -213,26 +204,45 @@ export default {
 .v-container
   position relative
 
+svg
+  height auto
+
 .v-base
   width 100%
-  height auto
+  display block
 
-.v-coins,
 .v-beam
   position absolute
-  width 100%
-  height auto
-  top 0
-  left 0
+  width 136%
+  top 0%
+  left -18%
+
+.planet
+  position absolute
+  width 50%
+  padding-bottom 50%
+  top 8%
+  left 25%
+  border-radius 50%
+  background radial-gradient(71.57% 71.57% at 52.1% -9.62%, #ECEDF7 0%, #FFFFFF 100%)
+  opacity 0.96
 
 .coin
-  width 50%
+  position absolute
+  width 56%
   &:nth-child(1)
-    top 24%
-    left 54%
+    top 37%
+    left 24.5%
   &:nth-child(2)
-    top 11%
-    left 49%
+    top 30%
+    left 20.5%
   &:nth-child(3)
-    left 54%
+    top 22.6%
+    left 26%
+  &:nth-child(4)
+    top 16%
+    left 24%
+  &:nth-child(5)
+    top 9.4%
+    left 27%
 </style>

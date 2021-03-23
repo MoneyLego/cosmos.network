@@ -33,6 +33,7 @@ export default {}
   padding-bottom 0
 
 .graphics
+  position relative
   z-index 0
 
 .title

@@ -724,7 +724,6 @@
 
 <style lang="stylus" scoped>
 .canvas
-  position relative
   max-width 144rem
   center()
   display flex
