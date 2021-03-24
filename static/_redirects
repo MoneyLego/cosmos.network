@@ -1,8 +1,7 @@
-/*            /index.html                                           200
-
 # Redirect URLs (FROM, TO, 301!)
-/tools        https://cosmos-network.netlify.app/intro              301!
+/start-staking        /learn/get-atom              301!
+/ibc                  https://ibcprotocol.org      301!
 
 # Proxy Redirects
-# /intro/*      https://cosmos-network.netlify.app/intro/:splat       200!
+/intro/*      https://cosmos-network.netlify.app/intro/:splat       200!
 /ecosystem/*  https://cosmos-network.netlify.app/ecosystem/:splat   200!
