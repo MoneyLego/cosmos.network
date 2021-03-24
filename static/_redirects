@@ -4,6 +4,7 @@
 
 # Redirect Legacy URLs
 /tools                https://cosmos-network.netlify.app/tools              301!
+/sdk                  https://cosmos-network.netlify.app/sdk                200!
 
 # Proxy Redirects
 /intro/*              https://cosmos-network.netlify.app/intro/:splat       200!
