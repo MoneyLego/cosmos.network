@@ -1,1 +1,3 @@
-/intro/*  https://cosmos-network.netlify.com/intro/:splat  200!
+/intro/*      https://cosmos-network.netlify.com/intro/:splat       200!
+/ecosystem/*  https://cosmos-network.netlify.com/ecosystem/:splat   200!
+/hub/*        https://cosmos-hub-site.netlify.com/:splat            200!
