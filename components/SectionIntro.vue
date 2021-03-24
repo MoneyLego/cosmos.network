@@ -498,17 +498,7 @@ export default {
 
 // Services
 .section-services
-
-  &:before
-    content ""
-    display block
-    height var(--spacing-13)
-    width 2px
-    background linear-gradient(180deg, var(--transparent) 16%, var(--white) 40%)
-    center()
-
-  &:before,
-  & > *
+  > *
     grid-column 1/-1
 
   .title

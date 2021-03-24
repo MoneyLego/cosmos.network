@@ -140,6 +140,7 @@ export default {
     '~/plugins/vue-scrollto.client.js',
     '~/plugins/nuxt-swiper-plugin.client.js',
     '~/plugins/vue-stripe-menu.client.js',
+    '~/plugins/vue-kinesis.client.js',
   ],
   env: {
     GITHUB_PERSONAL_TOKEN: process.env.GITHUB_PERSONAL_TOKEN,
@@ -187,6 +188,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    transpile: ['vue-kinesis'],
     // https://nuxtjs.org/faq/postcss-plugins/#recommended-method
     postcss: {
       plugins: {
