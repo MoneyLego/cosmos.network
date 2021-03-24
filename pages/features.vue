@@ -65,7 +65,7 @@
               </div>
               <h3 class="title">
                 <nuxt-link
-                  to="/staking"
+                  to="/learn/staking"
                   class="tm-link tm-link-disclosure tm-rf3 tm-bold tm-lh-title"
                 >
                   Staking

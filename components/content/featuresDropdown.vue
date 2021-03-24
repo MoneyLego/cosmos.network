@@ -14,7 +14,7 @@
       <div class="dropdown-wrap__content type1">
         <component
           :is="dynamicComponent"
-          to="/staking"
+          to="/learn/staking"
           class="tm-rf-1 tm-medium tm-lh-title tm-link"
         >
           <span>Staking</span>
@@ -35,7 +35,7 @@
       <div class="dropdown-wrap__content type1">
         <component
           :is="dynamicComponent"
-          to="/staking"
+          to="/learn/staking"
           class="tm-rf-1 tm-medium tm-lh-title tm-link"
         >
           <span>Staking 1</span>
@@ -44,7 +44,7 @@
       <div class="dropdown-wrap__content type1">
         <component
           :is="dynamicComponent"
-          to="/staking"
+          to="/learn/staking"
           class="tm-rf-1 tm-medium tm-lh-title tm-link"
         >
           <span>Staking 2</span>

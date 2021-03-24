@@ -7,10 +7,12 @@
             <NuxtLink to="/features" class="tm-link">Features</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/staking" class="tm-link">Staking</NuxtLink>
+            <NuxtLink to="/learn/staking" class="tm-link">Staking</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/start-staking" class="tm-link">Get started</NuxtLink>
+            <NuxtLink to="/learn/get-atom" class="tm-link"
+              >Get started</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink to="/learn/faq" class="tm-link">FAQ</NuxtLink>

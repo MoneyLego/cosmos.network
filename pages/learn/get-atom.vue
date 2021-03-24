@@ -348,7 +348,7 @@
 </template>
 
 <script>
-import LogoCosmosBrandmark from '../components/logos/LogoCosmosBrandmark.vue'
+import LogoCosmosBrandmark from '../../components/logos/LogoCosmosBrandmark.vue'
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'

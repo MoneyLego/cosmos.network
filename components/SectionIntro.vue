@@ -61,7 +61,7 @@
         <div class="btn-group">
           <tm-button
             to-link="internal"
-            to="/start-staking"
+            to="/learn/get-atom"
             size="l"
             light-color="var(--white)"
             class="btn"
@@ -69,7 +69,7 @@
           >
           <tm-button
             to-link="internal"
-            to="/staking"
+            to="/learn/staking"
             size="l"
             variant="text"
             class="btn"
