@@ -1,3 +1,8 @@
-/intro/*      https://cosmos-network.netlify.com/intro/:splat       200!
-/ecosystem/*  https://cosmos-network.netlify.com/ecosystem/:splat   200!
-/hub/*        https://cosmos-hub-site.netlify.com/:splat            200!
+/*            /index.html                                           200
+
+# Redirect URLs (FROM, TO, 301!)
+/tools        https://cosmos-network.netlify.app/intro              301!
+
+# Proxy Redirects
+# /intro/*      https://cosmos-network.netlify.app/intro/:splat       200!
+/ecosystem/*  https://cosmos-network.netlify.app/ecosystem/:splat   200!
