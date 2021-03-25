@@ -5,7 +5,13 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
+  // https://github.com/nuxt/nuxt.js/issues/5800
+  ssr: false,
   target: 'static',
+  // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
+  generate: {
+    fallback: true,
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -142,9 +148,7 @@ export default {
     '~/plugins/vue-stripe-menu.client.js',
     '~/plugins/vue-kinesis.client.js',
   ],
-  env: {
-    GITHUB_PERSONAL_TOKEN: process.env.GITHUB_PERSONAL_TOKEN,
-  },
+  env: {},
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

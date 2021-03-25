@@ -1,7 +1,6 @@
 <template>
   <main>
     <div class="section-hero">
-      <showcase-navbar />
       <vsm-menu :menu="menu">
         <template #default="data">
           <component :is="data.item.content" class="content" />
@@ -19,7 +18,6 @@
           <li class="vsm-section vsm-mob-hide">
             <a href="#" class="vsm-link signup">Sign In</a>
           </li>
-          <!--Display mobile menu-->
           <vsm-mob>
             <div class="mobile-content">Mobile Content</div>
           </vsm-mob>
@@ -31,7 +29,7 @@
 
 <script>
 /* eslint-disable */
-import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark'
 import featuresDropdown from '../../components/content/featuresDropdown'
 import enterpriseDropdownTop from '../../components/content/enterpriseDropdownTop'
 import enterpriseDropdownBottom from '../../components/content/enterpriseDropdownBottom'
@@ -41,7 +39,7 @@ export default {
     LogoCosmosWordmark,
   },
   mounted () {
-    const test = this.$nuxt._isVue === true ? 'nuxt-link' : 'router-link'
+    const test = typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
     console.log('test: ', test)
   },
   data() {

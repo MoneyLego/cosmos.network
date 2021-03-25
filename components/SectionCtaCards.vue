@@ -18,7 +18,7 @@
       </svg>
     </div>
     <div class="cards">
-      <NuxtLink to="/staking" class="card-item">
+      <NuxtLink to="/learn/staking" class="card-item">
         <div class="graphics">
           <graphics-cta-token-holders class="graphics__item" />
         </div>

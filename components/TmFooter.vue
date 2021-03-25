@@ -1,78 +1,89 @@
 <template>
   <footer class="footer">
     <div class="tm-wrapper tm-container">
-      <nav class="nav tm-rf0 tm-medium tm-lh-title" role="navigation">
-        <ul>
-          <li>
-            <NuxtLink to="/features" class="tm-link">Features</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/staking" class="tm-link">Staking</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/start-staking" class="tm-link">Get started</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/learn/faq" class="tm-link">FAQ</NuxtLink>
-          </li>
-          <li>
-            <a
-              href="https://hub.cosmos.network"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="tm-link tm-link-external"
-              >Documentation</a
+      <nav class="nav" role="navigation">
+        <div class="menu">
+          <div v-for="item in menu" :key="item.title" class="nav-item">
+            <div class="nav-item__title tm-rf0 tm-lh-title">
+              {{ item.title }}
+            </div>
+            <div
+              v-for="child in item.children"
+              :key="child.title"
+              class="nav-item__child tm-rf0 tm-lh-copy"
             >
-          </li>
-          <li>&mdash;&mdash;&mdash;</li>
-          <li>
-            <toggle-dark-mode />
-          </li>
-        </ul>
+              <NuxtLink
+                v-if="!isExternal(child.href)"
+                tag="a"
+                :to="child.href"
+                >{{ child.title }}</NuxtLink
+              >
+              <tm-link v-else :href="child.href" class="tm-link-external">{{
+                child.title
+              }}</tm-link>
+            </div>
+          </div>
+        </div>
       </nav>
-      <nav ref="links" class="social-icons" role="navigation">
-        <a
-          v-for="link in links"
-          :key="url(link)"
-          :href="url(link)"
-          class="social-icons__item tm-link"
-          target="_blank"
-          rel="noreferrer"
+      <div class="row">
+        <nav
+          ref="links"
+          class="nav-bottom tm-rf-1 tm-lh-copy"
+          role="navigation"
         >
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
+          <NuxtLink to="/" class="logo">
+            <logo-cosmos-wordmark class="logo__cosmos" />
+            <span class="sr-only">Cosmos</span>
+          </NuxtLink>
+          <a
+            href="https://cosmos.network/privacy"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="tm-link privacy"
+            >Privacy</a
           >
-            <path :d="icon(link)" style="pointer-events: none"></path>
-          </svg>
-        </a>
-      </nav>
+        </nav>
+        <nav ref="links" class="social-icons" role="navigation">
+          <a
+            v-for="link in links"
+            :key="url(link)"
+            :href="url(link)"
+            class="social-icons__item tm-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="currentColor"
+            >
+              <path :d="icon(link)" style="pointer-events: none"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
       <p class="smallprint tm-rf-1 tm-lh-copy">
         This website is maintained by Tendermint Inc. The contents and opinions
         of this website are those of Tendermint Inc.
       </p>
-      <nav
-        ref="links"
-        class="nav nav-bottom tm-rf-1 tm-lh-copy"
-        role="navigation"
-      >
-        <a
-          href="https://cosmos.network/privacy"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="tm-link"
-          >Privacy</a
-        >
-      </nav>
+      <p class="smallprint tm-rf-1 tm-lh-copy">
+        † Tendermint provides links to cryptocurrency exchanges as a service to
+        the public. Tendermint does not warrant that the information provided by
+        these websites is correct, complete, and up-to-date. Tendermint is not
+        responsible for their content and expressly rejects any liability for
+        damages of any kind resulting from the use, reference to, or reliance on
+        any information contained within these websites.
+      </p>
     </div>
   </footer>
 </template>
 
 <script>
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+
 const iconList = [
   [
     'blog.cosmos.network',
@@ -101,6 +112,9 @@ const iconList = [
 ]
 
 export default {
+  components: {
+    LogoCosmosWordmark,
+  },
   data() {
     return {
       links: [
@@ -110,6 +124,113 @@ export default {
         { title: 'Telegram', url: 'https://t.me/cosmosproject' },
         { title: 'Discord', url: 'https://discord.gg/vcExX9T' },
         { title: 'YouTube', url: 'https://www.youtube.com/c/CosmosProject' },
+      ],
+      menu: [
+        {
+          title: 'Learn',
+          children: [
+            {
+              title: 'Introduction',
+              href: '/intro',
+            },
+            {
+              title: 'Features',
+              href: '/features',
+            },
+            {
+              title: 'Staking',
+              href: '/learn/staking',
+            },
+            {
+              title: 'Get ATOM',
+              href: '/learn/get-atom',
+            },
+            {
+              title: 'FAQ',
+              href: '/learn/faq',
+            },
+          ],
+        },
+        {
+          title: 'Build',
+          children: [
+            {
+              title: 'Starport',
+              href: '/starport',
+            },
+            {
+              title: 'Cosmos SDK',
+              href: '/sdk',
+            },
+            {
+              title: 'Tools',
+              href: '/tools',
+            },
+            {
+              title: 'IBC Protocol',
+              href: 'https://ibcprotocol.org',
+            },
+          ],
+        },
+        {
+          title: 'Explore',
+          children: [
+            {
+              title: 'Ecosystem',
+              href: '/ecosystem',
+            },
+            {
+              title: 'Wallets',
+              href: '/ecosystem/wallets',
+            },
+            {
+              title: 'Blog',
+              href: 'https://cosmos.network/blog',
+            },
+          ],
+        },
+        {
+          title: 'Participate',
+          children: [
+            {
+              title: 'Community',
+              href: '/community',
+            },
+            {
+              title: 'Contributors',
+              href: '/contributors',
+            },
+            {
+              title: 'Events',
+              href: '/events',
+            },
+            {
+              title: 'Newsletters',
+              href: '/newsletters',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          children: [
+            {
+              title: 'About',
+              href: '/about',
+            },
+            {
+              title: 'Press Kit',
+              href: '/presskit',
+            },
+            {
+              title: 'Design',
+              href: '/design',
+            },
+            {
+              title: 'Resources',
+              href: '/resources',
+            },
+          ],
+        },
       ],
     }
   },
@@ -129,43 +250,124 @@ export default {
       })
       return iconPath
     },
+    isExternal(url) {
+      const match = url.match(
+        /^([^:/?#]+:)?(?:\/\/([^/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/
+      )
+      if (
+        typeof match[1] === 'string' &&
+        match[1].length > 0 &&
+        match[1].toLowerCase() !== location.protocol
+      )
+        return true
+      if (
+        typeof match[2] === 'string' &&
+        match[2].length > 0 &&
+        match[2].replace(
+          new RegExp(
+            ':(' + { 'http:': 80, 'https:': 443 }[location.protocol] + ')?$'
+          ),
+          ''
+        ) !== location.host
+      )
+        return true
+      return false
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
+a[href]
+  color inherit
+
 .footer
   text-align center
   padding 0 0 var(--spacing-8)
-  .nav
-    ul
-      padding 0
-    li
-      list-style-type none
-      display inline-block
-      padding var(--spacing-4) var(--spacing-5)
-    a
-      border-radius $border-radius-2
-      display inline-block
-  .social-icons
-    margin-top var(--spacing-10)
-    margin-bottom var(--spacing-7)
-    display flex
-    flex-direction row
-    flex-wrap wrap
-    justify-content center
-    align-items center
-    text-align center
-    &__item
-      margin var(--spacing-4)
-      opacity 0.5
-      &:hover,
-      &:focus
-        opacity 1
-  .smallprint
-    margin var(--spacing-5) auto
-    color var(--white-500)
 
-    .light-mode &
-      color var(--gray-400)
+.nav
+  margin-top var(--spacing-10)
+  margin-bottom var(--spacing-10)
+  a
+    border-radius $border-radius-2
+    display inline-block
+
+.social-icons
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content center
+  align-items center
+  text-align center
+  margin-top var(--spacing-7)
+  &__item
+    opacity 0.5
+    &:hover,
+    &:focus
+      opacity 1
+
+.social-icons__item + .social-icons__item
+  margin-left 1rem
+
+.smallprint
+  color var(--white-500)
+  text-align left
+
+  .light-mode &
+    color var(--gray-400)
+
+.smallprint + .smallprint
+  margin-top var(--spacing-8)
+
+.row
+  padding-top var(--spacing-8)
+  margin-bottom var(--spacing-6)
+  border-top 1px solid var(--white-100)
+  display flex
+  flex-direction column
+  align-items center
+  justify-content space-between
+
+.logo
+  display flex
+  align-items center
+  gap var(--spacing-4)
+  color inherit
+  transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
+  padding-right 1.5rem
+  svg
+    width auto
+  &__cosmos
+    height 1.125rem
+
+.privacy
+  padding-left 1.5rem
+  border-left 1px solid var(--white-100)
+
+.nav-bottom
+  display flex
+
+.menu
+  display grid
+  gap 2rem
+  grid-template-columns repeat(auto-fit, minmax(200px,1fr))
+
+.nav-item
+  text-align left
+
+.nav-item__title
+  margin-bottom 1rem
+
+.nav-item__child
+  color var(--white-300)
+
+.nav-item__child + .nav-item__child
+  margin-top 1rem
+
+@media $breakpoint-medium
+  .row
+    flex-direction row
+
+  .social-icons
+    margin-top 0
 </style>

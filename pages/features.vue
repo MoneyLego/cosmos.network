@@ -4,7 +4,7 @@
     <div class="section-hero">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title">
-          The next wave of interchain infrastructure, commerce, and culture.
+          A whole universe of opportunity for token holders.
         </h1>
         <div class="split">
           <div class="left">
@@ -20,14 +20,6 @@
               Cosmos Hub is set to play a leading role in the Interchain by
               offering a wide array of vital services.
             </div>
-            <tm-button
-              to-link="external"
-              href="https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf"
-              size="l"
-              variant="text"
-              class="btn"
-              >The Hub’s vision <span class="icon__right">↗</span></tm-button
-            >
           </div>
         </div>
       </div>
@@ -53,7 +45,9 @@
     <!-- Features -->
     <div class="tm-container tm-wrapper tm-grid-base section-features">
       <div class="text">
-        <h2 class="title tm-rf5 tm-bold tm-lh-title">Cutting-edge features.</h2>
+        <h2 class="title tm-rf5 tm-bold tm-lh-title">
+          Explore a rapidly growing set of interchain features.
+        </h2>
       </div>
       <div class="tiles tm-grid-base">
         <div class="span-7">
@@ -71,7 +65,7 @@
               </div>
               <h3 class="title">
                 <nuxt-link
-                  to="/staking"
+                  to="/learn/staking"
                   class="tm-link tm-link-disclosure tm-rf3 tm-bold tm-lh-title"
                 >
                   Staking
@@ -83,7 +77,7 @@
                   href="https://tendermint.com/core"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="tm-link"
+                  class="tm-link tm-bold"
                   >Tendermint BFT consensus engine</a
                 >, the Hub’s staking module is one of the most efficient
                 proof-of-stake implementations in the world. It enables ATOM
@@ -696,7 +690,7 @@ export default {
   margin-top var(--spacing-10)
 
 .section-features .span-7 .desc
-  color var(--white)
+  color var(--white-800)
 
   .light-mode &
     color var(--trans-gray-200)
@@ -953,6 +947,10 @@ export default {
   .section-hero .title,
   .section-hero .split
     grid-column 2/span 10
+
+  // Features
+  .section-features .text
+    grid-column 6/span 7
 
   // DEX
   .section-dex .graphics
