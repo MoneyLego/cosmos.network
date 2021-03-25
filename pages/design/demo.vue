@@ -38,10 +38,6 @@ export default {
   components: {
     LogoCosmosWordmark,
   },
-  mounted () {
-    const test = typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
-    console.log('test: ', test)
-  },
   data() {
     return {
       menu: [
