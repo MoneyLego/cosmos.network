@@ -2,11 +2,11 @@
   <kinesis-container tag="section" class="section-hero">
     <div class="tm-wrapper tm-section tm-container">
       <div
-        class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow"
+        class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
       >
         Welcome to Cosmos
       </div>
-      <h1 class="title tm-rf5 tm-rf7-m-up tm-bold tm-lh-title">
+      <h1 class="title tm-rf5 tm-rf7-m-up tm-bold tm-lh-title tm-title">
         The Internet of Blockchains.
       </h1>
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">

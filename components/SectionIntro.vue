@@ -1,43 +1,7 @@
 <template>
   <div>
-    <div
-      class="section-services tm-container tm-section tm-wrapper tm-grid-base"
-    >
-      <h2 class="title tm-rf5 tm-bold tm-lh-title">
-        A new world of connected services.
-      </h2>
-      <p
-        class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
-      >
-        The Cosmos Hub is a blockchain that provides vital services to the
-        Interchain.
-      </p>
-      <div v-swiper:myDirectiveSwiper="swiperOptions" class="swiper-container">
-        <div class="swiper-wrapper">
-          <div v-for="item in benefits" :key="item.title" class="swiper-slide">
-            <div class="slide__title tm-rf1 tm-bold tm-lh-title">
-              {{ item.title }}
-            </div>
-            <div
-              class="slide__subtitle tm-rf-1 tm-rf0-m-up tm-lh-copy tm-measure-narrower"
-            >
-              {{ item.subtitle }}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-group offset">
-        <tm-button
-          to-link="internal"
-          to="/features"
-          size="l"
-          variant="outlined"
-          class="btn"
-          >Hub features<span class="icon__right">-></span></tm-button
-        >
-      </div>
-    </div>
-
+    <home-section-ecosystem />
+    <home-section-services />
     <div class="section-atom tm-section tm-container tm-wrapper">
       <div class="bg-sunrise-container">
         <graphics-bg-sunrise class="bg-sunrise" />
@@ -63,6 +27,7 @@
             to-link="internal"
             to="/learn/get-atom"
             size="l"
+            color="var(--black)"
             light-color="var(--white)"
             class="btn"
             >Start staking</tm-button
@@ -380,8 +345,6 @@
 </template>
 
 <script>
-import { directive } from 'vue-awesome-swiper'
-
 import IconPlantLeaf from '~/components/icons/IconPlantLeaf.vue'
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
@@ -389,9 +352,6 @@ import IconTelegram from '~/components/icons/IconTelegram.vue'
 import IconCosmos from '~/components/icons/IconCosmos.vue'
 
 export default {
-  directives: {
-    swiper: directive,
-  },
   components: {
     IconPlantLeaf,
     IconTwitter,
@@ -401,28 +361,6 @@ export default {
   },
   data() {
     return {
-      benefits: [
-        {
-          title: 'Marketplace',
-          subtitle:
-            'Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.',
-        },
-        {
-          title: 'Security provider',
-          subtitle:
-            'With the upcoming Cross-chain Staking feature, the ATOM token will soon be securing many chains, in exchange for additional staking rewards.',
-        },
-        {
-          title: 'Router',
-          subtitle:
-            'A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.',
-        },
-        {
-          title: 'Custodian',
-          subtitle:
-            'Located at the crossroads of the Interchain, the Hub is extremely secure, the best place to hold digital assets and manage accounts across many chains.',
-        },
-      ],
       links: [
         {
           url: 'https://t.me/cosmosproject',
@@ -453,15 +391,6 @@ export default {
             'Thinking about becoming a validator or interested in network matters? Join the discussion.',
         },
       ],
-      swiperOptions: {
-        slidesPerView: 'auto',
-        loop: true,
-        loopedSlides: 4,
-        slideToClickedSlide: true,
-        autoplay: {
-          delay: 6000,
-        },
-      },
     }
   },
 }
@@ -475,7 +404,7 @@ export default {
   display flex
   flex-direction column
   margin-top var(--spacing-8)
-  gap 0 var(--spacing-7)
+  gap 0 var(--grid-gap-x)
 
 .bg-sunrise-container
   position absolute
@@ -494,38 +423,6 @@ export default {
     transform translateY(0%) rotate(0)
   100%
     transform translateY(-20%) rotate(-5deg)
-
-// Services
-.section-services
-  > *
-    grid-column 1/-1
-
-  .title
-    margin-top var(--spacing-8)
-    max-width 10em
-
-  .swiper-container
-    margin-top var(--spacing-10)
-    overflow visible
-    width 100%
-
-  .swiper-slide
-    width calc(75% - (var(--grid-gap-x)/4)) // 3/4 cols
-    max-width: $max-width['5']
-    margin-right var(--grid-gap-x)
-    cursor w-resize
-    opacity 0.3
-    transition opacity .4s $ease-out
-
-    &-active
-      opacity 1
-      cursor auto
-
-    &-active ~ .swiper-slide
-      cursor e-resize
-
-  .slide__subtitle
-    margin-top var(--spacing-5)
 
 // ATOM
 .section-atom
@@ -941,25 +838,7 @@ export default {
   .cards-wrapper
     margin-top 0
 
-@media $breakpoint-small-only
-  .section-services
-    > .btn-group
-      grid-column 3 / span 2
-
 @media $breakpoint-medium
-  // Services
-  .section-services
-    .title
-      grid-column 3 / span 6
-
-    .offset
-      grid-column 4 / span 5
-
-    .swiper-container
-      grid-column 4 / span 4
-
-    .swiper-slide
-      max-width none
 
   // ATOM
   .section-atom
@@ -1036,16 +915,6 @@ export default {
       grid-column 1/span 5
 
 @media $breakpoint-xl
-  // Services
-  .section-services
-    .title
-      grid-column 6 / span 7
-
-    .offset
-      grid-column 7 / span 6
-
-    .swiper-container
-      grid-column 7 / span 4
 
   // Features > Interchain Accounts
   .card-accounts
