@@ -22,7 +22,7 @@ export default {
     },
     titleTemplate: (titleChunk) => {
       // If head.title is undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - Cosmos Hub` : 'Cosmos Hub'
+      return titleChunk ? `${titleChunk} - Cosmos Network` : 'Cosmos Network'
     },
     meta: [
       { charset: 'utf-8' },
@@ -31,31 +31,35 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'The interoperable, scalable blockchain network. Built for developers.',
       },
       // Open Graph
-      { hid: 'og:site_name', property: 'og:site_name', content: 'Cosmos Hub' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Cosmos Network',
+      },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Cosmos Hub',
+        content: 'Cosmos Network',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'The interoperable, scalable blockchain network. Built for developers.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://beta.cosmos.network',
+        content: 'https://cosmos.network',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://beta.cosmos.network/og-image.jpg',
+        content: 'https://cosmos.network/og-image.jpg',
       },
       // Twitter Card
       {
@@ -67,23 +71,23 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Cosmos Hub',
+        content: 'Cosmos Network',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Welcome to the Cosmos Hub, the economic center of Cosmos – an ever-expanding ecosystem of interconnected blockchains.',
+          'The interoperable, scalable blockchain network. Built for developers.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://beta.cosmos.network/og-image.jpg',
+        content: 'https://cosmos.network/og-image.jpg',
       },
       {
         hid: 'twitter:image:alt',
         name: 'twitter:image:alt',
-        content: 'Cosmos Hub',
+        content: 'Cosmos Network',
       },
     ],
     link: [
@@ -205,7 +209,7 @@ export default {
     },
   },
   sitemap: {
-    hostname: 'https://beta.cosmos.network',
+    hostname: 'https://cosmos.network',
     exclude: ['/design/**', '/learn/tag/**'],
     routes() {
       return getRoutes()

@@ -1,7 +1,7 @@
 {
-  "name": "cosmos-hub-site",
+  "name": "cosmos-network",
   "version": "1.0.0",
-  "description": "Cosmos Hub Website",
+  "description": "The website for Cosmos, Internet of Blockchains",
   "private": true,
   "scripts": {
     "dev": "nuxt",

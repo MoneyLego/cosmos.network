@@ -12,12 +12,11 @@
 export default {
   head() {
     return {
-      // TODO: verify this when the site is live
       meta: [
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://beta.cosmos.network/hub-og-image.jpg',
+          content: 'https://cosmos.network/og-image.jpg',
         },
       ],
     }
