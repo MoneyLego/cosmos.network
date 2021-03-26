@@ -1,5 +1,7 @@
-:root
-  --container-mw-lg 74rem
+html,
+body
+  background-color var(--bg)
+  color var(--text)
 
 html
   font 400 100%/1.5 $font-family-sans-serif
@@ -33,11 +35,16 @@ body
   margin 0
 
 ::selection
-  background var(--white)
-  color var(--black)
+  background var(--title)
+  color var(--bg)
 
 a
   text-decoration none
+  color var(--link)
+
+  &:hover,
+  &:focus
+    color var(--link-hover)
 
 button
   reset-button()

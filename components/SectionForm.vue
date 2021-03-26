@@ -191,17 +191,17 @@ export default {
         background var(--white-100)
         color var(--white)
         .light-mode &
-          background var(--gray-0)
+          background var(--trans-gray-50)
           color var(--black)
         &::placeholder
           color var(--gray-600)
           transition color 0.15s ease-out
         &:hover
-          background var(--gray-0)
+          background var(--trans-gray-50)
           &:not(:focus)::placeholder
             color var(--gray-800)
         &:focus
-          background var(--gray-0)
+          background var(--trans-gray-50)
   &__footnote
     text-align center
     margin-top var(--spacing-5)

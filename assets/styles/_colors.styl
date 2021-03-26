@@ -12,33 +12,48 @@
 */
 
 :root
+  // grays
   --black #000
-  --gray-0 rgba(0, 0, 0, 0.04)
+  --trans-gray-50 rgba(0, 0, 0, 0.04)
   --gray-100 #171717
-  --gray-400 #616489
-  --gray-600 #989BB9
-  --gray-800 #CFD1E7
-  --gray-900 #ECEDF7
-  --trans-gray-200 rgba(0, 4, 51, 0.845)
-  --trans-gray-400 rgba(0, 5, 66, 0.621)
+  --gray-200 #333333
+  --gray-600 #666666
+  --gray-900 #E6E6E6
+  --gray-950 #F8F8FD
+
+  // transparent grays
+  --trans-gray-100 rgba(0, 0, 0, 0.91)
+  --trans-gray-200 rgba(0, 0, 0, 0.8)
   --trans-gray-600 rgba(0, 0, 0, 0.6)
-  --trans-gray-900 rgba(0, 13, 158, 0.07)
-  --trans-gray-950 #F8F8FD
-  --white #FFFFFF
+  --trans-gray-900 rgba(0, 0, 0, 0.1)
+
+  // whites
   --white-100 rgba(255, 255, 255, 0.1)
   --white-200 rgba(255, 255, 255, 0.2)
-  --white-300 rgba(255, 255, 255, 0.33)
+  --white-300 rgba(255, 255, 255, 0.333)
   --white-500 rgba(255, 255, 255, 0.5)
   --white-800 rgba(255, 255, 255, 0.82)
+  --white #FFFFFF
 
+  // misc
   --transparent transparent
-
-  --primary-900 #CCD1FF
-
   --green-600 #69E0A7
 
-  --link inherit
+  // functional colors
+  --bg var(--black)
+  --fg var(--gray-100)
+  --title var(--white)
+  --text var(--white-800)
+  --muted var(--white-500)
+  --link var(--white)
   --link-hover var(--white-800)
 
+// light mode | functional colors
 .light-mode
+  --bg var(--gray-950)
+  --fg var(--white)
+  --title var(--black)
+  --text var(--black)
+  --muted var(--trans-gray-600)
+  --link var(--text)
   --link-hover var(--trans-gray-600)
