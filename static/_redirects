@@ -1,5 +1,7 @@
 # Redirect URLs (FROM, TO, 301!)
 /atom-protection /learn/staking 301!
+/dev /starport 301!
+/developers /starport 301!
 /resources/delegator /learn/staking 301!
 /roadmap /features 301!
 /start-staking /learn/get-atom 301!
@@ -61,8 +63,6 @@
 /brand https://cosmos.network/design 301!
 /design/assets https://cosmos.network/assets 301!
 /design/trademark https://cosmos.network/trademark 301!
-/dev https://cosmos.network/tools 301!
-/developers https://cosmos.network/tools 301!
 /dev/hackatom https://cosmos.network/events 301!
 /dev/scaling-eth https://cosmos.network/resources/whitepaper#use-cases 301!
 /dev/whitepaper https://cosmos.network/resources/whitepaper 301!
