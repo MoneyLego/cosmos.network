@@ -48,6 +48,7 @@
 /youtube https://www.youtube.com/c/CosmosProject 301!
 /reddit https://reddit.com/r/cosmosnetwork 301!
 /blog https://blog.cosmos.network 301!
+/blog/* https://cosmos.network/blog 301!
 /forum https://forum.cosmos.network 301!
 
 # Redirect URLs to v1.cosmos.network
@@ -57,7 +58,6 @@
 /about/whitepaper/zh-CN https://cosmos.network/resources/whitepaper/zh-CN 301!
 /academy https://cosmos.network/ecosystem 301!
 /academy/kr https://cosmos.network/ecosystem 301!
-/blog/:entry https://cosmos.network/blog 301!
 /brand https://cosmos.network/design 301!
 /design/assets https://cosmos.network/assets 301!
 /design/trademark https://cosmos.network/trademark 301!
