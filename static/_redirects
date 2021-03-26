@@ -51,7 +51,6 @@
 /forum https://forum.cosmos.network 301!
 
 # Redirect URLs to v1.cosmos.network
-/about/* https://cosmos.network/about 301!
 /about/whitepaper https://cosmos.network/resources/whitepaper 301!
 /about/whitepaper/ko https://cosmos.network/resources/whitepaper/ko 301!
 /about/whitepaper/pt https://cosmos.network/resources/whitepaper/pt 301!
