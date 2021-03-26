@@ -1,6 +1,8 @@
 <template>
   <div>
     <section-hero />
+    <home-section-ecosystem />
+    <home-section-services />
     <section-intro />
     <section-banner />
   </div>

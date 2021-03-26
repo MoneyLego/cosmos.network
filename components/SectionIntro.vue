@@ -1,7 +1,5 @@
 <template>
   <div>
-    <home-section-ecosystem />
-    <home-section-services />
     <!-- TODO: update sections beyond here -->
     <div class="section-atom tm-section tm-container tm-wrapper">
       <div class="bg-sunrise-container">
