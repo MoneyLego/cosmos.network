@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- TODO: update sections beyond here -->
+    <!-- Section ATOM - to move to component -->
     <div class="section-atom tm-section tm-container tm-wrapper">
       <div class="bg-sunrise-container">
         <graphics-bg-sunrise class="bg-sunrise" />
@@ -52,6 +52,7 @@
       </div>
     </div>
 
+    <!-- Section features - to move to component -->
     <div
       class="section-features tm-section tm-container tm-wrapper tm-grid-base"
     >
@@ -156,6 +157,7 @@
       </p>
     </div>
 
+    <!-- Section tech - to move to component -->
     <div class="section-tech tm-section tm-container tm-wrapper tm-grid-base">
       <div class="graphics">
         <graphics-hub-tech-stack />
@@ -237,31 +239,7 @@
       </div>
     </div>
 
-    <div class="section-ecosystem tm-container tm-wrapper">
-      <div class="bg-sunrise-container">
-        <graphics-bg-sunrise class="bg-sunrise" flip />
-      </div>
-      <graphics-ecosystem-bg class="bg" />
-      <h2 class="title tm-rf5 tm-lh-title tm-bold">
-        <span>Trusted by 200+</span> <span>leading crypto companies</span>
-      </h2>
-      <div class="btn-group">
-        <tm-button
-          to-link="external"
-          href="cosmos.network/ecosystem"
-          size="l"
-          variant="outlined"
-          >Explore Cosmos<span class="icon__right">-></span></tm-button
-        >
-      </div>
-      <div class="ecosystem-logos">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-      </div>
-      <graphics-ecosystem-fg class="fg" />
-    </div>
-
+    <!-- Section developer - to move to component -->
     <div
       class="section-developer tm-section tm-container tm-wrapper tm-grid-base"
     >
@@ -280,53 +258,7 @@
       </div>
     </div>
 
-    <div class="section-dev-features tm-section tm-container tm-grid-base">
-      <div class="cards-wrapper">
-        <div class="card-item">
-          <div class="top tm-rf0 tm-lh-title">Cross-chain Staking</div>
-          <div class="mid">
-            <div class="graphics">
-              <graphics-home-crosschainstaking class="graphics__item" />
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Share security with the Hub.
-            </div>
-            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="top tm-rf0 tm-lh-title">Fundraising</div>
-          <div class="mid">
-            <div class="graphics">
-              <graphics-home-fundraising class="graphics__item" />
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Build with funds from the Hub.
-            </div>
-            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="top tm-rf0 tm-lh-title">Chain Name System</div>
-          <div class="mid">
-            <div class="graphics">
-              <graphics-home-chainnameservice class="graphics__item" />
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
-              Claim your chain name.
-            </div>
-            <div class="desc tm-rf0 tm-lh-title">Coming soon</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- Section community - to move to component -->
     <div class="section-community tm-section tm-container tm-grid-base">
       <div class="tm-wrapper">
         <div class="text">
@@ -702,130 +634,6 @@ export default {
     max-width 4.5em
     margin-left var(--spacing-6)
 
-// Ecosystem
-.section-ecosystem
-  display flex
-  flex-direction column
-  align-items center
-  text-align center
-  padding-top var(--spacing-13)
-  padding-bottom var(--spacing-13)
-
-  .bg-sunrise-container
-    top 0
-
-  .bg
-    top 0
-    min-width 38rem
-
-  .fg
-    top 24%
-    min-width 38rem
-
-  .title
-    margin-top var(--spacing-11)
-    max-width 13em
-    center()
-    span
-      display block
-
-  .btn-group
-    position relative
-    z-index 1
-    center()
-
-.ecosystem-logos
-  margin-top var(--spacing-10)
-  transform rotate(-9deg)
-  width 200%
-  overflow hidden
-
-  &:before,
-  &:after
-    position absolute
-    content ""
-    height 100%
-    width 11%
-    top 0
-    z-index 1
-
-  &:before
-    background linear-gradient(to right, var(--black), var(--transparent))
-    left 0
-
-  &:after
-    background linear-gradient(to right, var(--transparent), var(--black))
-    right 0
-
-  .row
-    height 3.5rem
-    width 126rem * 2.5
-    background url('~/assets/images/ecosystem-logos-row.png') repeat-x
-    background-size contain
-    margin-top var(--spacing-4)
-    opacity 0.4
-    // animation logosMarquee 10s linear infinite
-
-  .row:nth-child(1)
-    opacity 0.15
-    animation-duration 12s
-  .row:nth-child(2)
-    opacity 0.27
-    animation-duration 11s
-
-@keyframes logosMarquee
-  0%
-    transform translateX(-40%)
-  100%
-    transform translateX(0%)
-
-// Dev features
-.section-dev-features
-  grid-column span 12
-
-.section-dev-features .graphics
-  position relative
-  display grid
-  place-items center
-
-  &__item
-    position absolute
-    width 100%
-    height auto
-
-.cards-wrapper
-  grid-row 2
-  display grid
-  grid-template-columns repeat(1, 1fr)
-  gap var(--spacing-7)
-  grid-column span 12
-  margin-top var(--spacing-11)
-
-.card-item
-  display flex
-  flex-direction column
-  justify-content space-between
-  height 34.6875rem
-  padding var(--spacing-7)
-  position relative
-
-  &:before
-    content url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33 32L1 32L1 0' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
-    position absolute
-    top 0
-    right 0
-    transform-origin center
-    transform rotate(180deg) translate(0px, 6px)
-
-  .mid
-    margin-top var(--spacing-7)
-
-  .bottom
-    margin-top var(--spacing-7)
-
-    .desc
-      margin-top var(--spacing-7)
-      color var(--trans-gray-400)
 
 // Community
 .section-community
@@ -875,10 +683,6 @@ export default {
   .stat
     grid-column span 2
 
-  // Dev features
-  .cards-wrapper
-    margin-top 0
-
 @media $breakpoint-medium
 
   // ATOM
@@ -900,14 +704,6 @@ export default {
 
   .stat-value
     margin var(--spacing-4) 0
-
-  // Dev features
-  .section-dev-features
-    .cards-wrapper
-      grid-template-columns repeat(2, 1fr)
-
-    .graphics__item
-      width 140%
 
   // Community
   .section-community
@@ -945,11 +741,6 @@ export default {
     .subtitle
       margin-top auto
 
-  // Dev features
-  .section-dev-features
-    .cards-wrapper
-      grid-template-columns repeat(3, 1fr)
-
   // Community
   .section-community
     .text
@@ -983,12 +774,4 @@ export default {
   .stat-pos,
   .stat-tx
     grid-column 8 / span 5
-
-
-// temp hide
-.section-ecosystem,
-.section-developer,
-.section-dev-features,
-.section-community
-  display none
 </style>
