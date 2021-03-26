@@ -16,9 +16,9 @@
 /docs/cosmos-hub/validators/overview.html https://hub.cosmos.network/main/validators/overview.html 301!
 /docs/cosmos-hub/validators/validator-faq.html https://hub.cosmos.network/main/validators/validator-faq.html 301!
 /docs/cosmos-hub/validators/validator-setup.html https://hub.cosmos.network/main/validators/validator-setup.html 301!
-/docs/intro/ https://docs.cosmos.network/main/intro/overview.html 301!
-/docs/intro/sdk-design.html https://docs.cosmos.network/main/intro/sdk-design.html 301!
-/docs/spec/ibc/ https://github.com/cosmos/ics/tree/main/ibc 301!
+/docs/intro/ https://docs.cosmos.network/master/intro/overview.html 301!
+/docs/intro/sdk-design.html https://docs.cosmos.network/master/intro/sdk-design.html 301!
+/docs/spec/ibc/ https://github.com/cosmos/ics/raw/master/spec.pdf 301!
 /docs/tutorial https://tutorials.cosmos.network/ 301!
 /docs/tutorial/app-init.html https://tutorials.cosmos.network/nameservice/tutorial/02-app-init.html 301!
 /hiring https://jobs.cosmos.network 301!
@@ -37,7 +37,7 @@
 /validator https://hub.cosmos.network/main/validators/overview.html 301!
 /validators https://hub.cosmos.network/main/validators/overview.html 301!
 /validators/faq https://hub.cosmos.network/main/validators/validator-faq.html 301!
-/validators/tutorial https://hub.cosmos.network/main/validators/overview.html 301!
+gvalidators/tutorial https://hub.cosmos.network/main/validators/overview.html 301!
 /wallet https://hub.cosmos.network/#cosmos-hub-wallets 301!
 /roadmap https://stargate.cosmos.network 301!
 /ibc https://ibcprotocol.org 301!
