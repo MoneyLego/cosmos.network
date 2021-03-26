@@ -281,7 +281,7 @@ export default {
       position absolute
       border-radius inherit
       transform translateZ(0)
-      z-index -1
+      z-index 0 // may cause unintended overlays
       opacity 0.4
       transition background-position .4s $ease-out, opacity .5s $ease-out
     &:hover,

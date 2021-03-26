@@ -93,7 +93,7 @@ export default {}
   .banner-item .graphics
     padding 0
     position relative
-    z-index -1
+    z-index 0
     margin-top 0
 
     &__back

@@ -19,7 +19,7 @@ hover-elevation($size = 8, $speed = .25s, $speed-hover = .2s, $speed-active = .0
     opacity 0
     position absolute
     trbl 0 0 0 0
-    z-index -1
+    z-index 0 // might cause unintended overlays
     transition opacity $speed $ease-out
   &:hover::after,
   &:focus::after

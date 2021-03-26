@@ -2,6 +2,7 @@
   <div>
     <home-section-ecosystem />
     <home-section-services />
+    <!-- TODO: update sections beyond here -->
     <div class="section-atom tm-section tm-container tm-wrapper">
       <div class="bg-sunrise-container">
         <graphics-bg-sunrise class="bg-sunrise" />
@@ -17,7 +18,9 @@
       </div>
       <div class="content">
         <span class="tm-crosshair"></span>
-        <h2 class="title tm-rf5 tm-bold tm-lh-title">Secured by the ATOM.</h2>
+        <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
+          Secured by the ATOM.
+        </h2>
         <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrower">
           In return for securing the Hub services, transaction feed and staking
           rewards are distributed for ATOM stakers.
@@ -54,11 +57,13 @@
     <div
       class="section-features tm-section tm-container tm-wrapper tm-grid-base"
     >
-      <h2 class="title tm-rf5 tm-bold tm-lh-title">
+      <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
         Be part of the open economy of the future.
       </h2>
       <div class="card card-accounts">
-        <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+        <h3
+          class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
+        >
           Interchain Accounts
         </h3>
         <figure class="graphics">
@@ -93,47 +98,55 @@
             </defs>
           </svg>
         </figure>
-        <p class="card__tagline tm-rf3 tm-rf4-m-up tm-lh-title tm-bold">
+        <p
+          class="card__tagline tm-rf3 tm-rf4-m-up tm-lh-title tm-bold tm-title"
+        >
           One secure account for all your digital assets.
         </p>
-        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted">
           Coming soon
         </p>
       </div>
       <div class="card card-dex">
-        <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+        <h3
+          class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
+        >
           Decentralized Exchange
         </h3>
         <figure class="graphics">
           <graphics-coin-stack class="coin-stack" />
         </figure>
-        <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
+        <p class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title">
           Swap tokens &amp; collectibles.
         </p>
-        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+        <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted">
           Coming soon
         </p>
       </div>
       <div class="cards-features-bottom">
         <div class="card card-pools">
-          <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+          <h3
+            class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
+          >
             Liquidity Pools
           </h3>
-          <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
+          <p class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title">
             Provide liquidity.<br />Earn rewards.
           </p>
-          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted">
             Coming soon
           </p>
         </div>
         <div class="card card-bridges">
-          <h3 class="card__title tm-rf0 tm-lh-title tm-medium">
+          <h3
+            class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
+          >
             Wrapped ETH / BTC
           </h3>
-          <p class="card__tagline tm-rf3 tm-lh-title tm-bold">
+          <p class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title">
             + Ethereum.<br />+ Bitcoin.
           </p>
-          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title">
+          <p class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted">
             Coming soon
           </p>
         </div>
@@ -150,22 +163,36 @@
         <graphics-hub-tech-stack />
         <span class="tm-crosshair"></span>
       </div>
-      <h2 class="title tm-rf5 tm-bold tm-lh-title">
-        Powered by the best blockchain tech has to offer.
-      </h2>
-      <p
-        class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
-      >
-        The Cosmos Hub is powered by the
-        <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>, a
-        leading blockchain framework securing over $18B USD in value across 200+
-        interconnected blockchains.
-      </p>
+      <div class="title">
+        <h2 class="overline tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+          Technology
+        </h2>
+        <div class="tm-rf5 tm-bold tm-lh-title tm-title">
+          The most trusted way to build value.
+        </div>
+      </div>
+      <div class="subtitle">
+        <p
+          class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
+        >
+          <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>
+          is a state-of-the-art blockchain framework that powers the Cosmos Hub
+          and its rapidly expanding orbit of sovereign chains.
+        </p>
+        <p
+          class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
+        >
+          Developers can use the SDK to build innovative applications that
+          create value through exchange with the Cosmos Hub.
+        </p>
+      </div>
       <div class="stat stat-tech">
-        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+        <h3
+          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
+        >
           Secure tech
         </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold">
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
           $50B<span class="tm-rf4 tm-lh-title tm-bold super">+</span>
         </div>
         <p class="stat-subtitle tm-rf0 tm-lh-title">
@@ -173,10 +200,12 @@
         </p>
       </div>
       <div class="stat stat-pos">
-        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+        <h3
+          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
+        >
           Proof-of-Stake
         </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold">
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
           <icon-plant-leaf class="icon" />99%<span
             class="tm-rf-1 tm-rf1-m-up tm-rf2-l-up tm-lh-title tm-bold super"
             >lower carbon footprint</span
@@ -187,19 +216,23 @@
         </p>
       </div>
       <div class="stat stat-fees">
-        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+        <h3
+          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
+        >
           Low fees
         </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold">$0.01</div>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">$0.01</div>
         <p class="stat-subtitle tm-rf0 tm-lh-title">
           Enjoy the lowest fees – almost zero.
         </p>
       </div>
       <div class="stat stat-tx">
-        <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline">
+        <h3
+          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
+        >
           Fast transactions
         </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold">7 sec</div>
+        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">7 sec</div>
         <p class="stat-subtitle tm-rf0 tm-lh-title">
           Transactions confirmed in seconds.
         </p>
@@ -412,7 +445,6 @@ export default {
   justify-content center
   width 100%
   min-width 64rem
-  z-index -1
 
 .bg-sunrise
   width 120%
@@ -439,8 +471,10 @@ export default {
     bottom 0
 
   .content
+    position relative
     max-width 40rem
     center()
+    z-index 1
 
   .graphics
     position relative
@@ -449,7 +483,6 @@ export default {
     max-width 64rem
     margin-left auto
     margin-right 35%
-    z-index -1
 
   .coin
     position absolute
@@ -628,13 +661,23 @@ export default {
   .tm-crosshair
     margin-bottom var(--spacing-6)
 
-  .title
-    max-width 8em
+  .title .tm-title
+    max-width 9em
+    margin-top var(--spacing-6)
+
+  .overline
     position relative
-    z-index -1 // above graphics
 
   .subtitle
     position relative
+    margin-top var(--spacing-8)
+
+    &:before
+      content ""
+      angle-accent(nw)
+      margin-left calc(-1 * var(--grid-gap-x))
+      margin-bottom var(--spacing-5)
+
 
 .stat
   position relative
@@ -942,4 +985,12 @@ export default {
   .stat-pos,
   .stat-tx
     grid-column 8 / span 5
+
+
+// temp hide
+.section-ecosystem,
+.section-developer,
+.section-dev-features,
+.section-community
+  display none
 </style>
