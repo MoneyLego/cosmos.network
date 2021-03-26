@@ -1,9 +1,12 @@
 # Redirect URLs (FROM, TO, 301!)
+/atom-protection /learn/staking 301!
+/resources/delegator /learn/staking 301!
 /start-staking /learn/get-atom 301!
+/staking /learn/staking
+/staking/delegators /learn/staking 301!
 
 # Redirect URLs to external websites 301!
 /apply https://jobs.cosmos.network 301!
-/atom-protection https://hub.cosmos.network/main/delegators/delegator-security.html 301!
 /career https://jobs.cosmos.network 301!
 /careers https://jobs.cosmos.network 301!
 /dev/wallet https://hub.cosmos.network/main/hub-overview/overview.html#cosmos-hub-wallets 301!
@@ -26,9 +29,7 @@
 /jobs https://jobs.cosmos.network 301!
 /join-testnet https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
 /livestream https://calendar.google.com/calendar?cid=dGVuZGVybWludC5jb21fdnVwMTBtNGxkcXIwZWRtNTZoaTY5ZHZudmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ 301!
-/resources/delegator https://hub.cosmos.network/main/delegators/delegator-faq.html 301!
 /security https://tendermint.com/security 301!
-/staking https://hub.cosmos.network/main/validators/overview.html 301!
 /staking/validators-faq https://hub.cosmos.network/main/validators/validator-faq.html 301!
 /staking/validators https://hub.cosmos.network/main/validators/overview.html 301!
 /testnet-tutorial https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
@@ -37,7 +38,7 @@
 /validator https://hub.cosmos.network/main/validators/overview.html 301!
 /validators https://hub.cosmos.network/main/validators/overview.html 301!
 /validators/faq https://hub.cosmos.network/main/validators/validator-faq.html 301!
-gvalidators/tutorial https://hub.cosmos.network/main/validators/overview.html 301!
+/validators/tutorial https://hub.cosmos.network/main/validators/overview.html 301!
 /wallet https://hub.cosmos.network/#cosmos-hub-wallets 301!
 /roadmap https://stargate.cosmos.network 301!
 /ibc https://ibcprotocol.org 301!
@@ -86,7 +87,6 @@ gvalidators/tutorial https://hub.cosmos.network/main/validators/overview.html 30
 /scaling-eth https://cosmos.network/resources/whitepaper#use-cases 301!
 /scaling https://cosmos.network/resources/whitepaper#use-cases 301!
 /scalingeth https://cosmos.network/resources/whitepaper#use-cases 301!
-/staking/delegators https://cosmos.networkresources/delegators 301!
 /team https://cosmos.network/about 301!
 /tm https://cosmos.network/design/trademark 301!
 /what-is-cosmos https://cosmos.network/intro 301!
