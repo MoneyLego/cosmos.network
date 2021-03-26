@@ -7,6 +7,8 @@
 /resources/delegator /learn/staking 301!
 /roadmap /features 301!
 /scaling-eth /starport 301!
+/scaling /starport 301!
+/scalingeth /starport 301!
 /start-staking /learn/get-atom 301!
 /staking /learn/staking
 /staking/delegators /learn/staking 301!
@@ -84,9 +86,7 @@
 /plan https://cosmos.network/resources/plan 301!
 /plan/* https://cosmos.network/resources/plan 301!
 /press https://cosmos.network/media 301!
-/resources/academy https://cosmos.network/ecosystem 301!
-/scaling https://cosmos.network/resources/whitepaper#use-cases 301!
-/scalingeth https://cosmos.network/resources/whitepaper#use-cases 301!
+/resources/academy https://cosmos.network/academy 301!
 /team https://cosmos.network/about 301!
 /tm https://cosmos.network/design/trademark 301!
 /what-is-cosmos https://cosmos.network/intro 301!
