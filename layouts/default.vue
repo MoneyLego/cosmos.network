@@ -8,7 +8,7 @@
       <main>
         <nuxt />
       </main>
-      <section-form />
+      <!-- <section-form /> -->
       <tm-footer />
     </div>
   </div>

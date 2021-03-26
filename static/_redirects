@@ -1,11 +1,127 @@
 # Redirect URLs (FROM, TO, 301!)
-/start-staking        /learn/get-atom                                       301!
-/ibc                  https://ibcprotocol.org                               301!
+/atom-protection /learn/staking 301!
+/dev /starport 301!
+/dev/scaling-eth /starport 301!
+/developers /starport 301!
+/faq /learn/faq 301!
+/resources/delegator /learn/staking 301!
+/roadmap /features 301!
+/scaling-eth /starport 301!
+/scaling /starport 301!
+/scalingeth /starport 301!
+/start-staking /learn/get-atom 301!
+/staking /learn/staking
+/staking/delegators /learn/staking 301!
 
-# Redirect Legacy URLs
-/tools                https://cosmos-network.netlify.app/tools              301!
-/sdk                  https://cosmos-network.netlify.app/sdk                200!
 
-# Proxy Redirects
-/intro/*              https://cosmos-network.netlify.app/intro/:splat       200!
-/ecosystem/*          https://cosmos-network.netlify.app/ecosystem/:splat   200!
+# Redirect URLs to external websites 301!
+/apply https://jobs.cosmos.network 301!
+/career https://jobs.cosmos.network 301!
+/careers https://jobs.cosmos.network 301!
+/dev/wallet https://hub.cosmos.network/main/hub-overview/overview.html#cosmos-hub-wallets 301!
+/docs https://docs.cosmos.network 301!
+/docs/cosmos-hub/delegator-guide-cli.html https://hub.cosmos.network/main/delegators/delegator-guide-cli.html 301!
+/docs/cosmos-hub/deploy-testnet.html https://hub.cosmos.network/main/gaia-tutorials/deploy-testnet.html 301!
+/docs/cosmos-hub/installation.html https://hub.cosmos.network/main/gaia-tutorials/installation.html 301!
+/docs/cosmos-hub/join-mainnet.html https://hub.cosmos.network/main/gaia-tutorials/join-mainnet.html 301!
+/docs/cosmos-hub/join-testnet.html https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
+/docs/cosmos-hub/validators/overview.html https://hub.cosmos.network/main/validators/overview.html 301!
+/docs/cosmos-hub/validators/validator-faq.html https://hub.cosmos.network/main/validators/validator-faq.html 301!
+/docs/cosmos-hub/validators/validator-setup.html https://hub.cosmos.network/main/validators/validator-setup.html 301!
+/docs/intro/ https://docs.cosmos.network/master/intro/overview.html 301!
+/docs/intro/sdk-design.html https://docs.cosmos.network/master/intro/sdk-design.html 301!
+/docs/spec/ibc/ https://github.com/cosmos/ics/raw/master/spec.pdf 301!
+/docs/tutorial https://tutorials.cosmos.network/ 301!
+/docs/tutorial/app-init.html https://tutorials.cosmos.network/nameservice/tutorial/02-app-init.html 301!
+/hiring https://jobs.cosmos.network 301!
+/job https://jobs.cosmos.network 301!
+/jobs https://jobs.cosmos.network 301!
+/join-testnet https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
+/livestream https://calendar.google.com/calendar?cid=dGVuZGVybWludC5jb21fdnVwMTBtNGxkcXIwZWRtNTZoaTY5ZHZudmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ 301!
+/security https://tendermint.com/security 301!
+/staking/validators-faq https://hub.cosmos.network/main/validators/validator-faq.html 301!
+/staking/validators https://hub.cosmos.network/main/validators/overview.html 301!
+/testnet-tutorial https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
+/testnet https://hub.cosmos.network/main/gaia-tutorials/join-testnet.html 301!
+/validate https://hub.cosmos.network/main/validators/overview.html 301!
+/validator https://hub.cosmos.network/main/validators/overview.html 301!
+/validators https://hub.cosmos.network/main/validators/overview.html 301!
+/validators/faq https://hub.cosmos.network/main/validators/validator-faq.html 301!
+/validators/tutorial https://hub.cosmos.network/main/validators/overview.html 301!
+/wallet https://hub.cosmos.network/main/hub-overview/overview.html#cosmos-hub-wallets 301!
+/ibc https://ibcprotocol.org 301!
+/discord https://discord.gg/vcExX9T 301!
+/telegram https://t.me/cosmosproject 301!
+/twitter https://twitter.com/cosmos 301!
+/youtube https://www.youtube.com/c/CosmosProject 301!
+/reddit https://reddit.com/r/cosmosnetwork 301!
+/blog https://blog.cosmos.network 301!
+/blog/* https://cosmos.network/blog 301!
+/forum https://forum.cosmos.network 301!
+
+# Redirect URLs to v1.cosmos.network
+/about/whitepaper https://cosmos.network/resources/whitepaper 301!
+/about/whitepaper/ko https://cosmos.network/resources/whitepaper/ko 301!
+/about/whitepaper/pt https://cosmos.network/resources/whitepaper/pt 301!
+/about/whitepaper/zh-CN https://cosmos.network/resources/whitepaper/zh-CN 301!
+/academy https://cosmos.network/community 301!
+/academy/kr https://cosmos.network/community 301!
+/brand https://cosmos.network/design 301!
+/design/assets https://cosmos.network/assets 301!
+/design/trademark https://cosmos.network/trademark 301!
+/dev/hackatom https://cosmos.network/events 301!
+/dev/whitepaper https://cosmos.network/resources/whitepaper 301!
+/dev/whitepaper/ko https://cosmos.network/resources/whitepaper/ko 301!
+/dev/whitepaper/pt https://cosmos.network/resources/whitepaper/pt 301!
+/dev/whitepaper/zh-CN https://cosmos.network/resources/whitepaper/zh-CN 301!
+/events/all https://cosmos.network/events 301!
+/events/code-with-us https://cosmos.network/series/code-with-us 301!
+/ecosystem https://cosmos.network/ecosystem/apps 301!
+/hackatom https://cosmos.network/events 301!
+/info https://cosmos.network/intro 301!
+/introduction https://cosmos.network/intro 301!
+/logo https://cosmos.network/presskit 301!
+/logos https://cosmos.network/presskit 301!
+/mediakit https://cosmos.network/presskit 301!
+/plan https://cosmos.network/resources/plan 301!
+/plan/* https://cosmos.network/resources/plan 301!
+/press https://cosmos.network/media 301!
+/resources/academy https://cosmos.network/academy 301!
+/team https://cosmos.network/about 301!
+/tm https://cosmos.network/design/trademark 301!
+/what-is-cosmos https://cosmos.network/intro 301!
+/what https://cosmos.network/intro 301!
+/whatiscosmos https://cosmos.network/intro 301!
+/whatscosmos https://cosmos.network/intro 301!
+/whitepaper https://cosmos.network/resources/whitepaper 301!
+/whitepaper/en-US https://cosmos.network/resources/whitepaper 301!
+
+# Redirect URLs of WIP pages to v1.cosmos.network
+/about https://cosmos.network/about 301!
+/assets https://cosmos.network/assets 301!
+/community https://cosmos.network/community 301!
+/contributors https://cosmos.network/contributors 301!
+/design https://cosmos.network/design 301!
+/ecosystem/* https://cosmos.network/ecosystem/:splat 301!
+/epicenter https://cosmos.network/epicenter 301!
+/events/* https://cosmos.network/events/:splat 301!
+/glossary https://cosmos.network/glossary 301!
+/goz https://cosmos.network/goz 301!
+/intro https://cosmos.network/intro 301!
+/launch https://cosmos.network/launch 301!
+/media https://cosmos.network/media 301!
+/newsletters/* https://cosmos.network/newsletters/:splat 301!
+/presskit https://cosmos.network/presskit 301!
+/privacy https://cosmos.network/privacy 301!
+/resources/* https://cosmos.network/resources/:splat 301!
+/rpc https://cosmos.network/rpc/v0.41.4 301!
+/rpc/* https://cosmos.network/rpc/:splat 301!
+/sdk https://cosmos.network/sdk 301!
+/series/* https://cosmos.network/series/:splat 301!
+/subscribe https://cosmos.network/subscribe 301!
+/trademark https://cosmos.network/trademark 301!
+/tools https://cosmos.network/tools 301!
+/unsubscribe https://cosmos.network/unsubscribe 301!
+
+# 404
+/contact-events https://cosmos.network/404 301!
