@@ -133,7 +133,7 @@ export default {
      */
     backgroundColor: {
       type: String,
-      default: 'var(--white-200)',
+      default: 'var(--white)',
     },
     /**
      * CSS color of light mode background
@@ -258,27 +258,11 @@ export default {
 
 <style lang="stylus" scoped>
 .tm-button
-  // resets
-  appearance none
-  padding 0
-  text-rendering inherit
-  font-family inherit
-  background none
-  border none
-  outline 0
-  cursor pointer
-  user-select none
-  text-decoration none
-  &::-moz-focus-inner
-    border 0
-    padding 0
-
   // base
   position relative
   display inline-flex
   align-items center
   justify-content center
-  text-align inherit
   color var(--color)
   border-radius 0.47em // relative border-radius
   transition all .25s $ease-out
