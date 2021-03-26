@@ -273,7 +273,7 @@
         </div>
       </div>
       <!-- TODO -->
-      <graphics-home-hero class="graphics" />
+      <!-- <graphics-home-hero class="graphics" /> -->
     </div>
 
     <div class="section-sdk tm-section tm-container tm-wrapper">
