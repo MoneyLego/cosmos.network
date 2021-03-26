@@ -1,22 +1,5 @@
 <template>
-  <div class="tm-wrapper tm-container tm-section">
-    <div class="center">
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <!-- TODO: replace with color var (white, black) -->
-        <path
-          v-if="$nuxt.$colorMode.value === 'dark'"
-          d="M16 8H0M8 16V0"
-          stroke="white"
-        />
-        <path v-else d="M16 8H0M8 16V0" stroke="black" />
-      </svg>
-    </div>
+  <div class="tm-container">
     <div class="cards">
       <NuxtLink to="/learn/staking" class="card-item">
         <div class="graphics">
@@ -50,15 +33,11 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.center
-  text-align center
-
 .cards
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
   grid-column 1 / span 12
-  margin-top var(--spacing-10)
   position relative
 
 .card-item
