@@ -1,38 +1,21 @@
-
-.tm-plus,
-.tm-crosshair
-  position relative
-  display block
-  border-left $px solid
-
-  &::before
-    content ""
-    display block
-    position relative
-    border-top $px solid
-    left -100%
-    margin-left -($px*2)
-
-.tm-plus
-  $size = 0.9375rem
-  height $size
-  width ($size / 2)
-
-  &::before
-    width $size
-    top floor($size / 2, 1)
-
 .tm-crosshair
   $size = 6rem
   height $size
   width ($size / 2)
+  position relative
+  display block
+  border-left $px solid
 
+  &::before,
   &::after
     content ""
     display block
     position relative
 
   &::before
+    border-top $px solid
+    left -100%
+    margin-left -($px*2)
     width $size
     top ($size / 2)
 

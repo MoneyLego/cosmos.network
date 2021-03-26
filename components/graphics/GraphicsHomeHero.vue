@@ -567,7 +567,7 @@
       </kinesis-element>
       <div class="layer layer-front">
         <kinesis-element :strength="40" class="planet planet-terra">
-          <button v-tooltip.top-center="tooltip('Terra')">
+          <div v-tooltip.top-center="tooltip('Terra')">
             <svg
               width="156"
               height="156"
@@ -709,10 +709,10 @@
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
         <kinesis-element :strength="60" class="planet planet-bitcoin">
-          <button v-tooltip.top-center="tooltip('Bitcoin')">
+          <div v-tooltip.top-center="tooltip('Bitcoin')">
             <svg
               width="179"
               height="178"
@@ -796,10 +796,10 @@
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
         <kinesis-element :strength="60" class="planet planet-ethereum">
-          <button v-tooltip.top-center="tooltip('Ethereum')">
+          <div v-tooltip.top-center="tooltip('Ethereum')">
             <svg
               width="168"
               height="168"
@@ -899,10 +899,10 @@
                 </radialGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
         <kinesis-element :strength="70" class="planet planet-cryptocom">
-          <button v-tooltip.top-center="tooltip('Crypto.com')">
+          <div v-tooltip.top-center="tooltip('Crypto.com')">
             <svg
               width="198"
               height="198"
@@ -1006,10 +1006,10 @@
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
         <kinesis-element :strength="80" class="planet planet-thorchain">
-          <button v-tooltip.top-center="tooltip('THORChain')">
+          <div v-tooltip.top-center="tooltip('THORChain')">
             <svg
               width="230"
               height="230"
@@ -1115,10 +1115,10 @@
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
         <kinesis-element :strength="80" class="planet planet-binance">
-          <button v-tooltip.top-center="tooltip('Binance')">
+          <div v-tooltip.top-center="tooltip('Binance')">
             <svg
               width="225"
               height="225"
@@ -1225,10 +1225,10 @@
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </div>
         </kinesis-element>
       </div>
-      <div class="tm-plus"></div>
+      <tm-crosshair class="crosshair" />
     </div>
   </div>
 </template>
@@ -1342,10 +1342,11 @@ svg
   left 60%
   width 10%
 
-.tm-plus
+.crosshair
   position absolute
   bottom 0
   left 50%
+  margin-left -.5rem
 
 @media $breakpoint-medium
   .container
