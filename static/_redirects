@@ -1,12 +1,16 @@
 # Redirect URLs (FROM, TO, 301!)
 /atom-protection /learn/staking 301!
 /dev /starport 301!
+/dev/scaling-eth /starport 301!
 /developers /starport 301!
+/faq /learn/faq 301!
 /resources/delegator /learn/staking 301!
 /roadmap /features 301!
+/scaling-eth /starport 301!
 /start-staking /learn/get-atom 301!
 /staking /learn/staking
 /staking/delegators /learn/staking 301!
+
 
 # Redirect URLs to external websites 301!
 /apply https://jobs.cosmos.network 301!
@@ -64,7 +68,6 @@
 /design/assets https://cosmos.network/assets 301!
 /design/trademark https://cosmos.network/trademark 301!
 /dev/hackatom https://cosmos.network/events 301!
-/dev/scaling-eth https://cosmos.network/resources/whitepaper#use-cases 301!
 /dev/whitepaper https://cosmos.network/resources/whitepaper 301!
 /dev/whitepaper/ko https://cosmos.network/resources/whitepaper/ko 301!
 /dev/whitepaper/pt https://cosmos.network/resources/whitepaper/pt 301!
@@ -72,7 +75,6 @@
 /events/all https://cosmos.network/events 301!
 /events/code-with-us https://cosmos.network/series/code-with-us 301!
 /ecosystem https://cosmos.network/ecosystem/apps 301!
-/faq https://cosmos.network/resources/faq 301!
 /hackatom https://cosmos.network/events 301!
 /info https://cosmos.network/intro 301!
 /introduction https://cosmos.network/intro 301!
@@ -80,10 +82,9 @@
 /logos https://cosmos.network/presskit 301!
 /mediakit https://cosmos.network/presskit 301!
 /plan https://cosmos.network/resources/plan 301!
-/plan/:locale https://cosmos.network/resources/plan 301!
+/plan/* https://cosmos.network/resources/plan 301!
 /press https://cosmos.network/media 301!
 /resources/academy https://cosmos.network/ecosystem 301!
-/scaling-eth https://cosmos.network/resources/whitepaper#use-cases 301!
 /scaling https://cosmos.network/resources/whitepaper#use-cases 301!
 /scalingeth https://cosmos.network/resources/whitepaper#use-cases 301!
 /team https://cosmos.network/about 301!
