@@ -383,7 +383,7 @@
 export default {}
 </script>
 
-<style lang="stylus" scop SectionCtaCardsed>
+<style lang="stylus" scoped>
 // Global
 .btn-group
   display flex
