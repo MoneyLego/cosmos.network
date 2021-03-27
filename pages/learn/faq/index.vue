@@ -8,11 +8,7 @@
           </div>
         </div>
       </div>
-      <graphics-faq-hero-dark
-        v-if="$nuxt.$colorMode.value === 'dark'"
-        class="graphics"
-      />
-      <graphics-faq-hero-light v-else class="graphics" />
+      <graphics-faq-hero class="graphics" />
     </div>
 
     <div class="tm-wrapper tm-container tm-grid-base">
@@ -72,7 +68,7 @@
     </div>
 
     <div class="section-cards tm-wrapper tm-container">
-      <section-cta-cards :data="cards" />
+      <tm-cta-cards :data="cards" />
     </div>
   </main>
 </template>

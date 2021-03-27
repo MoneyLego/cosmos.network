@@ -36,7 +36,7 @@
     </div>
 
     <div class="tm-wrapper tm-container">
-      <section-cta-cards :data="cards" />
+      <tm-cta-cards :data="cards" />
     </div>
   </article>
 </template>

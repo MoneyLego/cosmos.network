@@ -193,8 +193,6 @@ import exploreDropdownBottom from '../components/content/exploreDropdownBottom'
 import LogoHubBrandmark from '~/components/logos/LogoHubBrandmark.vue'
 import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
 
-import '~/assets/styles/nav.styl'
-
 export default {
   components: {
     LogoCosmosWordmark,
@@ -233,6 +231,8 @@ export default {
   },
 }
 </script>
+
+<style src="~/assets/styles/nav.styl" lang="stylus" />
 
 <style lang="stylus" scoped>
 $navbar-height = 5rem
