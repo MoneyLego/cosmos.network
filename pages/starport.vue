@@ -44,6 +44,9 @@
           ></iframe>
         </div>
       </div>
+      <div class="hero-graphics">
+        <graphics-starport-hero class="graphics" />
+      </div>
     </div>
 
     <div class="section-intro tm-section tm-container tm-wrapper tm-grid-base">
@@ -397,6 +400,11 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Starport',
+    }
+  },
 }
 </script>
 
@@ -432,6 +440,8 @@ svg.graphics__item
   .text
   .demo
     grid-column 1/-1
+    position relative
+    z-index 1
 
 .section-hero .overline
   color var(--white-500)
@@ -446,6 +456,12 @@ svg.graphics__item
 iframe
   border-radius $border-radius-6
   height 260px
+
+.hero-graphics
+  position relative
+  padding-top var(--spacing-12)
+  overflow visible
+  z-index 0
 
 // Intro
 .section-intro
@@ -498,6 +514,7 @@ iframe
 
 .section-cli .top .graphics__item
   width 100%
+  margin-top -18%
 
 .section-cli .top .text
   .title
@@ -528,7 +545,11 @@ iframe
     grid-column 1/-1
 
 .section-cloud .top .graphics__item
-  width 100%
+  width 120%
+  margin-top -18%
+  margin-left -19%
+  overflow visible
+  max-width 40rem
 
 // Production
 .section-production
