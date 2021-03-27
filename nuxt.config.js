@@ -152,7 +152,7 @@ export default {
     '~/plugins/vue-scrollto.client.js',
     '~/plugins/vue-stripe-menu.client.js',
     '~/plugins/vue-kinesis.client.js',
-    '~/plugins/v-tooltip.js',
+    '~/plugins/v-tooltip.client.js',
   ],
   env: {},
   /*
