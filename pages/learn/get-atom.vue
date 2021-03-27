@@ -185,9 +185,18 @@
             Select your validators.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
-            In your wallet, choose the validators to delegate your ATOM to.
-            Remember to spread your risk by delegating your ATOM to multiple
-            validators in good standing.
+            In your wallet, choose the
+            <button
+              v-tooltip="{
+                content:
+                  'Validators are special full-nodes that take part in the consensus algorithm to collectively add blocks to the blockchain.',
+              }"
+              class="tm-link tm-definition"
+            >
+              validators
+            </button>
+            to delegate your ATOM to. Remember to spread your risk by delegating
+            your ATOM to multiple validators in good standing.
           </div>
           <tm-button
             to-link="internal"
