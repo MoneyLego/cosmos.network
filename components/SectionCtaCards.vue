@@ -1,35 +1,49 @@
 <template>
   <div class="tm-container">
     <div class="cards">
-      <NuxtLink to="/learn/staking" class="card-item">
-        <div class="graphics">
-          <graphics-cta-token-holders class="graphics__item" />
-        </div>
-        <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
-          Token Holders
-        </div>
-        <div class="title tm-rf2 tm-bold tm-lh-title">Start staking -></div>
-      </NuxtLink>
-      <a
-        href="https://cosmos.network/tools"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="card-item"
-      >
-        <div class="graphics">
-          <graphics-cta-developers class="graphics__item" />
-        </div>
-        <div class="caption tm-rf0 tm-medium tm-lh-title tm-overline">
-          Developers
-        </div>
-        <div class="title tm-rf2 tm-bold tm-lh-title">Start building -></div>
-      </a>
+      <div v-for="item in data" :key="item.title">
+        <nuxt-link
+          v-if="item.href.startsWith('/')"
+          :to="item.href"
+          class="card-item"
+        >
+          <div v-if="item.graphics" class="graphics">
+            <component :is="`${item.graphics}`" class="graphics__item" />
+          </div>
+          <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
+            {{ item.overline }}
+          </div>
+          <div class="title tm-rf2 tm-bold tm-lh-title">{{ item.title }}</div>
+        </nuxt-link>
+        <a
+          v-else
+          :href="item.href"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="card-item"
+        >
+          <div v-if="item.graphics" class="graphics">
+            <component :is="`${item.graphics}`" class="graphics__item" />
+          </div>
+          <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
+            {{ item.overline }}
+          </div>
+          <div class="title tm-rf2 tm-bold tm-lh-title">{{ item.title }}</div>
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    data: {
+      type: Array,
+      default: () => [],
+    },
+  },
+}
 </script>
 
 <style lang="stylus" scoped>
@@ -58,7 +72,7 @@ export default {}
     background-color var(--white)
 
 .card-item
-  .caption
+  .overline
   .title
     width fit-content
 

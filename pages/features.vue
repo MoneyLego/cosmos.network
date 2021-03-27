@@ -479,13 +479,31 @@
 
     <div class="tm-wrapper tm-container tm-section">
       <tm-crosshair class="center crosshair" />
-      <section-cta-cards />
+      <section-cta-cards :data="cards" />
     </div>
   </main>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      cards: [
+        {
+          href: '/learn/staking',
+          graphics: 'graphics-cta-token-holders',
+          overline: 'Token Holders',
+          title: 'Start staking ->',
+        },
+        {
+          href: '/starport',
+          graphics: 'graphics-cta-developers',
+          overline: 'Developers',
+          title: 'Start building ->',
+        },
+      ],
+    }
+  },
   head() {
     return {
       title: 'Features',
