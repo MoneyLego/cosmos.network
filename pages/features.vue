@@ -266,14 +266,7 @@
       <div class="tm-grid-base">
         <span class="ne-accent ne-accent-stacked"></span>
         <div class="graphics">
-          <graphics-features-interchain-staking-dark
-            v-if="$nuxt.$colorMode.value === 'dark'"
-            class="graphics__item"
-          />
-          <graphics-features-interchain-staking-light
-            v-else
-            class="graphics__item"
-          />
+          <graphics-features-interchain-staking class="graphics__item" />
         </div>
         <div class="feature-text">
           <div class="top">
@@ -436,30 +429,28 @@
     </div>
 
     <!-- Fees -->
-    <div class="tm-section tm-container tm-wrapper tm-grid-base section-fees">
+    <div class="tm-section tm-container section-fees">
       <div class="graphics">
-        <graphics-features-rewards-fees-dark
-          v-if="$nuxt.$colorMode.value === 'dark'"
-          class="graphics__item"
-        />
-        <graphics-features-rewards-fees-light v-else class="graphics__item" />
+        <graphics-features-rewards-fees class="graphics__item" />
       </div>
-      <div class="title tm-rf5 tm-bold tm-lh-title">
-        Services generate fees. Fees generate rewards.
-      </div>
-      <div class="description">
-        <div class="subtitle tm-rf1 tm-lh-copy">
-          The more activity on the Hub, the more fees paid by services, which in
-          turn, generates rewards for staked ATOM holders.
+      <div class="tm-wrapper tm-grid-base">
+        <div class="title tm-rf5 tm-bold tm-lh-title">
+          Services generate fees. Fees generate rewards.
         </div>
-        <tm-button
-          to-link="internal"
-          to="/learn/faq/what-is-staking"
-          size="l"
-          variant="text"
-          class="btn"
-          >What is staking <span class="icon__right">&rarr;</span></tm-button
-        >
+        <div class="description">
+          <div class="subtitle tm-rf1 tm-lh-copy">
+            The more activity on the Hub, the more fees paid by services, which
+            in turn, generates rewards for staked ATOM holders.
+          </div>
+          <tm-button
+            to-link="internal"
+            to="/learn/faq/what-is-staking"
+            size="l"
+            variant="text"
+            class="btn"
+            >What is staking <span class="icon__right">&rarr;</span></tm-button
+          >
+        </div>
       </div>
     </div>
 
@@ -739,7 +730,7 @@ export default {
 
   &__item
     flex 0 0 108%
-    margin-bottom -15%
+    margin-top -10%
     min-width 30rem
 
 // Interchain staking
@@ -758,10 +749,10 @@ export default {
   max-height 28rem
 
   &__item
-    flex 0 0 240%
+    flex 0 0 150%
     max-width 61rem
     margin-top -13%
-    margin-bottom -49%
+    margin-bottom -30%
 
 // CNS + Staking Derivatives
 .section-features-last
@@ -785,7 +776,7 @@ export default {
   .title,
   .description,
   .graphics
-    grid-column span 4
+    grid-column 1/-1
 
 .section-fees .graphics__item
   width 100%
@@ -800,15 +791,7 @@ export default {
 @media $breakpoint-small
   // Fees
   .section-fees .graphics
-    grid-column 1/span 4
-    position relative
-
-    &__item
-      position absolute
-      top -150%
-      left -18vw
-      width unset
-      height unset
+    margin-bottom -20%
 
 @media $breakpoint-medium-max
   .section-features .span-7
@@ -913,11 +896,6 @@ export default {
       display none
 
   // Fees
-  .section-fees .title
-    grid-column 5/ 12
-
-  .section-fees .description
-    grid-column 6/ 10
 
 @media $breakpoint-xl
   // Hero
@@ -969,4 +947,18 @@ export default {
 
   .section-interchain-staking .graphics
     grid-column 1 / span 6
+
+  // Fees
+  .section-fees .graphics
+    position absolute
+    left -48%
+    top -20%
+    z-index 0
+    width 105%
+
+  .section-fees .title
+    grid-column 5/ span 8
+
+  .section-fees .description
+    grid-column 6/ span 5
 </style>
