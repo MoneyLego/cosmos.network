@@ -10,7 +10,7 @@
           />
         </template>
         <template #before-nav>
-          <li class="vsm-section logo-section">
+          <li class="vsm-section vsm-logo-section">
             <logo-cosmos-wordmark class="logo" />
           </li>
         </template>
@@ -19,7 +19,7 @@
             <a href="#" class="vsm-link signup">Sign In</a>
           </li>
           <vsm-mob>
-            <div class="mobile-content">Mobile Content</div>
+            <div class="vsm-mobile-content">Mobile Content</div>
           </vsm-mob>
         </template>
       </vsm-menu>
@@ -42,9 +42,20 @@ export default {
     return {
       menu: [
         { title: 'Learn', dropdown: 'features', content: singleListDropdown },
-        { title: 'Build', dropdown: 'enterprise', content: buildDropdownTop, secondaryContent: buildDropdownBottom },
+        {
+          title: 'Build',
+          dropdown: 'enterprise',
+          content: buildDropdownTop,
+          secondaryContent: buildDropdownBottom,
+        },
         { title: 'Explore', attributes: { href: '#' } },
-        { title: 'Github', attributes: { href: 'https://github.com/Alexeykhr/vue-stripe-menu', target: '_blank' } },
+        {
+          title: 'Github',
+          attributes: {
+            href: 'https://github.com/Alexeykhr/vue-stripe-menu',
+            target: '_blank',
+          },
+        },
       ],
     }
   },
@@ -54,8 +65,8 @@ export default {
     },
     onCloseDropdown() {
       console.log('onCloseDropdown')
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -86,7 +97,7 @@ export default {
 
 
 // Move all the content to the right and reduce the logo
-.logo-section {
+.vsm-logo-section {
   flex: 1 1 auto;
   img {
     user-select: none;
@@ -104,23 +115,23 @@ export default {
 }
 
 // Styles for Dropdown Content:
-.wrap-content {
+.vsm-wrap-content {
   padding: 30px;
   // Set the width manually so that it does not depend
   // on changing content
   width: 400px;
 }
-.wrap-content__block {
+.vsm-wrap-content__block {
   font-weight: bold;
 }
-.wrap-content__item {
+.vsm-wrap-content__item {
   font-style: italic;
   font-size: .8rem;
 }
 
-.content,
-.content--secondary,
-.mobile-content {
+.vsm-content,
+.vsm-content--secondary,
+.vsm-mobile-content {
   padding: 30px;
 }
 

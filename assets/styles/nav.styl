@@ -15,7 +15,7 @@
   grid-template-columns repeat(3, 1fr)
 
 // Move all the content to the right and reduce the logo
-.logo-section
+.vsm-logo-section
   flex 1 1 auto
   img
     user-select none
@@ -28,18 +28,18 @@
     padding 0 25px
 
 // Styles for Dropdown Content:
-.wrap-content
+.vsm-wrap-content
   padding 30px
   // Set the width manually so that it does not depend
   // on changing content
   width 482px
 
-.content
-.content--secondary
-.mobile-content
+.vsm-content
+.vsm-content--secondary
+.vsm-mobile-content
   padding var(--spacing-7) var(--spacing-8)
 
-.content--secondary
+.vsm-content--secondary
   padding-top 10px
   padding-bottom 10px
 
@@ -73,15 +73,15 @@
 .vsm-link
   color currentColor !important
 
-.content--secondary
+.vsm-content--secondary
   background var(--trans-gray-100) !important
   border-radius 0 0 6px 6px // fix white corner
   overflow hidden
 
 // fix white bg color when hover different nav items
 .vsm-dropdown-container > *
-  background var(--gray-100) 
-    
+  background var(--gray-100)
+
 .vsm-dropdown-content
   box-shadow var(--elevation-4)
 
@@ -101,14 +101,15 @@
     color var(--white-400)
     margin-top var(--spacing-3)
 
-.graphics
-  display grid
-  place-self center
+.vsm-menu
+  .graphics
+    display grid
+    place-self center
 
-.graphics__item
-  height auto
-  width 60%
-  margin-bottom 15%
+  .graphics__item
+    height auto
+    width 60%
+    margin-bottom 15%
 
 @media $breakpoint-large-max
   .vsm-root

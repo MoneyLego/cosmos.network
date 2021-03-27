@@ -8,15 +8,15 @@
       <vsm-menu :menu="menu">
         <!-- The main content for the dropdown list -->
         <template #default="data">
-          <component :is="data.item.content" class="content" />
+          <component :is="data.item.content" class="vsm-content" />
           <component
             :is="data.item.secondaryContent"
-            class="content--secondary"
+            class="vsm-content--secondary"
           />
         </template>
         <!-- Content to the left of the list -->
         <template #before-nav>
-          <li class="vsm-section logo-section">
+          <li class="vsm-section vsm-logo-section">
             <NuxtLink to="/" class="logo">
               <logo-cosmos-wordmark class="logo__cosmos" />
               <span class="sr-only">Cosmos</span>
