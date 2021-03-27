@@ -27,7 +27,7 @@
       </p>
       <div class="btn-group">
         <tm-button to-link="internal" to="/intro" size="l" class="btn"
-          >Learn<span class="icon__right">-></span></tm-button
+          >Learn<span class="icon__right">&rarr;</span></tm-button
         >
         <tm-button
           to-link="internal"
@@ -35,7 +35,7 @@
           size="l"
           variant="text"
           class="btn"
-          >Explore apps<span class="icon__right">-></span></tm-button
+          >Explore apps<span class="icon__right">&rarr;</span></tm-button
         >
       </div>
     </div>

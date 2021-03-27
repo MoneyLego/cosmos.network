@@ -472,7 +472,7 @@
           size="l"
           variant="text"
           class="btn"
-          >What is staking <span class="icon__right">--></span></tm-button
+          >What is staking <span class="icon__right">&rarr;</span></tm-button
         >
       </div>
     </div>

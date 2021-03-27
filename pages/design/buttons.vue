@@ -8,7 +8,7 @@
         </h2>
         <div class="row">
           <tm-button size="xl" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -22,7 +22,7 @@
           <tm-button size="l">Cosmonaut</tm-button>
           <tm-button size="l" variant="outlined" glow>To infinity</tm-button>
           <tm-button size="l" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -36,7 +36,7 @@
           <tm-button size="m">Cosmonaut</tm-button>
           <tm-button size="m" glow>To infinity</tm-button>
           <tm-button size="m" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -50,7 +50,7 @@
           <tm-button size="s">Cosmonaut</tm-button>
           <tm-button size="s" glow>To infinity</tm-button>
           <tm-button size="s" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
       </div>
@@ -62,7 +62,7 @@
         </h2>
         <div class="row">
           <tm-button size="xl" color="var(--bg)" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -84,7 +84,7 @@
             >To infinity</tm-button
           >
           <tm-button size="l" color="var(--black)" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -106,7 +106,7 @@
             >To infinity</tm-button
           >
           <tm-button size="m" color="var(--black)" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="row">
@@ -128,7 +128,7 @@
             >To infinity</tm-button
           >
           <tm-button size="s" color="var(--black)" variant="text" glow
-            >And beyond<span class="icon__right">--></span></tm-button
+            >And beyond<span class="icon__right">&rarr;</span></tm-button
           >
         </div>
       </div>

@@ -171,7 +171,7 @@
             size="l"
             variant="text"
             class="btn"
-            >Choose a wallet <span class="icon__right">-></span></tm-button
+            >Choose a wallet <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
@@ -195,7 +195,8 @@
             size="l"
             variant="text"
             class="btn"
-            >Choosing a validator <span class="icon__right">-></span></tm-button
+            >Choosing a validator
+            <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
       </div>
@@ -336,7 +337,8 @@
                 size="l"
                 variant="text"
                 class="btn"
-                >Cosmos Community <span class="icon__right">-></span></tm-button
+                >Cosmos Community
+                <span class="icon__right">&rarr;</span></tm-button
               >
             </div>
           </div>

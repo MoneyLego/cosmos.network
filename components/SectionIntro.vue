@@ -29,7 +29,7 @@
             to="/learn/get-atom"
             size="l"
             class="btn"
-            >Start staking</tm-button
+            >Start staking <span class="icon__right">&rarr;</span></tm-button
           >
           <tm-button
             to-link="internal"
@@ -37,7 +37,7 @@
             size="l"
             variant="text"
             class="btn"
-            >What is staking <span class="icon__right">--></span></tm-button
+            >Learn more <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <span class="accent"></span>
@@ -150,7 +150,7 @@
       </div>
       <p class="cta">
         <tm-button to-link="internal" to="/features" size="l" variant="text"
-          >More features<span class="icon__right">-></span></tm-button
+          >More features<span class="icon__right">&rarr;</span></tm-button
         >
       </p>
     </div>
@@ -273,7 +273,7 @@
             size="l"
             variant="text"
             class="btn"
-            >Cosmos Community <span class="icon__right">-></span></tm-button
+            >Cosmos Community <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="list">

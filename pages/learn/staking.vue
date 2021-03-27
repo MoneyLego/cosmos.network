@@ -202,7 +202,7 @@
           variant="text"
           class="btn"
           >More about staking safely
-          <span class="icon__right">--></span></tm-button
+          <span class="icon__right">&rarr;</span></tm-button
         >
       </div>
       <div class="graphics">

@@ -34,7 +34,7 @@
             size="l"
             variant="text"
             class="btn"
-            >Learn more <span class="icon__right">--></span></tm-button
+            >Learn more <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
         <div class="divider">
