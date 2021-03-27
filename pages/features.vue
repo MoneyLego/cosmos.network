@@ -24,20 +24,6 @@
         </div>
       </div>
       <div class="hero-graphics">
-        <div class="section-label">
-          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
-            Securing trade
-          </div>
-          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
-            Service marketplace
-          </div>
-          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
-            Promoting exchange
-          </div>
-          <div class="label tm-rf-1 tm-rf0-m-up tm-rf1-l-up tm-lh-copy">
-            Facilitating discovery
-          </div>
-        </div>
         <graphics-features-hero class="graphics" />
       </div>
     </div>
@@ -651,46 +637,8 @@ export default {
 // Graphics
 .hero-graphics
   position relative
-  padding-top var(--spacing-8)
-
-.section-label
-  display flex
-  flex-direction row
-  justify-content center
-  align-items stretch
-  center()
-  max-width 60rem
-
-.label + .label
-  margin-left 18%
-
-.label
-  writing-mode vertical-rl
-  transform rotate(-180deg)
-  text-align right
   padding-top var(--spacing-12)
-  padding-left var(--spacing-3)
-  position relative
-
-  &:after
-    content ""
-    display block
-    width 1px
-    height 100%
-    position absolute
-    top 0
-    left 0
-    background linear-gradient(180deg, var(--transparent) 0%, var(--white) 100%)
-
-.label
-  &:nth-child(1)
-    top var(--spacing-12)
-
-  &:nth-child(3)
-    top var(--spacing-10)
-
-  &:nth-child(4)
-    top var(--spacing-13)
+  overflow visible
 
 // Feature
 .section-features .text,
