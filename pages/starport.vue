@@ -371,7 +371,7 @@
         </div>
       </div>
       <div class="bottom">
-        <section-cta-cards :data="cards" />
+        <tm-cta-cards :data="cards" />
       </div>
     </div>
   </main>

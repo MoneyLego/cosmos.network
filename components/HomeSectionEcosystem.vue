@@ -16,11 +16,11 @@
         communication protocol. This innovation enables people to freely
         exchange assets and data across sovereign,
         <button
-          class="tm-link tm-definition"
           v-tooltip="{
             content:
               'Think electronic money without central banks, digital asset trading without centrally-operated stock exchanges, or social network platforms without central administrators.',
           }"
+          class="tm-link tm-definition"
         >
           decentralized blockchains</button
         >.

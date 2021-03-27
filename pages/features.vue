@@ -479,7 +479,7 @@
 
     <div class="tm-wrapper tm-container tm-section">
       <tm-crosshair class="center crosshair" />
-      <section-cta-cards :data="cards" />
+      <tm-cta-cards :data="cards" />
     </div>
   </main>
 </template>
