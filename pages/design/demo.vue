@@ -30,9 +30,9 @@
 <script>
 /* eslint-disable */
 import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark'
-import featuresDropdown from '../../components/content/featuresDropdown'
-import enterpriseDropdownTop from '../../components/content/enterpriseDropdownTop'
-import enterpriseDropdownBottom from '../../components/content/enterpriseDropdownBottom'
+import singleListDropdown from '../../components/content/singleListDropdown'
+import buildDropdownTop from '../../components/content/buildDropdownTop'
+import buildDropdownBottom from '../../components/content/buildDropdownBottom'
 
 export default {
   components: {
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       menu: [
-        { title: 'Learn', dropdown: 'features', content: featuresDropdown },
-        { title: 'Build', dropdown: 'enterprise', content: enterpriseDropdownTop, secondaryContent: enterpriseDropdownBottom },
+        { title: 'Learn', dropdown: 'features', content: singleListDropdown },
+        { title: 'Build', dropdown: 'enterprise', content: buildDropdownTop, secondaryContent: buildDropdownBottom },
         { title: 'Explore', attributes: { href: '#' } },
         { title: 'Github', attributes: { href: 'https://github.com/Alexeykhr/vue-stripe-menu', target: '_blank' } },
       ],
@@ -168,7 +168,7 @@ export default {
   min-width: 250px;
 }
 
-.enterprise-dropdown {
+.dropdown-container {
   width: 400px;
 }
 </style>

@@ -8,7 +8,7 @@
           <div class="text tm-measure-wide">
             <div class="header tm-rf0 tm-lh-title tm-overline">get started</div>
             <div class="title tm-rf6 tm-bold tm-lh-title">
-              Stake ATOM and stake
+              Get ATOM and stake
             </div>
           </div>
           <graphics-get-started-hero-coins class="graphics-coins" />

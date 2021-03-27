@@ -35,7 +35,9 @@
       </div>
     </div>
 
-    <section-social-cards />
+    <div class="tm-wrapper tm-container">
+      <section-cta-cards :data="cards" />
+    </div>
   </article>
 </template>
 
@@ -60,6 +62,22 @@ export default {
       // tags,
       // prev,
       // next,
+    }
+  },
+  data() {
+    return {
+      cards: [
+        {
+          href: 'https://v1.cosmos.network/discord',
+          overline: 'Discord',
+          title: 'Developer chat ->',
+        },
+        {
+          href: 'https://v1.cosmos.network/telegram',
+          overline: 'Telegram',
+          title: 'Community chat ->',
+        },
+      ],
     }
   },
   head() {

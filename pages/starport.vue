@@ -373,14 +373,33 @@
         </div>
       </div>
       <div class="bottom">
-        <section-cta-cards />
+        <section-cta-cards :data="cards" />
       </div>
     </div>
   </main>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          href: '/learn/staking',
+          graphics: 'graphics-cta-developer-chat',
+          overline: 'Discord',
+          title: 'Developer chat ->',
+        },
+        {
+          href: 'https://v1.cosmos.network/contributors',
+          graphics: 'graphics-cta-funding',
+          overline: 'Funding',
+          title: 'Get funding for your app ->',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="stylus" scoped>

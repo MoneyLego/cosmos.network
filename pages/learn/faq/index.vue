@@ -71,7 +71,9 @@
       </div>
     </div>
 
-    <section-social-cards />
+    <div class="section-cards tm-wrapper tm-container">
+      <section-cta-cards :data="cards" />
+    </div>
   </main>
 </template>
 
@@ -94,6 +96,18 @@ export default {
   data() {
     return {
       currentIndex: 6,
+      cards: [
+        {
+          href: 'https://v1.cosmos.network/discord',
+          overline: 'Discord',
+          title: 'Developer chat ->',
+        },
+        {
+          href: 'https://v1.cosmos.network/telegram',
+          overline: 'Telegram',
+          title: 'Community chat ->',
+        },
+      ],
     }
   },
   head() {
@@ -141,6 +155,9 @@ export default {
 .cta
   text-align left
   cursor pointer
+
+.section-cards
+  margin-top var(--spacing-10)
 
 @media $breakpoint-medium
   // Hero

@@ -61,6 +61,11 @@ export default {
       return typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
     },
   },
+  mounted() {
+    const test = typeof this.$nuxt === 'undefined' ? 'router-link' : 'nuxt-link'
+    // eslint-disable-next-line no-console
+    console.log(test)
+  },
 }
 </script>
 

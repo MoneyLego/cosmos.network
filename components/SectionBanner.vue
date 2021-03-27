@@ -12,9 +12,8 @@
           to-link="internal"
           to="/learn/get-atom"
           size="l"
+          color="var(--black)"
           light-color="var(--white)"
-          dark-background-color="var(--white-200)"
-          light-background-color="var(--black)"
           class="btn"
           >Stake ATOM</tm-button
         >
