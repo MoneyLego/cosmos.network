@@ -18,4 +18,11 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.items
+  width 100%
+  display flex
+  flex-flow row wrap
+.item
+  margin-bottom 1.5rem
+</style>

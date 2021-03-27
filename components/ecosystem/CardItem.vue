@@ -15,14 +15,15 @@
       img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo").logo-wrapper__top
       .logo-wrapper__color
   .text
-    .text__top
-      a(:href="item.fields.website" target="_blank" rel="noreferrer noopener" v-if="item.fields.website && item.fields.website !== 'x'").text__top__name {{ item.fields.name }}
+    .tm-rf1.tm-bold.tm-lh-title.tm-title
+      a(:href="item.fields.website" target="_blank" rel="noreferrer noopener" v-if="item.fields.website && item.fields.website !== 'x'")
+        | {{ item.fields.name }}
         span(v-tooltip.top="item.fields.status" v-if="item.fields.status !== 'Unknown'").dot
           icon-dot(fill="var(--dot-color, rgba(59, 66, 125, 0.12))" :style="{'--dot-color': `${dotColor[cleanText(item.fields.status)]}`}")
       .text__top__name__none(v-else) {{ item.fields.name }}
         span(v-tooltip.top="item.fields.status" v-if="item.fields.status !== 'Unknown'").dot
           icon-dot(fill="var(--dot-color, rgba(59, 66, 125, 0.12))" :style="{'--dot-color': `${dotColor[cleanText(item.fields.status)]}`}")
-    .text__category(v-if="!item.fields.category || item.fields.category !== '?'") {{ item.fields.category }}
+    .tm-muted(v-if="!item.fields.category || item.fields.category !== '?'") {{ item.fields.category }}
     .text__list
       a(:href="item.fields.docs" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Docs'" v-if="item.fields.docs && item.fields.docs !== 'x'").list-item.fields
         img(src="~assets/brands/gray/docs.svg" alt="Docs").icon
@@ -68,9 +69,6 @@ export default {
 
 <style lang="stylus" scoped>
 
-// ecosystem
---sidebar-width 13rem
-
 .dot
   padding 0.25rem
 
@@ -82,15 +80,16 @@ export default {
   border-radius .5rem
   transition all .25s
   gap 1.5rem
+  max-width 320px
 
 .logo-wrapper
   width fit-content
   height fit-content
   padding 1.25rem
-  border-radius 20%
+  border-radius 1rem
   display flex
   align-items center
-  background linear-gradient(135deg,#fff,#e0e0e0)
+  background var(--white-100)
   overflow hidden
   filter blur(0px)
   position relative
@@ -118,23 +117,6 @@ export default {
 .text
   display flex
   flex-direction column
-
-  &__top
-
-    &__name
-      font-weight bold
-      font-size 1.125rem
-      line-height 1.6875rem
-      color #5064FB
-
-      &__none
-        font-weight bold
-        font-size 1.125rem
-        line-height 1.6875rem
-        color var(--txt)
-
-  &__category
-    color var(--dim)
 
   &__list
     display inline-flex
@@ -166,11 +148,6 @@ export default {
       height 2.5rem
 
   .text
-
-    &__top
-      &__name
-        font-size 1rem
-
     &__list
       margin-top 1rem
 
@@ -193,9 +170,4 @@ export default {
   .text
     &__list
       margin-top 0.5rem
-    &__top__name,
-    &__top__name__none
-      font-size 1rem
-    &__category
-      font-size 0.75rem
 </style>
