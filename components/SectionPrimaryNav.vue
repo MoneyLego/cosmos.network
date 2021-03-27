@@ -232,7 +232,7 @@ export default {
 }
 </script>
 
-<style src="~/assets/styles/nav.styl" lang="stylus" scoped />
+<style src="~/assets/styles/nav.styl" lang="stylus" />
 
 <style lang="stylus" scoped>
 $navbar-height = 5rem
