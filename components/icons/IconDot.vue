@@ -21,6 +21,6 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-svg
+.dot
   margin-left 0.5rem
 </style>
