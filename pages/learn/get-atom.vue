@@ -6,9 +6,9 @@
           <logo-cosmos-brandmark class="graphics-brandmark" />
           <graphics-get-started-hero-validator class="graphics-validator" />
           <div class="text tm-measure-wide">
-            <div class="header tm-rf0 tm-lh-title tm-overline">get started</div>
+            <div class="header tm-rf0 tm-lh-title tm-overline">Get Started</div>
             <div class="title tm-rf6 tm-bold tm-lh-title">
-              Get ATOM and stake
+              Get ATOM and stake.
             </div>
           </div>
           <graphics-get-started-hero-coins class="graphics-coins" />
@@ -185,9 +185,18 @@
             Select your validators.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
-            In your wallet, choose the validators to delegate your ATOM to.
-            Remember to spread your risk by delegating your ATOM to multiple
-            validators in good standing.
+            In your wallet, choose the
+            <button
+              v-tooltip="{
+                content:
+                  'Validators are special full-nodes that take part in the consensus algorithm to collectively add blocks to the blockchain.',
+              }"
+              class="tm-link tm-definition"
+            >
+              validators
+            </button>
+            to delegate your ATOM to. Remember to spread your risk by delegating
+            your ATOM to multiple validators in good standing.
           </div>
           <tm-button
             to-link="internal"

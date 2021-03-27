@@ -359,7 +359,7 @@ a[href]
   margin-bottom 1rem
 
 .nav-item__child
-  color var(--white-300)
+  color var(--muted)
 
 .nav-item__child + .nav-item__child
   margin-top 1rem
