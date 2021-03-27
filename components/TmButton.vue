@@ -11,16 +11,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--light-background-color': lightBackgroundColor,
-      '--border-color': borderColor,
-      '--light-border-color': lightBorderColor,
-      '--color': color,
-      '--light-color': lightColor,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -40,16 +33,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--light-background-color': lightBackgroundColor,
-      '--border-color': borderColor,
-      '--light-border-color': lightBorderColor,
-      '--color': color,
-      '--light-color': lightColor,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -66,16 +52,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--light-background-color': lightBackgroundColor,
-      '--border-color': borderColor,
-      '--light-border-color': lightBorderColor,
-      '--color': color,
-      '--light-color': lightColor,
-    }"
+    :style="_styles"
     aria-disabled="true"
   >
     <span class="tm-button__content">
@@ -94,16 +73,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--light-background-color': lightBackgroundColor,
-      '--border-color': borderColor,
-      '--light-border-color': lightBorderColor,
-      '--color': color,
-      '--light-color': lightColor,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -133,42 +105,42 @@ export default {
      */
     backgroundColor: {
       type: String,
-      default: 'var(--white)',
+      default: null,
     },
     /**
      * CSS color of light mode background
      */
     lightBackgroundColor: {
       type: String,
-      default: 'var(--black)',
+      default: null,
     },
     /**
      * CSS color of border
      */
     borderColor: {
       type: String,
-      default: 'var(--white)',
+      default: null,
     },
     /**
      * CSS color of light mode border
      */
     lightBorderColor: {
       type: String,
-      default: 'var(--black)',
+      default: null,
     },
     /**
      * CSS color of color
      */
     color: {
       type: String,
-      default: 'var(--white)',
+      default: null,
     },
     /**
      * CSS color of light mode color
      */
     lightColor: {
       type: String,
-      default: 'var(--black)',
+      default: null,
     },
     /**
      * Glow style
@@ -235,7 +207,7 @@ export default {
     },
   },
   computed: {
-    styles() {
+    _classes() {
       let classes = this.classes
       switch (this.size) {
         case 's':
@@ -252,12 +224,32 @@ export default {
       }
       return classes
     },
+    _styles() {
+      const styles = {}
+      const lightMode = this.$nuxt.$colorMode.value === 'light'
+      const backgroundColor = lightMode
+        ? this.lightBackgroundColor
+        : this.backgroundColor
+      const borderColor = lightMode ? this.lightBorderColor : this.borderColor
+      const color = lightMode ? this.lightColor : this.color
+
+      if (backgroundColor) styles['--bg-color'] = backgroundColor
+      if (borderColor) styles['--border-color'] = borderColor
+      if (color) styles['--color'] = color
+
+      return styles
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
 .tm-button
+  // default colors for contained variant
+  --bg-color var(--title)
+  --border-color var(--title)
+  --color var(--bg)
+
   // base
   position relative
   display inline-flex
@@ -266,13 +258,10 @@ export default {
   color var(--color)
   border-radius 0.47em // relative border-radius
   transition all .25s $ease-out
+
   &:active
     opacity 0.88
     transition-duration .05s
-
-  /* light mode */
-  .light-mode &
-    color var(--light-color)
 
   /* glow styling (optional) */
   &__glow
@@ -295,6 +284,8 @@ export default {
 
   /* text variant */
   &__variant__text
+    --color var(--link)
+
     &:hover,
     &:focus
       opacity 0.8
@@ -303,17 +294,18 @@ export default {
 
   /* outlined variant */
   &__variant__outlined
+    --border-color var(--link)
+    --color var(--link)
+
     &::after,
     &.tm-button__glow::before
       border 0.0625rem solid var(--border-color)
-      .light-mode &
-        border-color var(--light-border-color)
     &::after // border
       content ''
       position absolute
       trbl 0
       border-radius inherit
-      opacity 0.2
+      opacity 0.33
       transition opacity .25s $ease-out
       .light-mode &
         opacity 1
@@ -327,7 +319,7 @@ export default {
 
   /* contained variant */
   &__variant__contained
-    background var(--background-color)
+    background var(--bg-color)
     background-size 200% auto
     box-shadow var(--elevation-4)
     hover-raise -1px
@@ -336,9 +328,6 @@ export default {
       trbl 0.125em 1em 0
       background inherit
       filter blur(1.25rem) brightness(1.5)
-    .light-mode &
-      background var(--light-background-color)
-
 
   /* disabled state */
   &[disabled]
