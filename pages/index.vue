@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <main>
     <section-hero />
     <home-section-ecosystem />
     <home-section-services />
+    <home-section-atom />
     <section-intro />
     <section-banner />
-  </div>
+  </main>
 </template>
 
 <script>

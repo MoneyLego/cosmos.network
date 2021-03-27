@@ -37,7 +37,7 @@ export default {
 .page-leave-to
   opacity 0
 
-main
+#content
   overflow hidden
 
 .nav-container
