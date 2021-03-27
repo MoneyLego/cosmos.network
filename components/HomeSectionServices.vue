@@ -1,5 +1,8 @@
 <template>
   <div class="tm-container tm-section tm-wrapper tm-grid-base">
+    <div class="graphics-container">
+      <graphics-home-services class="graphics" />
+    </div>
     <div class="accent"></div>
     <div
       class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
@@ -55,7 +58,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <graphics-coin-atom class="atom" />
+          <img class="atom" src="~/assets/images/coin-atom.svg" />
         </figure>
         <h3 class="service__title tm-rf1 tm-bold tm-lh-title tm-title">
           Marketplace
@@ -368,26 +371,45 @@
   > *
     grid-column 1/-1
 
+.graphics-container
+  position relative
+  width 100%
+  padding-bottom 40%
+
+  .graphics
+    position absolute
+    height auto
+    bottom 0
+    width 200%
+    margin-bottom -71%
+    margin-left -43%
+    max-width 154rem
+    min-width 40rem
+
 .accent:before
   content ""
   angle-accent(nw)
   margin-bottom var(--spacing-8)
+
+.overline
+  position relative
 
 .title
   margin-top var(--spacing-6)
   max-width 10em
 
 .subtitle
+  position relative
   margin-top var(--spacing-6)
 
 .services
-  margin-top var(--spacing-10)
+  margin-top var(--spacing-7)
   display grid
   grid-template-columns repeat(auto-fill, minmax(16rem, 1fr))
   grid-gap 0 var(--grid-gap-x)
 
 .service
-  margin-bottom var(--spacing-9)
+  margin-top var(--spacing-9)
 
 .service__icon
   position relative
@@ -396,7 +418,8 @@
   width 4rem
   height 4rem
 
-  svg
+  svg,
+  img
     position absolute
     height auto
 
@@ -446,6 +469,14 @@
     grid-column 3 / span 6
 
 @media $breakpoint-xl
+  .graphics-container
+    grid-column 1 / span 3
+    grid-row 1 / span 5
+
+    .container
+      width 900%
+      margin 0 auto -290% -400%
+
   .accent
     grid-column 4 / span 9
 

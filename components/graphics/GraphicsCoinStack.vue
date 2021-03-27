@@ -86,7 +86,7 @@
         </linearGradient>
       </defs>
     </svg>
-    <graphics-coin-atom class="atom" />
+    <img src="~/assets/images/coin-atom.svg" class="atom" />
   </div>
 </template>
 <style lang="stylus" scoped>
@@ -96,7 +96,8 @@
   padding-bottom 73%
   height 0
 
-svg
+svg,
+img
   position absolute
   height auto
 
@@ -119,7 +120,7 @@ svg
 
 .trail
   width 13%
-  top 63%
+  top 57%
   left 86%
 
 .atom

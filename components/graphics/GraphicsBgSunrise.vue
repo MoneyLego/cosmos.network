@@ -1,6 +1,7 @@
 <template>
   <div :class="['bg-clip', flip && 'flip']">
     <svg
+      v-if="sun"
       class="bg bg-back"
       width="2024"
       height="2024"
@@ -45,7 +46,19 @@
       />
       <defs>
         <radialGradient
-          v-if="flip"
+          v-if="!sun"
+          id="paint0_radial-063349"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(1070 734) rotate(-90) scale(706 3296)"
+        >
+          <stop offset="0.777954" />
+          <stop offset="0.991435" stop-color="#262629" />
+        </radialGradient>
+        <radialGradient
+          v-else-if="flip"
           id="paint0_radial-063349"
           cx="0"
           cy="0"
@@ -81,6 +94,13 @@ export default {
        */
       type: Boolean,
       default: false,
+    },
+    sun: {
+      /**
+       * `false` | `true` (show the sun behind the planet)
+       */
+      type: Boolean,
+      default: true,
     },
   },
 }

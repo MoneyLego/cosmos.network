@@ -4,6 +4,7 @@
     <home-section-ecosystem />
     <home-section-services />
     <home-section-atom />
+    <home-section-features />
     <section-intro />
     <section-banner />
   </main>
