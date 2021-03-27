@@ -7,7 +7,7 @@
             Ecosystem
           </div>
           <h1 class="title tm-rf6 tm-bold tm-lh-title">
-            200+ apps and services built on Cosmos
+            40+ wallets and block explorers for Cosmos
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
             Discover a wide variety of apps, blockchains, wallets and explorers,
@@ -19,6 +19,7 @@
               to-link="internal"
               to="/ecosystem/apps"
               size="m"
+              variant="text"
               class="btn"
               >Apps &amp; Services
             </tm-button>
@@ -26,7 +27,6 @@
               to-link="internal"
               to="/ecosystem/wallets"
               size="m"
-              variant="text"
               class="btn"
               >Wallets
             </tm-button>
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <SectionItems :items="apps.records" />
+    <SectionItems :items="wallets.records" />
   </main>
 </template>
 
@@ -46,7 +46,7 @@ export default {
     SectionItems,
   },
   computed: {
-    ...mapGetters(['apps']),
+    ...mapGetters(['wallets']),
   },
   async mounted() {
     await this.$store.commit('initApps')
