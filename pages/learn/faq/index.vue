@@ -91,7 +91,7 @@ export default {
   },
   data() {
     return {
-      currentIndex: 6,
+      currentIndex: 8,
       cards: [
         {
           href: 'https://v1.cosmos.network/discord',

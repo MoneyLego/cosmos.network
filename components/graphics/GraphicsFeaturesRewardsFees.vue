@@ -1,5 +1,6 @@
 <template>
   <svg
+    v-if="$nuxt.$colorMode.value === 'dark'"
     width="1686"
     height="1226"
     viewBox="0 0 1686 1226"

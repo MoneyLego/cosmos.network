@@ -44,6 +44,9 @@
           ></iframe>
         </div>
       </div>
+      <div class="hero-graphics">
+        <graphics-starport-hero class="graphics" />
+      </div>
     </div>
 
     <div class="section-intro tm-section tm-container tm-wrapper tm-grid-base">
@@ -271,8 +274,9 @@
           </p>
         </div>
       </div>
-      <!-- TODO -->
-      <!-- <graphics-home-hero class="graphics" /> -->
+      <div class="graphics">
+        <graphics-starport-starport-network class="graphics__item" />
+      </div>
     </div>
 
     <div class="section-sdk tm-section tm-container tm-wrapper">
@@ -397,6 +401,11 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Starport',
+    }
+  },
 }
 </script>
 
@@ -432,6 +441,8 @@ svg.graphics__item
   .text
   .demo
     grid-column 1/-1
+    position relative
+    z-index 1
 
 .section-hero .overline
   color var(--white-500)
@@ -446,6 +457,12 @@ svg.graphics__item
 iframe
   border-radius $border-radius-6
   height 260px
+
+.hero-graphics
+  position relative
+  padding-top var(--spacing-12)
+  overflow visible
+  z-index 0
 
 // Intro
 .section-intro
@@ -498,6 +515,7 @@ iframe
 
 .section-cli .top .graphics__item
   width 100%
+  margin-top -18%
 
 .section-cli .top .text
   .title
@@ -528,7 +546,11 @@ iframe
     grid-column 1/-1
 
 .section-cloud .top .graphics__item
-  width 100%
+  width 120%
+  margin-top -18%
+  margin-left -19%
+  overflow visible
+  max-width 40rem
 
 // Production
 .section-production
@@ -540,7 +562,8 @@ iframe
 
 .section-production .graphics
   position relative
-  z-index 0
+  overflow visible
+  // margin-top 30%
 
 // SDK
 .section-sdk
@@ -593,8 +616,6 @@ iframe
   iframe
     height 510px
 
-// @media $breakpoint-medium
-
 @media $breakpoint-large
   .section-intro .logos-list
     grid-template-columns repeat(4, 1fr)
@@ -638,6 +659,8 @@ iframe
       grid-column 2/span 6
     .graphics
       grid-column 8/span 5
+
+  // Production
 
   // SDK
   .section-sdk .text

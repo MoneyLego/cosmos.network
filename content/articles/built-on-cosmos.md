@@ -1,7 +1,7 @@
 ---
-index: 6
-title: What is the ATOM Staking Process?
-description: Obtain ATOM and delegate their ATOM to one or more [validators] of their choice using a [Wallet].
+index: 4
+title: What projects are built on Cosmos?
+description: Developers have built hundreds of blockchain projects on Cosmos, including Binance Chain (BNB), Terra (LUNA), Crypto.com Coin (CRO), Cosmos Hub (ATOM), and more.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -9,12 +9,8 @@ author:
   img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=60
 tags: 
   - blockchain
-  - atom
 ---
 
-Staking ATOM is relatively straightforward. Users need to:
+Developers have built hundreds of blockchain projects on Cosmos, including Binance Chain (BNB), Terra (LUNA), Crypto.com Coin (CRO), Cosmos Hub (ATOM), and more. Explore the Cosmos ecosystem to discover a wide variety of apps, services, blockchains, wallets, and explorers that are part of the Cosmos ecosystem.
 
-1. Obtain ATOM. See [How can I get ATOM?](/learn/faq/how-to-get-atoms) for more.
-3. [Delegate](/learn/faq/what-is-delegating) their ATOM to one or more [validators] of their choice using a [Wallet]. 
-
-And that's it!
+> [View ecosystem projects](https://v1.cosmos.network/ecosystem/apps)
