@@ -28,8 +28,6 @@
             to-link="internal"
             to="/learn/get-atom"
             size="l"
-            color="var(--black)"
-            light-color="var(--white)"
             class="btn"
             >Start staking</tm-button
           >

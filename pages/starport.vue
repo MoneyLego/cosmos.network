@@ -18,8 +18,6 @@
               to-link="external"
               href="https://gitpod.io/#https://github.com/tendermint/starport/tree/master"
               size="l"
-              background-color="var(--white)"
-              color="var(--black)"
               class="btn"
               >Open in browser
               <span class="icon__right">&#8599;</span></tm-button
@@ -30,7 +28,8 @@
               size="l"
               variant="text"
               class="btn"
-              >Install <span class="icon__right">&#8595;</span></tm-button
+              >Install
+              <span class="icon__right icon__down">&#8595;</span></tm-button
             >
           </div>
         </div>
@@ -355,8 +354,6 @@
               to-link="external"
               href="https://gitpod.io/#https://github.com/tendermint/starport/tree/master"
               size="l"
-              background-color="var(--white)"
-              color="var(--black)"
               class="btn"
               >Open in browser
               <span class="icon__right">&#8599;</span></tm-button
@@ -367,7 +364,8 @@
               size="l"
               variant="text"
               class="btn"
-              >Install <span class="icon__right">&#8595;</span></tm-button
+              >Install
+              <span class="icon__right icon__down">&#8595;</span></tm-button
             >
           </div>
         </div>

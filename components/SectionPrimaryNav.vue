@@ -82,11 +82,7 @@
               </ul>
             </div>
             <div class="nav-mobile-bottom tm-wrapper">
-              <tm-button
-                to-link="internal"
-                to="/learn/get-atom"
-                background-color="var(--white)"
-                color="var(--black)"
+              <tm-button to-link="internal" to="/learn/get-atom"
                 >Get ATOM <span class="icon__right">&#8594;</span></tm-button
               >
             </div>
@@ -179,11 +175,7 @@
         </ul>
       </div>
       <div class="nav-mobile-bottom tm-wrapper">
-        <tm-button
-          to-link="internal"
-          to="/learn/get-atom"
-          background-color="var(--white)"
-          color="var(--black)"
+        <tm-button to-link="internal" to="/learn/get-atom"
           >Get ATOM <span class="icon__right">&#8594;</span></tm-button
         >
       </div>

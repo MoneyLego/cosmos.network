@@ -33,6 +33,7 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
+      'tm-button__external',
       _classes,
     ]"
     :style="_styles"
@@ -380,9 +381,16 @@ export default {
   &:hover,
   &:focus
     >>> .icon__right
-      transform translateX(0.25rem)
+      transform translateX(10%)
     >>> .icon__left
-      transform translateX(-0.25rem)
+      transform translateX(-10%)
+    >>> .icon__down
+      transform translateY(10%)
+    .tm-button__external&
+      >>> .icon__right
+        transform translate(10%, -10%)
+      >>> .icon__down
+        transform translateY(10%)
 
 .tm-button + .tm-button
   margin-top var(--spacing-6)

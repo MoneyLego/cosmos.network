@@ -13,11 +13,11 @@
       Serving as the economic center of Cosmos, the Cosmos Hub is a blockchain
       that provides vital services to the
       <button
-        class="tm-link tm-definition"
         v-tooltip="{
           content:
             'The Interchain is essentially a new internet, comprised of an extended network of interconnected blockchains.',
         }"
+        class="tm-link tm-definition"
       >
         Interchain</button
       >.
