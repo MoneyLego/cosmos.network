@@ -22,7 +22,9 @@ export default {
     },
     titleTemplate: (titleChunk) => {
       // If head.title is undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - Cosmos Network` : 'Cosmos Network'
+      return titleChunk
+        ? `${titleChunk} - Cosmos: The Internet of Blockchains`
+        : 'Cosmos: The Internet of Blockchains'
     },
     meta: [
       { charset: 'utf-8' },
@@ -31,24 +33,24 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'The interoperable, scalable blockchain network. Built for developers.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       // Open Graph
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'The interoperable, scalable blockchain network. Built for developers.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -71,13 +73,13 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'The interoperable, scalable blockchain network. Built for developers.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       {
         hid: 'twitter:image',
@@ -87,7 +89,7 @@ export default {
       {
         hid: 'twitter:image:alt',
         name: 'twitter:image:alt',
-        content: 'Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
     ],
     link: [
