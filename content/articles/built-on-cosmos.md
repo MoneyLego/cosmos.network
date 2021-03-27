@@ -1,7 +1,7 @@
 ---
-index: 7
-title: Is Cosmos a competitor to Ethereum?
-description: No, Cosmos embraces Ethereum (ETH) and creates bridges between both ecosystems.
+index: 4
+title: What projects are built on Cosmos?
+description: Developers have built hundreds of blockchain projects on Cosmos, including Binance Chain (BNB), Terra (LUNA), Crypto.com Coin (CRO), Cosmos Hub (ATOM), and more.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,5 +11,6 @@ tags:
   - blockchain
 ---
 
-No, Cosmos embraces Ethereum (ETH). An upcoming project called the Gravity Bridge will allow people to bring ETH and ERC20 tokens over to the Cosmos Hub and send Cosmos IBC tokens into the Ethereum ecosystem. Other Cosmos projects like Ethermint bring the Ethereum Virtual Machine to Cosmos, and Sommelier Finance (SOMM) is focused on reducing Ethereum transactions’ costs for decentralized finance (DeFi) applications.
+Developers have built hundreds of blockchain projects on Cosmos, including Binance Chain (BNB), Terra (LUNA), Crypto.com Coin (CRO), Cosmos Hub (ATOM), and more. Explore the Cosmos ecosystem to discover a wide variety of apps, services, blockchains, wallets, and explorers that are part of the Cosmos ecosystem.
 
+> [View ecosystem projects](https://v1.cosmos.network/ecosystem/apps)

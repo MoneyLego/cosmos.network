@@ -1,5 +1,5 @@
 ---
-index: 3
+index: 5
 title: What is the Cosmos Hub?
 description: The Cosmos Hub is a blockchain that serves as the economic center of Cosmos.
 alt: Article 10

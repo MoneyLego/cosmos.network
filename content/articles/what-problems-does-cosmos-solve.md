@@ -1,5 +1,5 @@
 ---
-index: 2
+index: 3
 title: What problems does Cosmos solve?
 description: "Cosmos solves three primary problems in blockchain: sovereignty, scalability, and sustainability."
 alt: Article 10

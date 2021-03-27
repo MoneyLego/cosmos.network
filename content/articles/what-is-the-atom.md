@@ -1,5 +1,5 @@
 ---
-index: 4
+index: 6
 title: What is the ATOM token?
 description: The ATOM is the Cosmos Hub’s primary token, and secures the Hub’s valuable interchain services.
 alt: Article 10
