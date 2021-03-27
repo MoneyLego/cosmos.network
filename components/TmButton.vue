@@ -3,7 +3,7 @@
   <nuxt-link
     v-if="toLink === 'internal'"
     :to="to"
-    v-bind="{ type, disabled }"
+    v-bind="{ disabled }"
     :class="[
       'tm-button',
       `tm-button__size__${size}`,
@@ -25,7 +25,7 @@
     :href="href"
     target="_blank"
     rel="noreferrer noopener"
-    v-bind="{ type, target, href, rel, disabled }"
+    v-bind="{ target, href, rel, disabled }"
     :class="[
       'tm-button',
       `tm-button__size__${size}`,
@@ -162,7 +162,7 @@ export default {
      */
     type: {
       type: String,
-      default: 'submit',
+      default: null,
     },
     /**
      * toLink: `anchor` | `internal` | `external`
