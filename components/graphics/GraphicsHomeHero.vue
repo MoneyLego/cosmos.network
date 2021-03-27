@@ -1346,7 +1346,7 @@ svg
   position absolute
   bottom 0
   left 50%
-  margin-left -.5rem
+  margin-left (-.5rem + $px)
 
 @media $breakpoint-medium
   .container
@@ -1364,7 +1364,6 @@ export default {
         return {
           content: title,
           container: false,
-          classes: 'tm-rf-1 tm-lh-title',
         }
       },
     }

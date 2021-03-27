@@ -374,6 +374,8 @@ export default {
     padding-bottom var(--spacing-6)
 
   &__content
+    position relative
+    z-index 1
     display flex
     flex-wrap wrap
 

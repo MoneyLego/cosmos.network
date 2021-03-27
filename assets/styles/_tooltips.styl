@@ -10,10 +10,11 @@
   z-index $z-index-tooltip
 
   .tooltip-inner
-    background var(--fg)
-    color var(--text)
+    max-width 18rem
+    background var(--title)
+    color var(--bg)
     border-radius $border-radius-3
-    padding var(--spacing-3) var(--spacing-4) var(--spacing-3)
+    padding var(--spacing-3) var(--spacing-4)
 
   .tooltip-arrow
     width 0
@@ -21,7 +22,7 @@
     border-style solid
     position absolute
     margin $border-radius-3
-    border-color var(--fg)
+    border-color var(--title)
     z-index 1
 
   &[x-placement^="top"]
@@ -32,7 +33,7 @@
       border-left-color transparent !important
       border-right-color transparent !important
       border-bottom-color transparent !important
-      bottom calc(-1 * var(--spacing-3))
+      bottom calc(-1 * var(--spacing-3) + 1px)
       left calc(50% - var(--spacing-3))
       margin-top 0
       margin-bottom 0
@@ -45,7 +46,7 @@
       border-left-color transparent !important
       border-right-color transparent !important
       border-top-color transparent !important
-      top calc(-1 * var(--spacing-3))
+      top calc(-1 * var(--spacing-3) + 1px)
       left calc(50% - var(--spacing-3))
       margin-top 0
       margin-bottom 0
@@ -58,7 +59,7 @@
       border-left-color transparent !important
       border-top-color transparent !important
       border-bottom-color transparent !important
-      left calc(-1 * var(--spacing-3))
+      left calc(-1 * var(--spacing-3) + 1px)
       top calc(50% - var(--spacing-3))
       margin-left 0
       margin-right 0
@@ -71,7 +72,7 @@
       border-top-color transparent !important
       border-right-color transparent !important
       border-bottom-color transparent !important
-      right calc(-1 * var(--spacing-3))
+      right calc(-1 * var(--spacing-3) + 1px)
       top calc(50% - var(--spacing-3))
       margin-left 0
       margin-right 0

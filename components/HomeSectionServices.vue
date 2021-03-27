@@ -11,11 +11,20 @@
     </h2>
     <p class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
       Serving as the economic center of Cosmos, the Cosmos Hub is a blockchain
-      that provides vital services to the Interchain.
+      that provides vital services to the
+      <button
+        class="tm-link tm-definition"
+        v-tooltip="{
+          content:
+            'The Interchain is essentially a new internet, comprised of an extended network of interconnected blockchains.',
+        }"
+      >
+        Interchain</button
+      >.
     </p>
     <div class="services">
       <div class="service">
-        <figure class="service__icon service__icon-marketplace">
+        <figure class="service__icon">
           <graphics-coin-blank class="coin" />
           <svg
             class="transfer"
@@ -60,7 +69,7 @@
         </p>
       </div>
       <div class="service">
-        <figure class="service__icon service__icon-security">
+        <figure class="service__icon">
           <svg
             class="security"
             width="88"
@@ -69,7 +78,7 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g filter="url(#filter0_di-140399)">
+            <g filter="url(#filter0_di-973888)">
               <ellipse
                 cx="44.0903"
                 cy="30.8794"
@@ -82,26 +91,24 @@
                 cy="30.8794"
                 rx="20.7505"
                 ry="20.7505"
-                fill="url(#paint0_linear-140399)"
+                fill="url(#paint0_linear-074340)"
               />
             </g>
             <path
               d="M39.1577 54.7986C39.3018 64.1155 31.8656 71.7852 22.5487 71.9292C13.2318 72.0732 5.56211 64.6371 5.41807 55.3202C5.27404 46.0032 12.7102 38.3336 22.0271 38.1896C31.344 38.0455 39.0137 45.4816 39.1577 54.7986Z"
-              fill="url(#paint1_radial-140399)"
+              fill="url(#paint1_radial-508487)"
             />
             <path
-              d="M86.2851 47.5123C86.1863 47.8004 85.9193 48.1336 85.2843 48.4492C84.6454 48.7666 83.7223 49.0185 82.4984 49.1725C80.0551 49.4797 76.6413 49.3698 72.4711 48.8419C64.1474 47.788 53.0231 45.0968 41.085 41.0067C29.1468 36.9167 18.7094 32.2207 11.4882 27.9489C7.87036 25.8086 5.10643 23.802 3.36487 22.061C2.49248 21.1889 1.91782 20.4238 1.6078 19.7812C1.29966 19.1426 1.29311 18.7156 1.39182 18.4275C1.49053 18.1394 1.75753 17.8061 2.39257 17.4906C3.0315 17.1732 3.9546 16.9212 5.1785 16.7673C7.6218 16.4601 11.0356 16.5699 15.2058 17.0979C23.5295 18.1518 34.6538 20.843 46.5919 24.933C58.53 29.0231 68.9675 33.719 76.1887 37.9909C79.8065 40.1311 82.5704 42.1378 84.312 43.8788C85.1844 44.7509 85.7591 45.516 86.0691 46.1585C86.3772 46.7972 86.3838 47.2242 86.2851 47.5123Z"
-              stroke="url(#paint2_linear-140399)"
-              stroke-opacity="0.34"
-              stroke-width="2"
+              d="M86.7581 47.6743C86.6025 48.1284 86.2135 48.5458 85.5068 48.8969C84.7981 49.249 83.8137 49.511 82.5608 49.6685C80.0571 49.9834 76.5958 49.8681 72.4083 49.3379C64.0417 48.2786 52.8833 45.5774 40.9229 41.4797C28.9626 37.3821 18.492 32.6731 11.2336 28.3792C7.6008 26.2301 4.79595 24.1986 3.01137 22.4146C2.11828 21.5218 1.50133 20.7112 1.15747 19.9985C0.814558 19.2878 0.763224 18.7196 0.91881 18.2654C1.0744 17.8113 1.46339 17.394 2.1701 17.0428C2.87875 16.6907 3.86317 16.4288 5.11612 16.2712C7.61976 15.9564 11.0811 16.0717 15.2686 16.6019C23.6352 17.6612 34.7936 20.3624 46.754 24.46C58.7143 28.5577 69.1849 33.2667 76.4433 37.5606C80.0761 39.7097 82.8809 41.7412 84.6655 43.5252C85.5586 44.418 86.1756 45.2286 86.5194 45.9413C86.8623 46.652 86.9137 47.2202 86.7581 47.6743Z"
+              stroke="url(#paint2_linear-509565)"
             />
             <path
               d="M65.4138 15.5308C62.4569 12.4766 57.584 12.3977 54.5298 15.3546C51.4756 18.3114 51.3967 23.1844 54.3536 26.2385C57.3104 29.2927 62.1834 29.3716 65.2376 26.4148C68.2918 23.4579 68.3707 18.585 65.4138 15.5308Z"
-              fill="url(#paint3_radial-140399)"
+              fill="url(#paint3_radial-985294)"
             />
             <defs>
               <filter
-                id="filter0_di-140399"
+                id="filter0_di-973888"
                 x="12.7968"
                 y="0.000313908"
                 width="62.5871"
@@ -157,7 +164,7 @@
                 />
               </filter>
               <linearGradient
-                id="paint0_linear-140399"
+                id="paint0_linear-074340"
                 x1="44.0903"
                 y1="10.1289"
                 x2="44.0903"
@@ -169,7 +176,7 @@
                 <stop offset="0.947005" stop-color="#C9F2FF" />
               </linearGradient>
               <radialGradient
-                id="paint1_radial-140399"
+                id="paint1_radial-508487"
                 cx="0"
                 cy="0"
                 r="1"
@@ -181,18 +188,19 @@
                 <stop offset="0.963759" stop-color="#5CB1E0" />
               </radialGradient>
               <linearGradient
-                id="paint2_linear-140399"
-                x1="68.3559"
-                y1="33.5544"
-                x2="64.1621"
-                y2="49.1808"
+                id="paint2_linear-509565"
+                x1="45"
+                y1="41"
+                x2="49.5"
+                y2="28"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="white" stop-opacity="0" />
-                <stop offset="1" stop-color="white" />
+                <stop stop-color="#F3FCFF" />
+                <stop offset="0.47974" stop-color="#654BAE" />
+                <stop offset="1" stop-color="#303261" stop-opacity="0" />
               </linearGradient>
               <radialGradient
-                id="paint3_radial-140399"
+                id="paint3_radial-985294"
                 cx="0"
                 cy="0"
                 r="1"
@@ -217,7 +225,7 @@
         </p>
       </div>
       <div class="service">
-        <figure class="service__icon service__icon-router">
+        <figure class="service__icon">
           <svg
             class="router"
             width="87"
@@ -337,7 +345,7 @@
         </p>
       </div>
       <div class="service">
-        <figure class="service__icon service__icon-custodian">
+        <figure class="service__icon">
           <graphics-navigator-gem class="custodian" />
         </figure>
         <h3 class="service__title tm-rf1 tm-bold tm-lh-title tm-title">
@@ -394,13 +402,13 @@
 
   .coin
     width 80%
-    top 15%
-    left 5%
+    top 18%
+    left -7%
 
   .transfer
     width 32%
-    top 44%
-    left -11%
+    top 49%
+    left -14%
 
   .atom
     width 100%
