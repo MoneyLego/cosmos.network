@@ -131,7 +131,7 @@ export default {
           children: [
             {
               title: 'Introduction',
-              href: 'https://cosmos.network/intro',
+              href: 'https://v1.cosmos.network/intro',
             },
             {
               title: 'Features',
@@ -160,11 +160,11 @@ export default {
             },
             {
               title: 'Cosmos SDK',
-              href: 'https://cosmos.network/sdk',
+              href: 'https://v1.cosmos.network/sdk',
             },
             {
               title: 'Tools',
-              href: 'https://cosmos.network/tools',
+              href: 'https://v1.cosmos.network/tools',
             },
             {
               title: 'IBC Protocol',
@@ -177,11 +177,11 @@ export default {
           children: [
             {
               title: 'Ecosystem',
-              href: 'https://cosmos.network/ecosystem',
+              href: 'https://v1.cosmos.network/ecosystem',
             },
             {
               title: 'Wallets',
-              href: 'https://cosmos.network/ecosystem/wallets',
+              href: 'https://v1.cosmos.network/ecosystem/wallets',
             },
             {
               title: 'Blog',
@@ -194,19 +194,19 @@ export default {
           children: [
             {
               title: 'Community',
-              href: 'https://cosmos.network/community',
+              href: 'https://v1.cosmos.network/community',
             },
             {
               title: 'Contributors',
-              href: 'https://cosmos.network/contributors',
+              href: 'https://v1.cosmos.network/contributors',
             },
             {
               title: 'Events',
-              href: 'https://cosmos.network/events',
+              href: 'https://v1.cosmos.network/events',
             },
             {
               title: 'Newsletters',
-              href: 'https://cosmos.network/newsletters',
+              href: 'https://v1.cosmos.network/newsletters',
             },
           ],
         },
@@ -215,19 +215,19 @@ export default {
           children: [
             {
               title: 'About',
-              href: 'https://cosmos.network/about',
+              href: 'https://v1.cosmos.network/about',
             },
             {
               title: 'Press Kit',
-              href: 'https://cosmos.network/presskit',
+              href: 'https://v1.cosmos.network/presskit',
             },
             {
               title: 'Design',
-              href: 'https://cosmos.network/design',
+              href: 'https://v1.cosmos.network/design',
             },
             {
               title: 'Resources',
-              href: 'https://cosmos.network/resources',
+              href: 'https://v1.cosmos.network/resources',
             },
           ],
         },

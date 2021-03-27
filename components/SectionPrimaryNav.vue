@@ -1,50 +1,100 @@
 <template>
-  <div class="navs">
+  <div class="navs tm-wrapper">
     <nav
       class="nav nav-primary"
       role="navigation"
       :class="{ 'is-active': isActive }"
     >
-      <div class="nav-inner tm-container tm-wrapper">
-        <div class="nav-first">
-          <NuxtLink to="/" class="logo">
-            <logo-cosmos-wordmark class="logo__cosmos" />
-            <span class="sr-only">Cosmos</span>
-          </NuxtLink>
-          <button
-            class="nav-mobile-toggle"
-            type="button"
-            aria-label="Menu"
-            aria-controls="navigation"
-            :class="{ 'is-active': isActive }"
-            @click="isActive = !isActive"
-          >
-            <span class="nav-mobile-toggle__icon"></span>
-            <span class="sr-only">Menu</span>
-          </button>
-        </div>
-        <div class="nav-second">
-          <ul>
-            <li>
-              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Learn</a
+      <vsm-menu :menu="menu">
+        <!-- The main content for the dropdown list -->
+        <template #default="data">
+          <component :is="data.item.content" class="content" />
+          <component
+            :is="data.item.secondaryContent"
+            class="content--secondary"
+          />
+        </template>
+        <!-- Content to the left of the list -->
+        <template #before-nav>
+          <li class="vsm-section logo-section">
+            <NuxtLink to="/" class="logo">
+              <logo-cosmos-wordmark class="logo__cosmos" />
+              <span class="sr-only">Cosmos</span>
+            </NuxtLink>
+          </li>
+        </template>
+        <!-- Content to the right of the list -->
+        <template #after-nav>
+          <!--Mobile Burger, buttons, etc-->
+          <li class="vsm-mob-hide">
+            <button
+              class="nav-mobile-toggle"
+              type="button"
+              aria-label="Menu"
+              aria-controls="navigation"
+              :class="{ 'is-active': isActive }"
+              @click="isActive = !isActive"
+            >
+              <span class="nav-mobile-toggle__icon"></span>
+              <span class="sr-only">Menu</span>
+            </button>
+          </li>
+          <vsm-mob>
+            <div class="nav-mobile-content tm-wrapper">
+              <ul>
+                <li>
+                  <NuxtLink
+                    to="/"
+                    class="text tm-rf3 tm-bold tm-lh-title tm-link"
+                    >Learn</NuxtLink
+                  >
+                  <ul>
+                    <li>
+                      <tm-link
+                        href="https://v1.cosmos.network/intro"
+                        class="tm-rf0 tm-lh-title tm-link"
+                        >Introduction</tm-link
+                      >
+                    </li>
+                    <li>
+                      <NuxtLink
+                        to="/features"
+                        class="tm-rf0 tm-lh-title tm-link"
+                        >Features</NuxtLink
+                      >
+                    </li>
+                    <li>
+                      <NuxtLink
+                        to="/learn/staking"
+                        class="tm-rf0 tm-lh-title tm-link"
+                        >What is staking?</NuxtLink
+                      >
+                    </li>
+                    <li>
+                      <NuxtLink
+                        to="/learn/faq"
+                        class="tm-rf0 tm-lh-title tm-link"
+                        >FAQ</NuxtLink
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-mobile-bottom tm-wrapper">
+              <tm-button
+                to-link="internal"
+                to="/learn/get-atom"
+                background-color="var(--white)"
+                color="var(--black)"
+                >Get ATOM <span class="icon__right">&#8594;</span></tm-button
               >
-            </li>
-            <li>
-              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Build</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Explore</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
+          </vsm-mob>
+        </template>
+      </vsm-menu>
     </nav>
-    <nav v-if="secondary" class="nav nav-secondary" role="navigation">
+    <!-- <nav v-if="secondary" class="nav nav-secondary" role="navigation">
       <div class="nav-inner tm-container tm-wrapper">
         <div class="nav-first">
           <NuxtLink
@@ -89,7 +139,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <nav
       v-if="isActive"
       :class="{ 'is-active': isActive }"
@@ -98,10 +148,17 @@
       <div class="nav-mobile-content tm-wrapper">
         <ul>
           <li>
-            <NuxtLink to="/" class="text tm-rf1 tm-medium tm-lh-title tm-link"
-              >Cosmos Hub</NuxtLink
+            <NuxtLink to="/" class="text tm-rf3 tm-bold tm-lh-title tm-link"
+              >Learn</NuxtLink
             >
             <ul>
+              <li>
+                <tm-link
+                  href="https://v1.cosmos.network/intro"
+                  class="tm-rf0 tm-lh-title tm-link"
+                  >Introduction</tm-link
+                >
+              </li>
               <li>
                 <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
                   >Features</NuxtLink
@@ -109,14 +166,7 @@
               </li>
               <li>
                 <NuxtLink to="/learn/staking" class="tm-rf0 tm-lh-title tm-link"
-                  >Staking</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/learn/get-atom"
-                  class="tm-rf0 tm-lh-title tm-link"
-                  >Get started</NuxtLink
+                  >What is staking?</NuxtLink
                 >
               </li>
               <li>
@@ -124,22 +174,17 @@
                   >FAQ</NuxtLink
                 >
               </li>
-              <li>
-                <a
-                  href="https://hub.cosmos.network"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="tm-rf0 tm-lh-title tm-link tm-link-external"
-                  >Documentation</a
-                >
-              </li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="nav-mobile-bottom tm-wrapper">
-        <tm-button background-color="var(--white)" color="var(--black)"
-          >Get started</tm-button
+        <tm-button
+          to-link="internal"
+          to="/learn/get-atom"
+          background-color="var(--white)"
+          color="var(--black)"
+          >Get ATOM <span class="icon__right">&#8594;</span></tm-button
         >
       </div>
     </nav>
@@ -147,8 +192,16 @@
 </template>
 
 <script>
-import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+import learnDropdownTop from '../components/content/learnDropdownTop'
+import learnDropdownBottom from '../components/content/learnDropdownBottom'
+import buildDropdownTop from '../components/content/buildDropdownTop'
+import buildDropdownBottom from '../components/content/buildDropdownBottom'
+import exploreDropdownTop from '../components/content/exploreDropdownTop'
+import exploreDropdownBottom from '../components/content/exploreDropdownBottom'
 import LogoHubBrandmark from '~/components/logos/LogoHubBrandmark.vue'
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+
+import '~/assets/styles/nav.styl'
 
 export default {
   components: {
@@ -159,6 +212,26 @@ export default {
     return {
       isActive: false,
       secondary: false, // temporary to hide secondary nav
+      menu: [
+        {
+          title: 'Learn',
+          dropdown: 'learn',
+          content: learnDropdownTop,
+          secondaryContent: learnDropdownBottom,
+        },
+        {
+          title: 'Build',
+          dropdown: 'build',
+          content: buildDropdownTop,
+          secondaryContent: buildDropdownBottom,
+        },
+        {
+          title: 'Explore',
+          dropdown: 'explore',
+          content: exploreDropdownTop,
+          secondaryContent: exploreDropdownBottom,
+        },
+      ],
     }
   },
   watch: {
@@ -347,9 +420,9 @@ $navbar-mobile-menu = 200
   .nav-primary
     .logo-secondary
       display none
-    .nav-inner
-      display grid
-      grid-template-columns repeat(3, 1fr)
+    // .nav-inner
+    //   display grid
+    //   grid-template-columns repeat(3, 1fr)
 
   .nav-second .nuxt-link-exact-active:before
     content ""
