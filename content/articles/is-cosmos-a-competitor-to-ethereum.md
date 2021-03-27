@@ -1,7 +1,7 @@
 ---
-index: 3
-title: What is the Cosmos Hub?
-description: The Cosmos Hub is a blockchain that serves as the economic center of Cosmos.
+index: 5
+title: Is Cosmos a competitor to Ethereum?
+description: No, Cosmos embraces Ethereum (ETH) and creates bridges between both ecosystems.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,6 +11,5 @@ tags:
   - blockchain
 ---
 
-The Cosmos Hub is a blockchain that serves as the economic center of Cosmos. The Hub provides valuable services to the blockchains connected to it, including the largest interchain token exchange, shared security through interchain staking, bridges to Ethereum (ETH) and Bitcoin (BTC), and secure custodianship of digital assets. The Cosmos Hub’s primary token is the [ATOM](/learn/faq/what-is-the-atom-token).
+No, Cosmos embraces Ethereum (ETH). An upcoming project called the Gravity Bridge will allow people to bring ETH and ERC20 tokens over to the Cosmos Hub and send Cosmos IBC tokens into the Ethereum ecosystem. Other Cosmos projects like Ethermint bring the Ethereum Virtual Machine to Cosmos, and Sommelier Finance (SOMM) is focused on reducing Ethereum transactions’ costs for decentralized finance (DeFi) applications.
 
-> [More about Hub features](/features)

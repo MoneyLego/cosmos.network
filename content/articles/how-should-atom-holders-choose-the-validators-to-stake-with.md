@@ -1,6 +1,6 @@
 ---
 index: 10
-title: How should ATOM holders choose the Validator(s) to stake with? 
+title: How should ATOM holders choose the validator(s) to stake with? 
 description: Delegators are encouraged to visit validators' respective websites in order to learn more about their operation and security practices.
 alt: Article 10
 author: 
@@ -12,7 +12,7 @@ tags:
   - atom
 ---
 
-In order to choose validator(s), ATOM holders have access to a range of information directly in [Keplr](https://wallet.keplr.app) or other Cosmos block explorers:
+In order to choose validator(s), ATOM holders have access to a range of information directly in [Keplr](https://wallet.keplr.app) or other Cosmos block explorers like [Mintscan](https://www.mintscan.io/cosmos/validators):
 
 - **Validator's moniker**: Name of the validator candidate.
 - **Validator's description**: Description provided by the validator operator.

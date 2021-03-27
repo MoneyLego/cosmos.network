@@ -1,7 +1,7 @@
 ---
 index: 17
 title: What is a wallet?
-description: A wallet is a device, physical medium, program, or service that stores the public and private keys for your blockchain transactions. A wallet in the blockchain universe does not hold money.
+description: Crypto wallets provide people with access to their tokens and the ability to make transactions with them.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -12,4 +12,4 @@ tags:
   - atom
 ---
 
-A wallet is a device, physical medium, program, or service that stores the public and private keys for your blockchain transactions. A wallet in the blockchain universe does not hold money.
+A crypto wallet is like a debit card. Debit cards do not store funds but instead, they give people access to their funds wherever they choose to spend them. Wallets in the blockchain universe similarly do not store funds but instead provide people with access to their tokens and the ability to make transactions with them.

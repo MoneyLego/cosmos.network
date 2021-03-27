@@ -1,5 +1,5 @@
 ---
-index: 4
+index: 18
 title: How to get ATOM?
 description: ATOM can be obtained on a number of cryptocurrency exchanges.
 alt: Article 10

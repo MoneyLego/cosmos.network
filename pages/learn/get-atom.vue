@@ -23,7 +23,7 @@
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
-          <NuxtLink to="/learn/faq/what-is-the-atom-tokens" class="card-item">
+          <NuxtLink to="/learn/faq/what-is-the-atom" class="card-item">
             <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
               learn
             </div>
