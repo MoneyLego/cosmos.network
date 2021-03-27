@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-hero">
+    <div class="section-hero section-first">
       <vsm-menu :menu="menu">
         <template #default="data">
           <component :is="data.item.content" class="content" />

@@ -1,5 +1,5 @@
 <template>
-  <kinesis-container tag="section" class="section-hero">
+  <kinesis-container tag="section" class="section-hero section-first">
     <div class="tm-wrapper tm-section tm-container">
       <div
         class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"

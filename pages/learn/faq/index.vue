@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-hero">
+    <div class="section-hero section-first">
       <div class="tm-wrapper tm-container tm-section tm-grid-base">
         <div class="text">
           <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">

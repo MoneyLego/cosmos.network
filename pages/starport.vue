@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-hero">
+    <div class="section-hero section-first">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <div class="text">
           <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-hero tm-section">
+    <div class="section-hero section-first tm-section">
       <div class="tm-wrapper">
         <div class="tm-container tm-section tm-grid-base">
           <logo-cosmos-brandmark class="graphics-brandmark" />

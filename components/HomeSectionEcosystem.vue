@@ -14,16 +14,19 @@
       >
         Cosmos apps and services connect via IBC, the inter-blockchain
         communication protocol. This innovation enables people to freely
-        exchange assets and data across sovereign, decentralized chains.
+        exchange assets and data across sovereign,
+        <button
+          class="tm-link tm-definition"
+          v-tooltip="{
+            content:
+              'Think electronic money without central banks, digital asset trading without centrally-operated stock exchanges, or social network platforms without central administrators.',
+          }"
+        >
+          decentralized blockchains</button
+        >.
       </p>
       <div class="btn-group">
-        <tm-button
-          to-link="internal"
-          to="/intro"
-          size="l"
-          color="var(--black)"
-          light-color="var(--white)"
-          class="btn"
+        <tm-button to-link="internal" to="/intro" size="l" class="btn"
           >Learn<span class="icon__right">-></span></tm-button
         >
         <tm-button

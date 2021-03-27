@@ -1,7 +1,7 @@
 <template>
   <main>
     <!-- Hero -->
-    <div class="section-hero">
+    <div class="section-hero section-first">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title">
           A whole universe of opportunity for token holders.

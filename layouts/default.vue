@@ -5,9 +5,7 @@
     </div>
     <div id="content">
       <!-- all page content here - hidden when mobile nav open -->
-      <main>
-        <nuxt />
-      </main>
+      <nuxt />
       <!-- <section-form /> -->
       <tm-footer />
     </div>
@@ -48,7 +46,7 @@ main
   left 0
   right 0
 
-.section-hero
+.section-first
   padding-top 5rem // approx navbar max height
 
 @media $breakpoint-large-max

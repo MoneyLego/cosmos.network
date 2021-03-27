@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="section-hero tm-section">
+    <div class="section-hero section-first tm-section">
       <div class="tm-wrapper">
         <div class="tm-section tm-container tm-grid-base">
           <div class="sidebar">
