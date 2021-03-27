@@ -454,15 +454,16 @@
       </div>
     </div>
 
-    <div class="tm-wrapper tm-container tm-section">
-      <tm-crosshair class="center crosshair" />
-      <tm-cta-cards :data="cards" />
-    </div>
+    <SectionGetStarted />
   </main>
 </template>
 
 <script>
+import SectionGetStarted from '~/components/SectionGetStarted.vue'
 export default {
+  components: {
+    SectionGetStarted,
+  },
   data() {
     return {
       cards: [
@@ -491,14 +492,6 @@ export default {
 
 <style lang="stylus" scoped>
 // Global
-.center
-  display grid
-  place-items center
-  center()
-
-.crosshair
-  margin-bottom 7rem
-
 .ne-accent
   angle-accent(ne)
   position absolute

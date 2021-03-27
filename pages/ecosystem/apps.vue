@@ -35,21 +35,29 @@
       </div>
     </div>
     <SectionItems :items="apps.records" />
+    <SectionGetStarted />
   </main>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import SectionItems from '~/components/ecosystem/SectionItems.vue'
+import SectionGetStarted from '~/components/SectionGetStarted.vue'
 export default {
   components: {
     SectionItems,
+    SectionGetStarted,
   },
   computed: {
     ...mapGetters(['apps']),
   },
   async mounted() {
     await this.$store.commit('initApps')
+  },
+  head() {
+    return {
+      title: 'Apps & Services - Ecosystem',
+    }
   },
 }
 </script>

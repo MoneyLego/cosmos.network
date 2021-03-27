@@ -80,7 +80,6 @@ export default {
   border-radius .5rem
   transition all .25s
   gap 1.5rem
-  max-width 320px
 
 .logo-wrapper
   width fit-content

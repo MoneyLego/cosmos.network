@@ -1,8 +1,6 @@
 <template>
-  <div class="tm-section tm-container tm-wrapper tm-grid-base">
-    <div class="items">
-      <CardItem v-for="item in items" :key="item.id" :item="item" />
-    </div>
+  <div class="section-items tm-section tm-container tm-wrapper">
+    <CardItem v-for="item in items" :key="item.id" :item="item" />
   </div>
 </template>
 
@@ -19,10 +17,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.items
-  width 100%
-  display flex
-  flex-flow row wrap
-.item
-  margin-bottom 1.5rem
+  .section-items
+    display grid
+    grid-gap 1.5rem
+
+@media $breakpoint-medium
+  .section-items
+    grid-template-columns 1fr 1fr
+    grid-gap 2rem
+
+@media $breakpoint-xl
+  .section-items
+    grid-template-columns 1fr 1fr 1fr
+    grid-gap 3rem
 </style>
