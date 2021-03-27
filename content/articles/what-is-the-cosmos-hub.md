@@ -13,4 +13,14 @@ tags:
 
 The Cosmos Hub is a blockchain that serves as the economic center of Cosmos. The Hub provides valuable services to the blockchains connected to it, including the largest interchain token exchange, shared security through interchain staking, bridges to Ethereum (ETH) and Bitcoin (BTC), and secure custodianship of digital assets. The Cosmos Hub’s primary token is the [ATOM](/learn/faq/what-is-the-atom-token).
 
+In particular, the Cosmos Hub will provide services such as:
+
+- Interchain token exchange
+
+- Interchain staking: IBC will enable Cosmos Hub validators to provide security for other chains. In practice, it means that ATOM will able to secure both the Cosmos Hub and other chains. Validators will select the chains they validate, and their delegators will share the resulting risks and rewards. 
+
+- Bridges to ETH and BTC
+
+- Interchain token custodianship: Users can hold, send and receive tokens originating from other blockchains. The number of available tokens will grow as more chains connect to the Cosmos Hub.
+
 > [More about Hub features](/features)

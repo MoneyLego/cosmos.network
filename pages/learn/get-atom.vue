@@ -191,7 +191,7 @@
           </div>
           <tm-button
             to-link="internal"
-            to="/learn/faq/how-should-atom-holders-choose-the-validators-to-stake-with"
+            to="/learn/faq/selecting-validators"
             size="l"
             variant="text"
             class="btn"

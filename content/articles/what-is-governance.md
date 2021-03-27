@@ -1,7 +1,7 @@
 ---
 index: 14
-title: What is Governance?
-description: Governance refers to the ability for stakers to vote on proposals that affect the evolution of the network.
+title: What is governance?
+description: Governance is the ability for ATOM stakers to vote on proposals that affect the evolution of the network.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -12,6 +12,6 @@ tags:
   - atom
 ---
 
-Governance refers to the ability for stakers to vote on proposals that affect the evolution of the network. Proposals can be submitted by any ATOM holder, but only proposals that come with a sufficient deposit (current minimum deposit is 512 ATOM) are eligible to be voted on. Deposits can be crowdfunded and need not be entirely provided by the user submitting the proposal. 
+Governance is the ability for ATOM stakers to vote on proposals that affect the evolution of the network. Proposals can be submitted by any ATOM holder, but only proposals that come with a sufficient deposit (current minimum deposit is 512 ATOM) are eligible to be voted on. Deposits can be crowdfunded and need not be entirely provided by the user submitting the proposal. 
 
 Once a proposal gets sufficient deposit, it enters the voting period, which lasts for 14 days. Most block explorers show the currently active proposals. ATOM stakers can vote on such proposals, with a voting power proportional to their amount of staked ATOM. If they do not vote, they inherit the vote from the validator(s) they delegated to. Voting can be performed via most [Wallets].
