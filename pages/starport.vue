@@ -274,8 +274,9 @@
           </p>
         </div>
       </div>
-      <!-- TODO -->
-      <!-- <graphics-home-hero class="graphics" /> -->
+      <div class="graphics">
+        <graphics-starport-starport-network class="graphics__item" />
+      </div>
     </div>
 
     <div class="section-sdk tm-section tm-container tm-wrapper">
@@ -561,7 +562,8 @@ iframe
 
 .section-production .graphics
   position relative
-  z-index 0
+  overflow visible
+  // margin-top 30%
 
 // SDK
 .section-sdk
@@ -614,8 +616,6 @@ iframe
   iframe
     height 510px
 
-// @media $breakpoint-medium
-
 @media $breakpoint-large
   .section-intro .logos-list
     grid-template-columns repeat(4, 1fr)
@@ -659,6 +659,8 @@ iframe
       grid-column 2/span 6
     .graphics
       grid-column 8/span 5
+
+  // Production
 
   // SDK
   .section-sdk .text
