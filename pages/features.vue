@@ -201,7 +201,10 @@
     </div>
 
     <!-- Gravity bridge -->
-    <div class="tm-container tm-wrapper section-gravity-bridge section-feature">
+    <div
+      id="gravity-bridge"
+      class="tm-container tm-wrapper section-gravity-bridge section-feature"
+    >
       <div class="tm-grid-base">
         <span class="ne-accent ne-accent-stacked"></span>
         <div class="graphics">
