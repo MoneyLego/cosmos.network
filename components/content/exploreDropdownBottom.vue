@@ -1,17 +1,14 @@
 <template>
-  <div class="dropdown-container">
+  <tm-link href="https://blog.cosmos.network" class="dropdown-container">
     <div class="bottom-wrapper">
-      <tm-link
-        href="https://blog.cosmos.network"
-        class="dropdown-wrap__content"
-      >
+      <div>
         <div class="text">
           <div class="title tm-rf0 tm-lh-copy">Blog &#8594;</div>
           <div class="subtitle tm-rf-1 tm-lh-copy">
             Stay on top of the latest news straight from cosmonaut teams.
           </div>
         </div>
-      </tm-link>
+      </div>
       <div class="graphics">
         <svg
           width="180"
@@ -462,7 +459,7 @@
         </svg>
       </div>
     </div>
-  </div>
+  </tm-link>
 </template>
 
 <script>

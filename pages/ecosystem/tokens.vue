@@ -10,8 +10,8 @@
             Cosmos Market Capitalization
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
-            Cosmos technology secures
-            <strong>{{ marketcap }} billion USD</strong> in tokens across
+            Cosmos secures
+            <strong>{{ marketcap }} billion USD</strong> across
             {{ tokens.length }} blockchains.
           </p>
         </div>
