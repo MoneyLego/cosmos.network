@@ -80,7 +80,7 @@
                         <li>
                           <tm-link
                             href="https://tutorials.cosmos.network"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Tutorials</span></tm-link
                           >
@@ -88,7 +88,7 @@
                         <li>
                           <tm-link
                             href="https://docs.cosmos.network"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Documentation</span></tm-link
                           >
@@ -96,7 +96,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/sdk"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Cosmos SDK</span></tm-link
                           >
@@ -104,7 +104,7 @@
                         <li>
                           <tm-link
                             href="https://ibcprotocol.org"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>IBC</span></tm-link
                           >
@@ -116,7 +116,7 @@
                         <li>
                           <NuxtLink
                             to="/ecosystem/apps"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Ecosystem</span>
                           </NuxtLink>
@@ -124,7 +124,7 @@
                         <li>
                           <NuxtLink
                             to="/ecosystem/wallets"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Wallets</span>
                           </NuxtLink>
@@ -132,7 +132,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/community"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Community</span></tm-link
                           >
@@ -140,7 +140,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/events"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Events</span></tm-link
                           >
@@ -148,7 +148,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/contributors"
-                            class="dropdown-wrap__content type1"
+                            class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Contributors</span></tm-link
                           >
