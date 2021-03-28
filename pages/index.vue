@@ -6,8 +6,8 @@
     <home-section-atom />
     <home-section-features />
     <home-section-tech />
-    <section-intro />
-    <section-banner />
+    <!-- <section-intro /> -->
+    <!-- <section-banner /> -->
   </main>
 </template>
 
