@@ -42,39 +42,120 @@
             <div class="nav-mobile-content tm-wrapper">
               <ul>
                 <li>
-                  <div class="text tm-rf3 tm-bold tm-lh-title tm-link">
-                    Learn
-                  </div>
-                  <ul>
-                    <li>
-                      <tm-link
-                        href="https://v1.cosmos.network/intro"
-                        class="tm-rf0 tm-lh-title tm-link"
-                        >Introduction</tm-link
-                      >
-                    </li>
-                    <li>
-                      <NuxtLink
-                        to="/features"
-                        class="tm-rf0 tm-lh-title tm-link"
-                        >Features</NuxtLink
-                      >
-                    </li>
-                    <li>
-                      <NuxtLink
-                        to="/learn/staking"
-                        class="tm-rf0 tm-lh-title tm-link"
-                        >What is staking?</NuxtLink
-                      >
-                    </li>
-                    <li>
-                      <NuxtLink
-                        to="/learn/faq"
-                        class="tm-rf0 tm-lh-title tm-link"
-                        >FAQ</NuxtLink
-                      >
-                    </li>
-                  </ul>
+                  <tm-tabs class="tm-wrapper">
+                    <tm-tab name="Learn" :selected="true">
+                      <ul>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/intro"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >Introduction</tm-link
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >Features</NuxtLink
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/learn/staking"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >What is staking?</NuxtLink
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/learn/faq"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >FAQ</NuxtLink
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                    <tm-tab name="Build">
+                      <ul>
+                        <li>
+                          <tm-link
+                            href="https://tutorials.cosmos.network"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Tutorials</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://docs.cosmos.network"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Documentation</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/sdk"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Cosmos SDK</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://ibcprotocol.org"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>IBC</span></tm-link
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                    <tm-tab name="Explore">
+                      <ul>
+                        <li>
+                          <NuxtLink
+                            to="/ecosystem/apps"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Ecosystem</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/ecosystem/wallets"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Wallets</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/community"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Community</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/events"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Events</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/contributors"
+                            class="dropdown-wrap__content type1"
+                          >
+                            <span>Contributors</span></tm-link
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                  </tm-tabs>
                 </li>
               </ul>
             </div>
@@ -328,7 +409,7 @@ $navbar-mobile-menu = 200
     flex-grow 1
     -webkit-box-flex 1
     .tm-link
-      padding var(--spacing-4) var(--spacing-7)
+      padding var(--spacing-3) 0
     ul
       margin-left calc(-1 * var(--spacing-7))
       margin-right calc(-1 * var(--spacing-7))
