@@ -1,62 +1,44 @@
 <template>
-  <kinesis-container
-    event="scroll"
-    class="section-atom tm-section tm-container tm-wrapper"
-  >
+  <div event="scroll" class="section-atom tm-section tm-container tm-wrapper">
     <div class="bg-sunrise-container">
       <graphics-bg-sunrise class="bg-sunrise" :sun="false" />
     </div>
     <div class="graphics graphics-top">
       <div class="coins-top">
         <div class="coin">
-          <kinesis-element originY="0" :strength="80" type="translate" axis="y">
-            <kinesis-element :strength="-30" type="rotate"
-              ><img src="~/assets/images/coin-atom.svg" /></kinesis-element
-          ></kinesis-element>
+          <div :origin-y="0" :strength="50" type="translate" axis="y">
+            <div :strength="-30" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            originY="0"
-            :strength="100"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-40" type="rotate"
-              ><img src="~/assets/images/coin-atom.svg" /></kinesis-element
-          ></kinesis-element>
+          <div :origin-y="0" :strength="60" type="translate" axis="y">
+            <div :strength="-40" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            originY="0"
-            :strength="130"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-50" type="rotate"
-              ><img src="~/assets/images/coin-atom.svg" /></kinesis-element
-          ></kinesis-element>
+          <div :origin-y="0" :strength="80" type="translate" axis="y">
+            <div :strength="50" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            originY="0"
-            :strength="180"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-60" type="rotate"
-              ><img src="~/assets/images/coin-atom.svg" /></kinesis-element
-          ></kinesis-element>
+          <div :origin-y="0" :strength="100" type="translate" axis="y">
+            <div :strength="-60" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :strength="300"
-            originY="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-80" type="rotate"
-              ><img src="~/assets/images/coin-atom.svg" /></kinesis-element
-          ></kinesis-element>
+          <div :strength="200" :origin-y="0" type="translate" axis="y">
+            <div :strength="80" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -87,38 +69,22 @@
     <div class="graphics">
       <div class="coins-bottom">
         <div class="coin">
-          <kinesis-element
-            :strength="100"
-            originY="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element
-              :strength="-80"
-              type="rotate"
-              transformOrigin="0% 100%"
-              ><img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+          <div :strength="60" :origin-y="0" type="translate" axis="y">
+            <div :strength="-80" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :strength="200"
-            originY="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element
-              :strength="50"
-              type="rotate"
-              transformOrigin="0% 100%"
-              ><img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+          <div :strength="120" :origin-y="0" type="translate" axis="y">
+            <div :strength="50" type="rotate">
+              <img src="~/assets/images/coin-atom.svg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </kinesis-container>
+  </div>
 </template>
 
 <style lang="stylus" scoped>
@@ -229,16 +195,18 @@
 
   .coin:nth-child(1)
     width 48%
-    transform rotate(28deg)
     left 0
     top 6%
     filter blur(1.5px)
+    img
+      transform rotate(28deg)
 
   .coin:nth-child(2)
     width 88%
-    transform rotate(323deg)
     left -17%
     top 20%
+    img
+      transform rotate(323deg)
 
 .tm-crosshair
   margin-left auto

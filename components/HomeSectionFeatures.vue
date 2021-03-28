@@ -1,8 +1,15 @@
 <template>
   <div class="tm-section tm-container tm-wrapper tm-grid-base">
-    <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
-      Be part of the open economy of the future.
-    </h2>
+    <div class="header">
+      <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
+        Be part of the open economy of the future.
+      </h2>
+      <p>
+        <tm-button to-link="internal" to="/features" size="l" variant="text"
+          >Powerful features<span class="icon__right">&rarr;</span></tm-button
+        >
+      </p>
+    </div>
     <div class="card card-accounts">
       <h3
         class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
@@ -92,11 +99,6 @@
         </p>
       </div>
     </div>
-    <p class="cta">
-      <tm-button to-link="internal" to="/features" size="l" variant="text"
-        >More features<span class="icon__right">&rarr;</span></tm-button
-      >
-    </p>
   </div>
 </template>
 <style lang="stylus" scoped>
@@ -106,9 +108,14 @@
   > *
     grid-column 1/-1
 
+.header
+  margin-bottom var(--spacing-10)
+
 .title
   max-width 11em
-  margin-bottom var(--spacing-10)
+
+.header p
+  margin-top var(--spacing-6)
 
 .card
   background var(--fg)
@@ -132,9 +139,6 @@
   position relative
   width 100%
   max-width 22rem
-
-.cta
-  margin-top var(--spacing-7)
 
 // Interchain Accounts
 .card-accounts
@@ -172,8 +176,7 @@
     margin-top 0
 
 @media $breakpoint-medium
-  .title,
-  .cta
+  .header
     grid-column 2 / -1
 
 @media $breakpoint-large

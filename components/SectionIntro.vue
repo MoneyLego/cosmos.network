@@ -1,87 +1,5 @@
 <template>
   <div>
-    <!-- Section tech - to move to component -->
-    <div class="section-tech tm-section tm-container tm-wrapper tm-grid-base">
-      <div class="graphics">
-        <graphics-hub-tech-stack />
-        <span class="tm-crosshair"></span>
-      </div>
-      <div class="title">
-        <h2 class="overline tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
-          Technology
-        </h2>
-        <div class="tm-rf5 tm-bold tm-lh-title tm-title">
-          The most trusted way to build value.
-        </div>
-      </div>
-      <div class="subtitle">
-        <p
-          class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
-        >
-          <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>
-          is a state-of-the-art blockchain framework that powers the Cosmos Hub
-          and its rapidly expanding orbit of sovereign chains.
-        </p>
-        <p
-          class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
-        >
-          Developers can use the SDK to build innovative applications that
-          create value through exchange with the Cosmos Hub.
-        </p>
-      </div>
-      <div class="stat stat-tech">
-        <h3
-          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
-        >
-          Secure tech
-        </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
-          $50B<span class="tm-rf4 tm-lh-title tm-bold super">+</span>
-        </div>
-        <p class="stat-subtitle tm-rf0 tm-lh-title">
-          Digital assets under management.
-        </p>
-      </div>
-      <div class="stat stat-pos">
-        <h3
-          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
-        >
-          Proof-of-Stake
-        </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
-          <icon-plant-leaf class="icon" />99%<span
-            class="tm-rf-1 tm-rf1-m-up tm-rf2-l-up tm-lh-title tm-bold super"
-            >lower carbon footprint</span
-          >
-        </div>
-        <p class="stat-subtitle tm-rf0 tm-lh-title">
-          Blockchain tech that truly scales.
-        </p>
-      </div>
-      <div class="stat stat-fees">
-        <h3
-          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
-        >
-          Low fees
-        </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">$0.01</div>
-        <p class="stat-subtitle tm-rf0 tm-lh-title">
-          Enjoy the lowest fees – almost zero.
-        </p>
-      </div>
-      <div class="stat stat-tx">
-        <h3
-          class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted"
-        >
-          Fast transactions
-        </h3>
-        <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">7 sec</div>
-        <p class="stat-subtitle tm-rf0 tm-lh-title">
-          Transactions confirmed in seconds.
-        </p>
-      </div>
-    </div>
-
     <!-- Section developer - to move to component -->
     <div
       class="section-developer tm-section tm-container tm-wrapper tm-grid-base"
@@ -151,7 +69,6 @@
 </template>
 
 <script>
-import IconPlantLeaf from '~/components/icons/IconPlantLeaf.vue'
 import IconTwitter from '~/components/icons/IconTwitter.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconTelegram from '~/components/icons/IconTelegram.vue'
@@ -159,7 +76,6 @@ import IconCosmos from '~/components/icons/IconCosmos.vue'
 
 export default {
   components: {
-    IconPlantLeaf,
     IconTwitter,
     IconDiscord,
     IconTelegram,
@@ -212,66 +128,6 @@ export default {
   margin-top var(--spacing-8)
   gap 0 var(--grid-gap-x)
 
-
-// Tech
-.section-tech
-  > *
-    grid-column 1/-1
-
-  .graphics
-    position relative
-    min-width 23rem
-
-  .hub-tech-stack
-    right var(--spacing-11)
-
-  .tm-crosshair
-    margin-bottom var(--spacing-6)
-
-  .title .tm-title
-    max-width 9em
-    margin-top var(--spacing-6)
-
-  .overline
-    position relative
-
-  .subtitle
-    position relative
-    margin-top var(--spacing-8)
-
-    &:before
-      content ""
-      angle-accent(nw)
-      margin-left calc(-1 * var(--grid-gap-x))
-      margin-bottom var(--spacing-5)
-
-
-.stat
-  position relative
-  margin-top var(--spacing-10)
-
-  .super
-    margin-left var(--spacing-2)
-
-.stat-value
-  display flex
-  align-items flex-start
-  margin var(--spacing-3) 0
-
-.stat-pos
-  .icon
-    align-self start
-    margin-top var(--spacing-4)
-    margin-right var(--spacing-1)
-
-  .stat-value
-    align-items center
-
-  .super
-    max-width 4.5em
-    margin-left var(--spacing-6)
-
-
 // Community
 .section-community
   .text,
@@ -299,30 +155,7 @@ export default {
   .btn-group
     display block
 
-  // Tech
-  .section-tech
-    > *
-      grid-column auto
-
-    .graphics
-      grid-column 1/-1
-
-    .title,
-    .subtitle
-      grid-column 2 / -1
-
-  // Tech > Stats
-  .stat
-    grid-column span 2
-
 @media $breakpoint-medium
-  // Tech > Stats
-  .stat
-    grid-column span 4
-
-  .stat-value
-    margin var(--spacing-4) 0
-
   // Community
   .section-community
     .text
@@ -333,37 +166,8 @@ export default {
       margin-top 0
 
 @media $breakpoint-large
-  // Tech
-  .section-tech
-    .tm-crosshair
-      margin-top -6rem
-
-    .title,
-    .subtitle
-      grid-column span 4
-
-    .subtitle
-      margin-top auto
-
   // Community
   .section-community
     .text
       grid-column 1/span 5
-
-@media $breakpoint-xl
-  // Tech
-  .section-tech
-    .title
-      grid-column 2 / span 6
-    .subtitle
-      grid-column span 5
-
-  // Tech > Stats
-  .stat-tech,
-  .stat-fees
-    grid-column 2 / span 5
-
-  .stat-pos,
-  .stat-tx
-    grid-column 8 / span 5
 </style>

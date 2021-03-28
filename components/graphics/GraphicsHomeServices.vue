@@ -1,11 +1,11 @@
 <template>
-  <kinesis-container event="scroll" class="container">
-    <kinesis-element
-      :strength="30"
+  <div event="scroll" class="container">
+    <div
+      :strength="20"
       type="rotate"
-      transformOrigin="20% 250%"
+      transform-origin="20% 250%"
       class="bg"
-    ></kinesis-element>
+    ></div>
     <svg
       width="2462"
       height="1961"
@@ -113,13 +113,13 @@
       </defs>
     </svg>
     <graphics-orbit-lines class="orbit" />
-    <kinesis-element
-      :strength="60"
+    <div
+      :strength="40"
       type="rotate"
-      transformOrigin="-230% 160%"
+      transform-origin="-230% 160%"
       class="fg"
-    ></kinesis-element>
-  </kinesis-container>
+    ></div>
+  </div>
 </template>
 <style lang="stylus" scoped>
 .container

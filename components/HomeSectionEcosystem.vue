@@ -110,6 +110,7 @@
 
 .currency
   position absolute
+  top 0
   margin-left var(--spacing-4)
   margin-top var(--spacing-4)
   writing-mode vertical-rl

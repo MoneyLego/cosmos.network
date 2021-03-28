@@ -1,73 +1,35 @@
 <template>
   <div class="tech-stack">
     <svg
-      width="2175"
+      width="1676"
       height="1676"
-      viewBox="0 0 2175 1676"
+      viewBox="0 0 1676 1676"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M1916.32 317.574C2115.04 503.363 1904.84 906.665 1446.83 1218.37C988.811 1530.08 456.42 1632.16 257.697 1446.37C58.975 1260.58 269.174 857.283 727.19 545.573C1185.21 233.864 1717.6 131.786 1916.32 317.574Z"
-        :fill="`url(#${cssid}_paint0_radial)`"
-      />
-      <g :filter="`url(#${cssid}_filter0_f)`">
+      <g filter="url(#filter0_f-892429)">
         <circle
-          cx="1009.94"
+          cx="837.833"
           cy="837.833"
           r="771.833"
-          :fill="`url(#${cssid}_paint1_radial)`"
+          fill="url(#paint0_radial-531028)"
         />
       </g>
+      <circle cx="838" cy="838" r="567" stroke="white" stroke-opacity="0.1" />
+      <circle cx="838" cy="838" r="374" stroke="white" stroke-opacity="0.1" />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
-        d="M1007.41 744.471L970.452 723.133L933.494 744.471V787.147L970.452 808.485L1007.41 787.147V744.471ZM970.452 727.248L937.057 746.528V785.089L970.452 804.369L1003.85 785.089V746.528L970.452 727.248Z"
-        :fill="`url(#${cssid}_paint2_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M1007.66 885.225L970.703 863.887L933.745 885.225V927.901L970.703 949.238L1007.66 927.901V885.225ZM970.703 868.002L937.309 887.282V925.843L970.703 945.123L1004.1 925.843V887.282L970.703 868.002Z"
-        :fill="`url(#${cssid}_paint3_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M929.974 793.512L966.933 814.85V857.526L929.974 878.863L893.016 857.526V814.85L929.974 793.512ZM896.58 816.907L929.974 797.627L963.369 816.907V855.468L929.974 874.748L896.58 855.468V816.907Z"
-        :fill="`url(#${cssid}_paint4_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M1048.39 814.85L1011.43 793.512L974.474 814.85V857.526L1011.43 878.863L1048.39 857.526V814.85ZM1011.43 797.627L978.038 816.907V855.468L1011.43 874.748L1044.83 855.468V816.907L1011.43 797.627Z"
-        :fill="`url(#${cssid}_paint5_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M1093.14 793.512L1130.1 814.85V857.526L1093.14 878.863L1056.19 857.526V814.85L1093.14 793.512ZM1059.75 816.907L1093.14 797.627L1126.54 816.907V855.468L1093.14 874.748L1059.75 855.468V816.907Z"
-        :fill="`url(#${cssid}_paint6_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M1089.72 744.471L1052.76 723.133L1015.8 744.471V787.147L1052.76 808.485L1089.72 787.147V744.471ZM1052.76 727.248L1019.37 746.528V785.089L1052.76 804.369L1086.16 785.089V746.528L1052.76 727.248Z"
-        :fill="`url(#${cssid}_paint7_radial)`"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M1052.16 863.867L1089.12 885.205V927.881L1052.16 949.219L1015.2 927.881V885.205L1052.16 863.867ZM1018.77 887.263L1052.16 867.982L1085.56 887.263V925.823L1052.16 945.104L1018.77 925.823V887.263Z"
-        :fill="`url(#${cssid}_paint8_radial)`"
+        d="M798.352 727.248L764.957 746.528V785.089L798.352 804.369L831.746 785.089V746.528L798.352 727.248ZM835.31 744.471L798.352 723.133L761.394 744.471V787.147L798.352 808.485L835.31 787.147V744.471ZM798.602 868.002L765.207 887.282V925.843L798.602 945.123L831.996 925.843V887.282L798.602 868.002ZM835.56 885.225L798.602 863.887L761.644 885.225V927.901L798.602 949.238L835.56 927.901V885.225ZM724.477 816.907L757.871 797.627L791.266 816.907V855.468L757.871 874.748L724.477 855.468V816.907ZM757.871 793.512L794.83 814.85V857.526L757.871 878.863L720.913 857.526V814.85L757.871 793.512ZM839.332 797.627L805.938 816.907V855.468L839.332 874.748L872.727 855.468V816.907L839.332 797.627ZM876.291 814.85L839.332 793.512L802.374 814.85V857.526L839.332 878.863L876.291 857.526V814.85ZM887.649 816.907L921.043 797.627L954.438 816.907V855.468L921.043 874.748L887.649 855.468V816.907ZM921.043 793.512L958.002 814.85V857.526L921.043 878.863L884.085 857.526V814.85L921.043 793.512ZM880.662 727.248L870.735 732.979L847.267 746.528V785.089L880.662 804.369L914.056 785.089V746.528L880.662 727.248ZM917.62 744.471L880.662 723.133L868.953 729.893L843.703 744.471V787.147L880.662 808.485L917.62 787.147V744.471ZM846.668 887.263L880.063 867.982L913.457 887.263V925.823L880.063 945.104L846.668 925.823V887.263ZM880.063 863.867L917.021 885.205V927.881L880.063 949.219L843.104 927.881V885.205L880.063 863.867Z"
+        fill="url(#paint1_radial-741323)"
       />
       <defs>
         <filter
-          :id="`${cssid}_filter0_f`"
-          x="172.179"
-          y="0.0765686"
-          width="1675.51"
-          height="1675.51"
+          id="filter0_f-892429"
+          x="0"
+          y="0"
+          width="1676"
+          height="1676"
           filterUnits="userSpaceOnUse"
           color-interpolation-filters="sRGB"
         >
@@ -78,30 +40,15 @@
             in2="BackgroundImageFix"
             result="shape"
           />
-          <feGaussianBlur
-            stdDeviation="32.9617"
-            result="effect1_foregroundBlur"
-          />
+          <feGaussianBlur stdDeviation="32" result="effect1_foregroundBlur" />
         </filter>
         <radialGradient
-          :id="`${cssid}_paint0_radial`"
+          id="paint0_radial-531028"
           cx="0"
           cy="0"
           r="1"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1088.33 793.723) rotate(-112.276) scale(351.504 648.041)"
-        >
-          <stop offset="0.0001" stop-color="#C01AEA" />
-          <stop offset="0.539562" stop-color="#EA99FF" stop-opacity="0.3" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint1_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1009.94 837.833) rotate(90) scale(771.833)"
+          gradientTransform="translate(837.833 837.833) rotate(90) scale(771.833)"
         >
           <stop offset="0.223958" stop-color="#A5FBFF" />
           <stop offset="0.338542" stop-color="#6C8DFF" />
@@ -109,78 +56,12 @@
           <stop offset="1" stop-color="#A929AB" stop-opacity="0" />
         </radialGradient>
         <radialGradient
-          :id="`${cssid}_paint2_radial`"
+          id="paint1_radial-741323"
           cx="0"
           cy="0"
           r="1"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint3_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint4_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint5_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint6_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint7_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
-        >
-          <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
-          <stop offset="1" stop-color="white" stop-opacity="0.17" />
-        </radialGradient>
-        <radialGradient
-          :id="`${cssid}_paint8_radial`"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1061.46 745.895) rotate(117.245) scale(228.718 189.461)"
+          gradientTransform="translate(889.357 745.895) rotate(117.246) scale(228.719 189.463)"
         >
           <stop offset="0.141956" stop-color="white" stop-opacity="0.86" />
           <stop offset="1" stop-color="white" stop-opacity="0.17" />
@@ -208,12 +89,12 @@ export default {
 svg
   width 172%
   height auto
-  margin-top -67%
+  margin-top -50%
   margin-bottom -51%
 
 .label
   position absolute
-  top -8%
+  top 48%
   left 61%
   color var(--black)
 
