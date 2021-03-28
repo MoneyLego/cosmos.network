@@ -50,7 +50,7 @@
       </div>
       <div class="stat">
         <div class="value tm-rf6 tm-lh-title tm-bold tm-title">
-          $50B<span class="tm-rf4">+</span>
+          ${{ Math.round(marketcap) }}B<span class="tm-rf4">+</span>
           <small class="currency tm-rf-1 tm-lh-title tm-muted">USD</small>
         </div>
         <div class="desc tm-rf-1 tm-rf0-m-up tm-lh-title">
@@ -60,6 +60,18 @@
     </div>
   </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+  computed: {
+    ...mapGetters(['marketcap']),
+  },
+  mounted() {
+    this.$store.commit('initTokens')
+  },
+}
+</script>
 
 <style lang="stylus" scoped>
 .content,

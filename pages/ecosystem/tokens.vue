@@ -11,8 +11,8 @@
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
             Cosmos secures
-            <strong>{{ marketcap }} billion USD</strong> across
-            {{ tokens.length }} blockchains.
+            <strong>{{ marketcap }} billion USD</strong> in digital assets
+            across {{ tokens.length }} apps and services.
           </p>
         </div>
       </div>

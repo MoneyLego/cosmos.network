@@ -176,6 +176,10 @@ export default {
           title: 'Explore',
           children: [
             {
+              title: 'Tokens',
+              href: '/ecosystem/tokens',
+            },
+            {
               title: 'Ecosystem',
               href: '/ecosystem/apps',
             },
