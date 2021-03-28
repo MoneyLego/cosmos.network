@@ -39,6 +39,20 @@ const state = {
       price: {},
     },
     {
+      id: 'okb',
+      name: 'OKB',
+      ecosystemName: 'OKex Chain',
+      symbol: 'OKB',
+      price: {},
+    },
+    {
+      id: 'crypto-com-chain',
+      name: 'Crypto.com Coin',
+      ecosystemName: 'Crypto.com',
+      symbol: 'CRO',
+      price: {},
+    },
+    {
       id: 'thorchain',
       name: 'Thorchain',
       ecosystemName: 'THORChain',
