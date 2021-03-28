@@ -2,6 +2,9 @@
   <div class="dropdown-container">
     <div class="dropdown-wrap">
       <div class="left">
+        <NuxtLink to="/ecosystem/tokens" class="dropdown-wrap__content type1">
+          <span>Tokens</span>
+        </NuxtLink>
         <NuxtLink to="/ecosystem/apps" class="dropdown-wrap__content type1">
           <span>Ecosystem</span>
         </NuxtLink>
