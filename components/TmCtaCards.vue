@@ -51,7 +51,6 @@ export default {
   display grid
   grid-template-columns repeat(1, 1fr)
   gap var(--spacing-7)
-  grid-column 1 / span 12
   position relative
 
 .card-item

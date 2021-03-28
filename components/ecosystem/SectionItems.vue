@@ -6,28 +6,33 @@
 
 <script>
 import CardItem from '~/components/ecosystem/CardItem.vue'
+
 export default {
   components: {
     CardItem,
   },
   props: {
-    items: { type: Array, required: true },
+    items: {
+      type: Array,
+      default: () => [],
+      required: true,
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
-  .section-items
-    display grid
-    grid-gap 1.5rem
+.section-items
+  display grid
+  gap var(--spacing-6)
 
 @media $breakpoint-medium
   .section-items
     grid-template-columns 1fr 1fr
-    grid-gap 2rem
+    gap var(--spacing-7)
 
 @media $breakpoint-xl
   .section-items
     grid-template-columns 1fr 1fr 1fr
-    grid-gap 3rem
+    gap var(--spacing-8)
 </style>

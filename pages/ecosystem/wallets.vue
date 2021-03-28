@@ -34,19 +34,41 @@
         </div>
       </div>
     </div>
-    <SectionItems :items="wallets.records" />
-    <SectionGetStarted />
+
+    <section-items :items="wallets.records" />
+
+    <div class="tm-wrapper tm-container tm-section">
+      <tm-crosshair class="center crosshair" />
+      <tm-cta-cards :data="cards" />
+    </div>
   </main>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import SectionItems from '~/components/ecosystem/SectionItems.vue'
-import SectionGetStarted from '~/components/SectionGetStarted.vue'
+
 export default {
   components: {
     SectionItems,
-    SectionGetStarted,
+  },
+  data() {
+    return {
+      cards: [
+        {
+          href: '/learn/staking',
+          graphics: 'graphics-cta-token-holders',
+          overline: 'Token Holders',
+          title: 'Start staking ->',
+        },
+        {
+          href: '/starport',
+          graphics: 'graphics-cta-developers',
+          overline: 'Developers',
+          title: 'Start building ->',
+        },
+      ],
+    }
   },
   computed: {
     ...mapGetters(['wallets']),
@@ -78,6 +100,10 @@ export default {
   display grid
   place-items center
   center()
+  width 100% // safari
+
+.crosshair
+  margin-bottom 7rem
 
 // Hero
 .section-hero
@@ -109,5 +135,5 @@ export default {
 
 @media $breakpoint-xl
   .section-hero .text
-      grid-column 2/span 10
+    grid-column 2/span 10
 </style>

@@ -342,7 +342,7 @@
             <div class="footer">
               <tm-button
                 to-link="external"
-                href="https://cosmos.network/community"
+                href="https://v1.cosmos.network/community"
                 size="l"
                 variant="text"
                 class="btn"

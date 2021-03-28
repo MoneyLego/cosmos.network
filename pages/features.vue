@@ -457,16 +457,15 @@
       </div>
     </div>
 
-    <SectionGetStarted />
+    <div class="tm-wrapper tm-container tm-section">
+      <tm-crosshair class="center crosshair" />
+      <tm-cta-cards :data="cards" />
+    </div>
   </main>
 </template>
 
 <script>
-import SectionGetStarted from '~/components/SectionGetStarted.vue'
 export default {
-  components: {
-    SectionGetStarted,
-  },
   data() {
     return {
       cards: [

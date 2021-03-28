@@ -68,7 +68,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
 .dot
   padding 0.25rem
 
