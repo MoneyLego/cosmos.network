@@ -115,6 +115,14 @@
                       <ul>
                         <li>
                           <NuxtLink
+                            to="/ecosystem/tokens"
+                            class="tm-rf0 tm-lh-title tm-link"
+                          >
+                            <span>Tokens</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
                             to="/ecosystem/apps"
                             class="tm-rf0 tm-lh-title tm-link"
                           >
@@ -478,7 +486,7 @@ $navbar-mobile-menu = 200
     .tm-link
       &.nuxt-link-exact-active:after
         transform rotate(90deg)
-        left 0
+        left -15px
         bottom 50%
         transform-origin bottom
     &-mobile-container.is-active
