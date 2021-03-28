@@ -3,6 +3,7 @@
 /dev /starport 301!
 /dev/scaling-eth /starport 301!
 /developers /starport 301!
+/ecosystem /ecosystem/apps 301!
 /faq /learn/faq 301!
 /resources/delegator /learn/staking 301!
 /roadmap /features 301!
@@ -12,7 +13,6 @@
 /start-staking /learn/get-atom 301!
 /staking /learn/staking
 /staking/delegators /learn/staking 301!
-
 
 # Redirect URLs to external websites 301!
 /apply https://jobs.cosmos.network 301!
@@ -76,7 +76,6 @@
 /dev/whitepaper/zh-CN https://cosmos.network/resources/whitepaper/zh-CN 301!
 /events/all https://cosmos.network/events 301!
 /events/code-with-us https://cosmos.network/series/code-with-us 301!
-/ecosystem https://cosmos.network/ecosystem/apps 301!
 /hackatom https://cosmos.network/events 301!
 /info https://cosmos.network/intro 301!
 /introduction https://cosmos.network/intro 301!
@@ -102,7 +101,6 @@
 /community https://cosmos.network/community 301!
 /contributors https://cosmos.network/contributors 301!
 /design https://cosmos.network/design 301!
-/ecosystem/* https://cosmos.network/ecosystem/:splat 301!
 /epicenter https://cosmos.network/epicenter 301!
 /events/* https://cosmos.network/events/:splat 301!
 /glossary https://cosmos.network/glossary 301!

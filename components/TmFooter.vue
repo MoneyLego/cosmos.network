@@ -177,11 +177,11 @@ export default {
           children: [
             {
               title: 'Ecosystem',
-              href: 'https://v1.cosmos.network/ecosystem',
+              href: '/ecosystem/apps',
             },
             {
               title: 'Wallets',
-              href: 'https://v1.cosmos.network/ecosystem/wallets',
+              href: '/ecosystem/wallets',
             },
             {
               title: 'Blog',

@@ -13,4 +13,4 @@ tags:
 
 Developers have built hundreds of blockchain projects on Cosmos, including Binance Chain (BNB), Terra (LUNA), Crypto.com Coin (CRO), Cosmos Hub (ATOM), and more. Explore the Cosmos ecosystem to discover a wide variety of apps, services, blockchains, wallets, and explorers that are part of the Cosmos ecosystem.
 
-> [View ecosystem projects](https://v1.cosmos.network/ecosystem/apps)
+> [View ecosystem projects](/ecosystem/apps)

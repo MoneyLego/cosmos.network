@@ -166,8 +166,8 @@
             transfer your ATOM from the exchange.
           </div>
           <tm-button
-            to-link="external"
-            href="https://cosmos.network/ecosystem/wallets"
+            to-link="internal"
+            to="/ecosystem/wallets"
             size="l"
             variant="text"
             class="btn"
