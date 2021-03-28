@@ -25,8 +25,7 @@
         </template>
         <!-- Content to the right of the list -->
         <template #after-nav>
-          <!--Mobile Burger, buttons, etc-->
-          <li class="vsm-mob-hide">
+          <!-- <li class="vsm-mob-hide">
             <button
               class="nav-mobile-toggle"
               type="button"
@@ -38,16 +37,14 @@
               <span class="nav-mobile-toggle__icon"></span>
               <span class="sr-only">Menu</span>
             </button>
-          </li>
+          </li> -->
           <vsm-mob>
             <div class="nav-mobile-content tm-wrapper">
               <ul>
                 <li>
-                  <NuxtLink
-                    to="/"
-                    class="text tm-rf3 tm-bold tm-lh-title tm-link"
-                    >Learn</NuxtLink
-                  >
+                  <div class="text tm-rf3 tm-bold tm-lh-title tm-link">
+                    Learn
+                  </div>
                   <ul>
                     <li>
                       <tm-link
@@ -81,62 +78,32 @@
                 </li>
               </ul>
             </div>
-            <div class="nav-mobile-bottom tm-wrapper">
-              <tm-button to-link="internal" to="/learn/get-atom"
-                >Get ATOM <span class="icon__right">&#8594;</span></tm-button
-              >
-            </div>
+            <NuxtLink to="/learn/get-atom">
+              <div class="nav-mobile-bottom tm-wrapper">
+                <div class="wrapper">
+                  <div class="text">
+                    <div class="title tm-rf0 tm-lh-copy">Get ATOM &#8594;</div>
+                    <div class="subtitle tm-rf-1 tm-lh-copy">
+                      Four simple steps to get ATOM and start earning rewards.
+                    </div>
+                  </div>
+                  <div class="graphics">
+                    <graphics-validator :coins="3" class="graphics__item" />
+                  </div>
+                </div>
+              </div>
+            </NuxtLink>
           </vsm-mob>
         </template>
       </vsm-menu>
     </nav>
+
+    <!-- Uncomment for secondary nav -->
     <!-- <nav v-if="secondary" class="nav nav-secondary" role="navigation">
-      <div class="nav-inner tm-container tm-wrapper">
-        <div class="nav-first">
-          <NuxtLink
-            to="/"
-            class="logo tm-rf-1 tm-rf0-m-up tm-medium tm-lh-solid"
-          >
-            <logo-hub-brandmark class="logo__hub" />Hub
-          </NuxtLink>
-        </div>
-        <div class="nav-second">
-          <ul>
-            <li>
-              <NuxtLink
-                to="/features"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Features</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
-                to="/learn/staking"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link"
-                >Staking</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
-                to="/learn/faq"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link"
-                >FAQ</NuxtLink
-              >
-            </li>
-            <li>
-              <a
-                href="https://hub.cosmos.network"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="tm-rf-1 tm-medium tm-lh-title tm-link tm-link-external"
-                >Documentation</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+      <section-secondary-nav />
     </nav> -->
-    <nav
+
+    <!-- <nav
       v-if="isActive"
       :class="{ 'is-active': isActive }"
       class="nav nav-mobile-container"
@@ -179,7 +146,7 @@
           >Get ATOM <span class="icon__right">&#8594;</span></tm-button
         >
       </div>
-    </nav>
+    </nav> -->
   </div>
 </template>
 
@@ -237,6 +204,22 @@ export default {
 <style lang="stylus" scoped>
 $navbar-height = 5rem
 $navbar-mobile-menu = 200
+
+// .dropdown-container
+//   width 482px
+
+.dropdown-wrap
+  display grid
+  grid-template-columns 1fr 1fr
+  column-gap var(--spacing-6)
+  .overline
+    color var(--white-300)
+  .title
+    color var(--white)
+    margin-top var(--spacing-3)
+  .subtitle
+    color var(--white-400)
+    margin-top var(--spacing-3)
 
 .navs
   position relative
@@ -321,12 +304,13 @@ $navbar-mobile-menu = 200
         transform translateY(-4px) rotate(0deg)
       &:after
         transform translateY(4px) rotate(0deg)
-    &.is-active &__icon
-      &:before
-        transform translateY(1px) rotate(45deg)
-      &:after
-        transform translateY(0) rotate(-45deg)
+    // &.is-active &__icon
+    //   &:before
+    //     transform translateY(1px) rotate(45deg)
+    //   &:after
+    //     transform translateY(0) rotate(-45deg)
   &-mobile-container
+    background var(--black)
     position fixed
     top 0
     left 0
@@ -337,10 +321,6 @@ $navbar-mobile-menu = 200
     flex-direction column
     -webkit-box-orient vertical
     -webkit-box-direction normal
-  .dark-mode &-mobile-container
-    background var(--black)
-  .light-mode &-mobile-container
-    background var(--white)
   &-mobile-content
     padding-top $navbar-height
     padding-bottom var(--spacing-7)
@@ -358,11 +338,9 @@ $navbar-mobile-menu = 200
         .tm-link-external:after
           bottom auto
   &-mobile-bottom
-    padding-bottom var(--spacing-7)
-    text-align center
-    .tm-button
-      width 100%
-      max-width 20rem
+    padding var(--spacing-6) var(--spacing-7)
+    text-align start
+    background var(--trans-gray-900)
   &-primary
     position relative
     z-index $navbar-mobile-menu + 1
@@ -370,6 +348,41 @@ $navbar-mobile-menu = 200
     gap var(--spacing-7)
   &-second,
   &-secondary
+    display none
+
+.nav-mobile-bottom .wrapper
+  display: inline-flex;
+  align-items: center;
+  text-align: start;
+
+.nav-mobile-bottom .wrapper .text
+  text-align start
+
+.wrapper .text
+  white-space normal
+
+.wrapper .text .title
+  color var(--white)
+  margin-top var(--spacing-3)
+
+.wrapper .text .subtitle
+  color var(--white-400)
+  margin-top var(--spacing-3)
+
+.wrapper .graphics
+  display flex
+  justify-content center
+  position relative
+  z-index 0
+
+  &__item
+    height auto
+    width 70%
+    margin-top calc(-1 * var(--spacing-8))
+    max-width 12rem
+
+@media $breakpoint-xsmall-only
+  .wrapper .graphics
     display none
 
 @media $breakpoint-large-max

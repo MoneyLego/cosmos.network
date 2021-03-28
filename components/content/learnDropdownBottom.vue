@@ -1,8 +1,8 @@
 <template>
   <div class="dropdown-container">
-    <div class="dropdown-wrap">
-      <NuxtLink to="/learn/get-atom" class="dropdown-wrap__content type2">
-        <div>
+    <div class="bottom-wrapper">
+      <NuxtLink to="/learn/get-atom" class="dropdown-wrap__content">
+        <div class="text">
           <div class="title tm-rf0 tm-lh-copy">Get ATOM &#8594;</div>
           <div class="subtitle tm-rf-1 tm-lh-copy">
             Four simple steps to get ATOM and start earning rewards.

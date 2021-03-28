@@ -4,23 +4,19 @@
 
 /* DEFAULT CSS */
 .vsm-menu
-  -webkit-perspective 2000px
   perspective 2000px
-
-.vsm-menu,
-.vsm-menu *
-  -webkit-box-sizing border-box
-  box-sizing border-box
 
 .vsm-menu
   .graphics
-    display grid
-    place-self center
-
-  .graphics__item
-    height auto
-    width 60%
-    margin-bottom 15%
+    display flex
+    justify-content center
+    position relative
+    z-index 0
+  
+    &__item
+      height auto
+      margin-top calc(-1 * var(--spacing-8))
+      max-width 12rem
 
 .vsm-menu .vsm-dropdown
   position absolute
@@ -114,7 +110,7 @@
 .vsm-background-alt
   right 0
   height 1000px
-  background #f6f9fc
+  background var(--trans-gray-900)
 
 .vsm-arrow,
 .vsm-dropdown-container
@@ -203,11 +199,11 @@
     transform translateY(-4px) rotate(0deg)
   &:after
     transform translateY(4px) rotate(0deg)
-&.is-active &__icon
-  &:before
-    transform translateY(1px) rotate(45deg)
-  &:after
-    transform translateY(0) rotate(-45deg)
+// &.vsm-open &__icon
+//   &:before
+//     transform translateY(1px) rotate(45deg)
+//   &:after
+//     transform translateY(0) rotate(-45deg)
 
 // .vsm-mob__hamburger:hover .vsm-mob-line
 //   background #32325d
@@ -224,23 +220,22 @@
 
 .vsm-mob-content
   position absolute
-  left 10px
-  top 10px
-  right 10px
+  left 0
+  top 0
+  right 0
   -webkit-box-pack end
   -ms-flex-pack end
   justify-content flex-end
   -webkit-perspective 2000px
   perspective 2000px
+  margin-top 5rem
 
 .vsm-mob-content__wrap
-  background #fff
+  background var(--gray-100)
   box-shadow 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), 0 -18px 60px -10px rgba(0, 0, 0, 0.025)
   border-radius 4px
   overflow hidden
   position relative
-  font-size 17px
-  line-height 40px
   white-space nowrap
   -webkit-box-flex 1
   -ms-flex-positive 1
@@ -255,23 +250,24 @@
   -webkit-transition-duration 0.25s
   transition-duration 0.25s
 
+// TODO: tweak close
 .vsm-mob-close
   position absolute
   right 0
   top 0
-  width 50px
-  height 50px
+  width 3.125rem
+  height 3.125rem
   cursor pointer
 
 .vsm-mob-close:hover:after,
 .vsm-mob-close:hover:before
-  background #32325d
+  background currentColor
 
 .vsm-mob-close:after,
 .vsm-mob-close:before
   content ""
   position absolute
-  background #6772e5
+  background var(--white)
   border-radius 1px
   left 14px
   right 14px
@@ -327,22 +323,13 @@
   display grid
   grid-template-columns repeat(3, 1fr)
 
-// Move all the content to the right and reduce the logo
-// .vsm-logo-section
-//   flex 1 1 auto
-//   img
-//     user-select none
-
 .vsm-section_menu
   center()
   > *
     padding 0 25px
 
-// Styles for Dropdown Content:
 .vsm-wrap-content
   padding 30px
-  // Set the width manually so that it does not depend
-  // on changing content
   width 482px
 
 .vsm-content
@@ -350,10 +337,12 @@
 .vsm-mobile-content
   padding var(--spacing-7) var(--spacing-8)
 
-.vsm-content--secondary
-  padding-top 10px
-  padding-bottom 10px
-  background var(--trans-gray-100)
+// .vsm-content--secondary
+//   padding-top 10px
+//   padding-bottom 10px
+
+.dropdown-container
+  width 482px
 
 .dropdown-wrap__content
   display flex
@@ -363,25 +352,16 @@
   padding 10px 5px 10px 0
   &:not(:last-child)
     margin-bottom 5px
-  &.type1
-    span
-      margin-left 10px
-  &.type2
-    align-items flex-start
-    > div
-      margin-left 10px
-    .content--bottom
-      color var(--secondary)
-
-.dropdown-container
-  width 482px
 
 /* CUSTOM CSS */
 
 .dropdown-wrap
   display grid
-  grid-template-columns 50% 50%
+  grid-template-columns 1fr 1fr
   column-gap var(--spacing-6)
+
+.bottom-wrapper
+  text-align start
   .overline
     color var(--white-300)
   .title
@@ -390,6 +370,30 @@
   .subtitle
     color var(--white-400)
     margin-top var(--spacing-3)
+
+.dropdown-wrap .wrapper
+  display inline-flex
+  align-items center
+
+.wrapper + .wrapper
+  margin-top 1rem
+
+.dropdown-wrap .wrapper .icon
+  display flex
+  align-items center
+
+.dropdown-wrap .wrapper .text
+  margin-left 1rem
+
+  .title
+    color var(--white)
+    margin-top 0
+  .desc
+    color var(--white-400)
+
+.bottom-wrapper
+  display inline-flex
+  align-items center
 
 /* @media */
 

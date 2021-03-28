@@ -1,30 +1,40 @@
 <template>
   <div class="dropdown-container">
     <div class="dropdown-wrap">
-      <tm-link
-        href="https://tutorials.cosmos.network"
-        class="dropdown-wrap__content type1"
-      >
-        <span>Tutorials</span></tm-link
-      >
-      <tm-link
-        href="https://v1.cosmos.network/sdk"
-        class="dropdown-wrap__content type1"
-      >
-        <span>Cosmos SDK</span></tm-link
-      >
-      <tm-link
-        href="https://docs.cosmos.network"
-        class="dropdown-wrap__content type1"
-      >
-        <span>Documentation</span></tm-link
-      >
-      <tm-link
-        href="https://ibcprotocol.org"
-        class="dropdown-wrap__content type1"
-      >
-        <span>IBC</span></tm-link
-      >
+      <div class="left">
+        <tm-link
+          href="https://tutorials.cosmos.network"
+          class="dropdown-wrap__content type1"
+        >
+          <span>Tutorials</span></tm-link
+        >
+        <tm-link
+          href="https://docs.cosmos.network"
+          class="dropdown-wrap__content type1"
+        >
+          <span>Documentation</span></tm-link
+        >
+      </div>
+      <div class="right">
+        <nuxt-link to="/starport" class="wrapper">
+          <div class="icon">
+            <img src="~/static/symbols/sdk.svg" />
+          </div>
+          <div class="text">
+            <div class="title tm-rf0 tm-lh-copy">Cosmos SDK</div>
+            <div class="desc tm-rf-1 tm-lh-copy">Build a blockchain</div>
+          </div>
+        </nuxt-link>
+        <tm-link href="https://ibcprotocol.org" class="wrapper">
+          <div class="icon">
+            <img src="~/static/symbols/ibc.svg" />
+          </div>
+          <div class="text">
+            <div class="title tm-rf0 tm-lh-copy tm-link-external">IBC</div>
+            <div class="desc tm-rf-1 tm-lh-copy">Connect blockchains</div>
+          </div>
+        </tm-link>
+      </div>
     </div>
   </div>
 </template>
