@@ -546,11 +546,10 @@ iframe
     grid-column 1/-1
 
 .section-cloud .top .graphics__item
-  width 120%
-  margin-top -18%
-  margin-left -19%
   overflow visible
-  max-width 40rem
+  width 140%
+  margin-top -70%
+  margin-left -40%
 
 // Production
 .section-production
@@ -592,7 +591,6 @@ iframe
     background var(--white)
 
 .section-cta .top .text
-  // grid-column 1/-1
   padding var(--spacing-10)
 
 .section-cta .top .text .overline
@@ -619,6 +617,14 @@ iframe
 @media $breakpoint-large
   .section-intro .logos-list
     grid-template-columns repeat(4, 1fr)
+
+  // Cloud
+  .section-cloud .top .graphics__item
+    overflow visible
+    width unset
+    margin-top -40%
+    margin-left 0
+    max-width 50rem
 
 @media $breakpoint-xl
   // Hero
@@ -659,6 +665,10 @@ iframe
       grid-column 2/span 6
     .graphics
       grid-column 8/span 5
+
+  .section-cloud .top .graphics__item
+    margin-top -88%
+    margin-left -90%
 
   // Production
 
