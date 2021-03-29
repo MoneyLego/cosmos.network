@@ -167,7 +167,7 @@
         cy="0"
         r="1"
         gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(228.16 282) rotate(166.388) scale(47.1648 50.8219)"
+        gradientTransform="translate(268.16 276) rotate(166.388) scale(87.1648 60.8219)"
       >
         <stop />
         <stop offset="1" stop-opacity="0" />

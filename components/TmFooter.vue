@@ -1,83 +1,75 @@
 <template>
-  <footer class="footer">
-    <div class="tm-wrapper tm-container">
-      <nav class="nav" role="navigation">
-        <div class="menu">
-          <div v-for="item in menu" :key="item.title" class="nav-item">
-            <div class="nav-item__title tm-rf0 tm-lh-title">
-              {{ item.title }}
-            </div>
-            <div
-              v-for="child in item.children"
-              :key="child.title"
-              class="nav-item__child tm-rf0 tm-lh-copy"
-            >
-              <NuxtLink
-                v-if="!isExternal(child.href)"
-                tag="a"
-                :to="child.href"
-                >{{ child.title }}</NuxtLink
-              >
-              <tm-link v-else :href="child.href" class="tm-link-external">{{
-                child.title
-              }}</tm-link>
-            </div>
+  <footer class="footer tm-wrapper tm-container tm-grid-base">
+    <nav class="nav" role="navigation">
+      <div class="menu">
+        <div v-for="item in menu" :key="item.title" class="nav-item">
+          <div class="nav-item__title tm-rf0 tm-lh-title tm-medium tm-title">
+            {{ item.title }}
+          </div>
+          <div
+            v-for="child in item.children"
+            :key="child.title"
+            class="nav-item__child tm-rf0 tm-lh-copy"
+          >
+            <NuxtLink v-if="!isExternal(child.href)" tag="a" :to="child.href">{{
+              child.title
+            }}</NuxtLink>
+            <tm-link v-else :href="child.href" class="tm-link-external">{{
+              child.title
+            }}</tm-link>
           </div>
         </div>
-      </nav>
-      <div class="row">
-        <nav
-          ref="links"
-          class="nav-bottom tm-rf-1 tm-lh-copy"
-          role="navigation"
-        >
-          <NuxtLink to="/" class="logo">
-            <logo-cosmos-wordmark class="logo__cosmos" />
-            <span class="sr-only">Cosmos</span>
-          </NuxtLink>
-          <a
-            href="https://cosmos.network/privacy"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="tm-link privacy"
-            >Privacy</a
-          >
-        </nav>
-        <nav ref="links" class="social-icons" role="navigation">
-          <a
-            v-for="link in links"
-            :key="url(link)"
-            :href="url(link)"
-            class="social-icons__item tm-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <svg
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              fill="currentColor"
-            >
-              <path :d="icon(link)" style="pointer-events: none"></path>
-            </svg>
-          </a>
-        </nav>
       </div>
-      <p class="smallprint tm-rf-1 tm-lh-copy">
-        This website is maintained by Tendermint Inc. The contents and opinions
-        of this website are those of Tendermint Inc.
-      </p>
-      <p class="smallprint tm-rf-1 tm-lh-copy">
-        † Tendermint provides links to cryptocurrency exchanges as a service to
-        the public. Tendermint does not warrant that the information provided by
-        these websites is correct, complete, and up-to-date. Tendermint is not
-        responsible for their content and expressly rejects any liability for
-        damages of any kind resulting from the use, reference to, or reliance on
-        any information contained within these websites.
-      </p>
+    </nav>
+    <div class="row">
+      <nav ref="links" class="nav-bottom tm-rf-1 tm-lh-copy" role="navigation">
+        <NuxtLink to="/" class="logo">
+          <logo-cosmos-wordmark class="logo__cosmos" />
+          <span class="sr-only">Cosmos</span>
+        </NuxtLink>
+        <a
+          href="https://cosmos.network/privacy"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="tm-link privacy"
+          >Privacy</a
+        >
+      </nav>
+      <nav ref="links" class="social-icons" role="navigation">
+        <a
+          v-tooltip="{
+            content: link.title,
+          }"
+          v-for="link in links"
+          :key="url(link)"
+          :href="url(link)"
+          class="social-icons__item tm-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            fill="currentColor"
+          >
+            <path :d="icon(link)" style="pointer-events: none"></path>
+          </svg>
+        </a>
+      </nav>
     </div>
+    <p class="smallprint tm-rf-1 tm-lh-copy">
+      † This website is maintained by Tendermint. The contents and opinions of
+      this website are those of Tendermint. Tendermint provides links to
+      cryptocurrency exchanges as a service to the public. Tendermint does not
+      warrant that the information provided by these websites is correct,
+      complete, and up-to-date. Tendermint is not responsible for their content
+      and expressly rejects any liability for damages of any kind resulting from
+      the use, reference to, or reliance on any information contained within
+      these websites.
+    </p>
   </footer>
 </template>
 
@@ -282,17 +274,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-a[href]
-  color inherit
-
 .footer
-  text-align center
-  padding 0 0 var(--spacing-8)
+  padding-top var(--spacing-10)
+  padding-bottom var(--spacing-9)
+
+  > *
+    grid-column 1/-1
 
 .nav
-  margin-top var(--spacing-10)
   margin-bottom var(--spacing-10)
   a
+    color inherit
     border-radius $border-radius-2
     display inline-block
 
@@ -305,27 +297,22 @@ a[href]
   text-align center
   margin-top var(--spacing-7)
   &__item
+    padding var(--spacing-3)
     opacity 0.5
     &:hover,
     &:focus
       opacity 1
 
-.social-icons__item + .social-icons__item
-  margin-left 1rem
-
 .smallprint
   color var(--white-500)
   text-align left
+  margin-top var(--spacing-8)
 
   .light-mode &
     color var(--gray-400)
 
-.smallprint + .smallprint
-  margin-top var(--spacing-8)
-
 .row
   padding-top var(--spacing-8)
-  margin-bottom var(--spacing-6)
   border-top 1px solid var(--white-100)
   display flex
   flex-direction column
@@ -353,10 +340,11 @@ a[href]
 
 .menu
   display grid
-  gap 2rem
-  grid-template-columns repeat(auto-fit, minmax(200px,1fr))
+  gap 0 var(--grid-gap-x)
+  grid-template-columns repeat(auto-fit, minmax(8rem,1fr))
 
 .nav-item
+  margin-top var(--spacing-9)
   text-align left
 
 .nav-item__title
@@ -374,4 +362,8 @@ a[href]
 
   .social-icons
     margin-top 0
+
+@media $breakpoint-xl
+  .footer > *
+    grid-column 2/span 10
 </style>

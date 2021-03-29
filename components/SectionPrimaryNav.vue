@@ -308,6 +308,9 @@ $navbar-mobile-menu = 200
 // .dropdown-container
 //   width 482px
 
+.dropdown-container:focus
+  outline 0
+
 .dropdown-wrap
   display grid
   grid-template-columns 1fr 1fr

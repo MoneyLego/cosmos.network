@@ -10,7 +10,9 @@
           <div v-if="item.graphics" class="graphics">
             <component :is="`${item.graphics}`" class="graphics__item" />
           </div>
-          <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-muted"
+          >
             {{ item.overline }}
           </div>
           <div class="title tm-rf2 tm-bold tm-lh-title">{{ item.title }}</div>
@@ -25,10 +27,14 @@
           <div v-if="item.graphics" class="graphics">
             <component :is="`${item.graphics}`" class="graphics__item" />
           </div>
-          <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-muted"
+          >
             {{ item.overline }}
           </div>
-          <div class="title tm-rf2 tm-bold tm-lh-title">{{ item.title }}</div>
+          <div class="title tm-rf2 tm-bold tm-lh-title tm-title">
+            {{ item.title }}
+          </div>
         </a>
       </div>
     </div>
@@ -69,6 +75,9 @@ export default {
   .light-mode &
     color var(--gray-100)
     background-color var(--white)
+
+  &:focus
+    outline 0
 
 .card-item
   .overline

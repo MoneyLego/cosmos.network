@@ -3,7 +3,7 @@
     <!-- Hero -->
     <div class="section-hero section-first">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
-        <h1 class="title tm-rf6 tm-bold tm-lh-title">
+        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
           A whole universe of opportunity for token holders.
         </h1>
         <div class="split">
@@ -470,7 +470,7 @@ export default {
     return {
       cards: [
         {
-          href: '/learn/staking',
+          href: '/learn/get-atom',
           graphics: 'graphics-cta-token-holders',
           overline: 'Token Holders',
           title: 'Start staking ->',

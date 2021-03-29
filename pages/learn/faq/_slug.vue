@@ -11,8 +11,10 @@
                 </span>
               </NuxtLink>
             </span> -->
-            <div class="subheading tm-rf0 tm-medium tm-lh-title tm-overline">
-              related questions
+            <div
+              class="subheading tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
+            >
+              Related questions
             </div>
           </div>
           <div class="main">
@@ -118,7 +120,9 @@ export default {
   display none
 
 .main
-  grid-column span 4
+  grid-column 1/-1
+  max-width 44rem
+  center()
 
 .markdown
   margin-top var(--spacing-9)

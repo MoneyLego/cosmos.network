@@ -3,7 +3,7 @@
     <div class="section-hero section-first">
       <div class="tm-container tm-wrapper tm-grid-base">
         <div class="text">
-          <div class="title tm-rf7 tm-bold tm-lh-title">Staking</div>
+          <div class="title tm-rf7 tm-bold tm-lh-title tm-title">Staking</div>
           <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
             Help secure the Cosmos Hub and earn rewards
           </div>
@@ -14,7 +14,9 @@
 
     <div class="tm-container tm-wrapper tm-section tm-grid-base">
       <div class="section-intro">
-        <div class="title tm-rf5 tm-bold tm-lh-title">What is staking?</div>
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
+          What is staking?
+        </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
           Staking is the process of locking up a digital asset (ATOM in the case
           of the Cosmos Hub) in order to provide economic security for a public
@@ -28,7 +30,7 @@
             <graphics-staking-1 class="graphics__item" />
           </div>
           <div class="text">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
+            <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
               Secure<br />the chain
             </div>
             <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -43,7 +45,7 @@
             <graphics-staking-2 class="graphics__item" />
           </div>
           <div class="text">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
+            <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
               Earn<br />rewards
             </div>
             <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -58,7 +60,7 @@
             <graphics-staking-3 class="graphics__item" />
           </div>
           <div class="text">
-            <div class="title tm-rf3 tm-bold tm-lh-title">
+            <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
               Vote for<br />the future
             </div>
             <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -74,15 +76,23 @@
       class="section-rewards tm-section tm-container tm-wrapper tm-grid-base"
     >
       <div class="span-4">
-        <div class="header tm-rf0 tm-medium tm-lh-title tm-overline">
-          typical apy
+        <div class="header tm-rf0 tm-medium tm-lh-title tm-overline tm-muted">
+          Typical
+          <attr
+            v-tooltip="{
+              content:
+                'The annual percentage yield (APY) is the real rate of return earned on a savings deposit or investment taking into account the effect of compounding interest.',
+            }"
+            class="tm-definition"
+            >APY</attr
+          >
         </div>
-        <div class="percentage tm-rf7 tm-bold tm-lh-title">9.7%</div>
+        <div class="percentage tm-rf7 tm-bold tm-lh-title tm-title">9.7%</div>
         <div class="tm-rf1 tm-lh-title">of staked ATOM (annually)*</div>
       </div>
       <div class="span-7">
         <span class="accent"></span>
-        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
           Staking rewards
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
@@ -95,33 +105,41 @@
     <div class="tm-container tm-wrapper section-pie">
       <div class="pie-wrapper tm-wrapper tm-grid-base">
         <div class="pie-item">
-          <div class="heading tm-rf0 tm-medium tm-lh-title tm-overline">
+          <div
+            class="heading tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-muted"
+          >
             If you stake
           </div>
-          <div class="amount tm-rf4 tm-bold tm-lh-title">1,000</div>
-          <div class="unit tm-rf1 tm-lh-title tm-medium">ATOM</div>
+          <div class="amount tm-rf4 tm-bold tm-lh-title tm-title">1,000</div>
+          <div class="unit tm-rf1 tm-lh-title tm-medium tm-title">ATOM</div>
         </div>
         <div class="pie-item">
           <div class="pie">
             <div class="text">
-              <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
+              <div
+                class="title tm-rf0 tm-medium tm-lh-title tm-overline tm-title"
+              >
                 Your rewards
               </div>
-              <div class="num tm-rf5 tm-bold tm-lh-title">873.26</div>
+              <div class="num tm-rf5 tm-bold tm-lh-title tm-title">873.26</div>
             </div>
           </div>
         </div>
         <div class="pie-item">
-          <div class="percentage tm-rf2 tm-bold tm-lh-title">10.63%</div>
-          <div class="title tm-rf0 tm-medium tm-lh-title tm-overline">
-            commission
+          <div class="percentage tm-rf2 tm-bold tm-lh-title tm-title">
+            10.63%
           </div>
-          <div class="subtitle tm-rf-1 tm-lh-copy">
+          <div
+            class="title tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-title"
+          >
+            Commission
+          </div>
+          <div class="subtitle tm-rf-1 tm-lh-copy tm-muted">
             (Varies between validators)
           </div>
         </div>
       </div>
-      <div class="footnote tm-rf-1 tm-lh-copy tm-measure-narrow">
+      <div class="footnote tm-rf-1 tm-lh-copy tm-measure-narrow tm-muted">
         * baseline inflation rate fluctuates based on the total amount of staked
         ATOM in the network
       </div>
@@ -139,7 +157,7 @@
       </div>
       <div class="text">
         <span class="accent"></span>
-        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
           Where do rewards come from?
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrower">
@@ -151,7 +169,7 @@
             <span class="crosshair"></span>
           </div>
           <div class="right">
-            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure tm-title">
               Transaction fees
             </div>
             <div class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -165,7 +183,7 @@
             <span class="crosshair"></span>
           </div>
           <div class="right">
-            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure">
+            <div class="title tm-rf2 tm-bold tm-lh-title tm-measure tm-title">
               Newly created ATOM
             </div>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
@@ -187,7 +205,9 @@
       <div class="text">
         <div class="top">
           <span class="accent"></span>
-          <div class="title tm-rf5 tm-bold tm-lh-title">Staking safely</div>
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
+            Staking safely
+          </div>
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure-narrow">
           Staking ATOM is not risk-free. If a validator has downtime or
@@ -254,7 +274,14 @@ export default {
     height auto
 
 // Hero
+.section-hero
+  display flex
+  flex-direction column
+  align-items center
+
 .section-hero .text
+  position relative
+  z-index 1
   grid-column 1/-1
   text-align center
   center()
@@ -263,11 +290,12 @@ export default {
     margin-top var(--spacing-6)
 
 .section-hero .graphics
+  position relative
   grid-column 1/-1
-  z-index 0
   width 100%
-  margin-top -7rem
+  min-width 36rem
   height auto
+  center()
 
 // Intro
 .section-intro
@@ -301,11 +329,10 @@ export default {
   justify-content center
 
   &__item
-    width 100%
-    margin-left 8%
-    flex 0 0 121%
+    width 115%
+    flex 0 0 115%
     max-width 28rem
-    max-height 20rem
+    margin-bottom -10%
 
 .card-item .title
   margin-bottom var(--spacing-5)
@@ -344,12 +371,9 @@ export default {
   box-shadow var(--elevation-4)
   align-items center
   text-align center
-  background var(--gray-100)
+  background var(--fg)
   padding-top var(--spacing-7)
   padding-bottom var(--spacing-7)
-
-  .light-mode &
-    background var(--white)
 
 .pie-item
   text-align left
@@ -372,11 +396,6 @@ export default {
   .subtitle
     margin-top 0.25rem
 
-.pie-item .subtitle
-  color var(--white-500)
-  .light-mode &
-    color var(--trans-gray-600)
-
 .pie
   width 15rem
   height 15rem
@@ -395,10 +414,6 @@ export default {
 
 .footnote
   margin-top var(--spacing-6)
-  color var(--white-500)
-
-  .light-mode &
-    color var(--trans-gray-400)
 
 // Rewards origin
 .section-rewards-origin .graphics
@@ -411,17 +426,14 @@ export default {
 
 .section-rewards-origin .accent
   angle-accent(nw)
-  position absolute
-  top 0
-  left 0
+  margin-bottom var(--spacing-7)
 
 .section-rewards-origin .text
   grid-column 1/-1
   position relative
-  padding var(--spacing-7)
 
 .section-rewards-origin .text .subtitle
-  margin-top var(--spacing-7)
+  margin-top var(--spacing-5)
 
 .subheading-item
   margin-top var(--spacing-9)
@@ -516,6 +528,9 @@ export default {
     grid-column 1/-1
     margin-top var(--spacing-11)
 
+  .section-rewards-origin .accent
+    margin-left calc(-1 * var(--grid-gap-x))
+
   .subheading-item
     margin-left 6.3125rem
 
@@ -553,9 +568,8 @@ export default {
 
   .section-hero .graphics
     z-index 0
-    margin-top -20rem
-    width 80%
-    center()
+    margin-top -18%
+    margin-bottom -10%
     display flex
     justify-content center
 
