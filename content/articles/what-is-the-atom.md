@@ -12,7 +12,7 @@ tags:
   - atom
 ---
 
-The ATOM is the Cosmos Hub’s primary token, and secures the Hub’s valuable interchain services. If you hold ATOM, you can temporarily lock them up in order to contribute to the security of the Cosmos Hub via a mechanism called [Staking](/learn/faq/what-is-staking). In exchange for locking them up, you will receive [rewards](/learn/faq/what-rewards-can-be-expected-when-staking-atoms) newly minted ATOM as well a share of the transaction fees collected by the blockchain. However, do note that staking [is not risk free](/learn/faq/what-are-the-risks-associated-with-staking). 
+The ATOM is the Cosmos Hub’s primary token and secures the Hub’s valuable interchain services. If you hold ATOM, you can temporarily lock them up to contribute to the security of the Cosmos Hub using a mechanism called [Staking](/learn/faq/what-is-staking). In exchange for locking your ATOM, you receive [rewards](/learn/faq/what-rewards-can-be-expected-when-staking-atoms) in newly minted ATOM and a share of the transaction fees that are collected by the blockchain. However, staking [is not risk free](/learn/faq/what-are-the-risks-associated-with-staking). 
 
 By staking ATOM, you will also be able to vote in Cosmos Hub governance decisions.
 
