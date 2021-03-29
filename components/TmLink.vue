@@ -3,7 +3,7 @@
     :href="href"
     target="_blank"
     rel="noopener noreferrer"
-    class="tm-link tm-link-underline-hover"
+    :class="['tm-link', hoverUnderline && 'tm-link-underline-hover']"
   >
     <slot></slot>
   </a>
@@ -16,6 +16,10 @@ export default {
       type: String,
       default: '#',
       required: true,
+    },
+    hoverUnderline: {
+      type: Boolean,
+      default: false,
     },
   },
 }

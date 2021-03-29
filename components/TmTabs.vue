@@ -49,10 +49,13 @@ export default {
   user-select none
   align-items stretch
   display flex
-  font-size 1rem
   justify-content space-between
   overflow-x auto
   overflow-y hidden
+  margin-left calc(-1 * var(--wrap-gap))
+  margin-right calc(-1 * var(--wrap-gap))
+  padding-left var(--wrap-gap)
+  padding-right var(--wrap-gap)
   scrollbar-width none
   &::-webkit-scrollbar
     display none
@@ -67,7 +70,7 @@ export default {
   user-select none
 
 .tabs li
-  margin-right 2rem
+  margin-right var(--wrap-gap)
   display inline-block
 
 .tabs a
@@ -75,27 +78,25 @@ export default {
   color var(--white-300)
   justify-content center
   display inline-block
-  padding 1.25rem 0
+  padding var(--spacing-6) 0
   margin-bottom -1px
   vertical-align top
   transition color .15s ease-out, opacity .15s ease-out
   &:hover,
   &:focus
-    color var(--gray-900)
+    color var(--link-hover)
   &:active
     opacity 0.7
     transition-duration 0s
+  &:focus
+    outline 0
 
 .is-active a
   display inline-block
-  padding 1.25rem 0
+  padding var(--spacing-6) 0
   position relative
   z-index 1
-  color var(--gray-900)
-  letter-spacing -0.005em
-  &:hover,
-  &:focus
-    border-bottom-color #4251fa
+  color var(--link)
 
 .tabs-details
   margin-top var(--spacing-7)

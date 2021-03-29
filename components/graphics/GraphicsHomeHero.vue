@@ -1,10 +1,10 @@
 <template>
   <div class="canvas">
     <div class="container">
-      <kinesis-element :strength="15" class="layer layer-back">
+      <div :strength="15" class="layer layer-back">
         <img class="bg" src="~/assets/images/bg/home-hero-bg.png" />
         <graphics-orbit-lines class="orbit" />
-      </kinesis-element>
+      </div>
       <kinesis-element :strength="30" class="layer layer-middle">
         <svg
           width="4041"

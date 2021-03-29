@@ -1,11 +1,11 @@
 <template>
-  <div class="navs tm-wrapper">
+  <div class="navs">
     <nav
       class="nav nav-primary"
       role="navigation"
       :class="{ 'is-active': isActive }"
     >
-      <vsm-menu :menu="menu">
+      <vsm-menu :menu="menu" class="tm-container tm-wrapper">
         <!-- The main content for the dropdown list -->
         <template #default="data">
           <component :is="data.item.content" class="vsm-content" />
@@ -48,7 +48,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/intro"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                             >Introduction</tm-link
                           >
                         </li>
@@ -80,7 +80,7 @@
                         <li>
                           <tm-link
                             href="https://tutorials.cosmos.network"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Tutorials</span></tm-link
                           >
@@ -88,7 +88,7 @@
                         <li>
                           <tm-link
                             href="https://docs.cosmos.network"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Documentation</span></tm-link
                           >
@@ -96,7 +96,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/sdk"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Cosmos SDK</span></tm-link
                           >
@@ -104,7 +104,7 @@
                         <li>
                           <tm-link
                             href="https://ibcprotocol.org"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>IBC</span></tm-link
                           >
@@ -140,7 +140,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/community"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Community</span></tm-link
                           >
@@ -148,7 +148,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/events"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Events</span></tm-link
                           >
@@ -156,7 +156,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/contributors"
-                            class="tm-rf0 tm-lh-title tm-link"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
                           >
                             <span>Contributors</span></tm-link
                           >
@@ -171,8 +171,10 @@
               <div class="nav-mobile-bottom tm-wrapper">
                 <div class="wrapper">
                   <div class="text">
-                    <div class="title tm-rf0 tm-lh-copy">Get ATOM &#8594;</div>
-                    <div class="subtitle tm-rf-1 tm-lh-copy">
+                    <div class="title tm-rf0 tm-lh-copy tm-title">
+                      Get ATOM &#8594;
+                    </div>
+                    <div class="subtitle tm-rf-1 tm-lh-copy tm-muted">
                       Four simple steps to get ATOM and start earning rewards.
                     </div>
                   </div>
@@ -264,18 +266,27 @@ export default {
           dropdown: 'learn',
           content: learnDropdownTop,
           secondaryContent: learnDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
         },
         {
           title: 'Build',
           dropdown: 'build',
           content: buildDropdownTop,
           secondaryContent: buildDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
         },
         {
           title: 'Explore',
           dropdown: 'explore',
           content: exploreDropdownTop,
           secondaryContent: exploreDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
         },
       ],
     }
@@ -301,13 +312,8 @@ $navbar-mobile-menu = 200
   display grid
   grid-template-columns 1fr 1fr
   column-gap var(--spacing-6)
-  .overline
-    color var(--white-300)
-  .title
-    color var(--white)
-    margin-top var(--spacing-3)
+  .overline + .title,
   .subtitle
-    color var(--white-400)
     margin-top var(--spacing-3)
 
 .navs
@@ -334,12 +340,17 @@ $navbar-mobile-menu = 200
     padding var(--spacing-6) 0
     color inherit
     transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
+    &:focus
+      outline 0
+      opacity 0.8
     svg
       width auto
     &__cosmos
       height 1.125rem
     &-secondary
       margin-right auto
+  .vsm-logo-section
+    z-index 1
   &-secondary .logo
     svg
       width 2rem
@@ -417,7 +428,7 @@ $navbar-mobile-menu = 200
     flex-grow 1
     -webkit-box-flex 1
     .tm-link
-      padding var(--spacing-3) 0
+      padding var(--spacing-4) 0
     ul
       margin-left calc(-1 * var(--spacing-7))
       margin-right calc(-1 * var(--spacing-7))
@@ -427,7 +438,7 @@ $navbar-mobile-menu = 200
         .tm-link-external:after
           bottom auto
   &-mobile-bottom
-    padding var(--spacing-6) var(--spacing-7)
+    padding var(--wrap-gap)
     text-align start
     background var(--trans-gray-900)
   &-primary
@@ -450,12 +461,8 @@ $navbar-mobile-menu = 200
 .wrapper .text
   white-space normal
 
-.wrapper .text .title
-  color var(--white)
-  margin-top var(--spacing-3)
-
+.wrapper .text .overline + .title,
 .wrapper .text .subtitle
-  color var(--white-400)
   margin-top var(--spacing-3)
 
 .wrapper .graphics
@@ -477,10 +484,9 @@ $navbar-mobile-menu = 200
 @media $breakpoint-large-max
   .nav
     &-primary.is-active
+      background var(--bg)
       .light-mode &
-        background var(--white)
-      .dark-mode &
-        background var(--black)
+        background var(--fg)
     &-first
       flex 1 1
     .tm-link
@@ -499,8 +505,6 @@ $navbar-mobile-menu = 200
       margin-left calc(-1 * var(--spacing-5))
       display flex
       justify-content center
-    .tm-link
-      padding var(--spacing-7) var(--spacing-5)
     &-first
       flex 1 1 0%
     &-second

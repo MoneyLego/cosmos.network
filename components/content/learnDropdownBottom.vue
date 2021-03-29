@@ -3,8 +3,8 @@
     <div class="bottom-wrapper">
       <div>
         <div class="text">
-          <div class="title tm-rf0 tm-lh-copy">Get ATOM &#8594;</div>
-          <div class="subtitle tm-rf-1 tm-lh-copy">
+          <div class="title tm-rf0 tm-lh-copy tm-title">Get ATOM &#8594;</div>
+          <div class="subtitle tm-rf-1 tm-lh-copy tm-muted">
             Four simple steps to get ATOM and start earning rewards.
           </div>
         </div>

@@ -3,13 +3,15 @@
     <div class="bottom-wrapper">
       <div>
         <div class="text">
-          <div class="overline tm-rf-1 tm-medium tm-lh-title tm-overline">
+          <div
+            class="overline tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
+          >
             Starport
           </div>
-          <div class="title tm-rf0 tm-lh-copy">
+          <div class="title tm-rf0 tm-lh-copy tm-title">
             Build a chain in minutes &#8594;
           </div>
-          <div class="subtitle tm-rf-1 tm-lh-copy">
+          <div class="subtitle tm-rf-1 tm-lh-copy tm-muted">
             Create your own token. Build your own community. Launch today.
           </div>
         </div>
