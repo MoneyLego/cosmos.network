@@ -1,50 +1,76 @@
 <template>
-  <div class="section section-articles">
-    <div class="section-container">
-      <div class="container">
-        <div class="section-title tm-rf7 tm-bold tm-lh-title tm-measure-narrow">
-          Frequently asked questions
+  <main>
+    <div class="section-hero section-first">
+      <div class="tm-wrapper tm-container tm-section tm-grid-base">
+        <div class="text">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
+            Frequently asked questions
+          </div>
         </div>
-        <div class="section-subtitle tm-rf2 tm-lh-copy tm-measure">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-        <div class="section-header tm-rf3 tm-bold tm-lh-title">Articles</div>
-        <NuxtLink
-          v-for="item in articles"
-          :key="item.title"
-          :to="`/learn/faq/${item.slug}`"
-          class="articles-item"
+      </div>
+      <graphics-faq-hero class="graphics" />
+    </div>
+
+    <div class="tm-wrapper tm-container tm-grid-base">
+      <div class="content">
+        <div
+          v-for="item in currentIndex"
+          :key="articles[item - 1].title"
+          class="item"
         >
-          <span class="articles-item__icon tm-rf2 tm-lh-solid">&#8599;</span>
+          <div class="title tm-rf2 tm-bold tm-lh-copy tm-title">
+            {{ articles[item - 1].title }}
+          </div>
+          <div class="desc tm-rf0 tm-lh-copy">
+            {{ articles[item - 1].description }}
+          </div>
+          <tm-button
+            to-link="internal"
+            :to="`/learn/faq/${articles[item - 1].slug}`"
+            size="l"
+            variant="text"
+            class="btn"
+            >Learn more <span class="icon__right">&rarr;</span></tm-button
+          >
+        </div>
+        <div class="divider">
+          <svg
+            width="16"
+            height="80"
+            viewBox="0 0 16 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 64L8 -1.50502e-06"
+              stroke="currentColor"
+              stroke-opacity="0.185"
+            />
+            <path d="M16 72H0M8 80V64" stroke="currentColor" />
+          </svg>
+        </div>
+        <div class="cta">
           <div
-            class="articles-item__title tm-rf1 tm-bold tm-lh-title tm-measure-narrow"
+            v-if="currentIndex != articles.length"
+            @click="currentIndex = articles.length"
           >
-            {{ item.title }}
+            <tm-button variant="text" class="btn tm-rf1 tm-lh-copy tm-medium"
+              >Show all <span class="icon__right">&#8595;</span></tm-button
+            >
           </div>
-          <div class="articles-item__description tm-rf0 tm-lh-copy tm-measure">
-            {{ item.description }}
+          <div v-else @click="currentIndex = 6">
+            <tm-button variant="text" class="btn tm-rf1 tm-lh-copy tm-medium"
+              >Show less <span class="icon__right">&#8593;</span></tm-button
+            >
           </div>
-          <div class="articles-item__date tm-rf-1 tm-lh-title">
-            Author: {{ item.author.name }}
-          </div>
-        </NuxtLink>
-        <div class="section-header tm-rf3 tm-bold tm-lh-title">Topics</div>
-        <ul class="flex flex-wrap mb-4 text-center">
-          <li
-            v-for="tag of tags"
-            :key="tag.slug"
-            class="xs:w-full md:w-1/3 lg:flex-1 px-2 text-center"
-          >
-            <NuxtLink :to="`/learn/tag/${tag.slug}`">
-              <p>
-                {{ tag.name }}
-              </p>
-            </NuxtLink>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div class="section-cards tm-wrapper tm-container">
+      <tm-cta-cards :data="cards" />
+    </div>
+  </main>
 </template>
 
 <script>
@@ -52,7 +78,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'desc')
+      .sortBy('index', 'asc')
       .fetch()
     const tags = await $content('tags', params.slug)
       .only(['name', 'description', 'img', 'slug'])
@@ -63,77 +89,95 @@ export default {
       tags,
     }
   },
+  data() {
+    return {
+      currentIndex: 8,
+      cards: [
+        {
+          href: 'https://discord.com/invite/vcExX9T',
+          overline: 'Discord',
+          title: 'Developer chat ->',
+        },
+        {
+          href: 'https://t.me/cosmosproject',
+          overline: 'Telegram',
+          title: 'Community chat ->',
+        },
+      ],
+    }
+  },
+  head() {
+    return {
+      title: 'FAQ',
+    }
+  },
 }
 </script>
 
 <style lang="stylus" scoped>
-/deep/
-.section-header
-  border none
-  color inherit
+// Hero
+.tm-section
+  z-index 1
 
-.section-articles
-  .container
-    gap var(--spacing-7)
-  .section-title
-    color var(--white)
-    grid-column 1 / span 9
-  .section-subtitle
-    display flex
-    justify-content flex-end
-    flex-direction column
-    grid-row 2
-    grid-column 1 / span 11
-    color var(--gray-800)
-  .section-header
-    grid-column 1 / span 11
-    margin-top var(--spacing-8)
-    color var(--white)
-  .articles-item
-    grid-column 1 / span 12
-    display block
-    text-align left
-    padding var(--spacing-7) 0
-    position relative
-    &:last-child
-      border-bottom 0
-    &__icon
-      position absolute
-      right 0
-      color var(--gray-600)
-      transition color .1s ease-out, transform .25s ease-out
-    &__title
-      color var(--primary-900)
-      transition color .1s ease-out
-      padding-right 2rem
-    &__description
-      margin-top var(--spacing-4)
-      color var(--gray-600)
-    &__date
-      margin-top var(--spacing-4)
-      color var(--gray-600)
-    &:hover
-      .articles-item__title,
-      .articles-item__icon
-        color var(--white)
-      .articles-item__icon
-        transform translate(3px, -3px)
+.section-hero
+  text-align left
+  position relative
 
-@media $breakpoint-small
-  .section-articles
-    .articles-item
-      grid-column span 6
+.section-hero .text
+  grid-column span 4
 
-@media $breakpoint-large
-  .section-articles
-    .container
-      gap var(--spacing-8) var(--spacing-7)
-    .section-title
-      grid-column 2/span 9
-    .section-subtitle
-      grid-column 2/span 11
-    .section-header
-      grid-column 2 / span 11
-    .articles-item
-      grid-column span 4
+.section-hero .graphics
+  position unset
+  height 100%
+  width 170%
+  margin-top -20%
+  margin-left 0%
+  margin-bottom -90%
+  overflow visible
+
+// Content
+.content
+  grid-column span 4
+
+.desc
+  margin-top var(--spacing-4)
+
+.item + .item
+  margin-top var(--spacing-8)
+
+.divider
+  margin-top var(--spacing-8)
+
+.cta
+  text-align left
+  cursor pointer
+
+.section-cards
+  margin-top var(--spacing-10)
+
+@media $breakpoint-medium
+  // Hero
+  .section-hero .text
+    grid-column span 8
+
+  // Content
+  .content
+    grid-column span 8
+
+@media $breakpoint-xl
+  // Hero
+  .section-hero .text
+    grid-column 6/ 12
+
+  .section-hero .graphics
+    position absolute
+    top 0
+    z-index 0
+    height auto
+    width auto
+    margin 0
+
+  // Content
+  .content
+    grid-column 6/ 12
 </style>

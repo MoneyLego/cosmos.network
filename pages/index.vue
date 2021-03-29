@@ -1,32 +1,19 @@
 <template>
   <main>
     <section-hero />
-
-    <section-intro />
-    <section-features />
-
-    <section-community />
-    <section-roadmap />
-    <section-contributors />
-    <bug-bounty-banner />
-    <section-form />
+    <home-section-ecosystem />
+    <home-section-services />
+    <home-section-atom />
+    <home-section-features />
+    <home-section-tech />
+    <home-section-dev />
+    <home-section-community />
+    <home-section-end />
   </main>
 </template>
 
 <script>
-export default {
-  data() {
-    return {}
-  },
-  methods: {},
-}
+export default {}
 </script>
 
-<style lang="stylus" scoped>
-main
-  overflow -webkit-paged-x
-
-@media screen and (max-width: 414px)
-  main
-    overflow-x hidden
-</style>
+<style lang="stylus" scoped></style>

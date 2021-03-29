@@ -1,7 +1,7 @@
 ---
-title: What is a Validator's commission
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+index: 11
+title: What is a validator's commission?
+description: In the process of staking, rewards are generated proportional to the amount of ATOM staked. Of these rewards, a certain percentage goes to the validator to which the ATOM are delegated. This percentage is called the commission.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,8 +11,7 @@ tags:
   - blockchain
   - atom
 ---
-## What is a Validator's commission
 
-In the process of staking, rewards are generated proportional to the amount of ATOMs staked. Of these rewards, a certain percentage goes to the validator to which the ATOMs are delegated. This percentage is called the Commission, and is set by validator operator themselves. 
+In the process of staking, rewards are generated proportional to the amount of ATOM staked. Of these rewards, a certain percentage goes to the validator to which the ATOM are delegated. This percentage is called the commission, and is set by validator operator themselves. 
 
-For example, if an ATOM holder delegates all their ATOMs to a single validator with a commission of 10%, then 10% of this holder's rewards will go to that validator. Commission is therefore an important parameter for ATOM holders to take into account in deciding which validator(s) to delegate to.  Note that some validators may apply higher commission because they operate a more complex setup, meaning they incur higher operating costs (see Risks). It is the responsibility of the delegator to assess the commission of validators they delegate to with regards to the service they offer.
+For example, if an ATOM holder delegates all their ATOM to a single validator with a commission of 10%, then 10% of this holder's rewards will go to that validator. Commission is therefore an important parameter for ATOM holders to take into account in deciding which validator(s) to delegate to.  Note that some validators may apply higher commission because they operate a more complex setup, meaning they incur higher operating costs (see Risks). It is the responsibility of the delegator to assess the commission of validators they delegate to with regards to the service they offer.

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="tm-section-container">
+    <div class="tm-wrapper">
       <h2 class="tm-rf3 tm-lh-title tm-bold">Spacing scale</h2>
       <p>
         <code>var(--spacing-*)</code>
@@ -21,7 +21,7 @@
         <div class="box step-13">13</div>
       </div>
     </div>
-    <div class="tm-section-container">
+    <div class="tm-wrapper">
       <h2 class="tm-rf3 tm-lh-title tm-bold">Measures</h2>
       <div class="scale scale__measures">
         <div class="box tm-measure-narrower">Narrower</div>
@@ -40,7 +40,7 @@
         hendrerit. Integer scelerisque urna malesuada pretium convallis.
       </p>
       <p class="tm-measure">
-        <code>.tm-measure-medium</code><br />
+        <code>.tm-measure</code><br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat
         tortor et pellentesque lobortis. Sed aliquam eros ex, vitae gravida
         dolor euismod non. Interdum et malesuada fames ac ante ipsum primis in
@@ -70,7 +70,7 @@
         hendrerit. Integer scelerisque urna malesuada pretium convallis.
       </p>
     </div>
-    <div class="tm-section-container">
+    <div class="tm-wrapper">
       <h2 class="tm-rf3 tm-lh-title tm-bold">Max-widths</h2>
       <p>
         <code>max-width: $max-width['*']</code>
@@ -109,7 +109,7 @@
         hendrerit. Integer scelerisque urna malesuada pretium convallis.
       </div>
     </div>
-    <div class="tm-section-container">
+    <div class="tm-wrapper">
       <h2 class="tm-rf3 tm-lh-title tm-bold">Comparing approaches</h2>
       <h5>FUNCTIONAL</h5>
       <div class="box pa7">

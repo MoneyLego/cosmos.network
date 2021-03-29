@@ -1,5 +1,5 @@
 <template>
-  <div class="tm-section-container">
+  <div class="tm-wrapper">
     <h5>FUNCTIONAL</h5>
     <div class="tm-rf1 tm-lh-title fw6 tracked ttu">Overline</div>
     <div class="tm-rf3">Default</div>

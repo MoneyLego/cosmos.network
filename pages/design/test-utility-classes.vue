@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero">
-      <div class="tm-section-container">
+      <div class="tm-wrapper">
         <div class="tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline">
           Welcome to Cosmos
         </div>

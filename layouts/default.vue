@@ -1,10 +1,14 @@
 <template>
   <div>
-    <div class="tm-section-container section-container nav-container">
+    <div class="nav-container">
       <section-primary-nav />
     </div>
-    <nuxt />
-    <tm-footer />
+    <div id="content">
+      <!-- all page content here - hidden when mobile nav open -->
+      <nuxt />
+      <!-- <section-form /> -->
+      <tm-footer />
+    </div>
   </div>
 </template>
 
@@ -25,43 +29,28 @@ export default {
 
 // https://nuxtjs.org/examples/transitions
 .page-enter-active
-  transition opacity 0.25s ease-out
+  transition opacity 0.2s $ease-out
 .page-leave-active
-  transition opacity 0.25s ease-out
+  transition opacity 0.2s $ease-out
 
 .page-enter,
 .page-leave-to
   opacity 0
 
-.nav-container
-  padding-top var(--spacing-7)
-
-.section-container
-  position relative
-  max-width: $max-width['11']
-  margin 0 auto
-
-.container
-  display grid
-  grid-template-columns repeat(12, 1fr)
-  gap 0 var(--spacing-7)
-
-.section
+#content
   overflow hidden
-  position relative
-  padding-top var(--spacing-10)
-  padding-bottom var(--spacing-10)
 
-.section-header
-  padding-top var(--spacing-5)
-  min-height 3rem
-  color var(--gray-600)
-  border-top 1px solid #282B53
+.nav-container
+  position absolute
+  top 0
+  left 0
+  right 0
 
-.section-title
-  color var(--white)
+.section-first
+  padding-top 5rem // approx navbar max height
 
-@media $breakpoint-medium-max
-  .section-container
-    padding-top var(--spacing-6)
+@media $breakpoint-large-max
+  .mobile-menu-open
+    #content
+      display none
 </style>

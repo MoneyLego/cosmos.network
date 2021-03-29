@@ -1,5 +1,5 @@
 <template>
-  <div class="section prev-next-container">
+  <div class="tm-section prev-next-container">
     <NuxtLink v-if="prev" :to="`/learn/faq/${prev.slug}`">
       {{ prev.title }}
     </NuxtLink>

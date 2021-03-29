@@ -1,7 +1,7 @@
 ---
+index: 8
 title: What is delegating?
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+description: Blockchains that use staking, such as the Cosmos Hub, are primarely operated by a set of actors called validators.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,10 +11,9 @@ tags:
   - blockchain
   - atom
 ---
-## What is delegating?
 
-Blockchains that use staking, such as the Cosmos Hub, are primarely operated by a set of actors called [validators](what-is-a-validator?). The status of a validator (active or candidate), as well as its weight is established based on its amount of voting power. Voting power is obtained when ATOMs are locked up in the process of staking, and must be granted to a validator or validator candidate. This is called delegating. 
+Blockchains that use staking, such as the Cosmos Hub, are primarely operated by a set of actors called [validators](/learn/faq/what-is-a-validator). The status of a validator (active or candidate), as well as its weight is established based on its amount of voting power. Voting power is obtained when ATOM are locked up in the process of staking, and must be granted to a validator or validator candidate. This is called delegating. 
 
-In practice, delegating is done automatically when ATOM holders start staking. A single staking transaction needs to be sent for the whole proces of locking up ATOMs and delegating to validator(s) via a [wallet]. Users will generally only be asked for the amount of ATOMs to stake and the validator(s) they want to delegate to. The Wallet will take care of the rest (i.e. generating and sending the transaction).
+In practice, delegating is done automatically when ATOM holders start staking. A single staking transaction needs to be sent for the whole proces of locking up ATOM and delegating to validator(s) via a [wallet]. Users will generally only be asked for the amount of ATOM to stake and the validator(s) they want to delegate to. The Wallet will take care of the rest (i.e. generating and sending the transaction).
 
-Note that validators never obtain custody of the ATOMs delegated to them. There is no risk for validators to "steal" their delegators ATOM. However, there is a risk for delegated ATOMs to be slashed should the validator they are delegated to misbehave. See [What are the risks associated with Staking] for more. 
+Note that validators never obtain custody of the ATOM delegated to them. There is no risk for validators to "steal" their delegators ATOM. However, there is a risk for delegated ATOM to be slashed should the validator they are delegated to misbehave. See [What are the risks associated with Staking] for more. 

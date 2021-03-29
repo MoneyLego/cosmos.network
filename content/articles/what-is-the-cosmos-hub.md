@@ -1,7 +1,7 @@
 ---
+index: 5
 title: What is the Cosmos Hub?
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+description: The Cosmos Hub is a blockchain that serves as the economic center of Cosmos.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,36 +10,17 @@ author:
 tags: 
   - blockchain
 ---
-## What is the Cosmos Hub?
 
-The Cosmos Hub is the first blockchain in the Cosmos Network. The goal of the Cosmos Hub is to facilitate the connection between the multitude of blockchains that will eventually comprise the Cosmos Network. As it will connect to many blockchains, and strive to have high security, the Cosmos Hub will also be in prime position to become one of the biggest decentralized custodian for digitial assets.
+The Cosmos Hub is a blockchain that serves as the economic center of Cosmos. The Hub provides valuable services to the blockchains connected to it, including the largest interchain token exchange, shared security through interchain staking, bridges to Ethereum (ETH) and Bitcoin (BTC), and secure custodianship of digital assets. The Cosmos Hub’s primary token is the [ATOM](/learn/faq/what-is-the-atom).
 
-## This is a heading
-This is some more info
-<div class="bg-blue-500 text-white p-4 mb-4">
-  This is HTML inside markdown that has a class some classes
-</div>
+In particular, the Cosmos Hub will provide services such as:
 
-<info-box>
-  <template #info-box>
-    This is a vue component inside markdown using slots
-  </template>
-</info-box>
+- Interchain token exchange
 
-```js[nuxt.config.js]
-export default {
-  nuxt: "is the best"
-}
-```
-```html[my-first-blog-post.md]
-<p>code styling is easy</p>
-```
+- Interchain staking: IBC will enable Cosmos Hub validators to provide security for other chains. In practice, it means that ATOM will able to secure both the Cosmos Hub and other chains. Validators will select the chains they validate, and their delegators will share the resulting risks and rewards. 
 
-### This is a sub heading
-This is some more info
+- Bridges to ETH and BTC
 
-### This is another sub heading
-This is some more info
+- Interchain token custodianship: Users can hold, send and receive tokens originating from other blockchains. The number of available tokens will grow as more chains connect to the Cosmos Hub.
 
-## This is another heading
-This is some more info
+> [More about Hub features](/features)
