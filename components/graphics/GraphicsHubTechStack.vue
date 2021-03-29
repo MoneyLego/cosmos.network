@@ -1,5 +1,6 @@
 <template>
   <div class="tech-stack">
+    <img src="~/assets/images/bg/home-tech-bg.png" alt="" class="bg" />
     <svg
       width="1676"
       height="1676"
@@ -7,14 +8,6 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_f-892429)">
-        <circle
-          cx="837.833"
-          cy="837.833"
-          r="771.833"
-          fill="url(#paint0_radial-531028)"
-        />
-      </g>
       <circle cx="838" cy="838" r="567" stroke="white" stroke-opacity="0.1" />
       <circle cx="838" cy="838" r="374" stroke="white" stroke-opacity="0.1" />
       <path
@@ -24,37 +17,6 @@
         fill="url(#paint1_radial-741323)"
       />
       <defs>
-        <filter
-          id="filter0_f-892429"
-          x="0"
-          y="0"
-          width="1676"
-          height="1676"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur stdDeviation="32" result="effect1_foregroundBlur" />
-        </filter>
-        <radialGradient
-          id="paint0_radial-531028"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(837.833 837.833) rotate(90) scale(771.833)"
-        >
-          <stop offset="0.223958" stop-color="#A5FBFF" />
-          <stop offset="0.338542" stop-color="#6C8DFF" />
-          <stop offset="0.729167" stop-color="#CF36D2" stop-opacity="0.3" />
-          <stop offset="1" stop-color="#A929AB" stop-opacity="0" />
-        </radialGradient>
         <radialGradient
           id="paint1_radial-741323"
           cx="0"
@@ -73,20 +35,20 @@
     <div class="label label-sdk tm-rf-1 tm-solid">Cosmos SDK</div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      cssid: 'hub-tech_',
-    }
-  },
-}
-</script>
 <style lang="stylus" scoped>
 .tech-stack
   position relative
 
+.bg
+  position absolute
+  width 172%
+  margin-top -50%
+  max-width none
+  margin-left 1%
+  filter blur(10px)
+
 svg
+  position relative
   width 172%
   height auto
   margin-top -50%

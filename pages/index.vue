@@ -6,7 +6,9 @@
     <home-section-atom />
     <home-section-features />
     <home-section-tech />
-    <!-- <section-intro /> -->
+    <home-section-dev />
+    <home-section-community />
+    <home-section-end />
   </main>
 </template>
 

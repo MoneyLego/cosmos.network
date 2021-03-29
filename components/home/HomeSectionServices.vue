@@ -367,9 +367,8 @@
 </template>
 
 <style lang="stylus" scoped>
-.tm-section
-  > *
-    grid-column 1/-1
+.tm-section > *
+  grid-column 1/-1
 
 .graphics-container
   position relative
@@ -381,8 +380,8 @@
     height auto
     bottom 0
     width 200%
-    margin-bottom -71%
-    margin-left -43%
+    margin-bottom -97%
+    margin-left -93%
     max-width 154rem
     min-width 40rem
 
@@ -391,7 +390,10 @@
   angle-accent(nw)
   margin-bottom var(--spacing-8)
 
-.overline
+.overline,
+.title,
+.subtitle,
+.services
   position relative
 
 .title
@@ -399,7 +401,6 @@
   max-width 10em
 
 .subtitle
-  position relative
   margin-top var(--spacing-6)
 
 .services
@@ -464,18 +465,24 @@
   .overline
     grid-column 2 / span 6
 
-  .offset,
-  .services
+  .offset
     grid-column 3 / span 6
+
+  .services
+    grid-template-columns repeat(auto-fill, minmax(18rem, 1fr))
+
+@media $breakpoint-large
+  .services
+    grid-column 3 / -1
 
 @media $breakpoint-xl
   .graphics-container
     grid-column 1 / span 3
     grid-row 1 / span 5
 
-    .container
+    .graphics
       width 900%
-      margin 0 auto -290% -400%
+      margin 0 auto -420% -440%
 
   .accent
     grid-column 4 / span 9

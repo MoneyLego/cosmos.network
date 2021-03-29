@@ -4,31 +4,31 @@
       <graphics-hub-tech-stack />
       <span class="tm-crosshair"></span>
     </div>
-    <div class="title">
-      <h2 class="overline tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+    <header class="header">
+      <h2
+        class="overline tm-rf-1 tm-rf0-m-up tm-lh-title tm-medium tm-overline tm-muted"
+      >
         Technology
       </h2>
-      <div class="tm-rf5 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
         The most trusted way to build value.
       </div>
-    </div>
+    </header>
     <div class="text">
-      <p
-        class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
-      >
+      <p class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
         <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>
         is a state-of-the-art blockchain framework that powers the Cosmos Hub
         and its rapidly expanding orbit of sovereign chains.
       </p>
-      <p
-        class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow tm-measure-narrower-l-up"
-      >
+      <p class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
         Developers can use the SDK to build innovative applications that create
         value through exchange with the Cosmos Hub.
       </p>
     </div>
     <div class="stat stat-pos">
-      <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+      <h3
+        class="stat-title tm-rf-1 tm-rf0-m-up tm-lh-title tm-medium tm-overline tm-muted"
+      >
         Proof-of-Stake
       </h3>
       <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
@@ -37,25 +37,29 @@
           >lower carbon footprint</span
         >
       </div>
-      <p class="stat-subtitle tm-rf0 tm-lh-title">
+      <p class="stat-subtitle tm-rf-1 tm-rf0-m-up tm-lh-title">
         Blockchain tech that truly scales.
       </p>
     </div>
     <div class="stat stat-fees">
-      <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+      <h3
+        class="stat-title tm-rf-1 tm-rf0-m-up tm-lh-title tm-medium tm-overline tm-muted"
+      >
         Low fees
       </h3>
       <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">$0.01</div>
-      <p class="stat-subtitle tm-rf0 tm-lh-title">
+      <p class="stat-subtitle tm-rf-1 tm-rf0-m-up tm-lh-title">
         Enjoy the lowest fees – almost zero.
       </p>
     </div>
     <div class="stat stat-tx">
-      <h3 class="stat-title tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+      <h3
+        class="stat-title tm-rf-1 tm-rf0-m-up tm-lh-title tm-medium tm-overline tm-muted"
+      >
         Fast transactions
       </h3>
       <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">7 sec</div>
-      <p class="stat-subtitle tm-rf0 tm-lh-title">
+      <p class="stat-subtitle tm-rf-1 tm-rf0-m-up tm-lh-title">
         Transactions confirmed in seconds.
       </p>
     </div>
@@ -76,26 +80,32 @@ export default {
 .tm-section > *
   grid-column 1/-1
 
-.graphics
+.graphics,
+.overline,
+.title,
+.text,
+.stat
   position relative
+
+.graphics
   min-width 23rem
 
   >>> .tech-stack
     right var(--spacing-11)
     margin-top -20%
+    margin-bottom -20%
 
 .tm-crosshair
   margin-bottom var(--spacing-6)
 
-.title .tm-title
+.title
   max-width 9em
   margin-top var(--spacing-6)
-
-.overline
-  position relative
+  background linear-gradient(224deg, #e3a6ff 20%, var(--title) 90%)
+  -webkit-background-clip text
+  -webkit-text-fill-color transparent
 
 .text
-  position relative
   margin-top var(--spacing-8)
 
   &:before
@@ -105,7 +115,6 @@ export default {
     margin-bottom var(--spacing-5)
 
 .stat
-  position relative
   margin-top var(--spacing-10)
 
   .super
@@ -136,7 +145,7 @@ export default {
   .graphics
     grid-column 1/-1
 
-  .title,
+  .header,
   .text
     grid-column 2 / -1
 
@@ -158,7 +167,7 @@ export default {
     margin-top -6rem
 
 @media $breakpoint-xl
-  .title
+  .header
     grid-column 2 / span 8
 
   .text,

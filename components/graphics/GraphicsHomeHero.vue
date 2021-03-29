@@ -1,159 +1,11 @@
 <template>
   <div class="canvas">
     <div class="container">
-      <div :strength="150" class="layer layer-back">
-        <svg
-          width="4041"
-          height="2801"
-          viewBox="0 0 2425 1681"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1007.83 1497.11C1553.52 1767.62 2120.88 1734.7 2275.06 1423.58C2429.23 1112.46 2111.85 640.962 1566.17 370.451C1020.48 99.9404 453.122 132.859 298.943 443.976C144.763 755.094 462.144 1226.6 1007.83 1497.11Z"
-            fill="url(#paint0_radial-604916)"
-          />
-          <g filter="url(#filter0_f-609535)">
-            <path
-              d="M1934.98 662.797C1934.98 662.797 2283.12 831.75 2188.26 1184.36C2108.04 1482.55 1614.5 1431.76 1635 1173.61C1649.05 996.746 1579.63 932.599 1492.39 846.169C1353.99 709.066 1514.35 453.876 1934.98 662.797Z"
-              fill="url(#paint1_radial-226226)"
-            />
-          </g>
-          <g filter="url(#filter1_f-715546)">
-            <path
-              d="M949 904.779C949 1078.47 1089.81 1219.28 1263.5 1219.28C1437.19 1219.28 1578 1078.47 1578 904.779C1578 731.086 1437.19 590.279 1263.5 590.279C1089.81 590.279 949 731.086 949 904.779Z"
-              fill="url(#paint2_radial-652525)"
-            />
-          </g>
-          <g filter="url(#filter2_f-701638)">
-            <path
-              d="M483.782 250.858C483.782 250.858 257.627 237.169 250.184 404.599C243.885 546.189 531.8 643.094 564.93 532.198C587.626 456.216 637.999 446.438 702.315 431.765C804.337 408.487 757.86 265.433 483.782 250.858Z"
-              fill="url(#paint3_radial-152843)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f-609535"
-              x="1223.81"
-              y="363.611"
-              width="1200.82"
-              height="1244.64"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="110"
-                result="effect1_foregroundBlur"
-              />
-            </filter>
-            <filter
-              id="filter1_f-715546"
-              x="883.077"
-              y="524.356"
-              width="760.847"
-              height="760.847"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="32.9617"
-                result="effect1_foregroundBlur"
-              />
-            </filter>
-            <filter
-              id="filter2_f-701638"
-              x="0.0820312"
-              y="0.587891"
-              width="1001.97"
-              height="829.718"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="125"
-                result="effect1_foregroundBlur"
-              />
-            </filter>
-            <radialGradient
-              id="paint0_radial-604916"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(1287.41 934.389) rotate(-153.631) scale(1103.43 629.07)"
-            >
-              <stop offset="0.0001" stop-color="#C01AEA" />
-              <stop offset="0.539562" stop-color="#B347CE" stop-opacity="0.3" />
-              <stop offset="1" stop-opacity="0" />
-            </radialGradient>
-            <radialGradient
-              id="paint1_radial-226226"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(1597.73 1215.28) rotate(-45.5366) scale(769.592 699.757)"
-            >
-              <stop offset="0.25" stop-color="#B28BD9" />
-              <stop offset="0.53125" stop-color="#F14040" />
-              <stop offset="0.703125" stop-color="#F7743C" />
-              <stop offset="1" stop-color="#FFB648" />
-            </radialGradient>
-            <radialGradient
-              id="paint2_radial-652525"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(1263.5 904.779) rotate(90) scale(302.012)"
-            >
-              <stop offset="0.223958" stop-color="#A5FBFF" />
-              <stop offset="0.385417" stop-color="#86A1FF" stop-opacity="0.7" />
-              <stop
-                offset="0.729167"
-                stop-color="#CF36D2"
-                stop-opacity="0.28"
-              />
-              <stop offset="1" stop-color="#99309B" stop-opacity="0" />
-            </radialGradient>
-            <radialGradient
-              id="paint3_radial-152843"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(562.024 458.938) rotate(-121.7) scale(281.085 264.006)"
-            >
-              <stop offset="0.282141" stop-color="#FF87FA" />
-              <stop offset="0.552418" stop-color="#87B0FF" />
-              <stop offset="1" stop-color="#22CAFF" />
-            </radialGradient>
-          </defs>
-        </svg>
+      <kinesis-element :strength="15" class="layer layer-back">
+        <img class="bg" src="~/assets/images/bg/home-hero-bg.png" />
         <graphics-orbit-lines class="orbit" />
-      </div>
-      <div :strength="300" class="layer layer-middle">
+      </kinesis-element>
+      <kinesis-element :strength="30" class="layer layer-middle">
         <svg
           width="4041"
           height="1473"
@@ -564,9 +416,9 @@
             </radialGradient>
           </defs>
         </svg>
-      </div>
+      </kinesis-element>
       <div class="layer layer-front">
-        <div :strength="400" class="planet planet-terra">
+        <kinesis-element :strength="40" class="planet planet-terra">
           <div v-tooltip.top-center="tooltip('Terra')">
             <svg
               width="156"
@@ -710,8 +562,8 @@
               </defs>
             </svg>
           </div>
-        </div>
-        <div :strength="600" class="planet planet-bitcoin">
+        </kinesis-element>
+        <kinesis-element :strength="60" class="planet planet-bitcoin">
           <div v-tooltip.top-center="tooltip('Bitcoin')">
             <svg
               width="179"
@@ -797,8 +649,8 @@
               </defs>
             </svg>
           </div>
-        </div>
-        <div :strength="600" class="planet planet-ethereum">
+        </kinesis-element>
+        <kinesis-element :strength="60" class="planet planet-ethereum">
           <div v-tooltip.top-center="tooltip('Ethereum')">
             <svg
               width="168"
@@ -900,8 +752,8 @@
               </defs>
             </svg>
           </div>
-        </div>
-        <div :strength="700" class="planet planet-cryptocom">
+        </kinesis-element>
+        <kinesis-element :strength="70" class="planet planet-cryptocom">
           <div v-tooltip.top-center="tooltip('Crypto.com')">
             <svg
               width="198"
@@ -1007,8 +859,8 @@
               </defs>
             </svg>
           </div>
-        </div>
-        <div :strength="800" class="planet planet-thorchain">
+        </kinesis-element>
+        <kinesis-element :strength="80" class="planet planet-thorchain">
           <div v-tooltip.top-center="tooltip('THORChain')">
             <svg
               width="230"
@@ -1116,8 +968,8 @@
               </defs>
             </svg>
           </div>
-        </div>
-        <div :strength="800" class="planet planet-binance">
+        </kinesis-element>
+        <kinesis-element :strength="80" class="planet planet-binance">
           <div v-tooltip.top-center="tooltip('Binance')">
             <svg
               width="225"
@@ -1226,7 +1078,7 @@
               </defs>
             </svg>
           </div>
-        </div>
+        </kinesis-element>
       </div>
       <tm-crosshair class="crosshair" />
     </div>
@@ -1253,11 +1105,12 @@
   &::before
     content ""
     position absolute
+    z-index 1
     bottom 0
     left 50%
     height 50%
     width $px
-    background linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.405) 100%)
+    background linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.4) 100%)
 
 svg
   height auto
@@ -1274,8 +1127,7 @@ svg
 
 .layer-back
   position relative
-  margin-top -27.4%
-  margin-left -4%
+  margin-top -24.4%
 
 .layer-middle
   margin-top -19.1%
@@ -1287,9 +1139,14 @@ svg
 
 .orbit
   position absolute
-  top 24.8%
-  left 18.5%
+  top 22.8%
+  left 14.5%
   width 67.4%
+
+.bg
+  position relative
+  width 100%
+  filter blur(10px)
 
 .planet
   will-change transform

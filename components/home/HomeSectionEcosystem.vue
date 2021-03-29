@@ -1,14 +1,14 @@
 <template>
   <div class="tm-container tm-section tm-wrapper tm-grid-base">
     <div class="content">
-      <div
+      <h2
         class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
       >
         Community-owned and operated
-      </div>
-      <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
-        Enter a new universe of connected services.
       </h2>
+      <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
+        Enter a new universe of connected services.
+      </div>
       <p
         class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
       >
@@ -62,6 +62,9 @@
 </template>
 
 <style lang="stylus" scoped>
+.tm-container
+  z-index 1
+
 .content,
 .stats
   grid-column 1 / -1

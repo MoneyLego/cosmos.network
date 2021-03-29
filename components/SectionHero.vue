@@ -1,9 +1,5 @@
 <template>
-  <kinesis-container
-    event="scroll"
-    tag="section"
-    class="section-hero section-first"
-  >
+  <kinesis-container tag="section" class="section-hero section-first">
     <div class="tm-wrapper tm-section tm-container">
       <div
         class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
@@ -27,32 +23,32 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-
 .section-hero
-  background linear-gradient(to bottom, #111111 44%, #000000 67%)
+  background linear-gradient(180deg, var(--fg), var(--transparent))
   text-align center
 
   .light-mode &
     background none
 
-.tm-section
+.tm-wrapper
   width 100%
   padding-bottom 0
   display flex
   flex-direction column
   align-items center
 
+  > *
+    position relative
+    z-index 1
+
 .graphics
   position relative
   z-index 0
 
-.overline
-  z-index 1
-
 .title
   max-width 7em
   margin var(--spacing-6) 0 0
-  background linear-gradient(135deg, rgba(255,255,255,0) 56%, #ffcaba 98%), linear-gradient(41deg, #fae8ff 23%, #fff 60%)
+  background linear-gradient(135deg, rgba(255,255,255,0) 56%, #ffcaba 98%), linear-gradient(25deg, #f5d1ff 23%, #fff 60%)
   -webkit-background-clip text
   -webkit-text-fill-color transparent
 
@@ -65,6 +61,5 @@ export default {}
     -webkit-text-fill-color inherit
 
 .subtitle
-  z-index 1
   margin-top var(--spacing-7)
 </style>
