@@ -1,63 +1,73 @@
 <template>
   <main>
     <div class="section-hero section-first tm-section">
-      <div class="tm-wrapper">
-        <div class="tm-container tm-section tm-grid-base">
-          <logo-cosmos-brandmark class="graphics-brandmark" />
-          <graphics-get-started-hero-validator class="graphics-validator" />
-          <div class="text tm-measure-wide">
-            <div class="header tm-rf0 tm-lh-title tm-overline">Get Started</div>
-            <div class="title tm-rf6 tm-bold tm-lh-title">
-              Get ATOM and stake.
-            </div>
+      <div class="tm-wrapper tm-container tm-section tm-grid-base">
+        <logo-cosmos-brandmark class="graphics-brandmark" />
+        <graphics-get-started-hero-validator class="graphics-validator" />
+        <div class="text tm-measure-wide">
+          <div class="header tm-rf0 tm-lh-title tm-medium tm-overline tm-muted">
+            Get Started
           </div>
-          <graphics-get-started-hero-coins class="graphics-coins" />
+          <div class="title tm-rf6 tm-bold tm-lh-title tm-title">
+            Get ATOM and stake.
+          </div>
         </div>
+        <graphics-get-started-hero-coins class="graphics-coins" />
       </div>
       <graphics-get-started-hero-stars class="graphics-stars-hero" />
     </div>
 
-    <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base">
+    <div class="tm-wrapper tm-container">
+      <div class="tm-section tm-grid-base">
         <div class="section-intro">
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
           <NuxtLink to="/learn/faq/what-is-the-atom" class="card-item">
-            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
-              learn
+            <div
+              class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
+            >
+              Learn
             </div>
-            <div class="title tm-rf1 tm-bold tm-lh-title">
+            <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
               What is the ATOM token?
             </div>
           </NuxtLink>
           <NuxtLink to="/learn/faq/what-is-staking" class="card-item">
-            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
-              learn
+            <div
+              class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
+            >
+              Learn
             </div>
-            <div class="title tm-rf1 tm-bold tm-lh-title">What is staking?</div>
+            <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+              What is staking?
+            </div>
           </NuxtLink>
           <NuxtLink to="/learn/faq/what-is-a-wallet" class="card-item">
-            <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline">
-              learn
+            <div
+              class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
+            >
+              Learn
             </div>
-            <div class="title tm-rf1 tm-bold tm-lh-title">
+            <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
               What is a wallet?
             </div>
           </NuxtLink>
         </div>
       </div>
-    </div>
-
-    <div class="tm-wrapper top-gap">
-      <div class="tm-container">
+      <div class="section-step top-gap">
         <div class="section-step-1 tm-grid-base section">
-          <div class="step step-1 tm-rf1 tm-medium tm-lh-title tm-overline">
-            step 01
+          <div
+            class="step step-1 tm-rf1 tm-medium tm-lh-title tm-overline tm-title"
+          >
+            Step 01
           </div>
           <div class="top">
-            <div class="title tm-rf5 tm-bold tm-lh-title">
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
               Get ATOM via one of the many cryptocurrency exchanges.
+              <small class="tm-rf0 tm-rf1-m-up tm-line-height-title tm-normal"
+                >†</small
+              >
             </div>
           </div>
           <div class="graphics">
@@ -81,84 +91,80 @@
               >Browse exchanges
               <span class="icon__right">&#8599;</span></tm-button
             >
-            <!-- TODO -->
-            <!-- <div class="footnote tm-rf-1 tm-lh-copy tm-measure">Disclaimer</div> -->
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="tm-container transition">
-      <svg
-        v-if="$nuxt.$colorMode.value === 'dark'"
-        width="164"
-        height="241"
-        viewBox="0 0 164 241"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
-          stroke="url(#paint0_linear-200014)"
-          stroke-width="1.77663"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear-200014"
-            x1="67.499"
-            y1="-62.0005"
-            x2="16.9728"
-            y2="235.195"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.254598" stop-color="white" stop-opacity="0" />
-            <stop offset="0.901042" stop-color="white" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <svg
-        v-else
-        width="164"
-        height="241"
-        viewBox="0 0 164 241"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
-          stroke="url(#paint0_linear-166099)"
-          stroke-width="1.77663"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear-166099"
-            x1="67.499"
-            y1="-62.0005"
-            x2="16.9728"
-            y2="235.195"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.254598" stop-opacity="0" />
-            <stop offset="0.901042" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-
-    <div class="tm-wrapper">
-      <div class="tm-container tm-grid-base">
-        <div class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline">
-          step 02
+      <div class="transition">
+        <svg
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          width="164"
+          height="241"
+          viewBox="0 0 164 241"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
+            stroke="url(#paint0_linear-200014)"
+            stroke-width="1.77663"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear-200014"
+              x1="67.499"
+              y1="-62.0005"
+              x2="16.9728"
+              y2="235.195"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.254598" stop-color="white" stop-opacity="0" />
+              <stop offset="0.901042" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          v-else
+          width="164"
+          height="241"
+          viewBox="0 0 164 241"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M57.6217 239.843C94.1553 226.029 123.171 206.528 141.312 183.593C159.454 160.658 165.981 135.227 160.138 110.241C154.295 85.2541 136.322 61.7326 108.296 42.3963C80.2706 23.0599 43.3373 8.69857 1.76725 0.972885"
+            stroke="url(#paint0_linear-166099)"
+            stroke-width="1.77663"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear-166099"
+              x1="67.499"
+              y1="-62.0005"
+              x2="16.9728"
+              y2="235.195"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.254598" stop-opacity="0" />
+              <stop offset="0.901042" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="section-step tm-grid-base">
+        <div
+          class="step step-2 tm-rf1 tm-medium tm-lh-title tm-overline tm-title"
+        >
+          Step 02
         </div>
         <div class="left section-step-2 section">
           <div class="graphics">
             <graphics-navigator-gem class="graphics__item" />
           </div>
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
             Transfer your ATOM to a wallet.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
@@ -174,14 +180,16 @@
             >Choose a wallet <span class="icon__right">&rarr;</span></tm-button
           >
         </div>
-        <div class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline">
-          step 03
+        <div
+          class="step step-3 tm-rf1 tm-medium tm-lh-title tm-overline tm-title"
+        >
+          Step 03
         </div>
         <div class="right section-step-3 section">
           <div class="graphics">
             <graphics-get-started-step-3 class="graphics__item" />
           </div>
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
             Select your validators.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
@@ -209,79 +217,77 @@
           >
         </div>
       </div>
-    </div>
-
-    <div class="tm-container transition">
-      <svg
-        v-if="$nuxt.$colorMode.value === 'dark'"
-        width="368"
-        height="368"
-        viewBox="0 0 368 368"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
-          stroke="url(#paint0_linear-032779)"
-          stroke-width="2.5"
-          stroke-linecap="round"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear-032779"
-            x1="598"
-            y1="-15"
-            x2="1.99998"
-            y2="366"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.00763763" stop-color="white" stop-opacity="0" />
-            <stop offset="0.57166" stop-color="white" stop-opacity="0.03" />
-            <stop offset="1" stop-color="white" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <svg
-        v-else
-        width="368"
-        height="368"
-        viewBox="0 0 368 368"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
-          stroke="url(#paint0_linear-684431)"
-          stroke-width="2.5"
-          stroke-linecap="round"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear-684431"
-            x1="373"
-            y1="-35"
-            x2="1.99995"
-            y2="366"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.00763763" stop-opacity="0" />
-            <stop offset="0.57166" stop-opacity="0.03" />
-            <stop offset="1" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-
-    <div class="tm-wrapper bottom-gap">
-      <div class="tm-container tm-grid-base section-step-4 section">
-        <div class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline">
-          step 04
+      <div class="transition">
+        <svg
+          v-if="$nuxt.$colorMode.value === 'dark'"
+          width="368"
+          height="368"
+          viewBox="0 0 368 368"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
+            stroke="url(#paint0_linear-032779)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear-032779"
+              x1="598"
+              y1="-15"
+              x2="1.99998"
+              y2="366"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.00763763" stop-color="white" stop-opacity="0" />
+              <stop offset="0.57166" stop-color="white" stop-opacity="0.03" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          v-else
+          width="368"
+          height="368"
+          viewBox="0 0 368 368"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M366 2C318.199 2 270.866 11.4151 226.703 29.7079C182.541 48.0006 142.414 74.8126 108.613 108.613C74.8126 142.414 48.0005 182.541 29.7078 226.703C11.4151 270.866 1.99999 318.199 2 366"
+            stroke="url(#paint0_linear-684431)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear-684431"
+              x1="373"
+              y1="-35"
+              x2="1.99995"
+              y2="366"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.00763763" stop-opacity="0" />
+              <stop offset="0.57166" stop-opacity="0.03" />
+              <stop offset="1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="section-step bottom-gap tm-grid-base section-step-4 section">
+        <div
+          class="step step-4 tm-rf1 tm-medium tm-lh-title tm-overline tm-title"
+        >
+          Step 04
         </div>
         <div class="graphics">
           <graphics-get-started-lock-atoms class="graphics__item" />
         </div>
         <div class="text">
-          <div class="title tm-rf5 tm-bold tm-lh-title">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
             Lock up and stake<br />your ATOM.
           </div>
           <div class="subtitle tm-rf1 tm-lh-copy">
@@ -302,13 +308,10 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="tm-wrapper">
-      <div class="tm-section tm-container tm-grid-base section-graphics">
+      <div class="tm-section tm-grid-base section-graphics">
         <div class="section-community section">
           <div class="text">
-            <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+            <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
               Welcome to the community, fellow Cosmonaut.
             </div>
             <div class="subtitle tm-rf1 tm-lh-copy tm-measure-wide">
@@ -332,7 +335,9 @@
                     <div class="title tm-rf1 tm-bold tm-lh-title">
                       {{ item.title }}
                     </div>
-                    <div class="desc tm-rf0 tm-lh-copy">
+                    <div
+                      class="desc tm-rf-1 tm-rf0-m-up tm-lh-copy tm-muted tm-measure-narrow"
+                    >
                       {{ item.desc }}
                     </div>
                   </div>
@@ -423,13 +428,6 @@ export default {
   display grid
   place-items center
 
-.subtitle
-.desc
-  color var(--white-800)
-
-  .light-mode &
-    color rgba(0, 0, 0, 0.5)
-
 // Hero
 .section-hero
   text-align left
@@ -481,13 +479,13 @@ export default {
   border-radius $border-radius-5
   hover-raise(-3px)
   box-shadow var(--elevation-4)
-  background-color var(--gray-100)
-
-  .light-mode &
-    background-color var(--white)
+  background-color var(--fg)
 
 .card-item .title
   margin-top var(--spacing-3)
+
+.section-step
+  position relative
 
 // Step
 .step
@@ -523,7 +521,8 @@ export default {
   align-items flex-end
 
   &__item
-    width 70%
+    width 100%
+    margin-right -12%
 
   .coins
     transform rotateY(180deg)
@@ -538,8 +537,8 @@ export default {
 .section-step-1 .bottom
   margin-top var(--spacing-7)
 
-.section-step-1 .footnote
-  color var(--gray-600)
+.section-step-1 .btn
+  margin-top var(--spacing-6)
 
 // Step 2
 .section-step-2 .subtitle
@@ -630,6 +629,9 @@ export default {
 .section-community .graphics__item
   width 100%
 
+.section-community .title
+  max-width 13em
+
 .section-community .subtitle
   margin-top var(--spacing-6)
 
@@ -638,17 +640,17 @@ export default {
 
 .grid-wrapper
   display grid
-  grid-template-columns repeat(1, 1fr)
-  gap var(--spacing-7)
-  margin-top var(--spacing-9)
+  grid-template-columns repeat(auto-fit, minmax(24rem, 1fr))
+  grid-gap 0 var(--grid-gap-x)
 
 .grid-item
   display grid
   grid-auto-flow column
   grid-template-columns min-content 1fr
   gap var(--spacing-7)
+  margin-top var(--spacing-9)
   border-radius $border-radius-5
-  hover-raise(-3px)
+  hover-raise(-2px)
 
 .details .desc
   margin-top var(--spacing-3)
@@ -683,8 +685,6 @@ export default {
 
       .light-mode &
         background var(--black)
-
-  // Hero
 
   // Intro
   .cards-wrapper
@@ -744,10 +744,11 @@ export default {
   // Step 1
   .section-step-1 .top
     grid-column 5/span 8
+    grid-row 1
 
   .section-step-1 .graphics
     grid-column 1/span 6
-    width 80%
+    grid-row 1/3
 
   .section-step-1 .bottom
     grid-column 7/span 6
@@ -800,10 +801,4 @@ export default {
   // Community
   .section-community
     grid-column 1/span 10
-
-  .section-community .grid-wrapper
-    grid-template-columns repeat(2, 1fr)
-    column-gap var(--spacing-7)
-    row-gap var(--spacing-9)
-    margin-right 12.6875rem
 </style>

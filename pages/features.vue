@@ -31,7 +31,7 @@
     <!-- Features -->
     <div class="tm-container tm-wrapper tm-grid-base section-features">
       <div class="text">
-        <h2 class="title tm-rf5 tm-bold tm-lh-title">
+        <h2 class="title tm-rf5 tm-bold tm-lh-title tm-title">
           Explore a rapidly growing set of interchain features.
         </h2>
       </div>
@@ -437,7 +437,7 @@
         <graphics-features-rewards-fees class="graphics__item" />
       </div>
       <div class="tm-wrapper tm-grid-base">
-        <div class="title tm-rf5 tm-bold tm-lh-title">
+        <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
           Services generate fees. Fees generate rewards.
         </div>
         <div class="description">
