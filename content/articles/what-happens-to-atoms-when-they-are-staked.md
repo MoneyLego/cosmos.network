@@ -1,7 +1,7 @@
 ---
-title: What happens to ATOMs when they are staked?
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+index: 9
+title: What happens to ATOM when they are staked?
+description: When users stake ATOM, they effectively lock them up for an indefinite period of time.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,6 +11,5 @@ tags:
   - blockchain
   - atom
 ---
-## What happens to ATOMs when they are staked?
 
-When users stake ATOMs, they effectively lock them up for an indefinite period of time. This means ATOMs cannot be transferred anymore, which is guaranteed by the protocol itself. However, users are free to trigger the process to unlock their ATOMs at any point after they started staking (via the Wallet of their choice). This is called "undelegating". It will take 21 days for ATOMs to be transferrable again after the transaction to undelegate has been sent.
+When users stake ATOM, they effectively lock them up for an indefinite period of time. This means ATOM cannot be transferred anymore, which is guaranteed by the protocol itself. However, users are free to trigger the process to unlock their ATOM at any point after they started staking (via the Wallet of their choice). This is called "undelegating". It will take 21 days for ATOM to be transferrable again after the transaction to undelegate has been sent.

@@ -1,111 +1,49 @@
 <template>
-  <footer class="footer">
-    <div class="tm-section-container section-container">
-      <nav class="nav container" role="navigation">
-        <ul class="nav__item">
-          <li
-            class="nav__item__title tm-rf-1 tm-medium tm-lh-title tm-overline"
+  <footer class="footer tm-wrapper tm-container tm-grid-base">
+    <nav class="nav" role="navigation">
+      <div class="menu">
+        <div v-for="item in menu" :key="item.title" class="nav-item">
+          <div class="nav-item__title tm-rf0 tm-lh-title tm-medium tm-title">
+            {{ item.title }}
+          </div>
+          <div
+            v-for="child in item.children"
+            :key="child.title"
+            class="nav-item__child tm-rf0 tm-lh-copy"
           >
-            Stargate
-          </li>
-          <li class="nav__item__item">
-            <NuxtLink to="/" class="tm-rf0 tm-lh-title">Overview</NuxtLink>
-          </li>
-          <li class="nav__item__item">
-            <NuxtLink to="/testnets" class="tm-rf0 tm-lh-title"
-              >Testnets</NuxtLink
-            >
-          </li>
-          <li class="nav__item__item">
-            <NuxtLink to="/resources" class="tm-rf0 tm-lh-title"
-              >Resources</NuxtLink
-            >
-          </li>
-        </ul>
-        <ul class="nav__item">
-          <li
-            class="nav__item__title tm-rf-1 tm-medium tm-lh-title tm-overline"
-          >
-            Ecosystem
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://docs.cosmos.network"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Cosmos SDK</a
-            >
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://docs.tendermint.com"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Tendermint Core</a
-            >
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://github.com/cosmos/ics"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Interchain Standards</a
-            >
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://hub.cosmos.network"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Cosmos Hub</a
-            >
-          </li>
-        </ul>
-        <ul class="nav__item">
-          <li
-            class="nav__item__title tm-rf-1 tm-medium tm-lh-title tm-overline"
-          >
-            Community
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://discord.gg/vcExX9T"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Chat</a
-            >
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://hackerone.com/tendermint?type=team"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Bug Bounty Program</a
-            >
-          </li>
-          <li class="nav__item__item">
-            <a
-              class="tm-rf0 tm-lh-title"
-              href="https://cosmos.network/community"
-              target="blank_"
-              rel="noreferrer noopener"
-              >Cosmos Community</a
-            >
-          </li>
-        </ul>
+            <NuxtLink v-if="isInternal(child.href)" tag="a" :to="child.href">{{
+              child.title
+            }}</NuxtLink>
+            <tm-link v-else :href="child.href" class="tm-link-external">{{
+              child.title
+            }}</tm-link>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <nav ref="links" class="nav-bottom tm-rf-1 tm-lh-copy" role="navigation">
+        <NuxtLink to="/" class="logo">
+          <logo-cosmos-wordmark class="logo__cosmos" />
+          <span class="sr-only">Cosmos</span>
+        </NuxtLink>
+        <a
+          href="https://cosmos.network/privacy"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="tm-link privacy"
+          >Privacy</a
+        >
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
         <a
           v-for="link in links"
           :key="url(link)"
+          v-tooltip="{
+            content: link.title,
+          }"
           :href="url(link)"
-          class="social-icons__item"
+          class="social-icons__item tm-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -115,29 +53,29 @@
             xmlns="http://www.w3.org/2000/svg"
             fill-rule="evenodd"
             clip-rule="evenodd"
-            fill="#616489"
+            fill="currentColor"
           >
             <path :d="icon(link)" style="pointer-events: none"></path>
           </svg>
         </a>
       </nav>
-      <div class="home-nav tm-rf-1 tm-lh-copy">
-        <a
-          href="http://cosmos.network"
-          target="blank_"
-          rel="noreferrer noopener"
-          >cosmos.network</a
-        >
-      </div>
-      <div class="smallprint tm-rf-1 tm-lh-copy">
-        This website is maintained by Tendermint Inc. The contents and opinions
-        of this website are those of Tendermint Inc.
-      </div>
     </div>
+    <p class="smallprint tm-rf-1 tm-lh-copy">
+      † This website is maintained by Tendermint. The contents and opinions of
+      this website are those of Tendermint. Tendermint provides links to
+      cryptocurrency exchanges as a service to the public. Tendermint does not
+      warrant that the information provided by these websites is correct,
+      complete, and up-to-date. Tendermint is not responsible for their content
+      and expressly rejects any liability for damages of any kind resulting from
+      the use, reference to, or reliance on any information contained within
+      these websites.
+    </p>
   </footer>
 </template>
 
 <script>
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+
 const iconList = [
   [
     'blog.cosmos.network',
@@ -146,10 +84,6 @@ const iconList = [
   [
     'twitter',
     'M24 4.60078C23.1 5.00078 22.2 5.30078 21.2 5.40078C22.2 4.80078 23 3.80078 23.4 2.70078C22.4 3.30078 21.4 3.70078 20.3 3.90078C19.4 2.90078 18.1 2.30078 16.7 2.30078C14 2.30078 11.8 4.50078 11.8 7.20078C11.8 7.60078 11.8 8.00078 11.9 8.30078C7.7 8.10078 4.1 6.10078 1.7 3.10078C1.2 3.90078 1 4.70078 1 5.60078C1 7.30078 1.9 8.80078 3.2 9.70078C2.4 9.70078 1.6 9.50078 1 9.10078C1 9.10078 1 9.10078 1 9.20078C1 11.6008 2.7 13.6008 4.9 14.0008C4.5 14.1008 4.1 14.2008 3.6 14.2008C3.3 14.2008 3 14.2008 2.7 14.1008C3.3 16.1008 5.1 17.5008 7.3 17.5008C5.6 18.8008 3.5 19.6008 1.2 19.6008C0.8 19.6008 0.4 19.6008 0 19.5008C2.2 20.9008 4.8 21.7008 7.5 21.7008C16.6 21.7008 21.5 14.2008 21.5 7.70078C21.5 7.50078 21.5 7.30078 21.5 7.10078C22.5 6.40078 23.3 5.50078 24 4.60078Z',
-  ],
-  [
-    'linkedin',
-    'M23 0.000976562H1C0.4 0.000976562 0 0.400977 0 1.00098V23.001C0 23.601 0.4 24.001 1 24.001H23C23.6 24.001 24 23.601 24 23.001V1.00098C24 0.400977 23.6 0.000976562 23 0.000976562ZM7.1 20.501H3.6V9.00098H7.2V20.501H7.1ZM5.3 7.40098C4.2 7.40098 3.2 6.50098 3.2 5.30098C3.2 4.20098 4.1 3.20098 5.3 3.20098C6.4 3.20098 7.4 4.10098 7.4 5.30098C7.4 6.50098 6.5 7.40098 5.3 7.40098ZM20.5 20.501H16.9V14.901C16.9 13.601 16.9 11.901 15.1 11.901C13.2 11.901 13 13.301 13 14.801V20.501H9.4V9.00098H12.8V10.601C13.3 9.70098 14.4 8.80098 16.2 8.80098C19.8 8.80098 20.5 11.201 20.5 14.301V20.501Z',
   ],
   [
     'reddit',
@@ -170,19 +104,129 @@ const iconList = [
 ]
 
 export default {
+  components: {
+    LogoCosmosWordmark,
+  },
   data() {
     return {
       links: [
         { title: 'Medium', url: 'https://blog.cosmos.network' },
         { title: 'Twitter', url: 'https://twitter.com/cosmos' },
-        {
-          title: 'LinkedIn',
-          url: 'https://www.linkedin.com/company/tendermint/',
-        },
         { title: 'Reddit', url: 'https://reddit.com/r/cosmosnetwork' },
         { title: 'Telegram', url: 'https://t.me/cosmosproject' },
         { title: 'Discord', url: 'https://discord.gg/vcExX9T' },
         { title: 'YouTube', url: 'https://www.youtube.com/c/CosmosProject' },
+      ],
+      menu: [
+        {
+          title: 'Learn',
+          children: [
+            {
+              title: 'Introduction',
+              href: 'https://v1.cosmos.network/intro',
+            },
+            {
+              title: 'Features',
+              href: '/features',
+            },
+            {
+              title: 'Staking',
+              href: '/learn/staking',
+            },
+            {
+              title: 'Get ATOM',
+              href: '/learn/get-atom',
+            },
+            {
+              title: 'FAQ',
+              href: '/learn/faq',
+            },
+          ],
+        },
+        {
+          title: 'Build',
+          children: [
+            {
+              title: 'Starport',
+              href: '/starport',
+            },
+            {
+              title: 'Cosmos SDK',
+              href: 'https://v1.cosmos.network/sdk',
+            },
+            {
+              title: 'Tools',
+              href: 'https://v1.cosmos.network/tools',
+            },
+            {
+              title: 'IBC Protocol',
+              href: 'https://ibcprotocol.org',
+            },
+          ],
+        },
+        {
+          title: 'Explore',
+          children: [
+            {
+              title: 'Tokens',
+              href: '/ecosystem/tokens',
+            },
+            {
+              title: 'Ecosystem',
+              href: '/ecosystem/apps',
+            },
+            {
+              title: 'Wallets',
+              href: '/ecosystem/wallets',
+            },
+            {
+              title: 'Blog',
+              href: 'https://blog.cosmos.network',
+            },
+          ],
+        },
+        {
+          title: 'Participate',
+          children: [
+            {
+              title: 'Community',
+              href: 'https://v1.cosmos.network/community',
+            },
+            {
+              title: 'Contributors',
+              href: 'https://v1.cosmos.network/contributors',
+            },
+            {
+              title: 'Events',
+              href: 'https://v1.cosmos.network/events',
+            },
+            {
+              title: 'Newsletters',
+              href: 'https://v1.cosmos.network/newsletters',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          children: [
+            {
+              title: 'About',
+              href: 'https://v1.cosmos.network/about',
+            },
+            {
+              title: 'Press Kit',
+              href: 'https://v1.cosmos.network/presskit',
+            },
+            {
+              title: 'Design',
+              href: 'https://v1.cosmos.network/design',
+            },
+            {
+              title: 'Resources',
+              href: 'https://v1.cosmos.network/resources',
+            },
+          ],
+        },
       ],
     }
   },
@@ -202,81 +246,104 @@ export default {
       })
       return iconPath
     },
+    isInternal(url) {
+      return url.startsWith('/')
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
 .footer
+  padding-top var(--spacing-10)
+  padding-bottom var(--spacing-9)
+
+  > *
+    grid-column 1/-1
+
+.nav
+  margin-bottom var(--spacing-10)
+  a
+    color inherit
+    border-radius $border-radius-2
+    display inline-block
+
+.social-icons
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content center
+  align-items center
   text-align center
-  color var(--white)
-  background linear-gradient(180deg, #000000 0%, #030419 100%)
-  padding 0 0 var(--spacing-8)
-  .nav
-    gap var(--spacing-7)
-    justify-content center
-    &__item
-      padding var(--spacing-6) 0
-      border-radius $border-radius-2
-      white-space nowrap
-      color var(--gray-600)
-      text-align left
-      display flex
-      flex-direction column
-      margin 0
-      list-style-type none
-      grid-column span 3
-      &:first-child
-        grid-column 3/span 3
-      &__title
-        padding-bottom var(--spacing-3)
-      &__item a
-        display inline-block
-        padding-top var(--spacing-3)
-        padding-bottom var(--spacing-3)
-        color var(--white)
-        &:hover,
-        &:focus
-          opacity 0.8
-        &:active
-          opacity 0.6
-  .social-icons
-    margin-top var(--spacing-9)
-    margin-bottom var(--spacing-9)
-    display flex
+  margin-top var(--spacing-7)
+  &__item
+    padding var(--spacing-3)
+    opacity 0.5
+    &:hover,
+    &:focus
+      opacity 1
+
+.smallprint
+  color var(--white-500)
+  text-align left
+  margin-top var(--spacing-8)
+
+  .light-mode &
+    color var(--gray-400)
+
+.row
+  padding-top var(--spacing-8)
+  border-top 1px solid var(--white-100)
+  display flex
+  flex-direction column
+  align-items center
+  justify-content space-between
+
+.logo
+  display flex
+  align-items center
+  gap var(--spacing-4)
+  color inherit
+  transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
+  padding-right 1.5rem
+  svg
+    width auto
+  &__cosmos
+    height 1.125rem
+
+.privacy
+  padding-left 1.5rem
+  border-left 1px solid var(--white-100)
+
+.nav-bottom
+  display flex
+
+.menu
+  display grid
+  gap 0 var(--grid-gap-x)
+  grid-template-columns repeat(auto-fit, minmax(8rem,1fr))
+
+.nav-item
+  margin-top var(--spacing-9)
+  text-align left
+
+.nav-item__title
+  margin-bottom 1rem
+
+.nav-item__child
+  color var(--muted)
+
+.nav-item__child + .nav-item__child
+  margin-top 1rem
+
+@media $breakpoint-medium
+  .row
     flex-direction row
-    flex-wrap wrap
-    justify-content center
-    align-items center
-    text-align center
-    &__item
-      margin var(--spacing-4)
-      svg
-        transition fill .15s ease-out
-      &:hover svg,
-      &:focus svg
-        fill var(--white)
-  .home-nav
-    margin-top var(--spacing-5)
-    a
-      color var(--gray-900)
-      &:hover,
-      &:focus
-        color var(--white)
-  .smallprint
-    margin-top var(--spacing-5)
-    color var(--gray-600)
 
-@media $breakpoint-medium-max
-  .footer
-    .nav
-      grid-template-columns repeat(2, 1fr)
-      &__item,
-      &__item:first-child
-          grid-column span 1
+  .social-icons
+    margin-top 0
 
-@media $breakpoint-small-max
-  .footer
-    .nav
-      grid-template-columns repeat(1, 1fr)
+@media $breakpoint-xl
+  .footer > *
+    grid-column 2/span 10
 </style>

@@ -1,5 +1,7 @@
-:root
-  --container-mw-lg 74rem
+html,
+body
+  background-color var(--bg)
+  color var(--text)
 
 html
   font 400 100%/1.5 $font-family-sans-serif
@@ -12,8 +14,6 @@ html
   font-variant-ligatures contextual common-ligatures
   font-kerning normal
   text-rendering optimizeLegibility
-  background-color var(--black)
-  color var(--gray-800)
 
 @supports (font-variation-settings: normal)
   html
@@ -24,6 +24,10 @@ body
   overflow-x hidden
   margin 0
 
+@media $breakpoint-large-max
+  body.mobile-nav-open
+    overflow hidden
+
 *,
 *::before,
 *::after
@@ -31,18 +35,19 @@ body
   margin 0
 
 ::selection
-  background #e548f8
-  color var(--white)
+  background var(--title)
+  color var(--bg)
 
 a
-  color var(--link)
   text-decoration none
-  outline-color rgba(64, 179, 255, 0.92)
-  cursor pointer
-  transition all .25s $ease-out
+  color var(--link)
+
   &:hover,
   &:focus
-    color var(--white)
-  &:active
-    opacity 0.6
-    transition-duration 0s
+    color var(--link-hover)
+
+  &:focus
+    outline 1px dotted
+
+button
+  reset-button()

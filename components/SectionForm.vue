@@ -1,6 +1,6 @@
 <template>
-  <div class="section section-form">
-    <div class="tm-section-container section-container bottom">
+  <div class="tm-section section-form">
+    <div class="tm-wrapper tm-container bottom">
       <div class="container">
         <transition name="fade" mode="out-in">
           <div
@@ -28,7 +28,7 @@
               class="bottom__get-notified tm-rf1 tm-bold tm-lh-copy"
               for="field-email"
             >
-              Get Cosmos Hub updates
+              Get Cosmos updates
             </label>
             <form
               :action="url"
@@ -56,6 +56,10 @@
                 </button>
               </div>
             </form>
+            <p class="bottom__footnote tm-measure tm-rf-1 tm-lh-copy">
+              Unsubscribe at any time.
+              <a href="https://cosmos.network/privacy">Privacy policy</a>
+            </p>
           </div>
         </transition>
       </div>
@@ -65,8 +69,12 @@
 
 <script>
 import querystring from 'querystring'
+import IconArrowRight from '~/components/icons/IconArrowRight.vue'
 
 export default {
+  components: {
+    IconArrowRight,
+  },
   data() {
     return {
       email: null,
@@ -135,8 +143,7 @@ export default {
     justify-content center
   &__get-notified
     display block
-    margin-bottom var(--spacing-7)
-    color var(--gray-800)
+    margin-bottom var(--spacing-5)
     text-align center
   &__state
     margin var(--spacing-7) auto
@@ -177,21 +184,32 @@ export default {
       &__input
         outline none
         width 100%
-        background #121435
         border none
         border-radius $border-radius-3
         padding var(--spacing-5) 4rem var(--spacing-5) var(--spacing-6)
-        color var(--white)
         transition color 0.15s ease-out, background 0.15s ease-out
+        background var(--white-100)
+        color var(--white)
+        .light-mode &
+          background var(--trans-gray-50)
+          color var(--black)
         &::placeholder
           color var(--gray-600)
           transition color 0.15s ease-out
         &:hover
-          background #282B53
+          background var(--trans-gray-50)
           &:not(:focus)::placeholder
             color var(--gray-800)
         &:focus
-          background #282B53
+          background var(--trans-gray-50)
+  &__footnote
+    text-align center
+    margin-top var(--spacing-5)
+    center()
+    color var(--white-500)
+
+    .light-mode &
+      color var(--gray-400)
 
 @media screen and (max-width: 576px)
   .bottom

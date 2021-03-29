@@ -1,7 +1,7 @@
 ---
+index: 1
 title: What is Cosmos?
-description: This is the description for the article about all the things we know
-img: https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80
+description: Cosmos is an ever-expanding network of decentralized and interconnected blockchains.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -10,8 +10,9 @@ author:
 tags: 
   - blockchain
 ---
-## What is Cosmos?
 
-Cosmos is a network of interconnected blockchains. Cosmosa also designates the set of tools and protocols that facilitate the development, deployment and interconnection of blockchains.
+Cosmos is the internet of blockchains, an ecosystem of apps and services that exchange digital assets and data via [IBC (Inter-Blockchain Communication) protocol](/learn/faq/what-is-ibc).
 
-> Read about Cosmos [https://cosmos.network/intro](https://cosmos.network/intro)
+Cosmos envisions that interoperable blockchain technology will make the world economy more resilient through decentralization, more accountable through transparency, and more efficient through programmable value. The future economy will consist of over a million interconnected blockchains used to exchange digitized real-world assets and provably scarce digital assets.
+
+> [Introduction to Cosmos](https://cosmos.network/intro)

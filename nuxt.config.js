@@ -1,9 +1,17 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
+  ssr: true,
+  // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
+  generate: {
+    fallback: false,
+    routes: ['/', '404'],
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -12,7 +20,12 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Stargate | Cosmos Network',
+    titleTemplate: (titleChunk) => {
+      // If head.title is undefined or blank then we don't need the hyphen
+      return titleChunk
+        ? `${titleChunk} - Cosmos: The Internet of Blockchains`
+        : 'Cosmos: The Internet of Blockchains'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,31 +33,35 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       // Open Graph
-      { hid: 'og:site_name', property: 'og:site_name', content: 'Stargate' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Cosmos: The Internet of Blockchains',
+      },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Stargate | Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stargate.cosmos.network',
+        content: 'https://cosmos.network',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stargate.cosmos.network/og-image.jpg',
+        content: 'https://cosmos.network/og-image.jpg',
       },
       // Twitter Card
       {
@@ -56,23 +73,23 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Stargate | Cosmos Network',
+        content: 'Cosmos: The Internet of Blockchains',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'The Internet of Blockchains is on the horizon, bringing interoperability and more to the Cosmos ecosystem.',
+          'Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://stargate.cosmos.network/og-image.jpg',
+        content: 'https://cosmos.network/og-image.jpg',
       },
       {
         hid: 'twitter:image:alt',
         name: 'twitter:image:alt',
-        content: 'Stargate',
+        content: 'Cosmos: The Internet of Blockchains',
       },
     ],
     link: [
@@ -130,10 +147,14 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/ga.client.js', '~/plugins/vue-scrollto.client.js'],
-  env: {
-    GITHUB_PERSONAL_TOKEN: process.env.GITHUB_PERSONAL_TOKEN,
-  },
+  plugins: [
+    '~/plugins/ga.client.js',
+    '~/plugins/vue-scrollto.client.js',
+    '~/plugins/vue-stripe-menu.client.js',
+    '~/plugins/vue-kinesis.client.js',
+    '~/plugins/v-tooltip.client.js',
+  ],
+  env: {},
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -149,9 +170,18 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode',
   ],
   optimizedImages: {
     optimizeImages: true,
+  },
+  // To fix flashes on the clientside
+  // Set preference as dark
+  // https://color-mode.nuxtjs.org/#caveats
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'dark',
   },
   styleResources: {
     stylus: [
@@ -162,12 +192,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    transpile: ['vue-kinesis', 'v-tooltip'],
     // https://nuxtjs.org/faq/postcss-plugins/#recommended-method
     postcss: {
       plugins: {
@@ -177,6 +208,18 @@ export default {
         // To change the postcss-preset-env settings
         autoprefixer: {},
       },
+    },
+  },
+  sitemap: {
+    hostname: 'https://cosmos.network',
+    exclude: ['/design/**', '/learn/tag/**'],
+    routes() {
+      return getRoutes()
+    },
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
     },
   },
 }

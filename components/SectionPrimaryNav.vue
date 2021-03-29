@@ -1,179 +1,544 @@
 <template>
-  <div class="nav-inner">
-    <nav class="nav nav-primary" role="navigation">
-      <NuxtLink
-        to="/"
-        :class="['logos', this.$route.path != '/' && ' not-home']"
-      >
-        <logo-cosmos-wordmark class="logo logo-cosmos" />
-        <logo-stargate-wordmark class="logo logo-stargate" />
-      </NuxtLink>
-      <span class="sr-only">Cosmos – Stargate</span>
-      <ul>
-        <li>
-          <NuxtLink to="/learn/faq" class="text tm-rf0 tm-medium tm-lh-title"
-            >Learn</NuxtLink
-          >
-        </li>
-        <!-- <li>
-          <NuxtLink to="/build" class="text tm-rf0 tm-medium tm-lh-title"
-            >Build</NuxtLink
-          >
-        </li>
-        <li>
-          <NuxtLink to="/explore" class="text tm-rf0 tm-medium tm-lh-title"
-            >Explore</NuxtLink
-          >
-        </li> -->
-      </ul>
-    </nav>
+  <div class="navs">
     <nav
-      v-if="
-        this.$route.path === '/testnets/wallets-explorers-exchanges' ||
-        this.$route.path === '/testnets/community' ||
-        this.$route.path === '/testnets/validator'
-      "
-      class="nav nav-secondary"
+      class="nav nav-primary tm-container tm-wrapper"
       role="navigation"
+      :class="{ 'is-active': isActive }"
     >
-      <ul>
-        <li>
-          <tm-button
-            to-link="internal"
-            to="/testnets"
-            size="l"
-            variant="text"
-            color="var(--white)"
-            glow
-            ><span class="icon__left">←</span>Testnets
-          </tm-button>
-        </li>
-        <li>
-          <tm-button
-            to-link="internal"
-            to="https://github.com/cosmosdevs/stargate#stargate-5-testing"
-            size="l"
-            variant="text"
-            color="var(--white)"
-            glow
-            ><span class="text">GitHub<span class="icon__right">↗️</span></span>
-            <icon-github class="icon" />
-          </tm-button>
-        </li>
-      </ul>
+      <vsm-menu :menu="menu">
+        <!-- The main content for the dropdown list -->
+        <template #default="data">
+          <component :is="data.item.content" class="vsm-content" />
+          <component
+            :is="data.item.secondaryContent"
+            class="vsm-content--secondary"
+          />
+        </template>
+        <!-- Content to the left of the list -->
+        <template #before-nav>
+          <li class="vsm-section vsm-logo-section">
+            <NuxtLink to="/" class="logo tm-title">
+              <logo-cosmos-wordmark class="logo__cosmos" />
+              <span class="sr-only">Cosmos</span>
+            </NuxtLink>
+          </li>
+        </template>
+        <!-- Content to the right of the list -->
+        <template #after-nav>
+          <!-- <li class="vsm-mob-hide">
+            <button
+              class="nav-mobile-toggle"
+              type="button"
+              aria-label="Menu"
+              aria-controls="navigation"
+              :class="{ 'is-active': isActive }"
+              @click="isActive = !isActive"
+            >
+              <span class="nav-mobile-toggle__icon"></span>
+              <span class="sr-only">Menu</span>
+            </button>
+          </li> -->
+          <vsm-mob>
+            <div class="nav-mobile-content tm-wrapper">
+              <ul>
+                <li>
+                  <tm-tabs class="tm-wrapper">
+                    <tm-tab name="Learn" :selected="true">
+                      <ul>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/intro"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            >Introduction</tm-link
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >Features</NuxtLink
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/learn/staking"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >What is staking?</NuxtLink
+                          >
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/learn/faq"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >FAQ</NuxtLink
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                    <tm-tab name="Build">
+                      <ul>
+                        <li>
+                          <tm-link
+                            href="https://tutorials.cosmos.network"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Tutorials</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://docs.cosmos.network"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Documentation</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/sdk"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Cosmos SDK</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://ibcprotocol.org"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>IBC</span></tm-link
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                    <tm-tab name="Explore">
+                      <ul>
+                        <li>
+                          <NuxtLink
+                            to="/ecosystem/tokens"
+                            class="tm-rf0 tm-lh-title tm-link"
+                          >
+                            <span>Tokens</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/ecosystem/apps"
+                            class="tm-rf0 tm-lh-title tm-link"
+                          >
+                            <span>Ecosystem</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/ecosystem/wallets"
+                            class="tm-rf0 tm-lh-title tm-link"
+                          >
+                            <span>Wallets</span>
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/community"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Community</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/events"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Events</span></tm-link
+                          >
+                        </li>
+                        <li>
+                          <tm-link
+                            href="https://v1.cosmos.network/contributors"
+                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                          >
+                            <span>Contributors</span></tm-link
+                          >
+                        </li>
+                      </ul>
+                    </tm-tab>
+                  </tm-tabs>
+                </li>
+              </ul>
+            </div>
+            <NuxtLink to="/learn/get-atom">
+              <div class="nav-mobile-bottom tm-wrapper">
+                <div class="wrapper">
+                  <div class="text">
+                    <div class="title tm-rf0 tm-lh-copy tm-title">
+                      Get ATOM &#8594;
+                    </div>
+                    <div class="subtitle tm-rf-1 tm-lh-copy tm-muted">
+                      Four simple steps to get ATOM and start earning rewards.
+                    </div>
+                  </div>
+                  <div class="graphics">
+                    <graphics-validator :coins="3" class="graphics__item" />
+                  </div>
+                </div>
+              </div>
+            </NuxtLink>
+          </vsm-mob>
+        </template>
+      </vsm-menu>
     </nav>
+
+    <!-- Uncomment for secondary nav -->
+    <!-- <nav v-if="secondary" class="nav nav-secondary" role="navigation">
+      <section-secondary-nav />
+    </nav> -->
+
+    <!-- <nav
+      v-if="isActive"
+      :class="{ 'is-active': isActive }"
+      class="nav nav-mobile-container"
+    >
+      <div class="nav-mobile-content tm-wrapper">
+        <ul>
+          <li>
+            <NuxtLink to="/" class="text tm-rf3 tm-bold tm-lh-title tm-link"
+              >Learn</NuxtLink
+            >
+            <ul>
+              <li>
+                <tm-link
+                  href="https://v1.cosmos.network/intro"
+                  class="tm-rf0 tm-lh-title tm-link"
+                  >Introduction</tm-link
+                >
+              </li>
+              <li>
+                <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
+                  >Features</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink to="/learn/staking" class="tm-rf0 tm-lh-title tm-link"
+                  >What is staking?</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
+                  >FAQ</NuxtLink
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-mobile-bottom tm-wrapper">
+        <tm-button to-link="internal" to="/learn/get-atom"
+          >Get ATOM <span class="icon__right">&#8594;</span></tm-button
+        >
+      </div>
+    </nav> -->
   </div>
 </template>
 
 <script>
-export default {}
+import learnDropdownTop from '../components/content/learnDropdownTop'
+import learnDropdownBottom from '../components/content/learnDropdownBottom'
+import buildDropdownTop from '../components/content/buildDropdownTop'
+import buildDropdownBottom from '../components/content/buildDropdownBottom'
+import exploreDropdownTop from '../components/content/exploreDropdownTop'
+import exploreDropdownBottom from '../components/content/exploreDropdownBottom'
+import LogoHubBrandmark from '~/components/logos/LogoHubBrandmark.vue'
+import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
+
+export default {
+  components: {
+    LogoCosmosWordmark,
+    LogoHubBrandmark,
+  },
+  data() {
+    return {
+      isActive: false,
+      secondary: false, // temporary to hide secondary nav
+      menu: [
+        {
+          title: 'Learn',
+          dropdown: 'learn',
+          content: learnDropdownTop,
+          secondaryContent: learnDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
+        },
+        {
+          title: 'Build',
+          dropdown: 'build',
+          content: buildDropdownTop,
+          secondaryContent: buildDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
+        },
+        {
+          title: 'Explore',
+          dropdown: 'explore',
+          content: exploreDropdownTop,
+          secondaryContent: exploreDropdownBottom,
+          attributes: {
+            class: 'tm-rf-1 tm-lh-title tm-medium',
+          },
+        },
+      ],
+    }
+  },
+  watch: {
+    $route() {
+      this.isActive = false
+    },
+  },
+}
 </script>
 
-<style lang="stylus" scoped>
+<style src="~/assets/styles/nav.styl" lang="stylus" />
 
-.nav-inner
+<style lang="stylus" scoped>
+$navbar-height = 5rem
+$navbar-mobile-menu = 200
+
+// .dropdown-container
+//   width 482px
+
+.dropdown-container:focus
+  outline 0
+
+.dropdown-wrap
+  display grid
+  grid-template-columns 1fr 1fr
+  column-gap var(--spacing-6)
+  .overline + .title,
+  .subtitle
+    margin-top var(--spacing-3)
+
+.navs
   position relative
   z-index 2
 
 .nav
-  /* if no secondary nav, create similar space */
-  &:first-child:last-child
-    margin-bottom var(--spacing-9)
-
-  &-primary,
-  ul
+  &-inner
+    width 100%
+  &-inner,
+  &-first
     display flex
+    flex-direction row
     align-items center
     justify-content space-between
   ul
     padding 0
   li
     list-style-type none
-    display inline-block
-    + li
-      margin-left var(--spacing-7)
   .logo
-    display block
-    transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
-    color var(--white)
-  .logo-stargate
-    position absolute
-    height 1rem
-    opacity 0
-    visibility hidden
-    transform scale(0.8)
-  .logos
-    position relative
-    width 10rem
-    height 3rem
     display flex
-    justify-content center
-    flex-direction column
-    &.not-home
-      .logo-cosmos
-        transform scale(0.4) translateY(-3.5rem)
-        color var(--gray-600)
-      .logo-stargate
-        opacity 1
-        visibility visible
-        transform scale(1)
-        transition transform .4s $ease-out, opacity .4s $ease-out, visibility 0s
-
-  &-primary ul a
-    display block
+    align-items center
+    gap var(--spacing-4)
     padding var(--spacing-6) 0
-    color var(--white)
-    border-radius $border-radius-2
-    transition all .25s $ease-out
-    &:hover,
+    color inherit
+    transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
     &:focus
+      outline 0
       opacity 0.8
-    &:active
-      opacity 0.6
-      transition-duration .05s
+    svg
+      width auto
+    &__cosmos
+      height 1.125rem
+    &-secondary
+      margin-right auto
+  .vsm-logo-section
+    z-index 1
+  &-secondary .logo
+    svg
+      width 2rem
+      height auto
+  .tm-link
+    position relative
+    display block
+    border-radius $border-radius-2
     // /* exact link will show the primary color for only the exact matching link */
-    &.nuxt-link-exact-active
-      cursor default
-      color var(--gray-600)
-      opacity 1
-  &-secondary
-    .tm-button
-      min-width $max-width['2']
-    .icon
-      display none
-      fill var(--white)
-      width 1.5rem
-      &__reverse
-        transform rotate(180deg)
+  .tm-link.nuxt-link-exact-active
+    cursor default
+    &:after
+      content ""
+      position absolute
+      display block
+      border-right 1px solid
+      height var(--spacing-3)
+      bottom 0
+      left 50%
 
-@media $breakpoint-small
-  .homelink
-    align-self baseline
-    margin-top var(--spacing-1)
-  .logos
-    align-items start
-    height 4rem
-  .logo
-    transform-origin 0% 50%
-  .nav-primary
-    align-items flex-end
+  &-mobile-toggle
+    margin-right calc(-1 * var(--spacing-5))
+    // copying .tm-button styles because we're not using the component for some reason
+    padding var(--spacing-5)
+    text-rendering inherit
+    font-family inherit
+    background none
+    border none
+    outline 0
+    cursor pointer
+    user-select none
+    text-decoration none
+    color inherit
+    &__icon
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      width 1.5rem
+      height 1.5rem
+      pointer-events none
+      &:before,
+      &:after
+        content ""
+        display block
+        height 1px
+        width 100%
+        background-color currentColor
+        transition transform .2s $ease-out
+      &:before
+        transform translateY(-4px) rotate(0deg)
+      &:after
+        transform translateY(4px) rotate(0deg)
+    // &.is-active &__icon
+    //   &:before
+    //     transform translateY(1px) rotate(45deg)
+    //   &:after
+    //     transform translateY(0) rotate(-45deg)
+  &-mobile-container
+    background var(--black)
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index $navbar-mobile-menu
+    display none
+    flex-direction column
+    -webkit-box-orient vertical
+    -webkit-box-direction normal
+  &-mobile-content
+    padding-top $navbar-height
+    padding-bottom var(--spacing-7)
+    overflow-y auto
+    flex-grow 1
+    -webkit-box-flex 1
+    .tm-link
+      padding var(--spacing-4) 0
+    ul
+      margin-left calc(-1 * var(--spacing-7))
+      margin-right calc(-1 * var(--spacing-7))
+      ul
+        margin-left 0
+        margin-right 0
+        .tm-link-external:after
+          bottom auto
+  &-mobile-bottom
+    padding var(--wrap-gap)
+    text-align start
+    background var(--trans-gray-900)
+  &-primary
+    position relative
+    z-index $navbar-mobile-menu + 1
+  &-first
+    gap var(--spacing-7)
+  &-second,
+  &-secondary
+    display none
+
+.nav-mobile-bottom .wrapper
+  display: inline-flex;
+  align-items: center;
+  text-align: start;
+
+.nav-mobile-bottom .wrapper .text
+  text-align start
+
+.wrapper .text
+  white-space normal
+
+.wrapper .text .overline + .title,
+.wrapper .text .subtitle
+  margin-top var(--spacing-3)
+
+.wrapper .graphics
+  display flex
+  justify-content center
+  position relative
+  z-index 0
+
+  &__item
+    height auto
+    width 70%
+    margin-top calc(-1 * var(--spacing-8))
+    max-width 12rem
 
 @media $breakpoint-xsmall-only
+  .wrapper .graphics
+    display none
+
+@media $breakpoint-large-max
   .nav
-    &-primary
+    &-primary.is-active
+      background var(--bg)
+      .light-mode &
+        background var(--fg)
+    &-first
+      flex 1 1
+    .tm-link
+      &.nuxt-link-exact-active:after
+        transform rotate(90deg)
+        left -15px
+        bottom 50%
+        transform-origin bottom
+    &-mobile-container.is-active
+      display flex
+
+@media $breakpoint-large
+  .nav
+    ul
+      margin-right calc(-1 * var(--spacing-5))
+      margin-left calc(-1 * var(--spacing-5))
+      display flex
       justify-content center
-      flex-direction column
-    .logo-cosmos
-      max-height 1.5rem
-      width auto
-    .logo-stargate
-      height 0.75rem
-    .logos.not-home
-      .logo-cosmos
-        transform scale(0.5) translateY(-2.5rem)
-    &-secondary
-      .text
-        display none
-      .icon
-        display block
+    &-first
+      flex 1 1 0%
+    &-second
+      display block
+      grid-columns 1
+    &-last
+      flex 1 1 0%
+    &-mobile-toggle
+      display none
+
+  .nav-primary
+    .logo-secondary
+      display none
+    // .nav-inner
+    //   display grid
+    //   grid-template-columns repeat(3, 1fr)
+
+  .nav-second .nuxt-link-exact-active:before
+    content ""
+    position absolute
+    display block
+    border-bottom 1px solid
+    width calc(1rem + 1px)
+    bottom -1px
+    left 50%
+    margin-left -0.5rem
+
+  .nav-secondary
+    display flex
+    border-top 1px solid var(--white-100)
+    .light-mode &
+      border-top-color var(--trans-gray-900)
+    margin-top -1px
 </style>

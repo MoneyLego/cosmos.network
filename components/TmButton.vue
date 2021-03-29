@@ -3,7 +3,7 @@
   <nuxt-link
     v-if="toLink === 'internal'"
     :to="to"
-    v-bind="{ type, disabled }"
+    v-bind="{ disabled }"
     :class="[
       'tm-button',
       `tm-button__size__${size}`,
@@ -11,13 +11,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--border-color': borderColor,
-      '--color': color,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -29,7 +25,7 @@
     :href="href"
     target="_blank"
     rel="noreferrer noopener"
-    v-bind="{ type, target, href, rel, disabled }"
+    v-bind="{ target, href, rel, disabled }"
     :class="[
       'tm-button',
       `tm-button__size__${size}`,
@@ -37,13 +33,10 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      'tm-button__external',
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--border-color': borderColor,
-      '--color': color,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -60,13 +53,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--border-color': borderColor,
-      '--color': color,
-    }"
+    :style="_styles"
     aria-disabled="true"
   >
     <span class="tm-button__content">
@@ -85,13 +74,9 @@
       'tm-lh-title',
       'tm-medium',
       glow && 'tm-button__glow',
-      styles,
+      _classes,
     ]"
-    :style="{
-      '--background-color': backgroundColor,
-      '--border-color': borderColor,
-      '--color': color,
-    }"
+    :style="_styles"
   >
     <span class="tm-button__content">
       <slot />
@@ -121,21 +106,42 @@ export default {
      */
     backgroundColor: {
       type: String,
-      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+      default: null,
+    },
+    /**
+     * CSS color of light mode background
+     */
+    lightBackgroundColor: {
+      type: String,
+      default: null,
     },
     /**
      * CSS color of border
      */
     borderColor: {
       type: String,
-      default: 'rgb(80, 100, 251)', // TODO: use a color variable
+      default: null,
     },
     /**
-     * CSS color of border
+     * CSS color of light mode border
+     */
+    lightBorderColor: {
+      type: String,
+      default: null,
+    },
+    /**
+     * CSS color of color
      */
     color: {
       type: String,
-      default: 'var(--white)',
+      default: null,
+    },
+    /**
+     * CSS color of light mode color
+     */
+    lightColor: {
+      type: String,
+      default: null,
     },
     /**
      * Glow style
@@ -156,7 +162,7 @@ export default {
      */
     type: {
       type: String,
-      default: 'submit',
+      default: null,
     },
     /**
      * toLink: `anchor` | `internal` | `external`
@@ -202,7 +208,7 @@ export default {
     },
   },
   computed: {
-    styles() {
+    _classes() {
       let classes = this.classes
       switch (this.size) {
         case 's':
@@ -219,36 +225,41 @@ export default {
       }
       return classes
     },
+    _styles() {
+      const styles = {}
+      const lightMode = this.$nuxt.$colorMode.value === 'light'
+      const backgroundColor = lightMode
+        ? this.lightBackgroundColor
+        : this.backgroundColor
+      const borderColor = lightMode ? this.lightBorderColor : this.borderColor
+      const color = lightMode ? this.lightColor : this.color
+
+      if (backgroundColor) styles['--bg-color'] = backgroundColor
+      if (borderColor) styles['--border-color'] = borderColor
+      if (color) styles['--color'] = color
+
+      return styles
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
 .tm-button
-  // resets
-  appearance none
-  padding 0
-  text-rendering inherit
-  font-family inherit
-  background none
-  border none
-  outline 0
-  cursor pointer
-  user-select none
-  text-decoration none
-  &::-moz-focus-inner
-    border 0
-    padding 0
+  // default colors for contained variant
+  --bg-color var(--title)
+  --border-color var(--title)
+  --color var(--bg)
 
   // base
   position relative
   display inline-flex
   align-items center
   justify-content center
-  text-align inherit
   color var(--color)
-  border-radius 0.35em // relative border-radius
+  border-radius 0.47em // relative border-radius
   transition all .25s $ease-out
+
   &:active
     opacity 0.88
     transition-duration .05s
@@ -260,7 +271,7 @@ export default {
       position absolute
       border-radius inherit
       transform translateZ(0)
-      z-index -1
+      z-index 0 // may cause unintended overlays
       opacity 0.4
       transition background-position .4s $ease-out, opacity .5s $ease-out
     &:hover,
@@ -274,6 +285,8 @@ export default {
 
   /* text variant */
   &__variant__text
+    --color var(--link)
+
     &:hover,
     &:focus
       opacity 0.8
@@ -282,6 +295,9 @@ export default {
 
   /* outlined variant */
   &__variant__outlined
+    --border-color var(--link)
+    --color var(--link)
+
     &::after,
     &.tm-button__glow::before
       border 0.0625rem solid var(--border-color)
@@ -290,8 +306,10 @@ export default {
       position absolute
       trbl 0
       border-radius inherit
-      opacity 0.2
+      opacity 0.33
       transition opacity .25s $ease-out
+      .light-mode &
+        opacity 1
     &.tm-button__glow::before // glow
       trbl -0.0625em
       filter blur(0.4rem)
@@ -302,7 +320,7 @@ export default {
 
   /* contained variant */
   &__variant__contained
-    background var(--background-color)
+    background var(--bg-color)
     background-size 200% auto
     box-shadow var(--elevation-4)
     hover-raise -1px
@@ -346,6 +364,8 @@ export default {
     padding-bottom var(--spacing-6)
 
   &__content
+    position relative
+    z-index 1
     display flex
     flex-wrap wrap
 
@@ -361,7 +381,22 @@ export default {
   &:hover,
   &:focus
     >>> .icon__right
-      transform translateX(0.25rem)
+      transform translateX(10%)
     >>> .icon__left
-      transform translateX(-0.25rem)
+      transform translateX(-10%)
+    >>> .icon__down
+      transform translateY(10%)
+    .tm-button__external&
+      >>> .icon__right
+        transform translate(10%, -10%)
+      >>> .icon__down
+        transform translateY(10%)
+
+.tm-button + .tm-button
+  margin-top var(--spacing-6)
+
+@media $breakpoint-small
+  .tm-button + .tm-button
+    margin-left var(--spacing-8)
+    margin-top 0
 </style>
