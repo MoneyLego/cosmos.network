@@ -386,7 +386,7 @@ export default {
       transform translateX(-10%)
     >>> .icon__down
       transform translateY(10%)
-    .tm-button__external&
+    .tm-button__external.tm-button__variant__text&
       >>> .icon__right
         transform translate(10%, -10%)
       >>> .icon__down
