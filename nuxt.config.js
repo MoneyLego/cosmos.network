@@ -11,6 +11,7 @@ export default {
   // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
   generate: {
     fallback: true,
+    routes: ['/', '404'],
   },
   /*
    ** Headers of the page
