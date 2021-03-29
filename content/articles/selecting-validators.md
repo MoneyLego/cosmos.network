@@ -1,7 +1,7 @@
 ---
 index: 10
 title: How should ATOM holders select validators? 
-description: Delegators are encouraged to visit validators' respective websites in order to learn more about their operation and security practices.
+description: Delegators are encouraged to visit validators' respective websites to learn more about their operation and security practices.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
