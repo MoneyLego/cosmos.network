@@ -52,30 +52,26 @@
           into the real world.
         </p>
       </div>
-      <kinesis-container class="card card-fundraising">
+      <div class="card card-fundraising">
         <a
           href="https://v1.cosmos.network/contributors"
           rel="noopener noreferrer"
         >
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
+          <div :strength="-5" class="card-inner" type="depth">
+            <div
               :strength="-20"
               tag="h3"
               class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
             >
               Fundraising
-            </kinesis-element>
-            <kinesis-element
-              :strength="-10"
-              tag="figure"
-              class="card__graphics"
-            >
+            </div>
+            <div :strength="-10" tag="figure" class="card__graphics">
               <div class="coins">
                 <img class="coin" src="~/assets/images/coin-atom.svg" />
                 <img class="coin" src="~/assets/images/coin-atom.svg" />
               </div>
-            </kinesis-element>
-            <kinesis-element :strength="-20">
+            </div>
+            <div :strength="-20">
               <p class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title">
                 Get a grant to build.
               </p>
@@ -84,25 +80,21 @@
               >
                 Apply &rarr;
               </p>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </a>
-      </kinesis-container>
-      <kinesis-container class="card card-starport">
+      </div>
+      <div class="card card-starport">
         <nuxt-link to="/starport" rel="noopener noreferrer">
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
+          <div :strength="-5" class="card-inner" type="depth">
+            <div
               :strength="-20"
               tag="h3"
               class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
             >
               Starport
-            </kinesis-element>
-            <kinesis-element
-              :strength="-10"
-              tag="figure"
-              class="card__graphics"
-            >
+            </div>
+            <div :strength="-10" tag="figure" class="card__graphics">
               <div class="graphics">
                 <graphics-dyson-sphere cssid="home_dev_sp">
                   <radialGradient
@@ -110,8 +102,8 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(162.696 101.65) rotate(54.082) scale(516.589)"
+                    gradient-units="userSpaceOnUse"
+                    gradient-transform="translate(162.696 101.65) rotate(54.082) scale(516.589)"
                   >
                     <stop offset="0.260417" stop-color="#171717" />
                     <stop offset="0.727754" stop-color="#0F0F0F" />
@@ -122,8 +114,8 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(469.001 526) rotate(-124.518) scale(307.059 514.113)"
+                    gradient-units="userSpaceOnUse"
+                    gradient-transform="translate(469.001 526) rotate(-124.518) scale(307.059 514.113)"
                   >
                     <stop stop-color="#03D19F" />
                     <stop offset="0.520536" stop-color="#696969" />
@@ -131,8 +123,8 @@
                   </radialGradient>
                 </graphics-dyson-sphere>
               </div>
-            </kinesis-element>
-            <kinesis-element :strength="-20">
+            </div>
+            <div :strength="-20">
               <p class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title">
                 Build a chain in minutes.
               </p>
@@ -141,10 +133,10 @@
               >
                 Get started &rarr;
               </p>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </nuxt-link>
-      </kinesis-container>
+      </div>
     </div>
     <div class="graphics-bottom">
       <graphics-home-dev-bottom class="graphics" />
@@ -153,20 +145,20 @@
       Join the network.
     </div>
     <div class="cards">
-      <kinesis-container class="card card-connect">
+      <div class="card card-connect">
         <a
           href="https://tutorials.cosmos.network/hello-world/tutorial/"
           rel="noopener noreferrer"
         >
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
+          <div :strength="-5" class="card-inner" type="depth">
+            <div
               :strength="-10"
               tag="h3"
               class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
             >
               Connect
-            </kinesis-element>
-            <kinesis-element :strength="-20">
+            </div>
+            <div :strength="-20">
               <p
                 class="card__tagline tm-rf2 tm-lh-title tm-bold tm-title tm-link-external"
               >
@@ -176,8 +168,8 @@
                 Grow the economy of your chain by connecting to Cosmos Hub
                 services via IBC protocol.
               </p>
-            </kinesis-element>
-            <kinesis-element :strength="-10" class="card__icon">
+            </div>
+            <div :strength="-10" class="card__icon">
               <svg
                 width="32"
                 height="32"
@@ -222,25 +214,25 @@
                   stroke-width="1.5"
                 />
               </svg>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </a>
-      </kinesis-container>
-      <kinesis-container class="card card-integrate">
+      </div>
+      <div class="card card-integrate">
         <a
           href="https://discord.gg/vcExX9T"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
+          <div :strength="-5" class="card-inner" type="depth">
+            <div
               :strength="-10"
               tag="h3"
               class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
             >
               Integrate
-            </kinesis-element>
-            <kinesis-element :strength="-20">
+            </div>
+            <div :strength="-20">
               <p
                 class="card__tagline tm-rf2 tm-lh-title tm-bold tm-title tm-link-external"
               >
@@ -250,8 +242,8 @@
                 Get support to bring users to Cosmos by providing services such
                 as exchanges, wallets, and more.
               </p>
-            </kinesis-element>
-            <kinesis-element :strength="-10" class="card__icon">
+            </div>
+            <div :strength="-10" class="card__icon">
               <svg
                 width="34"
                 height="32"
@@ -265,25 +257,25 @@
                   stroke-width="1.5"
                 />
               </svg>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </a>
-      </kinesis-container>
-      <kinesis-container class="card card-validate">
+      </div>
+      <div class="card card-validate">
         <a
           href="https://discord.gg/g8vYRa9zQJ"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
+          <div :strength="-5" class="card-inner" type="depth">
+            <div
               :strength="-10"
               tag="h3"
               class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
             >
               Validate
-            </kinesis-element>
-            <kinesis-element :strength="-20">
+            </div>
+            <div :strength="-20">
               <p
                 class="card__tagline tm-rf2 tm-lh-title tm-bold tm-title tm-link-external"
               >
@@ -293,8 +285,8 @@
                 Join the ranks of trusted and decentralized validator operators
                 in the network, and help secure the Interchain.
               </p>
-            </kinesis-element>
-            <kinesis-element :strength="-10" class="card__icon">
+            </div>
+            <div :strength="-10" class="card__icon">
               <svg
                 width="32"
                 height="32"
@@ -313,10 +305,10 @@
                   stroke-width="1.5"
                 />
               </svg>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </a>
-      </kinesis-container>
+      </div>
     </div>
   </div>
 </template>

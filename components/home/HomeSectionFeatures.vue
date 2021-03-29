@@ -10,16 +10,16 @@
         >
       </p>
     </div>
-    <kinesis-container class="card card-accounts">
-      <kinesis-element :strength="-5" class="card-inner" type="depth">
-        <kinesis-element
+    <div class="card card-accounts">
+      <div :strength="-5" class="card-inner" type="depth">
+        <h3
           :strength="-15"
           tag="h3"
           class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
         >
           Interchain Accounts
-        </kinesis-element>
-        <kinesis-element :strength="-10" tag="figure" class="card__graphics">
+        </h3>
+        <div :strength="-10" tag="figure" class="card__graphics">
           <graphics-navigator-gem class="gem" />
           <svg
             class="trail"
@@ -50,102 +50,102 @@
               </linearGradient>
             </defs>
           </svg>
-        </kinesis-element>
-        <kinesis-element
+        </div>
+        <p
           :strength="-20"
           tag="p"
           class="card__tagline tm-rf3 tm-rf4-m-up tm-lh-title tm-bold tm-title"
         >
           One secure account for all your digital assets.
-        </kinesis-element>
-        <kinesis-element
+        </p>
+        <p
           :strength="-15"
           tag="p"
           class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted"
         >
           Coming soon
-        </kinesis-element>
-      </kinesis-element>
-    </kinesis-container>
-    <kinesis-container class="card card-dex">
-      <kinesis-element :strength="-5" class="card-inner" type="depth">
-        <kinesis-element
+        </p>
+      </div>
+    </div>
+    <div class="card card-dex">
+      <div :strength="-5" class="card-inner" type="depth">
+        <h3
           :strength="-15"
           tag="h3"
           class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
         >
           Decentralized Exchange
-        </kinesis-element>
-        <kinesis-element :strength="-10" tag="figure" class="card__graphics">
+        </h3>
+        <figure :strength="-10" tag="figure" class="card__graphics">
           <graphics-coin-stack class="coin-stack" />
-        </kinesis-element>
-        <kinesis-element
+        </figure>
+        <p
           :strength="-20"
           tag="p"
           class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title"
         >
           Swap tokens &amp; collectibles.
-        </kinesis-element>
-        <kinesis-element
+        </p>
+        <p
           :strength="-15"
           tag="p"
           class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted"
         >
           Coming soon
-        </kinesis-element>
-      </kinesis-element>
-    </kinesis-container>
+        </p>
+      </div>
+    </div>
     <div class="cards-features-bottom">
-      <kinesis-container class="card card-pools">
-        <kinesis-element :strength="-5" class="card-inner" type="depth">
-          <kinesis-element
+      <div class="card card-pools">
+        <div :strength="-5" class="card-inner" type="depth">
+          <h3
             :strength="-15"
             tag="h3"
             class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
           >
             Liquidity Pools
-          </kinesis-element>
-          <kinesis-element
+          </h3>
+          <p
             :strength="-20"
             tag="p"
             class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title"
           >
             Provide liquidity.<br />Earn rewards.
-          </kinesis-element>
-          <kinesis-element
+          </p>
+          <p
             :strength="-15"
             tag="p"
             class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted"
           >
             Coming soon
-          </kinesis-element>
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="card card-bridges">
-        <kinesis-element :strength="-5" class="card-inner" type="depth">
-          <kinesis-element
+          </p>
+        </div>
+      </div>
+      <div class="card card-bridges">
+        <div :strength="-5" class="card-inner" type="depth">
+          <h3
             :strength="-15"
             tag="h3"
             class="card__title tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
           >
             Wrapped ETH / BTC
-          </kinesis-element>
-          <kinesis-element
+          </h3>
+          <p
             :strength="-20"
             tag="p"
             class="card__tagline tm-rf3 tm-lh-title tm-bold tm-title"
           >
             + Ethereum.<br />+ Bitcoin.
-          </kinesis-element>
-          <kinesis-element
+          </p>
+          <p
             :strength="-15"
             tag="p"
             class="card__footnote tm-rf-1 tm-rf0-m-up tm-lh-title tm-muted"
           >
             Coming soon
-          </kinesis-element>
-        </kinesis-element>
-      </kinesis-container>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
