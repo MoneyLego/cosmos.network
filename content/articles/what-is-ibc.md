@@ -1,7 +1,7 @@
 ---
 index: 15
 title: What is IBC?
-description: IBC is an acronym for Inter-Blockchain Communication Protocol, which is a protocol for secure message passing between heterogeneous blockchains.
+description: IBC is an acronym for Inter-Blockchain Communication protocol, a protocol for passing secure messages between heterogeneous blockchains.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
