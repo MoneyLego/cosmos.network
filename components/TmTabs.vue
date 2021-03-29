@@ -7,9 +7,13 @@
           :key="index"
           :class="{ 'is-active': tab.isActive }"
         >
-          <a :href="tab.href" role="tab" @click.prevent="selectTab(tab)">{{
-            tab.name
-          }}</a>
+          <a
+            :href="tab.href"
+            role="tab"
+            class="tm-rf3 tm-bold tm-lh-title"
+            @click.prevent="selectTab(tab)"
+            >{{ tab.name }}</a
+          >
         </li>
       </ul>
     </div>
@@ -68,7 +72,7 @@ export default {
 
 .tabs a
   align-items center
-  color var(--gray-600)
+  color var(--white-300)
   justify-content center
   display inline-block
   padding 1.25rem 0
@@ -88,15 +92,12 @@ export default {
   position relative
   z-index 1
   color var(--gray-900)
-  line-height 126.3%
-  font-weight 700
   letter-spacing -0.005em
-  border-bottom 2px solid #3b2ab7
   &:hover,
   &:focus
     border-bottom-color #4251fa
 
 .tabs-details
-  border-bottom 1px solid #282B53
-  padding-bottom 3rem
+  margin-top var(--spacing-7)
+  margin-bottom var(--spacing-8)
 </style>

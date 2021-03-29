@@ -1,7 +1,7 @@
 <template>
-  <div class="dropdown-container">
+  <NuxtLink to="/starport" class="dropdown-container">
     <div class="bottom-wrapper">
-      <NuxtLink to="/starport" class="dropdown-wrap__content">
+      <div>
         <div class="text">
           <div class="overline tm-rf-1 tm-medium tm-lh-title tm-overline">
             Starport
@@ -13,7 +13,7 @@
             Create your own token. Build your own community. Launch today.
           </div>
         </div>
-      </NuxtLink>
+      </div>
       <div class="graphics">
         <svg
           width="203"
@@ -425,7 +425,7 @@
         </svg>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   <div class="feature-dropdown">
     <div class="dropdown--section_title">Design</div>
     <div class="dropdown-wrap">
-      <div class="dropdown-wrap__content type1">
+      <div class="dropdown-wrap__content">
         <component
           :is="dynamicComponent"
           to="/features"
@@ -11,7 +11,7 @@
           <span>Features</span>
         </component>
       </div>
-      <div class="dropdown-wrap__content type1">
+      <div class="dropdown-wrap__content">
         <component
           :is="dynamicComponent"
           to="/learn/staking"
@@ -20,7 +20,7 @@
           <span>Staking</span>
         </component>
       </div>
-      <div class="dropdown-wrap__content type1">
+      <div class="dropdown-wrap__content">
         <component
           :is="dynamicComponent"
           to="/learn/faq"
@@ -32,7 +32,7 @@
     </div>
     <div class="dropdown--section_title">Prototyping</div>
     <div class="dropdown-wrap">
-      <div class="dropdown-wrap__content type1">
+      <div class="dropdown-wrap__content">
         <component
           :is="dynamicComponent"
           to="/learn/staking"
@@ -41,7 +41,7 @@
           <span>Staking 1</span>
         </component>
       </div>
-      <div class="dropdown-wrap__content type1">
+      <div class="dropdown-wrap__content">
         <component
           :is="dynamicComponent"
           to="/learn/staking"

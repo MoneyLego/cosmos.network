@@ -4,13 +4,13 @@
       <div class="left">
         <tm-link
           href="https://tutorials.cosmos.network"
-          class="dropdown-wrap__content type1"
+          class="dropdown-wrap__content"
         >
           <span>Tutorials</span></tm-link
         >
         <tm-link
           href="https://docs.cosmos.network"
-          class="dropdown-wrap__content type1"
+          class="dropdown-wrap__content"
         >
           <span>Documentation</span></tm-link
         >

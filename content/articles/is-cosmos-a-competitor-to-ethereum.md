@@ -1,7 +1,7 @@
 ---
 index: 7
 title: Is Cosmos a competitor to Ethereum?
-description: No, Cosmos embraces Ethereum (ETH) and creates bridges between both ecosystems.
+description: No, Cosmos embraces Ethereum and creates bridges between both ecosystems.
 alt: Article 10
 author: 
   name: SAMUEL L. IPSUM
@@ -11,5 +11,4 @@ tags:
   - blockchain
 ---
 
-No, Cosmos embraces Ethereum (ETH). An upcoming project called the [Gravity Bridge](/features#gravity-bridge) will allow people to bring ETH and ERC20 tokens over to the Cosmos Hub and send Cosmos IBC tokens into the Ethereum ecosystem. Other Cosmos projects like Ethermint bring the Ethereum Virtual Machine to Cosmos, and Sommelier Finance (SOMM) is focused on reducing Ethereum transactions’ costs for decentralized finance (DeFi) applications.
-
+No, Cosmos embraces Ethereum. An upcoming project called the [Gravity Bridge](/features#gravity-bridge) allows you to bring ETH and ERC20 tokens over to the Cosmos Hub and send Cosmos IBC tokens into the Ethereum ecosystem. Other Cosmos projects include Ethermint that brings the Ethereum Virtual Machine to Cosmos and Sommelier Finance (SOMM) that reduces Ethereum transaction costs for decentralized finance (DeFi) applications.
