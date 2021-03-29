@@ -587,6 +587,15 @@ export default {
 .overlap
   margin-right -8px
 
+.center
+  display grid
+  place-items center
+  center()
+  width 100% // safari
+
+.crosshair
+  margin-bottom 7rem
+
 .avatar-item
   background-color transparent
   box-shadow transparent 0px 0px 0px 4px
