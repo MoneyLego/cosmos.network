@@ -1,11 +1,11 @@
 <template>
   <div class="navs">
     <nav
-      class="nav nav-primary"
+      class="nav nav-primary tm-container tm-wrapper"
       role="navigation"
       :class="{ 'is-active': isActive }"
     >
-      <vsm-menu :menu="menu" class="tm-container tm-wrapper">
+      <vsm-menu :menu="menu">
         <!-- The main content for the dropdown list -->
         <template #default="data">
           <component :is="data.item.content" class="vsm-content" />
