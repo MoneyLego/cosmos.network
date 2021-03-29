@@ -110,8 +110,8 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradient-units="userSpaceOnUse"
-                    gradient-transform="translate(91 50) rotate(54) scale(600)"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(162.696 101.65) rotate(54.082) scale(516.589)"
                   >
                     <stop offset="0.260417" stop-color="#171717" />
                     <stop offset="0.727754" stop-color="#0F0F0F" />
@@ -122,12 +122,12 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradient-units="userSpaceOnUse"
-                    gradient-transform="translate(500 540) rotate(-124) scale(261 480)"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(469.001 526) rotate(-124.518) scale(307.059 514.113)"
                   >
                     <stop stop-color="#03D19F" />
                     <stop offset="0.520536" stop-color="#696969" />
-                    <stop offset="1" stop-opacity="0" stop-color="#171717" />
+                    <stop offset="1" stop-color="#171717" stop-opacity="0" />
                   </radialGradient>
                 </graphics-dyson-sphere>
               </div>
