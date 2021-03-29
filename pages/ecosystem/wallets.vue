@@ -9,7 +9,7 @@
             Ecosystem
           </div>
           <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
-            40+ wallets and block explorers for Cosmos
+            {{ allWallets.length }} wallets and block explorers for Cosmos
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
             Discover a wide variety of apps, blockchains, wallets and explorers,
@@ -37,7 +37,9 @@
       </div>
     </div>
 
-    <section-items :items="wallets.records" />
+    <section-items section-title="Web Wallets" :items="webWallets" />
+    <section-items section-title="iOS Wallets" :items="iosWallets" />
+    <section-items section-title="Android Wallets" :items="androidWallets" />
 
     <div class="tm-wrapper tm-container tm-section">
       <tm-crosshair class="center crosshair" />
@@ -47,6 +49,7 @@
 </template>
 
 <script>
+import { orderBy } from 'lodash'
 import { mapGetters } from 'vuex'
 import SectionItems from '~/components/ecosystem/SectionItems.vue'
 
@@ -74,9 +77,44 @@ export default {
   },
   computed: {
     ...mapGetters(['wallets']),
+    allWallets() {
+      return this.hubWallets(this.wallets)
+    },
+    webWallets() {
+      const wallets = this.hubWallets(this.wallets)
+      return wallets.filter((wallet) => wallet.fields.platforms.includes('Web'))
+    },
+    iosWallets() {
+      const wallets = this.hubWallets(this.wallets)
+      return wallets.filter((wallet) => wallet.fields.platforms.includes('iOS'))
+    },
+    androidWallets() {
+      const wallets = this.hubWallets(this.wallets)
+      return wallets.filter((wallet) =>
+        wallet.fields.platforms.includes('Android')
+      )
+    },
   },
   async mounted() {
     await this.$store.commit('initApps')
+  },
+  methods: {
+    hubWallets(wallets) {
+      if (wallets && wallets && wallets.length > 0) {
+        const walletsActive = wallets.filter((wallet) => wallet.fields.active)
+        const walletsWithFields = walletsActive.filter(
+          (wallet) => wallet.fields
+        )
+        const walletsWithTokens = walletsWithFields.filter(
+          (wallet) => wallet.fields.tokens && wallet.fields.tokens.length > 0
+        )
+        const walletsWithAtom = walletsWithTokens.filter((wallet) =>
+          wallet.fields.tokens.includes('ATOM - Cosmos Hub')
+        )
+        return orderBy(walletsWithAtom, ['fields.name'], ['asc'])
+      }
+      return []
+    },
   },
   head() {
     return {
