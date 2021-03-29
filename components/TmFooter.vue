@@ -37,11 +37,11 @@
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
         <a
+          v-for="link in links"
+          :key="url(link)"
           v-tooltip="{
             content: link.title,
           }"
-          v-for="link in links"
-          :key="url(link)"
           :href="url(link)"
           class="social-icons__item tm-link"
           target="_blank"
