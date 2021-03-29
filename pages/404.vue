@@ -3,10 +3,14 @@
     <div class="section-hero section-first">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <div class="text">
-          <div class="overline tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div
+            class="overline tm-rf0 tm-rf1-m-up tm-medium tm-lh-title tm-overline tm-muted"
+          >
             404
           </div>
-          <h1 class="title tm-rf6 tm-bold tm-lh-title">Page Not Found</h1>
+          <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
+            Page Not Found
+          </h1>
           <tm-button to-link="internal" to="/" class="btn"
             >&#8592; Home
           </tm-button>

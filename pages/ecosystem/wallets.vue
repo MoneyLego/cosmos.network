@@ -58,7 +58,7 @@ export default {
     return {
       cards: [
         {
-          href: '/learn/staking',
+          href: '/learn/get-atom',
           graphics: 'graphics-cta-token-holders',
           overline: 'Token Holders',
           title: 'Start staking ->',

@@ -43,7 +43,7 @@
         size="m"
         variant="text"
         class="btn"
-        ><span class="icon__right">&rarr;</span></tm-button
+        ><span class="icon__right">&#8599;</span></tm-button
       >
     </div>
   </div>

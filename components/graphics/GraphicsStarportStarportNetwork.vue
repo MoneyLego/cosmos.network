@@ -1362,13 +1362,6 @@
     width 100%
     height auto
 
-// .layer-foreground
-//   margin-top -11%
-
-@media $breakpoint-xsmall-only
-  .container
-    margin-top 60%
-
 @media $breakpoint-medium
   .container
     padding-bottom 24.5%

@@ -83,6 +83,8 @@ export default {
   .overline
   .title
     width fit-content
+    position relative
+    z-index 1
 
 .graphics
   position absolute
@@ -93,7 +95,7 @@ export default {
   place-items flex-end
 
   &__item
-    width 70%
+    width 80%
     height auto
 
 .title
@@ -104,6 +106,10 @@ export default {
     height auto
     min-height 16rem
     border-radius $border-radius-4
+
+@media $breakpoint-medium
+  .graphics__item
+    width 60%
 
 @media $breakpoint-large
   .cards

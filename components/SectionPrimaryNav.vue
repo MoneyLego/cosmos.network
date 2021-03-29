@@ -17,7 +17,7 @@
         <!-- Content to the left of the list -->
         <template #before-nav>
           <li class="vsm-section vsm-logo-section">
-            <NuxtLink to="/" class="logo">
+            <NuxtLink to="/" class="logo tm-title">
               <logo-cosmos-wordmark class="logo__cosmos" />
               <span class="sr-only">Cosmos</span>
             </NuxtLink>

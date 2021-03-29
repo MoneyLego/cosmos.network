@@ -26,7 +26,7 @@
               class="btn"
               ><span class="icon__left">&#8592;</span>FAQ
             </tm-button>
-            <div class="title tm-rf4 tm-bold tm-lh-title">
+            <div class="title tm-rf4 tm-bold tm-lh-title tm-title">
               {{ article.title }}
             </div>
             <div class="markdown">

@@ -3,13 +3,15 @@
     <div class="section-hero section-first">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <div class="text">
-          <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-muted"
+          >
             Starport
           </div>
-          <h1 class="title tm-rf6 tm-bold tm-lh-title">
+          <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
             The fastest way to a production blockchain.
           </h1>
-          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
             Starport offers everything you need to build, test and launch your
             blockchain with a decentralized worldwide community.
           </p>
@@ -54,7 +56,7 @@
         <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
           What is it?
         </div>
-        <h1 class="title tm-rf5 tm-bold tm-lh-title">
+        <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title">
           The toolkit of leading blockchains.
         </h1>
       </div>
@@ -68,7 +70,7 @@
       </div>
       <div class="bottom grid-col-2">
         <div class="col">
-          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
             Starport is built on top of
             <tm-link
               href="https://github.com/cosmos/cosmos-sdk"
@@ -81,7 +83,7 @@
         </div>
         <div class="col">
           <div class="stat">
-            <div class="stat-value tm-rf7 tm-lh-title tm-bold">
+            <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
               95
               <div class="col">
                 <span class="tm-rf4 tm-lh-title tm-bold super">%</span
@@ -94,7 +96,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="stat">
+          <div class="stat tm-title">
             <div class="stat-value tm-rf7 tm-lh-title tm-bold">
               4
               <div class="col">
@@ -115,7 +117,9 @@
         </div>
         <div class="col">
           <div class="stat">
-            <div class="stat-value tm-rf7 tm-lh-title tm-bold">7 sec</div>
+            <div class="stat-value tm-rf7 tm-lh-title tm-bold tm-title">
+              7 sec
+            </div>
             <p class="stat-subtitle tm-rf0 tm-lh-title">
               Transactions confirmed in seconds.
             </p>
@@ -127,20 +131,22 @@
     <div class="section-cli tm-section tm-container tm-wrapper">
       <div class="top tm-grid-base">
         <div class="graphics">
-          <graphics-starport-cli class="graphics__item" />
+          <div class="graphics__inner">
+            <graphics-starport-cli class="graphics__item" />
+          </div>
         </div>
         <div class="text">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">01</div>
-          <h1 class="title tm-rf5 tm-bold tm-lh-title">
+          <div class="step tm-rf0 tm-medium tm-lh-title tm-overline">01</div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title">
             Build your blockchain in minutes.
           </h1>
-          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
             Use Starport CLI to scaffold and assemble a production-ready
             blockchain in minutes.
           </p>
           <tm-button
             to-link="external"
-            href="https://github.com/tendermint/starport/blob/develop/docs/1%20Introduction/2%20Install.md"
+            href="https://gitpod.io/#https://github.com/tendermint/starport/tree/master"
             size="l"
             variant="text"
             class="btn"
@@ -152,40 +158,40 @@
         <div class="bottom grid-col-2">
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4 class="title tm-rf1 tm-bold tm-lh-title tm-title">
               Create a blockchain in a single command.
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Skip past weeks of writing boilerplate. Create data types unique
               to your chain with powerful scaffolding features.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4 class="title tm-rf1 tm-bold tm-lh-title tm-title">
               Start a dev server with hot reload and state persistence.
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Experiment with your chain in dev mode through token creation,
               token allocation, module configuration, and more.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4 class="title tm-rf1 tm-bold tm-lh-title tm-title">
               Mint a brand new token and send it to the Cosmos Hub.
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Interchain token transfers are native to Starport. Use its
               built-in IBC relayer to send assets and data to other chains.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4 class="title tm-rf1 tm-bold tm-lh-title tm-title">
               Design state-of-the-art interfaces with UI generation.
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Develop your frontend quicker with automatically generated APIs in
               JavaScript, TypeScript, and Vue.
             </p>
@@ -197,62 +203,69 @@
     <div class="section-cloud tm-section tm-container tm-wrapper">
       <div class="top tm-grid-base">
         <div class="text">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">02</div>
-          <h1 class="title tm-rf5 tm-bold tm-lh-title">
-            Preview your blockchain online
+          <div class="step tm-rf0 tm-medium tm-lh-title tm-overline">02</div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title">
+            Preview your blockchain online.
           </h1>
-          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
             Use Starport Cloud to continuously deploy your blockchain
             application in a preview environment.
           </p>
-          <tm-button
-            to-link="external"
-            href="#"
-            size="l"
-            variant="text"
-            class="btn"
+          <tm-button size="l" variant="text" disabled class="btn"
             >Coming soon</tm-button
           >
         </div>
         <div class="graphics">
-          <graphics-starport-cloud class="graphics__item" />
+          <div class="graphics__inner">
+            <graphics-starport-cloud class="graphics__item" />
+          </div>
         </div>
       </div>
       <div class="tm-grid-base">
         <div class="bottom grid-col-2">
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4
+              class="title tm-rf1 tm-bold tm-lh-title tm-title measure-narrower"
+            >
               Instant blockchain deployment
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Run a single command to deploy a preview of your blockchain live.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4
+              class="title tm-rf1 tm-bold tm-lh-title tm-title measure-narrower"
+            >
               Front-end deployment
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Easily preview and develop your client-side app, powered by a
               deployed blockchain.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">
+            <h4
+              class="title tm-rf1 tm-bold tm-lh-title tm-title measure-narrower"
+            >
               Interchain infrastructure
             </h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Send and receive transactions between blockchains (with IBC
               Protocol) via your own relayer.
             </p>
           </div>
           <div class="col">
             <tm-crosshair />
-            <h4 class="title tm-rf1 tm-bold tm-lh-title">Developer tools</h4>
-            <p class="subtitle tm-rf0 tm-lh-copy">
+            <h4
+              class="title tm-rf1 tm-bold tm-lh-title tm-title measure-narrower"
+            >
+              Developer tools
+            </h4>
+            <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
               Test and diagnose any problems with your chain in a production
               environment.
             </p>
@@ -264,28 +277,33 @@
     <div class="section-production">
       <div class="tm-wrapper tm-section tm-container tm-grid-base">
         <div class="text center">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">03</div>
-          <h1 class="title tm-rf5 tm-bold tm-lh-title">
-            Take your blockchain to production
+          <div class="step tm-rf0 tm-medium tm-lh-title tm-overline">03</div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title">
+            Take your blockchain to production.
           </h1>
-          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+          <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
             Use Starport Network to coordinate the launch of your blockchain
             with anyone in the world.
           </p>
+          <tm-button size="l" variant="text" disabled class="btn"
+            >Coming soon</tm-button
+          >
         </div>
       </div>
       <div class="graphics">
-        <graphics-starport-starport-network class="graphics__item" />
+        <div class="graphics__inner">
+          <graphics-starport-starport-network class="graphics__item" />
+        </div>
       </div>
     </div>
 
     <div class="section-sdk tm-section tm-container tm-wrapper">
       <div class="tm-grid-base">
         <div class="text">
-          <div class="step tm-rf1 tm-medium tm-lh-title tm-overline">
+          <div class="step tm-rf0 tm-medium tm-lh-title tm-overline">
             Cosmos SDK
           </div>
-          <h1 class="title tm-rf5 tm-bold tm-lh-title">
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title">
             Build a part of the new economy.
           </h1>
           <tm-button
@@ -351,7 +369,7 @@
             Starport
           </div>
           <div class="title tm-rf5 tm-bold tm-lh-title">
-            Build your own blockchain
+            Build your own blockchain.
           </div>
           <div class="btn-group">
             <tm-button
@@ -387,7 +405,7 @@ export default {
     return {
       cards: [
         {
-          href: '/learn/staking',
+          href: 'https://discord.gg/dkubTXerEW',
           graphics: 'graphics-cta-developer-chat',
           overline: 'Discord',
           title: 'Developer chat ->',
@@ -464,6 +482,14 @@ iframe
   overflow visible
   z-index 0
 
+.section-cli,
+.section-cloud,
+.section-production
+  .graphics
+    display flex
+    flex-direction column
+    align-items center
+
 // Intro
 .section-intro
   .top
@@ -513,9 +539,15 @@ iframe
   .text
     grid-column 1/-1
 
-.section-cli .top .graphics__item
+.section-cli .top .graphics__inner
+  width 220%
+  max-width 64rem
+  margin-left 64%
+
+.section-cli .graphics__item
   width 100%
-  margin-top -18%
+  margin-top -20%
+  margin-bottom -15%
 
 .section-cli .top .text
   .title
@@ -545,11 +577,16 @@ iframe
   .text
     grid-column 1/-1
 
+.section-cloud .graphics__inner
+  width 250%
+  max-width 72rem
+  margin-left -110%
+
 .section-cloud .top .graphics__item
   overflow visible
-  width 140%
-  margin-top -70%
-  margin-left -40%
+  width 100%
+  margin-top -42%
+  margin-bottom -24%
 
 // Production
 .section-production
@@ -562,7 +599,13 @@ iframe
 .section-production .graphics
   position relative
   overflow visible
-  // margin-top 30%
+
+.section-production .graphics__inner
+  width 132%
+  max-width 92rem
+
+.section-production .title
+  max-width 10em
 
 // SDK
 .section-sdk
@@ -591,7 +634,7 @@ iframe
     background var(--white)
 
 .section-cta .top .text
-  padding var(--spacing-10)
+  padding var(--spacing-7)
 
 .section-cta .top .text .overline
   color var(--white-500)
@@ -614,17 +657,21 @@ iframe
   iframe
     height 510px
 
+@media $breapoint-medium
+  .section-cta .top .text
+    padding var(--spacing-10)
+
 @media $breakpoint-large
   .section-intro .logos-list
     grid-template-columns repeat(4, 1fr)
 
   // Cloud
+  .section-cloud .graphics__inner
+    margin-left -10%
+
   .section-cloud .top .graphics__item
-    overflow visible
-    width unset
-    margin-top -40%
-    margin-left 0
-    max-width 50rem
+    margin-top -53%
+    margin-bottom -34%
 
 @media $breakpoint-xl
   // Hero
@@ -651,6 +698,11 @@ iframe
   .section-cli .top
     .graphics
       grid-column 1/span 7
+    .graphics__inner
+      max-width 67rem
+      margin-left 24%
+      margin-top -20%
+      margin-bottom -5%
     .text
       grid-column 8/span 5
 
@@ -666,9 +718,11 @@ iframe
     .graphics
       grid-column 8/span 5
 
+  .section-cloud .graphics__inner
+    margin-left -104%
+
   .section-cloud .top .graphics__item
-    margin-top -88%
-    margin-left -90%
+    margin-top -38%
 
   // Production
 

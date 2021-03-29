@@ -3,7 +3,7 @@
     <div class="section-hero section-first">
       <div class="tm-wrapper tm-container tm-section tm-grid-base">
         <div class="text">
-          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure">
+          <div class="title tm-rf5 tm-bold tm-lh-title tm-measure tm-title">
             Frequently asked questions
           </div>
         </div>
@@ -18,7 +18,7 @@
           :key="articles[item - 1].title"
           class="item"
         >
-          <div class="title tm-rf2 tm-bold tm-lh-copy">
+          <div class="title tm-rf2 tm-bold tm-lh-copy tm-title">
             {{ articles[item - 1].title }}
           </div>
           <div class="desc tm-rf0 tm-lh-copy">
