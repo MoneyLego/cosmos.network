@@ -1,5 +1,5 @@
 <template>
-  <kinesis-container event="scroll" class="container">
+  <div event="scroll" class="container">
     <img src="~/assets/images/bg/home-services-bg.png" class="bg" />
     <graphics-orbit-lines class="orbit" />
     <svg
@@ -10,18 +10,13 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <kinesis-element
-        :strength="-20"
-        type="rotate"
-        transform-origin="50% 50%"
-        tag="g"
-      >
+      <g :strength="-20" type="rotate" transform-origin="50% 50%" tag="g">
         <path
           d="M884.914 275.446C890.408 343.431 839.973 402.981 772.263 408.453C704.552 413.926 645.208 363.249 639.713 295.264C634.219 227.278 684.654 167.729 752.364 162.256C820.075 156.784 879.419 207.461 884.914 275.446Z"
           fill="url(#paint0_radial-330959)"
         />
-      </kinesis-element>
-      <kinesis-element
+      </g>
+      <g
         :strength="-40"
         type="rotate"
         transform-origin="50% 50%"
@@ -32,7 +27,7 @@
           d="M1025.93 501.581C1052.31 515.478 1062.43 548.13 1048.53 574.511C1034.63 600.891 1001.98 611.011 975.602 597.114C949.221 583.217 939.101 550.566 952.998 524.185C966.895 497.804 999.547 487.684 1025.93 501.581Z"
           fill="url(#paint1_radial-904360)"
         />
-      </kinesis-element>
+      </g>
       <defs>
         <filter
           id="filter0_i-182008"
@@ -95,7 +90,7 @@
         </radialGradient>
       </defs>
     </svg>
-  </kinesis-container>
+  </div>
 </template>
 <style lang="stylus" scoped>
 .container

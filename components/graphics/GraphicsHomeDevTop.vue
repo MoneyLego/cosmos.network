@@ -1,5 +1,5 @@
 <template>
-  <kinesis-container event="scroll" class="container">
+  <div event="scroll" class="container">
     <img src="~/assets/images/bg/home-dev-top-bg.png" class="bg" />
     <graphics-orbit-lines class="orbit" />
     <svg
@@ -10,23 +10,18 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <kinesis-element
-        :originY="0"
-        :strength="200"
-        tag="g"
-        filter="url(#filter0_i-414191)"
-      >
+      <g :originY="0" :strength="200" tag="g" filter="url(#filter0_i-414191)">
         <path
           d="M14.9449 144.046C-13.0264 100.715 -0.574825 42.9132 42.7562 14.942C86.0873 -13.0293 143.889 -0.577755 171.861 42.7533C199.832 86.0844 187.38 143.886 144.049 171.858C100.718 199.829 42.9162 187.377 14.9449 144.046Z"
           fill="url(#paint0_radial-636102)"
         />
-      </kinesis-element>
-      <kinesis-element :originY="0" :strength="140" tag="g">
+      </g>
+      <g :originY="0" :strength="140" tag="g">
         <path
           d="M1146.45 138.974C1184.11 159.322 1198.14 206.344 1177.79 244C1157.44 281.655 1110.42 295.686 1072.77 275.337C1035.11 254.989 1021.08 207.967 1041.43 170.311C1061.78 132.656 1108.8 118.625 1146.45 138.974Z"
           fill="url(#paint1_radial-897710)"
         />
-      </kinesis-element>
+      </g>
       <defs>
         <filter
           id="filter0_i-414191"
@@ -87,7 +82,7 @@
         </radialGradient>
       </defs>
     </svg>
-  </kinesis-container>
+  </div>
 </template>
 <style lang="stylus" scoped>
 .container

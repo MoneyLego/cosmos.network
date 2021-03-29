@@ -1,5 +1,5 @@
 <template>
-  <kinesis-container event="scroll" class="container">
+  <div event="scroll" class="container">
     <img src="~/assets/images/bg/home-dev-bottom-bg.png" class="bg" />
     <graphics-orbit-lines class="orbit" strokeWidth="3" />
     <svg
@@ -10,34 +10,24 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <kinesis-element :originY="0" :strength="120" tag="g">
+      <g :originY="0" :strength="120" tag="g">
         <path
           d="M211.182 101.311C237.52 88.853 248.772 57.4032 236.314 31.0655C223.857 4.72786 192.407 -6.52421 166.069 5.93336C139.732 18.3909 128.48 49.8407 140.937 76.1784C153.395 102.516 184.845 113.768 211.182 101.311Z"
           fill="url(#paint1_radial-878107)"
         />
-      </kinesis-element>
-      <kinesis-element
-        :originY="0"
-        :strength="180"
-        tag="g"
-        filter="url(#filter0_ii-474595)"
-      >
+      </g>
+      <g :originY="0" :strength="180" tag="g" filter="url(#filter0_ii-474595)">
         <path
           d="M1159.49 171.131C1110.79 167.422 1068.3 203.893 1064.59 252.592C1060.88 301.291 1097.36 343.776 1146.05 347.485C1194.75 351.194 1237.24 314.723 1240.95 266.024C1244.66 217.325 1208.18 174.84 1159.49 171.131Z"
           fill="url(#paint0_radial-139867)"
         />
-      </kinesis-element>
-      <kinesis-element
-        :originY="0"
-        :strength="80"
-        tag="g"
-        filter="url(#filter1_d-886369)"
-      >
+      </g>
+      <g :originY="0" :strength="80" tag="g" filter="url(#filter1_d-886369)">
         <path
           d="M188.692 232.944C319.89 200.986 452.153 281.436 484.111 412.634C516.068 543.831 435.619 676.095 304.421 708.052C173.224 740.01 40.9602 659.56 9.00257 528.363C-22.9551 397.165 57.4948 264.902 188.692 232.944Z"
           fill="url(#paint2_radial-310831)"
         />
-      </kinesis-element>
+      </g>
       <defs>
         <filter
           id="filter0_ii-474595"
@@ -158,7 +148,7 @@
         </radialGradient>
       </defs>
     </svg>
-  </kinesis-container>
+  </div>
 </template>
 <style lang="stylus" scoped>
 .container

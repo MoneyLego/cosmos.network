@@ -1,69 +1,44 @@
 <template>
-  <kinesis-container event="scroll" class="tm-section tm-container tm-wrapper">
+  <div event="scroll" class="tm-section tm-container tm-wrapper">
     <div class="bg-sunrise-container">
       <graphics-bg-sunrise class="bg-sunrise" :sun="false" />
     </div>
     <div class="graphics graphics-top">
       <div class="coins-top">
         <div class="coin">
-          <kinesis-element
-            :origin-y="0"
-            :strength="50"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-30" type="rotate">
+          <div :origin-y="0" :strength="50" type="translate" axis="y">
+            <div :strength="-30" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :origin-y="0"
-            :strength="60"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-40" type="rotate">
+          <div :origin-y="0" :strength="60" type="translate" axis="y">
+            <div :strength="-40" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :origin-y="0"
-            :strength="80"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="50" type="rotate">
+          <div :origin-y="0" :strength="80" type="translate" axis="y">
+            <div :strength="50" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :origin-y="0"
-            :strength="100"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-60" type="rotate">
+          <div :origin-y="0" :strength="100" type="translate" axis="y">
+            <div :strength="-60" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :strength="200"
-            :origin-y="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="80" type="rotate">
+          <div :strength="200" :origin-y="0" type="translate" axis="y">
+            <div :strength="80" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -94,32 +69,22 @@
     <div class="graphics">
       <div class="coins-bottom">
         <div class="coin">
-          <kinesis-element
-            :strength="60"
-            :origin-y="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="-80" type="rotate">
+          <div :strength="60" :origin-y="0" type="translate" axis="y">
+            <div :strength="-80" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
         <div class="coin">
-          <kinesis-element
-            :strength="120"
-            :origin-y="0"
-            type="translate"
-            axis="y"
-          >
-            <kinesis-element :strength="50" type="rotate">
+          <div :strength="120" :origin-y="0" type="translate" axis="y">
+            <div :strength="50" type="rotate">
               <img src="~/assets/images/coin-atom.svg" />
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </kinesis-container>
+  </div>
 </template>
 
 <style lang="stylus" scoped>
