@@ -1,7 +1,7 @@
 <template>
   <div event="scroll" class="container">
     <img src="~/assets/images/bg/home-dev-bottom-bg.png" class="bg" />
-    <graphics-orbit-lines class="orbit" strokeWidth="3" />
+    <graphics-orbit-lines class="orbit" stroke-width="3" />
     <svg
       class="planets"
       width="1242"

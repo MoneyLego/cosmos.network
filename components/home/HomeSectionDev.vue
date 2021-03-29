@@ -110,8 +110,8 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(91 50) rotate(54) scale(600)"
+                    gradient-units="userSpaceOnUse"
+                    gradient-transform="translate(91 50) rotate(54) scale(600)"
                   >
                     <stop offset="0.260417" stop-color="#171717" />
                     <stop offset="0.727754" stop-color="#0F0F0F" />
@@ -122,8 +122,8 @@
                     cx="0"
                     cy="0"
                     r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(500 540) rotate(-124) scale(261 480)"
+                    gradient-units="userSpaceOnUse"
+                    gradient-transform="translate(500 540) rotate(-124) scale(261 480)"
                   >
                     <stop stop-color="#03D19F" />
                     <stop offset="0.520536" stop-color="#696969" />
