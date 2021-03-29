@@ -52,18 +52,18 @@
           stroke-opacity="0.1"
           stroke-width="0.5"
         />
-        <kinesis-element :strength="15" tag="g">
+        <g :strength="15" tag="g">
           <circle
             cx="426.5"
             cy="159.5"
             r="18.5"
             fill="url(#paint1_radial-056938)"
           />
-        </kinesis-element>
-        <kinesis-element :strength="20" tag="g">
+        </g>
+        <g :strength="20" tag="g">
           filter="url(#filter0_i-962550)">
           <circle cx="187" cy="337" r="130" fill="url(#paint0_radial-219333)" />
-        </kinesis-element>
+        </g>
       </g>
       <defs>
         <filter

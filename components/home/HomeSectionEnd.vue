@@ -13,21 +13,17 @@
       </p>
     </header>
     <div class="cards">
-      <kinesis-container class="card card-intro">
+      <div class="card card-intro">
         <a
           href="https://v1.cosmos.network/intro"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
-              :strength="-10"
-              tag="figure"
-              class="card__graphics"
-            >
+          <div :strength="-5" class="card-inner" type="depth">
+            <figure :strength="-10" tag="figure" class="card__graphics">
               <graphics-home-end-intro class="graphics" />
-            </kinesis-element>
-            <kinesis-element :strength="-20" class="card__text">
+            </figure>
+            <div :strength="-20" class="card__text">
               <div
                 class="card__overline tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
               >
@@ -40,27 +36,27 @@
                 Read the vision of Cosmos and learn about the powerful
                 blockchain technology that makes it possible.
               </p>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </a>
-      </kinesis-container>
-      <kinesis-container class="card card-atom">
+      </div>
+      <div class="card card-atom">
         <nuxt-link to="learn/staking">
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
+          <div :strength="-5" class="card-inner" type="depth">
             <figure class="card__graphics">
               <div class="graphics">
-                <kinesis-element :strength="-15" class="coin">
+                <div :strength="-15" class="coin">
                   <img src="~/assets/images/coin-atom.svg" />
-                </kinesis-element>
-                <kinesis-element :strength="-10" class="coin">
+                </div>
+                <div :strength="-10" class="coin">
                   <img src="~/assets/images/coin-atom.svg" />
-                </kinesis-element>
-                <kinesis-element :strength="-25" class="coin">
+                </div>
+                <div :strength="-25" class="coin">
                   <img src="~/assets/images/coin-atom.svg" />
-                </kinesis-element>
+                </div>
               </div>
             </figure>
-            <kinesis-element :strength="-20" class="card__text">
+            <div :strength="-20" class="card__text">
               <div
                 class="card__overline tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
               >
@@ -73,21 +69,17 @@
                 ATOM secures and governs the Cosmos Hub, the first blockchain in
                 the Cosmos Network.
               </p>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </nuxt-link>
-      </kinesis-container>
-      <kinesis-container class="card card-ecosystem">
+      </div>
+      <div class="card card-ecosystem">
         <nuxt-link to="ecosystem/apps">
-          <kinesis-element :strength="-5" class="card-inner" type="depth">
-            <kinesis-element
-              :strength="-10"
-              tag="figure"
-              class="card__graphics"
-            >
+          <div :strength="-5" class="card-inner" type="depth">
+            <figure :strength="-10" tag="figure" class="card__graphics">
               <graphics-home-end-ecosystem class="graphics" />
-            </kinesis-element>
-            <kinesis-element :strength="-20" class="card__text">
+            </figure>
+            <div :strength="-20" class="card__text">
               <div
                 class="card__overline tm-rf-1 tm-lh-title tm-overline tm-medium tm-muted"
               >
@@ -100,10 +92,10 @@
                 Browse the ever-expanding, diverse collection of apps, services,
                 and tools built on Cosmos to date.
               </p>
-            </kinesis-element>
-          </kinesis-element>
+            </div>
+          </div>
         </nuxt-link>
-      </kinesis-container>
+      </div>
     </div>
   </div>
 </template>
