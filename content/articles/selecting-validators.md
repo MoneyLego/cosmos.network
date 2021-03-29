@@ -12,7 +12,7 @@ tags:
   - atom
 ---
 
-In order to select validators, ATOM holders have access to a range of information directly in [Keplr](https://wallet.keplr.app) or other Cosmos block explorers like [Mintscan](https://www.mintscan.io/cosmos/validators):
+To select validators, ATOM holders have access to a range of information directly in [Keplr](https://wallet.keplr.app) or other Cosmos block explorers like [Mintscan](https://www.mintscan.io/cosmos/validators):
 
 - **Validator's moniker**: Name of the validator candidate.
 - **Validator's description**: Description provided by the validator operator.
