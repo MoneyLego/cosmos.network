@@ -19,10 +19,18 @@
           <div class="btn-group">
             <tm-button
               to-link="internal"
+              to="/ecosystem/tokens"
+              size="m"
+              class="btn"
+              variant="text"
+              >Tokens
+            </tm-button>
+            <tm-button
+              to-link="internal"
               to="/ecosystem/apps"
               size="m"
-              variant="text"
               class="btn"
+              variant="text"
               >Apps &amp; Services
             </tm-button>
             <tm-button

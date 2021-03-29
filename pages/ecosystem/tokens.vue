@@ -16,6 +16,31 @@
             <strong>{{ marketcap }} billion USD</strong> in digital assets
             across {{ tokens.length }} apps and services.
           </p>
+          <div class="btn-group">
+            <tm-button
+              to-link="internal"
+              to="/ecosystem/tokens"
+              size="m"
+              class="btn"
+              >Tokens
+            </tm-button>
+            <tm-button
+              to-link="internal"
+              to="/ecosystem/apps"
+              size="m"
+              class="btn"
+              variant="text"
+              >Apps &amp; Services
+            </tm-button>
+            <tm-button
+              to-link="internal"
+              to="/ecosystem/wallets"
+              size="m"
+              variant="text"
+              class="btn"
+              >Wallets
+            </tm-button>
+          </div>
         </div>
       </div>
     </div>
@@ -81,6 +106,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
+// Global
+.btn-group
+  display flex
+  flex-direction column
+  margin-top var(--spacing-8)
+  gap 0 var(--spacing-7)
+
+.grid-col-2
+  display grid
 
 .center
   display grid
