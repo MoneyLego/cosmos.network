@@ -94,12 +94,12 @@ export default {
       currentIndex: 8,
       cards: [
         {
-          href: 'https://v1.cosmos.network/discord',
+          href: 'https://discord.com/invite/vcExX9T',
           overline: 'Discord',
           title: 'Developer chat ->',
         },
         {
-          href: 'https://v1.cosmos.network/telegram',
+          href: 'https://t.me/cosmosproject',
           overline: 'Telegram',
           title: 'Community chat ->',
         },
