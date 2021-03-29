@@ -115,6 +115,7 @@ svg
   top -9%
   max-width none
   filter blur(10px)
+  user-select none
 
 .fg
   position absolute

@@ -46,6 +46,7 @@
   max-width none
   margin-left 1%
   filter blur(10px)
+  user-select none
 
 svg
   position relative

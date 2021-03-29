@@ -93,6 +93,7 @@ svg
 
 .bg
   width 100%
+  user-select none
   filter blur(10px)
 
 .orbit

@@ -138,6 +138,8 @@
   margin-top -36%
   margin-left -14%
   margin-bottom -74%
+  user-select none
+  filter blur(5px)
 
 .fg
   position absolute

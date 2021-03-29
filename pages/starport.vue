@@ -657,7 +657,7 @@ iframe
   iframe
     height 510px
 
-@media $breapoint-medium
+@media $breakpoint-medium
   .section-cta .top .text
     padding var(--spacing-10)
 
@@ -732,8 +732,4 @@ iframe
 
   .section-sdk .bottom
     grid-column 5/span 8
-
-  // Cta
-  // .section-cta .top .text
-  //   grid-column 2/span 10
 </style>

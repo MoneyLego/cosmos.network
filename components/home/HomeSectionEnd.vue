@@ -123,6 +123,7 @@
   margin-left -19%
   margin-top -12%
   filter blur(10px)
+  user-select none
 
 .header
   position relative

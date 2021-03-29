@@ -1147,6 +1147,7 @@ svg
   position relative
   width 100%
   filter blur(10px)
+  user-select none
 
 .planet
   will-change transform

@@ -168,6 +168,7 @@ svg
   margin-top -43%
   z-index 0
   filter blur(7px)
+  user-select none
 
 .orbit
   position absolute
