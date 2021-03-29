@@ -17,4 +17,4 @@ Sovereignty: Blockchains today encourage all economic activity to take place on 
 
 Scalability: No matter how many transactions per second a blockchain can claim, in Cosmos, developers can always improve throughput with horizontal scalability. Scalability can be achieved by (1) duplicating a blockchain to relieve congestion or (2) splitting up the apps on a blockchain into multiple application-specific blockchains. Interchain token transfers allow these multiple chains to continue as one network.
 
-Sustainability: Cosmos blockchains use an efficient Proof-of-Stake (PoS) consensus algorithm for securing the network. This PoS algorithm reduces Cosmos’ carbon footprint by more than 99% compared to Proof-of-Work blockchains like Bitcoin, which roughly has Switzerland’s carbon footprint.
+Sustainability: Cosmos blockchains use an efficient Proof-of-Stake (PoS) consensus algorithm for securing the network. This PoS algorithm reduces the Cosmos carbon footprint by more than 99% compared to Proof-of-Work blockchains like Bitcoin that has a carbon footprint roughly the size of Switzerland.
