@@ -11,7 +11,7 @@ tags:
   - blockchain
 ---
 
-The Cosmos Hub is a blockchain that serves as the economic center of Cosmos. The Hub provides valuable services to the blockchains connected to it, including the largest interchain token exchange, shared security through interchain staking, bridges to Ethereum (ETH) and Bitcoin (BTC), and secure custodianship of digital assets. The Cosmos Hub’s primary token is the [ATOM](/learn/faq/what-is-the-atom-token).
+The Cosmos Hub is a blockchain that serves as the economic center of Cosmos. The Hub provides valuable services to the blockchains connected to it, including the largest interchain token exchange, shared security through interchain staking, bridges to Ethereum (ETH) and Bitcoin (BTC), and secure custodianship of digital assets. The Cosmos Hub’s primary token is the [ATOM](/learn/faq/what-is-the-atom).
 
 In particular, the Cosmos Hub will provide services such as:
 

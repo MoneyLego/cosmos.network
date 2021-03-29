@@ -11,7 +11,7 @@
             :key="child.title"
             class="nav-item__child tm-rf0 tm-lh-copy"
           >
-            <NuxtLink v-if="!isExternal(child.href)" tag="a" :to="child.href">{{
+            <NuxtLink v-if="isInternal(child.href)" tag="a" :to="child.href">{{
               child.title
             }}</NuxtLink>
             <tm-link v-else :href="child.href" class="tm-link-external">{{
@@ -246,28 +246,8 @@ export default {
       })
       return iconPath
     },
-    isExternal(url) {
-      const match = url.match(
-        /^([^:/?#]+:)?(?:\/\/([^/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/
-      )
-      if (
-        typeof match[1] === 'string' &&
-        match[1].length > 0 &&
-        match[1].toLowerCase() !== location.protocol
-      )
-        return true
-      if (
-        typeof match[2] === 'string' &&
-        match[2].length > 0 &&
-        match[2].replace(
-          new RegExp(
-            ':(' + { 'http:': 80, 'https:': 443 }[location.protocol] + ')?$'
-          ),
-          ''
-        ) !== location.host
-      )
-        return true
-      return false
+    isInternal(url) {
+      return url.startsWith('/')
     },
   },
 }

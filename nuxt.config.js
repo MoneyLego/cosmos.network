@@ -5,12 +5,12 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  // https://github.com/nuxt/nuxt.js/issues/5800
-  ssr: false,
   target: 'static',
+  ssr: true,
   // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
   generate: {
-    fallback: true,
+    fallback: false,
+    routes: ['/', '404'],
   },
   /*
    ** Headers of the page
