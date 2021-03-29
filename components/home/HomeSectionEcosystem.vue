@@ -26,7 +26,11 @@
         >.
       </p>
       <div class="btn-group">
-        <tm-button to-link="internal" to="/intro" size="l" class="btn"
+        <tm-button
+          to-link="external"
+          href="https://v1.cosmos.network/intro"
+          size="l"
+          class="btn"
           >Learn<span class="icon__right">&rarr;</span></tm-button
         >
         <tm-button
