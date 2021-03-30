@@ -1,11 +1,7 @@
 <template>
   <div class="navs">
-    <nav
-      class="nav nav-primary tm-container tm-wrapper"
-      role="navigation"
-      :class="{ 'is-active': isActive }"
-    >
-      <vsm-menu :menu="menu">
+    <nav class="nav nav-primary tm-container" role="navigation">
+      <vsm-menu :menu="menu" class="tm-wrapper">
         <!-- The main content for the dropdown list -->
         <template #default="data">
           <component :is="data.item.content" class="vsm-content" />
@@ -25,19 +21,6 @@
         </template>
         <!-- Content to the right of the list -->
         <template #after-nav>
-          <!-- <li class="vsm-mob-hide">
-            <button
-              class="nav-mobile-toggle"
-              type="button"
-              aria-label="Menu"
-              aria-controls="navigation"
-              :class="{ 'is-active': isActive }"
-              @click="isActive = !isActive"
-            >
-              <span class="nav-mobile-toggle__icon"></span>
-              <span class="sr-only">Menu</span>
-            </button>
-          </li> -->
           <vsm-mob>
             <div class="nav-mobile-content tm-wrapper">
               <ul>
@@ -193,51 +176,6 @@
     <!-- <nav v-if="secondary" class="nav nav-secondary" role="navigation">
       <section-secondary-nav />
     </nav> -->
-
-    <!-- <nav
-      v-if="isActive"
-      :class="{ 'is-active': isActive }"
-      class="nav nav-mobile-container"
-    >
-      <div class="nav-mobile-content tm-wrapper">
-        <ul>
-          <li>
-            <NuxtLink to="/" class="text tm-rf3 tm-bold tm-lh-title tm-link"
-              >Learn</NuxtLink
-            >
-            <ul>
-              <li>
-                <tm-link
-                  href="https://v1.cosmos.network/intro"
-                  class="tm-rf0 tm-lh-title tm-link"
-                  >Introduction</tm-link
-                >
-              </li>
-              <li>
-                <NuxtLink to="/features" class="tm-rf0 tm-lh-title tm-link"
-                  >Features</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink to="/learn/staking" class="tm-rf0 tm-lh-title tm-link"
-                  >What is staking?</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink to="/learn/faq" class="tm-rf0 tm-lh-title tm-link"
-                  >FAQ</NuxtLink
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-mobile-bottom tm-wrapper">
-        <tm-button to-link="internal" to="/learn/get-atom"
-          >Get ATOM <span class="icon__right">&#8594;</span></tm-button
-        >
-      </div>
-    </nav> -->
   </div>
 </template>
 
@@ -258,7 +196,6 @@ export default {
   },
   data() {
     return {
-      isActive: false,
       secondary: false, // temporary to hide secondary nav
       menu: [
         {
@@ -291,11 +228,6 @@ export default {
       ],
     }
   },
-  watch: {
-    $route() {
-      this.isActive = false
-    },
-  },
 }
 </script>
 
@@ -304,9 +236,6 @@ export default {
 <style lang="stylus" scoped>
 $navbar-height = 5rem
 $navbar-mobile-menu = 200
-
-// .dropdown-container
-//   width 482px
 
 .dropdown-container:focus
   outline 0
@@ -374,56 +303,6 @@ $navbar-mobile-menu = 200
       bottom 0
       left 50%
 
-  &-mobile-toggle
-    margin-right calc(-1 * var(--spacing-5))
-    // copying .tm-button styles because we're not using the component for some reason
-    padding var(--spacing-5)
-    text-rendering inherit
-    font-family inherit
-    background none
-    border none
-    outline 0
-    cursor pointer
-    user-select none
-    text-decoration none
-    color inherit
-    &__icon
-      display flex
-      flex-direction column
-      justify-content center
-      align-items center
-      width 1.5rem
-      height 1.5rem
-      pointer-events none
-      &:before,
-      &:after
-        content ""
-        display block
-        height 1px
-        width 100%
-        background-color currentColor
-        transition transform .2s $ease-out
-      &:before
-        transform translateY(-4px) rotate(0deg)
-      &:after
-        transform translateY(4px) rotate(0deg)
-    // &.is-active &__icon
-    //   &:before
-    //     transform translateY(1px) rotate(45deg)
-    //   &:after
-    //     transform translateY(0) rotate(-45deg)
-  &-mobile-container
-    background var(--black)
-    position fixed
-    top 0
-    left 0
-    right 0
-    bottom 0
-    z-index $navbar-mobile-menu
-    display none
-    flex-direction column
-    -webkit-box-orient vertical
-    -webkit-box-direction normal
   &-mobile-content
     padding-top $navbar-height
     padding-bottom var(--spacing-7)
@@ -498,8 +377,6 @@ $navbar-mobile-menu = 200
         left -15px
         bottom 50%
         transform-origin bottom
-    &-mobile-container.is-active
-      display flex
 
 @media $breakpoint-large
   .nav
