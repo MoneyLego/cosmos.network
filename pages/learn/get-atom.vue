@@ -23,7 +23,7 @@
           <div class="title tm-rf3 tm-bold tm-lh-title">Before you begin</div>
         </div>
         <div class="cards-wrapper">
-          <NuxtLink to="/learn/faq/what-is-the-atom" class="card-item">
+          <nuxt-link to="/learn/faq/what-is-the-atom" class="card-item">
             <div
               class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
             >
@@ -32,8 +32,8 @@
             <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
               What is the ATOM token?
             </div>
-          </NuxtLink>
-          <NuxtLink to="/learn/faq/what-is-staking" class="card-item">
+          </nuxt-link>
+          <nuxt-link to="/learn/faq/what-is-staking" class="card-item">
             <div
               class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
             >
@@ -42,8 +42,8 @@
             <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
               What is staking?
             </div>
-          </NuxtLink>
-          <NuxtLink to="/learn/faq/what-is-a-wallet" class="card-item">
+          </nuxt-link>
+          <nuxt-link to="/learn/faq/what-is-a-wallet" class="card-item">
             <div
               class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted"
             >
@@ -52,7 +52,7 @@
             <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
               What is a wallet?
             </div>
-          </NuxtLink>
+          </nuxt-link>
         </div>
       </div>
       <div class="section-step top-gap">

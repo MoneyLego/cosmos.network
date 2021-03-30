@@ -8,17 +8,17 @@
         >
           <span>Introduction</span></tm-link
         >
-        <NuxtLink to="/features" class="dropdown-wrap__content">
+        <nuxt-link to="/features" class="dropdown-wrap__content">
           <span>Features</span>
-        </NuxtLink>
+        </nuxt-link>
       </div>
       <div class="right">
-        <NuxtLink to="/learn/staking" class="dropdown-wrap__content">
+        <nuxt-link to="/learn/staking" class="dropdown-wrap__content">
           <span>What is staking?</span>
-        </NuxtLink>
-        <NuxtLink to="/learn/faq" class="dropdown-wrap__content">
+        </nuxt-link>
+        <nuxt-link to="/learn/faq" class="dropdown-wrap__content">
           <span>FAQ</span>
-        </NuxtLink>
+        </nuxt-link>
       </div>
     </div>
   </div>

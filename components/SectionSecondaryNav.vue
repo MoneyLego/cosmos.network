@@ -1,29 +1,31 @@
 <template>
   <div class="nav-inner tm-container tm-wrapper">
     <div class="nav-first">
-      <NuxtLink to="/" class="logo tm-rf-1 tm-rf0-m-up tm-medium tm-lh-solid">
+      <nuxt-link to="/" class="logo tm-rf-1 tm-rf0-m-up tm-medium tm-lh-solid">
         <logo-hub-brandmark class="logo__hub" />Hub
-      </NuxtLink>
+      </nuxt-link>
     </div>
     <div class="nav-second">
       <ul>
         <li>
-          <NuxtLink to="/features" class="tm-rf-1 tm-medium tm-lh-title tm-link"
-            >Features</NuxtLink
+          <nuxt-link
+            to="/features"
+            class="tm-rf-1 tm-medium tm-lh-title tm-link"
+            >Features</nuxt-link
           >
         </li>
         <li>
-          <NuxtLink
+          <nuxt-link
             to="/learn/staking"
             class="tm-rf-1 tm-medium tm-lh-title tm-link"
-            >Staking</NuxtLink
+            >Staking</nuxt-link
           >
         </li>
         <li>
-          <NuxtLink
+          <nuxt-link
             to="/learn/faq"
             class="tm-rf-1 tm-medium tm-lh-title tm-link"
-            >FAQ</NuxtLink
+            >FAQ</nuxt-link
           >
         </li>
         <li>

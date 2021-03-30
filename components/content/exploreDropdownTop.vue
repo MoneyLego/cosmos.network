@@ -2,15 +2,15 @@
   <div class="dropdown-container">
     <div class="dropdown-wrap">
       <div class="left">
-        <NuxtLink to="/ecosystem/tokens" class="dropdown-wrap__content">
+        <nuxt-link to="/ecosystem/tokens" class="dropdown-wrap__content">
           <span>Tokens</span>
-        </NuxtLink>
-        <NuxtLink to="/ecosystem/apps" class="dropdown-wrap__content">
+        </nuxt-link>
+        <nuxt-link to="/ecosystem/apps" class="dropdown-wrap__content">
           <span>Ecosystem</span>
-        </NuxtLink>
-        <NuxtLink to="/ecosystem/wallets" class="dropdown-wrap__content">
+        </nuxt-link>
+        <nuxt-link to="/ecosystem/wallets" class="dropdown-wrap__content">
           <span>Wallets</span>
-        </NuxtLink>
+        </nuxt-link>
       </div>
       <div class="right">
         <tm-link

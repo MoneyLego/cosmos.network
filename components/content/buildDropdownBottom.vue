@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/starport" class="dropdown-container">
+  <nuxt-link to="/starport" class="dropdown-container">
     <div class="bottom-wrapper">
       <div>
         <div class="text">
@@ -427,7 +427,7 @@
         </svg>
       </div>
     </div>
-  </NuxtLink>
+  </nuxt-link>
 </template>
 
 <script>

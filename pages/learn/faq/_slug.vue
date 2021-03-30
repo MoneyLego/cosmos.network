@@ -5,11 +5,11 @@
         <div class="tm-section tm-container tm-grid-base">
           <div class="sidebar">
             <!-- <span v-for="(tag, id) in article.tags" :key="id">
-              <NuxtLink :to="`/learn/tag/${tags[tag].slug}`">
+              <nuxt-link :to="`/learn/tag/${tags[tag].slug}`">
                 <span>
                   {{ tags[tag].name }}
                 </span>
-              </NuxtLink>
+              </nuxt-link>
             </span> -->
             <div
               class="subheading tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline"
