@@ -150,9 +150,9 @@ export default {
   plugins: [
     '~/plugins/ga.client.js',
     '~/plugins/vue-scrollto.client.js',
-    '~/plugins/vue-stripe-menu.client.js',
     '~/plugins/vue-kinesis.client.js',
     '~/plugins/v-tooltip.client.js',
+    '~/plugins/vue-stripe-menu.js',
   ],
   env: {},
   /*
