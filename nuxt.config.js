@@ -7,11 +7,11 @@ export default {
    */
   target: 'static',
   ssr: true,
-  // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
   generate: {
     fallback: false,
     routes: ['/', '404'],
   },
+  ignore: 'pages/design/*.vue',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
