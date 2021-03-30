@@ -36,15 +36,14 @@
           </div>
         </div>
         <div class="demo tm-section">
-          <iframe
-            width="100%"
-            height="510"
-            src="https://www.youtube.com/embed/NmytpuD33lY?controls=0"
+          <youtube-lite
+            video="NmytpuD33lY"
             title="Starport v0.15: IBC Hello, world!"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="allowfullscreen"
-          ></iframe>
+            params="controls=0&modestbranding=2&rel=0&enablejsapi=1"
+            style="
+              background-image: url('https://i.ytimg.com/vi/NmytpuD33lY/maxresdefault.jpg');
+            "
+          />
         </div>
       </div>
       <div class="hero-graphics">
@@ -401,7 +400,12 @@
 </template>
 
 <script>
+import YoutubeLite from '~/components/global/YoutubeLite.vue'
+
 export default {
+  components: {
+    YoutubeLite,
+  },
   data() {
     return {
       cards: [
@@ -472,10 +476,6 @@ svg.graphics__item
 .section-hero .subtitle
   margin-top var(--spacing-7)
   center()
-
-iframe
-  border-radius $border-radius-6
-  height 260px
 
 .hero-graphics
   position relative
@@ -653,10 +653,6 @@ iframe
 
   .grid-col-2
     grid-template-columns repeat(2, 1fr)
-
-  // Hero
-  iframe
-    height 510px
 
 @media $breakpoint-medium
   .section-cta .top .text

@@ -180,12 +180,12 @@
 </template>
 
 <script>
-import learnDropdownTop from '../components/content/learnDropdownTop'
-import learnDropdownBottom from '../components/content/learnDropdownBottom'
-import buildDropdownTop from '../components/content/buildDropdownTop'
-import buildDropdownBottom from '../components/content/buildDropdownBottom'
-import exploreDropdownTop from '../components/content/exploreDropdownTop'
-import exploreDropdownBottom from '../components/content/exploreDropdownBottom'
+import buildDropdownTop from '~/components/content/buildDropdownTop'
+import buildDropdownBottom from '~/components/content/buildDropdownBottom'
+import exploreDropdownTop from '~/components/content/exploreDropdownTop'
+import exploreDropdownBottom from '~/components/content/exploreDropdownBottom'
+import learnDropdownBottom from '~/components/content/learnDropdownBottom'
+import learnDropdownTop from '~/components/content/learnDropdownTop'
 import LogoHubBrandmark from '~/components/logos/LogoHubBrandmark.vue'
 import LogoCosmosWordmark from '~/components/logos/LogoCosmosWordmark.vue'
 
