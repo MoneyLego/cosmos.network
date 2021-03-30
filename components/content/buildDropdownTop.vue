@@ -16,7 +16,7 @@
         >
       </div>
       <div class="right">
-        <nuxt-link to="/starport" class="wrapper">
+        <tm-link href="https://v1.cosmos.network/sdk" class="wrapper">
           <div class="icon">
             <img src="~/static/symbols/sdk.svg" />
           </div>
@@ -24,7 +24,7 @@
             <div class="title tm-rf0 tm-lh-copy">Cosmos SDK</div>
             <div class="desc tm-rf-1 tm-lh-copy">Build a blockchain</div>
           </div>
-        </nuxt-link>
+        </tm-link>
         <tm-link href="https://ibcprotocol.org" class="wrapper">
           <div class="icon">
             <img src="~/static/symbols/ibc.svg" />
