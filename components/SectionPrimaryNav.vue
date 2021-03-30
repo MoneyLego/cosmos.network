@@ -13,10 +13,10 @@
         <!-- Content to the left of the list -->
         <template #before-nav>
           <li class="vsm-section vsm-logo-section">
-            <NuxtLink to="/" class="logo tm-title">
+            <nuxt-link to="/" class="logo tm-title">
               <logo-cosmos-wordmark class="logo__cosmos" />
               <span class="sr-only">Cosmos</span>
-            </NuxtLink>
+            </nuxt-link>
           </li>
         </template>
         <!-- Content to the right of the list -->
@@ -36,24 +36,24 @@
                           >
                         </li>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/features"
                             class="tm-rf0 tm-lh-title tm-link"
-                            >Features</NuxtLink
+                            >Features</nuxt-link
                           >
                         </li>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/learn/staking"
                             class="tm-rf0 tm-lh-title tm-link"
-                            >What is staking?</NuxtLink
+                            >What is staking?</nuxt-link
                           >
                         </li>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/learn/faq"
                             class="tm-rf0 tm-lh-title tm-link"
-                            >FAQ</NuxtLink
+                            >FAQ</nuxt-link
                           >
                         </li>
                       </ul>
@@ -97,28 +97,28 @@
                     <tm-tab name="Explore">
                       <ul>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/ecosystem/tokens"
                             class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Tokens</span>
-                          </NuxtLink>
+                          </nuxt-link>
                         </li>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/ecosystem/apps"
                             class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Ecosystem</span>
-                          </NuxtLink>
+                          </nuxt-link>
                         </li>
                         <li>
-                          <NuxtLink
+                          <nuxt-link
                             to="/ecosystem/wallets"
                             class="tm-rf0 tm-lh-title tm-link"
                           >
                             <span>Wallets</span>
-                          </NuxtLink>
+                          </nuxt-link>
                         </li>
                         <li>
                           <tm-link
@@ -150,7 +150,7 @@
                 </li>
               </ul>
             </div>
-            <NuxtLink to="/learn/get-atom">
+            <nuxt-link to="/learn/get-atom">
               <div class="nav-mobile-bottom tm-wrapper">
                 <div class="wrapper">
                   <div class="text">
@@ -166,7 +166,7 @@
                   </div>
                 </div>
               </div>
-            </NuxtLink>
+            </nuxt-link>
           </vsm-mob>
         </template>
       </vsm-menu>

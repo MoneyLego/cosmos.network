@@ -11,9 +11,9 @@
             :key="child.title"
             class="nav-item__child tm-rf0 tm-lh-copy"
           >
-            <NuxtLink v-if="isInternal(child.href)" tag="a" :to="child.href">{{
+            <nuxt-link v-if="isInternal(child.href)" tag="a" :to="child.href">{{
               child.title
-            }}</NuxtLink>
+            }}</nuxt-link>
             <tm-link v-else :href="child.href" class="tm-link-external">{{
               child.title
             }}</tm-link>
@@ -23,10 +23,10 @@
     </nav>
     <div class="row">
       <nav ref="links" class="nav-bottom tm-rf-1 tm-lh-copy" role="navigation">
-        <NuxtLink to="/" class="logo">
+        <nuxt-link to="/" class="logo">
           <logo-cosmos-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
-        </NuxtLink>
+        </nuxt-link>
         <a
           href="https://cosmos.network/privacy"
           target="_blank"

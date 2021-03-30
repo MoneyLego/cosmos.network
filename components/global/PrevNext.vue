@@ -1,12 +1,12 @@
 <template>
   <div class="tm-section prev-next-container">
-    <NuxtLink v-if="prev" :to="`/learn/faq/${prev.slug}`">
+    <nuxt-link v-if="prev" :to="`/learn/faq/${prev.slug}`">
       {{ prev.title }}
-    </NuxtLink>
+    </nuxt-link>
     <span v-else>&nbsp;</span>
-    <NuxtLink v-if="next" :to="`/learn/faq/${next.slug}`">
+    <nuxt-link v-if="next" :to="`/learn/faq/${next.slug}`">
       {{ next.title }}
-    </NuxtLink>
+    </nuxt-link>
     <span v-else>&nbsp;</span>
   </div>
 </template>

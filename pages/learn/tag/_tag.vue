@@ -1,7 +1,7 @@
 <template>
   <div class="tm-section tm-wrapper tm-container">
     <div>
-      <NuxtLink to="/"><Logo /></NuxtLink>
+      <nuxt-link to="/"><Logo /></nuxt-link>
       <div>
         <div>
           <h1>
@@ -14,13 +14,13 @@
       </div>
     </div>
     <div>
-      <NuxtLink to="/learn/faq">
+      <nuxt-link to="/learn/faq">
         <p>Back to All Articles</p>
-      </NuxtLink>
+      </nuxt-link>
       <h3>Articles tagged {{ tag.name }}:</h3>
       <ul>
         <li v-for="article in articles" :key="article.slug">
-          <NuxtLink :to="`/learn/faq/${article.slug}`">
+          <nuxt-link :to="`/learn/faq/${article.slug}`">
             <!-- <img v-if="article.img" :src="article.img" :alt="article.alt" /> -->
 
             <div>
@@ -30,7 +30,7 @@
                 {{ formatDate(article.updatedAt) }}
               </p>
             </div>
-          </NuxtLink>
+          </nuxt-link>
         </li>
       </ul>
     </div>
