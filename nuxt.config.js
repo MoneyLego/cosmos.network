@@ -210,6 +210,20 @@ export default {
       },
     },
   },
+  // https://stackoverflow.com/questions/52044101/how-to-add-headers-on-nuxt-static-files-response
+  render: {
+    static: {
+      setHeaders(res) {
+        res.setHeader('X-Frame-Options', 'ALLOWALL')
+        res.setHeader('Access-Control-Allow-Origin', '*')
+        res.setHeader('Access-Control-Allow-Methods', 'GET')
+        res.setHeader(
+          'Access-Control-Allow-Headers',
+          'Origin, X-Requested-With, Content-Type, Accept'
+        )
+      },
+    },
+  },
   sitemap: {
     hostname: 'https://cosmos.network',
     exclude: ['/design/**', '/learn/tag/**'],
