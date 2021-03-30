@@ -7,11 +7,11 @@ export default {
    */
   target: 'static',
   ssr: true,
-  // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment#for-client-side-rendering-only
   generate: {
     fallback: false,
     routes: ['/', '404'],
   },
+  ignore: 'pages/design/*.vue',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -207,6 +207,20 @@ export default {
       preset: {
         // To change the postcss-preset-env settings
         autoprefixer: {},
+      },
+    },
+  },
+  // https://stackoverflow.com/questions/52044101/how-to-add-headers-on-nuxt-static-files-response
+  render: {
+    static: {
+      setHeaders(res) {
+        res.setHeader('X-Frame-Options', 'ALLOWALL')
+        res.setHeader('Access-Control-Allow-Origin', '*')
+        res.setHeader('Access-Control-Allow-Methods', 'GET')
+        res.setHeader(
+          'Access-Control-Allow-Headers',
+          'Origin, X-Requested-With, Content-Type, Accept'
+        )
       },
     },
   },
