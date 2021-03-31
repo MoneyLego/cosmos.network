@@ -77,6 +77,13 @@
                           >
                         </li>
                         <li>
+                          <nuxt-link
+                            to="/starport"
+                            class="tm-rf0 tm-lh-title tm-link"
+                            >Starport</nuxt-link
+                          >
+                        </li>
+                        <li>
                           <tm-link
                             href="https://v1.cosmos.network/sdk"
                             class="tm-rf0 tm-lh-title tm-link tm-link-external"
@@ -181,7 +188,6 @@
 
 <script>
 import buildDropdownTop from '~/components/content/buildDropdownTop'
-import buildDropdownBottom from '~/components/content/buildDropdownBottom'
 import exploreDropdownTop from '~/components/content/exploreDropdownTop'
 import exploreDropdownBottom from '~/components/content/exploreDropdownBottom'
 import learnDropdownBottom from '~/components/content/learnDropdownBottom'
@@ -211,7 +217,6 @@ export default {
           title: 'Build',
           dropdown: 'build',
           content: buildDropdownTop,
-          secondaryContent: buildDropdownBottom,
           attributes: {
             class: 'tm-rf-1 tm-lh-title tm-medium',
           },
