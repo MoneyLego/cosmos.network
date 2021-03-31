@@ -9,7 +9,7 @@
             Ecosystem
           </div>
           <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
-            200+ apps and services built on Cosmos
+            {{ activeApps.length }} apps and services built on Cosmos
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
             Discover a wide variety of apps, blockchains, wallets and explorers,
@@ -17,6 +17,14 @@
             across the globe.
           </p>
           <div class="btn-group">
+            <tm-button
+              to-link="internal"
+              to="/ecosystem/tokens"
+              size="m"
+              class="btn"
+              variant="text"
+              >Tokens
+            </tm-button>
             <tm-button
               to-link="internal"
               to="/ecosystem/apps"
@@ -28,15 +36,15 @@
               to-link="internal"
               to="/ecosystem/wallets"
               size="m"
-              variant="text"
               class="btn"
+              variant="text"
               >Wallets
             </tm-button>
           </div>
         </div>
       </div>
     </div>
-    <SectionItems :items="apps.records" />
+    <SectionItems :items="activeApps" />
 
     <div class="tm-wrapper tm-container tm-section">
       <tm-crosshair class="center crosshair" />
@@ -73,6 +81,12 @@ export default {
   },
   computed: {
     ...mapGetters(['apps']),
+    activeApps() {
+      if (this.apps && this.apps.records && this.apps.records.length > 0) {
+        return this.apps.records.filter((app) => app.fields.active)
+      }
+      return []
+    },
   },
   mounted() {
     this.$store.commit('initApps')
