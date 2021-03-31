@@ -1,5 +1,6 @@
 # Redirect URLs (FROM, TO, 301!)
 /atom-protection /learn/staking 301!
+/cap /ecosystem/tokens 301!
 /dev /starport 301!
 /dev/scaling-eth /starport 301!
 /developers /starport 301!

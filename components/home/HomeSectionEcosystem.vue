@@ -35,11 +35,11 @@
         >
         <tm-button
           to-link="internal"
-          to="/ecosystem/apps"
+          to="/ecosystem/tokens"
           size="l"
           variant="text"
           class="btn"
-          >Explore apps<span class="icon__right">&rarr;</span></tm-button
+          >Explore tokens<span class="icon__right">&rarr;</span></tm-button
         >
       </div>
     </div>

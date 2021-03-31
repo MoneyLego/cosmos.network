@@ -1,6 +1,11 @@
 <template>
   <div class="section-items tm-section tm-container tm-wrapper">
-    <CardItem v-for="item in items" :key="item.id" :item="item" />
+    <div class="section-items-heading text log tm-rf3 tm-bold tm-lh-title">
+      {{ sectionTitle }}
+    </div>
+    <div class="card-items">
+      <CardItem v-for="item in items" :key="item.id" :item="item" />
+    </div>
   </div>
 </template>
 
@@ -17,22 +22,26 @@ export default {
       default: () => [],
       required: true,
     },
+    sectionTitle: { type: String, default: '' },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
-.section-items
+.section-items-heading
+  margin-bottom 3rem
+
+.card-items
   display grid
   gap var(--spacing-6)
 
 @media $breakpoint-medium
-  .section-items
+  .card-items
     grid-template-columns 1fr 1fr
     gap var(--spacing-7)
 
 @media $breakpoint-xl
-  .section-items
+  .card-items
     grid-template-columns 1fr 1fr 1fr
     gap var(--spacing-8)
 </style>
