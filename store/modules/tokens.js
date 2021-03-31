@@ -213,6 +213,13 @@ const state = {
       symbol: 'EROWAN',
       price: {},
     },
+    {
+      id: 'bitsong',
+      name: 'BitSong',
+      ecosystemName: 'BitSong',
+      symbol: 'BTSG',
+      price: {},
+    },
   ],
 }
 
