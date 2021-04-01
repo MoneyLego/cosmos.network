@@ -58,7 +58,9 @@
             </form>
             <p class="bottom__footnote tm-measure tm-rf-1 tm-lh-copy">
               Unsubscribe at any time.
-              <a href="https://cosmos.network/privacy">Privacy policy</a>
+              <tm-link href="https://v1.cosmos.network/privacy"
+                >Privacy policy</tm-link
+              >
             </p>
           </div>
         </transition>

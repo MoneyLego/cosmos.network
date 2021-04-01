@@ -17,13 +17,7 @@
           </div>
           <div class="title tm-rf2 tm-bold tm-lh-title">{{ item.title }}</div>
         </nuxt-link>
-        <a
-          v-else
-          :href="item.href"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="card-item"
-        >
+        <tm-link v-else :href="item.href" class="card-item">
           <div v-if="item.graphics" class="graphics">
             <component :is="`${item.graphics}`" class="graphics__item" />
           </div>
@@ -35,7 +29,7 @@
           <div class="title tm-rf2 tm-bold tm-lh-title tm-title">
             {{ item.title }}
           </div>
-        </a>
+        </tm-link>
       </div>
     </div>
   </div>

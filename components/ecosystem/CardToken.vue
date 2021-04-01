@@ -4,19 +4,17 @@
     <div class="token-name">
       <TokenLogo :item="item" />
       <div class="text log tm-rf1 tm-bold tm-lh-copy">
-        <a
+        <tm-link
           v-if="
             item &&
             item.fields &&
             item.fields.website &&
             item.fields.website !== 'x'
           "
-          rel="noreferrer noopener"
           :href="item.fields.website"
-          target="_blank"
         >
           {{ token.name }}
-        </a>
+        </tm-link>
         <span v-else>{{ token.name }}</span>
       </div>
     </div>

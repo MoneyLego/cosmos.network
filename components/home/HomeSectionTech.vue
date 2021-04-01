@@ -16,7 +16,9 @@
     </header>
     <div class="text">
       <p class="tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
-        <a href="cosmos.network/sdk" class="tm-link tm-medium">Cosmos SDK</a>
+        <tm-link href="https://github.com/cosmos/cosmos-sdk" class="tm-medium"
+          >Cosmos SDK</tm-link
+        >
         is a state-of-the-art blockchain framework that powers the Cosmos Hub
         and its rapidly expanding orbit of sovereign chains.
       </p>

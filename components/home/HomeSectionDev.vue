@@ -53,10 +53,7 @@
         </p>
       </div>
       <div class="card card-fundraising">
-        <a
-          href="https://v1.cosmos.network/contributors"
-          rel="noopener noreferrer"
-        >
+        <tm-link href="https://v1.cosmos.network/contributors">
           <div :strength="-5" class="card-inner" type="depth">
             <div
               :strength="-20"
@@ -82,7 +79,7 @@
               </p>
             </div>
           </div>
-        </a>
+        </tm-link>
       </div>
       <div class="card card-starport">
         <nuxt-link to="/starport" rel="noopener noreferrer">
@@ -146,10 +143,7 @@
     </div>
     <div class="cards">
       <div class="card card-connect">
-        <a
-          href="https://tutorials.cosmos.network/hello-world/tutorial/"
-          rel="noopener noreferrer"
-        >
+        <tm-link href="https://tutorials.cosmos.network/hello-world/tutorial/">
           <div :strength="-5" class="card-inner" type="depth">
             <div
               :strength="-10"
@@ -216,14 +210,10 @@
               </svg>
             </div>
           </div>
-        </a>
+        </tm-link>
       </div>
       <div class="card card-integrate">
-        <a
-          href="https://discord.gg/vcExX9T"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <tm-link href="https://discord.gg/vcExX9T">
           <div :strength="-5" class="card-inner" type="depth">
             <div
               :strength="-10"
@@ -259,14 +249,10 @@
               </svg>
             </div>
           </div>
-        </a>
+        </tm-link>
       </div>
       <div class="card card-validate">
-        <a
-          href="https://discord.gg/g8vYRa9zQJ"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <tm-link href="https://discord.gg/g8vYRa9zQJ">
           <div :strength="-5" class="card-inner" type="depth">
             <div
               :strength="-10"
@@ -307,7 +293,7 @@
               </svg>
             </div>
           </div>
-        </a>
+        </tm-link>
       </div>
     </div>
   </div>

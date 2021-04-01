@@ -19,12 +19,7 @@
     </div>
     <ul class="list">
       <li v-for="item in links" :key="item.logo" class="list-item">
-        <a
-          :href="item.url"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="tm-link"
-        >
+        <tm-link :href="item.url">
           <div class="icon">
             <component :is="`icon-${item.logo}`" />
           </div>
@@ -38,7 +33,7 @@
               {{ item.desc }}
             </p>
           </div>
-        </a>
+        </tm-link>
       </li>
     </ul>
   </div>
