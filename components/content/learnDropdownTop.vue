@@ -6,7 +6,7 @@
           href="https://v1.cosmos.network/intro"
           class="dropdown-wrap__content"
         >
-          <span>Introduction</span></tm-link
+          <span class="tm-link-external">Introduction</span></tm-link
         >
         <tm-link href="/features" class="dropdown-wrap__content">
           <span>Features</span>

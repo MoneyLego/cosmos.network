@@ -17,19 +17,19 @@
           href="https://v1.cosmos.network/community"
           class="dropdown-wrap__content"
         >
-          <span>Community</span></tm-link
+          <span class="tm-link-external">Community</span></tm-link
         >
         <tm-link
           href="https://v1.cosmos.network/events"
           class="dropdown-wrap__content"
         >
-          <span>Events</span></tm-link
+          <span class="tm-link-external">Events</span></tm-link
         >
         <tm-link
           href="https://v1.cosmos.network/contributors"
           class="dropdown-wrap__content"
         >
-          <span>Contributors</span></tm-link
+          <span class="tm-link-external">Contributors</span></tm-link
         >
       </div>
     </div>

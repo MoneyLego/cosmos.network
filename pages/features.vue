@@ -101,7 +101,7 @@
           <div class="mid">
             <tm-link
               href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
-              class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
+              class="tm-link-external tm-rf3 tm-bold tm-lh-title"
               >Interchain Accounts</tm-link
             >
             <div
