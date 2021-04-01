@@ -27,25 +27,19 @@
           <logo-cosmos-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <a
-          href="https://cosmos.network/privacy"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="tm-link privacy"
-          >Privacy</a
+        <tm-link href="https://v1.cosmos.network/privacy" class="privacy"
+          >Privacy</tm-link
         >
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
-        <a
+        <tm-link
           v-for="link in links"
           :key="url(link)"
           v-tooltip="{
             content: link.title,
           }"
           :href="url(link)"
-          class="social-icons__item tm-link"
-          target="_blank"
-          rel="noreferrer"
+          class="social-icons__item"
         >
           <svg
             width="24"
@@ -57,7 +51,7 @@
           >
             <path :d="icon(link)" style="pointer-events: none"></path>
           </svg>
-        </a>
+        </tm-link>
       </nav>
     </div>
     <p class="smallprint tm-rf-1 tm-lh-copy">

@@ -29,12 +29,10 @@
           >
         </li>
         <li>
-          <a
+          <tm-link
             href="https://hub.cosmos.network"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="tm-rf-1 tm-medium tm-lh-title tm-link tm-link-external"
-            >Documentation</a
+            class="tm-rf-1 tm-medium tm-lh-title tm-link-external"
+            >Documentation</tm-link
           >
         </li>
       </ul>

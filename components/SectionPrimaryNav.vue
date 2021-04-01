@@ -31,7 +31,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/intro"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                             >Introduction</tm-link
                           >
                         </li>
@@ -63,7 +63,7 @@
                         <li>
                           <tm-link
                             href="https://tutorials.cosmos.network"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Tutorials</span></tm-link
                           >
@@ -71,7 +71,7 @@
                         <li>
                           <tm-link
                             href="https://docs.cosmos.network"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Documentation</span></tm-link
                           >
@@ -86,7 +86,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/sdk"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Cosmos SDK</span></tm-link
                           >
@@ -94,7 +94,7 @@
                         <li>
                           <tm-link
                             href="https://ibcprotocol.org"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>IBC</span></tm-link
                           >
@@ -130,7 +130,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/community"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Community</span></tm-link
                           >
@@ -138,7 +138,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/events"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Events</span></tm-link
                           >
@@ -146,7 +146,7 @@
                         <li>
                           <tm-link
                             href="https://v1.cosmos.network/contributors"
-                            class="tm-rf0 tm-lh-title tm-link tm-link-external"
+                            class="tm-rf0 tm-lh-title tm-link-external"
                           >
                             <span>Contributors</span></tm-link
                           >
