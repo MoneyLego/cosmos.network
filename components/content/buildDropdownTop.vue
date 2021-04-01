@@ -6,13 +6,13 @@
           href="https://tutorials.cosmos.network"
           class="dropdown-wrap__content"
         >
-          <span>Tutorials</span></tm-link
+          <span class="tm-link-external">Tutorials</span></tm-link
         >
         <tm-link
           href="https://docs.cosmos.network"
           class="dropdown-wrap__content"
         >
-          <span>Documentation</span></tm-link
+          <span class="tm-link-external">Documentation</span></tm-link
         >
       </div>
       <div class="right">
@@ -32,7 +32,9 @@
             <img src="~/static/symbols/sdk.svg" />
           </div>
           <div class="text">
-            <div class="title tm-rf0 tm-lh-copy">Cosmos SDK</div>
+            <div class="title tm-rf0 tm-lh-copy tm-link-external">
+              Cosmos SDK
+            </div>
             <div class="desc tm-rf-1 tm-lh-copy">
               Build or extend a blockchain
             </div>

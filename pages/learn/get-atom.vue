@@ -320,7 +320,7 @@
               world, building the new era of the internet.
             </div>
             <div class="grid-wrapper">
-              <a
+              <tm-link
                 v-for="item in links"
                 :key="item.logo"
                 :href="item.url"
@@ -342,7 +342,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </tm-link>
             </div>
             <div class="footer">
               <tm-button
@@ -642,13 +642,14 @@ export default {
   display grid
   grid-template-columns repeat(auto-fit, minmax(24rem, 1fr))
   grid-gap 0 var(--grid-gap-x)
+  row-gap var(--spacing-9)
+  margin-top var(--spacing-9)
 
 .grid-item
   display grid
   grid-auto-flow column
   grid-template-columns min-content 1fr
   gap var(--spacing-7)
-  margin-top var(--spacing-9)
   border-radius $border-radius-5
   hover-raise(-2px)
 

@@ -59,12 +59,8 @@
               </h3>
               <div class="desc tm-rf0 tm-lh-copy tm-measure-narrow">
                 Built on top of the
-                <a
-                  href="https://tendermint.com/core"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="tm-link tm-bold"
-                  >Tendermint BFT consensus engine</a
+                <tm-link href="https://tendermint.com/core" class="tm-bold"
+                  >Tendermint BFT consensus engine</tm-link
                 >, the Hub’s staking module is one of the most efficient
                 proof-of-stake implementations in the world. It enables ATOM
                 token holders to secure the chain by locking their ATOM, in
@@ -103,12 +99,10 @@
             <div class="caption tm-rf0 tm-lh-title">Account System · 2021</div>
           </div>
           <div class="mid">
-            <a
+            <tm-link
               href="https://medium.com/chainapsis/why-interchain-accounts-change-everything-for-cosmos-interoperability-59c19032bf11"
-              class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-              rel="noreferrer noopener"
-              target="_blank"
-              >Interchain Accounts</a
+              class="tm-link-external tm-rf3 tm-bold tm-lh-title"
+              >Interchain Accounts</tm-link
             >
             <div
               class="desc tm-rf0 tm-lh-copy tm-measure tm-measure-narrow-l-up"
@@ -162,12 +156,10 @@
           </div>
           <div class="mid">
             <div class="title">
-              <a
+              <tm-link
                 href="https://github.com/tendermint/liquidity#liquidity-module"
-                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-                rel="noreferrer noopener"
-                target="_blank"
-                >Gravity DEX</a
+                class="tm-link-external tm-rf3 tm-bold tm-lh-title"
+                >Gravity DEX</tm-link
               >
             </div>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
@@ -219,14 +211,12 @@
           </div>
           <div class="mid">
             <h3 class="title">
-              <a
+              <tm-link
                 href="https://blog.althea.net/gravity-bridge"
-                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-                rel="noreferrer noopener"
-                target="_blank"
+                class="tm-link-external tm-rf3 tm-bold tm-lh-title"
               >
                 Gravity Bridge
-              </a>
+              </tm-link>
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
               Backed by billions of dollars of ATOM staked on the Cosmos Hub,
@@ -279,12 +269,10 @@
           </div>
           <div class="mid">
             <h3 class="title">
-              <a
+              <tm-link
                 href="https://github.com/informalsystems/cross-chain-validation/blob/2b7e5ddebd10c9eea743989ca3fbcba990db4987/spec/valset-update-protocol.md"
-                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-                rel="noreferrer noopener"
-                target="_blank"
-                >Interchain Staking</a
+                class="tm-link-external tm-rf3 tm-bold tm-lh-title"
+                >Interchain Staking</tm-link
               >
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
@@ -341,12 +329,10 @@
           </div>
           <div class="mid">
             <h3 class="title">
-              <a
+              <tm-link
                 href="https://github.com/tendermint/cns"
-                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-                rel="noreferrer noopener"
-                target="_blank"
-                >Chain Name Service</a
+                class="tm-link-external tm-rf3 tm-bold tm-lh-title"
+                >Chain Name Service</tm-link
               >
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">
@@ -388,12 +374,10 @@
           </div>
           <div class="mid">
             <h3 class="title">
-              <a
+              <tm-link
                 href="https://github.com/ChorusOne/liquid-staking"
-                class="tm-link tm-link-external tm-rf3 tm-bold tm-lh-title"
-                rel="noreferrer noopener"
-                target="_blank"
-                >Staking Derivatives</a
+                class="tm-link-external tm-rf3 tm-bold tm-lh-title"
+                >Staking Derivatives</tm-link
               >
             </h3>
             <div class="desc tm-rf0 tm-lh-copy tm-measure">

@@ -14,11 +14,7 @@
     </header>
     <div class="cards">
       <div class="card card-intro">
-        <a
-          href="https://v1.cosmos.network/intro"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <tm-link href="https://v1.cosmos.network/intro">
           <div :strength="-5" class="card-inner" type="depth">
             <figure :strength="-10" tag="figure" class="card__graphics">
               <graphics-home-end-intro class="graphics" />
@@ -38,7 +34,7 @@
               </p>
             </div>
           </div>
-        </a>
+        </tm-link>
       </div>
       <div class="card card-atom">
         <nuxt-link to="learn/staking">

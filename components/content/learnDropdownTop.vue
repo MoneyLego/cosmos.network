@@ -6,11 +6,11 @@
           href="https://v1.cosmos.network/intro"
           class="dropdown-wrap__content"
         >
-          <span>Introduction</span></tm-link
+          <span class="tm-link-external">Introduction</span></tm-link
         >
-        <nuxt-link to="/features" class="dropdown-wrap__content">
+        <tm-link href="/features" class="dropdown-wrap__content">
           <span>Features</span>
-        </nuxt-link>
+        </tm-link>
       </div>
       <div class="right">
         <nuxt-link to="/learn/staking" class="dropdown-wrap__content">
