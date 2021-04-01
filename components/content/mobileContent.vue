@@ -14,7 +14,7 @@
                       >Introduction</tm-link
                     >
                   </li>
-                  <li class="item">
+                  <li>
                     <nuxt-link to="/features" class="tm-rf0 tm-lh-title tm-link"
                       >Features</nuxt-link
                     >
