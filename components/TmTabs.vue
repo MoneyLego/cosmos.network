@@ -52,8 +52,8 @@ export default {
   justify-content space-between
   overflow-x auto
   overflow-y hidden
-  margin-left calc(-1 * var(--wrap-gap))
-  margin-right calc(-1 * var(--wrap-gap))
+  // margin-left calc(-1 * var(--wrap-gap))
+  // margin-right calc(-1 * var(--wrap-gap))
   padding-left var(--wrap-gap)
   padding-right var(--wrap-gap)
   scrollbar-width none
@@ -98,7 +98,7 @@ export default {
   z-index 1
   color var(--link)
 
-.tabs-details
-  margin-top var(--spacing-7)
-  margin-bottom var(--spacing-8)
+// .tabs-details
+//   margin-top var(--spacing-7)
+//   margin-bottom var(--spacing-8)
 </style>

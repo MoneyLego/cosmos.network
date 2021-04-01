@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="nav-container">
-      <section-primary-nav />
-    </div>
+    <section-primary-nav />
     <div id="content">
       <!-- all page content here - hidden when mobile nav open -->
       <nuxt />
@@ -39,12 +37,6 @@ export default {
 
 #content
   overflow hidden
-
-.nav-container
-  position absolute
-  top 0
-  left 0
-  right 0
 
 .section-first
   padding-top 5rem // approx navbar max height
