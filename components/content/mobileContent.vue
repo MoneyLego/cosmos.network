@@ -14,7 +14,7 @@
                       >Introduction</tm-link
                     >
                   </li>
-                  <li>
+                  <li class="item">
                     <nuxt-link to="/features" class="tm-rf0 tm-lh-title tm-link"
                       >Features</nuxt-link
                     >
@@ -671,8 +671,11 @@ $navbar-height = 5rem
 $navbar-mobile-menu = 200
 
 .tabs-details .top
-  margin-top var(--spacing-7)
-  margin-bottom var(--spacing-8)
+  padding-top var(--spacing-7)
+  padding-bottom var(--spacing-8)
+
+.bottom .tm-link
+  padding 0 !important
 
 .tm-link
   position relative
