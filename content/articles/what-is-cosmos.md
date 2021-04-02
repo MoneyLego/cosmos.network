@@ -11,8 +11,8 @@ tags:
   - blockchain
 ---
 
-Cosmos is the internet of blockchains, an ecosystem of apps and services that exchange digital assets and data via [IBC (Inter-Blockchain Communication) protocol](/learn/faq/what-is-ibc).
+Cosmos is the internet of blockchains, an ecosystem of apps and services that exchange digital assets and data using [IBC (Inter-Blockchain Communication) protocol](/learn/faq/what-is-ibc).
 
-Cosmos envisions that interoperable blockchain technology will make the world economy more resilient through decentralization, more accountable through transparency, and more efficient through programmable value. The future economy will consist of over a million interconnected blockchains used to exchange digitized real-world assets and provably scarce digital assets.
+Cosmos envisions that interoperable blockchain technology make the world economy more resilient through decentralization, more accountable through transparency, and more efficient through programmable value. The future economy consists of over a million interconnected blockchains used to exchange digitized real-world assets and provably scarce digital assets.
 
 > [Introduction to Cosmos](https://cosmos.network/intro)

@@ -12,4 +12,4 @@ tags:
   - atom
 ---
 
-When users stake ATOM, they effectively lock them up for an indefinite period of time. This means ATOM cannot be transferred anymore, which is guaranteed by the protocol itself. However, users are free to trigger the process to unlock their ATOM at any point after they started staking (via the Wallet of their choice). This is called "undelegating". It will take 21 days for ATOM to be transferrable again after the transaction to undelegate has been sent.
+When you stake ATOM, the ATOM are effectively locked up for an indefinite period of time. While delegated, ATOM cannot be transferred as guaranteed by the protocol itself. However, you can trigger the process to unlock your staked ATOM by using the Wallet of your choice. This process is called "undelegating". The undelegate process take 21 days for ATOM to be transferrable again after the transaction to undelegate has been sent.
