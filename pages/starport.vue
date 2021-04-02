@@ -12,7 +12,7 @@
             The fastest way to a production blockchain.
           </h1>
           <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
-            Starport offers everything you need to build, test and launch your
+            Starport offers everything you need to build, test, and launch your
             blockchain with a decentralized worldwide community.
           </p>
           <div class="btn-group">
@@ -76,8 +76,8 @@
               href="https://github.com/cosmos/cosmos-sdk"
               class="tm-medium"
               >Cosmos SDK</tm-link
-            >, the world’s most popular blockchain framework. It accelerates
-            chain development by scaffolding everything you need, so you can
+            >, the world’s most popular blockchain framework. Starport accelerates
+            chain development by scaffolding everything you need so you can
             focus on business logic.
           </p>
         </div>
@@ -162,7 +162,7 @@
               Create a blockchain in a single command.
             </h4>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Skip past weeks of writing boilerplate. Create data types unique
+              Skip past weeks of writing boilerplate. Create data types that are unique
               to your chain with powerful scaffolding features.
             </p>
           </div>
@@ -182,7 +182,7 @@
               Mint a brand new token and send it to the Cosmos Hub.
             </h4>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Interchain token transfers are native to Starport. Use its
+              Interchain token transfers are native to Starport. Use the
               built-in IBC relayer to send assets and data to other chains.
             </p>
           </div>
@@ -254,8 +254,8 @@
               Interchain infrastructure
             </h4>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Send and receive transactions between blockchains (with IBC
-              Protocol) via your own relayer.
+              Send and receive transactions between blockchains with IBC
+              protocol using your own relayer.
             </p>
           </div>
           <div class="col">
@@ -266,7 +266,7 @@
               Developer tools
             </h4>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Test and diagnose any problems with your chain in a production
+              Test and diagnose problems with your chain in a production
               environment.
             </p>
           </div>
