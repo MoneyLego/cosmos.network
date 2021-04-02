@@ -16,4 +16,4 @@ Blockchains that use staking, such as the Cosmos Hub, are primarily operated by 
 
 In practice, delegating is automatic when ATOM holders start staking. A single staking transaction starts the process of locking up ATOM and delegating to one or more validators. Transactions are performed using a [Wallet](/learn/faq/what-is-a-wallet). The transaction requires you to specify the amount of ATOM to stake and the validator or validators you want to delegate to. The Wallet takes care of the rest by generating and sending the transaction.
 
-Validators never obtain custody of the ATOM delegated to them. There is no risk for validators to "steal" their delegators ATOM. However, there is a risk for delegated ATOM to be slashed if the validator they are delegated to misbehaves. See [What are the risks associated with Staking]. 
+Validators never obtain custody of the ATOM delegated to them. There is no risk for validators to "steal" their delegators ATOM. However, there is a risk for delegated ATOM to be slashed if the validator they are delegated to misbehaves. See [What are the risks associated with Staking](/learn/faq/what-are-the-risks-associated-with-staking). 
