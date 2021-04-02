@@ -14,7 +14,7 @@ tags:
 
 Staking rewards come from two different sources:
 
-- **ATOM inflation**: The total supply of ATOM is inflated each block to reward delegators. The inflation rate is a global parameter calculated based on the percentage of ATOM staked.
-- **Transaction fees**: Each transaction processed by the network comes with transaction fees, that can be paid in multiple token denominations. These transaction fees are collected by the network and distributed to each delegator proportional to their stake. 
+- **ATOM inflation**: The total supply of ATOM is inflated in each block to reward delegators. The inflation rate is a global calculation based on the percentage of ATOM staked.
+- **Transaction fees**: Each transaction processed by the network comes with transaction fees. Fees can be paid in multiple token denominations. Transaction fees are collected by the network and distributed to each delegator proportional to their stake. 
 
-Staking rewards are automatically collected, but they must be actively withdrawn by delegators by sending of a transaction in order to become available. This can be done via [Wallets]. Note that the [validator commission] is deduced from rewards before they are distributed.
+While staking rewards are automatically collected, the rewards must be actively withdrawn by delegators. Delegators use a [Wallet] to send a transaction to make the staking rewards available. [Validator commission] fees are deducted before staking rewards are distributed.
