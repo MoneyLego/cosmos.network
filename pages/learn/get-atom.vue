@@ -64,7 +64,7 @@
           </div>
           <div class="top">
             <div class="title tm-rf5 tm-bold tm-lh-title tm-title">
-              Get ATOM via one of the many cryptocurrency exchanges.
+              Get ATOM using one of the many cryptocurrency exchanges.
               <small class="tm-rf0 tm-rf1-m-up tm-line-height-title tm-normal"
                 >†</small
               >
