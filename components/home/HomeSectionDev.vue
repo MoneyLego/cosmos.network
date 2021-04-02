@@ -28,7 +28,7 @@
         </h3>
         <p class="desc tm-rf-1 tm-rf0-m-up tm-lh-copy tm-measure-narrower">
           Create exchanges and marketplaces that allow anyone around the world
-          to buy, trade, invest, lend – even without a bank account.
+          to buy, trade, invest, and lend – even without a bank account.
         </p>
       </div>
       <div class="use-case tm-measure-narrower">
@@ -47,8 +47,8 @@
           Game economies, owned by players
         </h3>
         <p class="desc tm-rf-1 tm-rf0-m-up tm-lh-copy tm-measure-narrower">
-          Create in-game assets that will be available forever. Bring lasting
-          value to gamers by letting them take their loot to another game, or
+          Create in-game assets that are available forever. Bring lasting
+          value to gamers by letting them take their loot to another game or
           into the real world.
         </p>
       </div>
@@ -160,7 +160,7 @@
               </p>
               <p class="card__desc tm-rf-1 tm-rf0-m-up tm-lh-copy">
                 Grow the economy of your chain by connecting to Cosmos Hub
-                services via IBC protocol.
+                services using IBC protocol.
               </p>
             </div>
             <div :strength="-10" class="card__icon">
@@ -269,7 +269,7 @@
               </p>
               <p class="card__desc tm-rf-1 tm-rf0-m-up tm-lh-copy">
                 Join the ranks of trusted and decentralized validator operators
-                in the network, and help secure the Interchain.
+                in the network and help secure the Interchain.
               </p>
             </div>
             <div :strength="-10" class="card__icon">
