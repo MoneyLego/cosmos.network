@@ -47,9 +47,9 @@
           Game economies, owned by players
         </h3>
         <p class="desc tm-rf-1 tm-rf0-m-up tm-lh-copy tm-measure-narrower">
-          Create in-game assets that are available forever. Bring lasting
-          value to gamers by letting them take their loot to another game or
-          into the real world.
+          Create in-game assets that are available forever. Bring lasting value
+          to gamers by letting them take their loot to another game or into the
+          real world.
         </p>
       </div>
       <div class="card card-fundraising">

@@ -76,9 +76,9 @@
               href="https://github.com/cosmos/cosmos-sdk"
               class="tm-medium"
               >Cosmos SDK</tm-link
-            >, the world’s most popular blockchain framework. Starport accelerates
-            chain development by scaffolding everything you need so you can
-            focus on business logic.
+            >, the world’s most popular blockchain framework. Starport
+            accelerates chain development by scaffolding everything you need so
+            you can focus on business logic.
           </p>
         </div>
         <div class="col">
@@ -162,8 +162,8 @@
               Create a blockchain in a single command.
             </h4>
             <p class="subtitle tm-rf0 tm-lh-copy tm-measure-narrower">
-              Skip past weeks of writing boilerplate. Create data types that are unique
-              to your chain with powerful scaffolding features.
+              Skip past weeks of writing boilerplate. Create data types that are
+              unique to your chain with powerful scaffolding features.
             </p>
           </div>
           <div class="col">

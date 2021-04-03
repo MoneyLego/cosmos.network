@@ -13,8 +13,8 @@
         class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
       >
         Cosmos apps and services connect using IBC, the Inter-Blockchain
-        Communication protocol. This innovation enables you to freely
-        exchange assets and data across sovereign,
+        Communication protocol. This innovation enables you to freely exchange
+        assets and data across sovereign,
         <button
           v-tooltip="{
             content:
