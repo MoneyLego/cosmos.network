@@ -77,16 +77,7 @@
     >
       <div class="span-4">
         <div class="header tm-rf0 tm-medium tm-lh-title tm-overline tm-muted">
-          Typical
-          <button
-            v-tooltip="{
-              content:
-                'The annual percentage yield (APY) is the real rate of return earned on a savings deposit or investment taking into account the effect of compounding interest.',
-            }"
-            class="tm-definition"
-          >
-            APY
-          </button>
+          Typical <tm-tooltip term="apy">APY</tm-tooltip>
         </div>
         <div class="percentage tm-rf7 tm-bold tm-lh-title tm-title">9.7%</div>
         <div class="tm-rf1 tm-lh-title">of staked ATOM (annually)*</div>
