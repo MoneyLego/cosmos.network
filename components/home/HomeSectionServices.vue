@@ -15,7 +15,7 @@
     <p class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow">
       Serving as the economic center of Cosmos, the Cosmos Hub is a blockchain
       that provides vital services to the
-      <tm-tooltip term="interchain">Interchain</tm-tooltip>
+      <tm-tooltip term="interchain">Interchain</tm-tooltip>.
     </p>
     <div class="services">
       <div class="service">
