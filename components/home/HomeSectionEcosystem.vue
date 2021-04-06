@@ -13,16 +13,10 @@
         class="subtitle offset tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure-narrow"
       >
         Cosmos apps and services connect using IBC, the Inter-Blockchain
-        Communication protocol. This innovation enables you to freely
-        exchange assets and data across sovereign,
-        <button
-          v-tooltip="{
-            content:
-              'Think electronic money without central banks, digital asset trading without centrally-operated stock exchanges, or social network platforms without central administrators.',
-          }"
-          class="tm-link tm-definition"
-        >
-          decentralized blockchains</button
+        Communication protocol. This innovation enables you to freely exchange
+        assets and data across sovereign,
+        <tm-tooltip term="decentralized-blockchains"
+          >decentralized blockchains</tm-tooltip
         >.
       </p>
       <div class="btn-group">
