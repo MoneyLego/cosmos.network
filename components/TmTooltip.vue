@@ -1,6 +1,6 @@
 <template>
-  <div style="display: inline-block; position: relative">
-    <!-- lookup definitions from dict.json -->
+  <div class="container">
+    <!-- mapping definitions from dict.json -->
     <button
       v-if="term"
       v-tooltip="{
@@ -20,7 +20,7 @@
         placement: position,
       }"
       :position="position"
-      class="tm-definition"
+      class="tm-link"
     >
       <slot></slot>
     </button>
@@ -35,7 +35,7 @@ export default {
     /**
      * term
      *
-     * lookup k/v in dict.json
+     * mapping k/v in dict.json
      */
     term: {
       type: String,
@@ -64,4 +64,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.container
+  display inline-block
+  position relative
+</style>

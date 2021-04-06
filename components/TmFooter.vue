@@ -35,22 +35,21 @@
         <tm-link
           v-for="link in links"
           :key="url(link)"
-          v-tooltip="{
-            content: link.title,
-          }"
           :href="url(link)"
           class="social-icons__item"
         >
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
-          >
-            <path :d="icon(link)" style="pointer-events: none"></path>
-          </svg>
+          <tm-tooltip :text="link.title" position="top-center">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="currentColor"
+            >
+              <path :d="icon(link)" style="pointer-events: none"></path>
+            </svg>
+          </tm-tooltip>
         </tm-link>
       </nav>
     </div>
