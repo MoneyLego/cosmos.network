@@ -355,10 +355,20 @@
         </p>
       </div>
     </div>
+    <div class="btn-group">
+      <tm-button to-link="internal" to="/features" size="l" class="btn"
+        >Cosmos Hub<span class="icon__right">&rarr;</span></tm-button
+      >
+    </div>
   </div>
 </template>
 
 <style lang="stylus" scoped>
+.btn-group
+  display flex
+  flex-direction column
+  margin-top var(--spacing-9)
+
 .tm-section > *
   grid-column 1/-1
 
@@ -452,6 +462,10 @@
 .service__subtitle
   margin-top var(--spacing-5)
 
+@media $breakpoint-small
+  .btn-group
+    display block
+
 @media $breakpoint-medium
   .title,
   .overline
@@ -465,6 +479,7 @@
 
 @media $breakpoint-large
   .services
+  .btn-group
     grid-column 3 / -1
 
 @media $breakpoint-xl
@@ -484,7 +499,8 @@
     grid-column 5 / span 8
 
   .offset,
-  .services
+  .services,
+  .btn-group
     grid-column 6 / span 7
 
   .services
