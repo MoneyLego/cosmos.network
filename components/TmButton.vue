@@ -368,6 +368,7 @@ export default {
     z-index 1
     display flex
     flex-wrap wrap
+    white-space nowrap
 
   /* icons */
   >>> .icon__right
