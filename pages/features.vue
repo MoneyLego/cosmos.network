@@ -541,6 +541,7 @@ export default {
 
   .footnote
     margin-top var(--spacing-5)
+    z-index 1
 
 .caption
   color var(--white-500)
