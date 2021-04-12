@@ -1,23 +1,77 @@
-<template lang="pug">
-  a(:href="item.fields.website" target="_blank" rel="noreferrer noopener" v-if="item && item.fields && item.fields.website && item.fields.website !== 'x'")
-    .logo-wrapper
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields && item.fields.logo").logo-wrapper__base
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields && item.fields.logo").logo-wrapper__top
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo && !item.fields").logo-wrapper__base
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo && !item.fields").logo-wrapper__top
-      .logo-wrapper__color
-  div(v-else-if="item && item.fields")
-    .logo-wrapper
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields && item.fields.logo").logo-wrapper__base
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields && item.fields.logo").logo-wrapper__top
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo && !item.fields").logo-wrapper__base
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo && !item.fields").logo-wrapper__top
-      .logo-wrapper__color
-  div(v-else)
-    .logo-wrapper
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" alt="Placeholder lgo").logo-wrapper__base
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" alt="Placeholder logo").logo-wrapper__top
-      .logo-wrapper__color
+<template>
+  <a
+    v-if="
+      item && item.fields && item.fields.website && item.fields.website !== 'x'
+    "
+    :href="item.fields.website"
+    target="_blank"
+    rel="noreferrer noopener"
+  >
+    <div class="logo-wrapper">
+      <img
+        v-if="item.fields && item.fields.logo"
+        class="logo-wrapper__base"
+        :src="item.fields.logo[0].url"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="item.fields && item.fields.logo"
+        class="logo-wrapper__top"
+        :src="item.fields.logo[0].url"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="!item.fields.logo && !item.fields"
+        class="logo-wrapper__base"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="!item.fields.logo && !item.fields"
+        class="logo-wrapper__top"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        :alt="`${item.fields.name} App logo`"
+      />
+      <div class="logo-wrapper__color"></div>
+    </div>
+  </a>
+  <div v-else-if="item && item.fields">
+    <div class="logo-wrapper">
+      <img
+        v-if="item.fields && item.fields.logo"
+        class="logo-wrapper__base"
+        :src="item.fields.logo[0].url"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="item.fields && item.fields.logo"
+        class="logo-wrapper__top"
+        :src="item.fields.logo[0].url"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="!item.fields.logo && !item.fields"
+        class="logo-wrapper__base"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        :alt="`${item.fields.name} App logo`"
+      /><img
+        v-if="!item.fields.logo && !item.fields"
+        class="logo-wrapper__top"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        :alt="`${item.fields.name} App logo`"
+      />
+      <div class="logo-wrapper__color"></div>
+    </div>
+  </div>
+  <div v-else>
+    <div class="logo-wrapper">
+      <img
+        class="logo-wrapper__base"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        alt="Placeholder lgo"
+      /><img
+        class="logo-wrapper__top"
+        src="~assets/images/ecosystem/avatar-placeholder.svg"
+        alt="Placeholder logo"
+      />
+      <div class="logo-wrapper__color"></div>
+    </div>
+  </div>
 </template>
 
 <script>
