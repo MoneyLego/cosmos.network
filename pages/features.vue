@@ -455,9 +455,9 @@ export default {
       cards: [
         {
           href: '/learn/get-atom',
-          graphics: 'graphics-cta-token-holders',
+          graphics: 'graphics-coin-stacked',
           overline: 'Token Holders',
-          title: 'Start staking ->',
+          title: 'Get ATOM ->',
         },
         {
           href: '/starport',

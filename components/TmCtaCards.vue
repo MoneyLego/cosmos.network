@@ -82,7 +82,7 @@ export default {
 
 .graphics
   position absolute
-  top 0
+  top -2rem
   left 0
   width 100%
   display grid
@@ -91,6 +91,7 @@ export default {
   &__item
     width 80%
     height auto
+    pointer-events none
 
 .title
   margin-top var(--spacing-3)
