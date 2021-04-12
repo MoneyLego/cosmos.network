@@ -1,38 +1,147 @@
-<template lang="pug">
-.item(:key="item.id")
-  a(:href="item.fields.website" target="_blank" rel="noreferrer noopener" v-if="item.fields.website && item.fields.website !== 'x'")
-    .logo-wrapper
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields.logo").logo-wrapper__base
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields.logo").logo-wrapper__top
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo").logo-wrapper__base
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo").logo-wrapper__top
-      .logo-wrapper__color
-  div(v-else)
-    .logo-wrapper
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields.logo").logo-wrapper__base
-      img(:src="item.fields.logo[0].url" :alt="`${item.fields.name} App logo`" v-if="item.fields.logo").logo-wrapper__top
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo").logo-wrapper__base
-      img(src="~assets/images/ecosystem/avatar-placeholder.svg" :alt="`${item.fields.name} App logo`" v-if="!item.fields.logo").logo-wrapper__top
-      .logo-wrapper__color
-  .text
-    .tm-rf1.tm-bold.tm-lh-title.tm-title
-      a(:href="item.fields.website" target="_blank" rel="noreferrer noopener" v-if="item.fields.website && item.fields.website !== 'x'")
-        | {{ item.fields.name }}
-        span(v-tooltip.top="item.fields.status" v-if="item.fields.status !== 'Unknown'").dot
-          icon-dot(fill="var(--dot-color, rgba(59, 66, 125, 0.12))" :style="{'--dot-color': `${dotColor[cleanText(item.fields.status)]}`}")
-      .text__top__name__none(v-else) {{ item.fields.name }}
-        span(v-tooltip.top="item.fields.status" v-if="item.fields.status !== 'Unknown'").dot
-          icon-dot(fill="var(--dot-color, rgba(59, 66, 125, 0.12))" :style="{'--dot-color': `${dotColor[cleanText(item.fields.status)]}`}")
-    .tm-muted(v-if="!item.fields.category || item.fields.category !== '?'") {{ item.fields.category }}
-    .text__list
-      a(:href="item.fields.docs" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Docs'" v-if="item.fields.docs && item.fields.docs !== 'x'").list-item.fields
-        img(src="~assets/brands/gray/docs.svg" alt="Docs").icon
-      a(:href="item.fields.github" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'GitHub'" v-if="item.fields.github && item.fields.github !== 'x'").list-item.fields
-        img(src="~assets/brands/gray/github.svg" alt="GitHub").icon
-      a(:href="item.fields.chat" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Chat'" v-if="item.fields.chat && item.fields.chat !== 'x'").list-item.fields
-        img(src="~assets/brands/gray/chat.svg" alt="Chat").icon
-      a(:href="item.fields.twitter" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Twitter'" v-if="item.fields.twitter && item.fields.twitter !== 'x'").list-item.fields
-        img(src="~assets/brands/gray/twitter.svg" alt="Twitter").icon
+<template>
+  <div :key="item.id" class="item">
+    <a
+      v-if="item.fields.website && item.fields.website !== 'x'"
+      :href="item.fields.website"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <div class="logo-wrapper">
+        <img
+          v-if="item.fields.logo"
+          class="logo-wrapper__base"
+          :src="item.fields.logo[0].url"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="item.fields.logo"
+          class="logo-wrapper__top"
+          :src="item.fields.logo[0].url"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="!item.fields.logo"
+          class="logo-wrapper__base"
+          src="~assets/images/ecosystem/avatar-placeholder.svg"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="!item.fields.logo"
+          class="logo-wrapper__top"
+          src="~assets/images/ecosystem/avatar-placeholder.svg"
+          :alt="`${item.fields.name} App logo`"
+        />
+        <div class="logo-wrapper__color"></div>
+      </div>
+    </a>
+    <div v-else>
+      <div class="logo-wrapper">
+        <img
+          v-if="item.fields.logo"
+          class="logo-wrapper__base"
+          :src="item.fields.logo[0].url"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="item.fields.logo"
+          class="logo-wrapper__top"
+          :src="item.fields.logo[0].url"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="!item.fields.logo"
+          class="logo-wrapper__base"
+          src="~assets/images/ecosystem/avatar-placeholder.svg"
+          :alt="`${item.fields.name} App logo`"
+        /><img
+          v-if="!item.fields.logo"
+          class="logo-wrapper__top"
+          src="~assets/images/ecosystem/avatar-placeholder.svg"
+          :alt="`${item.fields.name} App logo`"
+        />
+        <div class="logo-wrapper__color"></div>
+      </div>
+    </div>
+    <div class="text">
+      <div class="tm-rf1 tm-bold tm-lh-title tm-title">
+        <a
+          v-if="item.fields.website && item.fields.website !== 'x'"
+          :href="item.fields.website"
+          target="_blank"
+          rel="noreferrer noopener"
+          >{{ item.fields.name
+          }}<span
+            v-if="item.fields.status !== 'Unknown'"
+            v-tooltip.top="item.fields.status"
+            class="dot"
+          >
+            <icon-dot
+              fill="var(--dot-color, rgba(59, 66, 125, 0.12))"
+              :style="{
+                '--dot-color': `${dotColor[cleanText(item.fields.status)]}`,
+              }"
+            ></icon-dot> </span
+        ></a>
+        <div v-else class="text__top__name__none">
+          {{ item.fields.name
+          }}<span
+            v-if="item.fields.status !== 'Unknown'"
+            v-tooltip.top="item.fields.status"
+            class="dot"
+          >
+            <icon-dot
+              fill="var(--dot-color, rgba(59, 66, 125, 0.12))"
+              :style="{
+                '--dot-color': `${dotColor[cleanText(item.fields.status)]}`,
+              }"
+            ></icon-dot>
+          </span>
+        </div>
+      </div>
+      <div
+        v-if="!item.fields.category || item.fields.category !== '?'"
+        class="tm-muted"
+      >
+        {{ item.fields.category }}
+      </div>
+      <div class="text__list">
+        <a
+          v-if="item.fields.docs && item.fields.docs !== 'x'"
+          v-tooltip.bottom="'Docs'"
+          class="list-item fields"
+          :href="item.fields.docs"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img class="icon" src="~assets/brands/gray/docs.svg" alt="Docs" /></a
+        ><a
+          v-if="item.fields.github && item.fields.github !== 'x'"
+          v-tooltip.bottom="'GitHub'"
+          class="list-item fields"
+          :href="item.fields.github"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img
+            class="icon"
+            src="~assets/brands/gray/github.svg"
+            alt="GitHub" /></a
+        ><a
+          v-if="item.fields.chat && item.fields.chat !== 'x'"
+          v-tooltip.bottom="'Chat'"
+          class="list-item fields"
+          :href="item.fields.chat"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img class="icon" src="~assets/brands/gray/chat.svg" alt="Chat" /></a
+        ><a
+          v-if="item.fields.twitter && item.fields.twitter !== 'x'"
+          v-tooltip.bottom="'Twitter'"
+          class="list-item fields"
+          :href="item.fields.twitter"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img
+            class="icon"
+            src="~assets/brands/gray/twitter.svg"
+            alt="Twitter"
+        /></a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

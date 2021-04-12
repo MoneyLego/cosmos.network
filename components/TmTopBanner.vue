@@ -1,11 +1,33 @@
-<template lang="pug">
-  transition(name="fade" v-on:before-leave="beforeLeave" appear)
-    .banner(v-if="show")
-      a.banner__content(v-html="this.md.render(this.content)" :href="this.url" target="_blank" rel="noreferrer noopener")
-      a.banner__dismiss(@click.prevent="close" href="#")
-        .banner__dismiss__icon
-          svg(width='16', height='16', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-            path(d='M1.66669 1.66669L12.3334 12.3334M12.3334 1.66669L1.66664 12.3334', stroke='var(--white)', stroke-width='1.5', stroke-linecap='round')
+<template>
+  <transition name="fade" appear="appear" @before-leave="beforeLeave">
+    <div v-if="show" class="banner">
+      <a
+        class="banner__content"
+        :href="url"
+        target="_blank"
+        rel="noreferrer noopener"
+        v-html="md.render(content)"
+      ></a
+      ><a class="banner__dismiss" href="#" @click.prevent="close">
+        <div class="banner__dismiss__icon">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.66669 1.66669L12.3334 12.3334M12.3334 1.66669L1.66664 12.3334"
+              stroke="var(--white)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </transition>
 </template>
 
 <script>
