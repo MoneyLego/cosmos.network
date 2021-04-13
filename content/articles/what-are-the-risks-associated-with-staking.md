@@ -12,9 +12,9 @@ tags:
   - atom
 ---
 
-Staking ATOM earns significant rewards but is not risk-free. ATOM delegated to a validator can be partially slashed if the validator misbehaves. Slashing means the delegated ATOM can be forfeited without the possibility of recovery. On the Cosmos Hub, two attributable faults can lead to slashing events for the delegated ATOM:
+Staking ATOM earns significant rewards but is not risk-free. ATOM delegated to a validator can be partially slashed if the validator misbehaves. Slashing means the delegated ATOM are forfeited (burned) without the possibility of recovery. On the Cosmos Hub, two attributable faults can lead to slashing events for the delegated ATOM:
 
 - Slashing by 0.01% can occur if the validator is offline for too long. The validator must not miss 500 of the last 10.000 blocks. 
-- Slashing by 5% can occur if the validator signs two different blocks at the same height. This fault is harder to anticipate, resulting from bad operation practices or outright malicious intent from the validator operator. 
+- Slashing by 5% can occur if the validator signs two different blocks at the same height (double-signing). This fault is harder to anticipate, resulting from bad operation practices or outright malicious intent from the validator operator. 
 
 When you delegate your ATOM to a validator, select a trusted validator to prevent slashing from these faults.
