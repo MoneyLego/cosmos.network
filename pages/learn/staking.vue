@@ -19,7 +19,7 @@
         </div>
         <div class="subtitle tm-rf1 tm-lh-copy tm-measure">
           Staking is the process of locking up a digital asset (ATOM in the case
-          of the Cosmos Hub) in order to provide economic security for a public
+          of the Cosmos Hub) to provide economic security for a public
           blockchain.
         </div>
       </div>
