@@ -63,10 +63,9 @@
       <div class="mid logos-list">
         <img src="~static/logos/binance.svg" alt="Binance Logo" />
         <img src="~static/logos/terra-money.svg" alt="Terra Money Logo" />
-        <img src="~static/logos/crypto-com.svg" alt="Crypto.com Logo" />
         <img src="~static/logos/cosmos-hub.svg" alt="Cosmos Hub Logo" />
+        <img src="~static/logos/crypto-com.svg" alt="Crypto.com Logo" />
         <img src="~static/logos/thorchain.svg" alt="Thorchain Logo" />
-        <img src="~static/logos/okex.svg" alt="OKEx Logo" />
       </div>
       <div class="bottom grid-col-2">
         <div class="col">
@@ -816,7 +815,7 @@ export default {
           href: 'https://discord.gg/dkubTXerEW',
           graphics: 'graphics-cta-developer-chat',
           overline: 'Discord',
-          title: 'Developer chat ->',
+          title: 'Developer chat ↗',
         },
         {
           href: 'https://v1.cosmos.network/contributors',
@@ -1006,7 +1005,7 @@ svg.graphics__item
 .section-intro .logos-list
   display grid
   grid-template-columns repeat(2, 1fr)
-  gap 4rem
+  gap 2rem
   align-items center
 
 .section-intro .logos-list > img
@@ -1123,7 +1122,6 @@ svg.graphics__item
 // Cta
 .cta
   border-radius $border-radius-5
-  hover-raise(-3px)
   box-shadow var(--elevation-4)
   color var(--white)
   background var(--gray-100)
