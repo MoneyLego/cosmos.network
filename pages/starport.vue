@@ -39,7 +39,7 @@
           <youtube-lite
             video="NmytpuD33lY"
             title="Starport v0.15: IBC Hello, world!"
-            params="controls=0&modestbranding=2&rel=0&enablejsapi=1"
+            params="controls=1&modestbranding=2&rel=0&enablejsapi=1"
             style="
               background-image: url('https://i.ytimg.com/vi/NmytpuD33lY/maxresdefault.jpg');
             "
