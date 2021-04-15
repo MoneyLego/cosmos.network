@@ -38,11 +38,8 @@
         <div class="demo tm-section">
           <youtube-lite
             video="NmytpuD33lY"
-            title="Starport v0.15: IBC Hello, world!"
-            params="controls=1&modestbranding=2&rel=0&enablejsapi=1"
-            style="
-              background-image: url('https://i.ytimg.com/vi/NmytpuD33lY/maxresdefault.jpg');
-            "
+            title="Launching a blockchain step by step in 10 minutes"
+            :style="{ backgroundImage: `url(${youtubeImg})` }"
           />
         </div>
       </div>
@@ -802,6 +799,7 @@
 </template>
 
 <script>
+import youtubeImg from '~/assets/images/thumbnail.jpg'
 import YoutubeLite from '~/components/global/YoutubeLite.vue'
 
 export default {
@@ -810,6 +808,7 @@ export default {
   },
   data() {
     return {
+      youtubeImg,
       cards: [
         {
           href: 'https://discord.gg/dkubTXerEW',
@@ -999,13 +998,16 @@ svg.graphics__item
   writing-mode vertical-rl
   transform rotate(-180deg)
 
+.section-intro .top .title
+  max-width 10em
+
 .section-intro .mid
   margin-top var(--spacing-9)
 
 .section-intro .logos-list
   display grid
   grid-template-columns repeat(2, 1fr)
-  gap 2rem
+  gap var(--grid-gap-x)
   align-items center
 
 .section-intro .logos-list > img
@@ -1176,7 +1178,7 @@ svg.graphics__item
   // Intro
   .section-intro
     .top
-      grid-column 2/span 6
+      grid-column 2/span 11
     .mid
     .bottom
       grid-column 2/span 10
