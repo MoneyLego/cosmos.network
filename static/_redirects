@@ -120,7 +120,6 @@
 /sdk https://v1.cosmos.network/sdk 301!
 /series/* https://v1.cosmos.network/series/:splat 301!
 /subscribe https://v1.cosmos.network/subscribe 301!
-/trademark https://v1.cosmos.network/trademark 301!
 /tools https://v1.cosmos.network/tools 301!
 /unsubscribe https://v1.cosmos.network/unsubscribe 301!
 
