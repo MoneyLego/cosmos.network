@@ -1,6 +1,7 @@
 <template>
   <main>
     <section-hero />
+    <home-section-ecosystem />
     <home-section-services />
     <home-section-atom />
     <home-section-features />
